@@ -45,9 +45,6 @@ Route::get('privacy', ['as' => 'privacy', 'uses' => 'AdminController@privacy']);
 Route::get('terms', ['as' => 'terms', 'uses' => 'AdminController@terms']);
 Route::get('about', ['as' => 'about', 'uses' => 'AdminController@about']);
 Route::get('pricing', ['as' => 'pricing', 'uses' => 'AdminController@pricing']);
-// Route::get('/', function () {
-// 	return Redirect::route('dashboard');
-// });
 
 Route::group(['middleware' => 'superAdminAuth'], function () {
     Route::get('dashboard', ['as' => 'dashboard', 'uses' => 'AdminController@dashboard']);
@@ -131,23 +128,7 @@ Route::group(array('middleware' => 'auth'), function () {
     Route::post('paypal/payment', ['as' => 'paypal.payment', 'uses' => 'PaypalController@paymentPaypal']);
     Route::get('paypal/confirmation', ['as' => 'paypal.confirmation', 'uses' => 'PaypalController@confirmPaypal']);
 
-
-    //product
-    Route::get('product/view', ['as' => 'product.view', 'uses' => 'ProductController@view']);
-
-    Route::get('product/buy/{id}', ['as' => 'product.buy', 'uses' => 'ProductController@buy']);
-
-    //professional
-    Route::get('professional', ['as' => 'professional.view', 'uses' => 'ProfessionalController@view']);
-    Route::get('professional/buy/{id}', ['as' => 'professional.buy', 'uses' => 'ProfessionalController@buy']);
-
-    //professional
-    Route::get('explorer', ['as' => 'explorer.view', 'uses' => 'ExplorerController@view']);
-    Route::get('explorer/buy/{id}', ['as' => 'explorer.buy', 'uses' => 'ExplorerController@buy']);
-
     // Manage Campaigns
-
-
     Route::group(['prefix' => 'campaigns-category'], function () {
         Route::any('/add-campaigns-category', 'category\categoryController@create');
         Route::any('/view-campaigns-category', 'category\categoryController@index');
@@ -195,13 +176,11 @@ Route::group(array('middleware' => 'auth'), function () {
     Route::any('/commission-ratio/update', 'commission\commissionratioController@store');
 
     // company-profile
-
     Route::any('/company-profile', 'company\companyprofileController@create');
     Route::any('/company-profile/store', 'company\companyprofileController@store');
     Route::any('/company-profile/update', 'company\companyprofileController@store');
 
     // Manage Owner
-
     Route::any('/advertiser/add-advertiser', 'owner\ownerController@fetch');
     Route::any('/advertiser/view-advertiser', 'owner\ownerController@index');
     Route::any('/advertiser/watchjs', 'owner\ownerController@watchjs');
@@ -214,12 +193,10 @@ Route::group(array('middleware' => 'auth'), function () {
     Route::any('/advertiser/CheckPhone', 'owner\ownerController@CheckPhone');
 
     // Notification 
-
     Route::any('/notify/view-notifications', 'notify\notificationController@notify');
     Route::any('/notify/ChngeStatus', 'notify\notificationController@ChngeStatus');
 
     // Wallet History
-
     Route::any('/wallet/view-wallet-history', 'WalletHistory\walletHistoryController@index');
     Route::any('/wallet/search-wallet-history', 'WalletHistory\walletHistoryController@fetch');
     Route::any('/wallet/search', 'WalletHistory\walletHistoryController@filter');
@@ -237,28 +214,10 @@ Route::group(['middleware' => ['auth', 'role:admin']], function () {
     Route::get('user/{id}/edit', ['as' => 'user.edit', 'uses' => 'AdminController@edit']);
     Route::get('allUsers/edit/{id}', ['as' => 'user.edit', 'uses' => 'AdminController@edit']);
     Route::put('allUsers/{id}', ['as' => 'post.edit.user', 'uses' => 'AdminController@update']);
-
-    //Route::get('product/{id}', ['as' => 'product.view', 'uses' => 'ProductController@view']);
-
-    Route::get('product/{id}', ['as' => 'product.show', 'uses' => 'ProductController@show']);
-    Route::delete('product/{id}', ['as' => 'product.delete', 'uses' => 'ProductController@destroy']);
-    Route::get('products/create', ['as' => 'product.create', 'uses' => 'ProductController@create']);
-    Route::post('product/create', ['as' => 'product.store', 'uses' => 'ProductController@store']);
-
-    //Route::get('product/{id}/edit', ['as' => 'product.edit', 'uses' => 'ProductController@edit']);
-    //Route::post('product/{id}/update', ['as' => 'product.update', 'uses' => 'ProductController@update']);
-
     Route::get('product/{id}/edit', ['as' => 'product.edit', 'uses' => 'ProductController@edit']);
     Route::put('product/{id}', ['as' => 'product.update', 'uses' => 'ProductController@update']);
 
-    //Route::get('cards/create',['as' => 'cards.create', 'uses' => 'CardController@create']);
-    //Route::resource('products','ProductController');
-
-    //Route::match(['get', 'post'], '/product', 'ProductController@show');
-    //-----Admin Views-----//
-
     // Pending Transfer Requests //
-
     Route::get('pending/index', ['as' => 'pending.index', 'uses' => 'Wallet\PendingTransferController@index']);
     Route::get('pending/{id}/accept', ['as' => 'pending.accept', 'uses' => 'Wallet\PendingTransferController@accept']);
     Route::delete('pending/index/{id}', ['as' => 'pending.decline', 'uses' => 'Wallet\PendingTransferController@decline']);
@@ -273,33 +232,7 @@ Route::group(['middleware' => ['auth', 'role:admin']], function () {
 */
 
 Route::group(['prefix' => 'api'], function () {
-
-    // Basic Get Data Api Routes
-
-    Route::any('/gift/view-gift', 'api\ApiGiftController@ApiViewGift');
-    Route::any('/gift/send-gift', 'api\ApiGiftController@ApiSendGift');
-    Route::any('/gift/sent-gift', 'api\ApiGiftController@ApiSentAll');
-    Route::any('/gift/received-gift', 'api\ApiGiftController@ApiReceiveAll');
-    Route::any('/gift/get-AllGiftProduct', 'api\ApiGiftController@ApiAllGiftProduct');
-    Route::any('/gift/get-GiftReason', 'api\ApiGiftController@ApiGiftReason');
-    Route::any('/gift/DetailView', 'api\ApiGiftController@ApiDetailView');
-
-    // Ajax Based Data Fetch Api Routes
-
-    Route::any('/getProductPrice', 'api\ApiGiftController@ApiGetPrice');
-    Route::any('/getReceiverDet', 'api\ApiGiftController@ApiGetReceiverDet');
-    Route::any('/CheckClient', 'api\ApiGiftController@ApiCheckClient');
-
-    // Search Api Routes 
-
-    Route::any('/filter/gift', 'api\ApiGiftController@ApiFilter');
-    Route::any('/get/vendors', 'api\ApiGiftController@ApiGetVendor');
-    Route::any('/get/categories', 'api\ApiGiftController@ApiGetCatgry');
-    Route::any('/get/MinPrice', 'api\ApiGiftController@ApiMinPrice');
-    Route::any('/get/MaxPrice', 'api\ApiGiftController@ApiMaxPrice');
-
     // Register & login Api Routes
-
     Route::any('/login', 'api\ApiGiftController@ApiLogin');
     Route::any('/register', 'api\ApiGiftController@ApiRegister');
 });
@@ -313,14 +246,12 @@ Route::group(['prefix' => 'api'], function () {
 */
 
 // paypal //
-
 Route::get('payment', array(
     'as' => 'payment',
     'uses' => 'PaypalController@postPayment',
 ));
 
 // this is after make the payment, PayPal redirect back to your site
-
 Route::get('payment/status', array(
     'as' => 'payment.status',
     'uses' => 'PaypalController@getPaymentStatus',
@@ -330,10 +261,4 @@ Route::get('/clearr-cache', function () {
     \Artisan::call('cache:clear');
     \Artisan::call('schedule:run');
     return "Cache is cleared";
-});
-
-Route::get('/addadjs', function () {
-    \Artisan::call('cache:clear');
-    \Artisan::call('schedule:run');
-    return "inserted data";
 });

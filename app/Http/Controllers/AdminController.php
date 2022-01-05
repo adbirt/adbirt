@@ -202,7 +202,7 @@ class AdminController extends Controller
             $del['active'] = '0';
             User::where('id', $data['id'])->update($del);
             return redirect()->route('admin.allusers')->with('success', 'User Deleted Successfully.');
-        } catch (Exception $ex) {
+        } catch (\Throwable $ex) {
             return redirect()->route('admin.allusers')->with('error', 'Something went wrong.Try Again.');
         }
     }

@@ -9,7 +9,7 @@
     <!-- The above 3 meta tags *must* come fiatft in the head; any other head content must come *after* these tags -->
 
     <!-- SITE TITLE -->
-    <title>Adbirt - Online CPA on a Budget: Advertise at your own Cost &amp; Pace</title>
+    <title>{{ $title ?? 'Adbirt - Online CPA on a Budget: Advertise at your own Cost &amp; Pace' }}</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Favicon -->
     <link rel="shortcut icon" href="public/assets-revamp/img/favicon.png" type="image/png">
@@ -40,24 +40,6 @@
     <link rel="stylesheet" href="public/assets-revamp/css/style.css">
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="public/assets-revamp/css/responsive.css">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't gallery if you view the page via file:// -->
-    <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-
-    <style>
-        .meanmenu-reveal.meanclose {
-            padding: 4px;
-            background-color: var(--theme-color);
-            border-radius: 7px;
-            color: #fff !important;
-        }
-
-    </style>
-
     @yield('style')
 </head>
 
@@ -74,11 +56,11 @@
         </div>
         <!--  END PRELOADER -->
 
-        <!-- START back-to-top -->
+        <!-- START back-to-top button -->
         <button class="adbirt-scroll-top adbirt-back-to-top" data-targets="html">
             <i class="fas fa-long-arrow-alt-up adbirt-scrollup-icon"></i>
         </button>
-        <!-- END back-to-top-->
+        <!-- END back-to-top button -->
 
         <!-- Start Navbar Area -->
         <div class="navbar-area">
@@ -153,9 +135,8 @@
                                         <a href="/contact" class="nav-link">Contact</a>
                                     </li>
                                     <li class="nav-item text-white">
-                                        <a href="/dashboard" class="nav-link rounded-lg bg-primary-color px-3 py-1">
-                                            {!! Auth::user() ? 'Dashboard' : 'Login' !!}
-                                        </a>
+                                        <a href="/dashboard"
+                                            class="nav-link rounded-lg bg-primary-color px-3 py-1">Login</a>
                                     </li>
                                 </ul>
                             </div>
@@ -259,10 +240,7 @@
                 <div class="adbirt-footer-boottom text-center mt-4">
                     <div class="row">
                         <div class="col-md-12">
-                            <?php
-                            $year = date('Y');
-                            ?>
-                            <p>&copy; 2017 - {!! $year !!} Adbirt, Inc. All Rights Reserved</a> </p>
+                            <p>&copy; 2017 - 2022 Adbirt, Inc. All Rights Reserved</a> </p>
                         </div>
                         <!--- END COL -->
                     </div>
@@ -321,21 +299,23 @@
     <!-- jQuery Wavify JS -->
     <script src="public/assets-revamp/js/jquery.wavify.js"></script>
     <script src="public/assets-revamp/js/main.js"></script>
-    <script>
-        //**===================a Adbirt banner waves ===================**//		
-        $('#adbirt-wavify') && $("#adbirt-wavify svg path#wave").wavify({
-            height: 80,
-            bones: 2,
-            amplitude: 75,
-            color: "#fff",
-            speed: .45
-        });
+    @if (Request::segment(1) == '/')
+        <script>
+            //**===================a Adbirt banner waves ===================**//		
+            $('#adbirt-wavify') && $("#adbirt-wavify svg path#wave").wavify({
+                height: 80,
+                bones: 2,
+                amplitude: 75,
+                color: "#fff",
+                speed: .45
+            });
 
-        $('#adbirt-wavify').length && $('#adbirt-wavify').css({
-            width: '100%',
-            zIndex: 999
-        })
-    </script>
+            $('#adbirt-wavify').length && $('#adbirt-wavify').css({
+                width: '100%',
+                zIndex: 999
+            })
+        </script>
+    @endif
 
     @yield('script')
 </body>

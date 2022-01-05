@@ -51,7 +51,6 @@ Route::group(['middleware' => 'guest'], function () {
     Route::get('user/activate', ['as' => 'activation', 'uses' => 'UsersController@activate']);
     Route::get('register/activate', ['as' => 'user.doactivate', 'uses' => 'UsersController@doActivate']);
     Route::post('login', array('uses' => 'Auth\AuthController@doLogin'));
-
     Route::post('reset', ['as' => 'reset-password', 'uses' => 'Auth\AuthController@resetRequest']);
     Route::get('login/reset_password/users', ['as' => 'reset-page', 'uses' => 'Auth\AuthController@resetPage']);
     Route::get('login/reset_password/phone', ['as' => 'reset-page-phone', 'uses' => 'Auth\AuthController@resetPagePhone']);

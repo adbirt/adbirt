@@ -156,7 +156,7 @@ class campaignsController extends Controller
     {
         $input = $request->all();
 
-        // Edit campaign ☑
+        // Edit campaign, redirect to page ☑
 
         if (!empty($id)) {
             $Id = base64_decode($id);
@@ -172,7 +172,7 @@ class campaignsController extends Controller
             return view('campaigns.add-campaigns', $this->outputData);
         } else {
 
-            // Edit campaign too
+            // Edit campaign too, api insert
 
             if (isset($input['id'])) {
 

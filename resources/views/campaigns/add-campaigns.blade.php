@@ -42,13 +42,13 @@
             <div class="Formbox">
                 @include('includes.alert')
                 <!--<ol class="breadcrumb">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li><a href="{{ url('/') }}">Home</a></li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        @if (isset($campaignsData))
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="active">{!! $title = 'Update Ad' !!}</li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li><a href="{{ url('/') }}">Home</a></li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        @if (isset($campaignsData))
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="active">{!! $title = 'Update Ad' !!}</li>
                     @else
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="active">{!! $title = 'Add new Ad' !!}</li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        @endif
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ol>-->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="active">{!! $title = 'Add new Ad' !!}</li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        @endif
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ol>-->
                 <a href="{{ url('/campaigns/view-campaigns') }}">
                     <button class="btn btn-primary waves-effect waves-light mb-2">View Ads</button>
                 </a>
@@ -70,7 +70,7 @@
                                     <div class="col-md-8">
                                         <input type="text" name="campaign_name" parsley-trigger="change" required
                                             placeholder="Campaign Name" class="form-control" id="campaign_name"
-                                            @if (isset($campaignsData) && !empty($campaignsData->campaign_name)) value="{{ $campaignsData->campaign_name }}" @endif>
+                                            parsely-maxlength=150 maxlength=150 @if (isset($campaignsData) && !empty($campaignsData->campaign_name)) value="{{ $campaignsData->campaign_name }}" @endif>
                                     </div>
                                 </div>
                             </div>
@@ -98,7 +98,7 @@
                                             <?php
                                             $campaign_types = ['CPA', 'CPC', 'Native Content Ad'];
                                             ?>
-                                            <option value="" disabled>Choose Campaign Type</option>
+                                            <option disabled @if (!isset($campaignsData)) selected="true" @endif>Choose Campaign Type</option>
                                             @foreach ($campaign_types as $type)
                                                 <option value="{!! $type !!}" @if (isset($campaignsData) && $campaignsData->campaign_type == $type) selected="true" @endif>
                                                     {!! $type !!}
@@ -118,7 +118,7 @@
                                         <select name="campaign_category" data-placeholder="Select Ads Category"
                                             class="form-control" id="campaign_category">
                                             @if (isset($categoryData) && count($categoryData) > 0)
-                                                <option value="">Select Ads Category</option>
+                                                <option disabled @if (!isset($campaignsData)) selected="true" @endif>Select Ads Category</option>
                                                 @foreach ($categoryData as $value)
                                                     @if (isset($campaignsData) && $campaignsData->campaign_category == $value->id)
                                                         <option value="{{ $value->id }}" selected>
@@ -188,7 +188,7 @@
                                         <div class="col-md-8">
                                             <select data-placeholder="Select an option" id="banner_type" name="banner_type"
                                                 class="form-control">
-                                                <option value="" disabled>Select Banner Type</option>
+                                                <option disabled @if (!isset($campaignsData)) selected="true" @endif>Select Banner Type</option>
                                                 <?php
                                                 $banner_types = ['image', 'video'];
                                                 ?>
@@ -210,7 +210,7 @@
                                         <div class="col-md-8">
                                             <select name="banner_size" data-placeholder="Select an option"
                                                 class="form-control" id="banner_size">
-                                                <option selected disabled>Select Banner Size</option>
+                                                <option disabled @if (!isset($campaignsData)) selected="true" @endif>Select Banner Size</option>
                                                 @if (isset($bannerSize) && !empty($bannerSize))
                                                     @foreach ($bannerSize as $key => $value)
                                                         @if (isset($campaignsData) && $campaignsData->banner_size == $value)
@@ -260,7 +260,7 @@
 
                                     <span style="color:red;" id="response"></span>
                                     <!-- <span id="width"></span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <span id="height"></span> -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <span id="height"></span> -->
                                 </div>
                             </div>
                             <div class="form-group">
@@ -309,7 +309,8 @@
                             @else
                                 <input type="hidden" name="advertiser_id" value="{{ Auth::user()->id }}">
                             @endif
-                            <div class="form-group">
+
+                            {{-- <div class="form-group">
                                 <div class="row">
                                     <div class="col-md-4">
                                         <label class="formLabel">Campaign's Policy</label>
@@ -322,7 +323,8 @@
                                             title="">@if (isset($campaignsData) && !empty($campaignsData->campaign_policy)) {{ $campaignsData->campaign_policy }} @endif </textarea>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
+
                         </fieldset>
                         <div class="form-group text-right m-b-0">
                             <button class="btn btn-primary waves-effect waves-light" type="submit" id="btn-submit">

@@ -104,7 +104,11 @@
                                     </div>
                                 </div>
                             </form>
-                            <p class="form-message">Hi</p>
+
+                            <div id="form-message" class="alert alert-danger" role="alert">
+                                Message
+                            </div>
+
                         </div>
                     </div><!-- END COL -->
                 </div>

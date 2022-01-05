@@ -48,6 +48,7 @@
                                     <tr>
                                         <th>Name</th>
                                         {{-- <th>Title</th> --}}
+                                        <th>Category</th>
                                         <th>Price</th>
                                         <th>Status</th>
                                         <th>Action</th>

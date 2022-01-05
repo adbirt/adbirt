@@ -33,6 +33,7 @@
                     <div class="col-12 col-lg-4">
                         <div class="card w-100">
                             <h5 class="text-muted p-2">Overview</h5>
+                            <hr />
                             <?php
                             $profilePhotoUrl = strip_tags(substr($user->profile->propic, 0, 4) == 'http' ? $user->profile->propic : (substr($user->profile->propic, 0, 8) == '/uploads' ? 'https://adbirt.com/public' . $user->profile->propic : $user->profile->propic)) . '';
                             if (strlen($profilePhotoUrl) == 0) {

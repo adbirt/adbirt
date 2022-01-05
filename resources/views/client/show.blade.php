@@ -68,7 +68,7 @@
                     </div>
 
                     <div class="col-12 col-lg-8">
-                        <h5 class="text-muted">Personal info</h5>
+                        <h5 class="text-muted p-2">Personal info</h5>
                         <hr />
                         <!-- Begin: Bio -->
                         <div class="row">

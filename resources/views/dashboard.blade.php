@@ -21,9 +21,9 @@
     <div class="layout-content" data-scrollable>
         <div class="container-fluid">
             <!--<ol class="breadcrumb">
-                                                                                                                                                                                    <li><a href="{!! route('dashboard') !!}">Home</a></li>
-                                                                                                                                                                                    <li class="active">Dashboard</li>
-                                                                                                                                                                                </ol> -->
+                                                                                                                                                                                        <li><a href="{!! route('dashboard') !!}">Home</a></li>
+                                                                                                                                                                                        <li class="active">Dashboard</li>
+                                                                                                                                                                                    </ol> -->
             @include('includes.alert')
             @if (Session::has('flash_message'))
                 <div class="alert bg-success alert-styled-left" id="msg">
@@ -419,8 +419,8 @@
                         </div>
 
                         <!--<div class="media-right">
-                                                                                                                                                                                        <a class="btn btn-primary btn-rounded" href="https://www.adbirt.com/transfer/request">Claim $10</a>
-                                                                                                                                                                                    </div>-->
+                                                                                                                                                                                            <a class="btn btn-primary btn-rounded" href="https://www.adbirt.com/transfer/request">Claim $10</a>
+                                                                                                                                                                                        </div>-->
                     @endif
                 </div>
             </div>
@@ -650,7 +650,7 @@
 <script type="text/javascript" src="{{ asset('assets/js/datatables_responsive.js') }}"></script>
 <script type="text/javascript" src="{{ asset('assets/js/datatables_basic.js') }}"></script> --}}
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    {{-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
     <script type="text/javascript">
         var ctx = document.getElementById("myChart").getContext('2d');
         var d = new Date();
@@ -675,5 +675,5 @@
                 }
             }
         });
-    </script>
+    </script> --}}
 @stop

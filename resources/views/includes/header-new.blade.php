@@ -102,7 +102,8 @@ $NotifyCnt = count($Notify);
 
         <!-- Begin Notifications Dropdown Menu -->
         <li class="nav-item dropdown">
-            <a class="nav-link btn mx-1 text-primary-color p-2 dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" id="notificationsDropdown" data-toggle="dropdown" href="#">
+            <a class="nav-link btn mx-1 text-primary-color p-2 dropdown-toggle" role="button" aria-haspopup="true"
+                aria-expanded="false" id="notificationsDropdown" data-toggle="dropdown" href="#">
                 <i class="fa fa-bell fa-lg"></i>
                 @if ($NotifyCnt >= 1)
                     <span class="badge badge-warning navbar-badge" style="font-size: 14px;">
@@ -170,7 +171,8 @@ $NotifyCnt = count($Notify);
 
         <!-- Begin Help Menu -->
         <li class="nav-item dropdown">
-            <a class="nav-link btn mx-1 text-primary-color p-2 dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" id="helpDropdown" data-toggle="help" href="#">
+            <a class="nav-link btn mx-1 text-primary-color p-2 dropdown-toggle" role="button" aria-haspopup="true"
+                aria-expanded="false" id="helpDropdown" data-toggle="dropdown" href="#">
                 <i class="fa fa-question fa-lg"></i>
             </a>
             <div aria-labelledby="helpDropdown" class="dropdown-menu dropdown-menu-lg dropdown-menu-right"

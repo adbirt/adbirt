@@ -193,7 +193,7 @@
     <!-- End yield script -->
 
 
-    <svg id="zcomponents__svg" style="display: none;"></svg>
+    {{-- <svg id="zcomponents__svg" style="display: none;"></svg>
     <div class="betternet-wrapper"></div><span id="texmage-extension-is-installed"></span>
     <div class="daterangepicker ltr show-ranges opensright">
         <div class="ranges">
@@ -220,7 +220,7 @@
                 type="button">Apply</button> </div>
     </div>
     <div class="jqvmap-label" style="display: none;"></div><iframe id="nr-ext-rsicon"
-        style="position: absolute; display: none; width: 50px; height: 50px; z-index: 2147483647; border-style: none; background: transparent; top: 341px; left: 518px;"></iframe>
+        style="position: absolute; display: none; width: 50px; height: 50px; z-index: 2147483647; border-style: none; background: transparent; top: 341px; left: 518px;"></iframe> --}}
 
 </body>
 

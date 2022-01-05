@@ -21,9 +21,9 @@
     <div class="layout-content" data-scrollable>
         <div class="container-fluid">
             <!--<ol class="breadcrumb">
-                                                                                                                                                                                                                <li><a href="{!! route('dashboard') !!}">Home</a></li>
-                                                                                                                                                                                                                <li class="active">Dashboard</li>
-                                                                                                                                                                                                            </ol> -->
+                                                                                                                                                                                                                        <li><a href="{!! route('dashboard') !!}">Home</a></li>
+                                                                                                                                                                                                                        <li class="active">Dashboard</li>
+                                                                                                                                                                                                                    </ol> -->
             @include('includes.alert')
             @if (Session::has('flash_message'))
                 <div class="alert bg-success alert-styled-left" id="msg">
@@ -85,7 +85,7 @@
                 <div class="row">
                     <div class="col-6">
                         <!-- small box -->
-                        <div class="small-box bg-info">
+                        <div class="small-box bg-info h-100">
                             <div class="inner">
                                 <h3>
                                     @if (!empty($TotalRevenue))
@@ -107,7 +107,7 @@
                     <!-- ./col -->
                     <div class="col-6">
                         <!-- small box -->
-                        <div class="small-box bg-success">
+                        <div class="small-box bg-info h-100">
                             <div class="inner">
                                 <h3>
                                     @if (!empty($TotalProfit))
@@ -140,7 +140,7 @@
                 <div class="row">
                     <div class="col-6">
                         <!-- small box -->
-                        <div class="small-box bg-warning">
+                        <div class="small-box bg-warning h-100">
                             <div class="inner">
                                 <h3>
                                     {{ $totalClient }}
@@ -158,7 +158,7 @@
                     <!-- ./col -->
                     <div class="col-6">
                         <!-- small box -->
-                        <div class="small-box bg-success">
+                        <div class="small-box bg-info h-100">
                             <div class="inner">
                                 <h3>
                                     {{ $emailCount }}
@@ -287,7 +287,7 @@
                     </div>
                     <div class="col-6">
                         <!-- small box -->
-                        <div class="small-box bg-success">
+                        <div class="small-box bg-info h-100">
                             <div class="inner">
                                 <h3>
                                     ${{ number_format($totalCampsCost, 2) }}
@@ -331,7 +331,7 @@
                     </div>
                     <div class="col-6">
                         <!-- small box -->
-                        <div class="small-box bg-success">
+                        <div class="small-box bg-info h-100">
                             <div class="inner">
                                 <h3>
                                     ${{ number_format($totalSuccessCampsCost, 2) }}
@@ -418,10 +418,6 @@
                         <div class="media-right">
                             <a class="btn btn-success btn-rounded" href="{!! URL::route('paypal.create') !!}">Add Funds</a>
                         </div>
-
-                        <!--<div class="media-right">
-                                                                                                                                                                                                                    <a class="btn btn-primary btn-rounded" href="https://www.adbirt.com/transfer/request">Claim $10</a>
-                                                                                                                                                                                                                </div>-->
                     @endif
                 </div>
             </div>
@@ -440,7 +436,7 @@
         <div class="row">
             <div class="col-lg-3 col-6">
                 <!-- small box -->
-                <div class="small-box bg-info">
+                <div class="small-box bg-info h-100">
                     <div class="inner">
                         <h3>{{ $ActiveAd }}</h3>
 
@@ -456,7 +452,7 @@
             <!-- ./col -->
             <div class="col-lg-3 col-6">
                 <!-- small box -->
-                <div class="small-box bg-success">
+                <div class="small-box bg-info h-100">
                     <div class="inner">
                         <h3>{{ $Impressions }}
                             <!-- <sup style="font-size: 20px">%</sup> -->
@@ -473,7 +469,7 @@
             <!-- ./col -->
             <div class="col-lg-3 col-6">
                 <!-- small box -->
-                <div class="small-box bg-warning">
+                <div class="small-box bg-warning h-100">
                     <div class="inner">
                         <h3>{{ $Clicks }}</h3>
 
@@ -547,7 +543,7 @@
 
         <div class="col-6 col-lg-3">
             <!-- small box -->
-            <div class="small-box bg-success">
+            <div class="small-box bg-info h-100">
                 <div class="inner">
                     <h3>
                         {{ $ActiveAd }}
@@ -566,7 +562,7 @@
 
         <div class="col-6 col-lg-3">
             <!-- small box -->
-            <div class="small-box bg-info">
+            <div class="small-box bg-info h-100">
                 <div class="inner">
                     <h3>
                         {{ $Impressions }}
@@ -602,7 +598,7 @@
 
         <div class="col-6 col-lg-3">
             <!-- small box -->
-            <div class="small-box bg-warning">
+            <div class="small-box bg-warning h-100">
                 <div class="inner">
                     <h3>
                         {{ $Leads }}

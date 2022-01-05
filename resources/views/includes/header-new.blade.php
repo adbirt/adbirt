@@ -100,7 +100,7 @@ $NotifyCnt = count($Notify);
             </div>
         </li> -->
 
-        <!-- Notifications Dropdown Menu -->
+        <!-- Begin Notifications Dropdown Menu -->
         <li class="nav-item dropdown">
             <a class="nav-link btn mx-1 text-primary-color p-2" data-toggle="dropdown" href="#">
                 <i class="fa fa-bell fa-lg"></i>
@@ -166,7 +166,9 @@ $NotifyCnt = count($Notify);
                 @endif
             </div>
         </li>
-        <!-- Help Menu -->
+        <!-- End Notifications Dropdown Menu -->
+
+        <!-- Begin Help Menu -->
         <li class="nav-item dropdown">
             <a class="nav-link btn mx-1 text-primary-color p-2" data-toggle="help" href="#">
                 <i class="fa fa-question fa-lg"></i>
@@ -194,12 +196,8 @@ $NotifyCnt = count($Notify);
 
             </div>
         </li>
-        <li class="nav-item">
-            <a class="nav-link btn mx-1 text-primary-color p-2" href="javascript:alert('Coming soon')" role="button"
-                title="Help">
-                <i class="fa fa-question fa-lg"></i>
-            </a>
-        </li>
+        <!-- End Help Menu -->
+
         <li class="nav-item">
             <a class="nav-link btn mx-1 text-primary-color p-2" data-widget="fullscreen" href="#" role="button">
                 <i class="fa fa-expand-arrows-alt fa-lg"></i>

@@ -16,7 +16,7 @@ use App\Model\campaignorders;
 use App\Model\campaignTransaction;
 use App\Model\rolesModel;
 use App\Model\WalletHistoryModel;
-use App\Model\companyprofile;
+// use App\Model\companyprofile;
 use Redirect;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -161,6 +161,7 @@ class AuthController extends Controller
         $converted = preg_replace("/[^0-9.]/", "", $converted['1']);
         return number_format(round($converted, 3), 2);
     }
+
     public function dashboard()
     {
 
@@ -265,11 +266,11 @@ class AuthController extends Controller
         $Leads = 0;
 
         if (Auth::user()->hasRole('vendor')) {
-            $myPro = companyprofile::where('user_id', Auth::user()->id)->first();
+            // $myPro = companyprofile::where('user_id', Auth::user()->id)->first();
 
-            if (empty($myPro)) {
-                \Session::flash('Error_message', "Set Your Company Profile first");
-            }
+            // if (empty($myPro)) {
+            //     \Session::flash('Error_message', "Set Your Company Profile first");
+            // }
 
             $totalCampsByVenodr = campaignorders::with('campaign')
                 ->where('advertiser_id', Auth::user()->id)

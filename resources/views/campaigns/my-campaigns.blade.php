@@ -83,9 +83,6 @@
                     @endif
                     </tbody>
                     </table>
-                    @if (isset($campaignsData))
-                        {!! $campaignsData->render() !!}
-                    @endif
                 </div>
             </div><!-- /.box-body -->
         </div><!-- /.box -->

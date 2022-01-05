@@ -21,9 +21,9 @@
     <div class="layout-content" data-scrollable>
         <div class="container-fluid">
             <!--<ol class="breadcrumb">
-                                                                                                                                                                                                            <li><a href="{!! route('dashboard') !!}">Home</a></li>
-                                                                                                                                                                                                            <li class="active">Dashboard</li>
-                                                                                                                                                                                                        </ol> -->
+                                                                                                                                                                                                                <li><a href="{!! route('dashboard') !!}">Home</a></li>
+                                                                                                                                                                                                                <li class="active">Dashboard</li>
+                                                                                                                                                                                                            </ol> -->
             @include('includes.alert')
             @if (Session::has('flash_message'))
                 <div class="alert bg-success alert-styled-left" id="msg">
@@ -420,8 +420,8 @@
                         </div>
 
                         <!--<div class="media-right">
-                                                                                                                                                                                                                <a class="btn btn-primary btn-rounded" href="https://www.adbirt.com/transfer/request">Claim $10</a>
-                                                                                                                                                                                                            </div>-->
+                                                                                                                                                                                                                    <a class="btn btn-primary btn-rounded" href="https://www.adbirt.com/transfer/request">Claim $10</a>
+                                                                                                                                                                                                                </div>-->
                     @endif
                 </div>
             </div>

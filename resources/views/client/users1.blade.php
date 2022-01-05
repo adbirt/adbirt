@@ -10,7 +10,7 @@
         <div class="container-fluid">
             @include('includes.alert')
             <div class="alert bg-success alert-styled-left SuccessMsg" id="msg" style="display:none;">
-                <button type="button" class="close" data-dismiss="alert"><span>×</span><span
+                <button type="button" class="close" data-dismiss="alert"><span>&times;</span><span
                         class="sr-only">Close</span></button>
                 <span class="text-semibold">
                     User is Successfully Deleted
@@ -51,11 +51,20 @@
                                     </td> --}}
                                         <td class="pl-2 d-flex flex-row align-items-center justify-content-start">
                                             <a class="btn btn-info btn-sm btn-archive Editbtn"
-                                                href="{!! URL::route('user.show', ['id' => $user->id]) !!}" style="margin-right: 3px;">Show</a>
+                                                href="{!! $user->id !!}" style="margin-right: 3px;">
+                                                Edit <i class="fa fa-edit"></i>
+                                            </a>
+
+                                            <a class="btn btn-info btn-sm btn-archive Editbtn"
+                                                href="/user/{!! URL::route('user.show', ['id' => $user->id]) !!}/edit" style="margin-right: 3px;">
+                                                Show <i class="fa fa-eye"></i>
+                                            </a>
 
                                             <a href="javascript:void(0);"
                                                 class="btn btn-danger btn-sm btn-archive deleteBtn"
-                                                Onclick=Del({{ $user->id }});>Delete</a>
+                                                Onclick="Del({{ $user->id }});">
+                                                Delete <i class="fa fa-trash"></i>
+                                            </a>
                                         </td>
                                     </tr>
                                 @endforeach

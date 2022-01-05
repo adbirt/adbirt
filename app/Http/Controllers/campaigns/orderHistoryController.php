@@ -70,33 +70,6 @@ class orderHistoryController extends Controller
         return campaignorders::where('advert_code', $number)->exists();
     }
 
-    public function formdetail(Request $request)
-    {
-        try {
-
-            $input = $request->all();
-            $camp_code = $input['publisher_code'];
-            $advert = campaignorders::with('campaign', 'advertiser', 'publisher')
-                ->where('advert_code', $camp_code)
-                ->first();
-            //print_r($advert->campaign);
-            //print_r($advert->campaign->form_id);
-            $form['formid'] = $advert->campaign->form_id;
-            $form['formclass'] = $advert->campaign->form_class;
-            $form['buttonid'] = $advert->campaign->button_id;
-            $form['dom_modified'] = $advert->campaign->dom_modified;
-            $form['selector'] = $advert->campaign->selector;
-
-            return json_encode($form);
-
-        } catch (\Throwable $th) {
-            return json_encode(array(
-                'status' => 500,
-                'message' => 'error - campaign code is invalid',
-            ));
-        }
-    }
-
     public function getDomain($url)
     {
         $pieces = parse_url($url);
@@ -259,11 +232,8 @@ class orderHistoryController extends Controller
                                         "To" => $advert->advertiser->phone, // Text this number
                                         "Body" => $AdvertiserMsg,
                                     ));
-
-                                } catch (Services_Twilio_RestException $e) {
-
+                                } catch (\Services_Twilio_RestException $e) {
                                 }
-
                             } else {
                                 $email = $advert->advertiser->email;
                                 $heading = "Campaign Consumed";
@@ -285,12 +255,12 @@ class orderHistoryController extends Controller
 
                             $Notify = new NotificationAlertModel;
                             $Notify->heading = "Your Promoted Campaign has been consumed";
-                            $Notify->content = "Dear " . $advert->publisher->name . ", your Promoted Campaign " . $advert->campaign->campaign_title . " from " . $advert->advertiser->name . " has just been patronize today at " . $startDate . " via your website " . $destUrl . "  NOTE: We do not tolerate SPAM and Invalid Activity on your Publisher’s Account.";
+                            $Notify->content = "Dear " . $advert->publisher->name . ", your Promoted Campaign " . $advert->campaign->campaign_name . " from " . $advert->advertiser->name . " has just been patronize today at " . $startDate . " via your website " . $destUrl . ". NOTE: We do not tolerate SPAM and Invalid Activity on your Account.";
                             $Notify->type = "Campaign consumed";
                             $Notify->Notify_Receivers_Id = $advert->publisher_id;
                             $Notify->save();
 
-                            $PublisherMsg = "Dear " . $advert->publisher->name . ", your Promoted Campaign " . $advert->campaign->campaign_title . " from " . $advert->advertiser->name . " has just been patronize today at " . $startDate . " via your website " . $destUrl . " NOTE: We do not tolerate SPAM and Invalid Activity on your Publisher’s Account.";
+                            $PublisherMsg = "Dear " . $advert->publisher->name . ", your Promoted Campaign " . $advert->campaign->campaign_name . " from " . $advert->advertiser->name . " has just been patronize today at " . $startDate . " via your website " . $destUrl . ". NOTE: We do not tolerate SPAM and Invalid Activity on your Account.";
 
                             if ($advert->publisher->login == "phone") {
 
@@ -306,11 +276,8 @@ class orderHistoryController extends Controller
                                         "To" => $advert->publisher->phone, // Text this number
                                         "Body" => $PublisherMsg,
                                     ));
-
-                                } catch (Services_Twilio_RestException $e) {
-
+                                } catch (\Services_Twilio_RestException $e) {
                                 }
-
                             } else {
                                 $email = $advert->publisher->email;
                                 $heading = "Campaign Consumed";
@@ -381,24 +348,25 @@ class orderHistoryController extends Controller
             $this->outputData['message'] = "method_not_allowed";
             return response()->json($this->outputData, 405);
         }
-    } 
+    }
 
 
-    public function checkIfUrlIsValidCampaign(Request $request){
+    public function checkIfUrlIsValidCampaign(Request $request)
+    {
 
         // e.g https://birotojob.com
 
         $input = $request->all();
         $method = $request->method();
         $header = $request->header();
-        
+
         $url_in_question = $input['url_in_question'];
         $url_type = 'success'; // 'landing' or 'success'
 
         if (isset($input['url_type'])) {
             $url_type = $input['url_type'];
         }
-        
+
         $campaign = Campaign::where($url_type == 'landing' ? 'campaign_url' : 'campaign_success_url', 'like',  '%' . $url_in_question . '%')->first();
 
         // $this->outputData['campaign'] = $campaign;
@@ -411,7 +379,6 @@ class orderHistoryController extends Controller
         }
 
         return response()->json($this->outputData, 200);
-        
     }
 
     /**

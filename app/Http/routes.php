@@ -15,12 +15,6 @@ Route::get('/', function () {
     return Redirect::route('dashboard');
 });
 
-Route::get('/clear-cache', function () {
-
-    Artisan::call('optimize:clear');
-    return "Cleared!";
-});
-
 Route::any('/ubm_getbanner', 'campaigns\campaignsController@getbanner');
 
 Route::any('/ubm_banner_click/{id}', 'campaigns\campaignsController@bannerClick');
@@ -34,8 +28,6 @@ Route::any('/campaigns/inccampview/{id}', 'campaigns\campaignsController@inccamp
 Route::any('/campaigns/verified', 'campaigns\orderHistoryController@credit');
 
 Route::any('/api/check-if-url-is-valid-campaign', 'campaigns\orderHistoryController@checkIfUrlIsValidCampaign');
-
-Route::any('/campaigns/formbuttonid', 'campaigns\orderHistoryController@formdetail');
 
 Route::get('/', ['as' => 'home', 'uses' => 'AdminController@home']);
 Route::get('how-it-works', ['as' => 'how-it-works', 'uses' => 'AdminController@howitworks']);
@@ -257,8 +249,10 @@ Route::get('payment/status', array(
     'uses' => 'PaypalController@getPaymentStatus',
 ));
 
-Route::get('/clearr-cache', function () {
+Route::get('/clear-cache', function () {
+    \Artisan::call('optimize:clear');
     \Artisan::call('cache:clear');
     \Artisan::call('schedule:run');
+
     return "Cache is cleared";
 });

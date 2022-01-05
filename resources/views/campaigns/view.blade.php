@@ -251,7 +251,6 @@
         </div>
 
         <nav class="center">
-            --here
             @if (isset($campaignsData))
                 {!! $campaignsData->render() !!}
             @endif

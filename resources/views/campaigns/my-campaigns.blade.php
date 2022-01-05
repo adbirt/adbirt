@@ -47,7 +47,7 @@
                                 <thead>
                                     <tr>
                                         <th>Name</th>
-                                        <th>Title</th>
+                                        {{-- <th>Title</th> --}}
                                         <th>Price</th>
                                         <th>Status</th>
                                         <th>Action</th>
@@ -57,7 +57,8 @@
                                     @foreach ($campaignsData as $value)
                                         <tr id="data-{!! $value->campaign->id !!}">
                                             <td class="campaigns_name">{!! ucwords($value->campaign->campaign_name) !!}</td>
-                                            <td class="campaigns_name">{!! ucwords($value->campaign->campaign_title) !!}</td>
+                                            {{-- <td class="campaigns_name">{!! ucwords($value->campaign->campaign_title) !!}</td> --}}
+                                            <td class="campaigns_name">{!! getCategoryName($categories, $value->campaign->id) !!}</td>
                                             <td class="campaigns_name">${!! number_format($value->campaign->campaign_cost_per_action, 2) !!}</td>
                                             <td>
                                                 <div

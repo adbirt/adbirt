@@ -42,13 +42,13 @@
             <div class="Formbox">
                 @include('includes.alert')
                 <!--<ol class="breadcrumb">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li><a href="{{ url('/') }}">Home</a></li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @if (isset($campaignsData))
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="active">{!! $title = 'Update Ad' !!}</li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li><a href="{{ url('/') }}">Home</a></li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @if (isset($campaignsData))
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="active">{!! $title = 'Update Ad' !!}</li>
                     @else
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="active">{!! $title = 'Add new Ad' !!}</li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @endif
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ol>-->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="active">{!! $title = 'Add new Ad' !!}</li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @endif
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ol>-->
 
                 @if (Session::has('flash_message'))
                     <div class="alert bg-info alert-styled-left">
@@ -81,6 +81,11 @@
                                         <input type="text" name="campaign_name" parsley-trigger="change" required
                                             placeholder="Campaign Name" class="form-control" id="campaign_name"
                                             parsely-maxlength=150 maxlength=150 @if (isset($campaignsData) && !empty($campaignsData->campaign_name)) value="{{ $campaignsData->campaign_name }}" @endif>
+                                        <div>
+                                            <small>
+                                                Maximum of 150 characters (including white-spaces) allowed
+                                            </small>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -270,7 +275,7 @@
 
                                     <span style="color:red;" id="response"></span>
                                     <!-- <span id="width"></span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <span id="height"></span> -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <span id="height"></span> -->
                                 </div>
                             </div>
                             <div class="form-group">
@@ -353,29 +358,20 @@
     </div><!-- /.row -->
     </section><!-- /.content -->
 
-
     <!-- Modal for delete confirm -->
-
-
-
 @stop
 
 
 
 @section('script')
-
     <!-- jQuery -->
-
     {!! Html::script('dist/vendor/jquery.min.js') !!}
 
     <!-- Bootstrap -->
-
     {!! Html::script('dist/vendor/tether.min.js') !!}
-
     {!! Html::script('dist/vendor/bootstrap.min.js') !!}
 
     <!-- AdminPlus -->
-
     {!! Html::script('dist/vendor/adminplus.js') !!}
 
     <!-- App JS -->

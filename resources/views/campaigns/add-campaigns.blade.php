@@ -255,7 +255,6 @@
 
                                         <div class="col-12">
                                             <center class="campaign-type-holder">
-                                                {!! asset('uploads/campaign_banners/' . $campaignsData->campaign_banner) !!}
                                                 <img style="max-width: 500px;"
                                                     class="w-100 image-banner {!! isset($campaignsData) && !empty($campaignsData->banner_type) && $campaignsData->banner_type == 'image' ? 'd-block' : 'd-none' !!} @if (!isset($campaignsData)) d-block @endif"
                                                     src="{{ isset($campaignsData) && !empty($campaignsData->campaign_banner) ? asset('uploads/campaign_banners/' . $campaignsData->campaign_banner) : asset('assets/photos/Placeholder.jpg') }}"

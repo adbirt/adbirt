@@ -182,18 +182,18 @@ $NotifyCnt = count($Notify);
                 </span>
 
                 <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item p-2 cursor-pointer">
-                    <i class="fa fa-help mr-2"></i> Tour Gide
+                <a href="javascript:alert('coming soon')" class="dropdown-item p-2 cursor-pointer">
+                    Tour Gide <i class="fa fa-question mr-2"></i>
                 </a>
 
                 <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item p-2 cursor-pointer">
-                    <i class="fa fa-help mr-2"></i> FAQs
+                <a href="/faq" class="dropdown-item p-2 cursor-pointer">
+                    FAQs <i class="fa fa-question mr-2"></i>
                 </a>
 
                 <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item p-2 cursor-pointer">
-                    <i class="fa fa-help mr-2"></i> Contact Us
+                <a href="/contact" class="dropdown-item p-2 cursor-pointer">
+                    Contact Us <i class="fa fa-question mr-2"></i>
                 </a>
 
             </div>

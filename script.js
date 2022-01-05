@@ -58,6 +58,15 @@
     const videoBanner = document.querySelector('.video-banner');
 
     const setBannerType = (value) => {
+
+        [imageBanner, videoBanner].forEach((banner) => {
+            banner.classList.contains('d-none') && banner.classList.remove('d-none');
+            banner.classList.contains('d-block') && banner.classList.remove('d-block');
+        });
+        bannerSizeInputFieldContainer.style.display = '';
+
+        window.bannerType = value;
+
         if (value == banner_types.IMG) {
             bannerSizeInputFieldContainer.style.display = '';
             imageBanner.classList.add('d-block');
@@ -74,6 +83,15 @@
     }
 
     const setCampaignType = (value) => {
+
+        successPageInputContainer.style.display = '';
+        landingpageHint.style.display = '';
+        bannerSizeInputFieldContainer.style.display = 'none';
+        (bannerTypeInputField.getAttribute('disabled')) && bannerTypeInputField.removeAttribute(
+            'disabled');
+
+        window.campaignType = value;
+
         if (value == campaign_types.CPA) {
 
             (bannerSizeInputField.getAttribute('disabled')) && bannerSizeInputField.removeAttribute(
@@ -108,12 +126,6 @@
 
     const bannerTypeChanged = (e) => {
 
-        [imageBanner, videoBanner].forEach((banner) => {
-            banner.classList.contains('d-none') && banner.classList.remove('d-none');
-            banner.classList.contains('d-block') && banner.classList.remove('d-block');
-        });
-        bannerSizeInputFieldContainer.style.display = '';
-
         /**
          * @type {typeof banner_types}
          */
@@ -124,12 +136,6 @@
     }
 
     const campaignTypeChanged = (e) => {
-
-        successPageInputContainer.style.display = '';
-        landingpageHint.style.display = '';
-        bannerSizeInputFieldContainer.style.display = 'none';
-        (bannerTypeInputField.getAttribute('disabled')) && bannerTypeInputField.removeAttribute(
-            'disabled');
 
         /**
          * @type {typeof campaign_types}

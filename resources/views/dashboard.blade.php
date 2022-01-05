@@ -210,9 +210,9 @@
                     </div>
                     <!-- ./col -->
 
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 mt-1">
                         <!-- small box -->
-                        <div class="small-box bg-warning">
+                        <div class="small-box bg-warning h-100">
                             <div class="inner">
                                 <h3>
                                     {{ $NonActiveClient }}

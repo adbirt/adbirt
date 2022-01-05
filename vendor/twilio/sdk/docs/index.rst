@@ -53,14 +53,14 @@ Make a Call
       '+12125551234', // Call any number
 
       // Read TwiML at this URL when a call connects (hold music)
-      'http://twimlets.com/holdmusic?Bucket=com.twilio.music.ambient'
+      'https://twimlets.com/holdmusic?Bucket=com.twilio.music.ambient'
     );
 
 Generating TwiML
 >>>>>>>>>>>>>>>>
 
 To control phone calls, your application needs to output `TwiML
-<http://www.twilio.com/docs/api/twiml/>`_. Use :class:`Services_Twilio_Twiml`
+<https://www.twilio.com/docs/api/twiml/>`_. Use :class:`Services_Twilio_Twiml`
 to easily create such responses.
 
 .. code-block:: php
@@ -217,7 +217,7 @@ After installation, run the tests with :data:`make`.
 Making the Documentation
 >>>>>>>>>>>>>>>>>>>>>>>>>>
 
-Our documentation is written using `Sphinx <http://sphinx.pocoo.org/>`_. You'll
+Our documentation is written using `Sphinx <https://sphinx.pocoo.org/>`_. You'll
 need to install Sphinx and the Sphinx PHP domain before you can build the docs.
 
 .. code-block:: bash

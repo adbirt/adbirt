@@ -3,7 +3,7 @@
 namespace Faker\Provider;
 
 /**
- * Depends on image generation from http://lorempixel.com/
+ * Depends on image generation from https://lorempixel.com/
  */
 class Image extends Base
 {
@@ -17,11 +17,11 @@ class Image extends Base
      *
      * Set randomize to false to remove the random GET parameter at the end of the url.
      *
-     * @example 'http://lorempixel.com/640/480/?12345'
+     * @example 'https://lorempixel.com/640/480/?12345'
      */
     public static function imageUrl($width = 640, $height = 480, $category = null, $randomize = true, $word = null, $gray = false)
     {
-        $baseUrl = "http://lorempixel.com/";
+        $baseUrl = "https://lorempixel.com/";
         $url = "{$width}/{$height}/";
         
         if ($gray) {

@@ -1,12 +1,12 @@
 /**
  * Natural sort.
- * http://www.datatables.net/plug-ins/sorting
+ * https://www.datatables.net/plug-ins/sorting
  */
 (function () {
     /**
      * Alpha-Numeric Sort
      *
-     * Source: http://my.opera.com/GreyWyvern/blog/show.dml/1671288
+     * Source: https://my.opera.com/GreyWyvern/blog/show.dml/1671288
      *
      * @param {String} a
      * @param {String} b

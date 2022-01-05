@@ -27,7 +27,7 @@ The :attr:`account` attribute
 You access the Twilio API resources through this :attr:`$client`,
 specifically the :attr:`$account` attribute, which is an instance of
 :php:class:`Services_Twilio_Rest_Account`. We'll use the `Calls resource
-<http://www.twilio.com/docs/api/rest/call>`_ as an example.
+<https://www.twilio.com/docs/api/rest/call>`_ as an example.
 
 Listing Resources
 ====================

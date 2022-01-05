@@ -10,7 +10,7 @@ class UrlValidatorTest extends \PHPUnit_Framework_TestCase
     {
         return array(
             array("https://www.paypal.com"),
-            array("http://www.paypal.com"),
+            array("https://www.paypal.com"),
             array("https://paypal.com"),
             array("https://www.paypal.com/directory/file"),
             array("https://www.paypal.com/directory/file?something=1&other=true"),

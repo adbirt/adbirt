@@ -17,7 +17,7 @@ class ItemTest extends \PHPUnit_Framework_TestCase
      */
     public static function getJson()
     {
-        return '{"sku":"TestSample","name":"TestSample","description":"TestSample","quantity":"12.34","price":"12.34","currency":"TestSample","tax":"12.34","url":"http://www.google.com","category":"TestSample","weight":' . MeasurementTest::getJson() . ',"length":' . MeasurementTest::getJson() . ',"height":' . MeasurementTest::getJson() . ',"width":' . MeasurementTest::getJson() . ',"supplementary_data":' . NameValuePairTest::getJson() . ',"postback_data":' . NameValuePairTest::getJson() . '}';
+        return '{"sku":"TestSample","name":"TestSample","description":"TestSample","quantity":"12.34","price":"12.34","currency":"TestSample","tax":"12.34","url":"https://www.google.com","category":"TestSample","weight":' . MeasurementTest::getJson() . ',"length":' . MeasurementTest::getJson() . ',"height":' . MeasurementTest::getJson() . ',"width":' . MeasurementTest::getJson() . ',"supplementary_data":' . NameValuePairTest::getJson() . ',"postback_data":' . NameValuePairTest::getJson() . '}';
     }
 
     /**
@@ -70,7 +70,7 @@ class ItemTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($obj->getPrice(), "12.34");
         $this->assertEquals($obj->getCurrency(), "TestSample");
         $this->assertEquals($obj->getTax(), "12.34");
-        $this->assertEquals($obj->getUrl(), "http://www.google.com");
+        $this->assertEquals($obj->getUrl(), "https://www.google.com");
         $this->assertEquals($obj->getCategory(), "TestSample");
         $this->assertEquals($obj->getWeight(), MeasurementTest::getObject());
         $this->assertEquals($obj->getLength(), MeasurementTest::getObject());

@@ -21,7 +21,7 @@ use Symfony\Component\Config\Resource\ResourceInterface;
  * with a given name.
  *
  * @author Fabien Potencier <fabien@symfony.com>
- * @author Tobias Schultze <http://tobion.de>
+ * @author Tobias Schultze <https://tobion.de>
  */
 class RouteCollection implements \IteratorAggregate, \Countable
 {

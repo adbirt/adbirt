@@ -5,7 +5,7 @@
  * @category Services
  * @package  Services_Twilio
  * @author Justin Witz <justin.witz@twilio.com>
- * @license  http://creativecommons.org/licenses/MIT/ MIT
+ * @license  https://creativecommons.org/licenses/MIT/ MIT
  */
 class Services_Twilio_TaskRouter_CapabilityAPI
 {
@@ -101,7 +101,7 @@ class Services_Twilio_TaskRouter_CapabilityAPI
  * @category Services
  * @package  Services_Twilio
  * @author Justin Witz <justin.witz@twilio.com>
- * @license  http://creativecommons.org/licenses/MIT/ MIT
+ * @license  https://creativecommons.org/licenses/MIT/ MIT
  */
 class Policy
 {

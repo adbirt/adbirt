@@ -27,8 +27,8 @@
                 }
             },
             "redirect_urls": {
-                "return_url": "http://localhost/Server-SDK/rest-api-sdk-php/sample/payments/ExecutePayment.php?success=true",
-                "cancel_url": "http://localhost/Server-SDK/rest-api-sdk-php/sample/payments/ExecutePayment.php?success=false"
+                "return_url": "https://localhost/Server-SDK/rest-api-sdk-php/sample/payments/ExecutePayment.php?success=true",
+                "cancel_url": "https://localhost/Server-SDK/rest-api-sdk-php/sample/payments/ExecutePayment.php?success=false"
             },
             "transactions": [
                 {

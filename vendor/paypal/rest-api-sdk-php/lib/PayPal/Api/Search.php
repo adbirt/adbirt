@@ -220,7 +220,7 @@ class Search extends PayPalModel
     }
 
     /**
-     * The start date for the invoice. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * The start date for the invoice. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @param string $start_invoice_date
      * 
@@ -233,7 +233,7 @@ class Search extends PayPalModel
     }
 
     /**
-     * The start date for the invoice. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * The start date for the invoice. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @return string
      */
@@ -243,7 +243,7 @@ class Search extends PayPalModel
     }
 
     /**
-     * The end date for the invoice. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * The end date for the invoice. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @param string $end_invoice_date
      * 
@@ -256,7 +256,7 @@ class Search extends PayPalModel
     }
 
     /**
-     * The end date for the invoice. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * The end date for the invoice. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @return string
      */
@@ -266,7 +266,7 @@ class Search extends PayPalModel
     }
 
     /**
-     * The start due date for the invoice. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * The start due date for the invoice. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @param string $start_due_date
      * 
@@ -279,7 +279,7 @@ class Search extends PayPalModel
     }
 
     /**
-     * The start due date for the invoice. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * The start due date for the invoice. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @return string
      */
@@ -289,7 +289,7 @@ class Search extends PayPalModel
     }
 
     /**
-     * The end due date for the invoice. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * The end due date for the invoice. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @param string $end_due_date
      * 
@@ -302,7 +302,7 @@ class Search extends PayPalModel
     }
 
     /**
-     * The end due date for the invoice. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * The end due date for the invoice. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @return string
      */
@@ -312,7 +312,7 @@ class Search extends PayPalModel
     }
 
     /**
-     * The start payment date for the invoice. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * The start payment date for the invoice. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @param string $start_payment_date
      * 
@@ -325,7 +325,7 @@ class Search extends PayPalModel
     }
 
     /**
-     * The start payment date for the invoice. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * The start payment date for the invoice. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @return string
      */
@@ -335,7 +335,7 @@ class Search extends PayPalModel
     }
 
     /**
-     * The end payment date for the invoice. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * The end payment date for the invoice. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @param string $end_payment_date
      * 
@@ -348,7 +348,7 @@ class Search extends PayPalModel
     }
 
     /**
-     * The end payment date for the invoice. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * The end payment date for the invoice. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @return string
      */
@@ -358,7 +358,7 @@ class Search extends PayPalModel
     }
 
     /**
-     * The start creation date for the invoice. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * The start creation date for the invoice. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @param string $start_creation_date
      * 
@@ -371,7 +371,7 @@ class Search extends PayPalModel
     }
 
     /**
-     * The start creation date for the invoice. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * The start creation date for the invoice. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @return string
      */
@@ -381,7 +381,7 @@ class Search extends PayPalModel
     }
 
     /**
-     * The end creation date for the invoice. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * The end creation date for the invoice. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @param string $end_creation_date
      * 
@@ -394,7 +394,7 @@ class Search extends PayPalModel
     }
 
     /**
-     * The end creation date for the invoice. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * The end creation date for the invoice. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @return string
      */

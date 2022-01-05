@@ -312,7 +312,7 @@
                 }
             ],
             "description": "The PHP Unit Testing framework.",
-            "homepage": "http://www.phpunit.de/",
+            "homepage": "https://www.phpunit.de/",
             "keywords": [
                 "phpunit",
                 "testing",
@@ -407,11 +407,11 @@
                 {
                     "name": "Daniele Alessandri",
                     "email": "suppakilla@gmail.com",
-                    "homepage": "http://clorophilla.net"
+                    "homepage": "https://clorophilla.net"
                 }
             ],
             "description": "Flexible and feature-complete PHP client library for Redis",
-            "homepage": "http://github.com/nrk/predis",
+            "homepage": "https://github.com/nrk/predis",
             "keywords": [
                 "nosql",
                 "predis",
@@ -486,7 +486,7 @@
                 }
             ],
             "description": "PHP_CodeSniffer tokenizes PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
-            "homepage": "http://www.squizlabs.com/php-codesniffer",
+            "homepage": "https://www.squizlabs.com/php-codesniffer",
             "keywords": [
                 "phpcs",
                 "standards"

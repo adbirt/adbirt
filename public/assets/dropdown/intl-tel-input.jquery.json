@@ -21,11 +21,11 @@
   }],
   "author": {
     "name": "Jack O'Connor",
-    "url": "http://jackocnr.com"
+    "url": "https://jackocnr.com"
   },
   "dependencies": {
     "jquery": ">=1.7"
   },
-  "demo": "http://jackocnr.com/intl-tel-input.html",
+  "demo": "https://jackocnr.com/intl-tel-input.html",
   "title": "International Telephone Input"
 }

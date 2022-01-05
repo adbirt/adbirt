@@ -1,4 +1,4 @@
-![Stringy](http://danielstjules.com/github/stringy-logo.png)
+![Stringy](https://danielstjules.com/github/stringy-logo.png)
 
 A PHP string manipulation library with multibyte support. Offers both OO method
 chaining and a procedural-style static wrapper. Tested and compatible with
@@ -390,8 +390,8 @@ S::ensureLeft(string $substring [, string $encoding ])
 Ensures that the string begins with $substring. If it doesn't, it's prepended.
 
 ```php
-S::create('foobar')->ensureLeft('http://');
-S::ensureLeft('foobar', 'http://');  // 'http://foobar'
+S::create('foobar')->ensureLeft('https://');
+S::ensureLeft('foobar', 'https://');  // 'https://foobar'
 ```
 
 #### ensureRight

@@ -18,7 +18,7 @@ class Person extends \Faker\Provider\Person
 
     /*
      *
-     * {@link} http://www.armeniapedia.org/wiki/Armenian_Male_Names
+     * {@link} https://www.armeniapedia.org/wiki/Armenian_Male_Names
      */
     protected static $firstNameMale = array(
         'Աբգար', 'Աբէլ', 'Ազատ', 'Ազնաւուր', 'Ազնուական', 'Ալիշան', 'Ակնունի', 'Աղան', 'Աղասի', 'Ամարաս', 'Այգեկ', 'Անակ',
@@ -57,7 +57,7 @@ class Person extends \Faker\Provider\Person
 
     /*
      *
-     * {@link} http://www.armeniapedia.org/wiki/Armenian_Female_Names
+     * {@link} https://www.armeniapedia.org/wiki/Armenian_Female_Names
      */
     protected static $firstNameFemale = array(
         'Ազատուհի', 'Ազգանոյշ', 'Ազնիւ', 'Ալիծ', 'Ալին', 'Ալիս', 'Ալիք', 'Ալվարդ', 'Աղաւնի', 'Աղբիւր', 'Աղուոր', 'Ամանոր', 'Այծեամ', 'Այծեմնիկ',

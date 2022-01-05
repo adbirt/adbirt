@@ -140,7 +140,7 @@ class XliffFileLoader implements LoaderInterface
         $location = 'file:///'.$drive.implode('/', array_map('rawurlencode', $parts));
 
         $source = file_get_contents(__DIR__.'/schema/dic/xliff-core/xliff-core-1.2-strict.xsd');
-        $source = str_replace('http://www.w3.org/2001/xml.xsd', $location, $source);
+        $source = str_replace('https://www.w3.org/2001/xml.xsd', $location, $source);
 
         $disableEntities = libxml_disable_entity_loader(false);
 

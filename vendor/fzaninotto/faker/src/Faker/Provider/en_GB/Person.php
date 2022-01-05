@@ -13,7 +13,7 @@ class Person extends \Faker\Provider\Person
     );
 
     /**
-     * @link http://www.ons.gov.uk/ons/rel/vsob1/baby-names--england-and-wales/2013/index.html
+     * @link https://www.ons.gov.uk/ons/rel/vsob1/baby-names--england-and-wales/2013/index.html
      */
     protected static $firstNameMale = array(
         'Aaron', 'Adam', 'Adrian', 'Aiden', 'Alan', 'Alex', 'Alexander', 'Alfie', 'Andrew', 'Andy', 'Anthony', 'Archie', 'Arthur',
@@ -67,7 +67,7 @@ class Person extends \Faker\Provider\Person
     );
 
     /**
-     * @link http://surname.sofeminine.co.uk/w/surnames/most-common-surnames-in-great-britain.html
+     * @link https://surname.sofeminine.co.uk/w/surnames/most-common-surnames-in-great-britain.html
      */
     protected static $lastName = array(
         'Adams', 'Allen', 'Anderson',

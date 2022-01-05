@@ -6,7 +6,7 @@ include_once 'JWT.php';
  * @category Services
  * @package  Services_Twilio
  * @author Jeff Lindsay <jeff.lindsay@twilio.com>
- * @license  http://creativecommons.org/licenses/MIT/ MIT
+ * @license  https://creativecommons.org/licenses/MIT/ MIT
  */
 class Services_Twilio_Capability
 {

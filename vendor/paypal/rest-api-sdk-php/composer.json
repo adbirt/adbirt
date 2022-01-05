@@ -4,7 +4,7 @@
     "keywords": ["paypal", "payments", "rest", "sdk"],
     "type": "library",
     "license": "Apache-2.0",
-    "homepage": "http://paypal.github.io/PayPal-PHP-SDK/",
+    "homepage": "https://paypal.github.io/PayPal-PHP-SDK/",
     "authors": [
         {
             "name": "PayPal",

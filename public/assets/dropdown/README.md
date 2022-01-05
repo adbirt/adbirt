@@ -3,7 +3,7 @@ A jQuery plugin for entering and validating international telephone numbers. It 
 
 <img src="https://raw.github.com/jackocnr/intl-tel-input/master/screenshot.png" width="424px" height="246px">
 
-If you like it, please consider making a donation, which you can do from [the demo page](http://intl-tel-input.com).
+If you like it, please consider making a donation, which you can do from [the demo page](https://intl-tel-input.com).
 
 ## Table of Contents
 
@@ -23,7 +23,7 @@ If you like it, please consider making a donation, which you can do from [the de
 
 
 ## Demo and Examples
-You can view a live demo and some examples of how to use the various options here: http://intl-tel-input.com, or try it for yourself using the included demo.html.
+You can view a live demo and some examples of how to use the various options here: https://intl-tel-input.com, or try it for yourself using the included demo.html.
 
 
 ## Features
@@ -45,7 +45,7 @@ You can view a live demo and some examples of how to use the various options her
 Note: In v11.0.0 we dropped support for IE8, because it is no longer supported by any version of Windows - see https://www.xfive.co/blog/stop-supporting-ie10-ie9-ie8/
 
 ## Getting Started
-1. Download the [latest release](https://github.com/jackocnr/intl-tel-input/releases/latest), or better yet install it with [npm](https://www.npmjs.com/) or [Bower](http://bower.io)
+1. Download the [latest release](https://github.com/jackocnr/intl-tel-input/releases/latest), or better yet install it with [npm](https://www.npmjs.com/) or [Bower](https://bower.io)
 
 2. Include the stylesheet
   ```html
@@ -82,7 +82,7 @@ You can always get the full international number (including country code) using 
 
 
 ## Options
-Note: any options that take country codes should be [ISO 3166-1 alpha-2](http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) codes  
+Note: any options that take country codes should be [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) codes  
 
 **allowDropdown**  
 Type: `Boolean` Default: `true`  
@@ -131,10 +131,10 @@ Format the input value (according to the `nationalMode` option) during initialis
 Type: `Function` Default: `null`  
 When setting `initialCountry` to `"auto"`, you must use this option to specify a custom function that looks up the user's location. Also note that when instantiating the plugin, we now return a [deferred object](https://api.jquery.com/category/deferred-object/), so you can use `.done(callback)` to know when initialisation requests like this have completed.
 
-Here is an example using the [ipinfo.io](http://ipinfo.io/) service (note: this service requires a paid account to use over HTTPS):  
+Here is an example using the [ipinfo.io](https://ipinfo.io/) service (note: this service requires a paid account to use over HTTPS):  
 ```js
 geoIpLookup: function(callback) {
-  $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+  $.get("https://ipinfo.io", function() {}, "jsonp").always(function(resp) {
     var countryCode = (resp && resp.country) ? resp.country : "";
     callback(countryCode);
   });
@@ -145,13 +145,13 @@ _Tip: store the result in a cookie to avoid repeat lookups!_
 
 **initialCountry**  
 Type: `String` Default: `""`  
-Set the initial country selection by specifying it's country code. You can also set it to `"auto"`, which will lookup the user's country based on their IP address (requires the `geoIpLookup` option - [see example](http://intl-tel-input.com/node_modules/intl-tel-input/examples/gen/default-country-ip.html)). Note that the `"auto"` option will not update the country selection if the input already contains a number.
+Set the initial country selection by specifying it's country code. You can also set it to `"auto"`, which will lookup the user's country based on their IP address (requires the `geoIpLookup` option - [see example](https://intl-tel-input.com/node_modules/intl-tel-input/examples/gen/default-country-ip.html)). Note that the `"auto"` option will not update the country selection if the input already contains a number.
 
 If you leave `initialCountry` blank, it will default to the first country in the list.
 
 **nationalMode**  
 Type: `Boolean` Default: `true`  
-Allow users to enter national numbers (and not have to think about international dial codes). Formatting, validation and placeholders still work. Then you can use `getNumber` to extract a full international number - [see example](http://intl-tel-input.com/node_modules/intl-tel-input/examples/gen/national-mode.html). This option now defaults to `true`, and it is recommended that you leave it that way as it provides a better experience for the user.
+Allow users to enter national numbers (and not have to think about international dial codes). Formatting, validation and placeholders still work. Then you can use `getNumber` to extract a full international number - [see example](https://intl-tel-input.com/node_modules/intl-tel-input/examples/gen/national-mode.html). This option now defaults to `true`, and it is recommended that you leave it that way as it provides a better experience for the user.
 
 **placeholderNumberType**  
 Type: `String` Default: `"MOBILE"`  
@@ -159,7 +159,7 @@ Specify [one of the keys](https://github.com/jackocnr/intl-tel-input/blob/master
 
 **onlyCountries**  
 Type: `Array` Default: `undefined`  
-Display only the countries you specify - [see example](http://intl-tel-input.com/node_modules/intl-tel-input/examples/gen/only-countries-europe.html).
+Display only the countries you specify - [see example](https://intl-tel-input.com/node_modules/intl-tel-input/examples/gen/only-countries-europe.html).
 
 **preferredCountries**  
 Type: `Array` Default: `["us", "gb"]`  
@@ -192,7 +192,7 @@ var extension = $("#phone").intlTelInput("getExtension");
 Returns a string e.g. if the input value was `"(702) 555-5555 ext. 1234"`, this would return `"1234"`
 
 **getNumber**  
-Get the current number in the given format (defaults to [E.164 standard](http://en.wikipedia.org/wiki/E.164)). The different formats are available in the enum `intlTelInputUtils.numberFormat` - which you can see [here](https://github.com/jackocnr/intl-tel-input/blob/master/src/js/utils.js#L109). Requires the `utilsScript` option. _Note that even if `nationalMode` is enabled, this can still return a full international number. Also note that this method expects a valid number, and so should only be used after validation._  
+Get the current number in the given format (defaults to [E.164 standard](https://en.wikipedia.org/wiki/E.164)). The different formats are available in the enum `intlTelInputUtils.numberFormat` - which you can see [here](https://github.com/jackocnr/intl-tel-input/blob/master/src/js/utils.js#L109). Requires the `utilsScript` option. _Note that even if `nationalMode` is enabled, this can still return a full international number. Also note that this method expects a valid number, and so should only be used after validation._  
 ```js
 var intlNumber = $("#phone").intlTelInput("getNumber");
 // or
@@ -240,7 +240,7 @@ if (error == intlTelInputUtils.validationError.TOO_SHORT) {
 ```
 
 **isValidNumber**  
-Validate the current number - [see example](http://intl-tel-input.com/node_modules/intl-tel-input/examples/gen/is-valid-number.html). Expects an internationally formatted number (unless `nationalMode` is enabled). If validation fails, you can use `getValidationError` to get more information. Requires the `utilsScript` option. Also see `getNumberType` if you want to make sure the user enters a certain type of number e.g. a mobile number.  
+Validate the current number - [see example](https://intl-tel-input.com/node_modules/intl-tel-input/examples/gen/is-valid-number.html). Expects an internationally formatted number (unless `nationalMode` is enabled). If validation fails, you can use `getValidationError` to get more information. Requires the `utilsScript` option. Also see `getNumberType` if you want to make sure the user enters a certain type of number e.g. a mobile number.  
 ```js
 var isValid = $("#phone").intlTelInput("isValidNumber");
 ```
@@ -262,7 +262,7 @@ $("#phone").intlTelInput("setNumber", "+447733123456");
 ## Static Methods
 
 **getCountryData**  
-Get all of the plugin's country data - either to re-use elsewhere e.g. to populate a country dropdown - [see example](http://intl-tel-input.com/node_modules/intl-tel-input/examples/gen/country-sync.html), or to modify - [see example](http://intl-tel-input.com/node_modules/intl-tel-input/examples/gen/modify-country-data.html). Note that any modifications must be done before initialising the plugin.  
+Get all of the plugin's country data - either to re-use elsewhere e.g. to populate a country dropdown - [see example](https://intl-tel-input.com/node_modules/intl-tel-input/examples/gen/country-sync.html), or to modify - [see example](https://intl-tel-input.com/node_modules/intl-tel-input/examples/gen/modify-country-data.html). Note that any modifications must be done before initialising the plugin.  
 ```js
 var countryData = $.fn.intlTelInput.getCountryData();
 ```
@@ -283,7 +283,7 @@ $.fn.intlTelInput.loadUtils("build/js/utils.js");
 ```
 
 **~~setCountryData~~ [REMOVED]**  
-Set the plugin's country data. This method was removed because it makes much more sense to just use `getCountryData` and then modify that ([see example](http://intl-tel-input.com/node_modules/intl-tel-input/examples/gen/modify-country-data.html)) instead of having to generate the whole thing yourself - the country data has become increasingly complicated and for each country we now have five properties: the name, [iso2 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2), international dial code, priority (in case two countries have the same international dial code), and finally a list of area codes used in that country - see [data.js](https://github.com/jackocnr/intl-tel-input/blob/master/src/js/data.js#L36) for more info.
+Set the plugin's country data. This method was removed because it makes much more sense to just use `getCountryData` and then modify that ([see example](https://intl-tel-input.com/node_modules/intl-tel-input/examples/gen/modify-country-data.html)) instead of having to generate the whole thing yourself - the country data has become increasingly complicated and for each country we now have five properties: the name, [iso2 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2), international dial code, priority (in case two countries have the same international dial code), and finally a list of area codes used in that country - see [data.js](https://github.com/jackocnr/intl-tel-input/blob/master/src/js/data.js#L36) for more info.
 
 
 ## Events
@@ -296,11 +296,11 @@ $("#phone").on("countrychange", function(e, countryData) {
   // do something with countryData
 });
 ```
-See an example here: [Country sync](http://intl-tel-input.com/node_modules/intl-tel-input/examples/gen/country-sync.html)
+See an example here: [Country sync](https://intl-tel-input.com/node_modules/intl-tel-input/examples/gen/country-sync.html)
 
 
 ## Utilities Script
-The utilities script ([build/js/utils.js](build/js/utils.js)) is a custom build of Google's [libphonenumber](http://libphonenumber.googlecode.com) which enables the following features:
+The utilities script ([build/js/utils.js](build/js/utils.js)) is a custom build of Google's [libphonenumber](https://libphonenumber.googlecode.com) which enables the following features:
 
 * Formatting upon initialisation, as well as with `getNumber` and `setNumber`
 * Validation with `isValidNumber`, `getNumberType` and `getValidationError` methods
@@ -320,7 +320,7 @@ $("form").submit(function() {
   myInput.val(myInput.intlTelInput("getNumber"));
 });
 ```
-But this way the user will see their value change when they submit the form, which is weird. A better solution would be to update the value of a separate hidden input, and then read that POST variable on the server instead. See an example of this solution [here](http://intl-tel-input.com/node_modules/intl-tel-input/examples/gen/hidden-input.html).  
+But this way the user will see their value change when they submit the form, which is weird. A better solution would be to update the value of a separate hidden input, and then read that POST variable on the server instead. See an example of this solution [here](https://intl-tel-input.com/node_modules/intl-tel-input/examples/gen/hidden-input.html).  
 
 **Full width input**  
 If you want your input to be full-width, you need to set the container to be the same i.e.
@@ -341,7 +341,7 @@ The dropdown should automatically appear above/below the input depending on the 
 In order to get the automatic country-specific placeholders, simply omit the placeholder attribute on the `<input>`.
 
 **Bootstrap input groups**  
-A couple of CSS fixes are required to get the plugin to play nice with Bootstrap [input groups](http://getbootstrap.com/components/#input-groups). You can see a Codepen [here](http://codepen.io/jackocnr/pen/EyPXed).  
+A couple of CSS fixes are required to get the plugin to play nice with Bootstrap [input groups](https://getbootstrap.com/components/#input-groups). You can see a Codepen [here](https://codepen.io/jackocnr/pen/EyPXed).  
 _Note: there is currently [a bug](https://bugs.webkit.org/show_bug.cgi?id=141822) in Mobile Safari which causes a crash when you click the dropdown arrow (a CSS triangle) inside an input group. The simplest workaround is to remove the CSS triangle with this line: `.intl-tel-input .iti-flag .arrow {border: none;}`_
 
 
@@ -352,7 +352,7 @@ See the [contributing guide](https://github.com/jackocnr/intl-tel-input/blob/mas
 ## Attributions
 * Flag images from [region-flags](https://github.com/behdad/region-flags)
 * Original country data from mledoze's [World countries in JSON, CSV and XML](https://github.com/mledoze/countries)
-* Formatting/validation/example number code from [libphonenumber](http://libphonenumber.googlecode.com)
+* Formatting/validation/example number code from [libphonenumber](https://libphonenumber.googlecode.com)
 * Feature contributions are listed in the wiki: [Contributions](https://github.com/jackocnr/intl-tel-input/wiki/Contributions)
 
 

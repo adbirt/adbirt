@@ -98,7 +98,7 @@ Record
 
     $response = new Services_Twilio_Twiml;
     $response->record(array(
-      'action' => 'http://foo.com/path/to/redirect',
+      'action' => 'https://foo.com/path/to/redirect',
       'maxLength' => 20
     ));
     print $response;
@@ -107,7 +107,7 @@ Record
 
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-      <Record action="http://foo.com/path/to/redirect" maxLength="20"/>
+      <Record action="https://foo.com/path/to/redirect" maxLength="20"/>
     </Response>
 
 Message
@@ -275,14 +275,14 @@ Redirect
 .. code-block:: php
 
     $response = new Services_Twilio_Twiml;
-    $response->redirect('http://twimlets.com/voicemail?Email=somebody@somedomain.com');
+    $response->redirect('https://twimlets.com/voicemail?Email=somebody@somedomain.com');
     print $response;
     
 .. code-block:: xml
 
     <?xml version="1.0" encoding="UTF-8"?>
     <Response>
-      <Redirect>http://twimlets.com/voicemail?Email=somebody@somedomain.com</Redirect>
+      <Redirect>https://twimlets.com/voicemail?Email=somebody@somedomain.com</Redirect>
     </Response>
 
 

@@ -3,8 +3,8 @@
 /**
  * Parent class for usage resources that expose a single date, eg 'Today', 'ThisMonth', etc
  * @author Kevin Burke <kevin@twilio.com>
- * @license  http://creativecommons.org/licenses/MIT/ MIT
- * @link     http://pear.php.net/package/Services_Twilio
+ * @license  https://creativecommons.org/licenses/MIT/ MIT
+ * @link     https://pear.php.net/package/Services_Twilio
  */
 class Services_Twilio_TimeRangeResource extends Services_Twilio_UsageResource {
 
@@ -13,7 +13,7 @@ class Services_Twilio_TimeRangeResource extends Services_Twilio_UsageResource {
      *
      * @param string $category The category of usage to retrieve. For a full 
      *      list of valid categories, please see the documentation at 
-     *      http://www.twilio.com/docs/api/rest/usage-records#usage-all-categories
+     *      https://www.twilio.com/docs/api/rest/usage-records#usage-all-categories
      * @return Services_Twilio_Rest_UsageRecord
      * @throws Services_Twilio_RestException
      */

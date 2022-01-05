@@ -48,7 +48,7 @@
                 </div>
                 <div class="p-a-2">
                     {!! Form::open(['route' => 'user.store', 'method' => 'post', 'id' => 'register']) !!}
-                    <!-- <form action="http://learnplus.themekit.io/index.html" method="get"> -->
+                    <!-- <form action="https://learnplus.themekit.io/index.html" method="get"> -->
                     <div class="form-group">
                         {!! Form::text('name', '', ['class' => 'form-control', 'placeholder' => 'Full Name']) !!}
                         <!--<span class="glyphicon glyphicon-user form-control-feedback"></span>

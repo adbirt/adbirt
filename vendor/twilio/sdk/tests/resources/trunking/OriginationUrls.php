@@ -58,7 +58,7 @@ class TrunkingOriginationUrlsTest extends PHPUnit_Framework_TestCase
         $http = m::mock(new Services_Twilio_TinyHttp);
         $http->shouldReceive('post')->once()
             ->with('/v1/Trunks/TK123/OriginationUrls/OU123', $this->formHeaders,
-                'FriendlyName=TestUrl&SipUrl=http://sip.com')
+                'FriendlyName=TestUrl&SipUrl=https://sip.com')
             ->andReturn(array(200, array('Content-Type' => 'application/json'),
                 json_encode(array('sid' => 'OU123'))
             ));
@@ -67,7 +67,7 @@ class TrunkingOriginationUrlsTest extends PHPUnit_Framework_TestCase
         $origination_url = $trunk->origination_urls->get('OU123');
         $origination_url->update(array(
             'FriendlyName' => 'TestUrl',
-            'SipUrl' => 'http://sip.com'
+            'SipUrl' => 'https://sip.com'
         ));
         $this->assertSame('OU123', $orignation_url->sid);
     }

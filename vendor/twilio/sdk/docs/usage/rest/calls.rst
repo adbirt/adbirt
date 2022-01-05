@@ -13,7 +13,7 @@ The :class:`Calls` resource allows you to make outgoing calls:
     $call = $client->account->calls->create(
       '9991231234', // From this number
       '8881231234', // Call this number
-      'http://foo.com/call.xml'
+      'https://foo.com/call.xml'
     );
     print $call->length;
     print $call->sid;
@@ -29,15 +29,15 @@ Add extra parameters, like a `StatusCallback` when the call ends, like this:
     $call = $client->account->calls->create(
         '9991231234', // From this number
         '8881231234', // Call this number
-        'http://foo.com/call.xml',
+        'https://foo.com/call.xml',
         array(
-        'StatusCallback' => 'http://foo.com/callback',
+        'StatusCallback' => 'https://foo.com/callback',
         'StatusCallbackMethod' => 'GET'
         )
     );
 
 A full list of extra parameters can be found `here
-<http://www.twilio.com/docs/api/rest/making-calls#post-parameters-optional>`_.
+<https://www.twilio.com/docs/api/rest/making-calls#post-parameters-optional>`_.
 
 Listing Calls
 =============
@@ -143,7 +143,7 @@ redirect them as necessary:
     $client = new Services_Twilio('AC123', '123');
     $calls = $client->account->calls->getIterator(0, 50, array('Status' => 'in-progress'));
     foreach ($calls as $call) {
-      $call->update(array('Url' => 'http://foo.com/new.xml', 'Method' => 'POST'));
+      $call->update(array('Url' => 'https://foo.com/new.xml', 'Method' => 'POST'));
     }
 
 Ending all live calls is also possible:

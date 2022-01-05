@@ -913,7 +913,7 @@ class campaignsController extends Controller
                                         <h4>Recommended</h4>
                                     </div>
                                     <div class="adbirt-native-recommendations-info">
-                                        <a href="http://adbirt.com/actions-and-events" target="_blank">
+                                        <a href="https://adbirt.com/actions-and-events" target="_blank">
                                             <small>
                                                 Learn More >
                                             </small>
@@ -956,7 +956,7 @@ class campaignsController extends Controller
                                 <div class="adbirt-native-recommendations-footer">
                                     <strong>
                                         <em>
-                                            Sponsored by <a href="http://adbirt.com" target="_blank">Adbirt</a>
+                                            Sponsored by <a href="https://adbirt.com" target="_blank">Adbirt</a>
                                         </em>
                                     </strong>
                                 </div>

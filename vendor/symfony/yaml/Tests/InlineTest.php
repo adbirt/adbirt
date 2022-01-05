@@ -324,7 +324,7 @@ class InlineTest extends \PHPUnit_Framework_TestCase
 
             // sequences
             // urls are no key value mapping. see #3609. Valid yaml "key: value" mappings require a space after the colon
-            array('[foo, http://urls.are/no/mappings, false, null, 12]', array('foo', 'http://urls.are/no/mappings', false, null, 12)),
+            array('[foo, https://urls.are/no/mappings, false, null, 12]', array('foo', 'https://urls.are/no/mappings', false, null, 12)),
             array('[  foo  ,   bar , false  ,  null     ,  12  ]', array('foo', 'bar', false, null, 12)),
             array('[\'foo,bar\', \'foo bar\']', array('foo,bar', 'foo bar')),
 
@@ -391,7 +391,7 @@ class InlineTest extends \PHPUnit_Framework_TestCase
 
             // sequences
             // urls are no key value mapping. see #3609. Valid yaml "key: value" mappings require a space after the colon
-            array('[foo, http://urls.are/no/mappings, false, null, 12]', array('foo', 'http://urls.are/no/mappings', false, null, 12)),
+            array('[foo, https://urls.are/no/mappings, false, null, 12]', array('foo', 'https://urls.are/no/mappings', false, null, 12)),
             array('[  foo  ,   bar , false  ,  null     ,  12  ]', array('foo', 'bar', false, null, 12)),
             array('[\'foo,bar\', \'foo bar\']', array('foo,bar', 'foo bar')),
 

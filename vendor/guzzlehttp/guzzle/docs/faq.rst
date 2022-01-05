@@ -70,7 +70,7 @@ makes it easy.
 Large Ecosystem
 ---------------
 
-Guzzle has a large `ecosystem of plugins <http://guzzle.readthedocs.org/en/latest/index.html#http-components>`_,
+Guzzle has a large `ecosystem of plugins <https://guzzle.readthedocs.org/en/latest/index.html#http-components>`_,
 including `service descriptions <https://github.com/guzzle/guzzle-services>`_
 which allows you to abstract web services using service descriptions. These
 service descriptions define how to serialize an HTTP request and how to parse
@@ -119,7 +119,7 @@ nesting limit. Change this setting in your php.ini to increase the limit::
 
     xdebug.max_nesting_level = 1000
 
-[`source <http://stackoverflow.com/a/4293870/151504>`_]
+[`source <https://stackoverflow.com/a/4293870/151504>`_]
 
 Why am I getting a 417 error response?
 ======================================
@@ -144,7 +144,7 @@ setting the ``expect`` request option to ``false``:
 How can I add custom cURL options?
 ==================================
 
-cURL offer a huge number of `customizable options <http://us1.php.net/curl_setopt>`_.
+cURL offer a huge number of `customizable options <https://us1.php.net/curl_setopt>`_.
 While Guzzle normalizes many of these options across different adapters, there
 are times when you need to set custom cURL options. This can be accomplished
 by passing an associative array of cURL settings in the **curl** key of the
@@ -166,7 +166,7 @@ used with a client.
 How can I add custom stream context options?
 ============================================
 
-You can pass custom `stream context options <http://www.php.net/manual/en/context.php>`_
+You can pass custom `stream context options <https://www.php.net/manual/en/context.php>`_
 using the **stream_context** key of the **config** request option. The
 **stream_context** array is an associative array where each key is a PHP
 transport, and each value is an associative array of transport options.

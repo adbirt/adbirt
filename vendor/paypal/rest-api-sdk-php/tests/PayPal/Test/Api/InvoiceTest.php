@@ -18,7 +18,7 @@ class InvoiceTest extends \PHPUnit_Framework_TestCase
      */
     public static function getJson()
     {
-        return '{"id":"TestSample","number":"TestSample","template_id":"TestSample","uri":"TestSample","status":"TestSample","merchant_info":' .MerchantInfoTest::getJson() . ',"billing_info":' .BillingInfoTest::getJson() . ',"cc_info":' .ParticipantTest::getJson() . ',"shipping_info":' .ShippingInfoTest::getJson() . ',"items":' .InvoiceItemTest::getJson() . ',"invoice_date":"TestSample","payment_term":' .PaymentTermTest::getJson() . ',"reference":"TestSample","discount":' .CostTest::getJson() . ',"shipping_cost":' .ShippingCostTest::getJson() . ',"custom":' .CustomAmountTest::getJson() . ',"allow_partial_payment":true,"minimum_amount_due":' .CurrencyTest::getJson() . ',"tax_calculated_after_discount":true,"tax_inclusive":true,"terms":"TestSample","note":"TestSample","merchant_memo":"TestSample","logo_url":"http://www.google.com","total_amount":' .CurrencyTest::getJson() . ',"payments":' .PaymentDetailTest::getJson() . ',"refunds":' .RefundDetailTest::getJson() . ',"metadata":' .MetadataTest::getJson() . ',"additional_data":"TestSample","gratuity":' .CurrencyTest::getJson() . ',"paid_amount":' .PaymentSummaryTest::getJson() . ',"refunded_amount":' .PaymentSummaryTest::getJson() . ',"attachments":' .FileAttachmentTest::getJson() . '}';
+        return '{"id":"TestSample","number":"TestSample","template_id":"TestSample","uri":"TestSample","status":"TestSample","merchant_info":' .MerchantInfoTest::getJson() . ',"billing_info":' .BillingInfoTest::getJson() . ',"cc_info":' .ParticipantTest::getJson() . ',"shipping_info":' .ShippingInfoTest::getJson() . ',"items":' .InvoiceItemTest::getJson() . ',"invoice_date":"TestSample","payment_term":' .PaymentTermTest::getJson() . ',"reference":"TestSample","discount":' .CostTest::getJson() . ',"shipping_cost":' .ShippingCostTest::getJson() . ',"custom":' .CustomAmountTest::getJson() . ',"allow_partial_payment":true,"minimum_amount_due":' .CurrencyTest::getJson() . ',"tax_calculated_after_discount":true,"tax_inclusive":true,"terms":"TestSample","note":"TestSample","merchant_memo":"TestSample","logo_url":"https://www.google.com","total_amount":' .CurrencyTest::getJson() . ',"payments":' .PaymentDetailTest::getJson() . ',"refunds":' .RefundDetailTest::getJson() . ',"metadata":' .MetadataTest::getJson() . ',"additional_data":"TestSample","gratuity":' .CurrencyTest::getJson() . ',"paid_amount":' .PaymentSummaryTest::getJson() . ',"refunded_amount":' .PaymentSummaryTest::getJson() . ',"attachments":' .FileAttachmentTest::getJson() . '}';
     }
 
     /**
@@ -104,7 +104,7 @@ class InvoiceTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($obj->getTerms(), "TestSample");
         $this->assertEquals($obj->getNote(), "TestSample");
         $this->assertEquals($obj->getMerchantMemo(), "TestSample");
-        $this->assertEquals($obj->getLogoUrl(), "http://www.google.com");
+        $this->assertEquals($obj->getLogoUrl(), "https://www.google.com");
         $this->assertEquals($obj->getTotalAmount(), CurrencyTest::getObject());
         $this->assertEquals($obj->getPayments(), PaymentDetailTest::getObject());
         $this->assertEquals($obj->getRefunds(), RefundDetailTest::getObject());

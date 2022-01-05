@@ -9,7 +9,7 @@ At times it can be useful to ensure that column titles will remain always visibl
 
 # Installation
 
-To use FixedHeader, first download DataTables ( http://datatables.net/download ) and place the unzipped FixedHeader package into a `extensions` directory in the DataTables package. This will allow the pages in the examples to operate correctly. To see the examples running, open the `examples` directory in your web-browser.
+To use FixedHeader, first download DataTables ( https://datatables.net/download ) and place the unzipped FixedHeader package into a `extensions` directory in the DataTables package. This will allow the pages in the examples to operate correctly. To see the examples running, open the `examples` directory in your web-browser.
 
 
 # Basic usage
@@ -26,8 +26,8 @@ $(document).ready( function () {
 
 # Documentation / support
 
-* Documentation: http://datatables.net/extensions/FixedHeader/
-* DataTables support forums: http://datatables.net/forums
+* Documentation: https://datatables.net/extensions/FixedHeader/
+* DataTables support forums: https://datatables.net/forums
 
 
 # GitHub

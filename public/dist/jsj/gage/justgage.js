@@ -1,6 +1,6 @@
 /**
  * JustGage - this is work-in-progress, unreleased, unofficial code, so it might not work top-notch :)
- * Check http://www.justgage.com for official releases
+ * Check https://www.justgage.com for official releases
  * Licensed under MIT.
  * @author Bojan Djuricic  (@Toorshia)
  *
@@ -660,7 +660,7 @@
   setDy(obj.txtMax, obj.params.maxFontSize, obj.params.maxY);
 
   var defs = obj.canvas.canvas.childNodes[1];
-  var svg = "http://www.w3.org/2000/svg";
+  var svg = "https://www.w3.org/2000/svg";
 
   if (ie < 9) {
     onCreateElementNsReady(function() {
@@ -974,7 +974,7 @@ function cutHex(str) {
   return (str.charAt(0)=="#") ? str.substring(1,7):str;
 }
 
-/**  Human friendly number suffix - From: http://stackoverflow.com/questions/2692323/code-golf-friendly-number-abbreviator */
+/**  Human friendly number suffix - From: https://stackoverflow.com/questions/2692323/code-golf-friendly-number-abbreviator */
 function humanFriendlyNumber( n, d ) {
   var p, d2, i, s;
 
@@ -990,7 +990,7 @@ function humanFriendlyNumber( n, d ) {
  return n;
 }
 
-/** Format numbers with commas - From: http://stackoverflow.com/questions/2901102/how-to-print-a-number-with-commas-as-thousands-separators-in-javascript */
+/** Format numbers with commas - From: https://stackoverflow.com/questions/2901102/how-to-print-a-number-with-commas-as-thousands-separators-in-javascript */
 function formatNumber(x) {
     var parts = x.toString().split(".");
     parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");

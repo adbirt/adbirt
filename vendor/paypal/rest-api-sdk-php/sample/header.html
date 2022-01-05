@@ -109,7 +109,7 @@
         $( document ).ready(function() {
             $("#accordion .panel-collapse:last").collapse('toggle');
 
-            $(document.body).append('<footer class="footer"> <div class="container"> <div class="footer-div"> <ul class="footer-links"> <li> <a href="http://paypal.github.io/PayPal-PHP-SDK/" target="_blank"><i class="fa fa-github"></i> PayPal PHP SDK</a></li><li> <a href="https://developer.paypal.com/webapps/developer/docs/api/" target="_blank"><i class="fa fa-book"></i> REST API Reference</a> </li><li> <a href="https://github.com/paypal/PayPal-PHP-SDK/issues" target="_blank"><i class="fa fa-exclamation-triangle"></i> Report Issues </a> </li></ul> </div></div></footer>');
+            $(document.body).append('<footer class="footer"> <div class="container"> <div class="footer-div"> <ul class="footer-links"> <li> <a href="https://paypal.github.io/PayPal-PHP-SDK/" target="_blank"><i class="fa fa-github"></i> PayPal PHP SDK</a></li><li> <a href="https://developer.paypal.com/webapps/developer/docs/api/" target="_blank"><i class="fa fa-book"></i> REST API Reference</a> </li><li> <a href="https://github.com/paypal/PayPal-PHP-SDK/issues" target="_blank"><i class="fa fa-exclamation-triangle"></i> Report Issues </a> </li></ul> </div></div></footer>');
 
 
             $(".prettyprint").each(function() {
@@ -119,7 +119,7 @@
         });
 
 
-        /* http://stackoverflow.com/questions/4810841/how-can-i-pretty-print-json-using-javascript */
+        /* https://stackoverflow.com/questions/4810841/how-can-i-pretty-print-json-using-javascript */
         function syntaxHighlight(json) {
             json = json.replace(/&/g, '&').replace(/</g, '&lt;').replace(/>/g, '&gt;');
             return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function (match) {

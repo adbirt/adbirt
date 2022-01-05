@@ -89,7 +89,7 @@ class SerializableClosure implements \Serializable
      *                        protected and private methods of the bound object.
      *
      * @return SerializableClosure
-     * @link http://www.php.net/manual/en/closure.bindto.php
+     * @link https://www.php.net/manual/en/closure.bindto.php
      */
     public function bindTo($newthis, $newscope = 'static')
     {
@@ -103,7 +103,7 @@ class SerializableClosure implements \Serializable
      * Serializes the code, context, and binding of the closure.
      *
      * @return string|null
-     * @link http://php.net/manual/en/serializable.serialize.php
+     * @link https://php.net/manual/en/serializable.serialize.php
      */
     public function serialize()
     {
@@ -132,7 +132,7 @@ class SerializableClosure implements \Serializable
      * @param string $serialized
      *
      * @throws ClosureUnserializationException
-     * @link http://php.net/manual/en/serializable.unserialize.php
+     * @link https://php.net/manual/en/serializable.unserialize.php
      */
     public function unserialize($serialized)
     {

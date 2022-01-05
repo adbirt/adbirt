@@ -23,7 +23,7 @@ use GuzzleHttp\Message\MessageFactoryInterface;
  */
 class MultiAdapter implements AdapterInterface, ParallelAdapterInterface
 {
-    const ERROR_STR = 'See http://curl.haxx.se/libcurl/c/libcurl-errors.html for an explanation of cURL errors';
+    const ERROR_STR = 'See https://curl.haxx.se/libcurl/c/libcurl-errors.html for an explanation of cURL errors';
     const ENV_SELECT_TIMEOUT = 'GUZZLE_CURL_SELECT_TIMEOUT';
 
     /** @var CurlFactory */

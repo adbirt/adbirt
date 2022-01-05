@@ -6,7 +6,7 @@
  * PHP version 5.4
  *
  * @copyright  Copyright (c) 2012 The authors
- * @license    http://www.opensource.org/licenses/mit-license.html  MIT License
+ * @license    https://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
 use OAuth\OAuth2\Service\RunKeeper;

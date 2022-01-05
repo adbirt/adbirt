@@ -1,13 +1,13 @@
 /*
  * jQuery Pines Notify (pnotify) Plugin 1.2.0
  *
- * http://pinesframework.org/pnotify/
+ * https://pinesframework.org/pnotify/
  * Copyright (c) 2009-2012 Hunter Perrin
  *
  * Triple license under the GPL, LGPL, and MPL:
- *	  http://www.gnu.org/licenses/gpl.html
- *	  http://www.gnu.org/licenses/lgpl.html
- *	  http://www.mozilla.org/MPL/MPL-1.1.html
+ *	  https://www.gnu.org/licenses/gpl.html
+ *	  https://www.gnu.org/licenses/lgpl.html
+ *	  https://www.mozilla.org/MPL/MPL-1.1.html
  */
 
 (function($) {

@@ -4,7 +4,7 @@ namespace GuzzleHttp;
 
 /**
  * Provides mappings of file extensions to mimetypes
- * @link http://svn.apache.org/repos/asf/httpd/httpd/branches/1.3.x/conf/mime.types
+ * @link https://svn.apache.org/repos/asf/httpd/httpd/branches/1.3.x/conf/mime.types
  */
 class Mimetypes
 {

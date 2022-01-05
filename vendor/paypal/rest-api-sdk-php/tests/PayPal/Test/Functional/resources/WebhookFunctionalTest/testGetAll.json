@@ -33,7 +33,7 @@
          "webhooks":[
             {
                "id":"40Y916089Y8324740",
-               "url":"http://www.ebay.com/paypal_webhook",
+               "url":"https://www.ebay.com/paypal_webhook",
                "event_types":[
                   {
                      "name":"PAYMENT.AUTHORIZATION.CREATED",
@@ -64,7 +64,7 @@
             },
             {
                "id":"0EH40505U7160970P",
-               "url":"http://www.ebay.com/another_paypal_webhook",
+               "url":"https://www.ebay.com/another_paypal_webhook",
                "event_types":[
                   {
                      "name":"PAYMENT.AUTHORIZATION.CREATED",

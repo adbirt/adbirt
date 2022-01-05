@@ -14,7 +14,7 @@ use OAuth\Common\Http\Uri\UriInterface;
  * Dailymotion service.
  *
  * @author Mouhamed SEYE <mouhamed@seye.pro>
- * @link http://www.dailymotion.com/doc/api/authentication.html
+ * @link https://www.dailymotion.com/doc/api/authentication.html
  */
 class Dailymotion extends AbstractService
 {

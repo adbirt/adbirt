@@ -3,8 +3,8 @@
 /** 
  * Parent class for all UsageRecord subclasses
  * @author Kevin Burke <kevin@twilio.com>
- * @license  http://creativecommons.org/licenses/MIT/ MIT
- * @link     http://pear.php.net/package/Services_Twilio
+ * @license  https://creativecommons.org/licenses/MIT/ MIT
+ * @link     https://pear.php.net/package/Services_Twilio
  */
 class Services_Twilio_UsageResource extends Services_Twilio_ListResource {
     public function getResourceName($camelized = false) {

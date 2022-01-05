@@ -13,7 +13,7 @@ use OAuth\Common\Http\Uri\UriInterface;
 class GitHub extends AbstractService
 {
     /**
-     * Defined scopes, see http://developer.github.com/v3/oauth/ for definitions.
+     * Defined scopes, see https://developer.github.com/v3/oauth/ for definitions.
      */
 
     /**

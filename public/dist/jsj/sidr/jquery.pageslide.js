@@ -1,7 +1,7 @@
 /*
  * jQuery pageSlide
  * Version 2.0
- * http://srobbin.com/jquery-pageslide/
+ * https://srobbin.com/jquery-pageslide/
  *
  * jQuery Javascript plugin which slides a webpage over to reveal an additional interaction pane.
  *

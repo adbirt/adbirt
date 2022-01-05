@@ -22,7 +22,7 @@ class Text extends \Faker\Provider\Text
      * Language: Ukrainian
      *
      * @see     https://wikimediafoundation.org/wiki/Terms_of_Use/
-     * @link    http://uk.wikisource.org/wiki/%D0%97%D0%B0%D1%85%D0%B0%D1%80_%D0%91%D0%B5%D1%80%D0%BA%D1%83%D1%82
+     * @link    https://uk.wikisource.org/wiki/%D0%97%D0%B0%D1%85%D0%B0%D1%80_%D0%91%D0%B5%D1%80%D0%BA%D1%83%D1%82
      * @var string
      */
     protected static $baseText = <<<'EOT'
@@ -4216,7 +4216,7 @@ EOT;
     work that constitutes a Collection will not be considered an
     Adaptation (as defined below) for the purposes of this License.
     "Creative Commons Compatible License" means a license that is listed
-    at http://creativecommons.org/compatiblelicenses that has been
+    at https://creativecommons.org/compatiblelicenses that has been
     approved by Creative Commons as being essentially equivalent to this
     License, including, at a minimum, because that license: (i) contains
     terms that have the same purpose, meaning and effect as the License
@@ -4505,7 +4505,7 @@ EOT;
     available upon request from time to time. For the avoidance of doubt,
     this trademark restriction does not form part of the License.
 
-    Creative Commons may be contacted at http://creativecommons.org/.
+    Creative Commons may be contacted at https://creativecommons.org/.
 
     */
 }

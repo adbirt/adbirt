@@ -15,7 +15,7 @@
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -1036,7 +1036,7 @@
 			},
 			/*
 				Credits to Mike Samuel for the following method!
-				Source: http://stackoverflow.com/questions/10454518/javascript-how-to-retrieve-the-number-of-decimals-of-a-string-number
+				Source: https://stackoverflow.com/questions/10454518/javascript-how-to-retrieve-the-number-of-decimals-of-a-string-number
 			*/
 			_getPercentage: function(ev) {
 				if (this.touchCapable && (ev.type === 'touchstart' || ev.type === 'touchmove')) {

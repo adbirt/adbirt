@@ -67,7 +67,7 @@ class Text extends \Faker\Provider\Text
      * Author: جلال آل‌احمد
      * Language: Persian
      *
-     * @see http://fa.wikisource.org/wiki/%D9%85%D8%AF%DB%8C%D8%B1_%D9%85%D8%AF%D8%B1%D8%B3%D9%87
+     * @see https://fa.wikisource.org/wiki/%D9%85%D8%AF%DB%8C%D8%B1_%D9%85%D8%AF%D8%B1%D8%B3%D9%87
      * @var string
      */
     protected static $baseText = <<<'EOT'

@@ -51,7 +51,7 @@ class RequestTest extends \PHPUnit_Framework_TestCase
 
     public function testCastsToString()
     {
-        $r = new Request('GET', 'http://test.com/test', ['foo' => 'baz'], Stream::factory('body'));
+        $r = new Request('GET', 'https://test.com/test', ['foo' => 'baz'], Stream::factory('body'));
         $s = explode("\r\n", (string) $r);
         $this->assertEquals("GET /test HTTP/1.1", $s[0]);
         $this->assertContains('Host: test.com', $s);
@@ -62,7 +62,7 @@ class RequestTest extends \PHPUnit_Framework_TestCase
 
     public function testSettingUrlOverridesHostHeaders()
     {
-        $r = new Request('GET', 'http://test.com/test');
+        $r = new Request('GET', 'https://test.com/test');
         $r->setUrl('https://baz.com/bar');
         $this->assertEquals('baz.com', $r->getHost());
         $this->assertEquals('baz.com', $r->getHeader('Host'));
@@ -72,7 +72,7 @@ class RequestTest extends \PHPUnit_Framework_TestCase
 
     public function testQueryIsMutable()
     {
-        $r = new Request('GET', 'http://www.foo.com?baz=bar');
+        $r = new Request('GET', 'https://www.foo.com?baz=bar');
         $this->assertEquals('baz=bar', $r->getQuery());
         $this->assertInstanceOf('GuzzleHttp\Query', $r->getQuery());
         $r->getQuery()->set('hi', 'there');
@@ -81,46 +81,46 @@ class RequestTest extends \PHPUnit_Framework_TestCase
 
     public function testQueryCanChange()
     {
-        $r = new Request('GET', 'http://www.foo.com?baz=bar');
+        $r = new Request('GET', 'https://www.foo.com?baz=bar');
         $r->setQuery(new Query(['foo' => 'bar']));
         $this->assertEquals('foo=bar', $r->getQuery());
     }
 
     public function testCanChangeMethod()
     {
-        $r = new Request('GET', 'http://www.foo.com');
+        $r = new Request('GET', 'https://www.foo.com');
         $r->setMethod('put');
         $this->assertEquals('PUT', $r->getMethod());
     }
 
     public function testCanChangeSchemeWithPort()
     {
-        $r = new Request('GET', 'http://www.foo.com:80');
+        $r = new Request('GET', 'https://www.foo.com:80');
         $r->setScheme('https');
         $this->assertEquals('https://www.foo.com', $r->getUrl());
     }
 
     public function testCanChangeScheme()
     {
-        $r = new Request('GET', 'http://www.foo.com');
+        $r = new Request('GET', 'https://www.foo.com');
         $r->setScheme('https');
         $this->assertEquals('https://www.foo.com', $r->getUrl());
     }
 
     public function testCanChangeHost()
     {
-        $r = new Request('GET', 'http://www.foo.com:222');
+        $r = new Request('GET', 'https://www.foo.com:222');
         $r->setHost('goo');
-        $this->assertEquals('http://goo:222', $r->getUrl());
+        $this->assertEquals('https://goo:222', $r->getUrl());
         $this->assertEquals('goo:222', $r->getHeader('host'));
         $r->setHost('goo:80');
-        $this->assertEquals('http://goo', $r->getUrl());
+        $this->assertEquals('https://goo', $r->getUrl());
         $this->assertEquals('goo', $r->getHeader('host'));
     }
 
     public function testCanChangePort()
     {
-        $r = new Request('GET', 'http://www.foo.com:222');
+        $r = new Request('GET', 'https://www.foo.com:222');
         $this->assertSame(222, $r->getPort());
         $this->assertEquals('www.foo.com', $r->getHost());
         $this->assertEquals('www.foo.com:222', $r->getHeader('host'));

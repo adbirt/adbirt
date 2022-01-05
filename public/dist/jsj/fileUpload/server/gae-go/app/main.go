@@ -6,7 +6,7 @@
  * https://blueimp.net
  *
  * Licensed under the MIT license:
- * http://www.opensource.org/licenses/MIT
+ * https://www.opensource.org/licenses/MIT
  */
 
 package app
@@ -30,7 +30,7 @@ import (
 )
 
 const (
-	WEBSITE           = "http://blueimp.github.io/jQuery-File-Upload/"
+	WEBSITE           = "https://blueimp.github.io/jQuery-File-Upload/"
 	MIN_FILE_SIZE     = 1       // bytes
 	MAX_FILE_SIZE     = 5000000 // bytes
 	IMAGE_TYPES       = "image/(gif|p?jpeg|(x-)?png)"

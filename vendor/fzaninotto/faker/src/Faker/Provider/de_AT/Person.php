@@ -26,7 +26,7 @@ class Person extends \Faker\Provider\Person
 
     /**
          * 60 most popular names in 1985, 1995, 2005 and 2015
-         * {@link} http://www.statistik.at/wcm/idc/idcplg?IdcService=GET_PDF_FILE&RevisionSelectionMethod=LatestReleased&dDocName=021130
+         * {@link} https://www.statistik.at/wcm/idc/idcplg?IdcService=GET_PDF_FILE&RevisionSelectionMethod=LatestReleased&dDocName=021130
          **/
     protected static $firstNameMale = array(
         'Adrian', 'Alexander', 'Andreas', 'Anton',
@@ -53,7 +53,7 @@ class Person extends \Faker\Provider\Person
 
     /**
          * 60 most popular names in 1985, 1995, 2005 and 2015
-         * {@link} http://www.statistik.at/wcm/idc/idcplg?IdcService=GET_PDF_FILE&RevisionSelectionMethod=LatestReleased&dDocName=021130
+         * {@link} https://www.statistik.at/wcm/idc/idcplg?IdcService=GET_PDF_FILE&RevisionSelectionMethod=LatestReleased&dDocName=021130
          **/
     protected static $firstNameFemale = array(
         'Alexandra', 'Alexandrea', 'Algelika', 'Alina', 'Amelie', 'Andrea', 'Angelina', 'Anita', 'Anja', 'Anna', 'Anna-Lena', 'Annika', 'Astrid',

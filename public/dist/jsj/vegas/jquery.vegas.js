@@ -1,10 +1,10 @@
 // ----------------------------------------------------------------------------
 // Vegas – Fullscreen Backgrounds and Slideshows with jQuery.
 // Licensed under the MIT license.
-// http://vegas.jaysalvat.com/
+// https://vegas.jaysalvat.com/
 // ----------------------------------------------------------------------------
 // Copyright (C) 2013 Jay Salvat
-// http://jaysalvat.com/
+// https://jaysalvat.com/
 // ----------------------------------------------------------------------------
 
 (function($) {

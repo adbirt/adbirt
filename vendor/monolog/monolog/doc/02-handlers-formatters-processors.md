@@ -18,47 +18,47 @@
 - _StreamHandler_: Logs records into any PHP stream, use this for log files.
 - _RotatingFileHandler_: Logs records to a file and creates one logfile per day.
   It will also delete files older than `$maxFiles`. You should use
-  [logrotate](http://linuxcommand.org/man_pages/logrotate8.html) for high profile
+  [logrotate](https://linuxcommand.org/man_pages/logrotate8.html) for high profile
   setups though, this is just meant as a quick and dirty solution.
 - _SyslogHandler_: Logs records to the syslog.
 - _ErrorLogHandler_: Logs records to PHP's
-  [`error_log()`](http://docs.php.net/manual/en/function.error-log.php) function.
+  [`error_log()`](https://docs.php.net/manual/en/function.error-log.php) function.
 
 ### Send alerts and emails
 
 - _NativeMailerHandler_: Sends emails using PHP's
-  [`mail()`](http://php.net/manual/en/function.mail.php) function.
-- _SwiftMailerHandler_: Sends emails using a [`Swift_Mailer`](http://swiftmailer.org/) instance.
+  [`mail()`](https://php.net/manual/en/function.mail.php) function.
+- _SwiftMailerHandler_: Sends emails using a [`Swift_Mailer`](https://swiftmailer.org/) instance.
 - _PushoverHandler_: Sends mobile notifications via the [Pushover](https://www.pushover.net/) API.
-- _HipChatHandler_: Logs records to a [HipChat](http://hipchat.com) chat room using its API.
+- _HipChatHandler_: Logs records to a [HipChat](https://hipchat.com) chat room using its API.
 - _FlowdockHandler_: Logs records to a [Flowdock](https://www.flowdock.com/) account.
 - _SlackHandler_: Logs records to a [Slack](https://www.slack.com/) account.
-- _MandrillHandler_: Sends emails via the Mandrill API using a [`Swift_Message`](http://swiftmailer.org/) instance.
+- _MandrillHandler_: Sends emails via the Mandrill API using a [`Swift_Message`](https://swiftmailer.org/) instance.
 - _FleepHookHandler_: Logs records to a [Fleep](https://fleep.io/) conversation using Webhooks.
 - _IFTTTHandler_: Notifies an [IFTTT](https://ifttt.com/maker) trigger with the log channel, level name and message.
 
 ### Log specific servers and networked logging
 
-- _SocketHandler_: Logs records to [sockets](http://php.net/fsockopen), use this
+- _SocketHandler_: Logs records to [sockets](https://php.net/fsockopen), use this
   for UNIX and TCP sockets. See an [example](sockets.md).
-- _AmqpHandler_: Logs records to an [amqp](http://www.amqp.org/) compatible
-  server. Requires the [php-amqp](http://pecl.php.net/package/amqp) extension (1.0+).
-- _GelfHandler_: Logs records to a [Graylog2](http://www.graylog2.org) server.
-- _CubeHandler_: Logs records to a [Cube](http://square.github.com/cube/) server.
-- _RavenHandler_: Logs records to a [Sentry](http://getsentry.com/) server using
+- _AmqpHandler_: Logs records to an [amqp](https://www.amqp.org/) compatible
+  server. Requires the [php-amqp](https://pecl.php.net/package/amqp) extension (1.0+).
+- _GelfHandler_: Logs records to a [Graylog2](https://www.graylog2.org) server.
+- _CubeHandler_: Logs records to a [Cube](https://square.github.com/cube/) server.
+- _RavenHandler_: Logs records to a [Sentry](https://getsentry.com/) server using
   [raven](https://packagist.org/packages/raven/raven).
 - _ZendMonitorHandler_: Logs records to the Zend Monitor present in Zend Server.
-- _NewRelicHandler_: Logs records to a [NewRelic](http://newrelic.com/) application.
-- _LogglyHandler_: Logs records to a [Loggly](http://www.loggly.com/) account.
+- _NewRelicHandler_: Logs records to a [NewRelic](https://newrelic.com/) application.
+- _LogglyHandler_: Logs records to a [Loggly](https://www.loggly.com/) account.
 - _RollbarHandler_: Logs records to a [Rollbar](https://rollbar.com/) account.
-- _SyslogUdpHandler_: Logs records to a remote [Syslogd](http://www.rsyslog.com/) server.
-- _LogEntriesHandler_: Logs records to a [LogEntries](http://logentries.com/) account.
+- _SyslogUdpHandler_: Logs records to a remote [Syslogd](https://www.rsyslog.com/) server.
+- _LogEntriesHandler_: Logs records to a [LogEntries](https://logentries.com/) account.
 
 ### Logging in development
 
-- _FirePHPHandler_: Handler for [FirePHP](http://www.firephp.org/), providing
-  inline `console` messages within [FireBug](http://getfirebug.com/).
-- _ChromePHPHandler_: Handler for [ChromePHP](http://www.chromephp.com/), providing
+- _FirePHPHandler_: Handler for [FirePHP](https://www.firephp.org/), providing
+  inline `console` messages within [FireBug](https://getfirebug.com/).
+- _ChromePHPHandler_: Handler for [ChromePHP](https://www.chromephp.com/), providing
   inline `console` messages within Chrome.
 - _BrowserConsoleHandler_: Handler to send logs to browser's Javascript `console` with
   no browser extension required. Most browsers supporting `console` API are supported.
@@ -67,9 +67,9 @@
 
 ### Log to databases
 
-- _RedisHandler_: Logs records to a [redis](http://redis.io) server.
+- _RedisHandler_: Logs records to a [redis](https://redis.io) server.
 - _MongoDBHandler_: Handler to write records in MongoDB via a
-  [Mongo](http://pecl.php.net/package/mongo) extension connection.
+  [Mongo](https://pecl.php.net/package/mongo) extension connection.
 - _CouchDBHandler_: Logs records to a CouchDB server.
 - _DoctrineCouchDBHandler_: Logs records to a CouchDB server via the Doctrine CouchDB ODM.
 - _ElasticSearchHandler_: Logs records to an Elastic Search server.
@@ -128,7 +128,7 @@
 - _WildfireFormatter_: Used to format log records into the Wildfire/FirePHP protocol, only useful for the FirePHPHandler.
 - _ChromePHPFormatter_: Used to format log records into the ChromePHP format, only useful for the ChromePHPHandler.
 - _GelfMessageFormatter_: Used to format log records into Gelf message instances, only useful for the GelfHandler.
-- _LogstashFormatter_: Used to format log records into [logstash](http://logstash.net/) event json, useful for any handler listed under inputs [here](http://logstash.net/docs/latest).
+- _LogstashFormatter_: Used to format log records into [logstash](https://logstash.net/) event json, useful for any handler listed under inputs [here](https://logstash.net/docs/latest).
 - _ElasticaFormatter_: Used to format log records into an Elastica\Document object, only useful for the ElasticSearchHandler.
 - _LogglyFormatter_: Used to format log records into Loggly messages, only useful for the LogglyHandler.
 - _FlowdockFormatter_: Used to format log records into Flowdock messages, only useful for the FlowdockHandler.

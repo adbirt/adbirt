@@ -63,7 +63,7 @@
     <!-- Wavify start -->
     <div id="adbirt-wavify" style="position: relative; width: 100%;">
         <svg class="adbirt-wavify-svg" style="width: 100%; position: absolute;" version="1.1"
-            xmlns="http://www.w3.org/2000/svg">
+            xmlns="https://www.w3.org/2000/svg">
             <path id="wave" d="" />
         </svg>
     </div>

@@ -4,7 +4,7 @@
  * Example of retrieving an authentication token of the Pinterest service
  *
  * @author  Pedro Amorim <contact@pamorim.fr>
- * @license http://www.opensource.org/licenses/mit-license.html MIT License
+ * @license https://www.opensource.org/licenses/mit-license.html MIT License
  * @link    https://developers.pinterest.com/docs/api/overview/
  */
 
@@ -25,7 +25,7 @@ $storage = new Session();
 $credentials = new Credentials(
     $servicesCredentials['pinterest']['key'],
     $servicesCredentials['pinterest']['secret'],
-    preg_replace('$http://$', 'https://', $currentUri->getAbsoluteUri()) // Pinterest require Https callback's url
+    preg_replace('$https://$', 'https://', $currentUri->getAbsoluteUri()) // Pinterest require Https callback's url
 );
 $serviceFactory->setHttpClient(new CurlClient);
 // Instantiate the Pinterest service using the credentials, http client and storage mechanism for the token

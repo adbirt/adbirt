@@ -18,7 +18,7 @@ class Company extends \Faker\Provider\Company
      *
      * @example 'NL123456789B01'
      *
-     * @see (dutch) http://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/administratie_bijhouden/btw_nummers_controleren/uw_btw_nummer
+     * @see (dutch) https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/administratie_bijhouden/btw_nummers_controleren/uw_btw_nummer
      *
      *
      * @return string VAT Number

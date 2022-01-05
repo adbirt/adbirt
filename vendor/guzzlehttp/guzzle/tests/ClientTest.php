@@ -47,15 +47,15 @@ class ClientTest extends \PHPUnit_Framework_TestCase
     public function testCanSpecifyBaseUrl()
     {
         $this->assertSame('', (new Client())->getBaseUrl());
-        $this->assertEquals('http://foo', (new Client([
-            'base_url' => 'http://foo'
+        $this->assertEquals('https://foo', (new Client([
+            'base_url' => 'https://foo'
         ]))->getBaseUrl());
     }
 
     public function testCanSpecifyBaseUrlUriTemplate()
     {
-        $client = new Client(['base_url' => ['http://foo.com/{var}/', ['var' => 'baz']]]);
-        $this->assertEquals('http://foo.com/baz/', $client->getBaseUrl());
+        $client = new Client(['base_url' => ['https://foo.com/{var}/', ['var' => 'baz']]]);
+        $this->assertEquals('https://foo.com/baz/', $client->getBaseUrl());
     }
 
     public function testClientUsesDefaultAdapterWhenNoneIsSet()
@@ -84,7 +84,7 @@ class ClientTest extends \PHPUnit_Framework_TestCase
             ->method('send')
             ->will($this->throwException(new \Exception('Foo')));
         $client = new Client(['adapter' => $adapter]);
-        $client->get('http://httpbin.org');
+        $client->get('https://httpbin.org');
     }
 
     /**
@@ -167,13 +167,13 @@ class ClientTest extends \PHPUnit_Framework_TestCase
     {
         $client = $this->getRequestClient();
         if ($body) {
-            $request = $client->{$method}('http://foo.com', [
+            $request = $client->{$method}('https://foo.com', [
                 'headers' => ['X-Baz' => 'Bar'],
                 'body' => $body,
                 'query' => ['a' => 'b']
             ]);
         } else {
-            $request = $client->{$method}('http://foo.com', [
+            $request = $client->{$method}('https://foo.com', [
                 'headers' => ['X-Baz' => 'Bar'],
                 'query' => ['a' => 'b']
             ]);
@@ -212,7 +212,7 @@ class ClientTest extends \PHPUnit_Framework_TestCase
             ]
         ]);
 
-        $request = $client->createRequest('GET', 'http://foo.com?a=b', [
+        $request = $client->createRequest('GET', 'https://foo.com?a=b', [
             'headers' => ['Hi' => 'there', '1' => 'one'],
             'allow_redirects' => false,
             'query' => ['t' => 1]
@@ -229,7 +229,7 @@ class ClientTest extends \PHPUnit_Framework_TestCase
     public function testClientMergesDefaultHeadersCaseInsensitively()
     {
         $client = new Client(['defaults' => ['headers' => ['Foo' => 'Bar']]]);
-        $request = $client->createRequest('GET', 'http://foo.com?a=b', [
+        $request = $client->createRequest('GET', 'https://foo.com?a=b', [
             'headers' => ['foo' => 'custom', 'user-agent' => 'test']
         ]);
         $this->assertEquals('test', $request->getHeader('User-Agent'));
@@ -238,57 +238,57 @@ class ClientTest extends \PHPUnit_Framework_TestCase
 
     public function testUsesBaseUrlWhenNoUrlIsSet()
     {
-        $client = new Client(['base_url' => 'http://www.foo.com/baz?bam=bar']);
+        $client = new Client(['base_url' => 'https://www.foo.com/baz?bam=bar']);
         $this->assertEquals(
-            'http://www.foo.com/baz?bam=bar',
+            'https://www.foo.com/baz?bam=bar',
             $client->createRequest('GET')->getUrl()
         );
     }
 
     public function testUsesBaseUrlCombinedWithProvidedUrl()
     {
-        $client = new Client(['base_url' => 'http://www.foo.com/baz?bam=bar']);
+        $client = new Client(['base_url' => 'https://www.foo.com/baz?bam=bar']);
         $this->assertEquals(
-            'http://www.foo.com/bar/bam',
+            'https://www.foo.com/bar/bam',
             $client->createRequest('GET', 'bar/bam')->getUrl()
         );
     }
 
     public function testUsesBaseUrlCombinedWithProvidedUrlViaUriTemplate()
     {
-        $client = new Client(['base_url' => 'http://www.foo.com/baz?bam=bar']);
+        $client = new Client(['base_url' => 'https://www.foo.com/baz?bam=bar']);
         $this->assertEquals(
-            'http://www.foo.com/bar/123',
+            'https://www.foo.com/bar/123',
             $client->createRequest('GET', ['bar/{bam}', ['bam' => '123']])->getUrl()
         );
     }
 
     public function testSettingAbsoluteUrlOverridesBaseUrl()
     {
-        $client = new Client(['base_url' => 'http://www.foo.com/baz?bam=bar']);
+        $client = new Client(['base_url' => 'https://www.foo.com/baz?bam=bar']);
         $this->assertEquals(
-            'http://www.foo.com/foo',
+            'https://www.foo.com/foo',
             $client->createRequest('GET', '/foo')->getUrl()
         );
     }
 
     public function testSettingAbsoluteUriTemplateOverridesBaseUrl()
     {
-        $client = new Client(['base_url' => 'http://www.foo.com/baz?bam=bar']);
+        $client = new Client(['base_url' => 'https://www.foo.com/baz?bam=bar']);
         $this->assertEquals(
-            'http://goo.com/1',
+            'https://goo.com/1',
             $client->createRequest(
                 'GET',
-                ['http://goo.com/{bar}', ['bar' => '1']]
+                ['https://goo.com/{bar}', ['bar' => '1']]
             )->getUrl()
         );
     }
 
     public function testCanSetRelativeUrlStartingWithHttp()
     {
-        $client = new Client(['base_url' => 'http://www.foo.com']);
+        $client = new Client(['base_url' => 'https://www.foo.com']);
         $this->assertEquals(
-            'http://www.foo.com/httpfoo',
+            'https://www.foo.com/httpfoo',
             $client->createRequest('GET', 'httpfoo')->getUrl()
         );
     }
@@ -299,8 +299,8 @@ class ClientTest extends \PHPUnit_Framework_TestCase
         $adapter = new MockAdapter();
         $adapter->setResponse($response);
         $client = new Client(['adapter' => $adapter]);
-        $this->assertSame($response, $client->get('http://test.com'));
-        $this->assertEquals('http://test.com', $response->getEffectiveUrl());
+        $this->assertSame($response, $client->get('https://test.com'));
+        $this->assertEquals('https://test.com', $response->getEffectiveUrl());
     }
 
     public function testSendingRequestCanBeIntercepted()
@@ -316,8 +316,8 @@ class ClientTest extends \PHPUnit_Framework_TestCase
                 $e->intercept($response2);
             }
         );
-        $this->assertSame($response2, $client->get('http://test.com'));
-        $this->assertEquals('http://test.com', $response2->getEffectiveUrl());
+        $this->assertSame($response2, $client->get('https://test.com'));
+        $this->assertEquals('https://test.com', $response2->getEffectiveUrl());
     }
 
     /**
@@ -332,7 +332,7 @@ class ClientTest extends \PHPUnit_Framework_TestCase
         $adapter->expects($this->once())
             ->method('send');
         $client = new Client(['adapter' => $adapter]);
-        $client->get('http://httpbin.org');
+        $client->get('https://httpbin.org');
     }
 
     public function testClientHandlesErrorsDuringBeforeSend()
@@ -344,7 +344,7 @@ class ClientTest extends \PHPUnit_Framework_TestCase
         $client->getEmitter()->on('error', function ($e) {
             $e->intercept(new Response(200));
         });
-        $this->assertEquals(200, $client->get('http://test.com')->getStatusCode());
+        $this->assertEquals(200, $client->get('https://test.com')->getStatusCode());
     }
 
     /**
@@ -357,7 +357,7 @@ class ClientTest extends \PHPUnit_Framework_TestCase
         $client->getEmitter()->on('before', function ($e) {
             throw new RequestException('foo', $e->getRequest());
         });
-        $client->get('http://httpbin.org');
+        $client->get('https://httpbin.org');
     }
 
     /**
@@ -370,7 +370,7 @@ class ClientTest extends \PHPUnit_Framework_TestCase
         $client->getEmitter()->on('before', function ($e) {
             throw new \Exception('foo');
         });
-        $client->get('http://httpbin.org');
+        $client->get('https://httpbin.org');
     }
 
     public function testCanSetDefaultValues()
@@ -393,9 +393,9 @@ class ClientTest extends \PHPUnit_Framework_TestCase
         $client->getEmitter()->attach($history);
 
         $requests = [
-            $client->createRequest('GET', 'http://test.com'),
-            $client->createRequest('POST', 'http://test.com'),
-            $client->createRequest('PUT', 'http://test.com')
+            $client->createRequest('GET', 'https://test.com'),
+            $client->createRequest('POST', 'https://test.com'),
+            $client->createRequest('PUT', 'https://test.com')
         ];
 
         $client->sendAll($requests);
@@ -413,16 +413,16 @@ class ClientTest extends \PHPUnit_Framework_TestCase
             return new Response(203);
         }));
         $client = new Client(['parallel_adapter' => $pa]);
-        $client->sendAll([$client->createRequest('GET', 'http://www.foo.com')]);
+        $client->sendAll([$client->createRequest('GET', 'https://www.foo.com')]);
         $this->assertTrue($called);
     }
 
     public function testCanDisableAuthPerRequest()
     {
         $client = new Client(['defaults' => ['auth' => 'foo']]);
-        $request = $client->createRequest('GET', 'http://test.com');
+        $request = $client->createRequest('GET', 'https://test.com');
         $this->assertEquals('foo', $request->getConfig()['auth']);
-        $request = $client->createRequest('GET', 'http://test.com', ['auth' => null]);
+        $request = $client->createRequest('GET', 'https://test.com', ['auth' => null]);
         $this->assertFalse($request->getConfig()->hasKey('auth'));
     }
 

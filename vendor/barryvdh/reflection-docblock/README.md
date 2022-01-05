@@ -5,7 +5,7 @@ Introduction
 ------------
 
 The ReflectionDocBlock component of phpDocumentor provides a DocBlock parser
-that is 100% compatible with the [PHPDoc standard](http://phpdoc.org/docs/latest).
+that is 100% compatible with the [PHPDoc standard](https://phpdoc.org/docs/latest).
 
 With this component, a library can provide support for annotations via DocBlocks
 or otherwise retrieve information that is embedded in a DocBlock.
@@ -19,13 +19,13 @@ Installation
 You can install the component in the following ways:
 
 * Use the official Github repository (https://github.com/phpDocumentor/ReflectionDocBlock)
-* Via Composer (http://packagist.org/packages/phpdocumentor/reflection-docblock)
+* Via Composer (https://packagist.org/packages/phpdocumentor/reflection-docblock)
 
 Usage
 -----
 
 The ReflectionDocBlock component is designed to work in an identical fashion to
-PHP's own Reflection extension (http://php.net/manual/en/book.reflection.php).
+PHP's own Reflection extension (https://php.net/manual/en/book.reflection.php).
 
 Parsing can be initiated by instantiating the
 `\phpDocumentor\Reflection\DocBlock()` class and passing it a string containing

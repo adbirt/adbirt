@@ -6,7 +6,7 @@
  * Example of retrieving an authentication token of the Delicious service
  *
  * @author  Pedro Amorim <contact@pamorim.fr>
- * @license http://www.opensource.org/licenses/mit-license.html  MIT License
+ * @license https://www.opensource.org/licenses/mit-license.html  MIT License
  * @link    https://github.com/SciDevs/delicious-api/blob/master/api/oauth.md
  */
 

@@ -45,8 +45,8 @@
 	 			"value" : "3",
 	 			"currency" : "GBP"
 	 		},
-	 		"return_url":"http://indiatimes.com",
-	 		"cancel_url":"http://rediff.com",
+	 		"return_url":"https://indiatimes.com",
+	 		"cancel_url":"https://rediff.com",
 	 		 "auto_bill_amount": "YES",
 	 		 "initial_fail_amount_action": "CONTINUE",
 	 		 "max_fail_attempts": "11"
@@ -146,8 +146,8 @@
 	                "value": "3"
 	            },
 	            "max_fail_attempts": "11",
-	            "return_url": "http://indiatimes.com",
-	            "cancel_url": "http://rediff.com",
+	            "return_url": "https://indiatimes.com",
+	            "cancel_url": "https://rediff.com",
 	            "auto_bill_amount": "YES",
 	            "initial_fail_amount_action": "CONTINUE"
 	        }

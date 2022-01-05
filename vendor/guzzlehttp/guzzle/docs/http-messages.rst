@@ -18,7 +18,7 @@ headers contain a link and several key value pairs:
 
 ::
 
-    <http://foo.com>; rel="thing"; type="image/jpeg"
+    <https://foo.com>; rel="thing"; type="image/jpeg"
 
 Guzzle provides a convenience feature that can be used to parse these types of
 headers:
@@ -61,7 +61,7 @@ You can check to see if a request or response has a body using the
 
 .. code-block:: php
 
-    $response = GuzzleHttp\get('http://httpbin.org/get');
+    $response = GuzzleHttp\get('https://httpbin.org/get');
     if ($response->getBody()) {
         echo $response->getBody();
         // JSON string: { ... }
@@ -80,7 +80,7 @@ method:
 .. code-block:: php
 
     use GuzzleHttp\Stream\Stream;
-    $request = $client->createRequest('PUT', 'http://httpbin.org/put');
+    $request = $client->createRequest('PUT', 'https://httpbin.org/put');
     $request->setBody(Stream::factory('foo'));
 
 The easiest way to create a body for a request is using the static
@@ -94,7 +94,7 @@ write bytes off of the stream as needed.
 .. code-block:: php
 
     use GuzzleHttp\Stream\Stream;
-    $request = $client->createRequest('PUT', 'http://httpbin.org/put', ['body' => 'testing...']);
+    $request = $client->createRequest('PUT', 'https://httpbin.org/put', ['body' => 'testing...']);
 
     echo $request->getBody()->read(4);
     // test
@@ -121,7 +121,7 @@ You create requests with a client using the ``createRequest()`` method.
 .. code-block:: php
 
     // Create a request but don't send it immediately
-    $request = $client->createRequest('GET', 'http://httpbin.org/get');
+    $request = $client->createRequest('GET', 'https://httpbin.org/get');
 
 Request Methods
 ---------------
@@ -133,7 +133,7 @@ that might not be part of RFC 2616 (like "MOVE").
 .. code-block:: php
 
     // Create a request using a completely custom HTTP method
-    $request = $client->createRequest('MOVE', 'http://httpbin.org/move', ['exceptions' => false]);
+    $request = $client->createRequest('MOVE', 'https://httpbin.org/move', ['exceptions' => false]);
 
     echo $request->getMethod();
     // MOVE
@@ -145,17 +145,17 @@ that might not be part of RFC 2616 (like "MOVE").
 You can create and send a request using methods on a client that map to the
 HTTP method you wish to use.
 
-:GET: ``$client->get('http://httpbin.org/get', [/** options **/])``
-:POST: ``$client->post('http://httpbin.org/post', [/** options **/])``
-:HEAD: ``$client->head('http://httpbin.org/get', [/** options **/])``
-:PUT: ``$client->put('http://httpbin.org/put', [/** options **/])``
-:DELETE: ``$client->delete('http://httpbin.org/delete', [/** options **/])``
-:OPTIONS: ``$client->options('http://httpbin.org/get', [/** options **/])``
-:PATCH: ``$client->patch('http://httpbin.org/put', [/** options **/])``
+:GET: ``$client->get('https://httpbin.org/get', [/** options **/])``
+:POST: ``$client->post('https://httpbin.org/post', [/** options **/])``
+:HEAD: ``$client->head('https://httpbin.org/get', [/** options **/])``
+:PUT: ``$client->put('https://httpbin.org/put', [/** options **/])``
+:DELETE: ``$client->delete('https://httpbin.org/delete', [/** options **/])``
+:OPTIONS: ``$client->options('https://httpbin.org/get', [/** options **/])``
+:PATCH: ``$client->patch('https://httpbin.org/put', [/** options **/])``
 
 .. code-block:: php
 
-    $response = $client->patch('http://httpbin.org/patch', ['body' => 'content']);
+    $response = $client->patch('https://httpbin.org/patch', ['body' => 'content']);
 
 Request URI
 -----------
@@ -167,7 +167,7 @@ When creating a request, you can provide the entire resource URI as a URL.
 
 .. code-block:: php
 
-    $response = $client->get('http://httbin.org/get?q=foo');
+    $response = $client->get('https://httbin.org/get?q=foo');
 
 Using the above code, you will send a request that uses ``httpbin.org`` as
 the Host header, sends the request over port 80, uses ``/get`` as the path,
@@ -181,7 +181,7 @@ allow you to change it.
 
 .. code-block:: php
 
-    $request = $client->createRequest('GET', 'http://httbin.org');
+    $request = $client->createRequest('GET', 'https://httbin.org');
 
 You can change the path of the request using ``setPath()``:
 
@@ -191,12 +191,12 @@ You can change the path of the request using ``setPath()``:
     echo $request->getPath();
     // /get
     echo $request->getUrl();
-    // http://httpbin.com/get
+    // https://httpbin.com/get
 
 Scheme
 ~~~~~~
 
-The `scheme <http://tools.ietf.org/html/rfc3986#section-3.1>`_ of a request
+The `scheme <https://tools.ietf.org/html/rfc3986#section-3.1>`_ of a request
 specifies the protocol to use when sending the request. When using Guzzle, the
 scheme can be set to "http" or "https".
 
@@ -204,7 +204,7 @@ You can change the scheme of the request using the ``setScheme()`` method:
 
 .. code-block:: php
 
-    $request = $client->createRequest('GET', 'http://httbin.org');
+    $request = $client->createRequest('GET', 'https://httbin.org');
     $request->setScheme('https');
     echo $request->getScheme();
     // https
@@ -221,7 +221,7 @@ the specified scheme from the default setting, then you must use the
 
 .. code-block:: php
 
-    $request = $client->createRequest('GET', 'http://httbin.org');
+    $request = $client->createRequest('GET', 'https://httbin.org');
     $request->setPort(8080);
     echo $request->getPort();
     // 8080
@@ -243,7 +243,7 @@ and cast to a string.
 
 .. code-block:: php
 
-    $request = $client->createRequest('GET', 'http://httbin.org');
+    $request = $client->createRequest('GET', 'https://httbin.org');
     $query = $request->getQuery();
     $query['foo'] = 'bar';
     $query['baz'] = 'bam';
@@ -275,7 +275,7 @@ Query Aggregators
 Query objects can store scalar values or arrays of values. When an array of
 values is added to a query object, the query object uses a query aggregator to
 convert the complex structure into a string. Query objects will use
-`PHP style query strings <http://www.php.net/http_build_query>`_ when complex
+`PHP style query strings <https://www.php.net/http_build_query>`_ when complex
 query string parameters are converted to a string. You can customize how
 complex query string parameters are aggregated using the ``setAggregator()``
 method of a query string object.
@@ -327,7 +327,7 @@ query string of a request in a single string.
 
 .. code-block:: php
 
-    $request = $client->createRequest('GET', 'http://httpbin.org/get?baz=bar');
+    $request = $client->createRequest('GET', 'https://httpbin.org/get?baz=bar');
     echo $request->getResource();
     // /get?baz=bar
 
@@ -413,7 +413,7 @@ status code, and reason phrase.
 
 .. code-block:: php
 
-    $response = GuzzleHttp\get('http://httpbin.org/get');
+    $response = GuzzleHttp\get('https://httpbin.org/get');
     echo $response->getStatusCode();
     // 200
     echo $response->getReasonPhrase();
@@ -471,10 +471,10 @@ occurred while transferring a request.
 
 .. code-block:: php
 
-    $response = GuzzleHttp\get('http://httpbin.org/get');
+    $response = GuzzleHttp\get('https://httpbin.org/get');
     echo $response->getEffectiveUrl();
-    // http://httpbin.org/get
+    // https://httpbin.org/get
 
-    $response = GuzzleHttp\get('http://httpbin.org/redirect-to?url=http://www.google.com');
+    $response = GuzzleHttp\get('https://httpbin.org/redirect-to?url=https://www.google.com');
     echo $response->getEffectiveUrl();
-    // http://www.google.com
+    // https://www.google.com

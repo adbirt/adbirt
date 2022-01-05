@@ -284,7 +284,7 @@ class PayPalModel
     /**
      * Returns object JSON representation
      *
-     * @param int $options http://php.net/manual/en/json.constants.php
+     * @param int $options https://php.net/manual/en/json.constants.php
      * @return string
      */
     public function toJSON($options = 0)

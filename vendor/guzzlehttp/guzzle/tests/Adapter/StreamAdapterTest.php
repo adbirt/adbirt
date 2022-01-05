@@ -40,7 +40,7 @@ class StreamAdapterTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @expectedException \GuzzleHttp\Exception\RequestException
-     * @expectedExceptionMessage Error creating resource. [url] http://localhost:123 [proxy] tcp://localhost:1234
+     * @expectedExceptionMessage Error creating resource. [url] https://localhost:123 [proxy] tcp://localhost:1234
      */
     public function testThrowsExceptionsCaughtDuringTransfer()
     {
@@ -48,7 +48,7 @@ class StreamAdapterTest extends \PHPUnit_Framework_TestCase
         $client = new Client([
             'adapter' => new StreamAdapter(new MessageFactory()),
         ]);
-        $client->get('http://localhost:123', [
+        $client->get('https://localhost:123', [
             'timeout' => 0.01,
             'proxy'   => 'tcp://localhost:1234'
         ]);
@@ -331,9 +331,9 @@ class StreamAdapterTest extends \PHPUnit_Framework_TestCase
         $client->get('/', ['debug' => $fp]);
         fseek($fp, 0);
         $contents = stream_get_contents($fp);
-        $this->assertContains('<http://127.0.0.1:8125/> [CONNECT]', $contents);
-        $this->assertContains('<http://127.0.0.1:8125/> [FILE_SIZE_IS]', $contents);
-        $this->assertContains('<http://127.0.0.1:8125/> [PROGRESS]', $contents);
+        $this->assertContains('<https://127.0.0.1:8125/> [CONNECT]', $contents);
+        $this->assertContains('<https://127.0.0.1:8125/> [FILE_SIZE_IS]', $contents);
+        $this->assertContains('<https://127.0.0.1:8125/> [PROGRESS]', $contents);
     }
 
     public function testDebugAttributeWritesStreamInfoToBuffer()
@@ -353,10 +353,10 @@ class StreamAdapterTest extends \PHPUnit_Framework_TestCase
         $client->get('/', ['debug' => $buffer]);
         fseek($buffer, 0);
         $contents = stream_get_contents($buffer);
-        $this->assertContains('<http://127.0.0.1:8125/> [CONNECT]', $contents);
-        $this->assertContains('<http://127.0.0.1:8125/> [FILE_SIZE_IS] message: "Content-Length: 8"', $contents);
-        $this->assertContains('<http://127.0.0.1:8125/> [PROGRESS] bytes_max: "8"', $contents);
-        $this->assertContains('<http://127.0.0.1:8125/> [MIME_TYPE_IS] message: "text/plain"', $contents);
+        $this->assertContains('<https://127.0.0.1:8125/> [CONNECT]', $contents);
+        $this->assertContains('<https://127.0.0.1:8125/> [FILE_SIZE_IS] message: "Content-Length: 8"', $contents);
+        $this->assertContains('<https://127.0.0.1:8125/> [PROGRESS] bytes_max: "8"', $contents);
+        $this->assertContains('<https://127.0.0.1:8125/> [MIME_TYPE_IS] message: "text/plain"', $contents);
     }
 
     public function testAddsProxyByProtocol()

@@ -22,7 +22,7 @@ class MimeTypeExtensionGuesser implements ExtensionGuesserInterface
      * This list has been placed under the public domain by the Apache HTTPD project.
      * This list has been updated from upstream on 2013-04-23.
      *
-     * @see http://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types
+     * @see https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types
      *
      * @var array
      */

@@ -1,9 +1,9 @@
 @extends('layouts.dashboard')
 @section('content')
 
-    <!-- <link rel="stylesheet" href="http://www.expertphp.in/css/bootstrap.css" type="text/css" media="all" /> -->
+    <!-- <link rel="stylesheet" href="https://www.expertphp.in/css/bootstrap.css" type="text/css" media="all" /> -->
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
-    <script src="http://demo.expertphp.in/js/jquery.js"></script>
+    <script src="https://demo.expertphp.in/js/jquery.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     <!-- Content -->
     <div class="layout-content" data-scrollable>

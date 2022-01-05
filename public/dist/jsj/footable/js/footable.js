@@ -1,9 +1,9 @@
-﻿/*!
+/*!
  * FooTable - Awesome Responsive Tables
  * Version : 2.0.1.2
- * http://fooplugins.com/plugins/footable-jquery/
+ * https://fooplugins.com/plugins/footable-jquery/
  *
- * Requires jQuery - http://jquery.com/
+ * Requires jQuery - https://jquery.com/
  *
  * Copyright 2013 Steven Usher & Brad Vincent
  * Released under the MIT license

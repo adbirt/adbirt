@@ -58,7 +58,7 @@ Metadata Streams
 Guzzle streams that implement ``GuzzleHttp\Stream\MetadataStreamInterface``
 expose stream metadata through the ``getMetadata()`` method. This method
 provides the data you would retrieve when calling PHP's
-`stream_get_meta_data() function <http://php.net/manual/en/function.stream-get-meta-data.php>`_.
+`stream_get_meta_data() function <https://php.net/manual/en/function.stream-get-meta-data.php>`_.
 
 .. code-block:: php
 
@@ -102,7 +102,7 @@ then on disk.
     use GuzzleHttp\Stream\Stream;
     use GuzzleHttp\Stream\CachingStream;
 
-    $original = Stream::factory(fopen('http://www.google.com', 'r'));
+    $original = Stream::factory(fopen('https://www.google.com', 'r'));
     $stream = new CachingStream($original);
 
     $stream->read(1024);

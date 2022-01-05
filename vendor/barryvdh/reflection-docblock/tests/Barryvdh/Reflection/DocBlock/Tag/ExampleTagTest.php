@@ -5,9 +5,9 @@
  * PHP version 5.3
  *
  * @author    Vasil Rangelov <boen.robot@gmail.com>
- * @copyright 2010-2011 Mike van Riel / Naenius. (http://www.naenius.com)
- * @license   http://www.opensource.org/licenses/mit-license.php MIT
- * @link      http://phpdoc.org
+ * @copyright 2010-2011 Mike van Riel / Naenius. (https://www.naenius.com)
+ * @license   https://www.opensource.org/licenses/mit-license.php MIT
+ * @link      https://phpdoc.org
  */
 
 namespace Barryvdh\Reflection\DocBlock\Tag;
@@ -16,9 +16,9 @@ namespace Barryvdh\Reflection\DocBlock\Tag;
  * Test class for \Barryvdh\Reflection\DocBlock\Tag\ExampleTag
  *
  * @author    Vasil Rangelov <boen.robot@gmail.com>
- * @copyright 2010-2011 Mike van Riel / Naenius. (http://www.naenius.com)
- * @license   http://www.opensource.org/licenses/mit-license.php MIT
- * @link      http://phpdoc.org
+ * @copyright 2010-2011 Mike van Riel / Naenius. (https://www.naenius.com)
+ * @license   https://www.opensource.org/licenses/mit-license.php MIT
+ * @link      https://phpdoc.org
  */
 class ExampleTagTest extends \PHPUnit_Framework_TestCase
 {
@@ -191,12 +191,12 @@ class ExampleTagTest extends \PHPUnit_Framework_TestCase
             ),
             array(
                 'example',
-                'http://example.com/file%20with%20spaces.php Testing comments',
-                'http://example.com/file%20with%20spaces.php Testing comments',
+                'https://example.com/file%20with%20spaces.php Testing comments',
+                'https://example.com/file%20with%20spaces.php Testing comments',
                 'Testing comments',
                 1,
                 null,
-                'http://example.com/file%20with%20spaces.php'
+                'https://example.com/file%20with%20spaces.php'
             )
         );
     }

@@ -8,7 +8,7 @@ use GuzzleHttp\Psr7\Uri;
  */
 class UriTest extends \PHPUnit_Framework_TestCase
 {
-    const RFC3986_BASE = 'http://a/b/c/d;p?q';
+    const RFC3986_BASE = 'https://a/b/c/d;p?q';
 
     public function testParsesProvidedUri()
     {
@@ -112,7 +112,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
             // parse_url() requires the host component which makes sense for http(s)
             // but not when the scheme is not known or different. So '//' or '///' is
             // currently invalid as well but should not according to RFC 3986.
-            ['http://'],
+            ['https://'],
             ['urn://host:with:colon'], // host cannot contain ":"
         ];
     }
@@ -232,60 +232,60 @@ class UriTest extends \PHPUnit_Framework_TestCase
     {
         return [
             [self::RFC3986_BASE, 'g:h',           'g:h'],
-            [self::RFC3986_BASE, 'g',             'http://a/b/c/g'],
-            [self::RFC3986_BASE, './g',           'http://a/b/c/g'],
-            [self::RFC3986_BASE, 'g/',            'http://a/b/c/g/'],
-            [self::RFC3986_BASE, '/g',            'http://a/g'],
-            [self::RFC3986_BASE, '//g',           'http://g'],
-            [self::RFC3986_BASE, '?y',            'http://a/b/c/d;p?y'],
-            [self::RFC3986_BASE, 'g?y',           'http://a/b/c/g?y'],
-            [self::RFC3986_BASE, '#s',            'http://a/b/c/d;p?q#s'],
-            [self::RFC3986_BASE, 'g#s',           'http://a/b/c/g#s'],
-            [self::RFC3986_BASE, 'g?y#s',         'http://a/b/c/g?y#s'],
-            [self::RFC3986_BASE, ';x',            'http://a/b/c/;x'],
-            [self::RFC3986_BASE, 'g;x',           'http://a/b/c/g;x'],
-            [self::RFC3986_BASE, 'g;x?y#s',       'http://a/b/c/g;x?y#s'],
+            [self::RFC3986_BASE, 'g',             'https://a/b/c/g'],
+            [self::RFC3986_BASE, './g',           'https://a/b/c/g'],
+            [self::RFC3986_BASE, 'g/',            'https://a/b/c/g/'],
+            [self::RFC3986_BASE, '/g',            'https://a/g'],
+            [self::RFC3986_BASE, '//g',           'https://g'],
+            [self::RFC3986_BASE, '?y',            'https://a/b/c/d;p?y'],
+            [self::RFC3986_BASE, 'g?y',           'https://a/b/c/g?y'],
+            [self::RFC3986_BASE, '#s',            'https://a/b/c/d;p?q#s'],
+            [self::RFC3986_BASE, 'g#s',           'https://a/b/c/g#s'],
+            [self::RFC3986_BASE, 'g?y#s',         'https://a/b/c/g?y#s'],
+            [self::RFC3986_BASE, ';x',            'https://a/b/c/;x'],
+            [self::RFC3986_BASE, 'g;x',           'https://a/b/c/g;x'],
+            [self::RFC3986_BASE, 'g;x?y#s',       'https://a/b/c/g;x?y#s'],
             [self::RFC3986_BASE, '',              self::RFC3986_BASE],
-            [self::RFC3986_BASE, '.',             'http://a/b/c/'],
-            [self::RFC3986_BASE, './',            'http://a/b/c/'],
-            [self::RFC3986_BASE, '..',            'http://a/b/'],
-            [self::RFC3986_BASE, '../',           'http://a/b/'],
-            [self::RFC3986_BASE, '../g',          'http://a/b/g'],
-            [self::RFC3986_BASE, '../..',         'http://a/'],
-            [self::RFC3986_BASE, '../../',        'http://a/'],
-            [self::RFC3986_BASE, '../../g',       'http://a/g'],
-            [self::RFC3986_BASE, '../../../g',    'http://a/g'],
-            [self::RFC3986_BASE, '../../../../g', 'http://a/g'],
-            [self::RFC3986_BASE, '/./g',          'http://a/g'],
-            [self::RFC3986_BASE, '/../g',         'http://a/g'],
-            [self::RFC3986_BASE, 'g.',            'http://a/b/c/g.'],
-            [self::RFC3986_BASE, '.g',            'http://a/b/c/.g'],
-            [self::RFC3986_BASE, 'g..',           'http://a/b/c/g..'],
-            [self::RFC3986_BASE, '..g',           'http://a/b/c/..g'],
-            [self::RFC3986_BASE, './../g',        'http://a/b/g'],
-            [self::RFC3986_BASE, 'foo////g',      'http://a/b/c/foo////g'],
-            [self::RFC3986_BASE, './g/.',         'http://a/b/c/g/'],
-            [self::RFC3986_BASE, 'g/./h',         'http://a/b/c/g/h'],
-            [self::RFC3986_BASE, 'g/../h',        'http://a/b/c/h'],
-            [self::RFC3986_BASE, 'g;x=1/./y',     'http://a/b/c/g;x=1/y'],
-            [self::RFC3986_BASE, 'g;x=1/../y',    'http://a/b/c/y'],
+            [self::RFC3986_BASE, '.',             'https://a/b/c/'],
+            [self::RFC3986_BASE, './',            'https://a/b/c/'],
+            [self::RFC3986_BASE, '..',            'https://a/b/'],
+            [self::RFC3986_BASE, '../',           'https://a/b/'],
+            [self::RFC3986_BASE, '../g',          'https://a/b/g'],
+            [self::RFC3986_BASE, '../..',         'https://a/'],
+            [self::RFC3986_BASE, '../../',        'https://a/'],
+            [self::RFC3986_BASE, '../../g',       'https://a/g'],
+            [self::RFC3986_BASE, '../../../g',    'https://a/g'],
+            [self::RFC3986_BASE, '../../../../g', 'https://a/g'],
+            [self::RFC3986_BASE, '/./g',          'https://a/g'],
+            [self::RFC3986_BASE, '/../g',         'https://a/g'],
+            [self::RFC3986_BASE, 'g.',            'https://a/b/c/g.'],
+            [self::RFC3986_BASE, '.g',            'https://a/b/c/.g'],
+            [self::RFC3986_BASE, 'g..',           'https://a/b/c/g..'],
+            [self::RFC3986_BASE, '..g',           'https://a/b/c/..g'],
+            [self::RFC3986_BASE, './../g',        'https://a/b/g'],
+            [self::RFC3986_BASE, 'foo////g',      'https://a/b/c/foo////g'],
+            [self::RFC3986_BASE, './g/.',         'https://a/b/c/g/'],
+            [self::RFC3986_BASE, 'g/./h',         'https://a/b/c/g/h'],
+            [self::RFC3986_BASE, 'g/../h',        'https://a/b/c/h'],
+            [self::RFC3986_BASE, 'g;x=1/./y',     'https://a/b/c/g;x=1/y'],
+            [self::RFC3986_BASE, 'g;x=1/../y',    'https://a/b/c/y'],
             // dot-segments in the query or fragment
-            [self::RFC3986_BASE, 'g?y/./x',       'http://a/b/c/g?y/./x'],
-            [self::RFC3986_BASE, 'g?y/../x',      'http://a/b/c/g?y/../x'],
-            [self::RFC3986_BASE, 'g#s/./x',       'http://a/b/c/g#s/./x'],
-            [self::RFC3986_BASE, 'g#s/../x',      'http://a/b/c/g#s/../x'],
-            [self::RFC3986_BASE, 'g#s/../x',      'http://a/b/c/g#s/../x'],
-            [self::RFC3986_BASE, '?y#s',          'http://a/b/c/d;p?y#s'],
-            ['http://a/b/c/d;p?q#s', '?y',        'http://a/b/c/d;p?y'],
-            ['http://u@a/b/c/d;p?q', '.',         'http://u@a/b/c/'],
-            ['http://u:p@a/b/c/d;p?q', '.',       'http://u:p@a/b/c/'],
-            ['http://a/b/c/d/', 'e',              'http://a/b/c/d/e'],
+            [self::RFC3986_BASE, 'g?y/./x',       'https://a/b/c/g?y/./x'],
+            [self::RFC3986_BASE, 'g?y/../x',      'https://a/b/c/g?y/../x'],
+            [self::RFC3986_BASE, 'g#s/./x',       'https://a/b/c/g#s/./x'],
+            [self::RFC3986_BASE, 'g#s/../x',      'https://a/b/c/g#s/../x'],
+            [self::RFC3986_BASE, 'g#s/../x',      'https://a/b/c/g#s/../x'],
+            [self::RFC3986_BASE, '?y#s',          'https://a/b/c/d;p?y#s'],
+            ['https://a/b/c/d;p?q#s', '?y',        'https://a/b/c/d;p?y'],
+            ['https://u@a/b/c/d;p?q', '.',         'https://u@a/b/c/'],
+            ['https://u:p@a/b/c/d;p?q', '.',       'https://u:p@a/b/c/'],
+            ['https://a/b/c/d/', 'e',              'https://a/b/c/d/e'],
             ['urn:no-slash', 'e',                 'urn:e'],
             // falsey relative parts
-            [self::RFC3986_BASE, '//0',           'http://0'],
-            [self::RFC3986_BASE, '0',             'http://a/b/c/0'],
-            [self::RFC3986_BASE, '?0',            'http://a/b/c/d;p?0'],
-            [self::RFC3986_BASE, '#0',            'http://a/b/c/d;p?q#0'],
+            [self::RFC3986_BASE, '//0',           'https://0'],
+            [self::RFC3986_BASE, '0',             'https://a/b/c/0'],
+            [self::RFC3986_BASE, '?0',            'https://a/b/c/d;p?0'],
+            [self::RFC3986_BASE, '#0',            'https://a/b/c/d;p?q#0'],
         ];
     }
 
@@ -355,15 +355,15 @@ class UriTest extends \PHPUnit_Framework_TestCase
 
     public function testSchemeIsNormalizedToLowercase()
     {
-        $uri = new Uri('HTTP://example.com');
+        $uri = new Uri('https://example.com');
 
         $this->assertSame('http', $uri->getScheme());
-        $this->assertSame('http://example.com', (string) $uri);
+        $this->assertSame('https://example.com', (string) $uri);
 
         $uri = (new Uri('//example.com'))->withScheme('HTTP');
 
         $this->assertSame('http', $uri->getScheme());
-        $this->assertSame('http://example.com', (string) $uri);
+        $this->assertSame('https://example.com', (string) $uri);
     }
 
     public function testHostIsNormalizedToLowercase()
@@ -391,11 +391,11 @@ class UriTest extends \PHPUnit_Framework_TestCase
         $this->assertSame('example.com', $uri->getAuthority());
 
         // HTTP standard port
-        $uri = new Uri('http://example.com:80');
+        $uri = new Uri('https://example.com:80');
         $this->assertNull($uri->getPort());
         $this->assertSame('example.com', $uri->getAuthority());
 
-        $uri = (new Uri('http://example.com'))->withPort(80);
+        $uri = (new Uri('https://example.com'))->withPort(80);
         $this->assertNull($uri->getPort());
         $this->assertSame('example.com', $uri->getAuthority());
     }
@@ -410,7 +410,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
 
     public function testStandardPortIsNullIfSchemeChanges()
     {
-        $uri = new Uri('http://example.com:443');
+        $uri = new Uri('https://example.com:443');
         $this->assertSame('http', $uri->getScheme());
         $this->assertSame(443, $uri->getPort());
 
@@ -428,10 +428,10 @@ class UriTest extends \PHPUnit_Framework_TestCase
 
     public function testPortCanBeRemoved()
     {
-        $uri = (new Uri('http://example.com:8080'))->withPort(null);
+        $uri = (new Uri('https://example.com:8080'))->withPort(null);
 
         $this->assertNull($uri->getPort());
-        $this->assertSame('http://example.com', (string) $uri);
+        $this->assertSame('https://example.com', (string) $uri);
     }
 
     public function testAuthorityWithUserInfoButWithoutHost()
@@ -563,7 +563,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
         // If they do, this will fatal.
         $this->assertInstanceOf(
             '\GuzzleHttp\Tests\Psr7\ExtendingClassTest',
-            new ExtendingClassTest('http://h:9/')
+            new ExtendingClassTest('https://h:9/')
         );
     }
 }

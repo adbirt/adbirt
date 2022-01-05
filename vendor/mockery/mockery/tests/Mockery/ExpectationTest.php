@@ -7,7 +7,7 @@
  * This source file is subject to the new BSD license that is bundled
  * with this package in the file LICENSE.txt.
  * It is also available through the world-wide-web at this URL:
- * http://github.com/padraic/mockery/master/LICENSE
+ * https://github.com/padraic/mockery/master/LICENSE
  * If you did not receive a copy of the license and are unable to
  * obtain it through the world-wide-web, please send an email
  * to padraic@php.net so we can send you a copy immediately.
@@ -15,8 +15,8 @@
  * @category   Mockery
  * @package    Mockery
  * @subpackage UnitTests
- * @copyright  Copyright (c) 2010-2014 Pádraic Brady (http://blog.astrumfutura.com)
- * @license    http://github.com/padraic/mockery/blob/master/LICENSE New BSD License
+ * @copyright  Copyright (c) 2010-2014 Pádraic Brady (https://blog.astrumfutura.com)
+ * @license    https://github.com/padraic/mockery/blob/master/LICENSE New BSD License
  */
 
 use Mockery\Adapter\Phpunit\MockeryTestCase;
@@ -1816,9 +1816,9 @@ class ExpectationTest extends MockeryTestCase
 
         $this->assertTrue($service->login('user', 'pass'));
         $this->assertFalse($service->hasBookmarksTagged('php'));
-        $this->assertTrue($service->addBookmark('http://example.com/1', 'some_tag1'));
-        $this->assertTrue($service->addBookmark('http://example.com/2', 'some_tag2'));
-        $this->assertTrue($service->addBookmark('http://example.com/3', 'some_tag3'));
+        $this->assertTrue($service->addBookmark('https://example.com/1', 'some_tag1'));
+        $this->assertTrue($service->addBookmark('https://example.com/2', 'some_tag2'));
+        $this->assertTrue($service->addBookmark('https://example.com/3', 'some_tag3'));
         $this->assertTrue($service->hasBookmarksTagged('php'));
 
         $this->container->mockery_verify();
@@ -1834,9 +1834,9 @@ class ExpectationTest extends MockeryTestCase
 
         $this->assertTrue($service->login('user', 'pass'));
         $this->assertFalse($service->hasBookmarksTagged('php'));
-        $this->assertTrue($service->addBookmark('http://example.com/1', 'some_tag1'));
-        $this->assertTrue($service->addBookmark('http://example.com/2', 'some_tag2'));
-        $this->assertTrue($service->addBookmark('http://example.com/3', 'some_tag3'));
+        $this->assertTrue($service->addBookmark('https://example.com/1', 'some_tag1'));
+        $this->assertTrue($service->addBookmark('https://example.com/2', 'some_tag2'));
+        $this->assertTrue($service->addBookmark('https://example.com/3', 'some_tag3'));
         $this->assertTrue($service->hasBookmarksTagged('php'));
         $this->assertTrue($service->hasBookmarksTagged('php'));
 
@@ -1855,9 +1855,9 @@ class ExpectationTest extends MockeryTestCase
 
         $this->assertTrue($service->login('user', 'pass'));
         $this->assertFalse($service->hasBookmarksTagged('php'));
-        $this->assertTrue($service->addBookmark('http://example.com/1', 'some_tag1'));
-        $this->assertTrue($service->addBookmark('http://example.com/2', 'some_tag2'));
-        $this->assertTrue($service->addBookmark('http://example.com/3', 'some_tag3'));
+        $this->assertTrue($service->addBookmark('https://example.com/1', 'some_tag1'));
+        $this->assertTrue($service->addBookmark('https://example.com/2', 'some_tag2'));
+        $this->assertTrue($service->addBookmark('https://example.com/3', 'some_tag3'));
         $this->assertTrue($service->hasBookmarksTagged('php'));
         $this->assertTrue($service->hasBookmarksTagged('php'));
     }

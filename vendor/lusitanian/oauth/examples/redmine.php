@@ -8,7 +8,7 @@
  *
  * @author     Patrick Herzberg <patrick@herzberg-digital.de>
  * @copyright  Copyright (c) 2015 The authors
- * @license    http://www.opensource.org/licenses/mit-license.html  MIT License
+ * @license    https://www.opensource.org/licenses/mit-license.html  MIT License
  *
  * Example based on the yahoo example
  */
@@ -57,6 +57,6 @@ if (!empty($_GET['oauth_token'])) {
     $url = $redmineService->getAuthorizationUri(array('oauth_token' => $token->getRequestToken()));
     header('Location: ' . $url);
 } else {
-    $url = 'http://example.dev/' . '?go=go';
+    $url = 'https://example.dev/' . '?go=go';
     echo "<a href='$url'>Login with Redmine!</a>";
 }

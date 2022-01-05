@@ -15,7 +15,7 @@ class Payment extends Base
         'American Express', 'Discover Card'
     );
 
-    // see http://en.wikipedia.org/wiki/Bank_card_number for a reference of existing prefixes
+    // see https://en.wikipedia.org/wiki/Bank_card_number for a reference of existing prefixes
     protected static $cardParams = array(
         'Visa' => array(
             "4539########",
@@ -205,7 +205,7 @@ class Payment extends Base
     /**
      * International Bank Account Number (IBAN)
      *
-     * @link http://en.wikipedia.org/wiki/International_Bank_Account_Number
+     * @link https://en.wikipedia.org/wiki/International_Bank_Account_Number
      * @param  string  $countryCode ISO 3166-1 alpha-2 country code
      * @param  string  $prefix      for generating bank account number of a specific bank
      * @param  integer $length      total length without country code and 2 check digits
@@ -277,7 +277,7 @@ class Payment extends Base
      * Return the String of a SWIFT/BIC number
      *
      * @example 'RZTIAT22263'
-     * @link    http://en.wikipedia.org/wiki/ISO_9362
+     * @link    https://en.wikipedia.org/wiki/ISO_9362
      * @return  string Swift/Bic number
      */
     public static function swiftBicNumber()

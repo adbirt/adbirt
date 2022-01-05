@@ -3,7 +3,7 @@
 /**
  * @author     Dariusz Prząda <artdarek@gmail.com>
  * @copyright  Copyright (c) 2013
- * @license    http://www.opensource.org/licenses/mit-license.html MIT License
+ * @license    https://www.opensource.org/licenses/mit-license.html MIT License
  */
 
 use \Config;

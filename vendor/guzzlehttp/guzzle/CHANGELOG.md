@@ -170,7 +170,7 @@ CHANGELOG
 ------------------
 
 * For more information on the 4.0 transition, see:
-  http://mtdowling.com/blog/2014/03/15/guzzle-4-rc/
+  https://mtdowling.com/blog/2014/03/15/guzzle-4-rc/
 * For information on changes and upgrading, see:
   https://github.com/guzzle/guzzle/blob/master/UPGRADING.md#3x-to-40
 * Added `GuzzleHttp\batch()` as a convenience function for sending requests in
@@ -494,7 +494,7 @@ CHANGELOG
 3.4.0 (2013-04-11)
 ------------------
 
-* Bug fix: URLs are now resolved correctly based on http://tools.ietf.org/html/rfc3986#section-5.2. #289
+* Bug fix: URLs are now resolved correctly based on https://tools.ietf.org/html/rfc3986#section-5.2. #289
 * Bug fix: Absolute URLs with a path in a service description will now properly override the base URL. #289
 * Bug fix: Parsing a query string with a single PHP array value will now result in an array. #263
 * Bug fix: Better normalization of the User-Agent header to prevent duplicate headers. #264.

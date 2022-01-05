@@ -1,7 +1,7 @@
 {
     "name": "guzzlehttp/streams",
     "description": "Provides a simple abstraction over streams of data (Guzzle 4+)",
-    "homepage": "http://guzzlephp.org/",
+    "homepage": "https://guzzlephp.org/",
     "keywords": ["stream", "guzzle"],
     "license": "MIT",
     "authors": [

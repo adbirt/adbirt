@@ -5,7 +5,7 @@
  * @package    Tests
  * @author     David Desberg <david@daviddesberg.com>
  * @copyright  Copyright (c) 2012 The authors
- * @license    http://www.opensource.org/licenses/mit-license.html  MIT License
+ * @license    https://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
 namespace OAuth\Unit\Common\Http;
@@ -45,7 +45,7 @@ class HttpClientsTest extends \PHPUnit_Framework_TestCase
      */
     public function testHeaders()
     {
-        $testUri = new Uri('http://httpbin.org/get');
+        $testUri = new Uri('https://httpbin.org/get');
 
         $me = $this;
         $headerCb = function ($response) use ($me) {
@@ -62,7 +62,7 @@ class HttpClientsTest extends \PHPUnit_Framework_TestCase
     public function testException()
     {
         // sending a post here should get us a 405 which should trigger an exception
-        $testUri = new Uri('http://httpbin.org/delete');
+        $testUri = new Uri('https://httpbin.org/delete');
         foreach ($this->clients as $client) {
             $this->setExpectedException('OAuth\Common\Http\Exception\TokenResponseException');
             $client->retrieveResponse($testUri, array('blah' => 'blih'));
@@ -74,7 +74,7 @@ class HttpClientsTest extends \PHPUnit_Framework_TestCase
      */
     public function testDelete()
     {
-        $testUri = new Uri('http://httpbin.org/delete');
+        $testUri = new Uri('https://httpbin.org/delete');
 
         $me = $this;
         $deleteTestCb = function ($response) use ($me) {
@@ -90,7 +90,7 @@ class HttpClientsTest extends \PHPUnit_Framework_TestCase
      */
     public function testPut()
     {
-        $testUri = new Uri('http://httpbin.org/put');
+        $testUri = new Uri('https://httpbin.org/put');
 
         $me = $this;
         $putTestCb = function ($response) use ($me) {
@@ -108,7 +108,7 @@ class HttpClientsTest extends \PHPUnit_Framework_TestCase
     public function testPost()
     {
         // http test server
-        $testUri = new Uri('http://httpbin.org/post');
+        $testUri = new Uri('https://httpbin.org/post');
 
         $me = $this;
         $postTestCb = function ($response) use ($me) {
@@ -127,7 +127,7 @@ class HttpClientsTest extends \PHPUnit_Framework_TestCase
      */
     public function testInvalidGet()
     {
-        $testUri =  new Uri('http://site.net');
+        $testUri =  new Uri('https://site.net');
 
         foreach ($this->clients as $client) {
             $this->setExpectedException('InvalidArgumentException');
@@ -141,7 +141,7 @@ class HttpClientsTest extends \PHPUnit_Framework_TestCase
     public function testGet()
     {
         // test uri
-        $testUri = new Uri('http://httpbin.org/get?testKey=testValue');
+        $testUri = new Uri('https://httpbin.org/get?testKey=testValue');
 
         $me = $this;
         $getTestCb = function ($response) use ($me) {

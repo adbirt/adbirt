@@ -21,7 +21,7 @@
  *      DELETE /guzzle-server
  *      Host: 127.0.0.1:8125
  *
- * @package Guzzle PHP <http://www.guzzlephp.org>
+ * @package Guzzle PHP <https://www.guzzlephp.org>
  * @license See the LICENSE file that was distributed with this source code.
  */
 
@@ -132,7 +132,7 @@ var GuzzleServer = function(port, log) {
         that.server.listen(port, "127.0.0.1");
 
         if (this.log) {
-            console.log("Server running at http://127.0.0.1:8125/");
+            console.log("Server running at https://127.0.0.1:8125/");
         }
     };
 };

@@ -23,7 +23,7 @@ class Text extends \Faker\Provider\Text
      * *** START OF THIS PROJECT GUTENBERG EBOOK DICHTERTJE - DE UITVRETER  ***
      *
      * Produced by Mark C. Orton and the Online Distributed
-     * Proofreading Team at http://www.pgdp.net/
+     * Proofreading Team at https://www.pgdp.net/
      *
      * Nescio
      *
@@ -39,7 +39,7 @@ class Text extends \Faker\Provider\Text
      * "De Uitvreter" verscheen in "De Gids" van Januari
      * 1911. "Titaantjes" in "Groot-Nederland" van Juni 1915.
      *
-     * @see http://www.gutenberg.org/cache/epub/29719/pg29719.txt
+     * @see https://www.gutenberg.org/cache/epub/29719/pg29719.txt
      * @var string
      */
     protected static $baseText = <<<'EOT'

@@ -205,7 +205,7 @@ This should be identical to 1.0.0 sans any last-minute changes or performance en
 
 * Validate that `/dev/urandom` is a character device 
   * Reported by [@lokdnet](https://twitter.com/lokdnet)
-  * Investigated by [@narfbg](https://github.com/narfbg) and [frymaster](http://stackoverflow.com/users/1226810/frymaster) on [StackOverflow](http://stackoverflow.com/q/31631066/2224584)
+  * Investigated by [@narfbg](https://github.com/narfbg) and [frymaster](https://stackoverflow.com/users/1226810/frymaster) on [StackOverflow](https://stackoverflow.com/q/31631066/2224584)
 * Remove support for `/dev/arandom` which is an old OpenBSD feature, thanks [@jedisct1](https://github.com/jedisct1)
 * Prevent race conditions on the `filetype()` check, thanks [@jedisct1](https://github.com/jedisct1)
 * Buffer file reads to 8 bytes (performance optimization; PHP defaults to 8192 bytes)

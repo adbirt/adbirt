@@ -289,7 +289,7 @@ the same filename as the one you attached.
 
 
     // You can attach files from a URL if allow_url_fopen is on in php.ini
-    $message->attach(Swift_Attachment::fromPath('http://site.tld/logo.png'));
+    $message->attach(Swift_Attachment::fromPath('https://site.tld/logo.png'));
 
 Setting the Filename
 ~~~~~~~~~~~~~~~~~~~~
@@ -474,7 +474,7 @@ is used as a ``src`` attribute.
         ' <head></head>' .
         ' <body>' .
         '  Here is an image <img src="' .
-             $message->embed(Swift_Image::fromPath('http://site.tld/logo.png')) .
+             $message->embed(Swift_Image::fromPath('https://site.tld/logo.png')) .
            '" alt="Image" />' .
         '  Rest of message' .
         ' </body>' .
@@ -923,7 +923,7 @@ Using both signing and encrypting is also possible.
 
 The used encryption cipher can be set as the second parameter of setEncryptCertificate()
 
-See http://php.net/manual/openssl.ciphers for a list of supported ciphers.
+See https://php.net/manual/openssl.ciphers for a list of supported ciphers.
 
 By default the message is first signed and then encrypted, this can be changed by adding.
 

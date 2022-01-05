@@ -32,11 +32,11 @@ namespace Symfony\Component\HttpFoundation\Session\Storage\Handler;
  * Saving it in a character column could corrupt the data. You can use createTable()
  * to initialize a correctly defined table.
  *
- * @see http://php.net/sessionhandlerinterface
+ * @see https://php.net/sessionhandlerinterface
  *
  * @author Fabien Potencier <fabien@symfony.com>
  * @author Michael Williams <michael.williams@funsational.com>
- * @author Tobias Schultze <http://tobion.de>
+ * @author Tobias Schultze <https://tobion.de>
  */
 class PdoSessionHandler implements \SessionHandlerInterface
 {
@@ -424,7 +424,7 @@ class PdoSessionHandler implements \SessionHandlerInterface
      * PDO::rollback or PDO::inTransaction for SQLite.
      *
      * Also MySQLs default isolation, REPEATABLE READ, causes deadlock for different sessions
-     * due to http://www.mysqlperformanceblog.com/2013/12/12/one-more-innodb-gap-lock-to-avoid/ .
+     * due to https://www.mysqlperformanceblog.com/2013/12/12/one-more-innodb-gap-lock-to-avoid/ .
      * So we change it to READ COMMITTED.
      */
     private function beginTransaction()
@@ -668,7 +668,7 @@ class PdoSessionHandler implements \SessionHandlerInterface
                 break;
             case 'sqlsrv' === $this->driver && version_compare($this->pdo->getAttribute(\PDO::ATTR_SERVER_VERSION), '10', '>='):
                 // MERGE is only available since SQL Server 2008 and must be terminated by semicolon
-                // It also requires HOLDLOCK according to http://weblogs.sqlteam.com/dang/archive/2009/01/31/UPSERT-Race-Condition-With-MERGE.aspx
+                // It also requires HOLDLOCK according to https://weblogs.sqlteam.com/dang/archive/2009/01/31/UPSERT-Race-Condition-With-MERGE.aspx
                 $mergeSql = "MERGE INTO $this->table WITH (HOLDLOCK) USING (SELECT 1 AS dummy) AS src ON ($this->idCol = ?) ".
                     "WHEN NOT MATCHED THEN INSERT ($this->idCol, $this->dataCol, $this->lifetimeCol, $this->timeCol) VALUES (?, ?, ?, ?) ".
                     "WHEN MATCHED THEN UPDATE SET $this->dataCol = ?, $this->lifetimeCol = ?, $this->timeCol = ?;";

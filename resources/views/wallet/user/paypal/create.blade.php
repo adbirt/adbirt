@@ -187,7 +187,7 @@
                 // makepayment("pk_test_01e038731d30cb9eae9cb3330026e912d032bf66",clientEmail,paidAmount,refNo,"")
                 makepayment("pk_live_3feeaad293f7fc85ef6ff19d0b073576fbbc8d5e", clientEmail, paidAmount, refNo, "")
                 /*$.ajax({
-                                //url: 'http://www.apilayer.net/api/live?access_key=d91294091166e93bb0ebea8dd0012fe5&format=1',
+                                //url: 'https://www.apilayer.net/api/live?access_key=d91294091166e93bb0ebea8dd0012fe5&format=1',
                                 // url: 'https://www.apilayer.net/api/live?access_key=b51995d0a889388ea1643cf194a98db0&format=1',
                                  //  url: 'https://openexchangerates.org/api/latest.json?app_id=6f3488f3e1bb4f3a8c258ed26e67bc06',
                                      url: 'https://www.apilayer.net/api/live?access_key=52ea8855e1aef8d4e48b34dc67333236&format=1',

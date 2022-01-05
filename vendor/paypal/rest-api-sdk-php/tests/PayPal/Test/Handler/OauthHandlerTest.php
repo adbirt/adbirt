@@ -45,8 +45,8 @@ class OauthHandlerTest extends \PHPUnit_Framework_TestCase
         return array(
             array( array('mode' => 'sandbox') ),
             array( array('mode' => 'live')),
-            array( array( 'mode' => 'sandbox','oauth.EndPoint' => 'http://localhost/')),
-            array( array('mode' => 'sandbox','service.EndPoint' => 'http://service.localhost/'))
+            array( array( 'mode' => 'sandbox','oauth.EndPoint' => 'https://localhost/')),
+            array( array('mode' => 'sandbox','service.EndPoint' => 'https://service.localhost/'))
         );
     }
 

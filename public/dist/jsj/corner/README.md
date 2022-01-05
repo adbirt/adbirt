@@ -4,8 +4,8 @@ Corner is a simple plugin for creating rounded (or other styled) corners on elem
 
 ## Links
 
-* [Home Page](http://jquery.malsup.com/corner/)
-* [Download](http://github.com/malsup/corner/raw/master/jquery.corner.js)
+* [Home Page](https://jquery.malsup.com/corner/)
+* [Download](https://github.com/malsup/corner/raw/master/jquery.corner.js)
 
 
 ## Examples

@@ -28,7 +28,7 @@ class Address extends \Faker\Provider\Address
     );
 
     /**
-     * @link http://sr.wikipedia.org/sr-el/%D0%93%D1%80%D0%B0%D0%B4_%D1%83_%D0%A1%D1%80%D0%B1%D0%B8%D1%98%D0%B8
+     * @link https://sr.wikipedia.org/sr-el/%D0%93%D1%80%D0%B0%D0%B4_%D1%83_%D0%A1%D1%80%D0%B1%D0%B8%D1%98%D0%B8
      */
     protected static $cityNames = array(
         'Beograd', 'Valjevo', 'Vranje', 'Zaječar', 'Zrenjanin', 'Jagodina', 'Kragujevac', 'Kraljevo', 'Kruševac', 'Leskovac', 'Loznica', 'Niš', 'Novi Pazar', 'Novi Sad', 'Pančevo', 'Požarevac', 'Priština', 'Smederevo', 'Sombor', 'Sremska Mitrovica', 'Subotica', 'Užice', 'Čačak', 'Šabac',

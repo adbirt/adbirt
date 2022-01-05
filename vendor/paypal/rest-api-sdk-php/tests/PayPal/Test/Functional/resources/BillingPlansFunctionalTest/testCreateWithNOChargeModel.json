@@ -36,8 +36,8 @@
                 }
             ],
             "merchant_preferences": {
-                "return_url": "http://www.paypal.com",
-                "cancel_url": "http://www.yahoo.com"
+                "return_url": "https://www.paypal.com",
+                "cancel_url": "https://www.yahoo.com"
             }
 
         }
@@ -72,8 +72,8 @@
                     "value": "0"
                 },
                 "max_fail_attempts": "0",
-                "return_url": "http://www.paypal.com",
-                "cancel_url": "http://www.yahoo.com",
+                "return_url": "https://www.paypal.com",
+                "cancel_url": "https://www.yahoo.com",
                 "auto_bill_amount": "NO",
                 "initial_fail_amount_action": "CONTINUE"
             },

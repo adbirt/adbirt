@@ -10,7 +10,7 @@ class PhoneNumber extends \Faker\Provider\PhoneNumber
     protected static $cellphoneFormats = array('7###-####', '8###-####', '9###-####');
 
     /**
-     * Extracted from http://portal.embratel.com.br/embratel/9-digito/ (point 11)
+     * Extracted from https://portal.embratel.com.br/embratel/9-digito/ (point 11)
      */
     protected static $ninthDigitAreaCodes = array(
         11, 12, 13, 14, 15, 16, 17, 18, 19, // aug/2013

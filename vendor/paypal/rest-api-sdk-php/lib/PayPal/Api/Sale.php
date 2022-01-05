@@ -512,7 +512,7 @@ class Sale extends PayPalResourceModel
     }
 
     /**
-     * Time of sale as defined in [RFC 3339 Section 5.6](http://tools.ietf.org/html/rfc3339#section-5.6)
+     * Time of sale as defined in [RFC 3339 Section 5.6](https://tools.ietf.org/html/rfc3339#section-5.6)
      *
      * @param string $create_time
      * 
@@ -525,7 +525,7 @@ class Sale extends PayPalResourceModel
     }
 
     /**
-     * Time of sale as defined in [RFC 3339 Section 5.6](http://tools.ietf.org/html/rfc3339#section-5.6)
+     * Time of sale as defined in [RFC 3339 Section 5.6](https://tools.ietf.org/html/rfc3339#section-5.6)
      *
      * @return string
      */

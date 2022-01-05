@@ -37,4 +37,4 @@ Finally, we use `openssl_random_pseudo_bytes()` **as a last resort**, due to
 function calls `RAND_pseudo_bytes()`, which has been [deprecated](https://github.com/paragonie/random_compat/issues/5)
 by the OpenSSL team. Furthermore, [it might silently return weak random data](https://github.com/paragonie/random_compat/issues/6#issuecomment-119564973)
 if it is called before OpenSSL's **userspace** CSPRNG is seeded. Also, 
-[you want the OS CSPRNG, not a userspace CSPRNG](http://sockpuppet.org/blog/2014/02/25/safely-generate-random-numbers/).
+[you want the OS CSPRNG, not a userspace CSPRNG](https://sockpuppet.org/blog/2014/02/25/safely-generate-random-numbers/).

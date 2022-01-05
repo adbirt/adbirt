@@ -11,7 +11,7 @@ $webProfile = require 'GetWebProfile.php';
 
 
 // Updated the logo image of presentation object in a given web profile.
-$webProfile->getPresentation()->setLogoImage("http://www.google.com/favico.ico");
+$webProfile->getPresentation()->setLogoImage("https://www.google.com/favico.ico");
 
 try {
     // Update the web profile to change the logo image.

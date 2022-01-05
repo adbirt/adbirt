@@ -1,7 +1,7 @@
 /* jQuery Star Rating Plugin
  * 
  * @Author
- * Copyright Nov 02 2010, Irfan Durmus - http://irfandurmus.com/
+ * Copyright Nov 02 2010, Irfan Durmus - https://irfandurmus.com/
  *
  * @Version
  * 0.3b
@@ -10,7 +10,7 @@
  * Dual licensed under the MIT or GPL Version 2 licenses.
  *
  * Visit the plugin page for more information.
- * http://irfandurmus.com/projects/jquery-star-rating-plugin/
+ * https://irfandurmus.com/projects/jquery-star-rating-plugin/
  *
  */
 

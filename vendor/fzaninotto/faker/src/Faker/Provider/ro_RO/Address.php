@@ -31,7 +31,7 @@ class Address extends \Faker\Provider\Address
 
     protected static $postcode = array('######');
 
-    // from http://ro.wikipedia.org/wiki/Lista_ora%C8%99elor_din_Rom%C3%A2nia#Lista_alfabetic.C4.83_a_ora.C8.99elor_din_Rom.C3.A2nia_.28inclusiv_municipii.29
+    // from https://ro.wikipedia.org/wiki/Lista_ora%C8%99elor_din_Rom%C3%A2nia#Lista_alfabetic.C4.83_a_ora.C8.99elor_din_Rom.C3.A2nia_.28inclusiv_municipii.29
     protected static $cityNames = array(
         'Abrud', 'Adjud', 'Agnita', 'Aiud', 'Alba Iulia', 'Aleșd', 'Alexandria', 'Amara', 'Anina', 'Aninoasa', 'Arad', 'Ardud', 'Avrig', 'Azuga', 'Babadag', 'Băbeni', 'Bacău', 'Baia de Aramă',
         'Baia de Arieș', 'Baia Mare', 'Baia Sprie', 'Băicoi', 'Băile Govora', 'Băile Herculane', 'Băile Olănești', 'Băile Tușnad', 'Băilești', 'Bălan', 'Bălcești', 'Balș', 'Băneasa', 'Baraolt',
@@ -57,14 +57,14 @@ class Address extends \Faker\Provider\Address
         'Vulcan', 'Zalău', 'Zărnești', 'Zimnicea', 'Zlatna'
     );
 
-    // http://en.wikipedia.org/wiki/Counties_of_Romania#Current_list
+    // https://en.wikipedia.org/wiki/Counties_of_Romania#Current_list
     protected static $counties = array(
         'Alba', 'Arad', 'Argeș', 'Bacău', 'Bihor', 'Bistrița Năsăud', 'Botoșani', 'Brăila', 'Brașov', 'București', 'Buzău', 'Călărași', 'Caraș-Severin', 'Cluj', 'Constanța', 'Covasna', 'Dâmbovița',
         'Dolj', 'Galați', 'Giurgiu', 'Gorj', 'Harghita', 'Hunedoara', 'Ialomița', 'Iași', 'Ilfov', 'Maramureț', 'Mehedinți', 'Mureș', 'Neamț', 'Olt', 'Prahova', 'Sălaj', 'Satu Mare', 'Sibiu',
         'Suceava', 'Teleorman', 'Timiș', 'Tulcea', 'Vâlcea', 'Vaslui', 'Vrancea'
     );
 
-    // http://ro.wikipedia.org/wiki/Lista_statelor_lumii#Lista_statelor_lumii
+    // https://ro.wikipedia.org/wiki/Lista_statelor_lumii#Lista_statelor_lumii
     protected static $country = array(
         'Afganistan', 'Africa de Sud', 'Albania', 'Algeria', 'Andorra', 'Angola', 'Antigua și Barbuda', 'Arabia Saudită', 'Argentina', 'Armenia', 'Australia', 'Austria', 'Azerbaidjan',
         'Bahamas', 'Bahrain', 'Bangladesh', 'Barbados', 'Belarus', 'Belgia', 'Belize', 'Benin', 'Bhutan', 'Birmania', 'Bolivia', 'Bosnia și Herțegovina', 'Botswana', 'Brazilia', 'Brunei', 'Bulgaria',

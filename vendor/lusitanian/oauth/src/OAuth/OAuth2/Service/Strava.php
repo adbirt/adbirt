@@ -3,9 +3,9 @@
  * Strava service.
  *
  * @author  Pedro Amorim <contact@pamorim.fr>
- * @license http://www.opensource.org/licenses/mit-license.html MIT License
- * @link    http://strava.github.io/
- * @link    http://strava.github.io/api/v3/oauth/
+ * @license https://www.opensource.org/licenses/mit-license.html MIT License
+ * @link    https://strava.github.io/
+ * @link    https://strava.github.io/api/v3/oauth/
  */
 
 namespace OAuth\OAuth2\Service;
@@ -23,9 +23,9 @@ use OAuth\OAuth2\Service\Exception\InvalidAccessTypeException;
  * Strava service.
  *
  * @author  Pedro Amorim <contact@pamorim.fr>
- * @license http://www.opensource.org/licenses/mit-license.html MIT License
- * @link    http://strava.github.io/
- * @link    http://strava.github.io/api/v3/oauth/
+ * @license https://www.opensource.org/licenses/mit-license.html MIT License
+ * @link    https://strava.github.io/
+ * @link    https://strava.github.io/api/v3/oauth/
  */
 class Strava extends AbstractService
 {

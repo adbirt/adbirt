@@ -78,12 +78,12 @@ interface ResponseInterface extends MessageInterface
      *     - ns_is_prefix: Set to true to specify that the NS is a prefix rather
      *       than a URI (defaults to false).
      *     - libxml_options: Bitwise OR of the libxml option constants
-     *       listed at http://php.net/manual/en/libxml.constants.php
+     *       listed at https://php.net/manual/en/libxml.constants.php
      *       (defaults to LIBXML_NONET)
      *
      * @return \SimpleXMLElement
      * @throws \RuntimeException if the response body is not in XML format
-     * @link http://websec.io/2012/08/27/Preventing-XXE-in-PHP.html
+     * @link https://websec.io/2012/08/27/Preventing-XXE-in-PHP.html
      */
     public function xml(array $config = []);
 }

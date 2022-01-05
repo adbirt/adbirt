@@ -38,7 +38,7 @@ installed when using ``php composer.phar update --no-dev`` in production.
 PEAR
 ----
 
-Mockery is hosted on the `survivethedeepend.com <http://pear.survivethedeepend.com>`_
+Mockery is hosted on the `survivethedeepend.com <https://pear.survivethedeepend.com>`_
 PEAR channel and can be installed using the following commands:
 
 .. code-block:: bash

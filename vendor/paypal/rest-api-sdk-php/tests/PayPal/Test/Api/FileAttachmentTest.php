@@ -18,7 +18,7 @@ class FileAttachmentTest extends \PHPUnit_Framework_TestCase
      */
     public static function getJson()
     {
-        return '{"name":"TestSample","url":"http://www.google.com"}';
+        return '{"name":"TestSample","url":"https://www.google.com"}';
     }
 
     /**
@@ -52,7 +52,7 @@ class FileAttachmentTest extends \PHPUnit_Framework_TestCase
     public function testGetters($obj)
     {
         $this->assertEquals($obj->getName(), "TestSample");
-        $this->assertEquals($obj->getUrl(), "http://www.google.com");
+        $this->assertEquals($obj->getUrl(), "https://www.google.com");
     }
 
     /**

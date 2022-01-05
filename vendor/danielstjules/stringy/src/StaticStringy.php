@@ -955,7 +955,7 @@ class StaticStringy
      * Convert all applicable characters to HTML entities.
      *
      * @param  string   $str   The string to encode.
-     * @param  int|null $flags See http://php.net/manual/en/function.htmlentities.php
+     * @param  int|null $flags See https://php.net/manual/en/function.htmlentities.php
      * @param  string   $encoding    The character encoding
      * @return Stringy  Object with the resulting $str after being html encoded.
      */
@@ -968,7 +968,7 @@ class StaticStringy
      * Convert all HTML entities to their applicable characters.
      *
      * @param  string   $str   The string to decode.
-     * @param  int|null $flags See http://php.net/manual/en/function.html-entity-decode.php
+     * @param  int|null $flags See https://php.net/manual/en/function.html-entity-decode.php
      * @param  string   $encoding    The character encoding
      * @return Stringy  Object with the resulting $str after being html decoded.
      */

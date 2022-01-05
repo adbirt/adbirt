@@ -10,7 +10,7 @@
  */
 
 /**
- * Translation messages.  See http://symfony.com/doc/current/book/translation.html
+ * Translation messages.  See https://symfony.com/doc/current/book/translation.html
  * for possible formats.
  */
 return array(

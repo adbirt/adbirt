@@ -11,7 +11,7 @@ ColReorder adds the ability for the end user to click and drag column headers to
 
 # Installation
 
-To use ColReorder, first download DataTables ( http://datatables.net/download ) and place the unzipped ColReorder package into a `extensions` directory in the DataTables package. This will allow the pages in the examples to operate correctly. To see the examples running, open the `examples` directory in your web-browser.
+To use ColReorder, first download DataTables ( https://datatables.net/download ) and place the unzipped ColReorder package into a `extensions` directory in the DataTables package. This will allow the pages in the examples to operate correctly. To see the examples running, open the `examples` directory in your web-browser.
 
 
 # Basic usage
@@ -29,8 +29,8 @@ $(document).ready( function () {
 
 # Documentation / support
 
-* Documentation: http://datatables.net/extensions/colreorder/
-* DataTables support forums: http://datatables.net/forums
+* Documentation: https://datatables.net/extensions/colreorder/
+* DataTables support forums: https://datatables.net/forums
 
 
 # GitHub

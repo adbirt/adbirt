@@ -19,9 +19,9 @@ class TransactionIteratorTest extends \PHPUnit_Framework_TestCase
     {
         $client = new Client();
         $requests = [
-            $client->createRequest('GET', 'http://test.com'),
-            $client->createRequest('POST', 'http://test.com'),
-            $client->createRequest('PUT', 'http://test.com'),
+            $client->createRequest('GET', 'https://test.com'),
+            $client->createRequest('POST', 'https://test.com'),
+            $client->createRequest('PUT', 'https://test.com'),
         ];
         $t = new TransactionIterator($requests, $client, []);
         $this->assertEquals(0, $t->key());
@@ -41,9 +41,9 @@ class TransactionIteratorTest extends \PHPUnit_Framework_TestCase
     {
         $c = new Client();
         $requests = [
-            $c->createRequest('GET', 'http://test.com'),
-            $c->createRequest('POST', 'http://test.com'),
-            $c->createRequest('PUT', 'http://test.com'),
+            $c->createRequest('GET', 'https://test.com'),
+            $c->createRequest('POST', 'https://test.com'),
+            $c->createRequest('PUT', 'https://test.com'),
         ];
 
         $t = new TransactionIterator(new \ArrayIterator($requests), $c, []);

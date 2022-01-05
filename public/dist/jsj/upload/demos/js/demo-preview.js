@@ -16,7 +16,7 @@
     
     addFile: function(id, i, file){
 		var template = '<div id="demo-file' + i + '">' +
-		                   '<img src="http://placehold.it/48.png" class="demo-image-preview" />' +
+		                   '<img src="https://placehold.it/48.png" class="demo-image-preview" />' +
 		                   '<span class="demo-file-id">#' + i + '</span> - ' + file.name + ' <span class="demo-file-size">(' + $.danidemo.humanizeSize(file.size) + ')</span><br />Status: <span class="demo-file-status">Waiting to upload</span>'+
 		                   '<div class="progress progress-striped active">'+
 		                       '<div class="progress-bar" role="progressbar" style="width: 0%;">'+

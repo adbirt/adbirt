@@ -19,7 +19,7 @@ use Symfony\Component\HttpFoundation\Request;
  * This class implements a fluent interface.
  *
  * @author Fabien Potencier <fabien@symfony.com>
- * @author Tobias Schultze <http://tobion.de>
+ * @author Tobias Schultze <https://tobion.de>
  */
 class RequestContext
 {

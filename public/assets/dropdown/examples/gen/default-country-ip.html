@@ -32,7 +32,7 @@
     <pre><code class="language-javascript">$(&quot;#phone&quot;).intlTelInput({
   initialCountry: &quot;auto&quot;,
   geoIpLookup: function(callback) {
-    $.get(&#39;http://ipinfo.io&#39;, function() {}, &quot;jsonp&quot;).always(function(resp) {
+    $.get(&#39;https://ipinfo.io&#39;, function() {}, &quot;jsonp&quot;).always(function(resp) {
       var countryCode = (resp &amp;&amp; resp.country) ? resp.country : &quot;&quot;;
       callback(countryCode);
     });

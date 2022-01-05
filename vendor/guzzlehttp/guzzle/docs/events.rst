@@ -318,7 +318,7 @@ a ``GuzzleHttp\Event\BeforeEvent``.
     use GuzzleHttp\Common\EmitterInterface;
     use GuzzleHttp\Event\BeforeEvent;
 
-    $client = new Client(['base_url' => 'http://httpbin.org']);
+    $client = new Client(['base_url' => 'https://httpbin.org']);
     $request = $client->createRequest('GET', '/');
     $request->getEmitter()->on(
         'before',
@@ -344,7 +344,7 @@ the request from being sent over the wire and stops the propagation of the
     use GuzzleHttp\Event\BeforeEvent;
     use GuzzleHttp\Message\Response;
 
-    $client = new Client(['base_url' => 'http://httpbin.org']);
+    $client = new Client(['base_url' => 'https://httpbin.org']);
     $request = $client->createRequest('GET', '/status/500');
     $request->getEmitter()->on('before', function (BeforeEvent $e) {
         $response = new Response(200);
@@ -380,7 +380,7 @@ This event cannot be intercepted.
     use GuzzleHttp\Client;
     use GuzzleHttp\Event\HeadersEvent;
 
-    $client = new Client(['base_url' => 'http://httpbin.org']);
+    $client = new Client(['base_url' => 'https://httpbin.org']);
     $request = $client->createRequest('GET', '/stream/100');
     $request->getEmitter()->on('headers', function (HeadersEvent $e) {
         echo $e->getResponse();
@@ -421,7 +421,7 @@ for changing the response for caching.
     use GuzzleHttp\Event\CompleteEvent;
     use GuzzleHttp\Message\Response;
 
-    $client = new Client(['base_url' => 'http://httpbin.org']);
+    $client = new Client(['base_url' => 'https://httpbin.org']);
     $request = $client->createRequest('GET', '/status/302');
     $cachedResponse = new Response(200);
 
@@ -462,7 +462,7 @@ a username and password.
     use GuzzleHttp\Client;
     use GuzzleHttp\Event\ErrorEvent;
 
-    $client = new Client(['base_url' => 'http://httpbin.org']);
+    $client = new Client(['base_url' => 'https://httpbin.org']);
     $request = $client->createRequest('GET', '/basic-auth/foo/bar');
     $request->getEmitter()->on('error', function (ErrorEvent $e) {
         if ($e->getResponse()->getStatusCode() == 401) {

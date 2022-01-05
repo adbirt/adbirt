@@ -41,7 +41,7 @@ This update below alters the workspace to a new FriendlyName and EventCallbackUr
 
 		// updated workspace parameters
 		$updatedFriendlyName = 'My Updated Workspace';
-		$updatedEventCallbackUrl = 'http://updatedEventCallbackUrl.org'; 
+		$updatedEventCallbackUrl = 'https://updatedEventCallbackUrl.org'; 
 
 		// update workspace
 		$taskrouterClient->workspace->update(

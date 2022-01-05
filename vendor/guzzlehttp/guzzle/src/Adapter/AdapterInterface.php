@@ -7,7 +7,7 @@ use GuzzleHttp\Message\ResponseInterface;
 /**
  * Adapter interface used to transfer HTTP requests.
  *
- * @link http://docs.guzzlephp.org/en/guzzle4/adapters.html for a full
+ * @link https://docs.guzzlephp.org/en/guzzle4/adapters.html for a full
  *     explanation of adapters and their responsibilities.
  */
 interface AdapterInterface

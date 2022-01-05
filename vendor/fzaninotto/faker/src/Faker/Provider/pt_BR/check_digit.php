@@ -4,9 +4,9 @@ namespace Faker\Provider\pt_BR;
 
 /**
  * Calculates one MOD 11 check digit based on customary Brazilian algorithms.
- * @link http://en.wikipedia.org/wiki/Check_digit
- * @link http://pt.wikipedia.org/wiki/CNPJ#Algoritmo_de_Valida.C3.A7.C3.A3o
- * @link http://en.wikipedia.org/wiki/Cadastro_de_Pessoas_F%C3%ADsicas#Validation
+ * @link https://en.wikipedia.org/wiki/Check_digit
+ * @link https://pt.wikipedia.org/wiki/CNPJ#Algoritmo_de_Valida.C3.A7.C3.A3o
+ * @link https://en.wikipedia.org/wiki/Cadastro_de_Pessoas_F%C3%ADsicas#Validation
  *
  * @param string|integer $numbers Numbers on which generate the check digit
  * @return integer

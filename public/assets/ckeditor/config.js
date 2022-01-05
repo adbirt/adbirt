@@ -1,13 +1,13 @@
 /**
  * @license Copyright (c) 2003-2015, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md or http://ckeditor.com/license
+ * For licensing, see LICENSE.md or https://ckeditor.com/license
  */
 
 CKEDITOR.editorConfig = function( config ) {
 
 	// Define changes to default configuration here.
 	// For complete reference see:
-	// http://docs.ckeditor.com/#!/api/CKEDITOR.config
+	// https://docs.ckeditor.com/#!/api/CKEDITOR.config
 
 
 	// Toolbar
@@ -77,7 +77,7 @@ CKEDITOR.editorConfig = function( config ) {
 
         // the root path of ACE Editor. Useful if you want to use the plugin
         // without any Internet connection
-        js : "http://cdn.jsdelivr.net//ace/1.1.4/noconflict/"
+        js : "https://cdn.jsdelivr.net//ace/1.1.4/noconflict/"
     };
 
 };

@@ -21,7 +21,7 @@ class RedirectTest extends \PHPUnit_Framework_TestCase
             "HTTP/1.1 200 OK\r\nContent-Length: 0\r\n\r\n",
         ]);
 
-        $client = new Client(['base_url' => 'http://test.com']);
+        $client = new Client(['base_url' => 'https://test.com']);
         $client->getEmitter()->attach($history);
         $client->getEmitter()->attach($mock);
 
@@ -56,7 +56,7 @@ class RedirectTest extends \PHPUnit_Framework_TestCase
         ]);
         $client = new Client();
         $client->getEmitter()->attach($mock);
-        $client->get('http://www.example.com/foo');
+        $client->get('https://www.example.com/foo');
     }
 
     public function testDefaultBehaviorIsToRedirectWithGetForEntityEnclosingRequests()
@@ -70,7 +70,7 @@ class RedirectTest extends \PHPUnit_Framework_TestCase
         $client = new Client();
         $client->getEmitter()->attach($mock);
         $client->getEmitter()->attach($h);
-        $client->post('http://test.com/foo', [
+        $client->post('https://test.com/foo', [
             'headers' => ['X-Baz' => 'bar'],
             'body' => 'testing'
         ]);
@@ -90,7 +90,7 @@ class RedirectTest extends \PHPUnit_Framework_TestCase
             "HTTP/1.1 301 Moved Permanently\r\nLocation: /redirect\r\nContent-Length: 0\r\n\r\n",
             "HTTP/1.1 200 OK\r\nContent-Length: 0\r\n\r\n",
         ]);
-        $client = new Client(['base_url' => 'http://test.com']);
+        $client = new Client(['base_url' => 'https://test.com']);
         $client->getEmitter()->attach($mock);
         $client->getEmitter()->attach($h);
         $client->post('/foo', [
@@ -113,7 +113,7 @@ class RedirectTest extends \PHPUnit_Framework_TestCase
             "HTTP/1.1 301 Moved Permanently\r\nLocation: /redirect\r\nContent-Length: 0\r\n\r\n",
             "HTTP/1.1 200 OK\r\nContent-Length: 0\r\n\r\n",
         ]);
-        $client = new Client(['base_url' => 'http://test.com']);
+        $client = new Client(['base_url' => 'https://test.com']);
         $client->getEmitter()->attach($mock);
         $client->getEmitter()->attach($h);
 
@@ -152,7 +152,7 @@ class RedirectTest extends \PHPUnit_Framework_TestCase
         $body->expects($this->once())->method('seek')->will($this->returnValue(false));
         $body->expects($this->any())->method('eof')->will($this->returnValue(true));
         $body->expects($this->any())->method('read')->will($this->returnValue('foo'));
-        $client->post('http://example.com/foo', [
+        $client->post('https://example.com/foo', [
             'body' => $body,
             'allow_redirects' => ['max' => 10, 'strict' => true]
         ]);
@@ -160,7 +160,7 @@ class RedirectTest extends \PHPUnit_Framework_TestCase
 
     public function testRedirectsCanBeDisabledPerRequest()
     {
-        $client = new Client(['base_url' => 'http://test.com']);
+        $client = new Client(['base_url' => 'https://test.com']);
         $client->getEmitter()->attach(new Mock([
             "HTTP/1.1 301 Moved Permanently\r\nLocation: /redirect\r\nContent-Length: 0\r\n\r\n",
             "HTTP/1.1 200 OK\r\nContent-Length: 0\r\n\r\n",
@@ -172,7 +172,7 @@ class RedirectTest extends \PHPUnit_Framework_TestCase
     public function testCanRedirectWithNoLeadingSlashAndQuery()
     {
         $h = new History();
-        $client = new Client(['base_url' => 'http://www.foo.com']);
+        $client = new Client(['base_url' => 'https://www.foo.com']);
         $client->getEmitter()->attach(new Mock([
             "HTTP/1.1 301 Moved Permanently\r\nLocation: /redirect?foo=bar\r\nContent-Length: 0\r\n\r\n",
             "HTTP/1.1 200 OK\r\nContent-Length: 0\r\n\r\n",
@@ -180,13 +180,13 @@ class RedirectTest extends \PHPUnit_Framework_TestCase
         $client->getEmitter()->attach($h);
         $client->get('?foo=bar');
         $requests = $h->getRequests();
-        $this->assertEquals('http://www.foo.com?foo=bar', $requests[0]->getUrl());
-        $this->assertEquals('http://www.foo.com/redirect?foo=bar', $requests[1]->getUrl());
+        $this->assertEquals('https://www.foo.com?foo=bar', $requests[0]->getUrl());
+        $this->assertEquals('https://www.foo.com/redirect?foo=bar', $requests[1]->getUrl());
     }
 
     public function testHandlesRedirectsWithSpacesProperly()
     {
-        $client = new Client(['base_url' => 'http://www.foo.com']);
+        $client = new Client(['base_url' => 'https://www.foo.com']);
         $client->getEmitter()->attach(new Mock([
             "HTTP/1.1 301 Moved Permanently\r\nLocation: /redirect 1\r\nContent-Length: 0\r\n\r\n",
             "HTTP/1.1 200 OK\r\nContent-Length: 0\r\n\r\n"
@@ -200,7 +200,7 @@ class RedirectTest extends \PHPUnit_Framework_TestCase
 
     public function testAddsRefererWhenPossible()
     {
-        $client = new Client(['base_url' => 'http://www.foo.com']);
+        $client = new Client(['base_url' => 'https://www.foo.com']);
         $client->getEmitter()->attach(new Mock([
             "HTTP/1.1 301 Moved Permanently\r\nLocation: /bar\r\nContent-Length: 0\r\n\r\n",
             "HTTP/1.1 200 OK\r\nContent-Length: 0\r\n\r\n"
@@ -209,7 +209,7 @@ class RedirectTest extends \PHPUnit_Framework_TestCase
         $client->getEmitter()->attach($h);
         $client->get('/foo', ['allow_redirects' => ['max' => 5, 'referer' => true]]);
         $reqs = $h->getRequests();
-        $this->assertEquals('http://www.foo.com/foo', $reqs[1]->getHeader('Referer'));
+        $this->assertEquals('https://www.foo.com/foo', $reqs[1]->getHeader('Referer'));
     }
 
     public function testDoesNotAddRefererWhenChangingProtocols()
@@ -217,7 +217,7 @@ class RedirectTest extends \PHPUnit_Framework_TestCase
         $client = new Client(['base_url' => 'https://www.foo.com']);
         $client->getEmitter()->attach(new Mock([
             "HTTP/1.1 301 Moved Permanently\r\n"
-            . "Location: http://www.foo.com/foo\r\n"
+            . "Location: https://www.foo.com/foo\r\n"
             . "Content-Length: 0\r\n\r\n",
             "HTTP/1.1 200 OK\r\nContent-Length: 0\r\n\r\n"
         ]));
@@ -238,7 +238,7 @@ class RedirectTest extends \PHPUnit_Framework_TestCase
         $client = new Client();
         $client->getEmitter()->attach($mock);
         $client->getEmitter()->attach($h);
-        $client->post('http://test.com/foo', ['body' => 'testing']);
+        $client->post('https://test.com/foo', ['body' => 'testing']);
         $requests = $h->getRequests();
         $this->assertEquals('POST', $requests[0]->getMethod());
         $this->assertEquals('GET', $requests[1]->getMethod());
@@ -246,13 +246,13 @@ class RedirectTest extends \PHPUnit_Framework_TestCase
 
     public function testRelativeLinkBasedLatestRequest()
     {
-        $client = new Client(['base_url' => 'http://www.foo.com']);
+        $client = new Client(['base_url' => 'https://www.foo.com']);
         $client->getEmitter()->attach(new Mock([
-            "HTTP/1.1 301 Moved Permanently\r\nLocation: http://www.bar.com\r\nContent-Length: 0\r\n\r\n",
+            "HTTP/1.1 301 Moved Permanently\r\nLocation: https://www.bar.com\r\nContent-Length: 0\r\n\r\n",
             "HTTP/1.1 301 Moved Permanently\r\nLocation: /redirect\r\nContent-Length: 0\r\n\r\n",
             "HTTP/1.1 200 OK\r\nContent-Length: 0\r\n\r\n"
         ]));
         $response = $client->get('/');
-        $this->assertEquals('http://www.bar.com/redirect', $response->getEffectiveUrl());
+        $this->assertEquals('https://www.bar.com/redirect', $response->getEffectiveUrl());
     }
 }

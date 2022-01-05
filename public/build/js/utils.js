@@ -11,7 +11,7 @@ function x(a,b,c){a.b[b]=c;a.d&&(a.d[b]=c)}function ma(a,b,c){a.b[b]||(a.b[b]=[]
  you may not use this file except in compliance with the License.
  You may obtain a copy of the License at
 
- http://www.apache.org/licenses/LICENSE-2.0
+ https://www.apache.org/licenses/LICENSE-2.0
 
  Unless required by applicable law or agreed to in writing, software
  distributed under the License is distributed on an "AS IS" BASIS,
@@ -34,7 +34,7 @@ u:!0,a:11,type:E},20:{name:"intl_number_format",u:!0,a:11,type:E},22:{name:"main
  you may not use this file except in compliance with the License.
  You may obtain a copy of the License at
 
- http://www.apache.org/licenses/LICENSE-2.0
+ https://www.apache.org/licenses/LICENSE-2.0
 
  Unless required by applicable law or agreed to in writing, software
  distributed under the License is distributed on an "AS IS" BASIS,
@@ -52,7 +52,7 @@ return L};K.ctor=K;K.ctor.c=K.prototype.c;/*
  you may not use this file except in compliance with the License.
  You may obtain a copy of the License at
 
- http://www.apache.org/licenses/LICENSE-2.0
+ https://www.apache.org/licenses/LICENSE-2.0
 
  Unless required by applicable law or agreed to in writing, software
  distributed under the License is distributed on an "AS IS" BASIS,
@@ -414,7 +414,7 @@ VN:[,[,,"[17]\\d{6,9}|[2-69]\\d{7,9}|8\\d{6,8}","\\d{7,10}"],[,,"(?:2(?:[025-79]
  you may not use this file except in compliance with the License.
  You may obtain a copy of the License at
 
- http://www.apache.org/licenses/LICENSE-2.0
+ https://www.apache.org/licenses/LICENSE-2.0
 
  Unless required by applicable law or agreed to in writing, software
  distributed under the License is distributed on an "AS IS" BASIS,

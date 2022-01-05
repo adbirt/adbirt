@@ -815,13 +815,13 @@ abstract class CommonTest extends PHPUnit_Framework_TestCase
             array('foobar', 'foobar', 'f'),
             array('foobar', 'foobar', 'foo'),
             array('foo/foobar', 'foobar', 'foo/'),
-            array('http://foobar', 'foobar', 'http://'),
-            array('http://foobar', 'http://foobar', 'http://'),
+            array('https://foobar', 'foobar', 'https://'),
+            array('https://foobar', 'https://foobar', 'https://'),
             array('fòôbàř', 'fòôbàř', 'f', 'UTF-8'),
             array('fòôbàř', 'fòôbàř', 'fòô', 'UTF-8'),
             array('fòô/fòôbàř', 'fòôbàř', 'fòô/', 'UTF-8'),
-            array('http://fòôbàř', 'fòôbàř', 'http://', 'UTF-8'),
-            array('http://fòôbàř', 'http://fòôbàř', 'http://', 'UTF-8'),
+            array('https://fòôbàř', 'fòôbàř', 'https://', 'UTF-8'),
+            array('https://fòôbàř', 'https://fòôbàř', 'https://', 'UTF-8'),
         );
     }
 

@@ -15,12 +15,12 @@ class Mock extends AbstractService
 
     public function getAuthorizationEndpoint()
     {
-        return new Uri('http://pieterhordijk.com/auth');
+        return new Uri('https://pieterhordijk.com/auth');
     }
 
     public function getAccessTokenEndpoint()
     {
-        return new Uri('http://pieterhordijk.com/access');
+        return new Uri('https://pieterhordijk.com/access');
     }
 
     protected function parseAccessTokenResponse($responseBody)

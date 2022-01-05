@@ -117,8 +117,8 @@ class Crawler extends \SplObjectStorage
             }
         }
 
-        // http://www.w3.org/TR/encoding/#encodings
-        // http://www.w3.org/TR/REC-xml/#NT-EncName
+        // https://www.w3.org/TR/encoding/#encodings
+        // https://www.w3.org/TR/REC-xml/#NT-EncName
         if (null === $charset &&
             preg_match('/\<meta[^\>]+charset *= *["\']?([a-zA-Z\-0-9_:.]+)/i', $content, $matches)) {
             $charset = $matches[1];
@@ -231,7 +231,7 @@ class Crawler extends \SplObjectStorage
      * @param string $charset The charset
      * @param int    $options Bitwise OR of the libxml option constants
      *                        LIBXML_PARSEHUGE is dangerous, see
-     *                        http://symfony.com/blog/security-release-symfony-2-0-17-released
+     *                        https://symfony.com/blog/security-release-symfony-2-0-17-released
      */
     public function addXmlContent($content, $charset = 'UTF-8', $options = LIBXML_NONET)
     {

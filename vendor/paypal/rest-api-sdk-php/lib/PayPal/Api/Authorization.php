@@ -293,7 +293,7 @@ class Authorization extends PayPalResourceModel
     }
 
     /**
-     * Authorization expiration time and date as defined in [RFC 3339 Section 5.6](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * Authorization expiration time and date as defined in [RFC 3339 Section 5.6](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @param string $valid_until
      * 
@@ -306,7 +306,7 @@ class Authorization extends PayPalResourceModel
     }
 
     /**
-     * Authorization expiration time and date as defined in [RFC 3339 Section 5.6](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * Authorization expiration time and date as defined in [RFC 3339 Section 5.6](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @return string
      */
@@ -316,7 +316,7 @@ class Authorization extends PayPalResourceModel
     }
 
     /**
-     * Time of authorization as defined in [RFC 3339 Section 5.6](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * Time of authorization as defined in [RFC 3339 Section 5.6](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @param string $create_time
      * 
@@ -329,7 +329,7 @@ class Authorization extends PayPalResourceModel
     }
 
     /**
-     * Time of authorization as defined in [RFC 3339 Section 5.6](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * Time of authorization as defined in [RFC 3339 Section 5.6](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @return string
      */

@@ -4,7 +4,7 @@
 
 ## Installation
 
-Simply add a dependency on `sebastian/version` to your project's `composer.json` file if you use [Composer](http://getcomposer.org/) to manage the dependencies of your project.
+Simply add a dependency on `sebastian/version` to your project's `composer.json` file if you use [Composer](https://getcomposer.org/) to manage the dependencies of your project.
 
 ## Usage
 

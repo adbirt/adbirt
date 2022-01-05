@@ -68,7 +68,7 @@ class Presenter
     /**
      * Register casters.
      *
-     * @see http://symfony.com/doc/current/components/var_dumper/advanced.html#casters
+     * @see https://symfony.com/doc/current/components/var_dumper/advanced.html#casters
      *
      * @param callable[] $casters A map of casters.
      */

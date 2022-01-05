@@ -13,7 +13,7 @@ TableTools is a plug-in for the DataTables HTML table enhancer, which adds a hig
 
 # Installation
 
-To use TableTools, first download DataTables ( http://datatables.net/download ) and place the unzipped TableTools package into a `extensions` directory in the DataTables package (in DataTables 1.9- use the `extras` directory). This will allow the pages in the examples to operate correctly. To see the examples running, open the `examples` directory in your web-browser.
+To use TableTools, first download DataTables ( https://datatables.net/download ) and place the unzipped TableTools package into a `extensions` directory in the DataTables package (in DataTables 1.9- use the `extras` directory). This will allow the pages in the examples to operate correctly. To see the examples running, open the `examples` directory in your web-browser.
 
 
 # Basic usage
@@ -31,8 +31,8 @@ $(document).ready( function () {
 
 # Documentation / support
 
-* Documentation: http://datatables.net/extensions/tabletools/
-* DataTables support forums: http://datatables.net/forums
+* Documentation: https://datatables.net/extensions/tabletools/
+* DataTables support forums: https://datatables.net/forums
 
 
 # GitHub

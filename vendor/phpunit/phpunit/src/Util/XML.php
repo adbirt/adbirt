@@ -19,7 +19,7 @@ class PHPUnit_Util_XML
      * Escapes a string for the use in XML documents
      * Any Unicode character is allowed, excluding the surrogate blocks, FFFE,
      * and FFFF (not even as character reference).
-     * See http://www.w3.org/TR/xml/#charsets
+     * See https://www.w3.org/TR/xml/#charsets
      *
      * @param string $string
      *

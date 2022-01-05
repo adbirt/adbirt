@@ -5,9 +5,9 @@
  * PHP Version 5.3
  *
  * @author    Mike van Riel <mike.vanriel@naenius.com>
- * @copyright 2010-2011 Mike van Riel / Naenius (http://www.naenius.com)
- * @license   http://www.opensource.org/licenses/mit-license.php MIT
- * @link      http://phpdoc.org
+ * @copyright 2010-2011 Mike van Riel / Naenius (https://www.naenius.com)
+ * @license   https://www.opensource.org/licenses/mit-license.php MIT
+ * @link      https://phpdoc.org
  */
 
 namespace phpDocumentor\Reflection\DocBlock\Type;
@@ -18,9 +18,9 @@ use phpDocumentor\Reflection\DocBlock\Context;
  * Collection
  *
  * @author    Mike van Riel <mike.vanriel@naenius.com>
- * @copyright 2010-2011 Mike van Riel / Naenius (http://www.naenius.com)
- * @license   http://www.opensource.org/licenses/mit-license.php MIT
- * @link      http://phpdoc.org
+ * @copyright 2010-2011 Mike van Riel / Naenius (https://www.naenius.com)
+ * @license   https://www.opensource.org/licenses/mit-license.php MIT
+ * @link      https://phpdoc.org
  */
 class Collection extends \ArrayObject
 {
@@ -91,7 +91,7 @@ class Collection extends \ArrayObject
      *
      * @throws \InvalidArgumentException if a non-string argument is passed.
      *
-     * @see http://phpdoc.org/docs/latest/for-users/types.html for the
+     * @see https://phpdoc.org/docs/latest/for-users/types.html for the
      *     definition of a type.
      *
      * @return void

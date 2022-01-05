@@ -22,7 +22,7 @@
                 "op": "replace",
                 "path": "/merchant-preferences",
                 "value": {
-                    "cancel_url": "http://www.cancel.com",
+                    "cancel_url": "https://www.cancel.com",
                     "setup_fee": {
                         "value": "5",
                         "currency": "USD"

@@ -95,7 +95,7 @@ class Person extends \Faker\Provider\Person
     );
 
     /**
-     * @link http://fa.wikipedia.org/wiki/%D8%B1%D8%AF%D9%87:%D9%86%D8%A7%D9%85%E2%80%8C%D9%87%D8%A7%DB%8C_%D8%AE%D8%A7%D9%86%D9%88%D8%A7%D8%AF%DA%AF%DB%8C_%D8%B2%D8%A8%D8%A7%D9%86%E2%80%8C%D9%87%D8%A7%DB%8C_%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%DB%8C
+     * @link https://fa.wikipedia.org/wiki/%D8%B1%D8%AF%D9%87:%D9%86%D8%A7%D9%85%E2%80%8C%D9%87%D8%A7%DB%8C_%D8%AE%D8%A7%D9%86%D9%88%D8%A7%D8%AF%DA%AF%DB%8C_%D8%B2%D8%A8%D8%A7%D9%86%E2%80%8C%D9%87%D8%A7%DB%8C_%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%DB%8C
      */
     protected static $lastName = array(
         'آختاچی', 'آدینه', 'آریان‌پور', 'آشتیانی', 'آشنا', 'آشوری', 'آقاجری', 'آهنگر', 'آهنگری', 'آهی', 'آژند', 'آیتی', 'آیت‌اللهی',

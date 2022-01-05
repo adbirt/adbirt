@@ -4,8 +4,8 @@
  * Example of retrieving an authentication token of the Deezer service
  *
  * @author  Pedro Amorim <contact@pamorim.fr>
- * @license http://www.opensource.org/licenses/mit-license.html MIT License
- * @link    http://developers.deezer.com/api/
+ * @license https://www.opensource.org/licenses/mit-license.html MIT License
+ * @link    https://developers.deezer.com/api/
  */
 
 use OAuth\OAuth2\Service\Deezer;

@@ -3,7 +3,7 @@
  * 
  * Copyright (c) 2011 Pieter Pareit
  *
- * http://www.scriptbreaker.com
+ * https://www.scriptbreaker.com
  *
  */
 

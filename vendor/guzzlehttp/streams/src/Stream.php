@@ -225,7 +225,7 @@ class Stream implements MetadataStreamInterface
      *                          no key is provided. Returns a specific key
      *                          value if a key is provided and the value is
      *                          found, or null if the key is not found.
-     * @see http://php.net/manual/en/function.stream-get-meta-data.php
+     * @see https://php.net/manual/en/function.stream-get-meta-data.php
      */
     public function getMetadata($key = null)
     {

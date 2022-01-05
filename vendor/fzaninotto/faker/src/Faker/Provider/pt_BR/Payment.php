@@ -10,7 +10,7 @@ class Payment extends \Faker\Provider\Payment
         'American Express', 'Discover Card', 'Diners', 'Elo', 'Hipercard'
     );
 
-    // see https://gist.github.com/erikhenrique/5931368 / http://pt.stackoverflow.com/q/3715/26461
+    // see https://gist.github.com/erikhenrique/5931368 / https://pt.stackoverflow.com/q/3715/26461
     protected static $cardParams = array(
         'Visa' => array(
             "4##############"
@@ -59,7 +59,7 @@ class Payment extends \Faker\Provider\Payment
 
     /**
      * International Bank Account Number (IBAN)
-     * @link http://en.wikipedia.org/wiki/International_Bank_Account_Number
+     * @link https://en.wikipedia.org/wiki/International_Bank_Account_Number
      * @param  string  $prefix      for generating bank account number of a specific bank
      * @param  string  $countryCode ISO 3166-1 alpha-2 country code
      * @param  integer $length      total length without country code and 2 check digits

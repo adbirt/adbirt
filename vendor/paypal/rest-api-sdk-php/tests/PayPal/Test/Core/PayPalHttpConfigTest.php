@@ -121,7 +121,7 @@ class PayPalHttpConfigTest extends \PHPUnit_Framework_TestCase
      */
     public function testProxyOpts()
     {
-        $proxy = 'http://me:secret@hostname:8081';
+        $proxy = 'https://me:secret@hostname:8081';
 
         $o = new PayPalHttpConfig();
         $o->setHttpProxy($proxy);

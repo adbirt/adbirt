@@ -5,7 +5,7 @@ use \Mockery as m;
 class TwilioTest extends PHPUnit_Framework_TestCase {
 
     protected $formHeaders = array('Content-Type' => 'application/x-www-form-urlencoded');
-    protected $callParams = array('To' => '123', 'From' => '123', 'Url' => 'http://example.com');
+    protected $callParams = array('To' => '123', 'From' => '123', 'Url' => 'https://example.com');
     protected $nginxError = array(500, array('Content-Type' => 'text/html'),
                 '<html>Nginx 500 error</html>'
             );
@@ -371,7 +371,7 @@ class TwilioTest extends PHPUnit_Framework_TestCase {
                 '{"sid":"CA123"}')
         );
         $client = new Services_Twilio('AC123', '123', '2010-04-01', $http);
-        $client->account->calls->create('123', '123', 'http://example.com');
+        $client->account->calls->create('123', '123', 'https://example.com');
     }
 
     function testPricingClient() {
@@ -415,7 +415,7 @@ class TwilioTest extends PHPUnit_Framework_TestCase {
         );
         $client = new Services_Twilio('AC123', '123', '2010-04-01', $http);
         $calls = $client->account->calls;
-        $call = $calls->create('123', '123', 'http://example.com');
+        $call = $calls->create('123', '123', 'https://example.com');
         $call->hangup();
     }
 
@@ -660,11 +660,11 @@ class TwilioTest extends PHPUnit_Framework_TestCase {
 
     function testExceptionUsesHttpStatus() {
         $http = $this->createMockHttp('/Queues/QU123/Members/Front', 'post',
-            array(), array('Url' => 'http://google.com'), 400);
+            array(), array('Url' => 'https://google.com'), 400);
         $client = $this->getClient($http);
         try {
             $front = $client->account->queues->get('QU123')->members->front();
-            $front->update(array('Url' => 'http://google.com'));
+            $front->update(array('Url' => 'https://google.com'));
             $this->fail('should throw rest exception before reaching this line.');
         } catch (Services_Twilio_RestException $e) {
             $this->assertSame($e->getStatus(), 400);
@@ -711,7 +711,7 @@ class TwilioTest extends PHPUnit_Framework_TestCase {
         );
         $client = new Services_Twilio('AC123', '123', '2010-04-01', $http);
         $message = $client->account->messages->sendMessage('123', '123', null,
-            array('http://example.com/image1', 'http://example.com/image2')
+            array('https://example.com/image1', 'https://example.com/image2')
         );
         $this->assertSame($message->sid, 'SM123');
     }

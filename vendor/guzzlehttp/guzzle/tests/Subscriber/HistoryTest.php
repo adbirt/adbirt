@@ -76,7 +76,7 @@ class HistoryTest extends \PHPUnit_Framework_TestCase
 
     public function testCanCastToString()
     {
-        $client = new Client(['base_url' => 'http://localhost/']);
+        $client = new Client(['base_url' => 'https://localhost/']);
         $h = new History();
         $client->getEmitter()->attach($h);
 

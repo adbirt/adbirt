@@ -22,7 +22,7 @@ Here's an example of sending a ``POST`` request using the procedural API.
 
 .. code-block:: php
 
-    $response = GuzzleHttp\post('http://httpbin.org/post', [
+    $response = GuzzleHttp\post('https://httpbin.org/post', [
         'headers' => ['X-Foo' => 'Bar'],
         'body'    => ['field_name' => 'value']
     ]);
@@ -32,11 +32,11 @@ the function that maps to the HTTP method name.
 
 .. code-block:: php
 
-    $response = GuzzleHttp\head('http://httpbin.org/get');
-    $response = GuzzleHttp\post('http://httpbin.org/post');
-    $response = GuzzleHttp\put('http://httpbin.org/put');
-    $response = GuzzleHttp\delete('http://httpbin.org/delete');
-    $response = GuzzleHttp\options('http://httpbin.org/get');
+    $response = GuzzleHttp\head('https://httpbin.org/get');
+    $response = GuzzleHttp\post('https://httpbin.org/post');
+    $response = GuzzleHttp\put('https://httpbin.org/put');
+    $response = GuzzleHttp\delete('https://httpbin.org/delete');
+    $response = GuzzleHttp\options('https://httpbin.org/get');
 
 Creating a Client
 -----------------
@@ -50,22 +50,22 @@ then you'll need to use a ``GuzzleHttp\ClientInterface`` object.
     use GuzzleHttp\Client;
 
     $client = new Client();
-    $response = $client->get('http://httpbin.org/get');
+    $response = $client->get('https://httpbin.org/get');
 
     // You can use the same methods you saw in the procedural API
-    $response = $client->delete('http://httpbin.org/delete');
-    $response = $client->head('http://httpbin.org/get');
-    $response = $client->options('http://httpbin.org/get');
-    $response = $client->patch('http://httpbin.org/patch');
-    $response = $client->post('http://httpbin.org/post');
-    $response = $client->put('http://httpbin.org/put');
+    $response = $client->delete('https://httpbin.org/delete');
+    $response = $client->head('https://httpbin.org/get');
+    $response = $client->options('https://httpbin.org/get');
+    $response = $client->patch('https://httpbin.org/patch');
+    $response = $client->post('https://httpbin.org/post');
+    $response = $client->put('https://httpbin.org/put');
 
 You can create a request with a client and then send the request with the
 client when you're ready.
 
 .. code-block:: php
 
-    $request = $client->createRequest('GET', 'http://www.foo.com');
+    $request = $client->createRequest('GET', 'https://www.foo.com');
     $response = $client->send($request);
 
 Client objects provide a great deal of flexibility in how request are
@@ -120,7 +120,7 @@ response.
 
 .. code-block:: php
 
-    $response = $client->get('http://httpbin.org/get');
+    $response = $client->get('https://httpbin.org/get');
     $json = $response->json();
     var_dump($json[0]['origin']);
 
@@ -153,14 +153,14 @@ string parameters in the request's URL.
 
 .. code-block:: php
 
-    $response = $client->get('http://httpbin.org?foo=bar');
+    $response = $client->get('https://httpbin.org?foo=bar');
 
 You can also specify the query string parameters using the ``query`` request
 option.
 
 .. code-block:: php
 
-    $client->get('http://httpbin.org', [
+    $client->get('https://httpbin.org', [
         'query' => ['foo' => 'bar']
     ]);
 
@@ -170,7 +170,7 @@ calling the ``getQuery()`` method of a request and modifying the request's
 
 .. code-block:: php
 
-    $request = $client->createRequest('GET', 'http://httpbin.org');
+    $request = $client->createRequest('GET', 'https://httpbin.org');
     $query = $request->getQuery();
     $query->set('foo', 'bar');
 
@@ -202,7 +202,7 @@ client. In the following example, we send the ``X-Foo-Header`` with a value of
 
 .. code-block:: php
 
-    $response = $client->get('http://httpbin.org/get', [
+    $response = $client->get('https://httpbin.org/get', [
         'headers' => ['X-Foo-Header' => 'value']
     ]);
 
@@ -216,7 +216,7 @@ return a string containing the header field value.
 
 .. code-block:: php
 
-    $response = $client->get('http://www.yahoo.com');
+    $response = $client->get('https://www.yahoo.com');
     $length = $response->getHeader('Content-Length');
 
 Header fields that contain multiple values can be retrieved as a string or as
@@ -257,7 +257,7 @@ or response object.
 
 .. code-block:: php
 
-    $request = $client->createRequest('GET', 'http://httpbin.org/get');
+    $request = $client->createRequest('GET', 'https://httpbin.org/get');
 
     // Set a single value for a header
     $request->setHeader('User-Agent', 'Testing!');
@@ -287,13 +287,13 @@ object to the ``body`` request option.
 
 .. code-block:: php
 
-    $r = $client->post('http://httpbin.org/post', ['body' => 'raw data']);
+    $r = $client->post('https://httpbin.org/post', ['body' => 'raw data']);
 
 You can easily upload JSON data using the ``json`` request option.
 
 .. code-block:: php
 
-    $r = $client->put('http://httpbin.org/put', ['json' => ['foo' => 'bar']]);
+    $r = $client->put('https://httpbin.org/put', ['json' => ['foo' => 'bar']]);
 
 POST Requests
 -------------
@@ -309,7 +309,7 @@ specify the body of a POST request as an array.
 
 .. code-block:: php
 
-    $response = $client->post('http://httpbin.org/post', [
+    $response = $client->post('https://httpbin.org/post', [
         'body' => [
             'field_name' => 'abc',
             'other_field' => '123'
@@ -320,7 +320,7 @@ You can also build up POST requests before sending them.
 
 .. code-block:: php
 
-    $request = $client->createRequest('POST', 'http://httpbin.org/post');
+    $request = $client->createRequest('POST', 'https://httpbin.org/post');
     $postBody = $request->getBody();
 
     // $postBody is an instance of GuzzleHttp\Post\PostBodyInterface
@@ -347,7 +347,7 @@ some of the array values of the POST fields map to PHP ``fopen`` resources, or
 
     use GuzzleHttp\Post\PostFile;
 
-    $response = $client->post('http://httpbin.org/post', [
+    $response = $client->post('https://httpbin.org/post', [
         'body' => [
             'field_name' => 'abc',
             'file_filed' => fopen('/path/to/file', 'r'),
@@ -362,7 +362,7 @@ files before sending them.
 
     use GuzzleHttp\Post\PostFile;
 
-    $request = $client->createRequest('POST', 'http://httpbin.org/post');
+    $request = $client->createRequest('POST', 'https://httpbin.org/post');
     $postBody = $request->getBody();
     $postBody->setField('foo', 'bar');
     $postBody->addFile(new PostFile('test', fopen('/path/to/file', 'r')));
@@ -397,7 +397,7 @@ customize the redirect behavior using the ``allow_redirects`` request option.
 
 .. code-block:: php
 
-    $response = $client->get('http://github.com');
+    $response = $client->get('https://github.com');
     echo $response->getStatusCode();
     // 200
     echo $response->getEffectiveUrl();
@@ -407,11 +407,11 @@ The following example shows that redirects can be disabled.
 
 .. code-block:: php
 
-    $response = $client->get('http://github.com', ['allow_redirects' => false]);
+    $response = $client->get('https://github.com', ['allow_redirects' => false]);
     echo $response->getStatusCode();
     // 301
     echo $response->getEffectiveUrl();
-    // 'http://github.com/'
+    // 'https://github.com/'
 
 Exceptions
 ==========

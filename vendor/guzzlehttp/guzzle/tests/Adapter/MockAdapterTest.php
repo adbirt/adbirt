@@ -23,7 +23,7 @@ class MockAdapterTest extends \PHPUnit_Framework_TestCase
         $response = new Response(200);
         $m = new MockAdapter();
         $m->setResponse($response);
-        $this->assertSame($response, $m->send(new Transaction(new Client(), new Request('GET', 'http://httbin.org'))));
+        $this->assertSame($response, $m->send(new Transaction(new Client(), new Request('GET', 'https://httbin.org'))));
     }
 
     public function testMocksWithCallable()
@@ -35,7 +35,7 @@ class MockAdapterTest extends \PHPUnit_Framework_TestCase
         };
         $m = new MockAdapter($r);
         $body = Stream::factory('foo');
-        $request = new Request('GET', 'http://httbin.org', [], $body);
+        $request = new Request('GET', 'https://httbin.org', [], $body);
         $trans = new Transaction(new Client(), $request);
         $this->assertSame($response, $m->send($trans));
         $this->assertEquals(3, $body->tell());
@@ -48,14 +48,14 @@ class MockAdapterTest extends \PHPUnit_Framework_TestCase
     {
         $m = new MockAdapter();
         $m->setResponse('foo');
-        $m->send(new Transaction(new Client(), new Request('GET', 'http://httbin.org')));
+        $m->send(new Transaction(new Client(), new Request('GET', 'https://httbin.org')));
     }
 
     public function testHandlesErrors()
     {
         $m = new MockAdapter();
         $m->setResponse(new Response(404));
-        $request = new Request('GET', 'http://httbin.org');
+        $request = new Request('GET', 'https://httbin.org');
         $c = false;
         $request->getEmitter()->once('complete', function (CompleteEvent $e) use (&$c) {
             $c = true;
@@ -76,7 +76,7 @@ class MockAdapterTest extends \PHPUnit_Framework_TestCase
     {
         $m = new MockAdapter();
         $m->setResponse(new Response(404));
-        $request = new Request('GET', 'http://httbin.org');
+        $request = new Request('GET', 'https://httbin.org');
         $request->getEmitter()->once('complete', function (CompleteEvent $e) {
             throw new RequestException('foo', $e->getRequest());
         });
@@ -89,7 +89,7 @@ class MockAdapterTest extends \PHPUnit_Framework_TestCase
         $m = new MockAdapter($response);
         $m->setResponse($response);
         $body = Stream::factory('foo');
-        $request = new Request('PUT', 'http://httpbin.org/put', [], $body);
+        $request = new Request('PUT', 'https://httpbin.org/put', [], $body);
         $this->assertSame($response, $m->send(new Transaction(new Client(), $request)));
         $this->assertEquals(3, $body->tell());
     }
@@ -97,7 +97,7 @@ class MockAdapterTest extends \PHPUnit_Framework_TestCase
     public function testEmitsHeadersEvent()
     {
         $m = new MockAdapter(new Response(404));
-        $request = new Request('GET', 'http://httbin.org');
+        $request = new Request('GET', 'https://httbin.org');
         $called = false;
         $request->getEmitter()->once('headers', function () use (&$called) {
             $called = true;

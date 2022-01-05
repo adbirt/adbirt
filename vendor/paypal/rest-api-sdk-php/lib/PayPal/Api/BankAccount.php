@@ -84,7 +84,7 @@ class BankAccount extends PayPalModel
     }
 
     /**
-     * Type of the bank account number (International or Basic Bank Account Number). For more information refer to http://en.wikipedia.org/wiki/International_Bank_Account_Number.
+     * Type of the bank account number (International or Basic Bank Account Number). For more information refer to https://en.wikipedia.org/wiki/International_Bank_Account_Number.
      * Valid Values: ["BBAN", "IBAN"]
      *
      * @param string $account_number_type
@@ -98,7 +98,7 @@ class BankAccount extends PayPalModel
     }
 
     /**
-     * Type of the bank account number (International or Basic Bank Account Number). For more information refer to http://en.wikipedia.org/wiki/International_Bank_Account_Number.
+     * Type of the bank account number (International or Basic Bank Account Number). For more information refer to https://en.wikipedia.org/wiki/International_Bank_Account_Number.
      *
      * @return string
      */
@@ -108,7 +108,7 @@ class BankAccount extends PayPalModel
     }
 
     /**
-     * Routing transit number (aka Bank Code) of the bank (typically for domestic use only - for international use, IBAN includes bank code). For more information refer to http://en.wikipedia.org/wiki/Bank_code.
+     * Routing transit number (aka Bank Code) of the bank (typically for domestic use only - for international use, IBAN includes bank code). For more information refer to https://en.wikipedia.org/wiki/Bank_code.
      *
      * @param string $routing_number
      * 
@@ -121,7 +121,7 @@ class BankAccount extends PayPalModel
     }
 
     /**
-     * Routing transit number (aka Bank Code) of the bank (typically for domestic use only - for international use, IBAN includes bank code). For more information refer to http://en.wikipedia.org/wiki/Bank_code.
+     * Routing transit number (aka Bank Code) of the bank (typically for domestic use only - for international use, IBAN includes bank code). For more information refer to https://en.wikipedia.org/wiki/Bank_code.
      *
      * @return string
      */

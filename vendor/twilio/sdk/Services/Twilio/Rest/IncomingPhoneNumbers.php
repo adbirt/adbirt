@@ -3,7 +3,7 @@
 /**
  * For more information, see the
  * `IncomingPhoneNumbers API Resource
- * <http://www.twilio.com/docs/api/rest/incoming-phone-numbers#local>`_
+ * <https://www.twilio.com/docs/api/rest/incoming-phone-numbers#local>`_
  * documentation at twilio.com.
  */
 class Services_Twilio_Rest_IncomingPhoneNumbers extends Services_Twilio_ListResource {

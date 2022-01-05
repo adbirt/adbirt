@@ -124,7 +124,7 @@ class Agreement extends PayPalResourceModel
     }
 
     /**
-     * Start date of the agreement. Date format yyyy-MM-dd z, as defined in [ISO8601](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * Start date of the agreement. Date format yyyy-MM-dd z, as defined in [ISO8601](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @param string $start_date
      * 
@@ -137,7 +137,7 @@ class Agreement extends PayPalResourceModel
     }
 
     /**
-     * Start date of the agreement. Date format yyyy-MM-dd z, as defined in [ISO8601](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * Start date of the agreement. Date format yyyy-MM-dd z, as defined in [ISO8601](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @return string
      */
@@ -292,7 +292,7 @@ class Agreement extends PayPalResourceModel
     }
 
     /**
-     * Date and time that this resource was created. Date format yyyy-MM-dd z, as defined in [ISO8601](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * Date and time that this resource was created. Date format yyyy-MM-dd z, as defined in [ISO8601](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @param string $create_time
      * 
@@ -305,7 +305,7 @@ class Agreement extends PayPalResourceModel
     }
 
     /**
-     * Date and time that this resource was created. Date format yyyy-MM-dd z, as defined in [ISO8601](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * Date and time that this resource was created. Date format yyyy-MM-dd z, as defined in [ISO8601](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @return string
      */
@@ -315,7 +315,7 @@ class Agreement extends PayPalResourceModel
     }
 
     /**
-     * Date and time that this resource was updated. Date format yyyy-MM-dd z, as defined in [ISO8601](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * Date and time that this resource was updated. Date format yyyy-MM-dd z, as defined in [ISO8601](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @param string $update_time
      * 
@@ -328,7 +328,7 @@ class Agreement extends PayPalResourceModel
     }
 
     /**
-     * Date and time that this resource was updated. Date format yyyy-MM-dd z, as defined in [ISO8601](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * Date and time that this resource was updated. Date format yyyy-MM-dd z, as defined in [ISO8601](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @return string
      */

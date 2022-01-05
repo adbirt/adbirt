@@ -13,7 +13,7 @@ use OAuth\Common\Http\Uri\UriInterface;
 /**
  * RunKeeper service.
  *
- * @link http://runkeeper.com/developer/healthgraph/registration-authorization
+ * @link https://runkeeper.com/developer/healthgraph/registration-authorization
  */
 class RunKeeper extends AbstractService
 {

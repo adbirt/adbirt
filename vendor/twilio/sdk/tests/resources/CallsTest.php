@@ -18,7 +18,7 @@ class CallsTest extends PHPUnit_Framework_TestCase {
             array("AP2a0747eba6abf96b7e3c3ff0b4530f6e", true),
             array("CA2a0747eba6abf96b7e3c3ff0b4530f6e", false),
             array("AP2a0747eba6abf96b7e3c3ff0b4530f", false),
-            array("http://www.google.com/asdfasdfAP", false),
+            array("https://www.google.com/asdfasdfAP", false),
         );
     }
 }

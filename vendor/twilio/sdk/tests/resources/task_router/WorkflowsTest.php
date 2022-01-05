@@ -15,7 +15,7 @@ class WorkflowsTest extends PHPUnit_Framework_TestCase
                 json_encode(array('sid' => 'WF123'))
             ));
         $taskrouterClient = new TaskRouter_Services_Twilio('AC123', '123', 'WS123', 'v1', $http);
-        $workflow = $taskrouterClient->workspace->workflows->create('Test Workflow', 'configuration', 'http://www.example.com');
+        $workflow = $taskrouterClient->workspace->workflows->create('Test Workflow', 'configuration', 'https://www.example.com');
         $this->assertNotNull($workflow);
     }
 

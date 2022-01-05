@@ -24,8 +24,8 @@ class UriTest extends \PHPUnit_Framework_TestCase
     {
         $this->setExpectedException('\\InvalidArgumentException');
 
-        // http://lxr.php.net/xref/PHP_5_4/ext/standard/tests/url/urls.inc#92
-        $uri = new Uri('http://@:/');
+        // https://lxr.php.net/xref/PHP_5_4/ext/standard/tests/url/urls.inc#92
+        $uri = new Uri('https://@:/');
     }
 
     /**
@@ -46,7 +46,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetScheme()
     {
-        $uri = new Uri('http://example.com');
+        $uri = new Uri('https://example.com');
 
         $this->assertSame('http', $uri->getScheme());
     }
@@ -60,7 +60,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetUserInfo()
     {
-        $uri = new Uri('http://peehaa@example.com');
+        $uri = new Uri('https://peehaa@example.com');
 
         $this->assertSame('peehaa', $uri->getUserInfo());
     }
@@ -74,7 +74,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetUserInfoWithPass()
     {
-        $uri = new Uri('http://peehaa:pass@example.com');
+        $uri = new Uri('https://peehaa:pass@example.com');
 
         $this->assertSame('peehaa:********', $uri->getUserInfo());
     }
@@ -88,7 +88,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetRawUserInfo()
     {
-        $uri = new Uri('http://peehaa@example.com');
+        $uri = new Uri('https://peehaa@example.com');
 
         $this->assertSame('peehaa', $uri->getRawUserInfo());
     }
@@ -102,7 +102,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetRawUserInfoWithPass()
     {
-        $uri = new Uri('http://peehaa:pass@example.com');
+        $uri = new Uri('https://peehaa:pass@example.com');
 
         $this->assertSame('peehaa:pass', $uri->getRawUserInfo());
     }
@@ -114,7 +114,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetHost()
     {
-        $uri = new Uri('http://example.com');
+        $uri = new Uri('https://example.com');
 
         $this->assertSame('example.com', $uri->getHost());
     }
@@ -126,7 +126,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetPortImplicitHttp()
     {
-        $uri = new Uri('http://example.com');
+        $uri = new Uri('https://example.com');
 
         $this->assertSame(80, $uri->getPort());
     }
@@ -150,7 +150,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetPortExplicit()
     {
-        $uri = new Uri('http://example.com:21');
+        $uri = new Uri('https://example.com:21');
 
         $this->assertSame(21, $uri->getPort());
     }
@@ -162,7 +162,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetPathNotSupplied()
     {
-        $uri = new Uri('http://example.com');
+        $uri = new Uri('https://example.com');
 
         $this->assertSame('/', $uri->getPath());
     }
@@ -174,7 +174,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetPathSlash()
     {
-        $uri = new Uri('http://example.com/');
+        $uri = new Uri('https://example.com/');
 
         $this->assertSame('/', $uri->getPath());
     }
@@ -186,7 +186,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetPath()
     {
-        $uri = new Uri('http://example.com/foo');
+        $uri = new Uri('https://example.com/foo');
 
         $this->assertSame('/foo', $uri->getPath());
     }
@@ -198,7 +198,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetQueryWithParams()
     {
-        $uri = new Uri('http://example.com?param1=first&param2=second');
+        $uri = new Uri('https://example.com?param1=first&param2=second');
 
         $this->assertSame('param1=first&param2=second', $uri->getQuery());
     }
@@ -210,7 +210,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetQueryWithoutParams()
     {
-        $uri = new Uri('http://example.com');
+        $uri = new Uri('https://example.com');
 
         $this->assertSame('', $uri->getQuery());
     }
@@ -222,7 +222,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetFragmentExists()
     {
-        $uri = new Uri('http://example.com#foo');
+        $uri = new Uri('https://example.com#foo');
 
         $this->assertSame('foo', $uri->getFragment());
     }
@@ -234,7 +234,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetFragmentNotExists()
     {
-        $uri = new Uri('http://example.com');
+        $uri = new Uri('https://example.com');
 
         $this->assertSame('', $uri->getFragment());
     }
@@ -246,7 +246,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetAuthorityWithoutUserInfo()
     {
-        $uri = new Uri('http://example.com');
+        $uri = new Uri('https://example.com');
 
         $this->assertSame('example.com', $uri->getAuthority());
     }
@@ -258,7 +258,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetAuthorityWithoutUserInfoWithExplicitPort()
     {
-        $uri = new Uri('http://example.com:21');
+        $uri = new Uri('https://example.com:21');
 
         $this->assertSame('example.com:21', $uri->getAuthority());
     }
@@ -272,7 +272,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetAuthorityWithUsernameWithExplicitPort()
     {
-        $uri = new Uri('http://peehaa@example.com:21');
+        $uri = new Uri('https://peehaa@example.com:21');
 
         $this->assertSame('peehaa@example.com:21', $uri->getAuthority());
     }
@@ -286,7 +286,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetAuthorityWithUsernameAndPassWithExplicitPort()
     {
-        $uri = new Uri('http://peehaa:pass@example.com:21');
+        $uri = new Uri('https://peehaa:pass@example.com:21');
 
         $this->assertSame('peehaa:********@example.com:21', $uri->getAuthority());
     }
@@ -300,7 +300,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetAuthorityWithUsernameAndPassWithoutExplicitPort()
     {
-        $uri = new Uri('http://peehaa:pass@example.com');
+        $uri = new Uri('https://peehaa:pass@example.com');
 
         $this->assertSame('peehaa:********@example.com', $uri->getAuthority());
     }
@@ -312,7 +312,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetRawAuthorityWithoutUserInfo()
     {
-        $uri = new Uri('http://example.com');
+        $uri = new Uri('https://example.com');
 
         $this->assertSame('example.com', $uri->getRawAuthority());
     }
@@ -324,7 +324,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetRawAuthorityWithoutUserInfoWithExplicitPort()
     {
-        $uri = new Uri('http://example.com:21');
+        $uri = new Uri('https://example.com:21');
 
         $this->assertSame('example.com:21', $uri->getRawAuthority());
     }
@@ -338,7 +338,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetRawAuthorityWithUsernameWithExplicitPort()
     {
-        $uri = new Uri('http://peehaa@example.com:21');
+        $uri = new Uri('https://peehaa@example.com:21');
 
         $this->assertSame('peehaa@example.com:21', $uri->getRawAuthority());
     }
@@ -352,7 +352,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetRawAuthorityWithUsernameAndPassWithExplicitPort()
     {
-        $uri = new Uri('http://peehaa:pass@example.com:21');
+        $uri = new Uri('https://peehaa:pass@example.com:21');
 
         $this->assertSame('peehaa:pass@example.com:21', $uri->getRawAuthority());
     }
@@ -366,7 +366,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetRawAuthorityWithUsernameAndPassWithoutExplicitPort()
     {
-        $uri = new Uri('http://peehaa:pass@example.com');
+        $uri = new Uri('https://peehaa:pass@example.com');
 
         $this->assertSame('peehaa:pass@example.com', $uri->getRawAuthority());
     }
@@ -378,9 +378,9 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetAbsoluteUriBare()
     {
-        $uri = new Uri('http://example.com');
+        $uri = new Uri('https://example.com');
 
-        $this->assertSame('http://example.com', $uri->getAbsoluteUri());
+        $this->assertSame('https://example.com', $uri->getAbsoluteUri());
     }
 
     /**
@@ -393,9 +393,9 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetAbsoluteUriWithAuthority()
     {
-        $uri = new Uri('http://peehaa:pass@example.com');
+        $uri = new Uri('https://peehaa:pass@example.com');
 
-        $this->assertSame('http://peehaa:pass@example.com', $uri->getAbsoluteUri());
+        $this->assertSame('https://peehaa:pass@example.com', $uri->getAbsoluteUri());
     }
 
     /**
@@ -405,9 +405,9 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetAbsoluteUriWithPath()
     {
-        $uri = new Uri('http://example.com/foo');
+        $uri = new Uri('https://example.com/foo');
 
-        $this->assertSame('http://example.com/foo', $uri->getAbsoluteUri());
+        $this->assertSame('https://example.com/foo', $uri->getAbsoluteUri());
     }
 
     /**
@@ -417,9 +417,9 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetAbsoluteUriWithoutPath()
     {
-        $uri = new Uri('http://example.com');
+        $uri = new Uri('https://example.com');
 
-        $this->assertSame('http://example.com', $uri->getAbsoluteUri());
+        $this->assertSame('https://example.com', $uri->getAbsoluteUri());
     }
 
     /**
@@ -429,9 +429,9 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetAbsoluteUriWithoutPathExplicitTrailingSlash()
     {
-        $uri = new Uri('http://example.com/');
+        $uri = new Uri('https://example.com/');
 
-        $this->assertSame('http://example.com/', $uri->getAbsoluteUri());
+        $this->assertSame('https://example.com/', $uri->getAbsoluteUri());
     }
 
     /**
@@ -441,9 +441,9 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetAbsoluteUriWithQuery()
     {
-        $uri = new Uri('http://example.com?param1=value1');
+        $uri = new Uri('https://example.com?param1=value1');
 
-        $this->assertSame('http://example.com?param1=value1', $uri->getAbsoluteUri());
+        $this->assertSame('https://example.com?param1=value1', $uri->getAbsoluteUri());
     }
 
     /**
@@ -453,9 +453,9 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetAbsoluteUriWithFragment()
     {
-        $uri = new Uri('http://example.com#foo');
+        $uri = new Uri('https://example.com#foo');
 
-        $this->assertSame('http://example.com#foo', $uri->getAbsoluteUri());
+        $this->assertSame('https://example.com#foo', $uri->getAbsoluteUri());
     }
 
     /**
@@ -465,7 +465,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetRelativeUriWithoutPath()
     {
-        $uri = new Uri('http://example.com');
+        $uri = new Uri('https://example.com');
 
         $this->assertSame('', $uri->getRelativeUri());
     }
@@ -477,7 +477,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetRelativeUriWithPath()
     {
-        $uri = new Uri('http://example.com/foo');
+        $uri = new Uri('https://example.com/foo');
 
         $this->assertSame('/foo', $uri->getRelativeUri());
     }
@@ -489,7 +489,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetRelativeUriWithExplicitTrailingSlash()
     {
-        $uri = new Uri('http://example.com/');
+        $uri = new Uri('https://example.com/');
 
         $this->assertSame('/', $uri->getRelativeUri());
     }
@@ -501,9 +501,9 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testToStringBare()
     {
-        $uri = new Uri('http://example.com');
+        $uri = new Uri('https://example.com');
 
-        $this->assertSame('http://example.com', (string) $uri);
+        $this->assertSame('https://example.com', (string) $uri);
     }
 
     /**
@@ -516,9 +516,9 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testToStringWithAuthority()
     {
-        $uri = new Uri('http://peehaa:pass@example.com');
+        $uri = new Uri('https://peehaa:pass@example.com');
 
-        $this->assertSame('http://peehaa:********@example.com', (string) $uri);
+        $this->assertSame('https://peehaa:********@example.com', (string) $uri);
     }
 
     /**
@@ -528,9 +528,9 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testToStringWithPath()
     {
-        $uri = new Uri('http://example.com/foo');
+        $uri = new Uri('https://example.com/foo');
 
-        $this->assertSame('http://example.com/foo', (string) $uri);
+        $this->assertSame('https://example.com/foo', (string) $uri);
     }
 
     /**
@@ -540,9 +540,9 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testToStringWithoutPath()
     {
-        $uri = new Uri('http://example.com');
+        $uri = new Uri('https://example.com');
 
-        $this->assertSame('http://example.com', (string) $uri);
+        $this->assertSame('https://example.com', (string) $uri);
     }
 
     /**
@@ -552,9 +552,9 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testToStringWithoutPathExplicitTrailingSlash()
     {
-        $uri = new Uri('http://example.com/');
+        $uri = new Uri('https://example.com/');
 
-        $this->assertSame('http://example.com/', (string) $uri);
+        $this->assertSame('https://example.com/', (string) $uri);
     }
 
     /**
@@ -564,9 +564,9 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testToStringWithQuery()
     {
-        $uri = new Uri('http://example.com?param1=value1');
+        $uri = new Uri('https://example.com?param1=value1');
 
-        $this->assertSame('http://example.com?param1=value1', (string) $uri);
+        $this->assertSame('https://example.com?param1=value1', (string) $uri);
     }
 
     /**
@@ -576,9 +576,9 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testToStringWithFragment()
     {
-        $uri = new Uri('http://example.com#foo');
+        $uri = new Uri('https://example.com#foo');
 
-        $this->assertSame('http://example.com#foo', (string) $uri);
+        $this->assertSame('https://example.com#foo', (string) $uri);
     }
 
     /**
@@ -589,10 +589,10 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testSetPathEmpty()
     {
-        $uri = new Uri('http://example.com');
+        $uri = new Uri('https://example.com');
         $uri->setPath('');
 
-        $this->assertSame('http://example.com', $uri->getAbsoluteUri());
+        $this->assertSame('https://example.com', $uri->getAbsoluteUri());
     }
 
     /**
@@ -603,10 +603,10 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testSetPathWithPath()
     {
-        $uri = new Uri('http://example.com');
+        $uri = new Uri('https://example.com');
         $uri->setPath('/foo');
 
-        $this->assertSame('http://example.com/foo', $uri->getAbsoluteUri());
+        $this->assertSame('https://example.com/foo', $uri->getAbsoluteUri());
     }
 
     /**
@@ -617,10 +617,10 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testSetPathWithOnlySlash()
     {
-        $uri = new Uri('http://example.com');
+        $uri = new Uri('https://example.com');
         $uri->setPath('/');
 
-        $this->assertSame('http://example.com/', $uri->getAbsoluteUri());
+        $this->assertSame('https://example.com/', $uri->getAbsoluteUri());
     }
 
     /**
@@ -631,10 +631,10 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testSetQueryEmpty()
     {
-        $uri = new Uri('http://example.com');
+        $uri = new Uri('https://example.com');
         $uri->setQuery('');
 
-        $this->assertSame('http://example.com', $uri->getAbsoluteUri());
+        $this->assertSame('https://example.com', $uri->getAbsoluteUri());
     }
 
     /**
@@ -645,10 +645,10 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testSetQueryFilled()
     {
-        $uri = new Uri('http://example.com');
+        $uri = new Uri('https://example.com');
         $uri->setQuery('param1=value1&param2=value2');
 
-        $this->assertSame('http://example.com?param1=value1&param2=value2', $uri->getAbsoluteUri());
+        $this->assertSame('https://example.com?param1=value1&param2=value2', $uri->getAbsoluteUri());
     }
 
     /**
@@ -659,10 +659,10 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testAddToQueryAppend()
     {
-        $uri = new Uri('http://example.com?param1=value1');
+        $uri = new Uri('https://example.com?param1=value1');
         $uri->addToQuery('param2', 'value2');
 
-        $this->assertSame('http://example.com?param1=value1&param2=value2', $uri->getAbsoluteUri());
+        $this->assertSame('https://example.com?param1=value1&param2=value2', $uri->getAbsoluteUri());
     }
 
     /**
@@ -673,10 +673,10 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testAddToQueryCreate()
     {
-        $uri = new Uri('http://example.com');
+        $uri = new Uri('https://example.com');
         $uri->addToQuery('param1', 'value1');
 
-        $this->assertSame('http://example.com?param1=value1', $uri->getAbsoluteUri());
+        $this->assertSame('https://example.com?param1=value1', $uri->getAbsoluteUri());
     }
 
     /**
@@ -687,10 +687,10 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testSetFragmentEmpty()
     {
-        $uri = new Uri('http://example.com');
+        $uri = new Uri('https://example.com');
         $uri->setFragment('');
 
-        $this->assertSame('http://example.com', $uri->getAbsoluteUri());
+        $this->assertSame('https://example.com', $uri->getAbsoluteUri());
     }
 
     /**
@@ -701,10 +701,10 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testSetFragmentWithData()
     {
-        $uri = new Uri('http://example.com');
+        $uri = new Uri('https://example.com');
         $uri->setFragment('foo');
 
-        $this->assertSame('http://example.com#foo', $uri->getAbsoluteUri());
+        $this->assertSame('https://example.com#foo', $uri->getAbsoluteUri());
     }
 
     /**
@@ -715,7 +715,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testSetSchemeWithEmpty()
     {
-        $uri = new Uri('http://example.com');
+        $uri = new Uri('https://example.com');
         $uri->setScheme('');
 
         $this->assertSame('://example.com', $uri->getAbsoluteUri());
@@ -729,7 +729,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testSetSchemeWithData()
     {
-        $uri = new Uri('http://example.com');
+        $uri = new Uri('https://example.com');
         $uri->setScheme('foo');
 
         $this->assertSame('foo://example.com', $uri->getAbsoluteUri());
@@ -743,10 +743,10 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testSetUserInfoEmpty()
     {
-        $uri = new Uri('http://example.com');
+        $uri = new Uri('https://example.com');
         $uri->setUserInfo('');
 
-        $this->assertSame('http://example.com', $uri->getAbsoluteUri());
+        $this->assertSame('https://example.com', $uri->getAbsoluteUri());
     }
 
     /**
@@ -758,10 +758,10 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testSetUserInfoWithData()
     {
-        $uri = new Uri('http://example.com');
+        $uri = new Uri('https://example.com');
         $uri->setUserInfo('foo:bar');
 
-        $this->assertSame('http://foo:bar@example.com', $uri->getAbsoluteUri());
+        $this->assertSame('https://foo:bar@example.com', $uri->getAbsoluteUri());
     }
 
     /**
@@ -772,10 +772,10 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testSetPortCustom()
     {
-        $uri = new Uri('http://example.com');
+        $uri = new Uri('https://example.com');
         $uri->setPort('21');
 
-        $this->assertSame('http://example.com:21', $uri->getAbsoluteUri());
+        $this->assertSame('https://example.com:21', $uri->getAbsoluteUri());
     }
 
     /**
@@ -786,10 +786,10 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testSetPortHttpImplicit()
     {
-        $uri = new Uri('http://example.com');
+        $uri = new Uri('https://example.com');
         $uri->setPort(80);
 
-        $this->assertSame('http://example.com', $uri->getAbsoluteUri());
+        $this->assertSame('https://example.com', $uri->getAbsoluteUri());
     }
 
     /**
@@ -814,10 +814,10 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testSetPortHttpExplicit()
     {
-        $uri = new Uri('http://example.com');
+        $uri = new Uri('https://example.com');
         $uri->setPort(443);
 
-        $this->assertSame('http://example.com:443', $uri->getAbsoluteUri());
+        $this->assertSame('https://example.com:443', $uri->getAbsoluteUri());
     }
 
     /**
@@ -842,10 +842,10 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testSetHost()
     {
-        $uri = new Uri('http://example.com');
+        $uri = new Uri('https://example.com');
         $uri->setHost('pieterhordijk.com');
 
-        $this->assertSame('http://pieterhordijk.com', $uri->getAbsoluteUri());
+        $this->assertSame('https://pieterhordijk.com', $uri->getAbsoluteUri());
     }
 
     /**
@@ -855,7 +855,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testHasExplicitTrailingHostSlashTrue()
     {
-        $uri = new Uri('http://example.com/');
+        $uri = new Uri('https://example.com/');
 
         $this->assertTrue($uri->hasExplicitTrailingHostSlash());
     }
@@ -867,7 +867,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testHasExplicitTrailingHostSlashFalse()
     {
-        $uri = new Uri('http://example.com/foo');
+        $uri = new Uri('https://example.com/foo');
 
         $this->assertFalse($uri->hasExplicitTrailingHostSlash());
     }
@@ -879,7 +879,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testHasExplicitPortSpecifiedTrue()
     {
-        $uri = new Uri('http://example.com:8080');
+        $uri = new Uri('https://example.com:8080');
 
         $this->assertTrue($uri->hasExplicitPortSpecified());
     }
@@ -891,7 +891,7 @@ class UriTest extends \PHPUnit_Framework_TestCase
      */
     public function testHasExplicitPortSpecifiedFalse()
     {
-        $uri = new Uri('http://example.com');
+        $uri = new Uri('https://example.com');
 
         $this->assertFalse($uri->hasExplicitPortSpecified());
     }

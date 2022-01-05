@@ -1,9 +1,9 @@
 /*!
- * iCheck v0.9.1, http://git.io/uhUPMA
+ * iCheck v0.9.1, https://git.io/uhUPMA
  * =================================
  * Powerful Zepto plugin for checkboxes and radio buttons customization
  *
- * (c) 2013 Damir Foy, http://damirfoy.com
+ * (c) 2013 Damir Foy, https://damirfoy.com
  * MIT Licensed
  */
 

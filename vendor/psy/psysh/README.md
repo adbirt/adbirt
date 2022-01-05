@@ -1,16 +1,16 @@
 # PsySH
 
 [![Package version](https://img.shields.io/packagist/v/psy/psysh.svg?style=flat-square)](https://packagist.org/packages/psy/psysh)
-[![Monthly downloads](http://img.shields.io/packagist/dm/psy/psysh.svg?style=flat-square)](https://packagist.org/packages/psy/psysh)
-[![Made out of awesome](https://img.shields.io/badge/made_out_of_awesome-✓-brightgreen.svg?style=flat-square)](http://psysh.org)
+[![Monthly downloads](https://img.shields.io/packagist/dm/psy/psysh.svg?style=flat-square)](https://packagist.org/packages/psy/psysh)
+[![Made out of awesome](https://img.shields.io/badge/made_out_of_awesome-✓-brightgreen.svg?style=flat-square)](https://psysh.org)
 
-[![Build status](https://img.shields.io/travis/bobthecow/psysh/master.svg?style=flat-square)](http://travis-ci.org/bobthecow/psysh)
+[![Build status](https://img.shields.io/travis/bobthecow/psysh/master.svg?style=flat-square)](https://travis-ci.org/bobthecow/psysh)
 [![StyleCI](https://styleci.io/repos/4549925/shield)](https://styleci.io/repos/4549925)
 
 
 ## About
 
-PsySH is a runtime developer console, interactive debugger and [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) for PHP. Learn more at [psysh.org](http://psysh.org/). Check out the [Interactive Debugging in PHP talk from OSCON](https://presentate.com/bobthecow/talks/php-for-pirates) on Presentate.
+PsySH is a runtime developer console, interactive debugger and [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) for PHP. Learn more at [psysh.org](https://psysh.org/). Check out the [Interactive Debugging in PHP talk from OSCON](https://presentate.com/bobthecow/talks/php-for-pirates) on Presentate.
 
 
 ## Installation
@@ -114,7 +114,7 @@ return array(
 
     // PsySH uses symfony/var-dumper's casters for presenting scalars, resources,
     // arrays and objects. You can enable additional casters, or write your own!
-    // See http://symfony.com/doc/current/components/var_dumper/advanced.html#casters
+    // See https://symfony.com/doc/current/components/var_dumper/advanced.html#casters
     'casters' => array(
         'MyFooClass' => 'MyFooClassCaster::castMyFooObject',
     ),
@@ -148,26 +148,26 @@ return array(
 
 The PsySH `doc` command is great for documenting source code, but you'll need a little something extra for PHP core documentation. Download one of the following PHP Manual files and drop it in `~/.local/share/psysh/`, `/usr/local/share/psysh/` or `C:\Users\{USER}\AppData\Roaming\PsySH\` on Windows:
 
- * **[English](http://psysh.org/manual/en/php_manual.sqlite)**
- * [Brazilian Portuguese](http://psysh.org/manual/pt_BR/php_manual.sqlite)
- * [Chinese (Simplified)](http://psysh.org/manual/zh/php_manual.sqlite)
- * [French](http://psysh.org/manual/fr/php_manual.sqlite)
- * [German](http://psysh.org/manual/de/php_manual.sqlite)
- * [Italian](http://psysh.org/manual/it/php_manual.sqlite)
- * [Japanese](http://psysh.org/manual/ja/php_manual.sqlite)
- * [Polish](http://psysh.org/manual/pl/php_manual.sqlite)
- * [Romanian](http://psysh.org/manual/ro/php_manual.sqlite)
- * [Russian](http://psysh.org/manual/ru/php_manual.sqlite)
- * [Persian](http://psysh.org/manual/fa/php_manual.sqlite)
- * [Spanish](http://psysh.org/manual/es/php_manual.sqlite)
- * [Turkish](http://psysh.org/manual/tr/php_manual.sqlite)
+ * **[English](https://psysh.org/manual/en/php_manual.sqlite)**
+ * [Brazilian Portuguese](https://psysh.org/manual/pt_BR/php_manual.sqlite)
+ * [Chinese (Simplified)](https://psysh.org/manual/zh/php_manual.sqlite)
+ * [French](https://psysh.org/manual/fr/php_manual.sqlite)
+ * [German](https://psysh.org/manual/de/php_manual.sqlite)
+ * [Italian](https://psysh.org/manual/it/php_manual.sqlite)
+ * [Japanese](https://psysh.org/manual/ja/php_manual.sqlite)
+ * [Polish](https://psysh.org/manual/pl/php_manual.sqlite)
+ * [Romanian](https://psysh.org/manual/ro/php_manual.sqlite)
+ * [Russian](https://psysh.org/manual/ru/php_manual.sqlite)
+ * [Persian](https://psysh.org/manual/fa/php_manual.sqlite)
+ * [Spanish](https://psysh.org/manual/es/php_manual.sqlite)
+ * [Turkish](https://psysh.org/manual/tr/php_manual.sqlite)
 
 
 
 ## As Seen On…
 
- * Cake: [`cake console`](http://book.cakephp.org/3.0/en/console-and-shells/repl.html)
- * Drupal: [`drush php`](http://drushcommands.com/drush-8x/core/core-cli/), [drush-psysh](https://github.com/grota/drush-psysh)
+ * Cake: [`cake console`](https://book.cakephp.org/3.0/en/console-and-shells/repl.html)
+ * Drupal: [`drush php`](https://drushcommands.com/drush-8x/core/core-cli/), [drush-psysh](https://github.com/grota/drush-psysh)
  * eZ Publish: [`ezsh`](https://github.com/lolautruche/ezsh)
  * Laravel: [`artisan tinker`](https://github.com/laravel/framework/blob/5.0/src/Illuminate/Foundation/Console/TinkerCommand.php)
  * Lumen: [`artisan tinker`](https://github.com/vluzrmos/lumen-tinker)

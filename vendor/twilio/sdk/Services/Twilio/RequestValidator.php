@@ -23,7 +23,7 @@ class Services_Twilio_RequestValidator
         // This function calculates the HMAC hash of the data with the key
         // passed in
         // Note: hash_hmac requires PHP 5 >= 5.1.2 or PECL hash:1.1-1.5
-        // Or http://pear.php.net/package/Crypt_HMAC/
+        // Or https://pear.php.net/package/Crypt_HMAC/
         return base64_encode(hash_hmac("sha1", $url, $this->AuthToken, true));
     }
 

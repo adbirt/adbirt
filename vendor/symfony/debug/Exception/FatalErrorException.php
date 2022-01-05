@@ -56,7 +56,7 @@ class FatalErrorException extends LegacyFatalErrorException
 
                 foreach ($trace as &$frame) {
                     if (!isset($frame['type'])) {
-                        // XDebug pre 2.1.1 doesn't currently set the call type key http://bugs.xdebug.org/view.php?id=695
+                        // XDebug pre 2.1.1 doesn't currently set the call type key https://bugs.xdebug.org/view.php?id=695
                         if (isset($frame['class'])) {
                             $frame['type'] = '::';
                         }

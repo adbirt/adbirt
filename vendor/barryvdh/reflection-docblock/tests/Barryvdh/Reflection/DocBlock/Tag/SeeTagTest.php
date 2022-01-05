@@ -5,9 +5,9 @@
  * PHP version 5.3
  *
  * @author    Daniel O'Connor <daniel.oconnor@gmail.com>
- * @copyright 2010-2011 Mike van Riel / Naenius. (http://www.naenius.com)
- * @license   http://www.opensource.org/licenses/mit-license.php MIT
- * @link      http://phpdoc.org
+ * @copyright 2010-2011 Mike van Riel / Naenius. (https://www.naenius.com)
+ * @license   https://www.opensource.org/licenses/mit-license.php MIT
+ * @link      https://phpdoc.org
  */
 
 namespace Barryvdh\Reflection\DocBlock\Tag;
@@ -16,9 +16,9 @@ namespace Barryvdh\Reflection\DocBlock\Tag;
  * Test class for \Barryvdh\Reflection\DocBlock\Tag\SeeTag
  *
  * @author    Daniel O'Connor <daniel.oconnor@gmail.com>
- * @copyright 2010-2011 Mike van Riel / Naenius. (http://www.naenius.com)
- * @license   http://www.opensource.org/licenses/mit-license.php MIT
- * @link      http://phpdoc.org
+ * @copyright 2010-2011 Mike van Riel / Naenius. (https://www.naenius.com)
+ * @license   https://www.opensource.org/licenses/mit-license.php MIT
+ * @link      https://phpdoc.org
  */
 class SeeTagTest extends \PHPUnit_Framework_TestCase
 {

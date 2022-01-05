@@ -43,7 +43,7 @@ class Microsoft extends AbstractService
      * their wisdom they added this scope because fuck you that's why.
      *
      * https://github.com/Lusitanian/PHPoAuthLib/issues/214
-     * http://social.msdn.microsoft.com/Forums/live/en-US/c6dcb9ab-aed4-400a-99fb-5650c393a95d/how-retrieve-users-
+     * https://social.msdn.microsoft.com/Forums/live/en-US/c6dcb9ab-aed4-400a-99fb-5650c393a95d/how-retrieve-users-
      *                                  contacts-email-address?forum=messengerconnect
      *
      * Considering this scope is not officially supported: use with care

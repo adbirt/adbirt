@@ -13,7 +13,7 @@
  *
  * Identical check is performed with PHP's === operator, the operator is
  * explained in detail at
- * {@url http://www.php.net/manual/en/types.comparisons.php}.
+ * {@url https://www.php.net/manual/en/types.comparisons.php}.
  * Two values are identical if they have the same value and are of the same
  * type.
  *

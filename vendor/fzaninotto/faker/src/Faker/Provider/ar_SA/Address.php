@@ -51,7 +51,7 @@ class Address extends \Faker\Provider\Address
     protected static $postcode = array('#####', '#####-####');
 
     /**
-     * @link http://www.nationsonline.org/oneworld/countrynames_arabic.htm
+     * @link https://www.nationsonline.org/oneworld/countrynames_arabic.htm
      */
     protected static $country = array(
         'الكاريبي', 'أمريكا الوسطى', 'أنتيجوا وبربودا', 'أنجولا', 'أنجويلا', 'أندورا', 'اندونيسيا', 'أورجواي', 'أوروبا', 'أوزبكستان', 'أوغندا', 'أوقيانوسيا', 'أوقيانوسيا النائية', 'أوكرانيا', 'ايران', 'أيرلندا', 'أيسلندا', 'ايطاليا',

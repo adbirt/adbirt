@@ -11,7 +11,7 @@ class Address extends \Faker\Provider\Address
     );
 
     /**
-     * @link http://podgorica.mapa.in.rs/
+     * @link https://podgorica.mapa.in.rs/
      */
     protected static $street = array(
         '1. crnogorske brigade narodne odbrane', '1. maja', '1. proleterske brigade', '10. crnogorske brigade', '13. jula', '18. februara', '18. jula', '19. decembra', '2. crnogorskog bataljona', '2. proleterske dalmatinske brigade', '27. marta', '3. sandžačke proleterske brigade', '4. jula', '4. proleterske brigade', '5. proleterske brigade', '6. crnogorske udarne brigade', '7. omladinske brigade', '8. crnogorske udarne brigade', '8. jula', '8. marta', '9. crnogorske brigade',
@@ -52,7 +52,7 @@ class Address extends \Faker\Provider\Address
     );
 
     /**
-     * @link http://sh.wikipedia.org/wiki/Popis_gradova_u_Crnoj_Gori
+     * @link https://sh.wikipedia.org/wiki/Popis_gradova_u_Crnoj_Gori
      */
     protected static $cityNames = array(
        'Bar', 'Budva', 'Herceg Novi',

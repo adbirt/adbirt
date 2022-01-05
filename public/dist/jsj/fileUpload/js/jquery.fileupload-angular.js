@@ -6,7 +6,7 @@
  * https://blueimp.net
  *
  * Licensed under the MIT license:
- * http://www.opensource.org/licenses/MIT
+ * https://www.opensource.org/licenses/MIT
  */
 
 /*jslint nomen: true, unparam: true */
@@ -165,7 +165,7 @@
         .provider('formatFileSizeFilter', function () {
             var $config = {
                 // Byte units following the IEC format
-                // http://en.wikipedia.org/wiki/Kilobyte
+                // https://en.wikipedia.org/wiki/Kilobyte
                 units: [
                     {size: 1000000000, suffix: ' GB'},
                     {size: 1000000, suffix: ' MB'},

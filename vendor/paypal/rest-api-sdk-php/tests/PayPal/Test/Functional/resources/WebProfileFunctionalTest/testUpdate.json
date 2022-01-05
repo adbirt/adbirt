@@ -25,7 +25,7 @@
         "body": {
           "name":"someName2",
           "presentation":{
-            "logo_image":"http://www.ebay.com"
+            "logo_image":"https://www.ebay.com"
           },
           "input_fields":{
             "no_shipping":0,
@@ -33,7 +33,7 @@
           },
           "flow_config":{
             "landing_page_type":"billing",
-            "bank_txn_pending_url":"http://www.ebay.com"
+            "bank_txn_pending_url":"https://www.ebay.com"
           }
         }
     },

@@ -123,7 +123,7 @@ class Runtime
     public function getVendorUrl()
     {
         if ($this->isHHVM()) {
-            return 'http://hhvm.com/';
+            return 'https://hhvm.com/';
         } else {
             return 'https://secure.php.net/';
         }

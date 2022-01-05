@@ -13,7 +13,7 @@ class Person extends \Faker\Provider\Person
     );
 
     /**
-     * According to http://baike.baidu.com/view/6109935.htm,
+     * According to https://baike.baidu.com/view/6109935.htm,
      * these are the top 300 lastnames from the 6th Chinese national census of population,
      * containing 299 single-character surname and 1 double-character surname '欧阳',
      * so you can get random names including double-character surname but not too many.

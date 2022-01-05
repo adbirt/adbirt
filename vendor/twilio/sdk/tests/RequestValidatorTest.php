@@ -8,7 +8,7 @@ class RequestValidatorTest extends PHPUnit_Framework_TestCase {
         $token = "1c892n40nd03kdnc0112slzkl3091j20";
         $validator = new Services_Twilio_RequestValidator($token);
 
-        $uri = "http://www.postbin.org/1ed898x";
+        $uri = "https://www.postbin.org/1ed898x";
         $params = array(
             "CalledZip" => "94612",
             "AccountSid" => "AC9a9f9392lad99kla0sklakjs90j092j3",

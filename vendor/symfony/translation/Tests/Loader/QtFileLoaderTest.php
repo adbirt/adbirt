@@ -43,7 +43,7 @@ class QtFileLoaderTest extends \PHPUnit_Framework_TestCase
     public function testLoadNonLocalResource()
     {
         $loader = new QtFileLoader();
-        $resource = 'http://domain1.com/resources.ts';
+        $resource = 'https://domain1.com/resources.ts';
         $loader->load($resource, 'en', 'domain1');
     }
 

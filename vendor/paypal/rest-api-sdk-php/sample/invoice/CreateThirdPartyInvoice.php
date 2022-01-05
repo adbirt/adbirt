@@ -2,8 +2,8 @@
 
 // # Create Third Party Invoice Sample
 // This sample code demonstrate how you can create third party invoice on someone else's behalf.
-// This requires using `Obtain User's Consent` to fetch the refresh token of the third party merchant. Please look at http://paypal.github.io/PayPal-PHP-SDK/sample/doc/lipp/ObtainUserConsent.html for more info.
-// You need the email address of the third party. This can be retrieved using the refresh token obtained from previous call. Please refere to http://paypal.github.io/PayPal-PHP-SDK/sample/doc/lipp/GetUserInfo.html for more info.
+// This requires using `Obtain User's Consent` to fetch the refresh token of the third party merchant. Please look at https://paypal.github.io/PayPal-PHP-SDK/sample/doc/lipp/ObtainUserConsent.html for more info.
+// You need the email address of the third party. This can be retrieved using the refresh token obtained from previous call. Please refere to https://paypal.github.io/PayPal-PHP-SDK/sample/doc/lipp/GetUserInfo.html for more info.
 // Please make sure to use `merchantInfo.email` as the email address of the third party.
 
 require __DIR__ . '/../bootstrap.php';
@@ -85,7 +85,7 @@ $invoice->getPaymentTerm()
 // For Sample Purposes Only.
 $request = clone $invoice;
 
-// This would be refresh token retrieved from http://paypal.github.io/PayPal-PHP-SDK/sample/doc/lipp/ObtainUserConsent.html
+// This would be refresh token retrieved from https://paypal.github.io/PayPal-PHP-SDK/sample/doc/lipp/ObtainUserConsent.html
 $refreshToken = "SCNWVZfdg43XaOmoEicazpkXyda32CGnP208EkuQ_QBIrXCYMhlvORFHHyoXPT0VbEMIHYVJEm0gVf1Vf72YgJzPScBenKoVPq__y1QRT7wwJo3WYADwUW4Q5ic";
 
 try {

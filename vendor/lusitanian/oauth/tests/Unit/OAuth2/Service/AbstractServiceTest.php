@@ -97,7 +97,7 @@ class AbstractServiceTest extends \PHPUnit_Framework_TestCase
         );
 
         $this->assertSame(
-            'http://pieterhordijk.com/auth?type=web_server&client_id=foo&redirect_uri=bar&response_type=code&scope=',
+            'https://pieterhordijk.com/auth?type=web_server&client_id=foo&redirect_uri=bar&response_type=code&scope=',
             $service->getAuthorizationUri()->getAbsoluteUri()
         );
     }
@@ -120,7 +120,7 @@ class AbstractServiceTest extends \PHPUnit_Framework_TestCase
         );
 
         $this->assertSame(
-            'http://pieterhordijk.com/auth?foo=bar&baz=beer&type=web_server&client_id=foo&redirect_uri=bar&response_type=code&scope=',
+            'https://pieterhordijk.com/auth?foo=bar&baz=beer&type=web_server&client_id=foo&redirect_uri=bar&response_type=code&scope=',
             $service->getAuthorizationUri(array('foo' => 'bar', 'baz' => 'beer'))->getAbsoluteUri()
         );
     }
@@ -145,7 +145,7 @@ class AbstractServiceTest extends \PHPUnit_Framework_TestCase
         );
 
         $this->assertSame(
-            'http://pieterhordijk.com/auth?foo=bar&baz=beer&type=web_server&client_id=foo&redirect_uri=bar&response_type=code&scope=mock+mock2',
+            'https://pieterhordijk.com/auth?foo=bar&baz=beer&type=web_server&client_id=foo&redirect_uri=bar&response_type=code&scope=mock+mock2',
             $service->getAuthorizationUri(array('foo' => 'bar', 'baz' => 'beer'))->getAbsoluteUri()
         );
     }

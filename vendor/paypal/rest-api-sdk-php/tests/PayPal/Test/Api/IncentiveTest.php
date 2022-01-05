@@ -17,7 +17,7 @@ class IncentiveTest extends \PHPUnit_Framework_TestCase
      */
     public static function getJson()
     {
-        return '{"id":"TestSample","code":"TestSample","name":"TestSample","description":"TestSample","minimum_purchase_amount":' . CurrencyTest::getJson() . ',"logo_image_url":"http://www.google.com","expiry_date":"TestSample","type":"TestSample","terms":"TestSample"}';
+        return '{"id":"TestSample","code":"TestSample","name":"TestSample","description":"TestSample","minimum_purchase_amount":' . CurrencyTest::getJson() . ',"logo_image_url":"https://www.google.com","expiry_date":"TestSample","type":"TestSample","terms":"TestSample"}';
     }
 
     /**
@@ -62,7 +62,7 @@ class IncentiveTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($obj->getName(), "TestSample");
         $this->assertEquals($obj->getDescription(), "TestSample");
         $this->assertEquals($obj->getMinimumPurchaseAmount(), CurrencyTest::getObject());
-        $this->assertEquals($obj->getLogoImageUrl(), "http://www.google.com");
+        $this->assertEquals($obj->getLogoImageUrl(), "https://www.google.com");
         $this->assertEquals($obj->getExpiryDate(), "TestSample");
         $this->assertEquals($obj->getType(), "TestSample");
         $this->assertEquals($obj->getTerms(), "TestSample");

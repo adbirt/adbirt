@@ -2,7 +2,7 @@
  * @license
  * =========================================================
  * bootstrap-datetimepicker.js
- * http://www.eyecon.ro/bootstrap-datepicker
+ * https://www.eyecon.ro/bootstrap-datepicker
  * =========================================================
  * Copyright 2012 Stefan Petre
  *
@@ -14,7 +14,7 @@
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -738,7 +738,7 @@
     },
 
     // part of the following code was taken from
-    // http://cloud.github.com/downloads/digitalBush/jquery.maskedinput/jquery.maskedinput-1.3.js
+    // https://cloud.github.com/downloads/digitalBush/jquery.maskedinput/jquery.maskedinput-1.3.js
     keydown: function(e) {
       var self = this, k = e.which, input = $(e.target);
       if (k == 8 || k == 46) {
@@ -1137,7 +1137,7 @@
   var formatReplacer = new RegExp(keys.join('\\b|'), 'g');
 
   function escapeRegExp(str) {
-    // http://stackoverflow.com/questions/3446170/escape-string-for-use-in-javascript-regex
+    // https://stackoverflow.com/questions/3446170/escape-string-for-use-in-javascript-regex
     return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
   }
 

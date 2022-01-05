@@ -1,4 +1,4 @@
- @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800);
+ @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800);
 @import url('button.css');
 
 @font-face {
@@ -17,7 +17,7 @@
 /*
 Copyright (c) 2006, Yahoo! Inc. All rights reserved.
 Code licensed under the BSD License:
-http://developer.yahoo.net/yui/license.txt
+https://developer.yahoo.net/yui/license.txt
 version: 0.12.0
 */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
@@ -119,7 +119,7 @@ body {
   background-image:    -moz-linear-gradient(top, #262626, #000000); /* FF3.6+ */
   background-image:      -o-linear-gradient(top, #262626, #000000); /* Opera 11.10+ */
   background-image:         linear-gradient(to bottom, #262626, #000000);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#262626', EndColorStr='#000000'); /* IE6–IE9 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#262626', EndColorStr='#000000'); /* IE6ï¿½IE9 */
   z-index: 10000;
   
   box-shadow: 0em .1em .7em rgba(0, 0, 0, 0.3);

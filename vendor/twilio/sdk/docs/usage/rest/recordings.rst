@@ -19,7 +19,7 @@ Run the following to get a list of all of your recordings:
     }
 
 For more information about which properties are available for a recording
-object, please see the `Twilio Recordings API Documentation <http://www.twilio.com/docs/api/rest/recording>`_.
+object, please see the `Twilio Recordings API Documentation <https://www.twilio.com/docs/api/rest/recording>`_.
 
 Please note that the ``uri`` returned by default is a JSON dictionary
 containing metadata about the recording; you can access the .wav version by
@@ -29,7 +29,7 @@ Filtering Recordings By Call Sid
 --------------------------------
 
 Pass filters as an array to filter your list of recordings, with any of the
-filters listed in the `recording list documentation <http://www.twilio.com/docs/api/rest/recording#list-get-filters>`_.
+filters listed in the `recording list documentation <https://www.twilio.com/docs/api/rest/recording#list-get-filters>`_.
 
 .. code-block:: php
 

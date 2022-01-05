@@ -6,7 +6,7 @@ Twilio requires that your TwiML-serving web server be open to the public. This i
 
 However, there may be people out there trying to spoof the Twilio service. Luckily, there's an easy way to validate that incoming requests are from Twilio and Twilio alone.
 
-An `indepth guide <http://www.twilio.com/docs/security>`_ to our security features can be found in our online documentation.
+An `indepth guide <https://www.twilio.com/docs/security>`_ to our security features can be found in our online documentation.
 
 Before you can validate requests, you'll need four pieces of information
 

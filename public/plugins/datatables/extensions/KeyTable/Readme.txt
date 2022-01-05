@@ -9,7 +9,7 @@ KeyTable provides enhanced accessibility and navigation options for DataTables e
 
 # Installation
 
-To use KeyTable, first download DataTables ( http://datatables.net/download ) and place the unzipped KeyTable package into a `extensions` directory in the DataTables package. This will allow the pages in the examples to operate correctly. To see the examples running, open the `examples` directory in your web-browser.
+To use KeyTable, first download DataTables ( https://datatables.net/download ) and place the unzipped KeyTable package into a `extensions` directory in the DataTables package. This will allow the pages in the examples to operate correctly. To see the examples running, open the `examples` directory in your web-browser.
 
 
 # Basic usage
@@ -26,8 +26,8 @@ $(document).ready( function () {
 
 # Documentation / support
 
-* Documentation: http://datatables.net/extensions/keytable/
-* DataTables support forums: http://datatables.net/forums
+* Documentation: https://datatables.net/extensions/keytable/
+* DataTables support forums: https://datatables.net/forums
 
 
 # GitHub

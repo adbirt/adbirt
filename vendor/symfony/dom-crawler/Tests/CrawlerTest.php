@@ -67,10 +67,10 @@ class CrawlerTest extends \PHPUnit_Framework_TestCase
 
         $this->assertEquals('foo', $crawler->filterXPath('//div')->attr('class'), '->addHtmlContent() adds nodes from an HTML string');
 
-        $crawler->addHtmlContent('<html><head><base href="http://symfony.com"></head><a href="/contact"></a></html>', 'UTF-8');
+        $crawler->addHtmlContent('<html><head><base href="https://symfony.com"></head><a href="/contact"></a></html>', 'UTF-8');
 
-        $this->assertEquals('http://symfony.com', $crawler->filterXPath('//base')->attr('href'), '->addHtmlContent() adds nodes from an HTML string');
-        $this->assertEquals('http://symfony.com/contact', $crawler->filterXPath('//a')->link()->getUri(), '->addHtmlContent() adds nodes from an HTML string');
+        $this->assertEquals('https://symfony.com', $crawler->filterXPath('//base')->attr('href'), '->addHtmlContent() adds nodes from an HTML string');
+        $this->assertEquals('https://symfony.com/contact', $crawler->filterXPath('//a')->link()->getUri(), '->addHtmlContent() adds nodes from an HTML string');
     }
 
     /**
@@ -86,11 +86,11 @@ class CrawlerTest extends \PHPUnit_Framework_TestCase
 
     public function testAddHtmlContentInvalidBaseTag()
     {
-        $crawler = new Crawler(null, 'http://symfony.com');
+        $crawler = new Crawler(null, 'https://symfony.com');
 
         $crawler->addHtmlContent('<html><head><base target="_top"></head><a href="/contact"></a></html>', 'UTF-8');
 
-        $this->assertEquals('http://symfony.com/contact', current($crawler->filterXPath('//a')->links())->getUri(), '->addHtmlContent() correctly handles a non-existent base tag href attribute');
+        $this->assertEquals('https://symfony.com/contact', current($crawler->filterXPath('//a')->links())->getUri(), '->addHtmlContent() correctly handles a non-existent base tag href attribute');
     }
 
     public function testAddHtmlContentUnsupportedCharset()
@@ -436,7 +436,7 @@ EOF
     public function testFilterXPathWithManuallyRegisteredNamespace()
     {
         $crawler = $this->createTestXmlCrawler();
-        $crawler->registerNamespace('m', 'http://search.yahoo.com/mrss/');
+        $crawler->registerNamespace('m', 'https://search.yahoo.com/mrss/');
 
         $crawler = $crawler->filterXPath('//m:group/yt:aspectRatio');
         $this->assertCount(1, $crawler, '->filterXPath() uses manually registered namespace');
@@ -447,7 +447,7 @@ EOF
     {
         $crawler = $this->createTestXmlCrawler();
 
-        $crawler = $crawler->filterXPath('//media:category[@scheme="http://gdata.youtube.com/schemas/2007/categories.cat"]');
+        $crawler = $crawler->filterXPath('//media:category[@scheme="https://gdata.youtube.com/schemas/2007/categories.cat"]');
         $this->assertCount(1, $crawler);
         $this->assertSame('Music', $crawler->text());
     }
@@ -590,15 +590,15 @@ EOF
     public function testFilterWithDefaultNamespaceOnly()
     {
         $crawler = new Crawler('<?xml version="1.0" encoding="UTF-8"?>
-            <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+            <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
                 <url>
-                    <loc>http://localhost/foo</loc>
+                    <loc>https://localhost/foo</loc>
                     <changefreq>weekly</changefreq>
                     <priority>0.5</priority>
                     <lastmod>2012-11-16</lastmod>
                </url>
                <url>
-                    <loc>http://localhost/bar</loc>
+                    <loc>https://localhost/bar</loc>
                     <changefreq>weekly</changefreq>
                     <priority>0.5</priority>
                     <lastmod>2012-11-16</lastmod>
@@ -690,13 +690,13 @@ HTML;
 
     public function testLink()
     {
-        $crawler = $this->createTestCrawler('http://example.com/bar/')->selectLink('Foo');
+        $crawler = $this->createTestCrawler('https://example.com/bar/')->selectLink('Foo');
         $this->assertInstanceOf('Symfony\\Component\\DomCrawler\\Link', $crawler->link(), '->link() returns a Link instance');
 
         $this->assertEquals('POST', $crawler->link('post')->getMethod(), '->link() takes a method as its argument');
 
-        $crawler = $this->createTestCrawler('http://example.com/bar')->selectLink('GetLink');
-        $this->assertEquals('http://example.com/bar?get=param', $crawler->link()->getUri(), '->link() returns a Link instance');
+        $crawler = $this->createTestCrawler('https://example.com/bar')->selectLink('GetLink');
+        $this->assertEquals('https://example.com/bar?get=param', $crawler->link()->getUri(), '->link() returns a Link instance');
 
         try {
             $this->createTestCrawler()->filterXPath('//ol')->link();
@@ -746,7 +746,7 @@ HTML;
 
     public function testLinks()
     {
-        $crawler = $this->createTestCrawler('http://example.com/bar/')->selectLink('Foo');
+        $crawler = $this->createTestCrawler('https://example.com/bar/')->selectLink('Foo');
         $this->assertInternalType('array', $crawler->links(), '->links() returns an array');
 
         $this->assertCount(4, $crawler->links(), '->links() returns an array');
@@ -758,7 +758,7 @@ HTML;
 
     public function testForm()
     {
-        $testCrawler = $this->createTestCrawler('http://example.com/bar/');
+        $testCrawler = $this->createTestCrawler('https://example.com/bar/');
         $crawler = $testCrawler->selectButton('FooValue');
         $crawler2 = $testCrawler->selectButton('FooBarValue');
         $this->assertInstanceOf('Symfony\\Component\\DomCrawler\\Form', $crawler->form(), '->form() returns a Form instance');
@@ -916,11 +916,11 @@ HTML;
     public function getBaseTagData()
     {
         return array(
-            array('http://base.com', 'link', 'http://base.com/link'),
+            array('https://base.com', 'link', 'https://base.com/link'),
             array('//base.com', 'link', 'https://base.com/link', 'https://domain.com', '<base> tag can use a schema-less URL'),
             array('path/', 'link', 'https://domain.com/path/link', 'https://domain.com', '<base> tag can set a path'),
-            array('http://base.com', '#', 'http://base.com#', 'http://domain.com/path/link', '<base> tag does work with links to an anchor'),
-            array('http://base.com', '', 'http://base.com', 'http://domain.com/path/link', '<base> tag does work with empty links'),
+            array('https://base.com', '#', 'https://base.com#', 'https://domain.com/path/link', '<base> tag does work with links to an anchor'),
+            array('https://base.com', '', 'https://base.com', 'https://domain.com/path/link', '<base> tag does work with empty links'),
         );
     }
 
@@ -937,11 +937,11 @@ HTML;
     {
         return array(
             array('https://base.com/', 'link/', 'https://base.com/link/', 'https://base.com/link/', '<base> tag does work with a path and relative form action'),
-            array('/basepath', '/registration', 'http://domain.com/registration', 'http://domain.com/registration', '<base> tag does work with a path and form action'),
-            array('/basepath', '', 'http://domain.com/registration', 'http://domain.com/registration', '<base> tag does work with a path and empty form action'),
-            array('http://base.com/', '/registration', 'http://base.com/registration', 'http://domain.com/registration', '<base> tag does work with a URL and form action'),
-            array('http://base.com', '', 'http://domain.com/path/form', 'http://domain.com/path/form', '<base> tag does work with a URL and an empty form action'),
-            array('http://base.com/path', '/registration', 'http://base.com/registration', 'http://domain.com/path/form', '<base> tag does work with a URL and form action'),
+            array('/basepath', '/registration', 'https://domain.com/registration', 'https://domain.com/registration', '<base> tag does work with a path and form action'),
+            array('/basepath', '', 'https://domain.com/registration', 'https://domain.com/registration', '<base> tag does work with a path and empty form action'),
+            array('https://base.com/', '/registration', 'https://base.com/registration', 'https://domain.com/registration', '<base> tag does work with a URL and form action'),
+            array('https://base.com', '', 'https://domain.com/path/form', 'https://domain.com/path/form', '<base> tag does work with a URL and an empty form action'),
+            array('https://base.com/path', '/registration', 'https://base.com/registration', 'https://domain.com/path/form', '<base> tag does work with a URL and form action'),
         );
     }
 
@@ -994,7 +994,7 @@ HTML;
                     </ul>
                     <div id="parent">
                         <div id="child"></div>
-                        <div id="child2" xmlns:foo="http://example.com"></div>
+                        <div id="child2" xmlns:foo="https://example.com"></div>
                     </div>
                     <div id="sibling"><img /></div>
                 </body>
@@ -1007,7 +1007,7 @@ HTML;
     protected function createTestXmlCrawler($uri = null)
     {
         $xml = '<?xml version="1.0" encoding="UTF-8"?>
-            <entry xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:yt="http://gdata.youtube.com/schemas/2007">
+            <entry xmlns="https://www.w3.org/2005/Atom" xmlns:media="https://search.yahoo.com/mrss/" xmlns:yt="https://gdata.youtube.com/schemas/2007">
                 <id>tag:youtube.com,2008:video:kgZRZmEc9j4</id>
                 <yt:accessControl action="comment" permission="allowed"/>
                 <yt:accessControl action="videoRespond" permission="moderated"/>
@@ -1015,7 +1015,7 @@ HTML;
                     <media:title type="plain">Chordates - CrashCourse Biology #24</media:title>
                     <yt:aspectRatio>widescreen</yt:aspectRatio>
                 </media:group>
-                <media:category label="Music" scheme="http://gdata.youtube.com/schemas/2007/categories.cat">Music</media:category>
+                <media:category label="Music" scheme="https://gdata.youtube.com/schemas/2007/categories.cat">Music</media:category>
             </entry>';
 
         return new Crawler($xml, $uri);

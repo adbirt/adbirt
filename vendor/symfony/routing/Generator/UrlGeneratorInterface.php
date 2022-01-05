@@ -20,19 +20,19 @@ use Symfony\Component\Routing\RequestContextAwareInterface;
  * UrlGeneratorInterface is the interface that all URL generator classes must implement.
  *
  * The constants in this interface define the different types of resource references that
- * are declared in RFC 3986: http://tools.ietf.org/html/rfc3986
+ * are declared in RFC 3986: https://tools.ietf.org/html/rfc3986
  * We are using the term "URL" instead of "URI" as this is more common in web applications
  * and we do not need to distinguish them as the difference is mostly semantical and
  * less technical. Generating URIs, i.e. representation-independent resource identifiers,
  * is also possible.
  *
  * @author Fabien Potencier <fabien@symfony.com>
- * @author Tobias Schultze <http://tobion.de>
+ * @author Tobias Schultze <https://tobion.de>
  */
 interface UrlGeneratorInterface extends RequestContextAwareInterface
 {
     /**
-     * Generates an absolute URL, e.g. "http://example.com/dir/file".
+     * Generates an absolute URL, e.g. "https://example.com/dir/file".
      */
     const ABSOLUTE_URL = true;
 

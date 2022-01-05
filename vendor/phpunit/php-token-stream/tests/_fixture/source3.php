@@ -1,6 +1,6 @@
 <?php
 // This file is example#1
-// from http://www.php.net/manual/en/function.get-included-files.php
+// from https://www.php.net/manual/en/function.get-included-files.php
 
 include 'test1.php';
 include_once 'test2.php';

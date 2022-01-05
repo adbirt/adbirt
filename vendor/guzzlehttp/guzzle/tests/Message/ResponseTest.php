@@ -89,8 +89,8 @@ class ResponseTest extends \PHPUnit_Framework_TestCase
     {
         $r = new Response(200);
         $this->assertNull($r->getEffectiveUrl());
-        $r->setEffectiveUrl('http://www.test.com');
-        $this->assertEquals('http://www.test.com', $r->getEffectiveUrl());
+        $r->setEffectiveUrl('https://www.test.com');
+        $this->assertEquals('https://www.test.com', $r->getEffectiveUrl());
     }
 
     public function testPreventsComplexExternalEntities()

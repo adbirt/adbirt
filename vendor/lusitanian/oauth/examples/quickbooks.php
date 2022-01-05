@@ -6,7 +6,7 @@
  * PHP version 5.4
  *
  * @author     Elliot Chance <elliotchance@gmail.com>
- * @license    http://www.opensource.org/licenses/mit-license.html  MIT License
+ * @license    https://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
 use OAuth\OAuth1\Service\QuickBooks;

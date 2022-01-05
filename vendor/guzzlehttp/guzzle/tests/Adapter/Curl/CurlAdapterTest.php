@@ -42,7 +42,7 @@ class CurlAdapterTest extends AbstractCurl
     public function testCanInterceptBeforeSending()
     {
         $client = new Client();
-        $request = new Request('GET', 'http://httpbin.org/get');
+        $request = new Request('GET', 'https://httpbin.org/get');
         $response = new Response(200);
         $request->getEmitter()->on(
             'before',
@@ -64,7 +64,7 @@ class CurlAdapterTest extends AbstractCurl
     public function testThrowsCurlErrors()
     {
         $client = new Client();
-        $request = $client->createRequest('GET', 'http://localhost:123', [
+        $request = $client->createRequest('GET', 'https://localhost:123', [
             'connect_timeout' => 0.001,
             'timeout' => 0.001,
         ]);
@@ -76,7 +76,7 @@ class CurlAdapterTest extends AbstractCurl
     public function testHandlesCurlErrors()
     {
         $client = new Client();
-        $request = $client->createRequest('GET', 'http://localhost:123', [
+        $request = $client->createRequest('GET', 'https://localhost:123', [
             'connect_timeout' => 0.001,
             'timeout' => 0.001,
         ]);

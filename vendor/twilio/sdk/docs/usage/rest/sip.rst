@@ -24,7 +24,7 @@ domain that lives under sip.twilio.com. For example, doug.sip.twilio.com.
       "Doug's Domain", // The FriendlyName for your new domain
       "doug.sip.twilio.com", // The sip domain for your new domain
       array(
-        'VoiceUrl' => 'http://example.com/voice',
+        'VoiceUrl' => 'https://example.com/voice',
     ));
 
     echo $domain->sid;

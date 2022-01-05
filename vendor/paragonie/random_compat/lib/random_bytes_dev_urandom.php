@@ -35,7 +35,7 @@ if (!defined('RANDOM_COMPAT_READ_BUFFER')) {
  * random numbers in accordance with best practices
  * 
  * Why we use /dev/urandom and not /dev/random
- * @ref http://sockpuppet.org/blog/2014/02/25/safely-generate-random-numbers
+ * @ref https://sockpuppet.org/blog/2014/02/25/safely-generate-random-numbers
  * 
  * @param int $bytes
  * 

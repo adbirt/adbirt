@@ -1,6 +1,6 @@
-﻿/*
+/*
  Copyright (c) 2003-2013, CKSource - Frederico Knabben. All rights reserved.
- For licensing, see LICENSE.md or http://ckeditor.com/license
+ For licensing, see LICENSE.md or https://ckeditor.com/license
 */
 CKEDITOR.plugins.setLang("specialchar","el",{euro:"Σύμβολο Ευρώ",lsquo:"Αριστερός χαρακτήρας μονού εισαγωγικού",rsquo:"Δεξιός χαρακτήρας μονού εισαγωγικού",ldquo:"Αριστερός χαρακτήρας διπλού εισαγωγικού",rdquo:"Δεξιός χαρακτήρας διπλού εισαγωγικού",ndash:"Παύλα en",mdash:"Παύλα em",iexcl:"Ανάποδο θαυμαστικό",cent:"Σύμβολο σεντ",pound:"Σύμβολο λίρας",curren:"Σύμβολο συναλλαγματικής μονάδας",yen:"Σύμβολο Γιεν",brvbar:"Σπασμένη μπάρα",sect:"Σύμβολο τμήματος",uml:"Διαίρεση",copy:"Σύμβολο πνευματικών δικαιωμάτων",
 ordf:"Feminine ordinal indicator",laquo:"Αριστερός χαρακτήρας διπλού εισαγωγικού",not:"Not sign",reg:"Σύμβολο σημάτων κατατεθέν",macr:"Μακρόν",deg:"Σύμβολο βαθμού",sup2:"Εκτεθειμένο δύο",sup3:"Εκτεθειμένο τρία",acute:"Οξεία",micro:"Σύμβολο μικρού",para:"Σύμβολο παραγράφου",middot:"Μέση τελεία",cedil:"Υπογεγραμμένη",sup1:"Εκτεθειμένο ένα",ordm:"Masculine ordinal indicator",raquo:"Right-pointing double angle quotation mark",frac14:"Γνήσιο κλάσμα ενός τετάρτου",frac12:"Γνήσιο κλάσμα ενός δεύτερου",frac34:"Γνήσιο κλάσμα τριών τετάρτων",

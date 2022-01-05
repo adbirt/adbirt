@@ -24,7 +24,7 @@ class ConfigPaths
      * Returns `~/.psysh`, `%APPDATA%/PsySH` (when on Windows), and all
      * XDG Base Directory config directories:
      *
-     *     http://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html
+     *     https://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html
      *
      * @return string[]
      */
@@ -41,7 +41,7 @@ class ConfigPaths
      * Returns `~/.psysh`, `%APPDATA%/PsySH` (when on Windows), and the
      * XDG Base Directory home config directory:
      *
-     *     http://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html
+     *     https://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html
      *
      * @return string[]
      */
@@ -99,7 +99,7 @@ class ConfigPaths
      *
      * Otherwise, it returns `~/.psysh` and all XDG Base Directory data directories:
      *
-     *     http://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html
+     *     https://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html
      *
      * @return string[]
      */

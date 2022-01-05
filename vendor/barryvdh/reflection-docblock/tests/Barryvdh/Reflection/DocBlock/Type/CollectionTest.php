@@ -5,9 +5,9 @@
  * PHP version 5.3
  *
  * @author    Mike van Riel <mike.vanriel@naenius.com>
- * @copyright 2010-2011 Mike van Riel / Naenius. (http://www.naenius.com)
- * @license   http://www.opensource.org/licenses/mit-license.php MIT
- * @link      http://phpdoc.org
+ * @copyright 2010-2011 Mike van Riel / Naenius. (https://www.naenius.com)
+ * @license   https://www.opensource.org/licenses/mit-license.php MIT
+ * @link      https://phpdoc.org
  */
 
 namespace Barryvdh\Reflection\DocBlock\Type;
@@ -20,9 +20,9 @@ use Barryvdh\Reflection\DocBlock\Context;
  * @covers Barryvdh\Reflection\DocBlock\Type\Collection
  *
  * @author    Mike van Riel <mike.vanriel@naenius.com>
- * @copyright 2010-2011 Mike van Riel / Naenius. (http://www.naenius.com)
- * @license   http://www.opensource.org/licenses/mit-license.php MIT
- * @link      http://phpdoc.org
+ * @copyright 2010-2011 Mike van Riel / Naenius. (https://www.naenius.com)
+ * @license   https://www.opensource.org/licenses/mit-license.php MIT
+ * @link      https://phpdoc.org
  */
 class CollectionTest extends \PHPUnit_Framework_TestCase
 {

@@ -23,7 +23,7 @@ use Psr\Log\LoggerInterface;
  * based on the passed parameters.
  *
  * @author Fabien Potencier <fabien@symfony.com>
- * @author Tobias Schultze <http://tobion.de>
+ * @author Tobias Schultze <https://tobion.de>
  */
 class UrlGenerator implements UrlGeneratorInterface, ConfigurableRequirementsInterface
 {
@@ -58,7 +58,7 @@ class UrlGenerator implements UrlGeneratorInterface, ConfigurableRequirementsInt
     protected $decodedChars = array(
         // the slash can be used to designate a hierarchical structure and we want allow using it with this meaning
         // some webservers don't allow the slash in encoded form in the path for security reasons anyway
-        // see http://stackoverflow.com/questions/4069002/http-400-if-2f-part-of-get-url-in-jboss
+        // see https://stackoverflow.com/questions/4069002/http-400-if-2f-part-of-get-url-in-jboss
         '%2F' => '/',
         // the following chars are general delimiters in the URI specification but have only special meaning in the authority component
         // so they can safely be used in the path in unencoded form
@@ -187,7 +187,7 @@ class UrlGenerator implements UrlGeneratorInterface, ConfigurableRequirementsInt
         // the contexts base URL is already encoded (see Symfony\Component\HttpFoundation\Request)
         $url = strtr(rawurlencode($url), $this->decodedChars);
 
-        // the path segments "." and ".." are interpreted as relative reference when resolving a URI; see http://tools.ietf.org/html/rfc3986#section-3.3
+        // the path segments "." and ".." are interpreted as relative reference when resolving a URI; see https://tools.ietf.org/html/rfc3986#section-3.3
         // so we need to encode them as they are not used for this purpose here
         // otherwise we would generate a URI that, when followed by a user agent (e.g. browser), does not match this route
         $url = strtr($url, array('/../' => '/%2E%2E/', '/./' => '/%2E/'));
@@ -270,7 +270,7 @@ class UrlGenerator implements UrlGeneratorInterface, ConfigurableRequirementsInt
 
         if ($extra && $query = http_build_query($extra, '', '&')) {
             // "/" and "?" can be left decoded for better user experience, see
-            // http://tools.ietf.org/html/rfc3986#section-3.4
+            // https://tools.ietf.org/html/rfc3986#section-3.4
             $url .= '?'.strtr($query, array('%2F' => '/'));
         }
 
@@ -322,7 +322,7 @@ class UrlGenerator implements UrlGeneratorInterface, ConfigurableRequirementsInt
         // A reference to the same base directory or an empty subdirectory must be prefixed with "./".
         // This also applies to a segment with a colon character (e.g., "file:colon") that cannot be used
         // as the first segment of a relative-path reference, as it would be mistaken for a scheme name
-        // (see http://tools.ietf.org/html/rfc3986#section-4.2).
+        // (see https://tools.ietf.org/html/rfc3986#section-4.2).
         return '' === $path || '/' === $path[0]
             || false !== ($colonPos = strpos($path, ':')) && ($colonPos < ($slashPos = strpos($path, '/')) || false === $slashPos)
             ? "./$path" : $path;

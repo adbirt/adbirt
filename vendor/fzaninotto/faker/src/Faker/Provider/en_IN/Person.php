@@ -20,7 +20,7 @@ class Person extends \Faker\Provider\Person
     );
 
     /**
-     * @link http://www.indiaonlinepages.com/babynames/
+     * @link https://www.indiaonlinepages.com/babynames/
      */
     protected static $firstNameMale = array(
         'Aayushman', 'Amrit', 'Anand', 'Abhinav', 'Anil', 'Animesh', 'Arpit', 'Akhil', 'Ajinkya', 'Aniruddh', 'Arun', 'Atul', 'Ajay', 'Abhishek', 'Aditya', 'Ajeet', 'Akshay', 'Arjun', 'Arvind', 'Aadil', 'Aadish', 'Amir', 'Aarif', 'Aatif', 'Abbas', 'Abdul', 'Aslam', 'Azhar', 'Anees', 'Alex', 'Albert',
@@ -76,7 +76,7 @@ class Person extends \Faker\Provider\Person
     );
 
     /**
-     * @link http://genealogy.familyeducation.com/browse/origin/indian
+     * @link https://genealogy.familyeducation.com/browse/origin/indian
      */
     protected static $lastName = array(
         'Acharya','Agarwal','Agate','Aggarwal','Agrawal','Ahluwalia','Ahuja','Amble','Amin','Anand','Andra','Anne','Anthony','Apte','Arora','Arya','Atwal','Aurora',
@@ -105,7 +105,7 @@ class Person extends \Faker\Provider\Person
     );
 
     /**
-     * @link http://www.indianchild.com/indian_middle_names.htm
+     * @link https://www.indianchild.com/indian_middle_names.htm
      */
     protected static $middleNameMale = array(
         'Dev','Chandra','Kumar','Lal','Prasad','Raj','Singh','Rao','Ram','Pratap','Bhai',

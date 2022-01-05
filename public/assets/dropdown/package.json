@@ -14,7 +14,7 @@
     "flag"
   ],
   "license": "MIT",
-  "author": "Jack O'Connor (http://jackocnr.com)",
+  "author": "Jack O'Connor (https://jackocnr.com)",
   "peerDependencies": {
     "jquery": ">=1.7"
   },

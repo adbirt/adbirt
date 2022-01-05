@@ -1,7 +1,7 @@
 <?php
 /**
  * Sample class that implements ArrayAccess copied from
- * http://www.php.net/manual/en/class.arrayaccess.php
+ * https://www.php.net/manual/en/class.arrayaccess.php
  * with some minor changes
  * This class required for PHPUnit_Framework_Constraint_ArrayHasKey testing
  */

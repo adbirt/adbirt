@@ -115,7 +115,7 @@ class BaseAddress extends PayPalModel
     }
 
     /**
-     * Zip code or equivalent is usually required for countries that have them. For list of countries that do not have postal codes please refer to http://en.wikipedia.org/wiki/Postal_code.
+     * Zip code or equivalent is usually required for countries that have them. For list of countries that do not have postal codes please refer to https://en.wikipedia.org/wiki/Postal_code.
      *
      * @param string $postal_code
      * 
@@ -128,7 +128,7 @@ class BaseAddress extends PayPalModel
     }
 
     /**
-     * Zip code or equivalent is usually required for countries that have them. For list of countries that do not have postal codes please refer to http://en.wikipedia.org/wiki/Postal_code.
+     * Zip code or equivalent is usually required for countries that have them. For list of countries that do not have postal codes please refer to https://en.wikipedia.org/wiki/Postal_code.
      *
      * @return string
      */

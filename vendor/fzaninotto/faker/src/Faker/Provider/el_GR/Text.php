@@ -2300,7 +2300,7 @@ EOT;
     work that constitutes a Collection will not be considered an
     Adaptation (as defined below) for the purposes of this License.
     "Creative Commons Compatible License" means a license that is listed
-    at http://creativecommons.org/compatiblelicenses that has been
+    at https://creativecommons.org/compatiblelicenses that has been
     approved by Creative Commons as being essentially equivalent to this
     License, including, at a minimum, because that license: (i) contains
     terms that have the same purpose, meaning and effect as the License
@@ -2576,6 +2576,6 @@ EOT;
     guidelines, as may be published on its website or otherwise made
     available upon request from time to time. For the avoidance of doubt,
     this trademark restriction does not form part of the License.
-        Creative Commons may be contacted at http://creativecommons.org/.
+        Creative Commons may be contacted at https://creativecommons.org/.
         */
 }

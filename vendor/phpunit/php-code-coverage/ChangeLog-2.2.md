@@ -1,6 +1,6 @@
 # Changes in PHP_CodeCoverage 2.2
 
-All notable changes of the PHP_CodeCoverage 2.2 release series are documented in this file using the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
+All notable changes of the PHP_CodeCoverage 2.2 release series are documented in this file using the [Keep a CHANGELOG](https://keepachangelog.com/) principles.
 
 ## [2.2.4] - 2015-10-06
 

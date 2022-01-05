@@ -27,7 +27,7 @@ AvailablePhoneNumbers
 
 .. php:class:: Services_Twilio_Rest_AvailablePhoneNumbers
 
-   For more information, see the `AvailablePhoneNumbers API Resource <http://www.twilio.com/docs/api/rest/available-phone-numbers#local>`_ documentation at twilio.com.
+   For more information, see the `AvailablePhoneNumbers API Resource <https://www.twilio.com/docs/api/rest/available-phone-numbers#local>`_ documentation at twilio.com.
 
    .. php:method:: getList($country, $type)
 
@@ -52,7 +52,7 @@ Calls
 
 .. php:class:: Services_Twilio_Rest_Calls
 
-   For more information, see the `Call List Resource <http://www.twilio.com/docs/api/rest/call#list>`_ documentation.
+   For more information, see the `Call List Resource <https://www.twilio.com/docs/api/rest/call#list>`_ documentation.
 
    .. php:method:: create($from, $to, $url, params = array())
 
@@ -160,7 +160,7 @@ Members
 
 .. php:class:: Services_Twilio_Rest_Members
 
-  For more information, including a list of filter parameters, see the `Member List Resource <http://www.twilio.com/docs/api/rest/member#list>`_ documentation.
+  For more information, including a list of filter parameters, see the `Member List Resource <https://www.twilio.com/docs/api/rest/member#list>`_ documentation.
 
   .. php:method:: front()
 
@@ -180,7 +180,7 @@ Queues
 .. php:class:: Services_Twilio_Rest_Queues
 
   For more information, including a list of filter parameters, see the
-  `Queues List Resource <http://www.twilio.com/docs/api/rest/queues#list>`_
+  `Queues List Resource <https://www.twilio.com/docs/api/rest/queues#list>`_
   documentation.
 
   .. php:method:: create($friendly_name, $params = array())
@@ -198,7 +198,7 @@ UsageRecords
 
 .. php:class:: Services_Twilio_Rest_UsageRecords
 
-  For more information, including a list of filter parameters, see the `UsageRecords List Resource <http://www.twilio.com/docs/api/rest/usage-records#list>`_ documentation.
+  For more information, including a list of filter parameters, see the `UsageRecords List Resource <https://www.twilio.com/docs/api/rest/usage-records#list>`_ documentation.
 
   .. php:method:: getCategory($category)
 
@@ -206,7 +206,7 @@ UsageRecords
     Valid only for the `Records`, `Today`, `Yesterday`, `ThisMonth`,
     `LastMonth` and `AllTime` resources.
 
-    :param string $category: The category to retrieve a usage record for. For a full list of valid categories, see the full `Usage Category documentation <http://www.twilio.com/docs/api/rest/usage-records#usage-all-categories>`_.
+    :param string $category: The category to retrieve a usage record for. For a full list of valid categories, see the full `Usage Category documentation <https://www.twilio.com/docs/api/rest/usage-records#usage-all-categories>`_.
     :returns: :php:class:`Services_Twilio_Rest_UsageRecord` A single usage record
 
 UsageTriggers
@@ -214,16 +214,16 @@ UsageTriggers
 
 .. php:class:: Services_Twilio_Rest_UsageTriggers
 
-  For more information, including a list of filter parameters, see the `UsageTriggers List Resource <http://www.twilio.com/docs/api/rest/usage-triggers#list>`_ documentation.
+  For more information, including a list of filter parameters, see the `UsageTriggers List Resource <https://www.twilio.com/docs/api/rest/usage-triggers#list>`_ documentation.
 
   .. php:method:: create($category, $value, $url, $params = array())
 
     Create a new UsageTrigger.
 
-    :param string $category: The category of usage to fire a trigger for. A full list of categories can be found in the `Usage Categories documentation <http://www.twilio.com/docs/api/rest/usage-records#usage-categories>`_.
+    :param string $category: The category of usage to fire a trigger for. A full list of categories can be found in the `Usage Categories documentation <https://www.twilio.com/docs/api/rest/usage-records#usage-categories>`_.
     :param string $value: Fire the trigger when usage crosses this value.
     :param string $url: The URL to request when the trigger fires.
-    :param array $params: Optional parameters for this trigger. A full list of parameters can be found in the `Usage Trigger documentation <http://www.twilio.com/docs/api/rest/usage-triggers#list-post-optional-parameters>`_.
+    :param array $params: Optional parameters for this trigger. A full list of parameters can be found in the `Usage Trigger documentation <https://www.twilio.com/docs/api/rest/usage-triggers#list-post-optional-parameters>`_.
     :returns: :php:class:`Services_Twilio_Rest_UsageTrigger` The created trigger.
 
 
@@ -246,7 +246,7 @@ Account
 
 .. php:class:: Services_Twilio_Rest_Account
 
-   For more information, see the `Account Instance Resource <http://www.twilio.com/docs/api/rest/account#instance>`_ documentation.
+   For more information, see the `Account Instance Resource <https://www.twilio.com/docs/api/rest/account#instance>`_ documentation.
 
    .. php:method:: update($params)
 
@@ -283,7 +283,7 @@ Application
 
 .. php:class:: Services_Twilio_Rest_Application
 
-   For more information, see the `Application Instance Resource <http://www.twilio.com/docs/api/rest/applications#instance>`_ documentation.
+   For more information, see the `Application Instance Resource <https://www.twilio.com/docs/api/rest/applications#instance>`_ documentation.
 
    .. php:attr:: sid
 
@@ -362,7 +362,7 @@ AvailablePhoneNumber
 
 .. php:class:: Services_Twilio_Rest_AvailablePhoneNumber
 
-   For more information, see the `AvailablePhoneNumber Instance Resource <http://www.twilio.com/docs/api/rest/available-phone-numbers#instance>`_ documentation.
+   For more information, see the `AvailablePhoneNumber Instance Resource <https://www.twilio.com/docs/api/rest/available-phone-numbers#instance>`_ documentation.
 
    .. php:attr:: friendly_name
 
@@ -410,7 +410,7 @@ CallerId
 
 .. php:class:: Services_Twilio_Rest_OutgoingCallerId
 
-   For more information, see the `OutgoingCallerId Instance Resource <http://www.twilio.com/docs/api/rest/outgoing-caller-ids#instance>`_ documentation.
+   For more information, see the `OutgoingCallerId Instance Resource <https://www.twilio.com/docs/api/rest/outgoing-caller-ids#instance>`_ documentation.
 
    .. php:attr:: sid
 
@@ -445,7 +445,7 @@ Conference
 
 .. php:class:: Services_Twilio_Rest_Conference
 
-   For more information, see the `Conference Instance Resource <http://www.twilio.com/docs/api/rest/conference#instance>`_ documentation.
+   For more information, see the `Conference Instance Resource <https://www.twilio.com/docs/api/rest/conference#instance>`_ documentation.
 
    .. php:attr:: sid
 
@@ -541,7 +541,7 @@ Notification
 
 .. php:class:: Services_Twilio_Rest_Notification
 
-   For more information, see the `Notification Instance Resource <http://www.twilio.com/docs/api/rest/notification#instance>`_ documentation.
+   For more information, see the `Notification Instance Resource <https://www.twilio.com/docs/api/rest/notification#instance>`_ documentation.
 
    .. php:attr:: sid
 
@@ -573,11 +573,11 @@ Notification
 
    .. php:attr:: error_code
 
-      A unique error code for the error condition. You can lookup errors, with possible causes and solutions, in our `Error Dictionary <http://www.twilio.com/docs/errors/reference>`_.
+      A unique error code for the error condition. You can lookup errors, with possible causes and solutions, in our `Error Dictionary <https://www.twilio.com/docs/errors/reference>`_.
 
    .. php:attr:: more_info
 
-      A URL for more information about the error condition. The URL is a page in our `Error Dictionary <http://www.twilio.com/docs/errors/reference>`_.
+      A URL for more information about the error condition. The URL is a page in our `Error Dictionary <https://www.twilio.com/docs/errors/reference>`_.
 
    .. php:attr:: message_text
 
@@ -633,7 +633,7 @@ Member
 
 .. php:class:: Services_Twilio_Rest_Member
 
-  For more information about available properties, see the `Member Instance Resource <http://www.twilio.com/docs/api/rest/member#instance>`_ documentation.
+  For more information about available properties, see the `Member Instance Resource <https://www.twilio.com/docs/api/rest/member#instance>`_ documentation.
 
   .. php:method:: dequeue($url, $method = 'POST')
 
@@ -650,7 +650,7 @@ Participant
 
 .. php:class:: Services_Twilio_Rest_Participant
 
-   For more information, see the `Participant Instance Resource <http://www.twilio.com/docs/api/rest/participant#instance>`_ documentation.
+   For more information, see the `Participant Instance Resource <https://www.twilio.com/docs/api/rest/participant#instance>`_ documentation.
 
    .. php:attr:: call_sid
 
@@ -694,7 +694,7 @@ Queue
 .. php:class:: Services_Twilio_Rest_Queue
 
   For more information about available properties of a queue, see the `Queue 
-  Instance Resource <http://www.twilio.com/docs/api/rest/queue#instance>`_ 
+  Instance Resource <https://www.twilio.com/docs/api/rest/queue#instance>`_ 
   documentation. A Queue has one subresource, a list of 
   :php:class:`Services_Twilio_Rest_Members`.
 
@@ -703,7 +703,7 @@ Recording
 
 .. php:class:: Services_Twilio_Rest_Recording
 
-   For more information, see the `Recording Instance Resource <http://www.twilio.com/docs/api/rest/recording#instance>`_ documentation.
+   For more information, see the `Recording Instance Resource <https://www.twilio.com/docs/api/rest/recording#instance>`_ documentation.
 
    .. php:attr:: sid
 
@@ -764,7 +764,7 @@ SmsMessage
 
 .. php:class:: Services_Twilio_Rest_SmsMessage
 
-   For more information, see the `SMS Message Instance Resource <http://www.twilio.com/docs/api/rest/sms#instance>`_ documentation.
+   For more information, see the `SMS Message Instance Resource <https://www.twilio.com/docs/api/rest/sms#instance>`_ documentation.
 
    .. php:attr:: sid
 
@@ -827,7 +827,7 @@ Transcription
 
 .. php:class:: Services_Twilio_Rest_Transcription
 
-   For more information, see the `Transcription Instance Resource <http://www.twilio.com/docs/api/rest/transcription#instance>`_ documentation.
+   For more information, see the `Transcription Instance Resource <https://www.twilio.com/docs/api/rest/transcription#instance>`_ documentation.
 
    .. php:attr:: sid
 

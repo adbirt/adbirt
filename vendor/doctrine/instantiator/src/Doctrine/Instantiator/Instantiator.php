@@ -14,7 +14,7 @@
  *
  * This software consists of voluntary contributions made by many individuals
  * and is licensed under the MIT license. For more information, see
- * <http://www.doctrine-project.org>.
+ * <https://www.doctrine-project.org>.
  */
 
 namespace Doctrine\Instantiator;
@@ -226,7 +226,7 @@ final class Instantiator implements InstantiatorInterface
      * with an incompatible serialization format. If that's the case, use serialization marker
      * "C" instead of "O".
      *
-     * @link http://news.php.net/php.internals/74654
+     * @link https://news.php.net/php.internals/74654
      *
      * @param ReflectionClass $reflectionClass
      *

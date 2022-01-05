@@ -15,7 +15,7 @@ class Reddit extends AbstractService
     /**
      * Defined scopes
      *
-     * @link http://www.reddit.com/dev/api/oauth
+     * @link https://www.reddit.com/dev/api/oauth
      */
     // User scopes
     const SCOPE_EDIT                         = 'edit';

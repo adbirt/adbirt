@@ -75,6 +75,6 @@ Apart from the parser itself this package also bundles support for some other, r
  * Infrastructure for traversing and changing the AST (node traverser and node visitors)
  * A node visitor for resolving namespaced names
 
- [0]: http://en.wikipedia.org/wiki/Static_program_analysis
- [1]: http://en.wikipedia.org/wiki/Abstract_syntax_tree
- [2]: http://php.net/token_get_all
+ [0]: https://en.wikipedia.org/wiki/Static_program_analysis
+ [1]: https://en.wikipedia.org/wiki/Abstract_syntax_tree
+ [2]: https://php.net/token_get_all

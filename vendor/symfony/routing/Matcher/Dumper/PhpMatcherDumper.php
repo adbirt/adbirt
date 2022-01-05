@@ -20,7 +20,7 @@ use Symfony\Component\ExpressionLanguage\ExpressionFunctionProviderInterface;
  * PhpMatcherDumper creates a PHP class able to match URLs for a given set of routes.
  *
  * @author Fabien Potencier <fabien@symfony.com>
- * @author Tobias Schultze <http://tobion.de>
+ * @author Tobias Schultze <https://tobion.de>
  * @author Arnaud Le Blanc <arnaud.lb@gmail.com>
  */
 class PhpMatcherDumper extends MatcherDumper

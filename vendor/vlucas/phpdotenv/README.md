@@ -8,13 +8,13 @@ This is a PHP version of the original [Ruby
 dotenv](https://github.com/bkeepers/dotenv).
 
 [![Build
-Status](https://secure.travis-ci.org/vlucas/phpdotenv.png)](http://travis-ci.org/vlucas/phpdotenv)
+Status](https://secure.travis-ci.org/vlucas/phpdotenv.png)](https://travis-ci.org/vlucas/phpdotenv)
 
 Why .env?
 ---------
 **You should never store sensitive credentials in your code**. Storing
-[configuration in the environment](http://www.12factor.net/config) is one of
-the tenets of a [twelve-factor app](http://www.12factor.net/). Anything that is
+[configuration in the environment](https://www.12factor.net/config) is one of
+the tenets of a [twelve-factor app](https://www.12factor.net/). Anything that is
 likely to change between deployment environments – such as database credentials
 or credentials for 3rd party services – should be extracted from the
 code into environment variables.
@@ -38,7 +38,7 @@ Installation with Composer
 --------------------------
 
 ```shell
-curl -s http://getcomposer.org/installer | php
+curl -s https://getcomposer.org/installer | php
 php composer.phar require vlucas/phpdotenv
 ```
 

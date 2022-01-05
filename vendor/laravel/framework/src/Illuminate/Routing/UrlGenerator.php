@@ -271,7 +271,7 @@ class UrlGenerator implements UrlGeneratorContract
             return $this->cachedSchema;
         }
 
-        return $secure ? 'https://' : 'http://';
+        return $secure ? 'https://' : 'https://';
     }
 
     /**
@@ -606,7 +606,7 @@ class UrlGenerator implements UrlGeneratorContract
             $root = $this->cachedRoot;
         }
 
-        $start = Str::startsWith($root, 'http://') ? 'http://' : 'https://';
+        $start = Str::startsWith($root, 'https://') ? 'https://' : 'https://';
 
         return preg_replace('~'.$start.'~', $scheme, $root, 1);
     }
@@ -631,7 +631,7 @@ class UrlGenerator implements UrlGeneratorContract
      */
     public function isValidUrl($path)
     {
-        if (Str::startsWith($path, ['#', '//', 'mailto:', 'tel:', 'http://', 'https://'])) {
+        if (Str::startsWith($path, ['#', '//', 'mailto:', 'tel:', 'https://', 'https://'])) {
             return true;
         }
 

@@ -38,7 +38,7 @@ but we'll probably merge any code that looks close enough.
 * Add some tests for your feature or bug
 * Optionally, but preferably, write some documentation 
 * Optionally, update the CHANGELOG.md file with your feature or
-  [BC](http://en.wikipedia.org/wiki/Backward_compatibility) break
+  [BC](https://en.wikipedia.org/wiki/Backward_compatibility) break
 * If you have created new library files, add them to the root package.xml file for PEAR install support.
 * Send a [Pull
   Request](https://help.github.com/articles/creating-a-pull-request) to the
@@ -50,7 +50,7 @@ the [issue tracker](https://github.com/padraic/mockery/issues) or jump in to
 
 
 Any code you contribute must be licensed under the [BSD 3-Clause
-License](http://opensource.org/licenses/BSD-3-Clause).
+License](https://opensource.org/licenses/BSD-3-Clause).
 
 
 ## Target Branch
@@ -65,7 +65,7 @@ e.g. 0.8.
 ## Testing Mockery
 
 To run the unit tests for Mockery, clone the git repository, download Composer using
-the instructions at [http://getcomposer.org/download/](http://getcomposer.org/download/),
+the instructions at [https://getcomposer.org/download/](https://getcomposer.org/download/),
 then install the dependencies with `php /path/to/composer.phar install --dev`.
 
 This will install the required PHPUnit and Hamcrest dev dependencies and create the

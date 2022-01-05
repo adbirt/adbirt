@@ -3,7 +3,7 @@
 /**
  *   An object representing a single phone number. For more
  *   information, see the `IncomingPhoneNumber Instance Resource
- *   <http://www.twilio.com/docs/api/rest/incoming-phone-numbers#instance>`_
+ *   <https://www.twilio.com/docs/api/rest/incoming-phone-numbers#instance>`_
  *   documentation.
  *
  *   .. php:attr:: sid

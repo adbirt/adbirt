@@ -14,7 +14,7 @@ PHP 5.3.3 and later.
 
 ## Composer
 
-You can install the bindings via [Composer](http://getcomposer.org/). Run the following command:
+You can install the bindings via [Composer](https://getcomposer.org/). Run the following command:
 
 ```bash
 composer require stripe/stripe-php
@@ -116,7 +116,7 @@ composer install
 
 ## Tests
 
-Install dependencies as mentioned above (which will resolve [PHPUnit](http://packagist.org/packages/phpunit/phpunit)), then you can run the test suite:
+Install dependencies as mentioned above (which will resolve [PHPUnit](https://packagist.org/packages/phpunit/phpunit)), then you can run the test suite:
 
 ```bash
 ./vendor/bin/phpunit

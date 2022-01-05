@@ -29,7 +29,7 @@ class MessagesTest extends PHPUnit_Framework_TestCase
             ));
         $client = new Services_Twilio('AC123', '123', '2010-04-01', $http);
         $msg = $client->account->messages->sendMessage('+1222', '+44123', null,
-            array('http://example.com/image1'));
+            array('https://example.com/image1'));
         $this->assertSame('SM123', $msg->sid);
     }
 
@@ -43,7 +43,7 @@ class MessagesTest extends PHPUnit_Framework_TestCase
             ));
         $client = new Services_Twilio('AC123', '123', '2010-04-01', $http);
         $msg = $client->account->messages->sendMessage('+1222', '+44123', 'Hi there',
-            array('http://example.com/image1')
+            array('https://example.com/image1')
         );
         $this->assertSame('SM123', $msg->sid);
     }
@@ -58,7 +58,7 @@ class MessagesTest extends PHPUnit_Framework_TestCase
             ));
         $client = new Services_Twilio('AC123', '123', '2010-04-01', $http);
         $msg = $client->account->messages->sendMessage('+1222', '+44123', null,
-            array('http://example.com/image1', 'http://example.com/image2'));
+            array('https://example.com/image1', 'https://example.com/image2'));
         $this->assertSame('SM123', $msg->sid);
     }
 
@@ -90,7 +90,7 @@ class MessagesTest extends PHPUnit_Framework_TestCase
         $msg = $client->account->messages->create(array(
             'From' => '+1222',
             'To' => '+44123',
-            'MediaUrl' => array('http://example.com/image1', 'http://example.com/image2')
+            'MediaUrl' => array('https://example.com/image1', 'https://example.com/image2')
         ));
         $this->assertSame('SM123', $msg->sid);
     }

@@ -8,7 +8,7 @@ use PayPal\Exception\PayPalConnectionException;
 /**
  * A wrapper class based on the curl extension.
  * Requires the PHP curl module to be enabled.
- * See for full requirements the PHP manual: http://php.net/curl
+ * See for full requirements the PHP manual: https://php.net/curl
  */
 class PayPalHttpConnection
 {

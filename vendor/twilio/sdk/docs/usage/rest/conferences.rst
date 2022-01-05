@@ -14,7 +14,7 @@ List All Conferences
 
 For a full list of properties available on a conference, as well as a full list
 of ways to filter a conference, please see the `Conference API Documentation
-<http://www.twilio.com/docs/api/rest/conference>`_ on our website.
+<https://www.twilio.com/docs/api/rest/conference>`_ on our website.
 
 Filter Conferences by Status
 ============================

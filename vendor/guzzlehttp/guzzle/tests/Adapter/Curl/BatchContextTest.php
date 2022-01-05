@@ -29,7 +29,7 @@ class BatchContextTest extends \PHPUnit_Framework_TestCase
         $h = curl_init();
         $t = new Transaction(
             new Client(),
-            new Request('GET', 'http://httbin.org')
+            new Request('GET', 'https://httbin.org')
         );
         $b->addTransaction($t, $h);
         try {
@@ -48,7 +48,7 @@ class BatchContextTest extends \PHPUnit_Framework_TestCase
         $h = curl_init();
         $t = new Transaction(
             new Client(),
-            new Request('GET', 'http://httbin.org')
+            new Request('GET', 'https://httbin.org')
         );
         $b->addTransaction($t, $h);
         $this->assertTrue($b->isActive());
@@ -71,16 +71,16 @@ class BatchContextTest extends \PHPUnit_Framework_TestCase
         $b = new BatchContext('foo', false);
         $t = new Transaction(
             new Client(),
-            new Request('GET', 'http://httbin.org')
+            new Request('GET', 'https://httbin.org')
         );
         $b->removeTransaction($t);
     }
 
     public function testReturnsPendingAsIteratorTypeObject()
     {
-        $t1 = new Transaction(new Client(), new Request('GET', 'http://t.com'));
-        $t2 = new Transaction(new Client(), new Request('GET', 'http://t.com'));
-        $t3 = new Transaction(new Client(), new Request('GET', 'http://t.com'));
+        $t1 = new Transaction(new Client(), new Request('GET', 'https://t.com'));
+        $t2 = new Transaction(new Client(), new Request('GET', 'https://t.com'));
+        $t3 = new Transaction(new Client(), new Request('GET', 'https://t.com'));
         $iter = new \ArrayIterator([$t1, $t2, $t3]);
         $b = new BatchContext('foo', false, $iter);
         $this->assertTrue($b->hasPending());
@@ -100,7 +100,7 @@ class BatchContextTest extends \PHPUnit_Framework_TestCase
         $h = curl_init();
         $t = new Transaction(
             new Client(),
-            new Request('GET', 'http://httbin.org')
+            new Request('GET', 'https://httbin.org')
         );
         $b->addTransaction($t, $h);
         $b->removeAll();

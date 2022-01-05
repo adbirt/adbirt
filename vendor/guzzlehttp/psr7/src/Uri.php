@@ -73,7 +73,7 @@ class Uri implements UriInterface
      * @param string $path
      *
      * @return string
-     * @link http://tools.ietf.org/html/rfc3986#section-5.2.4
+     * @link https://tools.ietf.org/html/rfc3986#section-5.2.4
      */
     public static function removeDotSegments($path)
     {
@@ -117,7 +117,7 @@ class Uri implements UriInterface
      * @param string|UriInterface $rel  Relative URI
      *
      * @return UriInterface
-     * @link http://tools.ietf.org/html/rfc3986#section-5.2
+     * @link https://tools.ietf.org/html/rfc3986#section-5.2
      */
     public static function resolve(UriInterface $base, $rel)
     {

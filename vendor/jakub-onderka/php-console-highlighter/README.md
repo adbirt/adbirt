@@ -5,7 +5,7 @@ Highlight PHP code in console (terminal).
 
 Example
 -------
-![Example](http://jakubonderka.github.io/php-console-highlight-example.png)
+![Example](https://jakubonderka.github.io/php-console-highlight-example.png)
 
 Install
 -------

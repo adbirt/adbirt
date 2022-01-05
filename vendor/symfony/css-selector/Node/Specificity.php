@@ -17,7 +17,7 @@ namespace Symfony\Component\CssSelector\Node;
  * This component is a port of the Python cssselect library,
  * which is copyright Ian Bicking, @see https://github.com/SimonSapin/cssselect.
  *
- * @see http://www.w3.org/TR/selectors/#specificity
+ * @see https://www.w3.org/TR/selectors/#specificity
  *
  * @author Jean-François Simon <jeanfrancois.simon@sensiolabs.com>
  *

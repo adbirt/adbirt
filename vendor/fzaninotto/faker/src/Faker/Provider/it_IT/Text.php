@@ -12,7 +12,7 @@ class Text extends \Faker\Provider\Text
      * E-text
      * Web design, Editoria, Multimedia
      * (pubblica il tuo libro, o crea il tuo sito con E-text!)
-     * http://www.e-text.it/
+     * https://www.e-text.it/
      *
      * QUESTO E-BOOK:
      *
@@ -26,7 +26,7 @@ class Text extends \Faker\Provider\Text
      *
      * DIRITTI D'AUTORE: no
      *
-     * LICENZA: questo testo è distribuito con la licenza specificata al seguente indirizzo Internet: http://www.liberliber.it/libri/licenze/ (Attribution-NonCommercial-ShareAlike 4.0 International)
+     * LICENZA: questo testo è distribuito con la licenza specificata al seguente indirizzo Internet: https://www.liberliber.it/libri/licenze/ (Attribution-NonCommercial-ShareAlike 4.0 International)
      *
      * TRATTO DA: Le avventure di Pinocchio : storia di un burattino / di Carlo Collodi ; illustrata da Enrico Mazzanti. – 2a edizione. – Milano : Rizzoli Editore, Milano, 1949.
      *
@@ -54,13 +54,13 @@ class Text extends \Faker\Provider\Text
      * Catia Righi
      *
      * PUBBLICAZIONE:
-     * Marco Calvo, http://www.marcocalvo.it/
+     * Marco Calvo, https://www.marcocalvo.it/
      * Informazioni sul "progetto Manuzio"
      * Il "progetto Manuzio" è una iniziativa dell'associazione culturale Liber Liber. Aperto a chiunque voglia collaborare, si pone come scopo la pubblicazione e la diffusione gratuita di opere letterarie in formato elettronico. Ulteriori informazioni sono disponibili sul sito Internet:
-     * http://www.liberliber.it/
+     * https://www.liberliber.it/
      * Aiuta anche tu il "progetto Manuzio"
      * Se questo "libro elettronico" è stato di tuo gradimento, o se condividi le finalità del "progetto Manuzio", invia una donazione a Liber Liber. Il tuo sostegno ci aiuterà a far crescere ulteriormente la nostra biblioteca. Qui le istruzioni:
-     * http://www.liberliber.it/aiuta/
+     * https://www.liberliber.it/aiuta/
      *
      * Indice generale
      * I. Come andò che maestro Ciliegia, falegname, trovò un pezzo di legno, che piangeva e rideva come un bambino.
@@ -100,7 +100,7 @@ class Text extends \Faker\Provider\Text
      * XXXV Pinocchio ritrova in corpo al Pesce-cane... Chi ritrova? Leggete questo capitolo e lo saprete.
      * XXXVI Finalmente Pinocchio cessa d’essere un burattino e diventa un ragazzo.
      *
-     * @see http://www.liberliber.it/libri/c/collodi/index.php#elenco_opere
+     * @see https://www.liberliber.it/libri/c/collodi/index.php#elenco_opere
      * @var string
      */
     protected static $baseText = <<<'EOT'

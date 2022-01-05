@@ -20,13 +20,13 @@ class Text extends \Faker\Provider\Text
      *
      * *** START OF THIS PROJECT GUTENBERG EBOOK MADAME BOVARY ***
      *
-     * Produced by Ebooks libres et gratuits at http://www.ebooksgratuits.com
+     * Produced by Ebooks libres et gratuits at https://www.ebooksgratuits.com
      *
      * Gustave Flaubert
      * MADAME BOVARY
      * (1857)
      *
-     * @see http://www.gutenberg.org/cache/epub/14155/pg14155.txt
+     * @see https://www.gutenberg.org/cache/epub/14155/pg14155.txt
      * @var string
      */
     protected static $baseText = <<<'EOT'
@@ -15180,9 +15180,9 @@ EOT;
 
     ***** This file should be named 14155-8.txt or 14155-8.zip *****
     This and all associated files of various formats will be found in:
-            http://www.gutenberg.net/1/4/1/5/14155/
+            https://www.gutenberg.net/1/4/1/5/14155/
 
-    Produced by Ebooks libres et gratuits at http://www.ebooksgratuits.com
+    Produced by Ebooks libres et gratuits at https://www.ebooksgratuits.com
 
     Updated editions will replace the previous one--the old editions
     will be renamed.
@@ -15214,7 +15214,7 @@ EOT;
     (or any other work associated in any way with the phrase "Project
     Gutenberg"), you agree to comply with all the terms of the Full Project
     Gutenberg-tm License (available with this file or online at
-    http://gutenberg.net/license).
+    https://gutenberg.net/license).
 
     Section 1.  General Terms of Use and Redistributing Project Gutenberg-tm
     electronic works
@@ -15444,7 +15444,7 @@ EOT;
     and permanent future for Project Gutenberg-tm and future generations.
     To learn more about the Project Gutenberg Literary Archive Foundation
     and how your efforts and donations can help, see Sections 3 and 4
-    and the Foundation web page at http://www.pglaf.org.
+    and the Foundation web page at https://www.pglaf.org.
 
 
     Section 3.  Information about the Project Gutenberg Literary Archive
@@ -15455,7 +15455,7 @@ EOT;
     state of Mississippi and granted tax exempt status by the Internal
     Revenue Service.  The Foundation's EIN or federal tax identification
     number is 64-6221541.  Its 501(c)(3) letter is posted at
-    http://pglaf.org/fundraising.  Contributions to the Project Gutenberg
+    https://pglaf.org/fundraising.  Contributions to the Project Gutenberg
     Literary Archive Foundation are tax deductible to the full extent
     permitted by U.S. federal laws and your state's laws.
 
@@ -15465,7 +15465,7 @@ EOT;
     809 North 1500 West, Salt Lake City, UT 84116, (801) 596-1887, email
     business@pglaf.org.  Email contact links and up to date contact
     information can be found at the Foundation's web site and official
-    page at http://pglaf.org
+    page at https://pglaf.org
 
     For additional contact information:
          Dr. Gregory B. Newby
@@ -15490,7 +15490,7 @@ EOT;
     with these requirements.  We do not solicit donations in locations
     where we have not received written confirmation of compliance.  To
     SEND DONATIONS or determine the status of compliance for any
-    particular state visit http://pglaf.org
+    particular state visit https://pglaf.org
 
     While we cannot and do not solicit contributions from states where we
     have not met the solicitation requirements, we know of no prohibition
@@ -15504,7 +15504,7 @@ EOT;
     Please check the Project Gutenberg Web pages for current donation
     methods and addresses.  Donations are accepted in a number of other
     ways including including checks, online payments and credit card
-    donations.  To donate, please visit: http://pglaf.org/donate
+    donations.  To donate, please visit: https://pglaf.org/donate
 
     Section 5.  General Information About Project Gutenberg-tm electronic
     works.
@@ -15521,7 +15521,7 @@ EOT;
 
     Most people start at our Web site which has the main PG search facility:
 
-         http://www.gutenberg.net
+         https://www.gutenberg.net
 
     This Web site includes information about Project Gutenberg-tm,
     including how to make donations to the Project Gutenberg Literary

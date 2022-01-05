@@ -301,7 +301,7 @@ class Url
      * Removes dot segments from a URL
      *
      * @return Url
-     * @link http://tools.ietf.org/html/rfc3986#section-5.2.4
+     * @link https://tools.ietf.org/html/rfc3986#section-5.2.4
      */
     public function removeDotSegments()
     {
@@ -514,7 +514,7 @@ class Url
      *
      * @return Url
      * @throws \InvalidArgumentException
-     * @link http://tools.ietf.org/html/rfc3986#section-5.4
+     * @link https://tools.ietf.org/html/rfc3986#section-5.4
      */
     public function combine($url)
     {

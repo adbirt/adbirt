@@ -220,7 +220,7 @@ class CookieJarTest extends \PHPUnit_Framework_TestCase
         $response = new Response(200, array(
             'Set-Cookie' => "fpc=d=.Hm.yh4.1XmJWjJfs4orLQzKzPImxklQoxXSHOZATHUSEFciRueW_7704iYUtsXNEXq0M92Px2glMdWypmJ7HIQl6XIUvrZimWjQ3vIdeuRbI.FNQMAfcxu_XN1zSx7l.AcPdKL6guHc2V7hIQFhnjRW0rxm2oHY1P4bGQxFNz7f.tHm12ZD3DbdMDiDy7TBXsuP4DM-&v=2; expires=Fri, 02-Mar-2019 02:17:40 GMT;"
         ));
-        $request = new Request('GET', 'http://www.example.com');
+        $request = new Request('GET', 'https://www.example.com');
         $this->jar->extractCookies($request, $response);
         $this->assertEquals(1, count($this->jar));
     }
@@ -229,10 +229,10 @@ class CookieJarTest extends \PHPUnit_Framework_TestCase
     {
         return array(
             array('https://example.com', 'foo=bar; baz=foobar'),
-            array('http://example.com', ''),
+            array('https://example.com', ''),
             array('https://example.com:8912', 'foo=bar; baz=foobar'),
             array('https://foo.example.com', 'foo=bar; baz=foobar'),
-            array('http://foo.example.com/test/acme/', 'googoo=gaga')
+            array('https://foo.example.com/test/acme/', 'googoo=gaga')
         );
     }
 

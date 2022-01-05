@@ -22,7 +22,7 @@ class OpenIdErrorTest extends \PHPUnit_Framework_TestCase
     {
         $this->error = new OpenIdError();
         $this->error->setErrorDescription('error description')
-            ->setErrorUri('http://developer.paypal.com/api/error')
+            ->setErrorUri('https://developer.paypal.com/api/error')
             ->setError('VALIDATION_ERROR');
     }
 

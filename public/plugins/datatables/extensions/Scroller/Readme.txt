@@ -13,7 +13,7 @@ Key features include:
 
 # Installation
 
-To use Scroller, first download DataTables ( http://datatables.net/download ) and place the unzipped Scroller package into a `extensions` directory in the DataTables package. This will allow the pages in the examples to operate correctly. To see the examples running, open the `examples` directory in your web-browser.
+To use Scroller, first download DataTables ( https://datatables.net/download ) and place the unzipped Scroller package into a `extensions` directory in the DataTables package. This will allow the pages in the examples to operate correctly. To see the examples running, open the `examples` directory in your web-browser.
 
 
 # Basic usage
@@ -33,8 +33,8 @@ Note that rows in the table must all be the same height. Information in a cell w
 
 # Documentation / support
 
-* Documentation: http://datatables.net/extensions/scroller/
-* DataTables support forums: http://datatables.net/forums
+* Documentation: https://datatables.net/extensions/scroller/
+* DataTables support forums: https://datatables.net/forums
 
 
 # GitHub

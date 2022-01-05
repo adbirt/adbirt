@@ -20,9 +20,9 @@ use Symfony\Component\HttpKernel\HttpKernelInterface;
  *
  * For more information, read the following W3C notes:
  *
- *  * ESI Language Specification 1.0 (http://www.w3.org/TR/esi-lang)
+ *  * ESI Language Specification 1.0 (https://www.w3.org/TR/esi-lang)
  *
- *  * Edge Architecture Specification (http://www.w3.org/TR/edge-arch)
+ *  * Edge Architecture Specification (https://www.w3.org/TR/edge-arch)
  *
  * @author Fabien Potencier <fabien@symfony.com>
  */

@@ -21,11 +21,11 @@ class Swift_Bug111Test extends \PHPUnit_Framework_TestCase
                     'email5',
                 ),
                 '-url-' => array(
-                    'http://google.com',
-                    'http://yahoo.com',
-                    'http://hotmail.com',
-                    'http://aol.com',
-                    'http://facebook.com',
+                    'https://google.com',
+                    'https://yahoo.com',
+                    'https://hotmail.com',
+                    'https://aol.com',
+                    'https://facebook.com',
                 ),
             ),
         );

@@ -16,7 +16,7 @@ use Symfony\Component\Translation\Exception\NotFoundResourceException;
 use Symfony\Component\Config\Resource\FileResource;
 
 /**
- * @copyright Copyright (c) 2010, Union of RAD http://union-of-rad.org (http://lithify.me/)
+ * @copyright Copyright (c) 2010, Union of RAD https://union-of-rad.org (https://lithify.me/)
  * @copyright Copyright (c) 2012, Clemens Tolboom
  */
 class PoFileLoader extends ArrayLoader
@@ -55,7 +55,7 @@ class PoFileLoader extends ArrayLoader
     /**
      * Parses portable object (PO) format.
      *
-     * From http://www.gnu.org/software/gettext/manual/gettext.html#PO-Files
+     * From https://www.gnu.org/software/gettext/manual/gettext.html#PO-Files
      * we should be able to parse files having:
      *
      * white-space

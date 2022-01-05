@@ -14,7 +14,7 @@ namespace Symfony\Component\ClassLoader;
 /**
  * A PSR-4 compatible class loader.
  *
- * See http://www.php-fig.org/psr/psr-4/
+ * See https://www.php-fig.org/psr/psr-4/
  *
  * @author Alexander M. Turek <me@derrabus.de>
  */

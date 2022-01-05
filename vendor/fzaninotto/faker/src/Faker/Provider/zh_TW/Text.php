@@ -19,7 +19,7 @@ class Text extends \Faker\Provider\Text
      * Author: 羅貫中 Luo Guanzhong
      * Language: Traditional Chinese
      *
-     * @see http://cls.hs.yzu.edu.tw/san/bin/body.asp?CHNO=001
+     * @see https://cls.hs.yzu.edu.tw/san/bin/body.asp?CHNO=001
      * @var string
      */
     protected static $baseText = <<<'EOT'

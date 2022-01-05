@@ -17,7 +17,7 @@ class InvoiceItemTest extends \PHPUnit_Framework_TestCase
      */
     public static function getJson()
     {
-        return '{"name":"TestSample","description":"TestSample","quantity":"12.34","unit_price":' .CurrencyTest::getJson() . ',"tax":' .TaxTest::getJson() . ',"date":"TestSample","discount":' .CostTest::getJson() . ',"image_url":"http://www.google.com","unit_of_measure":"TestSample"}';
+        return '{"name":"TestSample","description":"TestSample","quantity":"12.34","unit_price":' .CurrencyTest::getJson() . ',"tax":' .TaxTest::getJson() . ',"date":"TestSample","discount":' .CostTest::getJson() . ',"image_url":"https://www.google.com","unit_of_measure":"TestSample"}';
     }
 
     /**
@@ -64,7 +64,7 @@ class InvoiceItemTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($obj->getTax(), TaxTest::getObject());
         $this->assertEquals($obj->getDate(), "TestSample");
         $this->assertEquals($obj->getDiscount(), CostTest::getObject());
-        $this->assertEquals($obj->getImageUrl(), "http://www.google.com");
+        $this->assertEquals($obj->getImageUrl(), "https://www.google.com");
         $this->assertEquals($obj->getUnitOfMeasure(), "TestSample");
     }
 

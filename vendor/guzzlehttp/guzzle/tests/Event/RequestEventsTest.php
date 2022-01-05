@@ -121,7 +121,7 @@ class RequestEventsTest extends \PHPUnit_Framework_TestCase
         });
 
         try {
-            $client->get('http://foo.com');
+            $client->get('https://foo.com');
             $this->fail('Did not throw');
         } catch (RequestException $e) {
             $this->assertCount(1, $r);
@@ -147,7 +147,7 @@ class RequestEventsTest extends \PHPUnit_Framework_TestCase
         });
 
         try {
-            $client->get('http://foo.com');
+            $client->get('https://foo.com');
             $this->fail('Did not throw');
         } catch (RequestException $e) {
             $this->assertTrue($called);

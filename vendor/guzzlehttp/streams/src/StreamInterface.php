@@ -75,7 +75,7 @@ interface StreamInterface
      *                    SEEK_END: Set position to end-of-stream plus offset
      *
      * @return bool Returns true on success or false on failure
-     * @link   http://www.php.net/manual/en/function.fseek.php
+     * @link   https://www.php.net/manual/en/function.fseek.php
      */
     public function seek($offset, $whence = SEEK_SET);
 

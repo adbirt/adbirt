@@ -7,7 +7,7 @@
  * https://blueimp.net
  *
  * Licensed under the MIT license:
- * http://www.opensource.org/licenses/MIT
+ * https://www.opensource.org/licenses/MIT
  */
 
 class UploadHandler
@@ -15,7 +15,7 @@ class UploadHandler
     protected $options;
 
     // PHP File Upload error message codes:
-    // http://php.net/manual/en/features.file-upload.errors.php
+    // https://php.net/manual/en/features.file-upload.errors.php
     protected $error_messages = array(
         1 => 'The uploaded file exceeds the upload_max_filesize directive in php.ini',
         2 => 'The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form',
@@ -183,7 +183,7 @@ class UploadHandler
     {
         $https = !empty($_SERVER['HTTPS']) && strcasecmp($_SERVER['HTTPS'], 'on') === 0;
         return
-            ($https ? 'https://' : 'http://').
+            ($https ? 'https://' : 'https://').
             (!empty($_SERVER['REMOTE_USER']) ? $_SERVER['REMOTE_USER'].'@' : '').
             (isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : ($_SERVER['SERVER_NAME'].
             ($https && $_SERVER['SERVER_PORT'] === 443 ||

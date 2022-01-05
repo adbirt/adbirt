@@ -191,7 +191,7 @@ if (PHP_SAPI == 'cli') {
                 <div class="footer-div">
                     <ul class="footer-links">
                         <li>
-                            <a href="http://paypal.github.io/PayPal-PHP-SDK/" target="_blank"><i
+                            <a href="https://paypal.github.io/PayPal-PHP-SDK/" target="_blank"><i
                                     class="fa fa-github"></i>
                                 PayPal PHP SDK</a></li>
                         <li>
@@ -1497,7 +1497,7 @@ if (PHP_SAPI == 'cli') {
         <div class="footer-div">
             <ul class="footer-links">
                 <li>
-                    <a href="http://paypal.github.io/PayPal-PHP-SDK/" target="_blank"><i
+                    <a href="https://paypal.github.io/PayPal-PHP-SDK/" target="_blank"><i
                             class="fa fa-github"></i>
                         PayPal PHP SDK</a></li>
                 <li>
@@ -1519,7 +1519,7 @@ if (PHP_SAPI == 'cli') {
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/scrollspy.min.js"></script>
-<script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+<script src="https://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
 
 <script>
     $(document).ready(function () {

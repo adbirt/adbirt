@@ -1,9 +1,9 @@
-NumberProgressBar [Demo](http://kalasoo.github.io/NumberProgressBar/)
+NumberProgressBar [Demo](https://kalasoo.github.io/NumberProgressBar/)
 =====================================================================
 
 > A lovely progressbar. Inspired by [daimajia](https://github.com/daimajia/NumberProgressBar).
 
-![demo](http://imageshack.com/a/img838/9281/urq.gif)
+![demo](https://imageshack.com/a/img838/9281/urq.gif)
 
 ### To-do List
 

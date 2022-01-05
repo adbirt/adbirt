@@ -17,7 +17,7 @@ class RedirectUrlsTest extends \PHPUnit_Framework_TestCase
      */
     public static function getJson()
     {
-        return '{"return_url":"http://www.google.com","cancel_url":"http://www.google.com"}';
+        return '{"return_url":"https://www.google.com","cancel_url":"https://www.google.com"}';
     }
 
     /**
@@ -50,8 +50,8 @@ class RedirectUrlsTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetters($obj)
     {
-        $this->assertEquals($obj->getReturnUrl(), "http://www.google.com");
-        $this->assertEquals($obj->getCancelUrl(), "http://www.google.com");
+        $this->assertEquals($obj->getReturnUrl(), "https://www.google.com");
+        $this->assertEquals($obj->getCancelUrl(), "https://www.google.com");
     }
 
     /**

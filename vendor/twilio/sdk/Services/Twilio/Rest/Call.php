@@ -1,7 +1,7 @@
 <?php
 
 /**
- *   For more information, see the `Call Instance Resource <http://www.twilio.com/docs/api/rest/call#instance>`_ documentation.
+ *   For more information, see the `Call Instance Resource <https://www.twilio.com/docs/api/rest/call#instance>`_ documentation.
  *
  *   .. php:attr:: sid
  *

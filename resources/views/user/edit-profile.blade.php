@@ -231,7 +231,7 @@
                         <span class="input-group-addon" id="basic-addon2">
             <i class="material-icons md-18 text-muted">language</i>
            </span>
-                        {!! Form::text('personal_site', $user->profile->personal_site, ['class' => 'form-control', 'placeholder' => 'http://www.mywebsite.me']) !!}
+                        {!! Form::text('personal_site', $user->profile->personal_site, ['class' => 'form-control', 'placeholder' => 'https://www.mywebsite.me']) !!}
                       </div>
                     </div>
                   </div>
@@ -243,7 +243,7 @@
                         <span class="input-group-addon" id="basic-addon2">
             <i class="material-icons md-18 text-muted">language</i>
            </span>
-                        {!! Form::text('aboutme', $user->profile->aboutme, ['class' => 'form-control', 'placeholder' => 'http://www.about.me/name']) !!}
+                        {!! Form::text('aboutme', $user->profile->aboutme, ['class' => 'form-control', 'placeholder' => 'https://www.about.me/name']) !!}
                       </div>
                     </div>
                   </div>

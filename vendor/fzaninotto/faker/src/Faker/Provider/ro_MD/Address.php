@@ -31,7 +31,7 @@ class Address extends \Faker\Provider\Address
 
     protected static $postcode = array('####');
 
-    // http://ro.wikipedia.org/wiki/Lista_ora%C8%99elor_din_Republica_Moldova
+    // https://ro.wikipedia.org/wiki/Lista_ora%C8%99elor_din_Republica_Moldova
     protected static $cityNames = array(
         'Chișinău', 'Tiraspol', 'Bălți', 'Tighina', 'Râbnița', 'Cahul', 'Ungheni', 'Soroca',
         'Orhei', 'Dubăsari', 'Comrat', 'Ceadâr-Lunga', 'Strășeni', 'Căușeni', 'Drochia', 'Slobozia',
@@ -44,7 +44,7 @@ class Address extends \Faker\Provider\Address
         'Tiraspolul Nou', 'Frunză', 'Bucovăț', 'Maiac'
     );
 
-    // http://ro.wikipedia.org/wiki/Lista_statelor_lumii#Lista_statelor_lumii
+    // https://ro.wikipedia.org/wiki/Lista_statelor_lumii#Lista_statelor_lumii
     protected static $country = array(
         'Afganistan', 'Africa de Sud', 'Albania', 'Algeria', 'Andorra', 'Angola', 'Antigua și Barbuda', 'Arabia Saudită', 'Argentina', 'Armenia', 'Australia', 'Austria', 'Azerbaidjan',
         'Bahamas', 'Bahrain', 'Bangladesh', 'Barbados', 'Belarus', 'Belgia', 'Belize', 'Benin', 'Bhutan', 'Birmania', 'Bolivia', 'Bosnia și Herțegovina', 'Botswana', 'Brazilia', 'Brunei', 'Bulgaria',

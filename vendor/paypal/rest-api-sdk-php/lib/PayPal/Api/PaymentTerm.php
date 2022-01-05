@@ -41,7 +41,7 @@ class PaymentTerm extends PayPalModel
     }
 
     /**
-     * The date when the invoice payment is due. This date must be a future date. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * The date when the invoice payment is due. This date must be a future date. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @param string $due_date
      * 
@@ -54,7 +54,7 @@ class PaymentTerm extends PayPalModel
     }
 
     /**
-     * The date when the invoice payment is due. This date must be a future date. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * The date when the invoice payment is due. This date must be a future date. Date format is *yyyy*-*MM*-*dd* *z*, as defined in [Internet Date/Time Format](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @return string
      */

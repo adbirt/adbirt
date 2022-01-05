@@ -64,7 +64,7 @@ class Text extends \Faker\Provider\Text
      * Dokończenie NEMROD PAN PAN KAROL SKLEPY CYNAMONOWE ULICA KROKODYLI
      * KARAKONY WICHURA NOC WIELKIEGO SEZONU
      *
-     * @see http://www.gutenberg.org/cache/epub/8119/pg8119.txt
+     * @see https://www.gutenberg.org/cache/epub/8119/pg8119.txt
      * @var string
      */
     protected static $baseText = <<<'EOT'
@@ -2573,8 +2573,8 @@ EOT;
     and editing by those who wish to do so.
 
     Most people start at our Web sites at:
-    http://gutenberg.net or
-    http://promo.net/pg
+    https://gutenberg.net or
+    https://promo.net/pg
 
     These Web sites include award-winning information about Project
     Gutenberg, including how to donate, how to help produce our new
@@ -2586,7 +2586,7 @@ EOT;
     indexes our cataloguers produce obviously take a while after an
     announcement goes out in the Project Gutenberg Newsletter.
 
-    http://www.ibiblio.org/gutenberg/etext03 or
+    https://www.ibiblio.org/gutenberg/etext03 or
     ftp://ftp.ibiblio.org/pub/docs/books/gutenberg/etext03
 
     Or /etext02, 01, 00, 99, 98, 97, 96, 95, 94, 93, 92, 92, 91 or 90
@@ -2689,7 +2689,7 @@ EOT;
 
     You can get up to date donation information online at:
 
-    http://www.gutenberg.net/donation.html
+    https://www.gutenberg.net/donation.html
 
     ***
 

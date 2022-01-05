@@ -4,13 +4,13 @@
  *
  * Examples based on this rule set:
  *
- *    <a href="http://foobar.com">foo</a>
+ *    <a href="https://foobar.com">foo</a>
  *    ... becomes ...
- *    <a href="http://foobar.com" target="_blank" rel="nofollow">foo</a>
+ *    <a href="https://foobar.com" target="_blank" rel="nofollow">foo</a>
  *
- *    <img align="left" src="http://foobar.com/image.png">
+ *    <img align="left" src="https://foobar.com/image.png">
  *    ... becomes ...
- *    <img class="wysiwyg-float-left" src="http://foobar.com/image.png" alt="">
+ *    <img class="wysiwyg-float-left" src="https://foobar.com/image.png" alt="">
  *
  *    <div>foo<script>alert(document.cookie)</script></div>
  *    ... becomes ...
@@ -24,7 +24,7 @@
  *    ... becomes ...
  *    foo <br class="wysiwyg-clear-both"> bar
  *
- *    <div>hello <iframe src="http://google.com"></iframe></div>
+ *    <div>hello <iframe src="https://google.com"></iframe></div>
  *    ... becomes ...
  *    <div>hello </div>
  *
@@ -95,9 +95,9 @@ var wysihtml5ParserRules = {
      *    - set_attributes:     sets/overrides the given attributes
      *
      *    - check_attributes:   checks the given HTML attribute via the given method
-     *                            - url:            allows only valid urls (starting with http:// or https://)
-     *                            - src:            allows something like "/foobar.jpg", "http://google.com", ...
-     *                            - href:           allows something like "mailto:bert@foo.com", "http://google.com", "/foobar.jpg"
+     *                            - url:            allows only valid urls (starting with https:// or https://)
+     *                            - src:            allows something like "/foobar.jpg", "https://google.com", ...
+     *                            - href:           allows something like "mailto:bert@foo.com", "https://google.com", "/foobar.jpg"
      *                            - alt:            strips unwanted characters. if the attribute is not set, then it gets set (to ensure valid and compatible HTML)
      *                            - numbers:  ensures that the attribute only contains numeric characters
      */

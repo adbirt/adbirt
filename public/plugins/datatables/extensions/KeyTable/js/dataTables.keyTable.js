@@ -12,13 +12,13 @@
  * @copyright   Copyright 2009-2014 SpryMedia Ltd.
  *
  * This source file is free software, available under the following license:
- *   MIT license - http://datatables.net/license/mit
+ *   MIT license - https://datatables.net/license/mit
  *
  * This source file is distributed in the hope that it will be useful, but
  * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
  * or FITNESS FOR A PARTICULAR PURPOSE. See the license files for details.
  *
- * For details please refer to: http://www.datatables.net
+ * For details please refer to: https://www.datatables.net
  */
 
 // Global scope for KeyTable for backwards compatibility. Will be removed in 1.3

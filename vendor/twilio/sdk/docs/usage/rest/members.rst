@@ -26,7 +26,7 @@ Dequeue a Member
     foreach ($queue->members as $member) {
         // Dequeue the first member and fetch the Forward twimlet for that
         // member.
-        $member->dequeue('http://twimlets.com/forward', 'GET');
+        $member->dequeue('https://twimlets.com/forward', 'GET');
         break;
     }
 

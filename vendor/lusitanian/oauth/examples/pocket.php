@@ -5,7 +5,7 @@
  *
  * @author     Christian Mayer <thefox21at@gmail.com>
  * @copyright  Copyright (c) 2014 Christian Mayer <thefox21at@gmail.com>
- * @license    http://www.opensource.org/licenses/mit-license.html  MIT License
+ * @license    https://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
 use OAuth\OAuth2\Service\Pocket;

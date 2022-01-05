@@ -3,7 +3,7 @@
  * Delicious service.
  *
  * @author  Pedro Amorim <contact@pamorim.fr>
- * @license http://www.opensource.org/licenses/mit-license.html  MIT License
+ * @license https://www.opensource.org/licenses/mit-license.html  MIT License
  * @link    https://github.com/SciDevs/delicious-api/blob/master/api/oauth.md
  */
 
@@ -21,7 +21,7 @@ use OAuth\Common\Http\Uri\UriInterface;
  * Delicious service.
  *
  * @author  Pedro Amorim <contact@pamorim.fr>
- * @license http://www.opensource.org/licenses/mit-license.html  MIT License
+ * @license https://www.opensource.org/licenses/mit-license.html  MIT License
  * @link    https://github.com/SciDevs/delicious-api/blob/master/api/oauth.md
  */
 class Delicious extends AbstractService

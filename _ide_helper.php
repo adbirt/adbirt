@@ -6441,7 +6441,7 @@ namespace {
          *
          * @return string The client IP address
          * @see getClientIps()
-         * @see http://en.wikipedia.org/wiki/X-Forwarded-For
+         * @see https://en.wikipedia.org/wiki/X-Forwarded-For
          * @static 
          */
         public static function getClientIp(){
@@ -6467,10 +6467,10 @@ namespace {
          * 
          * Suppose this request is instantiated from /mysite on localhost:
          * 
-         *  * http://localhost/mysite              returns an empty string
-         *  * http://localhost/mysite/about        returns '/about'
-         *  * http://localhost/mysite/enco%20ded   returns '/enco%20ded'
-         *  * http://localhost/mysite/about?var=1  returns '/about'
+         *  * https://localhost/mysite              returns an empty string
+         *  * https://localhost/mysite/about        returns '/about'
+         *  * https://localhost/mysite/enco%20ded   returns '/enco%20ded'
+         *  * https://localhost/mysite/about?var=1  returns '/about'
          *
          * @return string The raw path (i.e. not urldecoded)
          * @static 
@@ -6485,10 +6485,10 @@ namespace {
          * 
          * Suppose that an index.php file instantiates this request object:
          * 
-         *  * http://localhost/index.php         returns an empty string
-         *  * http://localhost/index.php/page    returns an empty string
-         *  * http://localhost/web/index.php     returns '/web'
-         *  * http://localhost/we%20b/index.php  returns '/we%20b'
+         *  * https://localhost/index.php         returns an empty string
+         *  * https://localhost/index.php/page    returns an empty string
+         *  * https://localhost/web/index.php     returns '/web'
+         *  * https://localhost/we%20b/index.php  returns '/we%20b'
          *
          * @return string The raw path (i.e. not urldecoded)
          * @static 
@@ -7011,7 +7011,7 @@ namespace {
          * It works if your JavaScript library sets an X-Requested-With HTTP header.
          * It is known to work with common JavaScript frameworks:
          *
-         * @link http://en.wikipedia.org/wiki/List_of_Ajax_frameworks#JavaScript
+         * @link https://en.wikipedia.org/wiki/List_of_Ajax_frameworks#JavaScript
          * @return bool true if the request is an XMLHttpRequest, false otherwise
          * @static 
          */
@@ -9163,7 +9163,7 @@ namespace {
          *
          * @return string The client IP address
          * @see getClientIps()
-         * @see http://en.wikipedia.org/wiki/X-Forwarded-For
+         * @see https://en.wikipedia.org/wiki/X-Forwarded-For
          * @static 
          */
         public static function getClientIp(){
@@ -9189,10 +9189,10 @@ namespace {
          * 
          * Suppose this request is instantiated from /mysite on localhost:
          * 
-         *  * http://localhost/mysite              returns an empty string
-         *  * http://localhost/mysite/about        returns '/about'
-         *  * http://localhost/mysite/enco%20ded   returns '/enco%20ded'
-         *  * http://localhost/mysite/about?var=1  returns '/about'
+         *  * https://localhost/mysite              returns an empty string
+         *  * https://localhost/mysite/about        returns '/about'
+         *  * https://localhost/mysite/enco%20ded   returns '/enco%20ded'
+         *  * https://localhost/mysite/about?var=1  returns '/about'
          *
          * @return string The raw path (i.e. not urldecoded)
          * @static 
@@ -9207,10 +9207,10 @@ namespace {
          * 
          * Suppose that an index.php file instantiates this request object:
          * 
-         *  * http://localhost/index.php         returns an empty string
-         *  * http://localhost/index.php/page    returns an empty string
-         *  * http://localhost/web/index.php     returns '/web'
-         *  * http://localhost/we%20b/index.php  returns '/we%20b'
+         *  * https://localhost/index.php         returns an empty string
+         *  * https://localhost/index.php/page    returns an empty string
+         *  * https://localhost/web/index.php     returns '/web'
+         *  * https://localhost/we%20b/index.php  returns '/we%20b'
          *
          * @return string The raw path (i.e. not urldecoded)
          * @static 
@@ -9733,7 +9733,7 @@ namespace {
          * It works if your JavaScript library sets an X-Requested-With HTTP header.
          * It is known to work with common JavaScript frameworks:
          *
-         * @link http://en.wikipedia.org/wiki/List_of_Ajax_frameworks#JavaScript
+         * @link https://en.wikipedia.org/wiki/List_of_Ajax_frameworks#JavaScript
          * @return bool true if the request is an XMLHttpRequest, false otherwise
          * @static 
          */

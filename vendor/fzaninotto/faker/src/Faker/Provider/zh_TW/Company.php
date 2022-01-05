@@ -21,7 +21,7 @@ class Company extends \Faker\Provider\Company
     );
 
     /**
-     * @link http://zh.wikipedia.org/zh-tw/Category:%E5%8F%B0%E7%81%A3%E5%85%AC%E5%8F%B8%E5%88%97%E8%A1%A8
+     * @link https://zh.wikipedia.org/zh-tw/Category:%E5%8F%B0%E7%81%A3%E5%85%AC%E5%8F%B8%E5%88%97%E8%A1%A8
      */
     protected static $companyPrefix = array(
         '乾坤', '亞神', '光譜', '典選', '凱基', '前衛花園',

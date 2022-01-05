@@ -590,7 +590,7 @@ class ErrorHandler
      * Configures the error handler for delayed handling.
      * Ensures also that non-catchable fatal errors are never silenced.
      *
-     * As shown by http://bugs.php.net/42098 and http://bugs.php.net/60724
+     * As shown by https://bugs.php.net/42098 and https://bugs.php.net/60724
      * PHP has a compile stage where it behaves unusually. To workaround it,
      * we plug an error handler that only stacks errors for later.
      *

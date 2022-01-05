@@ -6,8 +6,8 @@
  * file that was distributed with this source code.
  *
  * @copyright 2010-2015 Mike van Riel<mike@phpdoc.org>
- * @license   http://www.opensource.org/licenses/mit-license.php MIT
- * @link      http://phpdoc.org
+ * @license   https://www.opensource.org/licenses/mit-license.php MIT
+ * @link      https://phpdoc.org
  */
 
 namespace phpDocumentor\Reflection\DocBlock\Tags;
@@ -30,7 +30,7 @@ class LinkTest extends \PHPUnit_Framework_TestCase
      */
     public function testIfCorrectTagNameIsReturned()
     {
-        $fixture = new Link('http://this.is.my/link', new Description('Description'));
+        $fixture = new Link('https://this.is.my/link', new Description('Description'));
 
         $this->assertSame('link', $fixture->getName());
     }
@@ -45,9 +45,9 @@ class LinkTest extends \PHPUnit_Framework_TestCase
      */
     public function testIfTagCanBeRenderedUsingDefaultFormatter()
     {
-        $fixture = new Link('http://this.is.my/link', new Description('Description'));
+        $fixture = new Link('https://this.is.my/link', new Description('Description'));
 
-        $this->assertSame('@link http://this.is.my/link Description', $fixture->render());
+        $this->assertSame('@link https://this.is.my/link Description', $fixture->render());
     }
 
     /**
@@ -57,7 +57,7 @@ class LinkTest extends \PHPUnit_Framework_TestCase
      */
     public function testIfTagCanBeRenderedUsingSpecificFormatter()
     {
-        $fixture = new Link('http://this.is.my/link', new Description('Description'));
+        $fixture = new Link('https://this.is.my/link', new Description('Description'));
 
         $formatter = m::mock(Formatter::class);
         $formatter->shouldReceive('format')->with($fixture)->andReturn('Rendered output');
@@ -71,7 +71,7 @@ class LinkTest extends \PHPUnit_Framework_TestCase
      */
     public function testHasLinkUrl()
     {
-        $expected = 'http://this.is.my/link';
+        $expected = 'https://this.is.my/link';
 
         $fixture = new Link($expected);
 
@@ -87,7 +87,7 @@ class LinkTest extends \PHPUnit_Framework_TestCase
     {
         $expected = new Description('Description');
 
-        $fixture = new Link('http://this.is.my/link', $expected);
+        $fixture = new Link('https://this.is.my/link', $expected);
 
         $this->assertSame($expected, $fixture->getDescription());
     }
@@ -99,9 +99,9 @@ class LinkTest extends \PHPUnit_Framework_TestCase
      */
     public function testStringRepresentationIsReturned()
     {
-        $fixture = new Link('http://this.is.my/link', new Description('Description'));
+        $fixture = new Link('https://this.is.my/link', new Description('Description'));
 
-        $this->assertSame('http://this.is.my/link Description', (string)$fixture);
+        $this->assertSame('https://this.is.my/link Description', (string)$fixture);
     }
 
     /**
@@ -116,14 +116,14 @@ class LinkTest extends \PHPUnit_Framework_TestCase
         $descriptionFactory = m::mock(DescriptionFactory::class);
         $context = new Context('');
 
-        $links = 'http://this.is.my/link';
+        $links = 'https://this.is.my/link';
         $description = new Description('My Description');
 
         $descriptionFactory->shouldReceive('create')->with('My Description', $context)->andReturn($description);
 
-        $fixture = Link::create('http://this.is.my/link My Description', $descriptionFactory, $context);
+        $fixture = Link::create('https://this.is.my/link My Description', $descriptionFactory, $context);
 
-        $this->assertSame('http://this.is.my/link My Description', (string)$fixture);
+        $this->assertSame('https://this.is.my/link My Description', (string)$fixture);
         $this->assertSame($links, $fixture->getLink());
         $this->assertSame($description, $fixture->getDescription());
     }

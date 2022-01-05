@@ -17,7 +17,7 @@ use Monolog\Logger;
  * Stores to any socket - uses fsockopen() or pfsockopen().
  *
  * @author Pablo de Leon Belloc <pablolb@gmail.com>
- * @see    http://php.net/manual/en/function.fsockopen.php
+ * @see    https://php.net/manual/en/function.fsockopen.php
  */
 class SocketHandler extends AbstractProcessingHandler
 {
@@ -95,7 +95,7 @@ class SocketHandler extends AbstractProcessingHandler
      *
      * @param float $seconds
      *
-     * @see http://php.net/manual/en/function.fsockopen.php
+     * @see https://php.net/manual/en/function.fsockopen.php
      */
     public function setConnectionTimeout($seconds)
     {
@@ -108,7 +108,7 @@ class SocketHandler extends AbstractProcessingHandler
      *
      * @param float $seconds
      *
-     * @see http://php.net/manual/en/function.stream-set-timeout.php
+     * @see https://php.net/manual/en/function.stream-set-timeout.php
      */
     public function setTimeout($seconds)
     {
@@ -180,7 +180,7 @@ class SocketHandler extends AbstractProcessingHandler
     /**
      * Check to see if the socket is currently available.
      *
-     * UDP might appear to be connected but might fail when writing.  See http://php.net/fsockopen for details.
+     * UDP might appear to be connected but might fail when writing.  See https://php.net/fsockopen for details.
      *
      * @return bool
      */
@@ -209,7 +209,7 @@ class SocketHandler extends AbstractProcessingHandler
     /**
      * Wrapper to allow mocking
      *
-     * @see http://php.net/manual/en/function.stream-set-timeout.php
+     * @see https://php.net/manual/en/function.stream-set-timeout.php
      */
     protected function streamSetTimeout()
     {

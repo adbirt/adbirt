@@ -53,8 +53,8 @@ class RouterListenerTest extends \PHPUnit_Framework_TestCase
     public function getPortData()
     {
         return array(
-            array(80, 443, 'http://localhost/', 80, 443),
-            array(80, 443, 'http://localhost:90/', 90, 443),
+            array(80, 443, 'https://localhost/', 80, 443),
+            array(80, 443, 'https://localhost:90/', 90, 443),
             array(80, 443, 'https://localhost/', 80, 443),
             array(80, 443, 'https://localhost:90/', 80, 90),
         );
@@ -85,7 +85,7 @@ class RouterListenerTest extends \PHPUnit_Framework_TestCase
     public function testRequestMatcher()
     {
         $kernel = $this->getMock('Symfony\Component\HttpKernel\HttpKernelInterface');
-        $request = Request::create('http://localhost/');
+        $request = Request::create('https://localhost/');
         $event = new GetResponseEvent($kernel, $request, HttpKernelInterface::MASTER_REQUEST);
 
         $requestMatcher = $this->getMock('Symfony\Component\Routing\Matcher\RequestMatcherInterface');
@@ -101,7 +101,7 @@ class RouterListenerTest extends \PHPUnit_Framework_TestCase
     public function testSubRequestWithDifferentMethod()
     {
         $kernel = $this->getMock('Symfony\Component\HttpKernel\HttpKernelInterface');
-        $request = Request::create('http://localhost/', 'post');
+        $request = Request::create('https://localhost/', 'post');
         $event = new GetResponseEvent($kernel, $request, HttpKernelInterface::MASTER_REQUEST);
 
         $requestMatcher = $this->getMock('Symfony\Component\Routing\Matcher\RequestMatcherInterface');
@@ -117,7 +117,7 @@ class RouterListenerTest extends \PHPUnit_Framework_TestCase
 
         // sub-request with another HTTP method
         $kernel = $this->getMock('Symfony\Component\HttpKernel\HttpKernelInterface');
-        $request = Request::create('http://localhost/', 'get');
+        $request = Request::create('https://localhost/', 'get');
         $event = new GetResponseEvent($kernel, $request, HttpKernelInterface::SUB_REQUEST);
 
         $listener->onKernelRequest($event);
@@ -141,7 +141,7 @@ class RouterListenerTest extends \PHPUnit_Framework_TestCase
           ->with($this->equalTo($log));
 
         $kernel = $this->getMock('Symfony\Component\HttpKernel\HttpKernelInterface');
-        $request = Request::create('http://localhost/');
+        $request = Request::create('https://localhost/');
 
         $listener = new RouterListener($requestMatcher, new RequestContext(), $logger, $this->requestStack);
         $listener->onKernelRequest(new GetResponseEvent($kernel, $request, HttpKernelInterface::MASTER_REQUEST));

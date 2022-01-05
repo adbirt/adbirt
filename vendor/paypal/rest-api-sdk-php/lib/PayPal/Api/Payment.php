@@ -490,7 +490,7 @@ class Payment extends PayPalResourceModel
     }
 
     /**
-     * Payment creation time as defined in [RFC 3339 Section 5.6](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * Payment creation time as defined in [RFC 3339 Section 5.6](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @param string $create_time
      * 
@@ -503,7 +503,7 @@ class Payment extends PayPalResourceModel
     }
 
     /**
-     * Payment creation time as defined in [RFC 3339 Section 5.6](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * Payment creation time as defined in [RFC 3339 Section 5.6](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @return string
      */
@@ -513,7 +513,7 @@ class Payment extends PayPalResourceModel
     }
 
     /**
-     * Payment update time as defined in [RFC 3339 Section 5.6](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * Payment update time as defined in [RFC 3339 Section 5.6](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @param string $update_time
      * 
@@ -526,7 +526,7 @@ class Payment extends PayPalResourceModel
     }
 
     /**
-     * Payment update time as defined in [RFC 3339 Section 5.6](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * Payment update time as defined in [RFC 3339 Section 5.6](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @return string
      */

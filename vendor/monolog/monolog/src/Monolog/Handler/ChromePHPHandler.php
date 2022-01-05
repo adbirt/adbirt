@@ -15,7 +15,7 @@ use Monolog\Formatter\ChromePHPFormatter;
 use Monolog\Logger;
 
 /**
- * Handler sending logs to the ChromePHP extension (http://www.chromephp.com/)
+ * Handler sending logs to the ChromePHP extension (https://www.chromephp.com/)
  *
  * This also works out of the box with Firefox 43+
  *

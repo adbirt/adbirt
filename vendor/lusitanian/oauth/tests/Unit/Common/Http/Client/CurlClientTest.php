@@ -73,7 +73,7 @@ class CurlClientTest extends \PHPUnit_Framework_TestCase
             ->will($this->returnValue('httpbin.org'));
         $endPoint->expects($this->any())
             ->method('getAbsoluteUri')
-            ->will($this->returnValue('http://httpbin.org/get'));
+            ->will($this->returnValue('https://httpbin.org/get'));
 
         $client = new CurlClient();
 
@@ -101,7 +101,7 @@ class CurlClientTest extends \PHPUnit_Framework_TestCase
             ->will($this->returnValue('httpbin.org'));
         $endPoint->expects($this->any())
             ->method('getAbsoluteUri')
-            ->will($this->returnValue('http://httpbin.org/get'));
+            ->will($this->returnValue('https://httpbin.org/get'));
 
         $client = new CurlClient('My Super Awesome Http Client');
 
@@ -128,7 +128,7 @@ class CurlClientTest extends \PHPUnit_Framework_TestCase
             ->will($this->returnValue('httpbin.org'));
         $endPoint->expects($this->any())
             ->method('getAbsoluteUri')
-            ->will($this->returnValue('http://httpbin.org/get'));
+            ->will($this->returnValue('https://httpbin.org/get'));
 
         $client = new CurlClient();
 
@@ -155,7 +155,7 @@ class CurlClientTest extends \PHPUnit_Framework_TestCase
             ->will($this->returnValue('httpbin.org'));
         $endPoint->expects($this->any())
             ->method('getAbsoluteUri')
-            ->will($this->returnValue('http://httpbin.org/post'));
+            ->will($this->returnValue('https://httpbin.org/post'));
 
         $client = new CurlClient();
 
@@ -183,7 +183,7 @@ class CurlClientTest extends \PHPUnit_Framework_TestCase
             ->will($this->returnValue('httpbin.org'));
         $endPoint->expects($this->any())
             ->method('getAbsoluteUri')
-            ->will($this->returnValue('http://httpbin.org/post'));
+            ->will($this->returnValue('https://httpbin.org/post'));
 
         $client = new CurlClient();
 
@@ -210,7 +210,7 @@ class CurlClientTest extends \PHPUnit_Framework_TestCase
             ->will($this->returnValue('httpbin.org'));
         $endPoint->expects($this->any())
             ->method('getAbsoluteUri')
-            ->will($this->returnValue('http://httpbin.org/post'));
+            ->will($this->returnValue('https://httpbin.org/post'));
 
         $formData = array('baz' => 'fab', 'foo' => 'bar');
 
@@ -239,7 +239,7 @@ class CurlClientTest extends \PHPUnit_Framework_TestCase
             ->will($this->returnValue('httpbin.org'));
         $endPoint->expects($this->any())
             ->method('getAbsoluteUri')
-            ->will($this->returnValue('http://httpbin.org/put'));
+            ->will($this->returnValue('https://httpbin.org/put'));
 
         $formData = array('baz' => 'fab', 'foo' => 'bar');
 
@@ -268,7 +268,7 @@ class CurlClientTest extends \PHPUnit_Framework_TestCase
             ->will($this->returnValue('httpbin.org'));
         $endPoint->expects($this->any())
             ->method('getAbsoluteUri')
-            ->will($this->returnValue('http://httpbin.org/put'));
+            ->will($this->returnValue('https://httpbin.org/put'));
 
         $formData = array('baz' => 'fab', 'foo' => 'bar');
 
@@ -363,7 +363,7 @@ class CurlClientTest extends \PHPUnit_Framework_TestCase
             ->will($this->returnValue('httpbin.org'));
         $endPoint->expects($this->any())
             ->method('getAbsoluteUri')
-            ->will($this->returnValue('http://httpbin.org/gzip'));
+            ->will($this->returnValue('https://httpbin.org/gzip'));
 
         $client = new CurlClient();
         $client->setCurlParameters(array(

@@ -86,10 +86,10 @@ class AbstractServiceTest extends \PHPUnit_Framework_TestCase
             $this->getMock('\\OAuth\\Common\\Storage\\TokenStorageInterface')
         );
 
-        $uri = $service->testDetermineRequestUriFromPath('http://example.com');
+        $uri = $service->testDetermineRequestUriFromPath('https://example.com');
 
         $this->assertInstanceOf('\\OAuth\\Common\\Http\\Uri\\UriInterface', $uri);
-        $this->assertSame('http://example.com', $uri->getAbsoluteUri());
+        $this->assertSame('https://example.com', $uri->getAbsoluteUri());
     }
 
     /**

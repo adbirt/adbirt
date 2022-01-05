@@ -21,7 +21,7 @@ class VerifyWebhookSignatureTest extends \PHPUnit_Framework_TestCase
      */
     public static function getJson()
     {
-        return '{"auth_algo":"TestSample","cert_url":"http://www.google.com","transmission_id":"TestSample","transmission_sig":"TestSample","transmission_time":"TestSample","webhook_id":"TestSample","webhook_event":' .WebhookEventTest::getJson() . '}';
+        return '{"auth_algo":"TestSample","cert_url":"https://www.google.com","transmission_id":"TestSample","transmission_sig":"TestSample","transmission_time":"TestSample","webhook_id":"TestSample","webhook_event":' .WebhookEventTest::getJson() . '}';
     }
 
     /**
@@ -60,7 +60,7 @@ class VerifyWebhookSignatureTest extends \PHPUnit_Framework_TestCase
     public function testGetters($obj)
     {
         $this->assertEquals($obj->getAuthAlgo(), "TestSample");
-        $this->assertEquals($obj->getCertUrl(), "http://www.google.com");
+        $this->assertEquals($obj->getCertUrl(), "https://www.google.com");
         $this->assertEquals($obj->getTransmissionId(), "TestSample");
         $this->assertEquals($obj->getTransmissionSig(), "TestSample");
         $this->assertEquals($obj->getTransmissionTime(), "TestSample");

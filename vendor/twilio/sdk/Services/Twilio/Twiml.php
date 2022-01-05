@@ -9,7 +9,7 @@ class Services_Twilio_TwimlException extends Exception {}
  * Twiml response generator.
  *
  * Author:   Neuman Vong <neuman at ashmoremusic dot com>
- * License:  http://creativecommons.org/licenses/MIT/ MIT
+ * License:  https://creativecommons.org/licenses/MIT/ MIT
  */
 class Services_Twilio_Twiml {
 

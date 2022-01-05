@@ -1,6 +1,6 @@
 /*****
 * rateYo - v2.3.2
-* http://prrashi.github.io/rateyo/
+* https://prrashi.github.io/rateyo/
 * Copyright (c) 2014 Prashanth Pamidi; Licensed MIT
 *****/
 
@@ -10,7 +10,7 @@
   // The basic svg string required to generate stars
   var BASICSTAR = "<?xml version=\"1.0\" encoding=\"utf-8\"?>"+
                   "<svg version=\"1.1\""+
-                        "xmlns=\"http://www.w3.org/2000/svg\""+
+                        "xmlns=\"https://www.w3.org/2000/svg\""+
                         "viewBox=\"0 12.705 512 486.59\""+
                         "x=\"0px\" y=\"0px\""+
                         "xml:space=\"preserve\">"+
@@ -51,7 +51,7 @@
     endColor  : "#f1c40f"  //yellow
   };
 
-  // http://stackoverflow.com/questions/11381673/detecting-a-mobile-browser
+  // https://stackoverflow.com/questions/11381673/detecting-a-mobile-browser
   function isMobileBrowser () {
     var check = false;
     /* jshint ignore:start */

@@ -97,7 +97,7 @@ class SubscribeCommand extends Command
 
         $url = $this->argument('url');
 
-        if (! Str::startsWith($url, ['http://', 'https://'])) {
+        if (! Str::startsWith($url, ['https://', 'https://'])) {
             $url = $this->laravel['url']->to($url);
         }
 

@@ -65,7 +65,7 @@ class FileProfilerStorageTest extends AbstractProfilerStorageTest
         for ($i = 0; $i < $iteration; ++$i) {
             $profile = new Profile('token'.$i);
             $profile->setIp('127.0.0.'.$i);
-            $profile->setUrl('http://foo.bar/'.$i);
+            $profile->setUrl('https://foo.bar/'.$i);
             $storage = $this->getStorage();
 
             $storage->write($profile);
@@ -78,7 +78,7 @@ class FileProfilerStorageTest extends AbstractProfilerStorageTest
             $row = fgetcsv($handle);
             $this->assertEquals('token'.$i, $row[0]);
             $this->assertEquals('127.0.0.'.$i, $row[1]);
-            $this->assertEquals('http://foo.bar/'.$i, $row[3]);
+            $this->assertEquals('https://foo.bar/'.$i, $row[3]);
         }
         $this->assertFalse(fgetcsv($handle));
     }

@@ -5,9 +5,9 @@
  * PHP Version 5.3
  *
  * @author    Barry vd. Heuvel <barryvdh@gmail.com>
- * @copyright 2013 Mike van Riel / Naenius (http://www.naenius.com)
- * @license   http://www.opensource.org/licenses/mit-license.php MIT
- * @link      http://phpdoc.org
+ * @copyright 2013 Mike van Riel / Naenius (https://www.naenius.com)
+ * @license   https://www.opensource.org/licenses/mit-license.php MIT
+ * @link      https://phpdoc.org
  */
 
 namespace phpDocumentor\Reflection\DocBlock;
@@ -18,8 +18,8 @@ use phpDocumentor\Reflection\DocBlock;
  * Serializes a DocBlock instance.
  *
  * @author  Barry vd. Heuvel <barryvdh@gmail.com>
- * @license http://www.opensource.org/licenses/mit-license.php MIT
- * @link    http://phpdoc.org
+ * @license https://www.opensource.org/licenses/mit-license.php MIT
+ * @link    https://phpdoc.org
  */
 class Serializer
 {

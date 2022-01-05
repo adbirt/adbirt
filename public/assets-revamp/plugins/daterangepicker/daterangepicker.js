@@ -1,9 +1,9 @@
 /**
 * @version: 3.1
-* @author: Dan Grossman http://www.dangrossman.info/
+* @author: Dan Grossman https://www.dangrossman.info/
 * @copyright: Copyright (c) 2012-2019 Dan Grossman. All rights reserved.
-* @license: Licensed under the MIT license. See http://www.opensource.org/licenses/mit-license.php
-* @website: http://www.daterangepicker.com/
+* @license: Licensed under the MIT license. See https://www.opensource.org/licenses/mit-license.php
+* @website: https://www.daterangepicker.com/
 */
 // Following the UMD template https://github.com/umdjs/umd/blob/master/templates/returnExportsGlobal.js
 (function (root, factory) {

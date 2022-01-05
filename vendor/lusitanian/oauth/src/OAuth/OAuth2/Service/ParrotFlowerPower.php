@@ -3,7 +3,7 @@
  * ParrotFlowerPower service.
  *
  * @author  Pedro Amorim <contact@pamorim.fr>
- * @license http://www.opensource.org/licenses/mit-license.html MIT License
+ * @license https://www.opensource.org/licenses/mit-license.html MIT License
  * @link    https://flowerpowerdev.parrot.com/projects/flower-power-web-service-api/wiki
  */
 
@@ -23,7 +23,7 @@ use OAuth\Common\Token\TokenInterface;
  * ParrotFlowerPower service.
  *
  * @author  Pedro Amorim <contact@pamorim.fr>
- * @license http://www.opensource.org/licenses/mit-license.html MIT License
+ * @license https://www.opensource.org/licenses/mit-license.html MIT License
  * @link    https://flowerpowerdev.parrot.com/projects/flower-power-web-service-api/wiki
  */
 class ParrotFlowerPower extends AbstractService

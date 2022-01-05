@@ -14,7 +14,7 @@ Making a Call
     $call = $client->account->calls->create(
       '9991231234', // From this number
       '8881231234', // Call this number
-      'http://foo.com/call.xml'
+      'https://foo.com/call.xml'
     );
 
 Generating TwiML

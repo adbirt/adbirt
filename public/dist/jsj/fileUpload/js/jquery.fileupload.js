@@ -6,7 +6,7 @@
  * https://blueimp.net
  *
  * Licensed under the MIT license:
- * http://www.opensource.org/licenses/MIT
+ * https://www.opensource.org/licenses/MIT
  */
 
 /*jslint nomen: true, unparam: true, regexp: true */
@@ -28,7 +28,7 @@
     'use strict';
 
     // Detect file input support, based on
-    // http://viljamis.com/blog/2012/file-upload-support-on-mobile/
+    // https://viljamis.com/blog/2012/file-upload-support-on-mobile/
     $.support.fileInput = !(new RegExp(
         // Handle devices which give false positives for the feature detection:
         '(Android (1\\.[0156]|2\\.[01]))' +

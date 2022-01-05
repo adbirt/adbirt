@@ -23,7 +23,7 @@ class Address extends \Faker\Provider\fr_FR\Address
     );
 
     /**
-     * Source: http://fr.wikipedia.org/wiki/Ville_de_Belgique
+     * Source: https://fr.wikipedia.org/wiki/Ville_de_Belgique
      *
      * @var array
      */

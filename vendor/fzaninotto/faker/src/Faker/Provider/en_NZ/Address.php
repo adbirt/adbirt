@@ -33,7 +33,7 @@ class Address extends \Faker\Provider\en_US\Address
 
     /**
      * An array of en_NZ (New Zealand) regions
-     * @see http://en.wikipedia.org/wiki/Regions_of_New_Zealand
+     * @see https://en.wikipedia.org/wiki/Regions_of_New_Zealand
      * @var array
      */
     protected static $region = array(

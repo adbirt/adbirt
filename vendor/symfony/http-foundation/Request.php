@@ -852,7 +852,7 @@ class Request
      * @return string The client IP address
      *
      * @see getClientIps()
-     * @see http://en.wikipedia.org/wiki/X-Forwarded-For
+     * @see https://en.wikipedia.org/wiki/X-Forwarded-For
      */
     public function getClientIp()
     {
@@ -878,10 +878,10 @@ class Request
      *
      * Suppose this request is instantiated from /mysite on localhost:
      *
-     *  * http://localhost/mysite              returns an empty string
-     *  * http://localhost/mysite/about        returns '/about'
-     *  * http://localhost/mysite/enco%20ded   returns '/enco%20ded'
-     *  * http://localhost/mysite/about?var=1  returns '/about'
+     *  * https://localhost/mysite              returns an empty string
+     *  * https://localhost/mysite/about        returns '/about'
+     *  * https://localhost/mysite/enco%20ded   returns '/enco%20ded'
+     *  * https://localhost/mysite/about?var=1  returns '/about'
      *
      * @return string The raw path (i.e. not urldecoded)
      */
@@ -899,10 +899,10 @@ class Request
      *
      * Suppose that an index.php file instantiates this request object:
      *
-     *  * http://localhost/index.php         returns an empty string
-     *  * http://localhost/index.php/page    returns an empty string
-     *  * http://localhost/web/index.php     returns '/web'
-     *  * http://localhost/we%20b/index.php  returns '/we%20b'
+     *  * https://localhost/index.php         returns an empty string
+     *  * https://localhost/index.php/page    returns an empty string
+     *  * https://localhost/web/index.php     returns '/web'
+     *  * https://localhost/we%20b/index.php  returns '/we%20b'
      *
      * @return string The raw path (i.e. not urldecoded)
      */
@@ -1146,7 +1146,7 @@ class Request
         // A reference to the same base directory or an empty subdirectory must be prefixed with "./".
         // This also applies to a segment with a colon character (e.g., "file:colon") that cannot be used
         // as the first segment of a relative-path reference, as it would be mistaken for a scheme name
-        // (see http://tools.ietf.org/html/rfc3986#section-4.2).
+        // (see https://tools.ietf.org/html/rfc3986#section-4.2).
         return !isset($path[0]) || '/' === $path[0]
             || false !== ($colonPos = strpos($path, ':')) && ($colonPos < ($slashPos = strpos($path, '/')) || false === $slashPos)
             ? "./$path" : $path;
@@ -1674,7 +1674,7 @@ class Request
      * It works if your JavaScript library sets an X-Requested-With HTTP header.
      * It is known to work with common JavaScript frameworks:
      *
-     * @link http://en.wikipedia.org/wiki/List_of_Ajax_frameworks#JavaScript
+     * @link https://en.wikipedia.org/wiki/List_of_Ajax_frameworks#JavaScript
      *
      * @return bool true if the request is an XMLHttpRequest, false otherwise
      */
@@ -1686,9 +1686,9 @@ class Request
     /*
      * The following methods are derived from code of the Zend Framework (1.10dev - 2010-01-24)
      *
-     * Code subject to the new BSD license (http://framework.zend.com/license/new-bsd).
+     * Code subject to the new BSD license (https://framework.zend.com/license/new-bsd).
      *
-     * Copyright (c) 2005-2010 Zend Technologies USA Inc. (http://www.zend.com)
+     * Copyright (c) 2005-2010 Zend Technologies USA Inc. (https://www.zend.com)
      */
 
     protected function prepareRequestUri()

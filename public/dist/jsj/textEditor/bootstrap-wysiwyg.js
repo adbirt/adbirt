@@ -1,4 +1,4 @@
-/* http://github.com/mindmup/bootstrap-wysiwyg */
+/* https://github.com/mindmup/bootstrap-wysiwyg */
 /*global jQuery, $, FileReader*/
 /*jslint browser:true*/
 (function ($) {

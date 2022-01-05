@@ -18,7 +18,7 @@ class PayPalConnectionExceptionTest extends \PHPUnit_Framework_TestCase
      */
     protected function setUp()
     {
-        $this->object = new PayPalConnectionException('http://testURL', 'test message');
+        $this->object = new PayPalConnectionException('https://testURL', 'test message');
         $this->object->setData('response payload for connection');
     }
 
@@ -35,7 +35,7 @@ class PayPalConnectionExceptionTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetUrl()
     {
-        $this->assertEquals('http://testURL', $this->object->getUrl());
+        $this->assertEquals('https://testURL', $this->object->getUrl());
     }
 
     /**

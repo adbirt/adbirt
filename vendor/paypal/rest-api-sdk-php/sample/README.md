@@ -7,11 +7,11 @@ These examples are created to experiment with the PayPal-PHP-SDK capabilities. E
 This sample project is a simple web app that you can explore to understand what each PayPal APIs can do for you. Irrespective of how you [installed your SDK](https://github.com/paypal/PayPal-PHP-SDK/wiki/Installation), you should be able to get the samples running by following the instructions below:
 
 ## Viewing Sample Code
-You can [view sample source codes here](http://paypal.github.io/PayPal-PHP-SDK/sample/). However, we recommend you run samples locally to get a better idea.
+You can [view sample source codes here](https://paypal.github.io/PayPal-PHP-SDK/sample/). However, we recommend you run samples locally to get a better idea.
 
 ## Instructions
 
-If you are running PHP 5.4 or greater, PHP provides a [ built-in support ]( http://php.net/manual/en/features.commandline.webserver.php) for hosting PHP sites.
+If you are running PHP 5.4 or greater, PHP provides a [ built-in support ]( https://php.net/manual/en/features.commandline.webserver.php) for hosting PHP sites.
 
 Note: The root directory for composer based download would be `vendor` and for direct download it would be `PayPal-PHP-SDK`. Please update the commands accordingly.
 
@@ -21,11 +21,11 @@ Note: The root directory for composer based download would be `vendor` and for d
     ```
     <!-- Welcome to PayPal REST SDK -- >
     PHP 5.5.14 Development Server started at Sat Jan 10 14:04:35 2015
-    Listening on http://localhost:5000
+    Listening on https://localhost:5000
     Document root is /Users/japatel/Desktop/project/PayPal-PHP-SDK/paypal/rest-api-sdk-php/sample
     Press Ctrl-C to quit.
     ```
-3. Open [http://localhost:5000/](http://localhost:5000/) in your web browser, and you should be able to see the sample dashboard.
+3. Open [https://localhost:5000/](https://localhost:5000/) in your web browser, and you should be able to see the sample dashboard.
 4. You should see a sample dashboard page as shown below:
 ![Sample Web](https://raw.githubusercontent.com/wiki/paypal/PayPal-PHP-SDK/images/sample_web.gif)
 
@@ -41,9 +41,9 @@ There are two other ways you could run your samples, as shown below:
 
 * #### Alternatives: LAMP Stack (All supported PHP Versions)
 
-    * You could host the entire project in your local web server, by using tools like [MAMP](http://www.mamp.info/en/) or [XAMPP](https://www.apachefriends.org/index.html).
+    * You could host the entire project in your local web server, by using tools like [MAMP](https://www.mamp.info/en/) or [XAMPP](https://www.apachefriends.org/index.html).
     * Once done, you could easily open the samples by opening the matching URL. For e.g.:
-`http://localhost/PayPal-PHP-SDK/paypal/rest-api-sdk-php/sample/index.html`
+`https://localhost/PayPal-PHP-SDK/paypal/rest-api-sdk-php/sample/index.html`
 
 * #### Alternatives: Running on console
     > Please note that there are few samples that requires you to have a working local server, to receive redirects when user accepts/denies PayPal Web flow
@@ -63,9 +63,9 @@ If you are looking for a full fledged application that uses the new RESTful APIs
 
 ## More help
    * [Going Live](https://github.com/paypal/PayPal-PHP-SDK/wiki/Going-Live)
-   * [PayPal-PHP-SDK Home Page](http://paypal.github.io/PayPal-PHP-SDK/)
+   * [PayPal-PHP-SDK Home Page](https://paypal.github.io/PayPal-PHP-SDK/)
    * [SDK Documentation](https://github.com/paypal/PayPal-PHP-SDK/wiki)
-   * [Sample Source Code](http://paypal.github.io/PayPal-PHP-SDK/sample/)
+   * [Sample Source Code](https://paypal.github.io/PayPal-PHP-SDK/sample/)
    * [API Reference](https://developer.paypal.com/webapps/developer/docs/api/)
    * [Reporting Issues / Feature Requests] (https://github.com/paypal/PayPal-PHP-SDK/issues)
    * [Pizza App Using Paypal REST API] (https://github.com/paypal/rest-api-sample-app-php)

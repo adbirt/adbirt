@@ -56,6 +56,6 @@ class HttpErrorTest extends \PHPUnit_Framework_TestCase
         $client->getEmitter()->attach(new Mock([
             new Response(403)
         ]));
-        $client->get('http://httpbin.org');
+        $client->get('https://httpbin.org');
     }
 }

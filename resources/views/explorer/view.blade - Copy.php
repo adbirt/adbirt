@@ -308,6 +308,6 @@
       </div>
 
       <div class="footer">
-        Copyright &copy; 2016 - <a href="http://themeforest.net/item/learnplus-learning-management-application/15287372?ref=mosaicpro">Purchase LearnPlus</a>
+        Copyright &copy; 2016 - <a href="https://themeforest.net/item/learnplus-learning-management-application/15287372?ref=mosaicpro">Purchase LearnPlus</a>
       </div>
     </div>

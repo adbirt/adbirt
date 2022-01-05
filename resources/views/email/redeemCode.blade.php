@@ -19,7 +19,7 @@ structure.
 ** Profile **
 Licensed under MIT (https://github.com/charlesmudy/responsive-html-email-template/blob/master/LICENSE)
 Designed by Shina Charles Memud
-Respmail v1.2 (http://charlesmudy.com/respmail/)
+Respmail v1.2 (https://charlesmudy.com/respmail/)
 
 ** Quick modification **
 We are using width of 500 for the whole content,
@@ -35,8 +35,8 @@ Sizes: [
 		}
 	-->
 
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-	<html xmlns="http://www.w3.org/1999/xhtml">
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	<html xmlns="https://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -93,7 +93,7 @@ Sizes: [
 			span[class=ios-color-hack2] a {color:#205478!important;text-decoration:none!important;}
 			span[class=ios-color-hack3] a {color:#8B8B8B!important;text-decoration:none!important;}
 			/* A nice and clean way to target phone numbers you want clickable and avoid a mobile phone from linking other numbers that look like, but are not phone numbers.  Use these two blocks of code to "unstyle" any numbers that may be linked.  The second block gives you a class to apply with a span tag to the numbers you would like linked and styled.
-			Inspired by Campaign Monitor's article on using phone numbers in email: http://www.campaignmonitor.com/blog/post/3571/using-phone-numbers-in-html-email/.
+			Inspired by Campaign Monitor's article on using phone numbers in email: https://www.campaignmonitor.com/blog/post/3571/using-phone-numbers-in-html-email/.
 			*/
 			.a[href^="tel"], a[href^="sms"] {text-decoration:none!important;color:#606060!important;pointer-events:none!important;cursor:default!important;}
 			.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {text-decoration:none!important;color:#606060!important;pointer-events:auto!important;cursor:default!important;}
@@ -148,8 +148,8 @@ Sizes: [
 			}
 
 			/*  CONDITIONS FOR ANDROID DEVICES ONLY
-			*   http://developer.android.com/guide/webapps/targeting.html
-			*   http://pugetworks.com/2011/04/css-media-queries-for-targeting-different-mobile-devices/ ;
+			*   https://developer.android.com/guide/webapps/targeting.html
+			*   https://pugetworks.com/2011/04/css-media-queries-for-targeting-different-mobile-devices/ ;
 			=====================================================*/
 
 			@media only screen and (-webkit-device-pixel-ratio:.75){
@@ -180,7 +180,7 @@ Sizes: [
 			primarily done to avoid the 'page break bug' and is optional.
 
 			More information here:
-			http://templates.mailchimp.com/development/css/outlook-conditional-css
+			https://templates.mailchimp.com/development/css/outlook-conditional-css
 		-->
 		<!--[if mso 12]>
 			<style type="text/css">
@@ -352,7 +352,7 @@ Sizes: [
 							<!-- MODULE ROW // -->
 							<!--  The "mc:hideable" is a feature for MailChimp which allows
 								you to disable certain row. It works perfectly for our row structure.
-								http://kb.mailchimp.com/article/template-language-creating-editable-content-areas/
+								https://kb.mailchimp.com/article/template-language-creating-editable-content-areas/
 							-->
 							<tr mc:hideable>
 								<td align="center" valign="top">
@@ -372,7 +372,7 @@ Sizes: [
 																					<!--
 																						The "mc:edit" is a feature for MailChimp which allows
 																						you to edit certain row. It makes it easy for you to quickly edit row sections.
-																						http://kb.mailchimp.com/templates/code/create-editable-content-areas-with-mailchimps-template-language
+																						https://kb.mailchimp.com/templates/code/create-editable-content-areas-with-mailchimps-template-language
 																					-->
 																					<h3 mc:edit="header" style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;">{{ $heading }}</h3>
 																					<div mc:edit="body" style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;">{{ $TextToClient }}</div>
@@ -510,7 +510,7 @@ Sizes: [
 																	<td valign="top" bgcolor="#E1E1E1">
 
 																		<div style="font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#828282;text-align:center;line-height:120%;">
-																			<div>Copyright &#169; 2016 <a href="http://www.minisoft.com.ng" target="_blank" style="text-decoration:none;color:#828282;"><span style="color:#828282;">Minisoft Group</span></a>. All&nbsp;rights&nbsp;reserved. 63 Lamport Road, Upper Darby, PA 19082, USA</div>
+																			<div>Copyright &#169; 2016 <a href="https://www.minisoft.com.ng" target="_blank" style="text-decoration:none;color:#828282;"><span style="color:#828282;">Minisoft Group</span></a>. All&nbsp;rights&nbsp;reserved. 63 Lamport Road, Upper Darby, PA 19082, USA</div>
 																			<div>If you do not want to recieve emails from us, you can <a href="#" target="_blank" style="text-decoration:none;color:#828282;"><span style="color:#828282;">unsubscribe</span></a>.</div>
 																		</div>
 

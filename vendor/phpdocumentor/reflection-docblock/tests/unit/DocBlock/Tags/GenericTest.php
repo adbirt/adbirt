@@ -6,8 +6,8 @@
  * file that was distributed with this source code.
  *
  * @copyright 2010-2015 Mike van Riel<mike@phpdoc.org>
- * @license   http://www.opensource.org/licenses/mit-license.php MIT
- * @generic      http://phpdoc.org
+ * @license   https://www.opensource.org/licenses/mit-license.php MIT
+ * @generic      https://phpdoc.org
  */
 
 namespace phpDocumentor\Reflection\DocBlock\Tags;

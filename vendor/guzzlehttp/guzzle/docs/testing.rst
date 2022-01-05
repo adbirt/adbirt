@@ -66,8 +66,8 @@ subscriber maintains a history of the requests that were sent by a client.
     // Add the history subscriber to the client.
     $client->getEmitter()->attach($history);
 
-    $client->get('http://httpbin.org/get');
-    $client->head('http://httpbin.org/get');
+    $client->get('https://httpbin.org/get');
+    $client->head('https://httpbin.org/get');
 
     // Count the number of transactions
     echo count($history);
@@ -115,7 +115,7 @@ responses that were sent as a string, in order.
       },
       "origin": "76.104.247.1",
       "args": {},
-      "url": "http://httpbin.org/get"
+      "url": "https://httpbin.org/get"
     }
 
     > HEAD /get HTTP/1.1

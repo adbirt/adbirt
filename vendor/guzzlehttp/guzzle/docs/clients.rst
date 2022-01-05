@@ -17,7 +17,7 @@ options.
 base_url
     Configures a base URL for the client so that requests created
     using a relative URL are combined with the ``base_url`` of the client
-    according to section `5.2 of RFC 3986 <http://tools.ietf.org/html/rfc3986#section-5.2>`_.
+    according to section `5.2 of RFC 3986 <https://tools.ietf.org/html/rfc3986#section-5.2>`_.
 
     .. code-block:: php
 
@@ -26,7 +26,7 @@ base_url
         // Send a request to https://github.com/notifications
         $response = $client->get('/notifications');
 
-    `Absolute URLs <http://tools.ietf.org/html/rfc3986#section-4.3>`_ sent
+    `Absolute URLs <https://tools.ietf.org/html/rfc3986#section-4.3>`_ sent
     through a client will not use the base URL of the client.
 
 adapter
@@ -99,7 +99,7 @@ associative array of :ref:`request-options` as the second argument.
 
     $client = new GuzzleHttp\Client();
 
-    $client->put('http://httpbin.org', [
+    $client->put('https://httpbin.org', [
         'headers' => ['X-Foo' => 'Bar'],
         'body' => 'this is the body!',
         'save_to' => '/path/to/local/file',
@@ -121,7 +121,7 @@ a client, a ``GuzzleHttp\Exception\RequestException`` is thrown.
     $client = new Client();
 
     try {
-        $client->get('http://httpbin.org');
+        $client->get('https://httpbin.org');
     } catch (RequestException $e) {
         echo $e->getRequest() . "\n";
         if ($e->hasResponse()) {
@@ -157,7 +157,7 @@ requests over time or sending requests in parallel.
 
 .. code-block:: php
 
-    $request = $client->createRequest('GET', 'http://httpbin.org', [
+    $request = $client->createRequest('GET', 'https://httpbin.org', [
         'headers' => ['X-Foo' => 'Bar']
     ]);
 
@@ -182,9 +182,9 @@ will affect the transfer.
 .. code-block:: php
 
     $requests = [
-        $client->createRequest('GET', 'http://httpbin.org'),
-        $client->createRequest('DELETE', 'http://httpbin.org/delete'),
-        $client->createRequest('PUT', 'http://httpbin.org/put', ['body' => 'test'])
+        $client->createRequest('GET', 'https://httpbin.org'),
+        $client->createRequest('DELETE', 'https://httpbin.org/delete'),
+        $client->createRequest('PUT', 'https://httpbin.org/put', ['body' => 'test'])
     ];
 
     $client->sendAll($requests);
@@ -329,9 +329,9 @@ function ``GuzzleHttp\batch()`` that makes this very simple:
     $client = new GuzzleHttp\Client();
 
     $requests = [
-        $client->createRequest('GET', 'http://httpbin.org/get'),
-        $client->createRequest('HEAD', 'http://httpbin.org/get'),
-        $client->createRequest('PUT', 'http://httpbin.org/put'),
+        $client->createRequest('GET', 'https://httpbin.org/get'),
+        $client->createRequest('HEAD', 'https://httpbin.org/get'),
+        $client->createRequest('PUT', 'https://httpbin.org/put'),
     ];
 
     $results = GuzzleHttp\batch($client, $requests);
@@ -370,7 +370,7 @@ All of the following examples use the following client:
 
 .. code-block:: php
 
-    $client = new GuzzleHttp\Client(['base_url' => 'http://httpbin.org']);
+    $client = new GuzzleHttp\Client(['base_url' => 'https://httpbin.org']);
 
 headers
 -------
@@ -418,7 +418,7 @@ This setting can be set to any of the following types:
   .. code-block:: php
 
       // You can send requests that use a stream resource as the body.
-      $resource = fopen('http://httpbin.org', 'r');
+      $resource = fopen('https://httpbin.org', 'r');
       $client->put('/put', ['body' => $resource]);
 
 - Array
@@ -466,7 +466,7 @@ json
 .. note::
 
     This request option does not support customizing the Content-Type header
-    or any of the options from PHP's `json_encode() <http://www.php.net/manual/en/function.json-encode.php>`_
+    or any of the options from PHP's `json_encode() <https://www.php.net/manual/en/function.json-encode.php>`_
     function. If you need to customize these settings, then you must pass the
     JSON encoded data into the request yourself using the ``body`` request
     option and you must specify the correct Content-Type header using the
@@ -510,7 +510,7 @@ auth
 The built-in authentication types are as follows:
 
 basic
-    Use `basic HTTP authentication <http://www.ietf.org/rfc/rfc2069.txt>`_ in
+    Use `basic HTTP authentication <https://www.ietf.org/rfc/rfc2069.txt>`_ in
     the ``Authorization`` header (the default setting used if none is
     specified).
 
@@ -519,7 +519,7 @@ basic
         $client->get('/get', ['auth' => ['username', 'password']]);
 
 digest
-    Use `digest authentication <http://www.ietf.org/rfc/rfc2069.txt>`_ (must be
+    Use `digest authentication <https://www.ietf.org/rfc/rfc2069.txt>`_ (must be
     supported by the HTTP adapter).
 
     .. code-block:: php
@@ -960,7 +960,7 @@ Pass an associative array to specify HTTP proxies for specific URI schemes
 .. note::
 
     You can provide proxy URLs that contain a scheme, username, and password.
-    For example, ``"http://username:password@192.168.16.1:10"``.
+    For example, ``"https://username:password@192.168.16.1:10"``.
 
 .. _debug-option:
 
@@ -1130,7 +1130,7 @@ Requests emit lifecycle events when they are transferred. A client object has a
         echo 'About to send request: ' . $e->getRequest();
     });
 
-    $client->get('http://httpbin.org/get');
+    $client->get('https://httpbin.org/get');
     // Outputs the request as a string because of the event
 
 See :doc:`events` for more information on the event system used in Guzzle.

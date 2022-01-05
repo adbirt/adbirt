@@ -3,7 +3,7 @@
  * https://github.com/kayahr/jquery-fullscreen-plugin
  * Copyright (C) 2012 Klaus Reimer <k@ailis.de>
  * Licensed under the MIT license
- * (See http://www.opensource.org/licenses/mit-license)
+ * (See https://www.opensource.org/licenses/mit-license)
  */
  
 (function() {

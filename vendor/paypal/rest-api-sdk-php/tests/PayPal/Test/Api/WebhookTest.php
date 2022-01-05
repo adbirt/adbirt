@@ -21,7 +21,7 @@ class WebhookTest extends \PHPUnit_Framework_TestCase
      */
     public static function getJson()
     {
-        return '{"id":"TestSample","url":"http://www.google.com","event_types":' .WebhookEventTypeTest::getJson() . ',"links":' .LinksTest::getJson() . '}';
+        return '{"id":"TestSample","url":"https://www.google.com","event_types":' .WebhookEventTypeTest::getJson() . ',"links":' .LinksTest::getJson() . '}';
     }
 
     /**
@@ -57,7 +57,7 @@ class WebhookTest extends \PHPUnit_Framework_TestCase
     public function testGetters($obj)
     {
         $this->assertEquals($obj->getId(), "TestSample");
-        $this->assertEquals($obj->getUrl(), "http://www.google.com");
+        $this->assertEquals($obj->getUrl(), "https://www.google.com");
         $this->assertEquals($obj->getEventTypes(), WebhookEventTypeTest::getObject());
         $this->assertEquals($obj->getLinks(), LinksTest::getObject());
     }

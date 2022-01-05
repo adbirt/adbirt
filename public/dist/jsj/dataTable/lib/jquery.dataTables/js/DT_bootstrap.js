@@ -1,9 +1,9 @@
 /**
  * DataTable with Bootstrap 2.x
- * http://www.datatables.net/blog/Twitter_Bootstrap_2
+ * https://www.datatables.net/blog/Twitter_Bootstrap_2
  *
  * Added modification for first and last pagination buttons.
- * http://datatables.net/forums/discussion/9279/bootstrap-pagination-first-and-last-buttons/p1
+ * https://datatables.net/forums/discussion/9279/bootstrap-pagination-first-and-last-buttons/p1
  *
  */
 

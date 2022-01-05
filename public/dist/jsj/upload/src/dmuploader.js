@@ -1,10 +1,10 @@
 /*
  * dmuploader.js - Jquery File Uploader - 0.1
- * http://www.daniel.com.uy/projects/jquery-file-uploader/
+ * https://www.daniel.com.uy/projects/jquery-file-uploader/
  * 
  * Copyright (c) 2013 Daniel Morales
  * Dual licensed under the MIT and GPL licenses.
- * http://www.daniel.com.uy/doc/license/
+ * https://www.daniel.com.uy/doc/license/
  */
 
 (function($) {

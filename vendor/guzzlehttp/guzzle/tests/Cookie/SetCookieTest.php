@@ -233,7 +233,7 @@ class SetCookieTest extends \PHPUnit_Framework_TestCase
                     'HttpOnly' => false
                 )
             ),
-            // Some of the following tests are based on http://framework.zend.com/svn/framework/standard/trunk/tests/Zend/Http/CookieTest.php
+            // Some of the following tests are based on https://framework.zend.com/svn/framework/standard/trunk/tests/Zend/Http/CookieTest.php
             array(
                 'justacookie=foo; domain=example.com',
                 array(

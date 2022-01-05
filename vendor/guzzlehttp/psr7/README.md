@@ -1,6 +1,6 @@
 # PSR-7 Message Implementation
 
-This repository contains a full [PSR-7](http://www.php-fig.org/psr/psr-7/)
+This repository contains a full [PSR-7](https://www.php-fig.org/psr/psr-7/)
 message implementation, several stream decorators, and some helpful
 functionality like query string parsing.
 
@@ -65,7 +65,7 @@ then on disk.
 ```php
 use GuzzleHttp\Psr7;
 
-$original = Psr7\stream_for(fopen('http://www.google.com', 'r'));
+$original = Psr7\stream_for(fopen('https://www.google.com', 'r'));
 $stream = new Psr7\CachingStream($original);
 
 $stream->read(1024);
@@ -315,7 +315,7 @@ There are various functions available under the `GuzzleHttp\Psr7` namespace.
 Returns the string representation of an HTTP message.
 
 ```php
-$request = new GuzzleHttp\Psr7\Request('GET', 'http://example.com');
+$request = new GuzzleHttp\Psr7\Request('GET', 'https://example.com');
 echo GuzzleHttp\Psr7\str($request);
 ```
 
@@ -329,7 +329,7 @@ UriInterface for the given value. If the value is already a `UriInterface`, it
 is returned as-is.
 
 ```php
-$uri = GuzzleHttp\Psr7\uri_for('http://example.com');
+$uri = GuzzleHttp\Psr7\uri_for('https://example.com');
 assert($uri === GuzzleHttp\Psr7\uri_for($uri));
 ```
 
@@ -530,7 +530,7 @@ The `GuzzleHttp\Psr7\Uri` class has several static methods to manipulate URIs.
 
 Removes dot segments from a path and returns the new path.
 
-See http://tools.ietf.org/html/rfc3986#section-5.2.4
+See https://tools.ietf.org/html/rfc3986#section-5.2.4
 
 
 ## `GuzzleHttp\Psr7\Uri::resolve`
@@ -539,7 +539,7 @@ See http://tools.ietf.org/html/rfc3986#section-5.2.4
 
 Resolve a base URI with a relative URI and return a new URI.
 
-See http://tools.ietf.org/html/rfc3986#section-5
+See https://tools.ietf.org/html/rfc3986#section-5
 
 
 ## `GuzzleHttp\Psr7\Uri::withQueryValue`

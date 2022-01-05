@@ -22,7 +22,7 @@ git fetch; git checkout master;
 #cd ..;
 
 # Get ApiGen.phar
-wget http://www.apigen.org/apigen.phar
+wget https://www.apigen.org/apigen.phar
 
 # Generate SDK Docs
 php apigen.phar generate --template-theme="bootstrap" -s lib -d ../gh-pages/docs

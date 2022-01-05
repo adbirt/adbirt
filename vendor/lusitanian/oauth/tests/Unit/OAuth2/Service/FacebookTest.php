@@ -200,7 +200,7 @@ class FacebookTest extends \PHPUnit_Framework_TestCase
         $dialogUri = $service->getDialogUri(
             'feed',
             array(
-                'redirect_uri' => 'http://www.facebook.com',
+                'redirect_uri' => 'https://www.facebook.com',
                 'state' => 'Random state'
             )
         );
@@ -227,7 +227,7 @@ class FacebookTest extends \PHPUnit_Framework_TestCase
         $dialogUri = $service->getDialogUri(
             'feed',
             array(
-                'redirect_uri' => 'http://www.facebook.com',
+                'redirect_uri' => 'https://www.facebook.com',
                 'state' => 'Random state'
             )
         );

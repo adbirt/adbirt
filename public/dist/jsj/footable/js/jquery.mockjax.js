@@ -3,13 +3,13 @@
  *
  * Version:  1.5.1
  * Released:
- * Home:   http://github.com/appendto/jquery-mockjax
- * Author:   Jonathan Sharp (http://jdsharp.com)
+ * Home:   https://github.com/appendto/jquery-mockjax
+ * Author:   Jonathan Sharp (https://jdsharp.com)
  * License:  MIT,GPL
  *
  * Copyright (c) 2011 appendTo LLC.
  * Dual licensed under the MIT or GPL licenses.
- * http://appendto.com/open-source-licenses
+ * https://appendto.com/open-source-licenses
  */
 (function($) {
 	var _ajax = $.ajax,

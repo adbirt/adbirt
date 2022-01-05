@@ -14,7 +14,7 @@ class Instagram extends AbstractService
 {
     /**
      * Defined scopes
-     * @link http://instagram.com/developer/authentication/#scope
+     * @link https://instagram.com/developer/authentication/#scope
      */
     const SCOPE_BASIC         = 'basic';
     const SCOPE_PUBLIC_CONTENT = 'public_content';

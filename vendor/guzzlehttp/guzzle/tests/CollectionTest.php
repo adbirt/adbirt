@@ -241,7 +241,7 @@ class CollectionTest extends \PHPUnit_Framework_TestCase
     {
         $c = Collection::fromConfig(array(
             'a' => '123',
-            'base_url' => 'http://www.test.com/'
+            'base_url' => 'https://www.test.com/'
         ), array(
             'a' => 'xyz',
             'b' => 'lol'
@@ -251,7 +251,7 @@ class CollectionTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(array(
             'a' => '123',
             'b' => 'lol',
-            'base_url' => 'http://www.test.com/'
+            'base_url' => 'https://www.test.com/'
         ), $c->toArray());
 
         try {

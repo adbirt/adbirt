@@ -96,16 +96,16 @@ class FunctionsTest extends \PHPUnit_Framework_TestCase
     {
         $client = new Client();
         $responses = [
-            new Response(301, ['Location' => 'http://foo.com/bar']),
+            new Response(301, ['Location' => 'https://foo.com/bar']),
             new Response(200),
             new Response(200),
             new Response(404)
         ];
         $client->getEmitter()->attach(new Mock($responses));
         $requests = [
-            $client->createRequest('GET', 'http://foo.com/baz'),
-            $client->createRequest('HEAD', 'http://httpbin.org/get'),
-            $client->createRequest('PUT', 'http://httpbin.org/put'),
+            $client->createRequest('GET', 'https://foo.com/baz'),
+            $client->createRequest('HEAD', 'https://httpbin.org/get'),
+            $client->createRequest('PUT', 'https://httpbin.org/put'),
         ];
 
         $a = $b = $c = 0;
@@ -139,7 +139,7 @@ class FunctionsTest extends \PHPUnit_Framework_TestCase
     public function testBatchValidatesTheEventFormat()
     {
         $client = new Client();
-        $requests = [$client->createRequest('GET', 'http://foo.com/baz')];
+        $requests = [$client->createRequest('GET', 'https://foo.com/baz')];
         \GuzzleHttp\batch($client, $requests, ['complete' => 'foo']);
     }
 

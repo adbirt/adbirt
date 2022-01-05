@@ -144,7 +144,7 @@ class Plan extends PayPalResourceModel
     }
 
     /**
-     * Time when the billing plan was created. Format YYYY-MM-DDTimeTimezone, as defined in [ISO8601](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * Time when the billing plan was created. Format YYYY-MM-DDTimeTimezone, as defined in [ISO8601](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @param string $create_time
      * 
@@ -157,7 +157,7 @@ class Plan extends PayPalResourceModel
     }
 
     /**
-     * Time when the billing plan was created. Format YYYY-MM-DDTimeTimezone, as defined in [ISO8601](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * Time when the billing plan was created. Format YYYY-MM-DDTimeTimezone, as defined in [ISO8601](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @return string
      */
@@ -167,7 +167,7 @@ class Plan extends PayPalResourceModel
     }
 
     /**
-     * Time when this billing plan was updated. Format YYYY-MM-DDTimeTimezone, as defined in [ISO8601](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * Time when this billing plan was updated. Format YYYY-MM-DDTimeTimezone, as defined in [ISO8601](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @param string $update_time
      * 
@@ -180,7 +180,7 @@ class Plan extends PayPalResourceModel
     }
 
     /**
-     * Time when this billing plan was updated. Format YYYY-MM-DDTimeTimezone, as defined in [ISO8601](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * Time when this billing plan was updated. Format YYYY-MM-DDTimeTimezone, as defined in [ISO8601](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @return string
      */

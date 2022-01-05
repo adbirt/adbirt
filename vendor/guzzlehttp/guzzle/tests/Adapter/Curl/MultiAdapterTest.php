@@ -73,7 +73,7 @@ class MultiAdapterTest extends AbstractCurl
     public function testChecksForCurlException()
     {
         $mh = curl_multi_init();
-        $request = new Request('GET', 'http://httbin.org');
+        $request = new Request('GET', 'https://httbin.org');
         $transaction = $this->getMockBuilder('GuzzleHttp\Adapter\Transaction')
             ->setMethods(['getRequest'])
             ->disableOriginalConstructor()

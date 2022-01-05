@@ -14,13 +14,13 @@ use OAuth\Common\Http\Uri\UriInterface;
  * Linkedin service.
  *
  * @author Antoine Corcy <contact@sbin.dk>
- * @link http://developer.linkedin.com/documents/authentication
+ * @link https://developer.linkedin.com/documents/authentication
  */
 class Linkedin extends AbstractService
 {
     /**
      * Defined scopes
-     * @link http://developer.linkedin.com/documents/authentication#granting
+     * @link https://developer.linkedin.com/documents/authentication#granting
      */
     const SCOPE_R_BASICPROFILE      = 'r_basicprofile';
     const SCOPE_R_FULLPROFILE       = 'r_fullprofile';

@@ -30,7 +30,7 @@ class MembersTest extends PHPUnit_Framework_TestCase {
         $client = new Services_Twilio('AC123', '123', '2010-04-01', $http);
         $queue = $client->account->queues->get('QQ123');
         $firstMember = $queue->members->front();
-        $firstMember->dequeue('http://foo.com');
+        $firstMember->dequeue('https://foo.com');
     }
 
     function testDequeueSid() {
@@ -44,7 +44,7 @@ class MembersTest extends PHPUnit_Framework_TestCase {
         $client = new Services_Twilio('AC123', '123', '2010-04-01', $http);
         $queue = $client->account->queues->get('QQ123');
         $firstMember = $queue->members->get('CA123');
-        $firstMember->dequeue('http://foo.com', 'GET');
+        $firstMember->dequeue('https://foo.com', 'GET');
     }
 
     function testMemberIterate() {

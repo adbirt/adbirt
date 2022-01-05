@@ -31,12 +31,12 @@ class ClientTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf('Symfony\Component\BrowserKit\Response', $client->getInternalResponse());
         $this->assertInstanceOf('Symfony\Component\HttpFoundation\Response', $client->getResponse());
 
-        $client->request('GET', 'http://www.example.com/');
+        $client->request('GET', 'https://www.example.com/');
         $this->assertEquals('Request: /', $client->getResponse()->getContent(), '->doRequest() uses the request handler to make the request');
         $this->assertEquals('www.example.com', $client->getRequest()->getHost(), '->doRequest() uses the request handler to make the request');
 
-        $client->request('GET', 'http://www.example.com/?parameter=http://google.com');
-        $this->assertEquals('http://www.example.com/?parameter='.urlencode('http://google.com'), $client->getRequest()->getUri(), '->doRequest() uses the request handler to make the request');
+        $client->request('GET', 'https://www.example.com/?parameter=https://google.com');
+        $this->assertEquals('https://www.example.com/?parameter='.urlencode('https://google.com'), $client->getRequest()->getUri(), '->doRequest() uses the request handler to make the request');
     }
 
     public function testGetScript()
@@ -57,18 +57,18 @@ class ClientTest extends \PHPUnit_Framework_TestCase
         $m->setAccessible(true);
 
         $expected = array(
-            'foo=bar; expires=Sun, 15 Feb 2009 20:00:00 GMT; domain=http://example.com; path=/foo; secure; httponly',
-            'foo1=bar1; expires=Sun, 15 Feb 2009 20:00:00 GMT; domain=http://example.com; path=/foo; secure; httponly',
+            'foo=bar; expires=Sun, 15 Feb 2009 20:00:00 GMT; domain=https://example.com; path=/foo; secure; httponly',
+            'foo1=bar1; expires=Sun, 15 Feb 2009 20:00:00 GMT; domain=https://example.com; path=/foo; secure; httponly',
         );
 
         $response = new Response();
-        $response->headers->setCookie(new Cookie('foo', 'bar', \DateTime::createFromFormat('j-M-Y H:i:s T', '15-Feb-2009 20:00:00 GMT')->format('U'), '/foo', 'http://example.com', true, true));
+        $response->headers->setCookie(new Cookie('foo', 'bar', \DateTime::createFromFormat('j-M-Y H:i:s T', '15-Feb-2009 20:00:00 GMT')->format('U'), '/foo', 'https://example.com', true, true));
         $domResponse = $m->invoke($client, $response);
         $this->assertEquals($expected[0], $domResponse->getHeader('Set-Cookie'));
 
         $response = new Response();
-        $response->headers->setCookie(new Cookie('foo', 'bar', \DateTime::createFromFormat('j-M-Y H:i:s T', '15-Feb-2009 20:00:00 GMT')->format('U'), '/foo', 'http://example.com', true, true));
-        $response->headers->setCookie(new Cookie('foo1', 'bar1', \DateTime::createFromFormat('j-M-Y H:i:s T', '15-Feb-2009 20:00:00 GMT')->format('U'), '/foo', 'http://example.com', true, true));
+        $response->headers->setCookie(new Cookie('foo', 'bar', \DateTime::createFromFormat('j-M-Y H:i:s T', '15-Feb-2009 20:00:00 GMT')->format('U'), '/foo', 'https://example.com', true, true));
+        $response->headers->setCookie(new Cookie('foo1', 'bar1', \DateTime::createFromFormat('j-M-Y H:i:s T', '15-Feb-2009 20:00:00 GMT')->format('U'), '/foo', 'https://example.com', true, true));
         $domResponse = $m->invoke($client, $response);
         $this->assertEquals($expected[0], $domResponse->getHeader('Set-Cookie'));
         $this->assertEquals($expected, $domResponse->getHeader('Set-Cookie', false));

@@ -158,7 +158,7 @@ class RequestDataCollectorTest extends \PHPUnit_Framework_TestCase
 
     protected function createRequest()
     {
-        $request = Request::create('http://test.com/foo?bar=baz');
+        $request = Request::create('https://test.com/foo?bar=baz');
         $request->attributes->set('foo', 'bar');
         $request->attributes->set('_route', 'foobar');
         $request->attributes->set('_route_params', array('name' => 'foo'));

@@ -99,12 +99,12 @@ $(window).on("load", function () {
 /*
  * jQuery.appear
  * https://github.com/bas2k/jquery.appear/
- * http://code.google.com/p/jquery-appear/
- * http://bas2k.ru/
+ * https://code.google.com/p/jquery-appear/
+ * https://bas2k.ru/
  *
  * Copyright (c) 2009 Michael Hixson
  * Copyright (c) 2012-2014 Alexander Brovikov
- * Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php)
+ * Licensed under the MIT license (https://www.opensource.org/licenses/mit-license.php)
  */
 (function ($) {
     $.fn.appear = function (fn, options) {
@@ -139,7 +139,7 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
 /*!
  * jquery.counterup.js 2.1.0
  *
- * Copyright 2013, Benjamin Intal http://gambit.ph @bfintal
+ * Copyright 2013, Benjamin Intal https://gambit.ph @bfintal
  * Released under the GPL v2 License
  *
  * Amended by Jeremy Paris, Ciro Mattia Gonano and others

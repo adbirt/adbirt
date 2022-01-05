@@ -656,7 +656,7 @@ class Inline
      *
      * @return string The regular expression
      *
-     * @see http://www.yaml.org/spec/1.2/spec.html#id2761573
+     * @see https://www.yaml.org/spec/1.2/spec.html#id2761573
      */
     private static function getTimestampRegex()
     {

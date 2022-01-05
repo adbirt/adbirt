@@ -52,15 +52,15 @@
                                 <div class="gap"></div>
                                 <div class="gap"></div><br>
                                 <a href="https://www.payza.com" target="_blank"><img
-                                        src="http://localhost/wallet/public/uploads/payza.png" alt="Fortumo" width="80"></a>
+                                        src="https://localhost/wallet/public/uploads/payza.png" alt="Fortumo" width="80"></a>
                                 <a href="https://fortumo.com/" target="_blank"><img
-                                        src="http://localhost/wallet/public/uploads/fortumo.png" alt="Fortumo"
+                                        src="https://localhost/wallet/public/uploads/fortumo.png" alt="Fortumo"
                                         width="80"></a>
                                 <a href="https://stripe.com/" target="_blank"><img
-                                        src="http://localhost/wallet/public/uploads/stripe.png" alt="Fortumo"
+                                        src="https://localhost/wallet/public/uploads/stripe.png" alt="Fortumo"
                                         width="80"></a>
                                 <a href="https://www.skrill.com" target="_blank"><img
-                                        src="http://localhost/wallet/public/uploads/skrill.gif" alt="Fortumo"
+                                        src="https://localhost/wallet/public/uploads/skrill.gif" alt="Fortumo"
                                         width="80"></a>
                             </center>
                             <br>

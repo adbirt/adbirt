@@ -1,6 +1,6 @@
 /*
 #
-# More info at [www.dropzonejs.com](http://www.dropzonejs.com)
+# More info at [www.dropzonejs.com](https://www.dropzonejs.com)
 # 
 # Copyright (c) 2012, Matias Meno  
 # 
@@ -1328,8 +1328,8 @@
   # Version: 1.2
   #
   # URL:
-  # http://javascript.nwbox.com/ContentLoaded/
-  # http://javascript.nwbox.com/ContentLoaded/MIT-LICENSE
+  # https://javascript.nwbox.com/ContentLoaded/
+  # https://javascript.nwbox.com/ContentLoaded/MIT-LICENSE
   */
 
 

@@ -216,7 +216,7 @@
                                             <td style="padding: 20px 0 40px 0;">
                                                 <table cellpadding="0" cellspacing="0" border="0" width="100%">
                                                     <tr>
-                                                        <td align="center" bgcolor="#ffffff" valign="middle"><a href="http://alistapart.com/article/can-email-be-responsive/" target="_blank"><img src="https://www.adbirt.com/public/images/fluid-images.jpg" width="240" height="130" style="display: block; color: #666666; font-family: Helvetica, arial, sans-serif; font-size: 13px; width: 240px; height: 130px;" alt="Fluid images" border="0" class="img-max"></a></td>
+                                                        <td align="center" bgcolor="#ffffff" valign="middle"><a href="https://alistapart.com/article/can-email-be-responsive/" target="_blank"><img src="https://www.adbirt.com/public/images/fluid-images.jpg" width="240" height="130" style="display: block; color: #666666; font-family: Helvetica, arial, sans-serif; font-size: 13px; width: 240px; height: 130px;" alt="Fluid images" border="0" class="img-max"></a></td>
                                                     </tr>
                                                     <tr>
                                                         <td align="center" style="padding: 15px 0 0 0; font-family: Arial, sans-serif; color: #333333; font-size: 20px;" bgcolor="#ffffff">Cost Per Click</td>
@@ -234,7 +234,7 @@
                                             <td style="padding: 20px 0 40px 0;">
                                                 <table cellpadding="0" cellspacing="0" border="0" width="100%">
                                                     <tr>
-                                                        <td align="center" bgcolor="#ffffff" valign="middle"><a href="http://alistapart.com/article/can-email-be-responsive/" target="_blank"><img src="https://www.adbirt.com/public/images/fluid-structure.jpg" width="240" height="130" style="display: block; color: #666666; font-family: Helvetica, arial, sans-serif; font-size: 13px; width: 240px; height: 130px;" alt="Fluid structures" border="0" class="img-max"></a></td>
+                                                        <td align="center" bgcolor="#ffffff" valign="middle"><a href="https://alistapart.com/article/can-email-be-responsive/" target="_blank"><img src="https://www.adbirt.com/public/images/fluid-structure.jpg" width="240" height="130" style="display: block; color: #666666; font-family: Helvetica, arial, sans-serif; font-size: 13px; width: 240px; height: 130px;" alt="Fluid structures" border="0" class="img-max"></a></td>
                                                     </tr>
                                                     <tr>
                                                         <td align="center" style="padding: 15px 0 0 0; font-family: Arial, sans-serif; color: #333333; font-size: 20px;" bgcolor="#ffffff">Cost Per Action</td>
@@ -263,7 +263,7 @@
                                             <td style="padding: 20px 0 40px 0;">
                                                 <table cellpadding="0" cellspacing="0" border="0" width="100%">
                                                     <tr>
-                                                        <td align="center" bgcolor="#ffffff" valign="middle"><a href="http://alistapart.com/article/can-email-be-responsive/" target="_blank"><img src="https://www.adbirt.com/public/images/media-queries.jpg" width="240" height="130" style="display: block; color: #666666; font-family: Helvetica, arial, sans-serif; font-size: 13px; width: 240px; height: 130px;" alt="Media queries" border="0" class="img-max"></a></td>
+                                                        <td align="center" bgcolor="#ffffff" valign="middle"><a href="https://alistapart.com/article/can-email-be-responsive/" target="_blank"><img src="https://www.adbirt.com/public/images/media-queries.jpg" width="240" height="130" style="display: block; color: #666666; font-family: Helvetica, arial, sans-serif; font-size: 13px; width: 240px; height: 130px;" alt="Media queries" border="0" class="img-max"></a></td>
                                                     </tr>
                                                     <tr>
                                                         <td align="center" style="padding: 15px 0 0 0; font-family: Arial, sans-serif; color: #333333; font-size: 20px;" bgcolor="#ffffff">Add Ads to your Website</td>
@@ -281,7 +281,7 @@
                                             <td style="padding: 20px 0 40px 0;">
                                                 <table cellpadding="0" cellspacing="0" border="0" width="100%">
                                                     <tr>
-                                                        <td align="center" bgcolor="#ffffff" valign="middle"><a href="http://alistapart.com/article/can-email-be-responsive/" target="_blank"><img src="https://www.adbirt.com/public/images/bulletproof-buttons.jpg" width="240" height="130" style="display: block; color: #666666; font-family: Helvetica, arial, sans-serif; font-size: 13px; width: 240px; height: 130px;" alt="Bulletproof buttons" border="0" class="img-max"></a></td>
+                                                        <td align="center" bgcolor="#ffffff" valign="middle"><a href="https://alistapart.com/article/can-email-be-responsive/" target="_blank"><img src="https://www.adbirt.com/public/images/bulletproof-buttons.jpg" width="240" height="130" style="display: block; color: #666666; font-family: Helvetica, arial, sans-serif; font-size: 13px; width: 240px; height: 130px;" alt="Bulletproof buttons" border="0" class="img-max"></a></td>
                                                     </tr>
                                                     <tr>
                                                         <td align="center" style="padding: 15px 0 0 0; font-family: Arial, sans-serif; color: #333333; font-size: 20px;" bgcolor="#ffffff">View Ads Performance</td>

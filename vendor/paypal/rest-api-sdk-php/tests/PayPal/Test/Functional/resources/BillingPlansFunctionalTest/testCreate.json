@@ -82,8 +82,8 @@
                     "value": "1",
                     "currency": "USD"
                 },
-                "return_url": "http://www.paypal.com",
-                "cancel_url": "http://www.yahoo.com",
+                "return_url": "https://www.paypal.com",
+                "cancel_url": "https://www.yahoo.com",
                 "auto_bill_amount": "YES",
                 "initial_fail_amount_action": "CONTINUE",
                 "max_fail_attempts": "0"
@@ -167,8 +167,8 @@
                     "value": "1"
                 },
                 "max_fail_attempts": "0",
-                "return_url": "http://www.paypal.com",
-                "cancel_url": "http://www.yahoo.com",
+                "return_url": "https://www.paypal.com",
+                "cancel_url": "https://www.yahoo.com",
                 "auto_bill_amount": "YES",
                 "initial_fail_amount_action": "CONTINUE"
             },

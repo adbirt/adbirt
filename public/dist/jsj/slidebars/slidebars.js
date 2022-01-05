@@ -1,13 +1,13 @@
 // -----------------------------------
 // Slidebars
 // Development version, do not use this in your site, use the latest in the distribution folder.
-// http://plugins.adchsm.me/slidebars/
+// https://plugins.adchsm.me/slidebars/
 //
 // Written by Adam Smith
-// http://www.adchsm.me/
+// https://www.adchsm.me/
 //
 // Released under MIT License
-// http://plugins.adchsm.me/slidebars/license.txt
+// https://plugins.adchsm.me/slidebars/license.txt
 //
 // ---------------------
 // Index of Slidebars.js

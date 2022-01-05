@@ -7,13 +7,13 @@
         "json",
         "rest"
     ],
-    "homepage": "http://fractal.thephpleague.com/",
+    "homepage": "https://fractal.thephpleague.com/",
     "license": "MIT",
     "authors": [
         {
             "name": "Phil Sturgeon",
             "email": "me@philsturgeon.uk",
-            "homepage": "http://philsturgeon.uk/",
+            "homepage": "https://philsturgeon.uk/",
             "role": "Developer"
         }
     ],

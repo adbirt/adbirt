@@ -15,7 +15,7 @@ namespace Symfony\Component\Routing\Generator\Dumper;
  * PhpGeneratorDumper creates a PHP class able to generate URLs for a given set of routes.
  *
  * @author Fabien Potencier <fabien@symfony.com>
- * @author Tobias Schultze <http://tobion.de>
+ * @author Tobias Schultze <https://tobion.de>
  */
 class PhpGeneratorDumper extends GeneratorDumper
 {

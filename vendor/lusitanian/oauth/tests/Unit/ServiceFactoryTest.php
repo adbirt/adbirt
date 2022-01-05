@@ -6,7 +6,7 @@
  * @author     Chris Heng <bigblah@gmail.com>
  * @author     Pieter Hordijk <info@pieterhordijk.com>
  * @copyright  Copyright (c) 2013 The authors
- * @license    http://www.opensource.org/licenses/mit-license.html  MIT License
+ * @license    https://www.opensource.org/licenses/mit-license.html  MIT License
  */
 namespace OAuth\Unit;
 

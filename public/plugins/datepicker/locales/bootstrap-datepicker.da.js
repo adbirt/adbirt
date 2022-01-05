@@ -1,6 +1,6 @@
 /**
  * Danish translation for bootstrap-datepicker
- * Christian Pedersen <http://github.com/chripede>
+ * Christian Pedersen <https://github.com/chripede>
  */
 ;(function($){
 	$.fn.datepicker.dates['da'] = {

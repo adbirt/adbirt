@@ -32,7 +32,7 @@ code, or which contain a certain pattern.
 
     $client = new Services_Twilio($accountSid, $authToken);
 
-    // Full parameter documentation at http://www.twilio.com/docs/api/rest/available-phone-numbers#local
+    // Full parameter documentation at https://www.twilio.com/docs/api/rest/available-phone-numbers#local
     $params = array('AreaCode' => '925', 'Contains' => 'hi');
     $numbers = $client->account->available_phone_numbers->getList('US', 'Local', $params);
     foreach($numbers->available_phone_numbers as $number) {
@@ -94,7 +94,7 @@ Tying the two together, you can search for a number, and then purchase it.
 
     $client = new Services_Twilio($accountSid, $authToken);
 
-    // Full parameter documentation at http://www.twilio.com/docs/api/rest/available-phone-numbers#local
+    // Full parameter documentation at https://www.twilio.com/docs/api/rest/available-phone-numbers#local
     $params = array('AreaCode' => '800', 'Contains' => 'hi');
 
     $numbers = $client->account->available_phone_numbers->getList('CA', 'TollFree', $params);
@@ -153,7 +153,7 @@ Updating a Number
 You can easily update any of the properties of your
 phone number. A full list of parameters is available
 in the `Incoming Phone Number REST API Documentation.
-<http://www.twilio.com/docs/api/rest/incoming-phone-numbers#instance-post>`_
+<https://www.twilio.com/docs/api/rest/incoming-phone-numbers#instance-post>`_
 
 .. code-block:: php
 

@@ -2,16 +2,16 @@
 
 /**
  * @author   Neuman Vong neuman@twilio.com
- * @license  http://creativecommons.org/licenses/MIT/ MIT
- * @link     http://pear.php.net/package/Services_Twilio
+ * @license  https://creativecommons.org/licenses/MIT/ MIT
+ * @link     https://pear.php.net/package/Services_Twilio
  */
 
 /**
  * Abstraction of a list resource from the Twilio API.
  *
  * The list resource implements the `IteratorAggregate
- * <http://php.net/manual/en/class.iteratoraggregate.php>`_ and the `Countable
- * <http://php.net/manual/en/class.countable.php>`_ interfaces.
+ * <https://php.net/manual/en/class.iteratoraggregate.php>`_ and the `Countable
+ * <https://php.net/manual/en/class.countable.php>`_ interfaces.
  *
  */
 abstract class Services_Twilio_ListResource extends Services_Twilio_Resource

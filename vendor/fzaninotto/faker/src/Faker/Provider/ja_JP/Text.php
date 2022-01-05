@@ -19,7 +19,7 @@ class Text extends \Faker\Provider\Text
      * Author: 宮沢賢治 Kenji Miyazawa
      * Language: Japanese
      *
-     * @see http://www.aozora.gr.jp/cards/000081/files/43737_19215.html
+     * @see https://www.aozora.gr.jp/cards/000081/files/43737_19215.html
      * @var string
      */
     protected static $baseText = <<<'EOT'

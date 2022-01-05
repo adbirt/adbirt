@@ -1,6 +1,6 @@
 /*
  * Gritter for jQuery
- * http://www.boedesign.com/
+ * https://www.boedesign.com/
  *
  * Copyright (c) 2012 Jordan Boesch
  * Dual licensed under the MIT and GPL licenses.

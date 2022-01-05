@@ -55,7 +55,7 @@ class RequestContextTest extends \PHPUnit_Framework_TestCase
         $this->assertSame(123, $requestContext->getHttpPort());
         $this->assertSame(444, $requestContext->getHttpsPort());
 
-        $request = Request::create('http://test.com:8080/foo?bar=baz');
+        $request = Request::create('https://test.com:8080/foo?bar=baz');
         $requestContext = new RequestContext();
         $requestContext->setHttpsPort(567);
         $requestContext->fromRequest($request);

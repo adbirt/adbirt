@@ -1,6 +1,6 @@
 # Changes in PHPUnit 4.3
 
-All notable changes of the PHPUnit 4.3 release series are documented in this file using the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
+All notable changes of the PHPUnit 4.3 release series are documented in this file using the [Keep a CHANGELOG](https://keepachangelog.com/) principles.
 
 ## [4.3.5] - 2014-11-11
 

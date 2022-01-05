@@ -32,7 +32,7 @@
                 "id": "XP-RFV4-PVD8-AGHJ-8E5J",
                 "name":"someName2",
                 "presentation":{
-                    "logo_image":"http://www.ebay.com"
+                    "logo_image":"https://www.ebay.com"
                 },
                 "input_fields":{
                     "no_shipping":1,
@@ -40,7 +40,7 @@
                 },
                 "flow_config":{
                     "landing_page_type":"billing",
-                    "bank_txn_pending_url":"http://www.ebay.com"
+                    "bank_txn_pending_url":"https://www.ebay.com"
                 }
             },
             {
@@ -48,28 +48,28 @@
                 "name": "someName2",
                 "flow_config": {
                     "landing_page_type": "billing",
-                    "bank_txn_pending_url": "http://www.ebay.com"
+                    "bank_txn_pending_url": "https://www.ebay.com"
                 },
                 "input_fields": {
                     "no_shipping": 1,
                     "address_override": 1
                 },
                 "presentation": {
-                    "logo_image": "http://www.ebay.com"
+                    "logo_image": "https://www.ebay.com"
                 }
             },
             {
                 "id": "XP-RFV4-PVD8-AGHJ-8E5J",
                 "name": "someName2",
                 "flow_config": {
-                    "bank_txn_pending_url": "http://www.ebay.com"
+                    "bank_txn_pending_url": "https://www.ebay.com"
                 },
                 "input_fields": {
                     "no_shipping": 1,
                     "address_override": 1
                 },
                 "presentation": {
-                    "logo_image": "http://www.ebay.com"
+                    "logo_image": "https://www.ebay.com"
                 }
             }
         ]

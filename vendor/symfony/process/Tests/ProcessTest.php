@@ -414,7 +414,7 @@ class ProcessTest extends \PHPUnit_Framework_TestCase
     public function testZeroAsOutput()
     {
         if ('\\' === DIRECTORY_SEPARATOR) {
-            // see http://stackoverflow.com/questions/7105433/windows-batch-echo-without-new-line
+            // see https://stackoverflow.com/questions/7105433/windows-batch-echo-without-new-line
             $p = $this->getProcess('echo | set /p dummyName=0');
         } else {
             $p = $this->getProcess('printf 0');

@@ -1,6 +1,6 @@
-﻿/*
+/*
  Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
- For licensing, see LICENSE.html or http://ckeditor.com/license
+ For licensing, see LICENSE.html or https://ckeditor.com/license
 */
 (function(){function w(a){if(!a)throw"Languages-by-groups list are required for construct selectbox";var c=[],d="",f;for(f in a)for(var g in a[f]){var h=a[f][g];"en_US"==h?d=h:c.push(h)}c.sort();d&&c.unshift(d);return{getCurrentLangGroup:function(c){a:{for(var d in a)for(var f in a[d])if(f.toUpperCase()===c.toUpperCase()){c=d;break a}c=""}return c},setLangList:function(){var c={},d;for(d in a)for(var f in a[d])c[a[d][f]]=f;return c}()}}var e=function(){var a=function(a,b,f){var f=f||{},g=f.expires;
 if("number"==typeof g&&g){var h=new Date;h.setTime(h.getTime()+1E3*g);g=f.expires=h}g&&g.toUTCString&&(f.expires=g.toUTCString());var b=encodeURIComponent(b),a=a+"="+b,e;for(e in f)b=f[e],a+="; "+e,!0!==b&&(a+="="+b);document.cookie=a};return{postMessage:{init:function(a){document.addEventListener?window.addEventListener("message",a,!1):window.attachEvent("onmessage",a)},send:function(a){var b=a.fn||null,f=a.id||"",g=a.target||window,h=a.message||{id:f};"[object Object]"==Object.prototype.toString.call(a.message)&&

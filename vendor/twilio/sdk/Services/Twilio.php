@@ -2,7 +2,7 @@
 
 /*
  * Author:   Neuman Vong neuman@twilio.com
- * License:  http://creativecommons.org/licenses/MIT/ MIT
+ * License:  https://creativecommons.org/licenses/MIT/ MIT
  * Link:     https://twilio-php.readthedocs.org/en/latest/
  */
 
@@ -46,7 +46,7 @@ abstract class Base_Services_Twilio extends Services_Twilio_Resource
 
         if (null === $_http) {
             if (!in_array('openssl', get_loaded_extensions())) {
-                throw new Services_Twilio_HttpException("The OpenSSL extension is required but not currently enabled. For more information, see http://php.net/manual/en/book.openssl.php");
+                throw new Services_Twilio_HttpException("The OpenSSL extension is required but not currently enabled. For more information, see https://php.net/manual/en/book.openssl.php");
             }
             if (in_array('curl', get_loaded_extensions())) {
                 $_http = new Services_Twilio_TinyHttp(

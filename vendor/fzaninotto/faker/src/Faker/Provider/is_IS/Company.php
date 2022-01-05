@@ -35,7 +35,7 @@ class Company extends \Faker\Provider\Company
     protected static $companySuffix = array('ehf.', 'hf.', 'sf.');
 
     /**
-     * @link http://www.rsk.is/atvinnurekstur/virdisaukaskattur/
+     * @link https://www.rsk.is/atvinnurekstur/virdisaukaskattur/
      *
      * @var string VSK number format.
      */

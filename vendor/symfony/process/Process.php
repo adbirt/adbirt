@@ -387,7 +387,7 @@ class Process
     /**
      * Sends a POSIX signal to the process.
      *
-     * @param int $signal A valid POSIX signal (see http://www.php.net/manual/en/pcntl.constants.php)
+     * @param int $signal A valid POSIX signal (see https://www.php.net/manual/en/pcntl.constants.php)
      *
      * @return Process
      *
@@ -595,8 +595,8 @@ class Process
      *
      * @return null|string A string representation for the exit status code, null if the Process is not terminated
      *
-     * @see http://tldp.org/LDP/abs/html/exitcodes.html
-     * @see http://en.wikipedia.org/wiki/Unix_signal
+     * @see https://tldp.org/LDP/abs/html/exitcodes.html
+     * @see https://en.wikipedia.org/wiki/Unix_signal
      */
     public function getExitCodeText()
     {
@@ -1422,7 +1422,7 @@ class Process
     /**
      * Sends a POSIX signal to the process.
      *
-     * @param int  $signal         A valid POSIX signal (see http://www.php.net/manual/en/pcntl.constants.php)
+     * @param int  $signal         A valid POSIX signal (see https://www.php.net/manual/en/pcntl.constants.php)
      * @param bool $throwException Whether to throw exception in case signal failed
      *
      * @return bool True if the signal was sent successfully, false otherwise

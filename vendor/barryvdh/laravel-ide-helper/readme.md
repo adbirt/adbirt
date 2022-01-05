@@ -158,7 +158,7 @@ Pre-generated example: https://gist.github.com/barryvdh/bb6ffc5d11e0a75dba67
 
 ### License
 
-The Laravel IDE Helper Generator is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+The Laravel IDE Helper Generator is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT)
 
 
 [ico-version]: https://img.shields.io/packagist/v/barryvdh/laravel-ide-helper.svg?style=flat-square

@@ -17,7 +17,7 @@ class MerchantPreferencesTest extends \PHPUnit_Framework_TestCase
      */
     public static function getJson()
     {
-        return '{"id":"TestSample","setup_fee":' .CurrencyTest::getJson() . ',"cancel_url":"http://www.google.com","return_url":"http://www.google.com","notify_url":"http://www.google.com","max_fail_attempts":"TestSample","auto_bill_amount":"TestSample","initial_fail_amount_action":"TestSample","accepted_payment_type":"TestSample","char_set":"TestSample"}';
+        return '{"id":"TestSample","setup_fee":' .CurrencyTest::getJson() . ',"cancel_url":"https://www.google.com","return_url":"https://www.google.com","notify_url":"https://www.google.com","max_fail_attempts":"TestSample","auto_bill_amount":"TestSample","initial_fail_amount_action":"TestSample","accepted_payment_type":"TestSample","char_set":"TestSample"}';
     }
 
     /**
@@ -60,9 +60,9 @@ class MerchantPreferencesTest extends \PHPUnit_Framework_TestCase
     {
         $this->assertEquals($obj->getId(), "TestSample");
         $this->assertEquals($obj->getSetupFee(), CurrencyTest::getObject());
-        $this->assertEquals($obj->getCancelUrl(), "http://www.google.com");
-        $this->assertEquals($obj->getReturnUrl(), "http://www.google.com");
-        $this->assertEquals($obj->getNotifyUrl(), "http://www.google.com");
+        $this->assertEquals($obj->getCancelUrl(), "https://www.google.com");
+        $this->assertEquals($obj->getReturnUrl(), "https://www.google.com");
+        $this->assertEquals($obj->getNotifyUrl(), "https://www.google.com");
         $this->assertEquals($obj->getMaxFailAttempts(), "TestSample");
         $this->assertEquals($obj->getAutoBillAmount(), "TestSample");
         $this->assertEquals($obj->getInitialFailAmountAction(), "TestSample");

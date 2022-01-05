@@ -3,11 +3,11 @@
 * Clockface timepicker for Twitter Bootstrap
 *
 * Confusion with noon and midnight: 
-* http://en.wikipedia.org/wiki/12-hour_clock
+* https://en.wikipedia.org/wiki/12-hour_clock
 * Here considered '00:00 am' as midnight and '12:00 pm' as noon.
 *
 * Author: Vitaliy Potapov
-* Project page: http://github.com/vitalets/clockface
+* Project page: https://github.com/vitalets/clockface
 * Copyright (c) 2012 Vitaliy Potapov. Released under MIT License.
 **/
 (function ($) {
@@ -423,7 +423,7 @@
             } else {
               //if parse with separator failed, search for 1,4-digit block and process it
               //use reversed string to start from end (usefull with full dates)
-              //see http://stackoverflow.com/questions/141348/what-is-the-best-way-to-parse-a-time-into-a-date-object-from-user-input-in-javas
+              //see https://stackoverflow.com/questions/141348/what-is-the-best-way-to-parse-a-time-into-a-date-object-from-user-input-in-javas
               value = value.split('').reverse().join('').replace(/\s/g, '');
               parts = value.match(this.regexpNoSep);
               if(parts && parts.length) {
@@ -483,7 +483,7 @@
     
             //parse from string
             //use reversed string and regexp to parse 2-digit minutes first
-            //see http://stackoverflow.com/questions/141348/what-is-the-best-way-to-parse-a-time-into-a-date-object-from-user-input-in-javas
+            //see https://stackoverflow.com/questions/141348/what-is-the-best-way-to-parse-a-time-into-a-date-object-from-user-input-in-javas
             //this.regexp = new RegExp('(a|p)?\\s*((\\d\\d?)' + sep + ')?(\\d\\d?)', 'i');
 
             //regexp, used with separator
@@ -573,7 +573,7 @@
     };  
     
     $.fn.clockface.defaults = {
-        //see http://momentjs.com/docs/#/displaying/format/
+        //see https://momentjs.com/docs/#/displaying/format/
         format: 'H:mm',
         trigger: 'focus' //focus|manual
     };

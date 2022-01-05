@@ -8,7 +8,7 @@ class Address extends \Faker\Provider\en_US\Address
         '{{lastName}} {{streetSuffix}}'
     );
 
-    //http://en.wikipedia.org/wiki/Postal_addresses_in_the_Philippines
+    //https://en.wikipedia.org/wiki/Postal_addresses_in_the_Philippines
     protected static $addressFormats = array(
         '{{streetAddress}}, {{barangay}}, {{city}} {{postcode}} {{province}}', '{{streetAddress}}, {{municipality}} {{postcode}} {{province}}'
     );
@@ -16,7 +16,7 @@ class Address extends \Faker\Provider\en_US\Address
     protected static $buildingNumber = array('##A', '##', '##A/##', '##/##');
     protected static $postcode = array('####');
 
-    //http://en.wikipedia.org/wiki/Provinces_of_the_Philippines
+    //https://en.wikipedia.org/wiki/Provinces_of_the_Philippines
     protected static $province = array(
         'Abra', 'Agusan del Norte', 'Agusan del Sur', 'Aklan', 'Albay',
         'Antique', 'Apayao', 'Aurora', 'Basilan', 'Bataan', 'Batanes',
@@ -40,7 +40,7 @@ class Address extends \Faker\Provider\en_US\Address
         'Zamboanga del Sur', 'Zamboanga Sibugay', 'Metro Manila'
     );
 
-    //http://en.wikipedia.org/wiki/List_of_cities_in_the_Philippines
+    //https://en.wikipedia.org/wiki/List_of_cities_in_the_Philippines
     protected static $city = array(
         'Caloocan', 'Las Piñas', 'Makati', 'Malabon', 'Mandaluyong',
         'Manila', 'Marikina', 'Muntinlupa', 'Navotas', 'Parañaque', 'Pasay',
@@ -70,7 +70,7 @@ class Address extends \Faker\Provider\en_US\Address
         'Dapitan', 'Dipolog', 'Pagadian', 'Zamboanga City'
     );
 
-    //http://en.wikipedia.org/wiki/List_of_Philippine_cities_and_municipalities_by_population
+    //https://en.wikipedia.org/wiki/List_of_Philippine_cities_and_municipalities_by_population
     protected static $municipality = array(
         'Bangued', 'Boliney', 'Bucay', 'Bucloc', 'Daguioman', 'Danglas',
         'Dolores', 'La Paz', 'Lacub', 'Lagangilang', 'Lagayan', 'Langiden',

@@ -173,7 +173,7 @@ $fb = \OAuth::consumer('Facebook');
 Optionally, add a second parameter with the URL which the service needs to redirect to, otherwise it will redirect to the current URL.
 
 ```php
-$fb = \OAuth::consumer('Facebook', 'http://url.to.redirect.to');
+$fb = \OAuth::consumer('Facebook', 'https://url.to.redirect.to');
 ```
 
 ## Usage examples

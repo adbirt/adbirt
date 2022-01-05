@@ -178,7 +178,7 @@ class Miscellaneous extends Base
     );
 
     /**
-     * @link http://en.wikipedia.org/wiki/ISO_4217
+     * @link https://en.wikipedia.org/wiki/ISO_4217
      * On date of 2015-01-10
      */
     protected static $currencyCode = array(

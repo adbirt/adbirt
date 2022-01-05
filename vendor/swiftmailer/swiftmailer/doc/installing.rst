@@ -86,4 +86,4 @@ temporarily change the internal encoding to ``ASCII`` when sending an email:
       mb_internal_encoding($mbEncoding);
     }
 
-.. _`GitHub`: http://github.com/swiftmailer/swiftmailer
+.. _`GitHub`: https://github.com/swiftmailer/swiftmailer

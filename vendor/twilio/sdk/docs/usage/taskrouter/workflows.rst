@@ -21,8 +21,8 @@ Creating a Workflow
 	// set workflow parameters
 	$friendlyName = 'Example Workflow';
 	$configuration = '{"task_routing":{"default_filter":{"task_queue_sid":"YOUR_TASK_QUEUE_SID"}}}';
-	$assignmentCallbackUrl = 'http://exampleCallbackUrl.org'; 
-	$fallbackAssignmentCallbackUrl = 'http://exampleFallbackUrl.org';
+	$assignmentCallbackUrl = 'https://exampleCallbackUrl.org'; 
+	$fallbackAssignmentCallbackUrl = 'https://exampleFallbackUrl.org';
 	$taskReservationTimeout = 50;
 
 	// create a Workflow
@@ -50,7 +50,7 @@ This example updates the above workflow's configuration and task reservation tim
 		
 		// updated workflow parameters 
 		$updatedConfiguration = '{"task_routing":{"default_filter":{"task_queue_sid" : "YOUR_UPDATED_TASK_QUEUE_SID"}}}';
-		$updatedFallbackAssignmentUrl = 'http://updatedFallbackAssignmentUrl.org';
+		$updatedFallbackAssignmentUrl = 'https://updatedFallbackAssignmentUrl.org';
 		$updatedTaskReservationTimeout = 150; 
 
 		// update workflow 

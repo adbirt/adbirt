@@ -28,7 +28,7 @@ class Server
     private static $client;
 
     public static $started;
-    public static $url = 'http://127.0.0.1:8125/';
+    public static $url = 'https://127.0.0.1:8125/';
     public static $port = 8125;
 
     /**

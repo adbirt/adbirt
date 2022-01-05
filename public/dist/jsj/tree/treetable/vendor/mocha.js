@@ -71,7 +71,7 @@ require.register("browser/diff.js", function(module, exports, require){
  * 
  * These methods are based on the implementation proposed in
  * "An O(ND) Difference Algorithm and its Variations" (Myers, 1986).
- * http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.4.6927
+ * https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.4.6927
  */
 var JsDiff = (function() {
   function clonePath(path) {

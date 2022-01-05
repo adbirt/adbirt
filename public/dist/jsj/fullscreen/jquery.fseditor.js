@@ -3,12 +3,12 @@
  jQuery Fullscreen Editor v1.0
  Fullscreen text editor plugin for jQuery.
 
- :For more details visit http://github.com/burakson/fseditor
+ :For more details visit https://github.com/burakson/fseditor
 
  - Burak Son <hello@burakson.com>
- - http://github.com/burakson
+ - https://github.com/burakson
 
- Licensed under MIT - http://opensource.org/licenses/MIT
+ Licensed under MIT - https://opensource.org/licenses/MIT
 
 */
 (function($) {

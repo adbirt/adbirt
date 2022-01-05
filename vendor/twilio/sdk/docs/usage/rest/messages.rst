@@ -17,7 +17,7 @@ send outgoing SMS or MMS messages.
       '+14085551234', // From a Twilio number in your account
       '+12125551234', // Text any number
       'Hello monkey!',                          // Message body (if any)
-      array('http://example.com/image.jpg'),    // An array of MediaUrls
+      array('https://example.com/image.jpg'),    // An array of MediaUrls
     );
 
     echo $message->sid;

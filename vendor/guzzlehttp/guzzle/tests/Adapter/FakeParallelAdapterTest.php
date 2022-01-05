@@ -18,8 +18,8 @@ class FakeParallelAdapterTest extends \PHPUnit_Framework_TestCase
     {
         $client = new Client();
         $requests = [
-            $client->createRequest('GET', 'http://httbin.org'),
-            $client->createRequest('HEAD', 'http://httbin.org'),
+            $client->createRequest('GET', 'https://httbin.org'),
+            $client->createRequest('HEAD', 'https://httbin.org'),
         ];
 
         $sent = [];
@@ -37,7 +37,7 @@ class FakeParallelAdapterTest extends \PHPUnit_Framework_TestCase
     public function testThrowsImmediatelyIfInstructed()
     {
         $client = new Client();
-        $request = $client->createRequest('GET', 'http://httbin.org');
+        $request = $client->createRequest('GET', 'https://httbin.org');
         $request->getEmitter()->on('error', function (ErrorEvent $e) {
             $e->throwImmediately(true);
         });

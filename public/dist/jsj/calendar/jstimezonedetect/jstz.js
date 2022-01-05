@@ -4,10 +4,10 @@
  * @name jsTimezoneDetect
  * @version 1.0.5
  * @author Jon Nylander
- * @license MIT License - http://www.opensource.org/licenses/mit-license.php
+ * @license MIT License - https://www.opensource.org/licenses/mit-license.php
  *
  * For usage and examples, visit:
- * http://pellepim.bitbucket.org/jstz/
+ * https://pellepim.bitbucket.org/jstz/
  *
  * Copyright (c) Jon Nylander
  */

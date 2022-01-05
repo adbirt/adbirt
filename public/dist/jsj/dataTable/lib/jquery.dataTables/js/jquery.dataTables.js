@@ -10,14 +10,14 @@
  *
  * This source file is free software, under either the GPL v2 license or a
  * BSD style license, available at:
- *   http://datatables.net/license_gpl2
- *   http://datatables.net/license_bsd
+ *   https://datatables.net/license_gpl2
+ *   https://datatables.net/license_bsd
  * 
  * This source file is distributed in the hope that it will be useful, but 
  * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY 
  * or FITNESS FOR A PARTICULAR PURPOSE. See the license files for details.
  * 
- * For details please refer to: http://www.datatables.net
+ * For details please refer to: https://www.datatables.net
  */
 
 /*jslint evil: true, undef: true, browser: true */
@@ -48,7 +48,7 @@
 	 * highly flexible tool, based upon the foundations of progressive 
 	 * enhancement, which will add advanced interaction controls to any 
 	 * HTML table. For a full list of features please refer to
-	 * <a href="http://datatables.net">DataTables.net</a>.
+	 * <a href="https://datatables.net">DataTables.net</a>.
 	 *
 	 * Note that the <i>DataTable</i> object is not a global variable but is
 	 * aliased to <i>jQuery.fn.DataTable</i> and <i>jQuery.fn.dataTable</i> through which 
@@ -4864,7 +4864,7 @@
 		 * JSON stringify. If JSON.stringify it provided by the browser, json2.js or any other
 		 * library, then we use that as it is fast, safe and accurate. If the function isn't 
 		 * available then we need to built it ourselves - the inspiration for this function comes
-		 * from Craig Buckler ( http://www.sitepoint.com/javascript-json-serialization/ ). It is
+		 * from Craig Buckler ( https://www.sitepoint.com/javascript-json-serialization/ ). It is
 		 * not perfect and absolutely should not be used as a replacement to json2.js - but it does
 		 * do what we need, without requiring a dependency for DataTables.
 		 *  @param {object} o JSON object to be converted
@@ -9499,7 +9499,7 @@
 			 *    $(document).ready( function() {
 			 *      $('#example').dataTable( {
 			 *        "oLanguage": {
-			 *          "sUrl": "http://www.sprymedia.co.uk/dataTables/lang.txt"
+			 *          "sUrl": "https://www.sprymedia.co.uk/dataTables/lang.txt"
 			 *        }
 			 *      } );
 			 *    } );
@@ -9594,7 +9594,7 @@
 		 *  @example
 		 *    $(document).ready( function() {
 		 *      $('#example').dataTable( {
-		 *        "sAjaxSource": "http://www.sprymedia.co.uk/dataTables/json.php"
+		 *        "sAjaxSource": "https://www.sprymedia.co.uk/dataTables/json.php"
 		 *      } );
 		 *    } )
 		 */

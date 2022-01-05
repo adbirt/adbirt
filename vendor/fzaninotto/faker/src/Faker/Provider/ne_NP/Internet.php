@@ -17,16 +17,16 @@ class Internet extends \Faker\Provider\Internet
     );
 
     protected static $urlFormats = array(
-        'http://www.{{domainName}}.np/',
-        'http://www.{{domainName}}.np/',
-        'http://{{domainName}}.np/',
-        'http://{{domainName}}.np/',
-        'http://www.{{domainName}}.np/{{slug}}',
-        'http://www.{{domainName}}.np/{{slug}}.html',
-        'http://{{domainName}}.np/{{slug}}',
-        'http://{{domainName}}.np/{{slug}}',
-        'http://{{domainName}}/{{slug}}.html',
-        'http://www.{{domainName}}/',
-        'http://{{domainName}}/',
+        'https://www.{{domainName}}.np/',
+        'https://www.{{domainName}}.np/',
+        'https://{{domainName}}.np/',
+        'https://{{domainName}}.np/',
+        'https://www.{{domainName}}.np/{{slug}}',
+        'https://www.{{domainName}}.np/{{slug}}.html',
+        'https://{{domainName}}.np/{{slug}}',
+        'https://{{domainName}}.np/{{slug}}',
+        'https://{{domainName}}/{{slug}}.html',
+        'https://www.{{domainName}}/',
+        'https://{{domainName}}/',
     );
 }

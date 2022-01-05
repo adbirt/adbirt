@@ -22,7 +22,7 @@ Requirements
 Installation
 ============
 
-The recommended way to install Guzzle is with `Composer <http://getcomposer.org>`_. Composer is a dependency
+The recommended way to install Guzzle is with `Composer <https://getcomposer.org>`_. Composer is a dependency
 management tool for PHP that allows you to declare the dependencies your project needs and installs them into your
 project.
 
@@ -55,7 +55,7 @@ After installing, you need to require Composer's autoloader:
     require 'vendor/autoload.php';
 
 You can find out more on how to install Composer, configure autoloading, and
-other best-practices for defining dependencies at `getcomposer.org <http://getcomposer.org>`_.
+other best-practices for defining dependencies at `getcomposer.org <https://getcomposer.org>`_.
 
 Bleeding edge
 -------------
@@ -74,7 +74,7 @@ branch by setting the version requirement for Guzzle to ``dev-master``.
 License
 =======
 
-Licensed using the `MIT license <http://opensource.org/licenses/MIT>`_.
+Licensed using the `MIT license <https://opensource.org/licenses/MIT>`_.
 
     Copyright (c) 2014 Michael Dowling <https://github.com/mtdowling>
 
@@ -118,7 +118,7 @@ install Guzzle's dependencies using Composer:
 .. code-block:: bash
 
     git clone https://github.com/guzzle/guzzle.git
-    cd guzzle && curl -s http://getcomposer.org/installer | php && ./composer.phar install --dev
+    cd guzzle && curl -s https://getcomposer.org/installer | php && ./composer.phar install --dev
 
 Guzzle is unit tested with PHPUnit. Run the tests using the vendored PHPUnit
 binary:
@@ -137,7 +137,7 @@ Reporting a security vulnerability
 
 We want to ensure that Guzzle is a secure HTTP client library for everyone. If
 you've discovered a security vulnerability in Guzzle, we appreciate your help
-in disclosing it to us in a `responsible manner <http://en.wikipedia.org/wiki/Responsible_disclosure>`_.
+in disclosing it to us in a `responsible manner <https://en.wikipedia.org/wiki/Responsible_disclosure>`_.
 
 Publicly disclosing a vulnerability can put the entire community at risk. If
 you've discovered a security concern, please email us at

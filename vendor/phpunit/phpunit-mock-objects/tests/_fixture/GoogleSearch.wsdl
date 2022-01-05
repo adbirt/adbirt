@@ -10,16 +10,16 @@
 <definitions name="GoogleSearch"
              targetNamespace="urn:GoogleSearch"
              xmlns:typens="urn:GoogleSearch"
-             xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-             xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
-             xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
-             xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
-             xmlns="http://schemas.xmlsoap.org/wsdl/">
+             xmlns:xsd="https://www.w3.org/2001/XMLSchema"
+             xmlns:soap="https://schemas.xmlsoap.org/wsdl/soap/"
+             xmlns:soapenc="https://schemas.xmlsoap.org/soap/encoding/"
+             xmlns:wsdl="https://schemas.xmlsoap.org/wsdl/"
+             xmlns="https://schemas.xmlsoap.org/wsdl/">
 
   <!-- Types for search - result elements, directory categories -->
 
   <types>
-    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema"
+    <xsd:schema xmlns="https://www.w3.org/2001/XMLSchema"
                 targetNamespace="urn:GoogleSearch">
 
       <xsd:complexType name="GoogleSearchResult">
@@ -143,19 +143,19 @@
 
   <binding name="GoogleSearchBinding" type="typens:GoogleSearchPort">
     <soap:binding style="rpc"
-                  transport="http://schemas.xmlsoap.org/soap/http"/>
+                  transport="https://schemas.xmlsoap.org/soap/http"/>
 
     <operation name="doGetCachedPage">
       <soap:operation soapAction="urn:GoogleSearchAction"/>
       <input>
         <soap:body use="encoded"
                    namespace="urn:GoogleSearch"
-                   encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+                   encodingStyle="https://schemas.xmlsoap.org/soap/encoding/"/>
       </input>
       <output>
         <soap:body use="encoded"
                    namespace="urn:GoogleSearch"
-                   encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+                   encodingStyle="https://schemas.xmlsoap.org/soap/encoding/"/>
       </output>
     </operation>
 
@@ -164,12 +164,12 @@
       <input>
         <soap:body use="encoded"
                    namespace="urn:GoogleSearch"
-                   encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+                   encodingStyle="https://schemas.xmlsoap.org/soap/encoding/"/>
       </input>
       <output>
         <soap:body use="encoded"
                    namespace="urn:GoogleSearch"
-                   encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+                   encodingStyle="https://schemas.xmlsoap.org/soap/encoding/"/>
       </output>
     </operation>
 
@@ -178,12 +178,12 @@
       <input>
         <soap:body use="encoded"
                    namespace="urn:GoogleSearch"
-                   encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+                   encodingStyle="https://schemas.xmlsoap.org/soap/encoding/"/>
       </input>
       <output>
         <soap:body use="encoded"
                    namespace="urn:GoogleSearch"
-                   encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+                   encodingStyle="https://schemas.xmlsoap.org/soap/encoding/"/>
       </output>
     </operation>
   </binding>
@@ -191,7 +191,7 @@
   <!-- Endpoint for Google Web APIs -->
   <service name="GoogleSearchService">
     <port name="GoogleSearchPort" binding="typens:GoogleSearchBinding">
-      <soap:address location="http://api.google.com/search/beta2"/>
+      <soap:address location="https://api.google.com/search/beta2"/>
     </port>
   </service>
 

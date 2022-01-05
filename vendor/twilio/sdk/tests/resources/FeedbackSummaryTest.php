@@ -37,7 +37,7 @@ class FeedbackSummaryTest extends PHPUnit_Framework_TestCase
         $feedbackSummary = $client->account->calls->feedback_summary->create(array('StartDate' => '2014-01-01',
             'EndDate' => '2014-01-31',
             'IncludeSubaccounts' => true,
-            'StatusCallback' => 'http://www.example.com/feedback'));
+            'StatusCallback' => 'https://www.example.com/feedback'));
         $this->assertEquals(self::$feedbackSummarySid, $feedbackSummary->sid);
         $this->assertEquals('2014-01-01', $feedbackSummary->start_date);
         $this->assertEquals('2014-01-31', $feedbackSummary->end_date);

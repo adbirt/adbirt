@@ -5,7 +5,7 @@ namespace Faker\Provider\ru_RU;
 class Payment extends \Faker\Provider\Payment
 {
     /**
-     * @see list of Russian banks (2015-04-04), source: http://www.banki.ru/banks/
+     * @see list of Russian banks (2015-04-04), source: https://www.banki.ru/banks/
      * @example "cat *.html | grep 'b-cb-list__name' | iconv --f windows-1251 --t utf-8 | grep -o '>.*<' | \
      * sed -r 's/&mdash;//' | sed -r 's/[\<\>]//g' | sed -r "s/(^|$)/'/g" | sed -r 's/$/,/' | sed -r 's/\&(laquo|raquo);/"/g' | \
      * sed -r 's/\s+/ /g'"

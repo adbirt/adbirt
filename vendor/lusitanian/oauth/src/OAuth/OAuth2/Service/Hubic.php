@@ -3,7 +3,7 @@
  * Hubic service.
  *
  * @author  Pedro Amorim <contact@pamorim.fr>
- * @license http://www.opensource.org/licenses/mit-license.html MIT License
+ * @license https://www.opensource.org/licenses/mit-license.html MIT License
  * @link    https://api.hubic.com/docs/
  */
 
@@ -21,7 +21,7 @@ use OAuth\Common\Http\Uri\UriInterface;
  * Hubic service.
  *
  * @author  Pedro Amorim <contact@pamorim.fr>
- * @license http://www.opensource.org/licenses/mit-license.html MIT License
+ * @license https://www.opensource.org/licenses/mit-license.html MIT License
  * @link    https://api.hubic.com/docs/
  */
 class Hubic extends AbstractService

@@ -9,7 +9,7 @@ class Address extends \Faker\Provider\en_US\Address
     );
 
     /**
-     * @link http://en.wikipedia.org/wiki/List_of_cities_and_towns_in_Uganda
+     * @link https://en.wikipedia.org/wiki/List_of_cities_and_towns_in_Uganda
      */
     protected static $cityName = array(
         'Alebtong','Abim','Adjumani','Amolatar','Amuria','Amuru','Apac','Arua',
@@ -41,7 +41,7 @@ class Address extends \Faker\Provider\en_US\Address
     );
 
     /**
-     * @link http://en.wikipedia.org/wiki/Category:Districts_of_Uganda
+     * @link https://en.wikipedia.org/wiki/Category:Districts_of_Uganda
      */
     protected static $district = array(
         'Abim','Adjumani','Agago','Alebtong','Amolatar','Amudat','Amuria','Amuru','Apac','Arua',

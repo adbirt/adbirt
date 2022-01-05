@@ -3,10 +3,10 @@
 * https://github.com/Desertsnowman/jQuery-Progress-Buttons
 *
 * Copyright 2012, David Cramer
-* http://digilab.co.za
+* https://digilab.co.za
 *
 * Licensed under the MIT license:
-* http://www.opensource.org/licenses/MIT
+* https://www.opensource.org/licenses/MIT
 */
 
 

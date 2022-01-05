@@ -1,8 +1,8 @@
 Sockets Handler
 ===============
 
-This handler allows you to write your logs to sockets using [fsockopen](http://php.net/fsockopen)
-or [pfsockopen](http://php.net/pfsockopen).
+This handler allows you to write your logs to sockets using [fsockopen](https://php.net/fsockopen)
+or [pfsockopen](https://php.net/pfsockopen).
 
 Persistent sockets are mainly useful in web environments where you gain some performance not closing/opening
 the connections between requests.

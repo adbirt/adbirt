@@ -12,7 +12,7 @@ class Address extends \Faker\Provider\Address
     protected static $postcode = array('#####');
 
     /**
-     * @link http://en.wikipedia.org/wiki/List_of_districts_of_Nepal
+     * @link https://en.wikipedia.org/wiki/List_of_districts_of_Nepal
      */
     protected static $district = array(
         'Achham', 'Arghakhanchi',
@@ -36,7 +36,7 @@ class Address extends \Faker\Provider\Address
     );
 
     /**
-     * @link http://www.fallingrain.com/world/NP/
+     * @link https://www.fallingrain.com/world/NP/
      */
     protected static $cityName = array(
         'Achham', 'Aiselukharka', 'Amardaha', 'Amariya', 'Amlekhganj', 'Amraia', 'Andia', 'Andruli', 'Angbung',  'Arghkot', 'Arughatbazaar', 'Asaina', 'Ataria', 'Atrauli', 'Aulgurta',

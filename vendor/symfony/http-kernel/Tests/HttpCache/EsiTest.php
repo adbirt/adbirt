@@ -97,7 +97,7 @@ class EsiTest extends \PHPUnit_Framework_TestCase
         $esi = new Esi();
 
         $request = Request::create('/');
-        $response = new Response('<esi:remove> <a href="http://www.example.com">www.example.com</a> </esi:remove> Keep this'."<esi:remove>\n <a>www.example.com</a> </esi:remove> And this");
+        $response = new Response('<esi:remove> <a href="https://www.example.com">www.example.com</a> </esi:remove> Keep this'."<esi:remove>\n <a>www.example.com</a> </esi:remove> And this");
         $esi->process($request, $response);
 
         $this->assertEquals(' Keep this And this', $response->getContent());

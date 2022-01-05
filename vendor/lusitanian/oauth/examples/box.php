@@ -9,7 +9,7 @@
  * @author     Pieter Hordijk <info@pieterhordijk.com>
  * @author     Antoine Corcy <contact@sbin.dk>
  * @copyright  Copyright (c) 2012 The authors
- * @license    http://www.opensource.org/licenses/mit-license.html  MIT License
+ * @license    https://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
 use OAuth\OAuth2\Service\Box;

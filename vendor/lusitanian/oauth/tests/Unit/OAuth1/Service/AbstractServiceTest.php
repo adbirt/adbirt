@@ -58,7 +58,7 @@ class AbstractServiceTest extends \PHPUnit_Framework_TestCase
     {
         $client = $this->getMock('\\OAuth\\Common\\Http\\Client\\ClientInterface');
         $client->expects($this->once())->method('retrieveResponse')->will($this->returnCallback(function($endpoint, $array, $headers) {
-            \PHPUnit_Framework_Assert::assertSame('http://pieterhordijk.com/token', $endpoint->getAbsoluteUri());
+            \PHPUnit_Framework_Assert::assertSame('https://pieterhordijk.com/token', $endpoint->getAbsoluteUri());
         }));
 
         $service = new Mock(
@@ -86,7 +86,7 @@ class AbstractServiceTest extends \PHPUnit_Framework_TestCase
             $this->getMock('\\OAuth\\Common\\Http\\Uri\\UriInterface')
         );
 
-        $this->assertSame('http://pieterhordijk.com/auth', $service->getAuthorizationUri()->getAbsoluteUri());
+        $this->assertSame('https://pieterhordijk.com/auth', $service->getAuthorizationUri()->getAbsoluteUri());
     }
 
     /**
@@ -103,7 +103,7 @@ class AbstractServiceTest extends \PHPUnit_Framework_TestCase
             $this->getMock('\\OAuth\\Common\\Http\\Uri\\UriInterface')
         );
 
-        $this->assertSame('http://pieterhordijk.com/auth?foo=bar&baz=beer', $service->getAuthorizationUri(array(
+        $this->assertSame('https://pieterhordijk.com/auth?foo=bar&baz=beer', $service->getAuthorizationUri(array(
             'foo' => 'bar',
             'baz' => 'beer',
         ))->getAbsoluteUri());
@@ -125,7 +125,7 @@ class AbstractServiceTest extends \PHPUnit_Framework_TestCase
     {
         $client = $this->getMock('\\OAuth\\Common\\Http\\Client\\ClientInterface');
         $client->expects($this->once())->method('retrieveResponse')->will($this->returnCallback(function($endpoint, $array, $headers) {
-            \PHPUnit_Framework_Assert::assertSame('http://pieterhordijk.com/access', $endpoint->getAbsoluteUri());
+            \PHPUnit_Framework_Assert::assertSame('https://pieterhordijk.com/access', $endpoint->getAbsoluteUri());
         }));
 
         $token = $this->getMock('\\OAuth\\OAuth1\\Token\\TokenInterface');
@@ -161,7 +161,7 @@ class AbstractServiceTest extends \PHPUnit_Framework_TestCase
     {
         $client = $this->getMock('\\OAuth\\Common\\Http\\Client\\ClientInterface');
         $client->expects($this->once())->method('retrieveResponse')->will($this->returnCallback(function($endpoint, $array, $headers) {
-            \PHPUnit_Framework_Assert::assertSame('http://pieterhordijk.com/access', $endpoint->getAbsoluteUri());
+            \PHPUnit_Framework_Assert::assertSame('https://pieterhordijk.com/access', $endpoint->getAbsoluteUri());
         }));
 
         $token = $this->getMock('\\OAuth\\OAuth1\\Token\\TokenInterface');

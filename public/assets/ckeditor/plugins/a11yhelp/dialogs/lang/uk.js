@@ -1,6 +1,6 @@
-﻿/*
+/*
  Copyright (c) 2003-2015, CKSource - Frederico Knabben. All rights reserved.
- For licensing, see LICENSE.md or http://ckeditor.com/license
+ For licensing, see LICENSE.md or https://ckeditor.com/license
 */
 CKEDITOR.plugins.setLang("a11yhelp","uk",{title:"Спеціальні Інструкції",contents:"Довідка. Натисніть ESC і вона зникне.",legend:[{name:"Основне",items:[{name:"Панель Редактора",legend:"Натисніть ${toolbarFocus} для переходу до панелі інструментів. Для переміщення між групами панелі інструментів використовуйте TAB і SHIFT+TAB. Для переміщення між кнопками панелі іструментів використовуйте кнопки СТРІЛКА ВПРАВО або ВЛІВО. Натисніть ПРОПУСК або ENTER для запуску кнопки панелі інструментів."},{name:"Діалог Редактора",
 legend:"Inside a dialog, press TAB to navigate to the next dialog element, press SHIFT+TAB to move to the previous dialog element, press ENTER to submit the dialog, press ESC to cancel the dialog. When a dialog has multiple tabs, the tab list can be reached either with ALT+F10 or with TAB as part of the dialog tabbing order. With tab list focused, move to the next and previous tab with RIGHT and LEFT ARROW, respectively."},{name:"Контекстне Меню Редактора",legend:"Press ${contextMenu} or APPLICATION KEY to open context-menu. Потім перейдіть до наступного пункту меню за допомогою TAB або СТРІЛКИ ВНИЗ. Натисніть ПРОПУСК або ENTER для вибору параметру меню. Відкрийте підменю поточного параметру, натиснувши ПРОПУСК або ENTER або СТРІЛКУ ВПРАВО. Перейдіть до батьківського елемента меню, натиснувши ESC або СТРІЛКУ ВЛІВО. Закрийте контекстне меню, натиснувши ESC."},

@@ -16,7 +16,7 @@ namespace Psy\Util;
  *
  * Based on PHP-DocBlock-Parser by Paul Scott:
  *
- * {@link http://www.github.com/icio/PHP-DocBlock-Parser}
+ * {@link https://www.github.com/icio/PHP-DocBlock-Parser}
  *
  * @author Paul Scott <paul@duedil.com>
  * @author Justin Hileman <justin@justinhileman.info>

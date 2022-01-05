@@ -148,7 +148,7 @@ class Query extends Collection
      * Query string aggregator that does not aggregate nested query string
      * values and allows duplicates in the resulting array.
      *
-     * Example: http://test.com?q=1&q=2
+     * Example: https://test.com?q=1&q=2
      *
      * @return callable
      */

@@ -20,7 +20,7 @@ Retrieve Usage Records For A Time Interval
 ==========================================
 
 UsageRecords support `several convenience subresources
-<http://www.twilio.com/docs/api/rest/usage-records#list-subresources>`_ that
+<https://www.twilio.com/docs/api/rest/usage-records#list-subresources>`_ that
 can be accessed as properties on the `record` object.
 
 .. code-block:: php

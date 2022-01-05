@@ -38,14 +38,14 @@ class FormTest extends \PHPUnit_Framework_TestCase
         $nodes = $dom->getElementsByTagName('input');
 
         try {
-            $form = new Form($nodes->item(0), 'http://example.com');
+            $form = new Form($nodes->item(0), 'https://example.com');
             $this->fail('__construct() throws a \\LogicException if the node has no form ancestor');
         } catch (\LogicException $e) {
             $this->assertTrue(true, '__construct() throws a \\LogicException if the node has no form ancestor');
         }
 
         try {
-            $form = new Form($nodes->item(1), 'http://example.com');
+            $form = new Form($nodes->item(1), 'https://example.com');
             $this->fail('__construct() throws a \\LogicException if the input type is not submit, button, or image');
         } catch (\LogicException $e) {
             $this->assertTrue(true, '__construct() throws a \\LogicException if the input type is not submit, button, or image');
@@ -54,7 +54,7 @@ class FormTest extends \PHPUnit_Framework_TestCase
         $nodes = $dom->getElementsByTagName('button');
 
         try {
-            $form = new Form($nodes->item(0), 'http://example.com');
+            $form = new Form($nodes->item(0), 'https://example.com');
             $this->fail('__construct() throws a \\LogicException if the node has no form ancestor');
         } catch (\LogicException $e) {
             $this->assertTrue(true, '__construct() throws a \\LogicException if the node has no form ancestor');
@@ -81,8 +81,8 @@ class FormTest extends \PHPUnit_Framework_TestCase
 
         $nodes = $dom->getElementsByTagName('input');
 
-        $form = new Form($nodes->item(0), 'http://example.com');
-        $form = new Form($nodes->item(1), 'http://example.com');
+        $form = new Form($nodes->item(0), 'https://example.com');
+        $form = new Form($nodes->item(1), 'https://example.com');
     }
 
     public function testConstructorLoadsOnlyFieldsOfTheRightForm()
@@ -92,10 +92,10 @@ class FormTest extends \PHPUnit_Framework_TestCase
         $nodes = $dom->getElementsByTagName('form');
         $buttonElements = $dom->getElementsByTagName('button');
 
-        $form = new Form($nodes->item(0), 'http://example.com');
+        $form = new Form($nodes->item(0), 'https://example.com');
         $this->assertCount(3, $form->all());
 
-        $form = new Form($buttonElements->item(1), 'http://example.com');
+        $form = new Form($buttonElements->item(1), 'https://example.com');
         $this->assertCount(5, $form->all());
     }
 
@@ -107,13 +107,13 @@ class FormTest extends \PHPUnit_Framework_TestCase
         $buttonElements = $dom->getElementsByTagName('button');
 
         // Tests if submit buttons are correctly assigned to forms
-        $form1 = new Form($buttonElements->item(1), 'http://example.com');
+        $form1 = new Form($buttonElements->item(1), 'https://example.com');
         $this->assertSame($dom->getElementsByTagName('form')->item(0), $form1->getFormNode(), 'HTML5-compliant form attribute handled incorrectly');
 
-        $form1 = new Form($inputElements->item(3), 'http://example.com');
+        $form1 = new Form($inputElements->item(3), 'https://example.com');
         $this->assertSame($dom->getElementsByTagName('form')->item(0), $form1->getFormNode(), 'HTML5-compliant form attribute handled incorrectly');
 
-        $form2 = new Form($buttonElements->item(0), 'http://example.com');
+        $form2 = new Form($buttonElements->item(0), 'https://example.com');
         $this->assertSame($dom->getElementsByTagName('form')->item(1), $form2->getFormNode(), 'HTML5-compliant form attribute handled incorrectly');
     }
 
@@ -124,8 +124,8 @@ class FormTest extends \PHPUnit_Framework_TestCase
         $inputElements = $dom->getElementsByTagName('input');
         $buttonElements = $dom->getElementsByTagName('button');
 
-        $form1 = new Form($inputElements->item(3), 'http://example.com');
-        $form2 = new Form($buttonElements->item(0), 'http://example.com');
+        $form1 = new Form($inputElements->item(3), 'https://example.com');
+        $form2 = new Form($buttonElements->item(0), 'https://example.com');
 
         // Tests if form values are correctly assigned to forms
         $values1 = array(
@@ -286,7 +286,7 @@ class FormTest extends \PHPUnit_Framework_TestCase
         $dom = new \DOMDocument();
         $dom->loadHTML('<html><form><input type="submit" /></form></html>');
 
-        $form = new Form($dom->getElementsByTagName('input')->item(0), 'http://example.com');
+        $form = new Form($dom->getElementsByTagName('input')->item(0), 'https://example.com');
 
         $this->assertSame($dom->getElementsByTagName('form')->item(0), $form->getFormNode(), '->getFormNode() returns the form node associated with this form');
     }
@@ -296,7 +296,7 @@ class FormTest extends \PHPUnit_Framework_TestCase
         $dom = new \DOMDocument();
         $dom->loadHTML('<html><form name="my_form"><input type="submit" /></form></html>');
 
-        $form = new Form($dom->getElementsByTagName('form')->item(0), 'http://example.com');
+        $form = new Form($dom->getElementsByTagName('form')->item(0), 'https://example.com');
 
         $this->assertSame($dom->getElementsByTagName('form')->item(0), $form->getFormNode(), '->getFormNode() returns the form node associated with this form');
     }
@@ -464,7 +464,7 @@ class FormTest extends \PHPUnit_Framework_TestCase
         $form = $this->createForm($form, $method);
         $form->setValues($values);
 
-        $this->assertEquals('http://example.com'.$uri, $form->getUri(), '->getUri() '.$message);
+        $this->assertEquals('https://example.com'.$uri, $form->getUri(), '->getUri() '.$message);
     }
 
     public function testGetBaseUri()
@@ -473,15 +473,15 @@ class FormTest extends \PHPUnit_Framework_TestCase
         $dom->loadHTML('<form method="post" action="foo.php"><input type="text" name="bar" value="bar" /><input type="submit" /></form>');
 
         $nodes = $dom->getElementsByTagName('input');
-        $form = new Form($nodes->item($nodes->length - 1), 'http://www.foo.com/');
-        $this->assertEquals('http://www.foo.com/foo.php', $form->getUri());
+        $form = new Form($nodes->item($nodes->length - 1), 'https://www.foo.com/');
+        $this->assertEquals('https://www.foo.com/foo.php', $form->getUri());
     }
 
     public function testGetUriWithAnchor()
     {
-        $form = $this->createForm('<form action="#foo"><input type="submit" /></form>', null, 'http://example.com/id/123');
+        $form = $this->createForm('<form action="#foo"><input type="submit" /></form>', null, 'https://example.com/id/123');
 
-        $this->assertEquals('http://example.com/id/123#foo', $form->getUri());
+        $this->assertEquals('https://example.com/id/123#foo', $form->getUri());
     }
 
     public function testGetUriActionAbsolute()
@@ -507,23 +507,23 @@ class FormTest extends \PHPUnit_Framework_TestCase
 
     public function testGetUriAbsolute()
     {
-        $form = $this->createForm('<form action="foo"><input type="submit" /></form>', null, 'http://localhost/foo/');
-        $this->assertEquals('http://localhost/foo/foo', $form->getUri(), '->getUri() returns absolute URIs');
+        $form = $this->createForm('<form action="foo"><input type="submit" /></form>', null, 'https://localhost/foo/');
+        $this->assertEquals('https://localhost/foo/foo', $form->getUri(), '->getUri() returns absolute URIs');
 
-        $form = $this->createForm('<form action="/foo"><input type="submit" /></form>', null, 'http://localhost/foo/');
-        $this->assertEquals('http://localhost/foo', $form->getUri(), '->getUri() returns absolute URIs');
+        $form = $this->createForm('<form action="/foo"><input type="submit" /></form>', null, 'https://localhost/foo/');
+        $this->assertEquals('https://localhost/foo', $form->getUri(), '->getUri() returns absolute URIs');
     }
 
     public function testGetUriWithOnlyQueryString()
     {
-        $form = $this->createForm('<form action="?get=param"><input type="submit" /></form>', null, 'http://localhost/foo/bar');
-        $this->assertEquals('http://localhost/foo/bar?get=param', $form->getUri(), '->getUri() returns absolute URIs only if the host has been defined in the constructor');
+        $form = $this->createForm('<form action="?get=param"><input type="submit" /></form>', null, 'https://localhost/foo/bar');
+        $this->assertEquals('https://localhost/foo/bar?get=param', $form->getUri(), '->getUri() returns absolute URIs only if the host has been defined in the constructor');
     }
 
     public function testGetUriWithoutAction()
     {
-        $form = $this->createForm('<form><input type="submit" /></form>', null, 'http://localhost/foo/bar');
-        $this->assertEquals('http://localhost/foo/bar', $form->getUri(), '->getUri() returns path if no action defined');
+        $form = $this->createForm('<form><input type="submit" /></form>', null, 'https://localhost/foo/bar');
+        $this->assertEquals('https://localhost/foo/bar', $form->getUri(), '->getUri() returns path if no action defined');
     }
 
     public function provideGetUriValues()
@@ -657,7 +657,7 @@ class FormTest extends \PHPUnit_Framework_TestCase
         ');
 
         $nodes = $dom->getElementsByTagName('form');
-        $form = new Form($nodes->item(0), 'http://example.com');
+        $form = new Form($nodes->item(0), 'https://example.com');
         $this->assertSame($nodes->item(0), $form->getFormNode(), '->getFormNode() returns the form node associated with this form');
     }
 
@@ -814,7 +814,7 @@ class FormTest extends \PHPUnit_Framework_TestCase
                 </body>
             </html>
         ');
-        $form = new Form($dom->getElementsByTagName('form')->item(0), 'http://example.com');
+        $form = new Form($dom->getElementsByTagName('form')->item(0), 'https://example.com');
 
         $this->assertInstanceOf('Symfony\Component\DomCrawler\Field\ChoiceFormField', $form->get('option'));
     }
@@ -852,7 +852,7 @@ class FormTest extends \PHPUnit_Framework_TestCase
         $nodes = $xPath->query('//input | //button');
 
         if (null === $currentUri) {
-            $currentUri = 'http://example.com/';
+            $currentUri = 'https://example.com/';
         }
 
         return new Form($nodes->item($nodes->length - 1), $currentUri, $method);
@@ -933,7 +933,7 @@ class FormTest extends \PHPUnit_Framework_TestCase
           ');
 
         $nodes = $dom->getElementsByTagName('form');
-        $form = new Form($nodes->item(0), 'http://example.com');
+        $form = new Form($nodes->item(0), 'https://example.com');
         $this->assertEquals($form->getPhpValues(), array('example' => ''));
     }
 }

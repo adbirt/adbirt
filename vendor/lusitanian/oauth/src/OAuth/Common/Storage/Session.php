@@ -188,7 +188,7 @@ class Session implements TokenStorageInterface
 
     /**
      * Determine if the session has started.
-     * @url http://stackoverflow.com/a/18542272/1470961
+     * @url https://stackoverflow.com/a/18542272/1470961
      * @return bool
      */
     protected function sessionHasStarted()

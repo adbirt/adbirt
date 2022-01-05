@@ -82,14 +82,14 @@ class Util_XMLTest extends PHPUnit_Framework_TestCase
 
     public function testConvertAssertSelect()
     {
-        $selector  = 'div#folder.open a[href="http://www.xerox.com"][title="xerox"].selected.big > span + h1';
+        $selector  = 'div#folder.open a[href="https://www.xerox.com"][title="xerox"].selected.big > span + h1';
         $converted = PHPUnit_Util_XML::convertSelectToTag($selector);
         $tag       = array('tag'        => 'div',
                            'id'         => 'folder',
                            'class'      => 'open',
                            'descendant' => array('tag'        => 'a',
                                                  'class'      => 'selected big',
-                                                 'attributes' => array('href'             => 'http://www.xerox.com',
+                                                 'attributes' => array('href'             => 'https://www.xerox.com',
                                                                        'title'            => 'xerox'),
                                                  'child'      => array('tag'              => 'span',
                                                                        'adjacent-sibling' => array('tag' => 'h1'))));

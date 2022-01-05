@@ -3,8 +3,8 @@
  * Deezer service.
  *
  * @author  Pedro Amorim <contact@pamorim.fr>
- * @license http://www.opensource.org/licenses/mit-license.html MIT License
- * @link    http://developers.deezer.com/api/
+ * @license https://www.opensource.org/licenses/mit-license.html MIT License
+ * @link    https://developers.deezer.com/api/
  */
 
 namespace OAuth\OAuth2\Service;
@@ -21,14 +21,14 @@ use OAuth\Common\Http\Uri\UriInterface;
  * Deezer service.
  *
  * @author  Pedro Amorim <contact@pamorim.fr>
- * @license http://www.opensource.org/licenses/mit-license.html MIT License
- * @link    http://developers.deezer.com/api/
+ * @license https://www.opensource.org/licenses/mit-license.html MIT License
+ * @link    https://developers.deezer.com/api/
  */
 class Deezer extends AbstractService
 {
     /**
      * Defined scopes
-     * http://developers.deezer.com/api/permissions
+     * https://developers.deezer.com/api/permissions
      */
     const SCOPE_BASIC_ACCESS      = 'basic_access';       // Access users basic information
     const SCOPE_EMAIL             = 'email';              // Get the user's email

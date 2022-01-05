@@ -1,6 +1,6 @@
-﻿/*
+/*
  Copyright (c) 2003-2015, CKSource - Frederico Knabben. All rights reserved.
- For licensing, see LICENSE.md or http://ckeditor.com/license
+ For licensing, see LICENSE.md or https://ckeditor.com/license
 */
 CKEDITOR.plugins.setLang("a11yhelp","eo",{title:"Uzindikoj pri atingeblo",contents:"Helpilenhavo. Por fermi tiun dialogon, premu la ESKAPAN klavon.",legend:[{name:"Ĝeneralaĵoj",items:[{name:"Ilbreto de la redaktilo",legend:"Premu ${toolbarFocus} por atingi la ilbreton. Moviĝu al la sekva aŭ antaŭa grupoj de la ilbreto per la klavoj TABA kaj MAJUSKLIGA+TABA. Moviĝu al la sekva aŭ antaŭa butonoj de la ilbreto per la klavoj SAGO DEKSTREN kaj SAGO MALDEKSTREN. Premu la SPACETklavon aŭ la ENENklavon por aktivigi la ilbretbutonon."},
 {name:"Redaktildialogo",legend:"Inside a dialog, press TAB to navigate to the next dialog element, press SHIFT+TAB to move to the previous dialog element, press ENTER to submit the dialog, press ESC to cancel the dialog. When a dialog has multiple tabs, the tab list can be reached either with ALT+F10 or with TAB as part of the dialog tabbing order. With tab list focused, move to the next and previous tab with RIGHT and LEFT ARROW, respectively."},{name:"Kunteksta menuo de la redaktilo",legend:"Premu ${contextMenu} aŭ entajpu la KLAVKOMBINAĴON por malfermi la kuntekstan menuon. Poste moviĝu al la sekva opcio de la menuo per la klavoj TABA aŭ SAGO SUBEN. Moviĝu al la antaŭa opcio per la klavoj MAJUSKLGA + TABA aŭ SAGO SUPREN. Premu la SPACETklavon aŭ ENENklavon por selekti la menuopcion. Malfermu la submenuon de la kuranta opcio per la SPACETklavo aŭ la ENENklavo aŭ la SAGO DEKSTREN. Revenu al la elemento de la patra menuo per la klavoj ESKAPA aŭ SAGO MALDEKSTREN. Fermu la kuntekstan menuon per la ESKAPA klavo."},

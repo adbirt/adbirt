@@ -17,19 +17,19 @@ interface PHP_CodeCoverage_Driver
 {
     /**
      * @var int
-     * @see http://xdebug.org/docs/code_coverage
+     * @see https://xdebug.org/docs/code_coverage
      */
     const LINE_EXECUTED = 1;
 
     /**
      * @var int
-     * @see http://xdebug.org/docs/code_coverage
+     * @see https://xdebug.org/docs/code_coverage
      */
     const LINE_NOT_EXECUTED = -1;
 
     /**
      * @var int
-     * @see http://xdebug.org/docs/code_coverage
+     * @see https://xdebug.org/docs/code_coverage
      */
     const LINE_NOT_EXECUTABLE = -2;
 

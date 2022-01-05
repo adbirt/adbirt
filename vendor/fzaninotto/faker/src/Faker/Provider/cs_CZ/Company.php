@@ -97,7 +97,7 @@ class Company extends \Faker\Provider\Company
     /**
      * Generates valid czech IČO
      *
-     * @see http://phpfashion.com/jak-overit-platne-ic-a-rodne-cislo
+     * @see https://phpfashion.com/jak-overit-platne-ic-a-rodne-cislo
      * @return string
      */
     public function ico()

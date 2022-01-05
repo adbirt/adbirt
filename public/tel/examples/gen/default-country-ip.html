@@ -15,7 +15,7 @@
       _gaq.push(['_trackPageview']);
       (function() {
         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
@@ -34,7 +34,7 @@
     <pre><code class="language-javascript">$(&quot;#phone&quot;).intlTelInput({
   initialCountry: &quot;auto&quot;,
   geoIpLookup: function(callback) {
-    $.get(&#39;http://ipinfo.io&#39;, function() {}, &quot;jsonp&quot;).always(function(resp) {
+    $.get(&#39;https://ipinfo.io&#39;, function() {}, &quot;jsonp&quot;).always(function(resp) {
       var countryCode = (resp &amp;&amp; resp.country) ? resp.country : &quot;&quot;;
       callback(countryCode);
     });

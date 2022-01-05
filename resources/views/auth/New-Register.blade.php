@@ -47,7 +47,7 @@
         </div>
         <div class="p-a-2">
      <form action="{{ url('/add/client') }}" method="POST" id="myform" name="myform">
-          <!-- <form action="http://learnplus.themekit.io/index.html" method="get"> -->
+          <!-- <form action="https://learnplus.themekit.io/index.html" method="get"> -->
           {{ csrf_field() }}
             <div class="form-group">
          

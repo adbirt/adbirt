@@ -18,7 +18,7 @@ class CartBaseTest extends \PHPUnit_Framework_TestCase
      */
     public static function getJson()
     {
-        return '{"reference_id":"TestSample","amount":' .AmountTest::getJson() . ',"payee":' .PayeeTest::getJson() . ',"description":"TestSample","note_to_payee":"TestSample","custom":"TestSample","invoice_number":"TestSample","soft_descriptor":"TestSample","soft_descriptor_city":"TestSample","payment_options":' .PaymentOptionsTest::getJson() . ',"item_list":' .ItemListTest::getJson() . ',"notify_url":"http://www.google.com","order_url":"http://www.google.com","external_funding":' .ExternalFundingTest::getJson() . ',"type":"TestSample"}';
+        return '{"reference_id":"TestSample","amount":' .AmountTest::getJson() . ',"payee":' .PayeeTest::getJson() . ',"description":"TestSample","note_to_payee":"TestSample","custom":"TestSample","invoice_number":"TestSample","soft_descriptor":"TestSample","soft_descriptor_city":"TestSample","payment_options":' .PaymentOptionsTest::getJson() . ',"item_list":' .ItemListTest::getJson() . ',"notify_url":"https://www.google.com","order_url":"https://www.google.com","external_funding":' .ExternalFundingTest::getJson() . ',"type":"TestSample"}';
     }
 
     /**
@@ -74,8 +74,8 @@ class CartBaseTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($obj->getSoftDescriptorCity(), "TestSample");
         $this->assertEquals($obj->getPaymentOptions(), PaymentOptionsTest::getObject());
         $this->assertEquals($obj->getItemList(), ItemListTest::getObject());
-        $this->assertEquals($obj->getNotifyUrl(), "http://www.google.com");
-        $this->assertEquals($obj->getOrderUrl(), "http://www.google.com");
+        $this->assertEquals($obj->getNotifyUrl(), "https://www.google.com");
+        $this->assertEquals($obj->getOrderUrl(), "https://www.google.com");
         $this->assertEquals($obj->getExternalFunding(), ExternalFundingTest::getObject());
     }
 

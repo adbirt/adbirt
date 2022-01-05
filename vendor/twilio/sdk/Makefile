@@ -10,8 +10,8 @@ define LICENSE
  * @category  Services
  * @package   Services_Twilio
  * @author    Neuman Vong <neuman@twilio.com>
- * @license   http://creativecommons.org/licenses/MIT/ MIT
- * @link      http://pear.php.net/package/Services_Twilio
+ * @license   https://creativecommons.org/licenses/MIT/ MIT
+ * @link      https://pear.php.net/package/Services_Twilio
  */
 endef
 export LICENSE
@@ -37,7 +37,7 @@ dist: clean
 	done
 
 test-install:
-	# Composer: http://getcomposer.org/download/
+	# Composer: https://getcomposer.org/download/
 	$(COMPOSER) install
 
 install:

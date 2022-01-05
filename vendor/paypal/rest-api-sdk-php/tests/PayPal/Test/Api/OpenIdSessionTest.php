@@ -68,7 +68,7 @@ class OpenIdSessionTest extends \PHPUnit_Framework_TestCase
      */
     public function testLoginWithCustomConfig()
     {
-        $redirectUri = 'http://mywebsite.com';
+        $redirectUri = 'https://mywebsite.com';
         $scope = array('this', 'that', 'and more');
 
         $expectedBaseUrl = "https://www.paypal.com/signin/authorize";
@@ -82,7 +82,7 @@ class OpenIdSessionTest extends \PHPUnit_Framework_TestCase
      */
     public function testLogoutWithCustomConfig()
     {
-        $redirectUri = 'http://mywebsite.com';
+        $redirectUri = 'https://mywebsite.com';
         $idToken = 'abc';
 
         $expectedBaseUrl = "https://www.paypal.com/webapps/auth/protocol/openidconnect/v1/endsession";

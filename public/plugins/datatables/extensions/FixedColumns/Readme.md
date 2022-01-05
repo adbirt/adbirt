@@ -9,7 +9,7 @@ When making use of DataTables' x-axis scrolling feature (`scrollX`), you may wis
 
 # Installation
 
-To use FixedColumns, first download DataTables ( http://datatables.net/download ) and place the unzipped FixedColumns package into a `extensions` directory in the DataTables package. This will allow the pages in the examples to operate correctly. To see the examples running, open the `examples` directory in your web-browser.
+To use FixedColumns, first download DataTables ( https://datatables.net/download ) and place the unzipped FixedColumns package into a `extensions` directory in the DataTables package. This will allow the pages in the examples to operate correctly. To see the examples running, open the `examples` directory in your web-browser.
 
 
 # Basic usage
@@ -32,8 +32,8 @@ $(document).ready(function() {
 
 # Documentation / support
 
-* Documentation: http://datatables.net/extensions/FixedColumns/
-* DataTables support forums: http://datatables.net/forums
+* Documentation: https://datatables.net/extensions/FixedColumns/
+* DataTables support forums: https://datatables.net/forums
 
 
 # GitHub

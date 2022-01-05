@@ -127,13 +127,13 @@ var numberType = {
   "PREMIUM_RATE": 4,
   // The cost of this call is shared between the caller and the recipient, and
   // is hence typically less than PREMIUM_RATE calls. See
-  // http://en.wikipedia.org/wiki/Shared_Cost_Service for more information.
+  // https://en.wikipedia.org/wiki/Shared_Cost_Service for more information.
   "SHARED_COST": 5,
   // Voice over IP numbers. This includes TSoIP (Telephony Service over IP).
   "VOIP": 6,
   // A personal number is associated with a particular person, and may be routed
   // to either a MOBILE or FIXED_LINE number. Some more information can be found
-  // here: http://en.wikipedia.org/wiki/Personal_Numbers
+  // here: https://en.wikipedia.org/wiki/Personal_Numbers
   "PERSONAL_NUMBER": 7,
   "PAGER": 8,
   // Used for 'Universal Access Numbers' or 'Company Numbers'. They may be

@@ -20,22 +20,22 @@ abstract class AbstractProfilerStorageTest extends \PHPUnit_Framework_TestCase
         for ($i = 0; $i < 10; ++$i) {
             $profile = new Profile('token_'.$i);
             $profile->setIp('127.0.0.1');
-            $profile->setUrl('http://foo.bar');
+            $profile->setUrl('https://foo.bar');
             $profile->setMethod('GET');
             $this->getStorage()->write($profile);
         }
-        $this->assertCount(10, $this->getStorage()->find('127.0.0.1', 'http://foo.bar', 20, 'GET'), '->write() stores data in the storage');
+        $this->assertCount(10, $this->getStorage()->find('127.0.0.1', 'https://foo.bar', 20, 'GET'), '->write() stores data in the storage');
     }
 
     public function testChildren()
     {
         $parentProfile = new Profile('token_parent');
         $parentProfile->setIp('127.0.0.1');
-        $parentProfile->setUrl('http://foo.bar/parent');
+        $parentProfile->setUrl('https://foo.bar/parent');
 
         $childProfile = new Profile('token_child');
         $childProfile->setIp('127.0.0.1');
-        $childProfile->setUrl('http://foo.bar/child');
+        $childProfile->setUrl('https://foo.bar/child');
 
         $parentProfile->addChild($childProfile);
 
@@ -61,22 +61,22 @@ abstract class AbstractProfilerStorageTest extends \PHPUnit_Framework_TestCase
         // The storage accepts special characters in URLs (Even though URLs are not
         // supposed to contain them)
         $profile = new Profile('simple_quote');
-        $profile->setUrl('http://foo.bar/\'');
+        $profile->setUrl('https://foo.bar/\'');
         $this->getStorage()->write($profile);
         $this->assertTrue(false !== $this->getStorage()->read('simple_quote'), '->write() accepts single quotes in URL');
 
         $profile = new Profile('double_quote');
-        $profile->setUrl('http://foo.bar/"');
+        $profile->setUrl('https://foo.bar/"');
         $this->getStorage()->write($profile);
         $this->assertTrue(false !== $this->getStorage()->read('double_quote'), '->write() accepts double quotes in URL');
 
         $profile = new Profile('backslash');
-        $profile->setUrl('http://foo.bar/\\');
+        $profile->setUrl('https://foo.bar/\\');
         $this->getStorage()->write($profile);
         $this->assertTrue(false !== $this->getStorage()->read('backslash'), '->write() accepts backslash in URL');
 
         $profile = new Profile('comma');
-        $profile->setUrl('http://foo.bar/,');
+        $profile->setUrl('https://foo.bar/,');
         $this->getStorage()->write($profile);
         $this->assertTrue(false !== $this->getStorage()->read('comma'), '->write() accepts comma in URL');
     }
@@ -84,14 +84,14 @@ abstract class AbstractProfilerStorageTest extends \PHPUnit_Framework_TestCase
     public function testStoreDuplicateToken()
     {
         $profile = new Profile('token');
-        $profile->setUrl('http://example.com/');
+        $profile->setUrl('https://example.com/');
 
         $this->assertTrue($this->getStorage()->write($profile), '->write() returns true when the token is unique');
 
-        $profile->setUrl('http://example.net/');
+        $profile->setUrl('https://example.net/');
 
         $this->assertTrue($this->getStorage()->write($profile), '->write() returns true when the token is already present in the storage');
-        $this->assertEquals('http://example.net/', $this->getStorage()->read('token')->getUrl(), '->write() overwrites the current profile data');
+        $this->assertEquals('https://example.net/', $this->getStorage()->read('token')->getUrl(), '->write() overwrites the current profile data');
 
         $this->assertCount(1, $this->getStorage()->find('', '', 1000, ''), '->find() does not return the same profile twice');
     }
@@ -112,46 +112,46 @@ abstract class AbstractProfilerStorageTest extends \PHPUnit_Framework_TestCase
     {
         $profile = new Profile('simple_quote');
         $profile->setIp('127.0.0.1');
-        $profile->setUrl('http://foo.bar/\'');
+        $profile->setUrl('https://foo.bar/\'');
         $profile->setMethod('GET');
         $this->getStorage()->write($profile);
 
         $profile = new Profile('double_quote');
         $profile->setIp('127.0.0.1');
-        $profile->setUrl('http://foo.bar/"');
+        $profile->setUrl('https://foo.bar/"');
         $profile->setMethod('GET');
         $this->getStorage()->write($profile);
 
         $profile = new Profile('backslash');
         $profile->setIp('127.0.0.1');
-        $profile->setUrl('http://foo\\bar/');
+        $profile->setUrl('https://foo\\bar/');
         $profile->setMethod('GET');
         $this->getStorage()->write($profile);
 
         $profile = new Profile('percent');
         $profile->setIp('127.0.0.1');
-        $profile->setUrl('http://foo.bar/%');
+        $profile->setUrl('https://foo.bar/%');
         $profile->setMethod('GET');
         $this->getStorage()->write($profile);
 
         $profile = new Profile('underscore');
         $profile->setIp('127.0.0.1');
-        $profile->setUrl('http://foo.bar/_');
+        $profile->setUrl('https://foo.bar/_');
         $profile->setMethod('GET');
         $this->getStorage()->write($profile);
 
         $profile = new Profile('semicolon');
         $profile->setIp('127.0.0.1');
-        $profile->setUrl('http://foo.bar/;');
+        $profile->setUrl('https://foo.bar/;');
         $profile->setMethod('GET');
         $this->getStorage()->write($profile);
 
-        $this->assertCount(1, $this->getStorage()->find('127.0.0.1', 'http://foo.bar/\'', 10, 'GET'), '->find() accepts single quotes in URLs');
-        $this->assertCount(1, $this->getStorage()->find('127.0.0.1', 'http://foo.bar/"', 10, 'GET'), '->find() accepts double quotes in URLs');
-        $this->assertCount(1, $this->getStorage()->find('127.0.0.1', 'http://foo\\bar/', 10, 'GET'), '->find() accepts backslash in URLs');
-        $this->assertCount(1, $this->getStorage()->find('127.0.0.1', 'http://foo.bar/;', 10, 'GET'), '->find() accepts semicolon in URLs');
-        $this->assertCount(1, $this->getStorage()->find('127.0.0.1', 'http://foo.bar/%', 10, 'GET'), '->find() does not interpret a "%" as a wildcard in the URL');
-        $this->assertCount(1, $this->getStorage()->find('127.0.0.1', 'http://foo.bar/_', 10, 'GET'), '->find() does not interpret a "_" as a wildcard in the URL');
+        $this->assertCount(1, $this->getStorage()->find('127.0.0.1', 'https://foo.bar/\'', 10, 'GET'), '->find() accepts single quotes in URLs');
+        $this->assertCount(1, $this->getStorage()->find('127.0.0.1', 'https://foo.bar/"', 10, 'GET'), '->find() accepts double quotes in URLs');
+        $this->assertCount(1, $this->getStorage()->find('127.0.0.1', 'https://foo\\bar/', 10, 'GET'), '->find() accepts backslash in URLs');
+        $this->assertCount(1, $this->getStorage()->find('127.0.0.1', 'https://foo.bar/;', 10, 'GET'), '->find() accepts semicolon in URLs');
+        $this->assertCount(1, $this->getStorage()->find('127.0.0.1', 'https://foo.bar/%', 10, 'GET'), '->find() does not interpret a "%" as a wildcard in the URL');
+        $this->assertCount(1, $this->getStorage()->find('127.0.0.1', 'https://foo.bar/_', 10, 'GET'), '->find() does not interpret a "_" as a wildcard in the URL');
     }
 
     public function testStoreTime()
@@ -163,7 +163,7 @@ abstract class AbstractProfilerStorageTest extends \PHPUnit_Framework_TestCase
             $dt->modify('+1 minute');
             $profile = new Profile('time_'.$i);
             $profile->setIp('127.0.0.1');
-            $profile->setUrl('http://foo.bar');
+            $profile->setUrl('https://foo.bar');
             $profile->setTime($dt->getTimestamp());
             $profile->setMethod('GET');
             $this->getStorage()->write($profile);
@@ -209,7 +209,7 @@ abstract class AbstractProfilerStorageTest extends \PHPUnit_Framework_TestCase
     {
         $profile = new Profile('token1');
         $profile->setIp('127.0.0.1');
-        $profile->setUrl('http://example.com/');
+        $profile->setUrl('https://example.com/');
         $profile->setMethod('GET');
         $this->getStorage()->write($profile);
 
@@ -218,7 +218,7 @@ abstract class AbstractProfilerStorageTest extends \PHPUnit_Framework_TestCase
 
         $profile = new Profile('token2');
         $profile->setIp('127.0.0.1');
-        $profile->setUrl('http://example.net/');
+        $profile->setUrl('https://example.net/');
         $profile->setMethod('GET');
         $this->getStorage()->write($profile);
 
@@ -236,7 +236,7 @@ abstract class AbstractProfilerStorageTest extends \PHPUnit_Framework_TestCase
         for ($i = 1; $i <= 5; ++$i) {
             $profile = new Profile('foo'.$i);
             $profile->setIp('127.0.0.1');
-            $profile->setUrl('http://example.net/');
+            $profile->setUrl('https://example.net/');
             $profile->setMethod('GET');
 
             ///three duplicates
@@ -244,7 +244,7 @@ abstract class AbstractProfilerStorageTest extends \PHPUnit_Framework_TestCase
             $this->getStorage()->write($profile);
             $this->getStorage()->write($profile);
         }
-        $this->assertCount(3, $this->getStorage()->find('127.0.0.1', 'http://example.net/', 3, 'GET'), '->find() method returns incorrect number of entries');
+        $this->assertCount(3, $this->getStorage()->find('127.0.0.1', 'https://example.net/', 3, 'GET'), '->find() method returns incorrect number of entries');
     }
 
     public function testStatusCode()

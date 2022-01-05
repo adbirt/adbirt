@@ -5,9 +5,9 @@
  * PHP Version 5.3
  *
  * @author    Vasil Rangelov <boen.robot@gmail.com>
- * @copyright 2010-2011 Mike van Riel / Naenius. (http://www.naenius.com)
- * @license   http://www.opensource.org/licenses/mit-license.php MIT
- * @link      http://phpdoc.org
+ * @copyright 2010-2011 Mike van Riel / Naenius. (https://www.naenius.com)
+ * @license   https://www.opensource.org/licenses/mit-license.php MIT
+ * @link      https://phpdoc.org
  */
 
 namespace phpDocumentor\Reflection\DocBlock;
@@ -16,9 +16,9 @@ namespace phpDocumentor\Reflection\DocBlock;
  * Test class for \phpDocumentor\Reflection\DocBlock\Description
  *
  * @author    Vasil Rangelov <boen.robot@gmail.com>
- * @copyright 2010-2011 Mike van Riel / Naenius. (http://www.naenius.com)
- * @license   http://www.opensource.org/licenses/mit-license.php MIT
- * @link      http://phpdoc.org
+ * @copyright 2010-2011 Mike van Riel / Naenius. (https://www.naenius.com)
+ * @license   https://www.opensource.org/licenses/mit-license.php MIT
+ * @link      https://phpdoc.org
  */
 class DescriptionTest extends \PHPUnit_Framework_TestCase
 {
@@ -38,7 +38,7 @@ LONGDESC;
     public function testInlineTagParsing()
     {
         $fixture = <<<LONGDESC
-This is text for a {@link http://phpdoc.org/ description} that uses inline
+This is text for a {@link https://phpdoc.org/ description} that uses inline
 tags.
 LONGDESC;
         $object = new Description($fixture);
@@ -61,7 +61,7 @@ tags.',
     public function testInlineTagAtStartParsing()
     {
         $fixture = <<<LONGDESC
-{@link http://phpdoc.org/ This} is text for a description that uses inline
+{@link https://phpdoc.org/ This} is text for a description that uses inline
 tags.
 LONGDESC;
         $object = new Description($fixture);
@@ -86,7 +86,7 @@ tags.',
     {
         $fixture = <<<LONGDESC
 This is text for a description with {@internal inline tag with
-{@link http://phpdoc.org another inline tag} in it}.
+{@link https://phpdoc.org another inline tag} in it}.
 LONGDESC;
         $object = new Description($fixture);
         $this->assertSame($fixture, $object->getContents());

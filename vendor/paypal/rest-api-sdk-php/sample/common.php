@@ -178,8 +178,8 @@ function getBaseUrl()
     if (PHP_SAPI == 'cli') {
         $trace=debug_backtrace();
         $relativePath = substr(dirname($trace[0]['file']), strlen(dirname(dirname(__FILE__))));
-        echo "Warning: This sample may require a server to handle return URL. Cannot execute in command line. Defaulting URL to http://localhost$relativePath \n";
-        return "http://localhost" . $relativePath;
+        echo "Warning: This sample may require a server to handle return URL. Cannot execute in command line. Defaulting URL to https://localhost$relativePath \n";
+        return "https://localhost" . $relativePath;
     }
     $protocol = 'http';
     if ($_SERVER['SERVER_PORT'] == 443 || (!empty($_SERVER['HTTPS']) && strtolower($_SERVER['HTTPS']) == 'on')) {

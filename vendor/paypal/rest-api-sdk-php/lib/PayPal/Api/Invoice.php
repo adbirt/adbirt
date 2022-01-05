@@ -371,7 +371,7 @@ class Invoice extends PayPalResourceModel
     }
 
     /**
-     * The date when the invoice was enabled. The date format is *yyyy*-*MM*-*dd* *z* as defined in [Internet Date/Time Format](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * The date when the invoice was enabled. The date format is *yyyy*-*MM*-*dd* *z* as defined in [Internet Date/Time Format](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @param string $invoice_date
      * 
@@ -384,7 +384,7 @@ class Invoice extends PayPalResourceModel
     }
 
     /**
-     * The date when the invoice was enabled. The date format is *yyyy*-*MM*-*dd* *z* as defined in [Internet Date/Time Format](http://tools.ietf.org/html/rfc3339#section-5.6).
+     * The date when the invoice was enabled. The date format is *yyyy*-*MM*-*dd* *z* as defined in [Internet Date/Time Format](https://tools.ietf.org/html/rfc3339#section-5.6).
      *
      * @return string
      */

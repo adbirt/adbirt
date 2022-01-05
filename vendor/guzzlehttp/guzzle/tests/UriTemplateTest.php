@@ -109,9 +109,9 @@ class UriTemplateTest extends \PHPUnit_Framework_TestCase
             // Test that missing expansions are skipped
             array('test{&missing*}',     'test'),
             // Test that multiple expansions can be set
-            array('http://{var}/{var:2}{?keys*}', 'http://value/va?semi=%3B&dot=.&comma=%2C'),
+            array('https://{var}/{var:2}{?keys*}', 'https://value/va?semi=%3B&dot=.&comma=%2C'),
             // Test more complex query string stuff
-            array('http://www.test.com{+path}{?var,keys*}', 'http://www.test.com/foo/bar?var=value&semi=%3B&dot=.&comma=%2C')
+            array('https://www.test.com{+path}{?var,keys*}', 'https://www.test.com/foo/bar?var=value&semi=%3B&dot=.&comma=%2C')
         ));
     }
 
@@ -181,7 +181,7 @@ class UriTemplateTest extends \PHPUnit_Framework_TestCase
     {
         $template = new UriTemplate();
 
-        $result = $template->expand('http://example.com{+path}{/segments}{?query,data*,foo*}', array(
+        $result = $template->expand('https://example.com{+path}{/segments}{?query,data*,foo*}', array(
             'path'     => '/foo/bar',
             'segments' => array('one', 'two'),
             'query'    => 'test',
@@ -197,6 +197,6 @@ class UriTemplateTest extends \PHPUnit_Framework_TestCase
             )
         ));
 
-        $this->assertEquals('http://example.com/foo/bar/one,two?query=test&more%5B0%5D=fun&more%5B1%5D=ice%20cream&baz%5Bbar%5D=fizz&baz%5Btest%5D=buzz&bam=boo', $result);
+        $this->assertEquals('https://example.com/foo/bar/one,two?query=test&more%5B0%5D=fun&more%5B1%5D=ice%20cream&baz%5Bbar%5D=fizz&baz%5Btest%5D=buzz&bam=boo', $result);
     }
 }

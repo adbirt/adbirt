@@ -1,6 +1,6 @@
 /**
  * Take a TR element and alter the table's paging to show the TR in question.
- * http://www.datatables.net/plug-ins/api
+ * https://www.datatables.net/plug-ins/api
  * @param oSettings
  * @param nRow
  */

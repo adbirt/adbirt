@@ -19,7 +19,7 @@ use Monolog\Logger;
 use Monolog\Formatter\GelfMessageFormatter;
 
 /**
- * Handler to send messages to a Graylog2 (http://www.graylog2.org) server
+ * Handler to send messages to a Graylog2 (https://www.graylog2.org) server
  *
  * @author Matt Lehner <mlehner@gmail.com>
  * @author Benjamin Zikarsky <benjamin@zikarsky.de>

@@ -28,7 +28,7 @@ Update Properties on a UsageTrigger
     $usageTrigger = $client->account->usage_triggers->get($usageSid);
     $usageTrigger->update(array(
         'FriendlyName' => 'New usage trigger friendly name',
-        'CallbackUrl'  => 'http://example.com/new-trigger-url',
+        'CallbackUrl'  => 'https://example.com/new-trigger-url',
     ));
 
 Retrieve All Triggers
@@ -68,7 +68,7 @@ Pass a usage category, a value and a callback URL to the `create` method.
     $trigger = $client->account->usage_triggers->create(
         'totalprice',
         '250.75',
-        'http://example.com/usage'
+        'https://example.com/usage'
     );
 
 Create a Recurring Trigger
@@ -77,7 +77,7 @@ Create a Recurring Trigger
 To have your trigger reset once every day, month, or year, pass the
 `Recurring` key as part of the params array. A list of optional
 trigger parameters can be found in the `Usage Triggers Documentation
-<http://www.twilio.com/docs/api/rest/usage-triggers#list-post-optional-paramete
+<https://www.twilio.com/docs/api/rest/usage-triggers#list-post-optional-paramete
 rs>`_.
 
 .. code-block:: php
@@ -86,7 +86,7 @@ rs>`_.
     $trigger = $client->account->usage_triggers->create(
         'totalprice',
         '250.75',
-        'http://example.com/usage',
+        'https://example.com/usage',
         array('Recurring' => 'monthly', 'TriggerBy' => 'price')
     );
 

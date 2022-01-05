@@ -5,7 +5,7 @@ namespace Faker\Provider\pl_PL;
 class Payment extends \Faker\Provider\Payment
 {
     /**
-     * @var array list of Polish banks, source: http://www.nbp.pl/banki_w_polsce/ewidencja/ewidencja.html
+     * @var array list of Polish banks, source: https://www.nbp.pl/banki_w_polsce/ewidencja/ewidencja.html
      */
     protected static $banks = array(
         '251' => 'Aareal Bank Aktiengesellschaft (Spółka Akcyjna) - Oddział w Polsce',
@@ -92,7 +92,7 @@ class Payment extends \Faker\Provider\Payment
 
     /**
      * International Bank Account Number (IBAN)
-     * @link http://en.wikipedia.org/wiki/International_Bank_Account_Number
+     * @link https://en.wikipedia.org/wiki/International_Bank_Account_Number
      * @param  string  $prefix      for generating bank account number of a specific bank
      * @param  string  $countryCode ISO 3166-1 alpha-2 country code
      * @param  integer $length      total length without country code and 2 check digits

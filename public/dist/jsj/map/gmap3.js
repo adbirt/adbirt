@@ -2,10 +2,10 @@
  *  GMAP3 Plugin for JQuery
  *  Version   : 5.1.1
  *  Date      : 2013-05-25
- *  Licence   : GPL v3 : http://www.gnu.org/licenses/gpl.html
+ *  Licence   : GPL v3 : https://www.gnu.org/licenses/gpl.html
  *  Author    : DEMONTE Jean-Baptiste
  *  Contact   : jbdemonte@gmail.com
- *  Web site  : http://gmap3.net
+ *  Web site  : https://gmap3.net
  *
  *  Copyright (c) 2010-2012 Jean-Baptiste DEMONTE
  *  All rights reserved.

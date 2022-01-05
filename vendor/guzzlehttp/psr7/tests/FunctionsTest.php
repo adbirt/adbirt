@@ -246,7 +246,7 @@ class FunctionsTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('Bar', $request->getHeaderLine('Foo'));
         $this->assertEquals('Bam, Qux', $request->getHeaderLine('Baz'));
         $this->assertEquals('Test', (string) $request->getBody());
-        $this->assertEquals('http://foo.com/abc', (string) $request->getUri());
+        $this->assertEquals('https://foo.com/abc', (string) $request->getUri());
     }
 
     public function testParsesRequestMessagesWithHttpsScheme()
@@ -267,7 +267,7 @@ class FunctionsTest extends \PHPUnit_Framework_TestCase
         $request = Psr7\parse_request($req);
         $this->assertEquals('PUT', $request->getMethod());
         $this->assertEquals('/', $request->getRequestTarget());
-        $this->assertEquals('http://foo.com/', (string) $request->getUri());
+        $this->assertEquals('https://foo.com/', (string) $request->getUri());
     }
 
     public function testParsesRequestMessagesWithFullUri()
@@ -437,7 +437,7 @@ class FunctionsTest extends \PHPUnit_Framework_TestCase
 
     public function testConvertsRequestsToStrings()
     {
-        $request = new Psr7\Request('PUT', 'http://foo.com/hi?123', [
+        $request = new Psr7\Request('PUT', 'https://foo.com/hi?123', [
             'Baz' => 'bar',
             'Qux' => 'ipsum'
         ], 'hello', '1.0');
@@ -468,18 +468,18 @@ class FunctionsTest extends \PHPUnit_Framework_TestCase
                 'type' => 'image/jpeg',
             ),
             array(
-                '<http://.../back.jpeg>',
+                '<https://.../back.jpeg>',
                 'rel' => 'back',
                 'type' => 'image/jpeg',
             ),
         );
         return array(
             array(
-                '<http:/.../front.jpeg>; rel="front"; type="image/jpeg", <http://.../back.jpeg>; rel=back; type="image/jpeg"',
+                '<http:/.../front.jpeg>; rel="front"; type="image/jpeg", <https://.../back.jpeg>; rel=back; type="image/jpeg"',
                 $res1
             ),
             array(
-                '<http:/.../front.jpeg>; rel="front"; type="image/jpeg",<http://.../back.jpeg>; rel=back; type="image/jpeg"',
+                '<http:/.../front.jpeg>; rel="front"; type="image/jpeg",<https://.../back.jpeg>; rel=back; type="image/jpeg"',
                 $res1
             ),
             array(
@@ -492,10 +492,10 @@ class FunctionsTest extends \PHPUnit_Framework_TestCase
                 )
             ),
             array(
-                '<http://.../side.jpeg?test=1>; rel="side"; type="image/jpeg",<http://.../side.jpeg?test=2>; rel=side; type="image/jpeg"',
+                '<https://.../side.jpeg?test=1>; rel="side"; type="image/jpeg",<https://.../side.jpeg?test=2>; rel=side; type="image/jpeg"',
                 array(
-                    array('<http://.../side.jpeg?test=1>', 'rel' => 'side', 'type' => 'image/jpeg'),
-                    array('<http://.../side.jpeg?test=2>', 'rel' => 'side', 'type' => 'image/jpeg')
+                    array('<https://.../side.jpeg?test=1>', 'rel' => 'side', 'type' => 'image/jpeg'),
+                    array('<https://.../side.jpeg?test=2>', 'rel' => 'side', 'type' => 'image/jpeg')
                 )
             ),
             array(
@@ -545,27 +545,27 @@ class FunctionsTest extends \PHPUnit_Framework_TestCase
 
     public function testCanModifyRequestWithUri()
     {
-        $r1 = new Psr7\Request('GET', 'http://foo.com');
+        $r1 = new Psr7\Request('GET', 'https://foo.com');
         $r2 = Psr7\modify_request($r1, [
-            'uri' => new Psr7\Uri('http://www.foo.com')
+            'uri' => new Psr7\Uri('https://www.foo.com')
         ]);
-        $this->assertEquals('http://www.foo.com', (string) $r2->getUri());
+        $this->assertEquals('https://www.foo.com', (string) $r2->getUri());
         $this->assertEquals('www.foo.com', (string) $r2->getHeaderLine('host'));
     }
 
     public function testCanModifyRequestWithUriAndPort()
     {
-        $r1 = new Psr7\Request('GET', 'http://foo.com:8000');
+        $r1 = new Psr7\Request('GET', 'https://foo.com:8000');
         $r2 = Psr7\modify_request($r1, [
-            'uri' => new Psr7\Uri('http://www.foo.com:8000')
+            'uri' => new Psr7\Uri('https://www.foo.com:8000')
         ]);
-        $this->assertEquals('http://www.foo.com:8000', (string) $r2->getUri());
+        $this->assertEquals('https://www.foo.com:8000', (string) $r2->getUri());
         $this->assertEquals('www.foo.com:8000', (string) $r2->getHeaderLine('host'));
     }
 
     public function testCanModifyRequestWithCaseInsensitiveHeader()
     {
-        $r1 = new Psr7\Request('GET', 'http://foo.com', ['User-Agent' => 'foo']);
+        $r1 = new Psr7\Request('GET', 'https://foo.com', ['User-Agent' => 'foo']);
         $r2 = Psr7\modify_request($r1, ['set_headers' => ['User-agent' => 'bar']]);
         $this->assertEquals('bar', $r2->getHeaderLine('User-Agent'));
         $this->assertEquals('bar', $r2->getHeaderLine('User-agent'));
@@ -573,18 +573,18 @@ class FunctionsTest extends \PHPUnit_Framework_TestCase
 
     public function testReturnsAsIsWhenNoChanges()
     {
-        $r1 = new Psr7\Request('GET', 'http://foo.com');
+        $r1 = new Psr7\Request('GET', 'https://foo.com');
         $r2 = Psr7\modify_request($r1, []);
         $this->assertTrue($r2 instanceof Psr7\Request);
 
-        $r1 = new Psr7\ServerRequest('GET', 'http://foo.com');
+        $r1 = new Psr7\ServerRequest('GET', 'https://foo.com');
         $r2 = Psr7\modify_request($r1, []);
         $this->assertTrue($r2 instanceof \Psr\Http\Message\ServerRequestInterface);
     }
 
     public function testReturnsUriAsIsWhenNoChanges()
     {
-        $r1 = new Psr7\Request('GET', 'http://foo.com');
+        $r1 = new Psr7\Request('GET', 'https://foo.com');
         $r2 = Psr7\modify_request($r1, ['set_headers' => ['foo' => 'bar']]);
         $this->assertNotSame($r1, $r2);
         $this->assertEquals('bar', $r2->getHeaderLine('foo'));
@@ -592,7 +592,7 @@ class FunctionsTest extends \PHPUnit_Framework_TestCase
 
     public function testRemovesHeadersFromMessage()
     {
-        $r1 = new Psr7\Request('GET', 'http://foo.com', ['foo' => 'bar']);
+        $r1 = new Psr7\Request('GET', 'https://foo.com', ['foo' => 'bar']);
         $r2 = Psr7\modify_request($r1, ['remove_headers' => ['foo']]);
         $this->assertNotSame($r1, $r2);
         $this->assertFalse($r2->hasHeader('foo'));
@@ -600,7 +600,7 @@ class FunctionsTest extends \PHPUnit_Framework_TestCase
 
     public function testAddsQueryToUri()
     {
-        $r1 = new Psr7\Request('GET', 'http://foo.com');
+        $r1 = new Psr7\Request('GET', 'https://foo.com');
         $r2 = Psr7\modify_request($r1, ['query' => 'foo=bar']);
         $this->assertNotSame($r1, $r2);
         $this->assertEquals('foo=bar', $r2->getUri()->getQuery());
@@ -608,11 +608,11 @@ class FunctionsTest extends \PHPUnit_Framework_TestCase
 
     public function testModifyRequestKeepInstanceOfRequest()
     {
-        $r1 = new Psr7\Request('GET', 'http://foo.com');
+        $r1 = new Psr7\Request('GET', 'https://foo.com');
         $r2 = Psr7\modify_request($r1, ['remove_headers' => ['non-existent']]);
         $this->assertTrue($r2 instanceof Psr7\Request);
 
-        $r1 = new Psr7\ServerRequest('GET', 'http://foo.com');
+        $r1 = new Psr7\ServerRequest('GET', 'https://foo.com');
         $r2 = Psr7\modify_request($r1, ['remove_headers' => ['non-existent']]);
         $this->assertTrue($r2 instanceof \Psr\Http\Message\ServerRequestInterface);
     }

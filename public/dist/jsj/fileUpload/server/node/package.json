@@ -29,7 +29,7 @@
     "licenses": [
         {
             "type": "MIT",
-            "url": "http://www.opensource.org/licenses/MIT"
+            "url": "https://www.opensource.org/licenses/MIT"
         }
     ],
     "dependencies": {

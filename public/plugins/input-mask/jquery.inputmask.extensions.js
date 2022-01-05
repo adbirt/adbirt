@@ -1,8 +1,8 @@
 /*
 Input Mask plugin extensions
-http://github.com/RobinHerbots/jquery.inputmask
+https://github.com/RobinHerbots/jquery.inputmask
 Copyright (c) 2010 - 2014 Robin Herbots
-Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php)
+Licensed under the MIT license (https://www.opensource.org/licenses/mit-license.php)
 Version: 0.0.0
 
 Optional extensions on the jquery.inputmask base
@@ -26,7 +26,7 @@ Optional extensions on the jquery.inputmask base
             mask: "ir",
             placeholder: "",
             separator: "",
-            defaultPrefix: "http://",
+            defaultPrefix: "https://",
             regex: {
                 urlpre1: new RegExp("[fh]"),
                 urlpre2: new RegExp("(ft|ht)"),
@@ -34,8 +34,8 @@ Optional extensions on the jquery.inputmask base
                 urlpre4: new RegExp("(ftp:|http|ftps)"),
                 urlpre5: new RegExp("(ftp:/|ftps:|http:|https)"),
                 urlpre6: new RegExp("(ftp://|ftps:/|http:/|https:)"),
-                urlpre7: new RegExp("(ftp://|ftps://|http://|https:/)"),
-                urlpre8: new RegExp("(ftp://|ftps://|http://|https://)")
+                urlpre7: new RegExp("(ftp://|ftps://|https://|https:/)"),
+                urlpre8: new RegExp("(ftp://|ftps://|https://|https://)")
             },
             definitions: {
                 'i': {

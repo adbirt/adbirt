@@ -29,7 +29,7 @@ namespace Symfony\Component\Translation;
  *
  * @author Fabien Potencier <fabien@symfony.com>
  *
- * @see    http://en.wikipedia.org/wiki/Interval_%28mathematics%29#The_ISO_notation
+ * @see    https://en.wikipedia.org/wiki/Interval_%28mathematics%29#The_ISO_notation
  */
 class Interval
 {

@@ -3,7 +3,7 @@
 namespace Faker\Provider\da_DK;
 
 /**
- * @link http://www.danskernesnavne.navneforskning.ku.dk/Personnavne.asp
+ * @link https://www.danskernesnavne.navneforskning.ku.dk/Personnavne.asp
  *
  * @author Antoine Corcy <contact@sbin.dk>
  */
@@ -181,8 +181,8 @@ class Person extends \Faker\Provider\Person
     /**
      * Randomly return a danish CPR number (Personnal identification number) format.
      *
-     * @link http://cpr.dk/cpr/site.aspx?p=16
-     * @link http://en.wikipedia.org/wiki/Personal_identification_number_%28Denmark%29
+     * @link https://cpr.dk/cpr/site.aspx?p=16
+     * @link https://en.wikipedia.org/wiki/Personal_identification_number_%28Denmark%29
      *
      * @return string
      */

@@ -98,7 +98,7 @@ above ``TestListener`` class.
 .. caution::
 
     PHPUnit provides a functionality that allows
-    `tests to run in a separated process <http://phpunit.de/manual/4.0/en/appendixes.annotations.html#appendixes.annotations.runTestsInSeparateProcesses>`_,
+    `tests to run in a separated process <https://phpunit.de/manual/4.0/en/appendixes.annotations.html#appendixes.annotations.runTestsInSeparateProcesses>`_,
     to ensure better isolation. Mockery verifies the mocks expectations using the
     ``Mockery::close()`` method, and provides a PHPUnit listener, that automatically
     calls this method for you after every test.

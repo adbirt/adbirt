@@ -6,7 +6,7 @@
  * Example of retrieving an authentication token of the Netatmo service
  *
  * @author  Pedro Amorim <contact@pamorim.fr>
- * @license http://www.opensource.org/licenses/mit-license.html  MIT License
+ * @license https://www.opensource.org/licenses/mit-license.html  MIT License
  * @link    https://dev.netatmo.com/doc/
  */
 

@@ -14,9 +14,9 @@ class Payment extends \Faker\Provider\Payment
      *
      * @example 'ATU12345678', ('spaced') 'AT U12345678'
      *
-     * @see http://ec.europa.eu/taxation_customs/vies/faq.html?locale=en#item_11
-     * @see http://www.iecomputersystems.com/ordering/eu_vat_numbers.htm
-     * @see http://en.wikipedia.org/wiki/VAT_identification_number
+     * @see https://ec.europa.eu/taxation_customs/vies/faq.html?locale=en#item_11
+     * @see https://www.iecomputersystems.com/ordering/eu_vat_numbers.htm
+     * @see https://en.wikipedia.org/wiki/VAT_identification_number
      *
      * @param bool $spacedNationalPrefix
      *

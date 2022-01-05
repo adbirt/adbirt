@@ -62,9 +62,9 @@ The Type matcher also accepts a class or interface name to be used in an
 ``anInstanceOf()``).
 
 You may find a full list of the available type checkers at
-`php.net <http://www.php.net/manual/en/ref.var.php>`_ or browse Hamcrest's function
+`php.net <https://www.php.net/manual/en/ref.var.php>`_ or browse Hamcrest's function
 list in
-`the Hamcrest code <http://code.google.com/p/hamcrest/source/browse/trunk/hamcrest-php/hamcrest/Hamcrest.php>`_.
+`the Hamcrest code <https://code.google.com/p/hamcrest/source/browse/trunk/hamcrest-php/hamcrest/Hamcrest.php>`_.
 
 .. code-block:: php
 

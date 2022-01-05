@@ -4,9 +4,9 @@
  *
  * PHP Version 5.5
  *
- * @copyright 2010-2015 Mike van Riel / Naenius (http://www.naenius.com)
- * @license   http://www.opensource.org/licenses/mit-license.php MIT
- * @link      http://phpdoc.org
+ * @copyright 2010-2015 Mike van Riel / Naenius (https://www.naenius.com)
+ * @license   https://www.opensource.org/licenses/mit-license.php MIT
+ * @link      https://phpdoc.org
  */
 
 namespace phpDocumentor\Reflection;

@@ -17,7 +17,7 @@ use GuzzleHttp\Message\ResponseInterface;
  *
  * Adapters that add transaction statistics SHOULD follow the same string
  * attribute names that are provided by cURL listed at
- * http://php.net/manual/en/function.curl-getinfo.php. However, not all
+ * https://php.net/manual/en/function.curl-getinfo.php. However, not all
  * adapters will have access to the advanced statistics provided by cURL. The
  * most useful transfer statistics are as follows:
  *

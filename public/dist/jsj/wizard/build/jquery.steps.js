@@ -1,7 +1,7 @@
 /*! 
  * jQuery Steps v1.0.6 - 04/27/2014
- * Copyright (c) 2014 Rafael Staib (http://www.jquery-steps.com)
- * Licensed under MIT http://www.opensource.org/licenses/MIT
+ * Copyright (c) 2014 Rafael Staib (https://www.jquery-steps.com)
+ * Licensed under MIT https://www.opensource.org/licenses/MIT
  */
 ;(function ($, undefined)
 {

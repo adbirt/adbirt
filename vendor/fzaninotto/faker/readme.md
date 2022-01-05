@@ -2,7 +2,7 @@
 
 Faker is a PHP library that generates fake data for you. Whether you need to bootstrap your database, create good-looking XML documents, fill-in your persistence to stress test it, or anonymize data taken from a production service, Faker is for you.
 
-Faker is heavily inspired by Perl's [Data::Faker](http://search.cpan.org/~jasonk/Data-Faker-0.07/), and by ruby's [Faker](https://rubygems.org/gems/faker).
+Faker is heavily inspired by Perl's [Data::Faker](https://search.cpan.org/~jasonk/Data-Faker-0.07/), and by ruby's [Faker](https://rubygems.org/gems/faker).
 
 Faker requires PHP >= 5.3.3.
 
@@ -212,7 +212,7 @@ Each of the generator properties (like `name`, `address`, and `lorem`) are calle
     domainName              // 'wolffdeckow.net'
     domainWord              // 'feeney'
     tld                     // 'biz'
-    url                     // 'http://www.skilesdonnelly.biz/aut-accusantium-ut-architecto-sit-et.html'
+    url                     // 'https://www.skilesdonnelly.biz/aut-accusantium-ut-architecto-sit-et.html'
     slug                    // 'aut-repellat-commodi-vel-itaque-nihil-id-saepe-nostrum'
     ipv4                    // '109.133.32.252'
     localIpv4               // '10.242.58.8'
@@ -258,10 +258,10 @@ Each of the generator properties (like `name`, `address`, and `lorem`) are calle
 
 ### `Faker\Provider\Image`
 
-    // Image generation provided by LoremPixel (http://lorempixel.com/)
-    imageUrl($width = 640, $height = 480) // 'http://lorempixel.com/640/480/'
-    imageUrl($width, $height, 'cats')     // 'http://lorempixel.com/800/600/cats/'
-    imageUrl($width, $height, 'cats', true, 'Faker') // 'http://lorempixel.com/800/400/cats/Faker'
+    // Image generation provided by LoremPixel (https://lorempixel.com/)
+    imageUrl($width = 640, $height = 480) // 'https://lorempixel.com/640/480/'
+    imageUrl($width, $height, 'cats')     // 'https://lorempixel.com/800/600/cats/'
+    imageUrl($width, $height, 'cats', true, 'Faker') // 'https://lorempixel.com/800/400/cats/Faker'
     image($dir = '/tmp', $width = 640, $height = 480) // '/tmp/13b73edae8443990be1aa8f1a483bc27.jpg'
     image($dir, $width, $height, 'cats')  // 'tmp/13b73edae8443990be1aa8f1a483bc27.jpg' it's a cat!
     image($dir, $width, $height, 'cats', true, 'Faker') // 'tmp/13b73edae8443990be1aa8f1a483bc27.jpg' it's a cat with Faker text
@@ -385,7 +385,7 @@ You can check available Faker locales in the source code, [under the `Provider` 
 
 ## Populating Entities Using an ORM or an ODM
 
-Faker provides adapters for Object-Relational and Object-Document Mappers (currently, [Propel](http://www.propelorm.org), [Doctrine2](http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/), [CakePHP](http://cakephp.org), [Spot2](https://github.com/vlucas/spot2) and [Mandango](https://github.com/mandango/mandango) are supported). These adapters ease the population of databases through the Entity classes provided by an ORM library (or the population of document stores using Document classes provided by an ODM library).
+Faker provides adapters for Object-Relational and Object-Document Mappers (currently, [Propel](https://www.propelorm.org), [Doctrine2](https://docs.doctrine-project.org/projects/doctrine-orm/en/latest/), [CakePHP](https://cakephp.org), [Spot2](https://github.com/vlucas/spot2) and [Mandango](https://github.com/mandango/mandango) are supported). These adapters ease the population of databases through the Entity classes provided by an ORM library (or the population of document stores using Document classes provided by an ODM library).
 
 To populate entities, create a new populator class (using a generator instance as parameter), then list the class and number of all the entities that must be generated. To launch the actual data population, call the `execute()` method.
 
@@ -1273,7 +1273,7 @@ echo $faker->bank; // '中国建设银行'
 * [CompanyNameGenerator](https://github.com/fzaninotto/CompanyNameGenerator): Generate names for English tech companies with class
 * [PlaceholdItProvider](https://github.com/EmanueleMinotto/PlaceholdItProvider): Generate images using placehold.it
 * [datalea](https://github.com/spyrit/datalea) A highly customizable random test data generator web app
-* [newage-ipsum](https://github.com/frequenc1/newage-ipsum): A new aged ipsum provider for the faker library inspired by http://sebpearce.com/bullshit/
+* [newage-ipsum](https://github.com/frequenc1/newage-ipsum): A new aged ipsum provider for the faker library inspired by https://sebpearce.com/bullshit/
 * [xml-faker](https://github.com/prewk/xml-faker): Create fake XML with Faker
 * [faker-context](https://github.com/denheck/faker-context): Behat context using Faker to generate testdata
 * [CronExpressionGenerator](https://github.com/swekaj/CronExpressionGenerator): Faker provider for generating random, valid cron expressions.

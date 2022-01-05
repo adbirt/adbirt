@@ -2,8 +2,8 @@
 /*!
  * jQuery plug-in to implement an accordion wizard based on bootstrap
  * Original author: @stephen_thomas
- * Plugin Boilerplate: http://coding.smashingmagazine.com/2011/10/11/essential-jquery-plugin-patterns/
- * Additional Boilerplate: http://f6design.com/journal/2012/05/06/a-jquery-plugin-boilerplate/
+ * Plugin Boilerplate: https://coding.smashingmagazine.com/2011/10/11/essential-jquery-plugin-patterns/
+ * Additional Boilerplate: https://f6design.com/journal/2012/05/06/a-jquery-plugin-boilerplate/
  * Comments from boilerplate sources retained
  * Licensed under the MIT license
  */
@@ -28,7 +28,7 @@
     // regularly referenced in your plugin).
 
 
-    // From http://ejohn.org/blog/ecmascript-5-strict-mode-json-and-more/
+    // From https://ejohn.org/blog/ecmascript-5-strict-mode-json-and-more/
     //
     // Strict Mode is a new feature in ECMAScript 5 that allows you to
     // place a program, or a function, in a "strict" operating context.

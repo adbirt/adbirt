@@ -1,14 +1,14 @@
 Guzzle, PHP HTTP client and webservice framework
 ================================================
 
-[![Build Status](https://secure.travis-ci.org/guzzle/guzzle.png?branch=master)](http://travis-ci.org/guzzle/guzzle)
+[![Build Status](https://secure.travis-ci.org/guzzle/guzzle.png?branch=master)](https://travis-ci.org/guzzle/guzzle)
 
 Guzzle is a PHP HTTP client that makes it easy to work with HTTP/1.1 and takes
 the pain out of consuming web services.
 
 ```php
 $client = new GuzzleHttp\Client();
-$response = $client->get('http://guzzlephp.org');
+$response = $client->get('https://guzzlephp.org');
 $res = $client->get('https://api.github.com/user', ['auth' =>  ['user', 'pass']]);
 echo $res->getStatusCode();
 // "200"
@@ -32,14 +32,14 @@ var_export($res->json());
 - Connection timeouts
 
 Get more information and answers with the
-[Documentation](http://guzzlephp.org/),
+[Documentation](https://guzzlephp.org/),
 [Forums](https://groups.google.com/forum/?hl=en#!forum/guzzle),
 and IRC ([#guzzlephp](irc://irc.freenode.net/#guzzlephp) @ irc.freenode.net).
 
 ### Installing via Composer
 
 The recommended way to install Guzzle is through
-[Composer](http://getcomposer.org).
+[Composer](https://getcomposer.org).
 
 ```bash
 # Install Composer
@@ -65,4 +65,4 @@ require 'vendor/autoload.php';
 ### Documentation
 
 More information can be found in the online documentation at
-http://guzzlephp.org/.
+https://guzzlephp.org/.

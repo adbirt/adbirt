@@ -309,7 +309,7 @@ You can intercept a request and inject a response using the `intercept()` event
 of a `GuzzleHttp\Event\BeforeEvent`, `GuzzleHttp\Event\CompleteEvent`, and
 `GuzzleHttp\Event\ErrorEvent` event.
 
-See: http://docs.guzzlephp.org/en/latest/events.html
+See: https://docs.guzzlephp.org/en/latest/events.html
 
 ## Inflection
 
@@ -402,9 +402,9 @@ in separate repositories:
 
 The service description layer of Guzzle has moved into two separate packages:
 
-- http://github.com/guzzle/command Provides a high level abstraction over web
+- https://github.com/guzzle/command Provides a high level abstraction over web
   services by representing web service operations using commands.
-- http://github.com/guzzle/guzzle-services Provides an implementation of
+- https://github.com/guzzle/guzzle-services Provides an implementation of
   guzzle/command that provides request serialization and response parsing using
   Guzzle service descriptions.
 
@@ -604,7 +604,7 @@ HeaderInterface (e.g. toArray(), getAll(), etc.).
 3.3 to 3.4
 ----------
 
-Base URLs of a client now follow the rules of http://tools.ietf.org/html/rfc3986#section-5.2.2 when merging URLs.
+Base URLs of a client now follow the rules of https://tools.ietf.org/html/rfc3986#section-5.2.2 when merging URLs.
 
 3.2 to 3.3
 ----------
@@ -654,17 +654,17 @@ URLs no longer have a default path value of '/' if no path was specified.
 Before:
 
 ```php
-$request = $client->get('http://www.foo.com');
+$request = $client->get('https://www.foo.com');
 echo $request->getUrl();
-// >> http://www.foo.com/
+// >> https://www.foo.com/
 ```
 
 After:
 
 ```php
-$request = $client->get('http://www.foo.com');
+$request = $client->get('https://www.foo.com');
 echo $request->getUrl();
-// >> http://www.foo.com
+// >> https://www.foo.com
 ```
 
 ### Less verbose BadResponseException

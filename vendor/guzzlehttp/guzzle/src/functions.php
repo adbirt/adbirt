@@ -288,7 +288,7 @@ if (!defined('GUZZLE_FUNCTIONS_VERSION')) {
      *
      * @return mixed
      * @throws \InvalidArgumentException if the JSON cannot be parsed.
-     * @link http://www.php.net/manual/en/function.json-decode.php
+     * @link https://www.php.net/manual/en/function.json-decode.php
      */
     function json_decode($json, $assoc = false, $depth = 512, $options = 0)
     {

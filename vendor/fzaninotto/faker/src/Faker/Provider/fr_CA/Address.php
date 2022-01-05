@@ -8,7 +8,7 @@ class Address extends \Faker\Provider\fr_FR\Address
 
     /**
      * The suffixes come from this list of communities in Québec
-     * http://fr.wikipedia.org/wiki/Liste_des_municipalités_locales_du_Québec
+     * https://fr.wikipedia.org/wiki/Liste_des_municipalités_locales_du_Québec
      */
     protected static $citySuffix = array(
         // Bas-Saint-Laurent

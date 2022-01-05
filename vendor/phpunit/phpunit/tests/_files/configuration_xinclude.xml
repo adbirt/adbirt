@@ -25,28 +25,28 @@
          checkForUnintentionallyCoveredCode="false"
          beStrictAboutChangesToGlobalState="false"
          verbose="false">
-         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+         <xi:include xmlns:xi="https://www.w3.org/2001/XInclude"
              href="configuration.xml"
              parse="xml"
              xpointer="xpointer(/phpunit/testsuites)" />
 
   <groups>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+    <xi:include xmlns:xi="https://www.w3.org/2001/XInclude"
           href="configuration.xml"
         parse="xml"
         xpointer="xpointer(/phpunit/groups/*)" />
   </groups>
 
 
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+  <xi:include xmlns:xi="https://www.w3.org/2001/XInclude"
       href="configuration.xml"
       parse="xml"
       xpointer="xpointer(/phpunit/filter)" />
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+  <xi:include xmlns:xi="https://www.w3.org/2001/XInclude"
       href="configuration.xml"
       parse="xml"
       xpointer="xpointer(/phpunit/listeners)" />
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+  <xi:include xmlns:xi="https://www.w3.org/2001/XInclude"
       href="configuration.xml"
       parse="xml"
       xpointer="xpointer(/phpunit/logging)" />
@@ -67,9 +67,8 @@
     <request name="foo" value="bar"/>
   </php>
 
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+  <xi:include xmlns:xi="https://www.w3.org/2001/XInclude"
       href="configuration.xml"
       parse="xml"
       xpointer="xpointer(/phpunit/selenium)" />
 </phpunit>
-

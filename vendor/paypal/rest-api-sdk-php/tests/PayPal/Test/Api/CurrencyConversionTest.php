@@ -18,7 +18,7 @@ class CurrencyConversionTest extends \PHPUnit_Framework_TestCase
      */
     public static function getJson()
     {
-        return '{"conversion_date":"TestSample","from_currency":"TestSample","from_amount":"TestSample","to_currency":"TestSample","to_amount":"TestSample","conversion_type":"TestSample","conversion_type_changeable":true,"web_url":"http://www.google.com","links":' . LinksTest::getJson() . '}';
+        return '{"conversion_date":"TestSample","from_currency":"TestSample","from_amount":"TestSample","to_currency":"TestSample","to_amount":"TestSample","conversion_type":"TestSample","conversion_type_changeable":true,"web_url":"https://www.google.com","links":' . LinksTest::getJson() . '}';
     }
 
     /**
@@ -67,7 +67,7 @@ class CurrencyConversionTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($obj->getToAmount(), "TestSample");
         $this->assertEquals($obj->getConversionType(), "TestSample");
         $this->assertEquals($obj->getConversionTypeChangeable(), true);
-        $this->assertEquals($obj->getWebUrl(), "http://www.google.com");
+        $this->assertEquals($obj->getWebUrl(), "https://www.google.com");
         $this->assertEquals($obj->getLinks(), LinksTest::getObject());
     }
 

@@ -40,7 +40,7 @@ class OpenIdUserinfoTest extends \PHPUnit_Framework_TestCase
             ->setFamilyName("Doe")->setMiddleName("A")->setGivenName("John")
             ->setLocale("en-US")->setGender("male")->setName("John A Doe")
             ->setPayerId("A-XZASASA")->setPhoneNumber("1-408-111-1111")
-            ->setPicture("http://gravatar.com/me.jpg")
+            ->setPicture("https://gravatar.com/me.jpg")
             ->setSub("me@email.com")->setUserId("userId")
             ->setVerified(true)->setVerifiedAccount(true)
             ->setZoneinfo("America/PST")->setLanguage('en_US')

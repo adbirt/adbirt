@@ -176,7 +176,7 @@
                                                       <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                                           <tr>
                                                               <td>
-                                                                  <a href="http://alistapart.com/article/can-email-be-responsive/" target="_blank"><img src="https://www.adbirt.com/public/images/adbirt-leads.jpg" width="500" height="200" border="0" alt="Can an email really be responsive?" style="display: block; padding: 0; color: #666666; text-decoration: none; font-family: Helvetica, arial, sans-serif; font-size: 16px; width: 500px; height: 200px;" class="img-max"></a>
+                                                                  <a href="https://alistapart.com/article/can-email-be-responsive/" target="_blank"><img src="https://www.adbirt.com/public/images/adbirt-leads.jpg" width="500" height="200" border="0" alt="Can an email really be responsive?" style="display: block; padding: 0; color: #666666; text-decoration: none; font-family: Helvetica, arial, sans-serif; font-size: 16px; width: 500px; height: 200px;" class="img-max"></a>
                                                               </td>
                                                             </tr>
                                                         </table>

@@ -21,7 +21,7 @@ namespace Symfony\Component\Finder\Comparator;
  * The target value may use magnitudes of kilobytes (k, ki),
  * megabytes (m, mi), or gigabytes (g, gi).  Those suffixed
  * with an i use the appropriate 2**n version in accordance with the
- * IEC standard: http://physics.nist.gov/cuu/Units/binary.html
+ * IEC standard: https://physics.nist.gov/cuu/Units/binary.html
  *
  * Based on the Perl Number::Compare module.
  *
@@ -30,7 +30,7 @@ namespace Symfony\Component\Finder\Comparator;
  * @copyright 2004-2005 Fabien Potencier <fabien@symfony.com>
  * @copyright 2002 Richard Clamp <richardc@unixbeard.net>
  *
- * @see http://physics.nist.gov/cuu/Units/binary.html
+ * @see https://physics.nist.gov/cuu/Units/binary.html
  */
 class NumberComparator extends Comparator
 {

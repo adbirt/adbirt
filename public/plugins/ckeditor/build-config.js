@@ -1,12 +1,12 @@
-﻿
+
 /**
  * @license Copyright (c) 2003-2013, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.html or http://ckeditor.com/license
+ * For licensing, see LICENSE.html or https://ckeditor.com/license
  */
 
 /**
  * This file was added automatically by CKEditor builder.
- * You may re-use it at any time at http://ckeditor.com/builder to build CKEditor again.
+ * You may re-use it at any time at https://ckeditor.com/builder to build CKEditor again.
  * 
  * NOTE: 
  *    This file is not used by CKEditor, you may remove it.

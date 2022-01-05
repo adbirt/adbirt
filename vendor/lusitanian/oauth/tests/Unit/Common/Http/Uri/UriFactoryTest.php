@@ -25,14 +25,14 @@ class UriFactoryTest extends \PHPUnit_Framework_TestCase
     {
         $factory = new UriFactory();
 
-        $uri = $factory->createFromSuperGlobalArray(array('REQUEST_URI' => 'http://example.com'));
+        $uri = $factory->createFromSuperGlobalArray(array('REQUEST_URI' => 'https://example.com'));
 
         $this->assertInstanceOf(
             '\\OAuth\\Common\\Http\\Uri\\UriInterface',
             $uri
         );
 
-        $this->assertSame('http://example.com', $uri->getAbsoluteUri());
+        $this->assertSame('https://example.com', $uri->getAbsoluteUri());
     }
 
     /**
@@ -61,7 +61,7 @@ class UriFactoryTest extends \PHPUnit_Framework_TestCase
             $uri
         );
 
-        $this->assertSame('http://example.com/foo?param1=value1', $uri->getAbsoluteUri());
+        $this->assertSame('https://example.com/foo?param1=value1', $uri->getAbsoluteUri());
     }
 
     /**
@@ -121,7 +121,7 @@ class UriFactoryTest extends \PHPUnit_Framework_TestCase
             $uri
         );
 
-        $this->assertSame('http://example.com:21/foo?param1=value1', $uri->getAbsoluteUri());
+        $this->assertSame('https://example.com:21/foo?param1=value1', $uri->getAbsoluteUri());
     }
 
     /**
@@ -149,7 +149,7 @@ class UriFactoryTest extends \PHPUnit_Framework_TestCase
             $uri
         );
 
-        $this->assertSame('http://example.com/foo?param1=value1', $uri->getAbsoluteUri());
+        $this->assertSame('https://example.com/foo?param1=value1', $uri->getAbsoluteUri());
     }
 
     /**
@@ -177,7 +177,7 @@ class UriFactoryTest extends \PHPUnit_Framework_TestCase
             $uri
         );
 
-        $this->assertSame('http://example.com/foo?param1=value1', $uri->getAbsoluteUri());
+        $this->assertSame('https://example.com/foo?param1=value1', $uri->getAbsoluteUri());
     }
 
     /**
@@ -205,7 +205,7 @@ class UriFactoryTest extends \PHPUnit_Framework_TestCase
             $uri
         );
 
-        $this->assertSame('http://example.com/foo?param1=value1', $uri->getAbsoluteUri());
+        $this->assertSame('https://example.com/foo?param1=value1', $uri->getAbsoluteUri());
     }
 
     /**
@@ -255,7 +255,7 @@ class UriFactoryTest extends \PHPUnit_Framework_TestCase
             $uri
         );
 
-        $this->assertSame('http://example.com/foo?param1=value1', $uri->getAbsoluteUri());
+        $this->assertSame('https://example.com/foo?param1=value1', $uri->getAbsoluteUri());
     }
 
     /**
@@ -282,7 +282,7 @@ class UriFactoryTest extends \PHPUnit_Framework_TestCase
             $uri
         );
 
-        $this->assertSame('http://example.com/foo', $uri->getAbsoluteUri());
+        $this->assertSame('https://example.com/foo', $uri->getAbsoluteUri());
     }
 
     /**
@@ -309,7 +309,7 @@ class UriFactoryTest extends \PHPUnit_Framework_TestCase
             $uri
         );
 
-        $this->assertSame('http://example.com/foo', $uri->getAbsoluteUri());
+        $this->assertSame('https://example.com/foo', $uri->getAbsoluteUri());
     }
 
     /**
@@ -319,13 +319,13 @@ class UriFactoryTest extends \PHPUnit_Framework_TestCase
     {
         $factory = new UriFactory();
 
-        $uri = $factory->createFromAbsolute('http://example.com');
+        $uri = $factory->createFromAbsolute('https://example.com');
 
         $this->assertInstanceOf(
             '\\OAuth\\Common\\Http\\Uri\\UriInterface',
             $uri
         );
 
-        $this->assertSame('http://example.com', $uri->getAbsoluteUri());
+        $this->assertSame('https://example.com', $uri->getAbsoluteUri());
     }
 }

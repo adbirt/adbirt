@@ -29,7 +29,7 @@ class RoutableFragmentRendererTest extends \PHPUnit_Framework_TestCase
      */
     public function testGenerateAbsoluteFragmentUri($uri, $controller)
     {
-        $this->assertEquals('http://localhost'.$uri, $this->callGenerateFragmentUriMethod($controller, Request::create('/'), true));
+        $this->assertEquals('https://localhost'.$uri, $this->callGenerateFragmentUriMethod($controller, Request::create('/'), true));
     }
 
     public function getGenerateFragmentUriData()

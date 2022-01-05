@@ -412,7 +412,7 @@ class AuthController extends Controller
                 $phone = '+' . $phone;
                 // $message = "Your Virtual Kingdom Password Reset Code is ".$token;
                 // $test = urlencode($message);
-                // $url = "http://api.smartsmssolutions.com/smsapi.php?username=minisaving&password=love4ever&sender=VKingdom&recipient=".$provided."&message=".$test;
+                // $url = "https://api.smartsmssolutions.com/smsapi.php?username=minisaving&password=love4ever&sender=VKingdom&recipient=".$provided."&message=".$test;
 
                 // $json = file_get_contents($url);
                 // $datas = json_decode($json, true);

@@ -6,8 +6,8 @@
  * file that was distributed with this source code.
  *
  * @copyright 2010-2015 Mike van Riel<mike@phpdoc.org>
- * @license   http://www.opensource.org/licenses/mit-license.php MIT
- * @link      http://phpdoc.org
+ * @license   https://www.opensource.org/licenses/mit-license.php MIT
+ * @link      https://phpdoc.org
  */
 
 namespace phpDocumentor\Reflection\DocBlock;
@@ -67,13 +67,13 @@ class DescriptionFactoryTest extends \PHPUnit_Framework_TestCase
      */
     public function testDescriptionCanParseAStringWithInlineTag()
     {
-        $contents   = 'This is text for a {@link http://phpdoc.org/ description} that uses an inline tag.';
+        $contents   = 'This is text for a {@link https://phpdoc.org/ description} that uses an inline tag.';
         $context    = new Context('');
         $tagFactory = m::mock(TagFactory::class);
         $tagFactory->shouldReceive('create')
             ->once()
-            ->with('@link http://phpdoc.org/ description', $context)
-            ->andReturn(new Link('http://phpdoc.org/', new Description('description')))
+            ->with('@link https://phpdoc.org/ description', $context)
+            ->andReturn(new Link('https://phpdoc.org/', new Description('description')))
         ;
 
         $factory     = new DescriptionFactory($tagFactory);
@@ -93,13 +93,13 @@ class DescriptionFactoryTest extends \PHPUnit_Framework_TestCase
      */
     public function testDescriptionCanParseAStringStartingWithInlineTag()
     {
-        $contents   = '{@link http://phpdoc.org/ This} is text for a description that starts with an inline tag.';
+        $contents   = '{@link https://phpdoc.org/ This} is text for a description that starts with an inline tag.';
         $context    = new Context('');
         $tagFactory = m::mock(TagFactory::class);
         $tagFactory->shouldReceive('create')
             ->once()
-            ->with('@link http://phpdoc.org/ This', $context)
-            ->andReturn(new Link('http://phpdoc.org/', new Description('This')))
+            ->with('@link https://phpdoc.org/ This', $context)
+            ->andReturn(new Link('https://phpdoc.org/', new Description('This')))
         ;
 
         $factory     = new DescriptionFactory($tagFactory);

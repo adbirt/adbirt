@@ -123,7 +123,7 @@ Upgrade your version of libcurl
 The certificate authority Twilio uses is included in the latest version of the
 ``libcurl`` library. Upgrading your system version of ``libcurl`` will
 resolve the SSL error. `Click here to download the latest version of
-libcurl <http://curl.haxx.se/download.html>`_.
+libcurl <https://curl.haxx.se/download.html>`_.
 
 If this does not work, double check your Account SID, token, and that you do
 not have errors anywhere else in your code. If you need further assistance,

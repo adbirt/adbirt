@@ -5,9 +5,9 @@
  * PHP version 5.3
  *
  * @author    Ben Selby <benmatselby@gmail.com>
- * @copyright 2010-2011 Mike van Riel / Naenius. (http://www.naenius.com)
- * @license   http://www.opensource.org/licenses/mit-license.php MIT
- * @link      http://phpdoc.org
+ * @copyright 2010-2011 Mike van Riel / Naenius. (https://www.naenius.com)
+ * @license   https://www.opensource.org/licenses/mit-license.php MIT
+ * @link      https://phpdoc.org
  */
 
 namespace Barryvdh\Reflection\DocBlock\Tag;
@@ -16,9 +16,9 @@ namespace Barryvdh\Reflection\DocBlock\Tag;
  * Test class for \Barryvdh\Reflection\DocBlock\Tag\LinkTag
  *
  * @author    Ben Selby <benmatselby@gmail.com>
- * @copyright 2010-2011 Mike van Riel / Naenius. (http://www.naenius.com)
- * @license   http://www.opensource.org/licenses/mit-license.php MIT
- * @link      http://phpdoc.org
+ * @copyright 2010-2011 Mike van Riel / Naenius. (https://www.naenius.com)
+ * @license   https://www.opensource.org/licenses/mit-license.php MIT
+ * @link      https://phpdoc.org
  */
 class LinkTagTest extends \PHPUnit_Framework_TestCase
 {
@@ -63,24 +63,24 @@ class LinkTagTest extends \PHPUnit_Framework_TestCase
         return array(
             array(
                 'link',
-                'http://www.phpdoc.org/',
-                'http://www.phpdoc.org/',
-                'http://www.phpdoc.org/',
-                'http://www.phpdoc.org/'
+                'https://www.phpdoc.org/',
+                'https://www.phpdoc.org/',
+                'https://www.phpdoc.org/',
+                'https://www.phpdoc.org/'
             ),
             array(
                 'link',
-                'http://www.phpdoc.org/ Testing',
-                'http://www.phpdoc.org/ Testing',
+                'https://www.phpdoc.org/ Testing',
+                'https://www.phpdoc.org/ Testing',
                 'Testing',
-                'http://www.phpdoc.org/'
+                'https://www.phpdoc.org/'
             ),
             array(
                 'link',
-                'http://www.phpdoc.org/ Testing comments',
-                'http://www.phpdoc.org/ Testing comments',
+                'https://www.phpdoc.org/ Testing comments',
+                'https://www.phpdoc.org/ Testing comments',
                 'Testing comments',
-                'http://www.phpdoc.org/'
+                'https://www.phpdoc.org/'
             ),
         );
     }

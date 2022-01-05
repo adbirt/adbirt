@@ -64,7 +64,7 @@ Then simply install it with composer:
 $> composer install --prefer-dist
 ```
 
-You can read more about Composer on its [official webpage](http://getcomposer.org).
+You can read more about Composer on its [official webpage](https://getcomposer.org).
 
 ## How to use it
 

@@ -192,7 +192,7 @@ class ownerController extends Controller
 
                 $Pro = new Profile;
                 $Pro->user_id = $id;
-                $Pro->propic = "http://lorempixel.com/640/480/?83341";
+                $Pro->propic = "https://lorempixel.com/640/480/?83341";
                 $Pro->save();
             }
             return redirect('/advertiser/view-advertiser');

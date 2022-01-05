@@ -135,7 +135,7 @@ class Person extends \Faker\Provider\Person
 
     /**
      * PESEL - Universal Electronic System for Registration of the Population
-     * @link http://en.wikipedia.org/wiki/PESEL
+     * @link https://en.wikipedia.org/wiki/PESEL
      * @param  DateTime $birthdate
      * @param  string   $sex       M for male or F for female
      * @return string   11 digit number, like 44051401358
@@ -176,7 +176,7 @@ class Person extends \Faker\Provider\Person
 
     /**
      * National Identity Card number
-     * @link http://en.wikipedia.org/wiki/Polish_National_Identity_Card
+     * @link https://en.wikipedia.org/wiki/Polish_National_Identity_Card
      * @return string 3 letters and 6 digits, like ABA300000
      */
     public static function personalIdentityNumber()
@@ -199,8 +199,8 @@ class Person extends \Faker\Provider\Person
 
     /**
      * Taxpayer Identification Number (NIP in Polish)
-     * @link http://en.wikipedia.org/wiki/PESEL#Other_identifiers
-     * @link http://pl.wikipedia.org/wiki/NIP
+     * @link https://en.wikipedia.org/wiki/PESEL#Other_identifiers
+     * @link https://pl.wikipedia.org/wiki/NIP
      * @return string 10 digit number
      */
     public static function taxpayerIdentificationNumber()

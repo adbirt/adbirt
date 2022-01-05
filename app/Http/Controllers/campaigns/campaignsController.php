@@ -199,8 +199,7 @@ class campaignsController extends Controller
 
                 unset($input['old_campaign_banner']);
                 campaign::where('id', $Id)->update($input);
-                //\Session::flash('flash_message',"Congrats your ads have been updated, kindly copy our js, and add it on your landing page to get your ads running, you can add this in either header, footer or above form on your website.");   
-                \Session::flash('flash_message', "showcopymessage");
+                \Session::flash('flash_message', "Campaign has been updated successfully.");
             } else {
 
                 // Create new campaign

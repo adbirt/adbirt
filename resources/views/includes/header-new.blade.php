@@ -183,17 +183,17 @@ $NotifyCnt = count($Notify);
 
                 <div class="dropdown-divider"></div>
                 <a href="javascript:alert('coming soon')" class="dropdown-item p-2 cursor-pointer">
-                    Tour Gide <i class="fa fa-question mr-2"></i>
+                    Tour Gide
                 </a>
 
                 <div class="dropdown-divider"></div>
-                <a href="/faq" class="dropdown-item p-2 cursor-pointer">
-                    FAQs <i class="fa fa-question mr-2"></i>
+                <a href="javascript:alert('coming soon')" class="dropdown-item p-2 cursor-pointer">
+                    FAQs
                 </a>
 
                 <div class="dropdown-divider"></div>
-                <a href="/contact" class="dropdown-item p-2 cursor-pointer">
-                    Contact Us <i class="fa fa-question mr-2"></i>
+                <a href="/contact" target="_blank" class="dropdown-item p-2 cursor-pointer">
+                    Contact Us
                 </a>
 
             </div>

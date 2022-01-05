@@ -51,12 +51,12 @@
                                     </td> --}}
                                         <td class="pl-2 d-flex flex-row align-items-center justify-content-start">
                                             <a class="btn btn-info btn-sm btn-archive Editbtn"
-                                                href="{!! $user->id !!}" style="margin-right: 3px;">
+                                                href="{!! URL::route('user.edit', ['id' => $user->id]) !!}" style="margin-right: 3px;">
                                                 Edit <i class="fa fa-edit"></i>
                                             </a>
 
                                             <a class="btn btn-info btn-sm btn-archive Editbtn"
-                                                href="/user/{!! URL::route('user.show', ['id' => $user->id]) !!}/edit" style="margin-right: 3px;">
+                                                href="{!! URL::route('user.show', ['id' => $user->id]) !!}" style="margin-right: 3px;">
                                                 Show <i class="fa fa-eye"></i>
                                             </a>
 

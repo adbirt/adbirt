@@ -68,42 +68,39 @@
                     <div class="col-lg-7 col-12 d-block mx-auto my-auto" data-aos="fade-up">
                         <div class="contact">
                             <h4>Send a Message</h4>
-                            <form id="contact-form" class="adbirt-contact-form form" method="POST"
-                                action="https://adbirt.com/api/send-mail">
+                            {!! Form::open(['url' => 'https://adbirt.com/api/send-mail', 'class' => 'adbirt-contact-form form']) !!}
 
-                                {{ csrf_field() }}
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                        required="required">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="email" name="email" class="form-control" id="form_email"
+                                        placeholder="Your Email" required="required">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="text" name="subject" class="form-control" id="subject"
+                                        placeholder="Your Subject" required="required">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="tel" name="mobile" class="form-control" id="mobile"
+                                        placeholder="Your Mobile" required="required">
+                                </div>
 
-                                <div class="row">
-                                    <div class="form-group col-md-6">
-                                        <input type="text" name="name" class="form-control" id="name"
-                                            placeholder="Your Name" required="required">
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <input type="email" name="email" class="form-control" id="form_email"
-                                            placeholder="Your Email" required="required">
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <input type="text" name="subject" class="form-control" id="subject"
-                                            placeholder="Your Subject" required="required">
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <input type="tel" name="mobile" class="form-control" id="mobile"
-                                            placeholder="Your Mobile" required="required">
-                                    </div>
-
-                                    <div class="form-group col-md-12">
-                                        <textarea rows="6" name="message" class="form-control" id="message"
-                                            placeholder="Your Message" required="required"></textarea>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="text-left adbirt-contact-btn">
-                                            <button type="submit" value="Submit Now" name="submit" id="submitButton"
-                                                class="btn bg-primary-color text-white" title="Submit Your Message!">Send
-                                                Message</button>
-                                        </div>
+                                <div class="form-group col-md-12">
+                                    <textarea rows="6" name="message" class="form-control" id="message"
+                                        placeholder="Your Message" required="required"></textarea>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="text-left adbirt-contact-btn">
+                                        <button type="submit" value="Submit Now" name="submit" id="submitButton"
+                                            class="btn bg-primary-color text-white" title="Submit Your Message!">Send
+                                            Message</button>
                                     </div>
                                 </div>
-                            </form>
+                            </div>
+                            {!! Form::close() !!}
 
                             <div id="form-message" class="alert alert-danger mt-2 d-none" role="alert">
                                 Error Message

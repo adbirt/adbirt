@@ -51,7 +51,7 @@
                                     </td> --}}
                                         <td class="pl-2 d-flex flex-row align-items-center justify-content-start">
                                             <a class="btn btn-info btn-sm btn-archive Editbtn"
-                                                href="{!! URL::route('user.edit', ['id' => $user->id]) !!}" style="margin-right: 3px;">
+                                                href="/user/{{ $user->id }}/edit" style="margin-right: 3px;">
                                                 Edit <i class="fa fa-edit"></i>
                                             </a>
 

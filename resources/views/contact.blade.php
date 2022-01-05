@@ -122,6 +122,9 @@
 @stop
 
 @section('script')
+
+    {{-- <!-- form-contact js -->
+    <script src="public/assets-revamp/js/form-contact.js"></script> --}}
     <script>
         document.querySelector('form').addEventListener('submit', (e) => {
             const alertBox = document.querySelector('#form-message');

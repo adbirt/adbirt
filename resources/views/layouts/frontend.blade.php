@@ -313,8 +313,6 @@
     <script src="public/assets-revamp/nivoslider/js/jquery.nivo.slider.js"></script>
     <!-- ajaxchimp js -->
     <script src="public/assets-revamp/js/ajaxchimp.min.js"></script>
-    <!-- form-contact js -->
-    <script src="public/assets-revamp/js/form-contact.js"></script>
     <!-- main js -->
     <!-- Wavify JS -->
     <script src="public/assets-revamp/js/wavify.js"></script>

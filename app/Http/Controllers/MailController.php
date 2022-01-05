@@ -20,6 +20,10 @@ class MailController extends Controller
     {
         $input = $req->all();
 
+        if (isset($input['_token'])) {
+            unset($input['_token']);
+        }
+
         $fromName = $input['fromName'];
         $fromEmail = $this->adminEmail;
         $toEmail = $input['toEmail'];

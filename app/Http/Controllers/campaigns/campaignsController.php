@@ -199,7 +199,7 @@ class campaignsController extends Controller
 
                 unset($input['old_campaign_banner']);
                 campaign::where('id', $Id)->update($input);
-                \Session::flash('flash_message', "Campaign has been updated successfully.");
+                \Session::flash('flash_message', 'Campaign has been updated successfully.');
             } else {
 
                 // Create new campaign
@@ -244,11 +244,11 @@ class campaignsController extends Controller
 
                 //\Session::flash('flash_message',"Congrats your ads have been updated, kindly copy our js, and add it on your landing page to get your ads running, you can add this in either header, footer or above form on your website.");   
                 //<input class='form-control valid' style='width:81%;' type='text' value='<script type=\'text/javascript\' src=\'https://adbirt.com/public/assets/js/advertiser.js\'></script>' id='advrcopy'><button class='btn btn-primary waves-effect waves-light' onclick='advrCopy()'>Copy text</button>
-                \Session::flash('flash_message', "showcopymessage");
+                \Session::flash('flash_message', 'Campaign has been updated successfully.');
             }
 
             if (Auth::user()->hasRole('admin')) {
-                return back()->withInput()->with('Saved', 'Campaign successfully Saved');
+                return back()->withInput()->with('flash_message', 'Campaign has been updated successfully.');
             }
 
             return redirect('/campaigns/embedding');

@@ -1,67 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>http://www.adbirt.com/</loc>
-  <lastmod>2018-11-05T11:29:20+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>http://www.adbirt.com/howitworks</loc>
-  <lastmod>2018-11-05T11:29:20+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.adbirt.com/pricing</loc>
-  <lastmod>2018-11-05T11:29:20+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.adbirt.com/support/</loc>
-  <lastmod>2018-11-05T11:29:20+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.adbirt.com/support/index.php</loc>
-  <lastmod>2018-11-05T11:29:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.adbirt.com/support/kb/index.php</loc>
-  <lastmod>2018-11-05T11:29:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.adbirt.com/support/open.php</loc>
-  <lastmod>2018-11-05T11:29:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.adbirt.com/support/view.php</loc>
-  <lastmod>2018-11-05T11:29:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.adbirt.com/support/kb/faq.php?id=1</loc>
-  <lastmod>2018-11-05T11:29:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.adbirt.com/support/kb/faq.php?cid=1</loc>
-  <lastmod>2018-11-05T11:29:20+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://www.adbirt.com/support/account.php?do=create</loc>
-  <lastmod>2018-11-05T11:29:20+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+  <url>
+    <loc>https://adbirt.com/</loc>
+    <lastmod>2022-01-05T06:11:03+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://adbirt.com/how-it-works</loc>
+    <lastmod>2022-01-05T06:11:03+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://adbirt.com/pricing</loc>
+    <lastmod>2022-01-05T06:11:03+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://adbirt.com/contact</loc>
+    <lastmod>2022-01-05T06:11:03+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://adbirt.com/actions-and-events</loc>
+    <lastmod>2022-01-05T06:11:03+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://adbirt.com/privacy</loc>
+    <lastmod>2022-01-05T06:11:03+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
 </urlset>

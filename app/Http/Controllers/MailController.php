@@ -8,6 +8,10 @@ use Mail;
 
 class MailController extends Controller
 {
+
+    // var ?string $adminEmail = 'info@adbirt.com';
+    var ?string $adminEmail = 'danroyaleffiong@gmail.com';
+
     public function __construct()
     {
     }
@@ -17,7 +21,7 @@ class MailController extends Controller
         $input = $req->all();
 
         $fromName = $input['fromName'];
-        $fromEmail = 'info@adbirt.com';
+        $fromEmail = $this->adminEmail;
         $toEmail = $input['toEmail'];
         $subject = $input['subject'];
         $body = $input['body'];
@@ -34,7 +38,7 @@ class MailController extends Controller
                 $data['TextToClient'] = $body;
 
                 Mail::send('email.mail', $data, function ($message) use ($toEmail, $subject, $fromName, $fromEmail) {
-                    $message->from($fromEmail, $fromName);
+                    $message->from($fromEmail ?? $this->adminEmail, $fromName);
                     $message->to($toEmail)->subject($subject);
                 });
 

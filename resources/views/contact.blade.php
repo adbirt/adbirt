@@ -71,7 +71,7 @@
                             <form id="contact-form" class="adbirt-contact-form form" method="POST"
                                 action="https://adbirt.com/api/send-mail">
 
-                                {{-- {{ csrf_field() }} --}}
+                                {{ csrf_field() }}
 
                                 <div class="row">
                                     <div class="form-group col-md-6">

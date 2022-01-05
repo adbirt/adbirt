@@ -26,6 +26,8 @@ class MailController extends Controller
         $subject = $input['subject'];
         $body = $input['body'];
 
+        unset($input['_token']);
+
         return $this->sendMail($fromName, $fromEmail, $toEmail, $subject, $body);
     }
 

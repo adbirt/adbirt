@@ -69,7 +69,7 @@
                         <div class="contact">
                             <h4>Send a Message</h4>
                             <form id="contact-form" class="adbirt-contact-form form" method="POST"
-                                action="https://www.adbirt.com/api/send-mail">
+                                action="https://adbirt.com/api/send-mail">
 
                                 {{-- {{ csrf_field() }} --}}
 
@@ -127,6 +127,8 @@
     <script src="public/assets-revamp/js/form-contact.js"></script> --}}
     <script>
         document.querySelector('form').addEventListener('submit', (e) => {
+            e.preventDefault();
+
             const alertBox = document.querySelector('#form-message');
 
             const name = String(document.querySelector("[name='name']").value);
@@ -140,7 +142,7 @@
                 'Subject: ' + subject + '\n' +
                 'Phone Number: ' + mobile + '\n\n\n' + message;
 
-            fetch('https://adbirt.com/api/send-mail', {
+            fetch(e.target.getAttribute('action'), {
                 method: 'POST',
                 body: new URLSearchParams({
                     fromEmail: email,

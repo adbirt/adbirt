@@ -21,9 +21,9 @@
     <div class="layout-content" data-scrollable>
         <div class="container-fluid">
             <!--<ol class="breadcrumb">
-                                                                                                                                                                                                                            <li><a href="{!! route('dashboard') !!}">Home</a></li>
-                                                                                                                                                                                                                            <li class="active">Dashboard</li>
-                                                                                                                                                                                                                        </ol> -->
+                                                                                                                                                                                                                                <li><a href="{!! route('dashboard') !!}">Home</a></li>
+                                                                                                                                                                                                                                <li class="active">Dashboard</li>
+                                                                                                                                                                                                                            </ol> -->
             @include('includes.alert')
             @if (Session::has('flash_message'))
                 <div class="alert bg-success alert-styled-left" id="msg">
@@ -454,7 +454,7 @@
                 <!-- small box -->
                 <div class="small-box bg-info h-100">
                     <div class="inner">
-                        <h3>{{ $Impressions }}
+                        <h3>{{ $Impressions ?? 0 }}
                             <!-- <sup style="font-size: 20px">%</sup> -->
                         </h3>
 
@@ -471,7 +471,7 @@
                 <!-- small box -->
                 <div class="small-box bg-warning h-100">
                     <div class="inner">
-                        <h3>{{ $Clicks }}</h3>
+                        <h3>{{ $Clicks ?? 0 }}</h3>
 
                         <p>Clicks</p>
                     </div>

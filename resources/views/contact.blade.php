@@ -87,7 +87,7 @@
                                             placeholder="Your Subject" required="required">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <input type="text" name="mobile" class="form-control" id="mobile"
+                                        <input type="tel" name="mobile" class="form-control" id="mobile"
                                             placeholder="Your Mobile" required="required">
                                     </div>
 

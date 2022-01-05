@@ -38,6 +38,8 @@ Route::get('contact', ['as' => 'contact', 'uses' => 'AdminController@contact']);
 Route::get('contactus', ['as' => 'contactus', 'uses' => 'AdminController@contact']);
 Route::get('contact-us', ['as' => 'contact-us', 'uses' => 'AdminController@contact']);
 
+Route::post('api/send-mail', ['as' => 'send-mail', 'uses' => 'MailController@handleContactForm']);
+
 Route::get('privacy', ['as' => 'privacy', 'uses' => 'AdminController@privacy']);
 Route::get('terms', ['as' => 'terms', 'uses' => 'AdminController@terms']);
 Route::get('about', ['as' => 'about', 'uses' => 'AdminController@about']);

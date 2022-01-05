@@ -69,7 +69,7 @@
                         <div class="contact">
                             <h4>Send a Message</h4>
                             <form id="contact-form" class="adbirt-contact-form form" method="POST"
-                                action="https://www.adbirt.com/community/send-mail.php">
+                                action="https://www.adbirt.com/api/send-mail">
 
                                 {{ csrf_field() }}
 
@@ -105,8 +105,8 @@
                                 </div>
                             </form>
 
-                            <div id="form-message" class="alert alert-danger" role="alert">
-                                Message
+                            <div id="form-message" class="alert alert-danger mt-2 d-none" role="alert">
+                                Error Message
                             </div>
 
                         </div>
@@ -119,4 +119,50 @@
         <!--- END OVERLAY -->
     </section>
     <!-- CONTACT SECTION END-->
+@stop
+
+@section('script')
+    <script>
+        document.querySelector('form').addEventListener('submit', (e) => {
+            const alertBox = document.querySelector('#form-message');
+
+            const name = String(document.querySelector("[name='name']").value);
+            const email = String(document.querySelector("[name='email']").value);
+            const subject = String(document.querySelector("[name='subject']").value);
+            const mobile = String(document.querySelector("[name='mobile']").value);
+            const message = String(document.querySelector("[name='message']").value);
+
+            const body = 'Name: ' + name + '\n' +
+                'Email: ' + email + '\n' +
+                'Subject: ' + subject + '\n' +
+                'Phone Number: ' + mobile + '\n\n\n' + message;
+
+            fetch('https://adbirt.com/api/send-mail', {
+                method: 'POST',
+                body: new URLSearchParams({
+                    fromEmail: email,
+                    fromName: name,
+                    subject,
+                    body
+                }),
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                }
+            }).then(async (res) => {
+                console.log(res);
+
+                const json = await res.json();
+                console.log(json);
+            }).catch((err) => {
+                alertBox.classList.contains('d-none') && alertBox.classList.add('d-block');
+                alertBox.innerHTML = 'An error occurred';
+                setTimeout(() => {
+                    alertBox.classList.contains('d-block') && alertBox.classList.add('d-none');
+                }, 3000);
+
+                console.error(err);
+            });
+
+        });
+    </script>
 @stop

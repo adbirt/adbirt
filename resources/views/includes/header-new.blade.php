@@ -102,7 +102,7 @@ $NotifyCnt = count($Notify);
 
         <!-- Begin Notifications Dropdown Menu -->
         <li class="nav-item dropdown">
-            <a class="nav-link btn mx-1 text-primary-color p-2" data-toggle="dropdown" href="#">
+            <a class="nav-link btn mx-1 text-primary-color p-2 dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" id="notificationsDropdown" data-toggle="dropdown" href="#">
                 <i class="fa fa-bell fa-lg"></i>
                 @if ($NotifyCnt >= 1)
                     <span class="badge badge-warning navbar-badge" style="font-size: 14px;">
@@ -110,7 +110,7 @@ $NotifyCnt = count($Notify);
                     </span>
                 @endif
             </a>
-            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right"
+            <div aria-labelledby="notificationsDropdown" class="dropdown-menu dropdown-menu-lg dropdown-menu-right"
                 style="text-overflow: ellipsis !important; overflow: hidden !important;">
                 @if ($NotifyCnt >= 1)
                     <span class="dropdown-item dropdown-header">
@@ -169,11 +169,11 @@ $NotifyCnt = count($Notify);
         <!-- End Notifications Dropdown Menu -->
 
         <!-- Begin Help Menu -->
-        <li class="nav-item help">
-            <a class="nav-link btn mx-1 text-primary-color p-2" data-toggle="help" href="#">
+        <li class="nav-item dropdown">
+            <a class="nav-link btn mx-1 text-primary-color p-2 dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" id="helpDropdown" data-toggle="help" href="#">
                 <i class="fa fa-question fa-lg"></i>
             </a>
-            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right"
+            <div aria-labelledby="helpDropdown" class="dropdown-menu dropdown-menu-lg dropdown-menu-right"
                 style="text-overflow: ellipsis !important; overflow: hidden !important;">
                 <span class="dropdown-item dropdown-header">
                     Help Center

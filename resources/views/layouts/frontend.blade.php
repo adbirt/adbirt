@@ -16,8 +16,8 @@
 
     <!-- Latest Bootstrap min CSS -->
     <link rel="stylesheet" href="public/assets-revamp/bootstrap/css/bootstrap.css">
-    <!-- Google Fonts -->
 
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Hind:500,600,700" rel="stylesheet">
     <!-- Font Awesome CSS -->
@@ -240,7 +240,10 @@
                 <div class="adbirt-footer-boottom text-center mt-4">
                     <div class="row">
                         <div class="col-md-12">
-                            <p>&copy; 2017 - 2022 Adbirt, Inc. All Rights Reserved</a> </p>
+                            <?php
+                            $year = date('Y');
+                            ?>
+                            <p>&copy; 2017 - {!! $year !!} Adbirt, Inc. All Rights Reserved</a> </p>
                         </div>
                         <!--- END COL -->
                     </div>
@@ -299,23 +302,21 @@
     <!-- jQuery Wavify JS -->
     <script src="public/assets-revamp/js/jquery.wavify.js"></script>
     <script src="public/assets-revamp/js/main.js"></script>
-    @if (Request::segment(1) == '/')
-        <script>
-            //**===================a Adbirt banner waves ===================**//		
-            $('#adbirt-wavify') && $("#adbirt-wavify svg path#wave").wavify({
-                height: 80,
-                bones: 2,
-                amplitude: 75,
-                color: "#fff",
-                speed: .45
-            });
+    <script>
+        //**===================a Adbirt banner waves ===================**//		
+        $('#adbirt-wavify') && $("#adbirt-wavify svg path#wave").wavify({
+            height: 80,
+            bones: 2,
+            amplitude: 75,
+            color: "#fff",
+            speed: .45
+        });
 
-            $('#adbirt-wavify').length && $('#adbirt-wavify').css({
-                width: '100%',
-                zIndex: 999
-            })
-        </script>
-    @endif
+        $('#adbirt-wavify').length && $('#adbirt-wavify').css({
+            width: '100%',
+            zIndex: 999
+        })
+    </script>
 
     @yield('script')
 </body>

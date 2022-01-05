@@ -135,8 +135,13 @@
                                         <a href="/contact" class="nav-link">Contact</a>
                                     </li>
                                     <li class="nav-item text-white">
-                                        <a href="/dashboard"
-                                            class="nav-link rounded-lg bg-primary-color px-3 py-1">Login</a>
+                                        <a href="/dashboard" class="nav-link rounded-lg bg-primary-color px-3 py-1">
+                                            @if (Auth::user())
+                                                Dashboard
+                                            @else
+                                                Login
+                                            @endif
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -220,12 +225,12 @@
                             <!--- END COL -->
 
                             <div class="col-lg-5 col-md-5 col-12 adbirt-footer-link">
-                                <h5>Our Map </h5>
+                                <h5>Map </h5>
                                 <!-- Google Map start-->
                                 <div id="adbirt-map-area">
                                     <iframe
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1192.4978464340093!2d-2.9155465418515525!3d53.2896121983381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487adfa45defb54f%3A0x8624a28bde8082f4!2sAdbirt!5e0!3m2!1sen!2sng!4v1628345267368!5m2!1sen!2sng"
-                                        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                        style="border:0;" allowfullscreen="true" loading="lazy"></iframe>
                                 </div>
                                 <!-- Google Map end -->
                             </div>

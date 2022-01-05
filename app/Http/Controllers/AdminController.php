@@ -24,7 +24,7 @@ class AdminController extends Controller
     public function contact()
     {
         return view('contact')
-            ->with('title', 'Contact us');
+            ->with('title', 'Contact Us');
     }
 
     public function terms()
@@ -55,7 +55,7 @@ class AdminController extends Controller
     public function about()
     {
         return view('about')
-            ->with('title', 'About');
+            ->with('title', 'About Us');
     }
 
 

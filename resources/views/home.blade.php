@@ -23,8 +23,7 @@
                                 <ul>
                                     <li>
                                         <a href="/dashboard"
-                                            class="adbirt-themes-btn red animate__animated animate__fadeInUp">Sign
-                                            up for free</a>
+                                            class="adbirt-themes-btn red animate__animated animate__fadeInUp">@if (Auth::user()) Let's Start @else Sign Up For Free @endif</a>
                                     </li>
                                 </ul>
                             </div>
@@ -48,8 +47,8 @@
                             <div class="adbirt-slider-bottom">
                                 <ul>
                                     <li><a href="/dashboard"
-                                            class="adbirt-themes-btn red animate__animated animate__fadeInUp">Sign
-                                            up for free</a></li>
+                                            class="adbirt-themes-btn red animate__animated animate__fadeInUp">@if (Auth::user()) Let's Start @else Sign Up For Free @endif</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -80,14 +79,14 @@
             <div class="row">
                 <div class="col-lg-6">
                     <!-- <div class="row">
-                                        <div class="col-6">
-                                            <img class="mb-3" src="public/assets-revamp/img/about/about-2.jpg" alt="">
-                                            <img src="public/assets-revamp/img/about/about-1.jpg" alt="">
-                                        </div>
-                                        <div class="col-6">
-                                            <img src="public/assets-revamp/img/about/about-3.jpg" alt="">
-                                        </div>
-                                    </div> -->
+                                                        <div class="col-6">
+                                                            <img class="mb-3" src="public/assets-revamp/img/about/about-2.jpg" alt="">
+                                                            <img src="public/assets-revamp/img/about/about-1.jpg" alt="">
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <img src="public/assets-revamp/img/about/about-3.jpg" alt="">
+                                                        </div>
+                                                    </div> -->
                     <img src="/public/assets-revamp/img/digital-marketing-simplified.png" alt="Digital Marketing"
                         style="margin-top: 4rem !important;" class="wow slideInLeft" data-wow-duration="0.95s"
                         data-wow-delay="0.1s" data-wow-offset="0" />
@@ -112,7 +111,7 @@
                         <li><i class="fas fa-check-circle text-primary-color"></i> Cost Per Lead (CPL)</li>
                     </ul>
                     <div class="adbirt-about1-btn mt-5">
-                        <a class="adbirt-themes-btn red" href="/dashboard">Sign up for free</a>
+                        <a class="adbirt-themes-btn red" href="/dashboard">@if (Auth::user()) Let's Start @else Sign Up For Free @endif</a>
                     </div>
                 </div>
             </div>
@@ -125,41 +124,41 @@
 
     <!-- START PROGRAM -->
     <!-- <section id="program" class="adbirt-program-area" data-stellar-background-ratio="0.3"
-               style="background-image:url(public/assets-revamp/img/bg/11.jpg);background-size:cover; background-position: center center">
-               <div class="adbirt-home-overlay adbirt-section-padding">
-                <div class="container">
-                 <div class="row clearfix justify-content-left">
-                  <div class="col-xl-6 col-lg-6 col-12 mx-auto my-auto wow fadeIn" data-wow-duration="1s"
-                   data-wow-delay="0.3s" data-wow-offset="0">
-                   <div class="adbirt-section-title text-left">
-                    <h5 class="adbirt-sheading text-white">Intro Video</h5>
-                    <h2 class="mb-3 text-white">You can It Solution Easy to Learn and Program that you can
-                     easily Develop</h2>
-                   </div>
-                  </div>
-                  <--- END COL --
+                               style="background-image:url(public/assets-revamp/img/bg/11.jpg);background-size:cover; background-position: center center">
+                               <div class="adbirt-home-overlay adbirt-section-padding">
+                                <div class="container">
+                                 <div class="row clearfix justify-content-left">
+                                  <div class="col-xl-6 col-lg-6 col-12 mx-auto my-auto wow fadeIn" data-wow-duration="1s"
+                                   data-wow-delay="0.3s" data-wow-offset="0">
+                                   <div class="adbirt-section-title text-left">
+                                    <h5 class="adbirt-sheading text-white">Intro Video</h5>
+                                    <h2 class="mb-3 text-white">You can It Solution Easy to Learn and Program that you can
+                                     easily Develop</h2>
+                                   </div>
+                                  </div>
+                                  <--- END COL --
 
-                  <div class="col-xl-6 col-12 adbirt-program-img">
-                   <div class="waves-box">
-                    <-- If dont need Video then add class .adbirt-hidden --
-                    <a href="https://www.youtube.com/watch?v=Ao2XIhZ0JGs"
-                     class="iq-video popup-video mfp-iframe"> <i class="fa fa-play"></i>
-                    </a>
-                    <div class="iq-waves">
-                     <div class="waves wave-1"></div>
-                     <div class="waves wave-2"></div>
-                     <div class="waves wave-3"></div>
-                    </div>
-                   </div>
-                  </div>
-                  <--- END COL --
-                 </div>
-                 <--- END ROW --
-                </div>
-                <--- END CONTAINER --
-               </div>
-               <--- END CONTAINER --
-              </section> -->
+                                  <div class="col-xl-6 col-12 adbirt-program-img">
+                                   <div class="waves-box">
+                                    <-- If dont need Video then add class .adbirt-hidden --
+                                    <a href="https://www.youtube.com/watch?v=Ao2XIhZ0JGs"
+                                     class="iq-video popup-video mfp-iframe"> <i class="fa fa-play"></i>
+                                    </a>
+                                    <div class="iq-waves">
+                                     <div class="waves wave-1"></div>
+                                     <div class="waves wave-2"></div>
+                                     <div class="waves wave-3"></div>
+                                    </div>
+                                   </div>
+                                  </div>
+                                  <--- END COL --
+                                 </div>
+                                 <--- END ROW --
+                                </div>
+                                <--- END CONTAINER --
+                               </div>
+                               <--- END CONTAINER --
+                              </section> -->
     <!-- END PROGRAM -->
 
     <!-- START SERVICE -->
@@ -360,46 +359,46 @@
     <!-- Benefit session start here -->
     <!-- <section>
 
-                        <div class="text-center feed-back pt-5">
-                            <h2 class="text-primary-color font-weight-bold font-size-35">What you'll benefit</h2>
+                                        <div class="text-center feed-back pt-5">
+                                            <h2 class="text-primary-color font-weight-bold font-size-35">What you'll benefit</h2>
 
-                            <center>
-                                <hr>
-                            </center>
-                        </div>
+                                            <center>
+                                                <hr>
+                                            </center>
+                                        </div>
 
-                        <div class="container mt-2">
+                                        <div class="container mt-2">
 
 
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <h3 class="text-center">01</h3>
-                                    <p class="all-second">
-                                        We offer you the lowest cost for your marketing, and you're in total control of your
-                                        marketing budget set your cost within your means & only pay for the result.
-                                    </p>
-                                </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <h3 class="text-center">01</h3>
+                                                    <p class="all-second">
+                                                        We offer you the lowest cost for your marketing, and you're in total control of your
+                                                        marketing budget set your cost within your means & only pay for the result.
+                                                    </p>
+                                                </div>
 
-                                <div class="col-md-4">
-                                    <h3 class="text-center">02</h3>
-                                    <p class="all-second">
-                                        With the innovation of our technology, We will promote your product or service to the
-                                        targeted audience who are likely to buy from you only
-                                    </p>
-                                </div>
+                                                <div class="col-md-4">
+                                                    <h3 class="text-center">02</h3>
+                                                    <p class="all-second">
+                                                        With the innovation of our technology, We will promote your product or service to the
+                                                        targeted audience who are likely to buy from you only
+                                                    </p>
+                                                </div>
 
-                                <div class="col-md-4">
-                                    <h3 class="text-center">03</h3>
-                                    <p class="all-second">
-                                        We guarantee our advertisers 100% return on investment from their ads-spend.YOu don't have
-                                        to pay a dime if you don't make a sale or get a new lead to your business
-                                    </p>
-                                </div>
-                            </div>
+                                                <div class="col-md-4">
+                                                    <h3 class="text-center">03</h3>
+                                                    <p class="all-second">
+                                                        We guarantee our advertisers 100% return on investment from their ads-spend.YOu don't have
+                                                        to pay a dime if you don't make a sale or get a new lead to your business
+                                                    </p>
+                                                </div>
+                                            </div>
 
-                        </div>
+                                        </div>
 
-                    </section> -->
+                                    </section> -->
     <!-- End Benefit session start here -->
 
     <br />
@@ -473,94 +472,94 @@
 
     <!-- TESTIMONIAL SECTION START-->
     <!-- <section id="testimonial" class="adbirt-section-padding">
-               <div class="container">
-                <div class="row justify-content-center">
-                 <div class="col-lg-7 col-xl-6">
-                  <div class="adbirt-section-title text-center wow zoomIn" data-wow-duration="1s"
-                   data-wow-delay="0.3s" data-wow-offset="0">
-                   <h5 class="adbirt-sheading"> Testimonial</h5>
-                   <h2 class="">Client Feedback</h2>
-                   <p>Lorem ipsum dolor sit amet elit , consectetur adipiscing , sed eiusmod tempor sit amet
-                    elit dolor sit amet elit.</p>
-                  </div>
-                 </div>
-                 <--- END COL --
-                </div>
-                <--- END ROW --
+                               <div class="container">
+                                <div class="row justify-content-center">
+                                 <div class="col-lg-7 col-xl-6">
+                                  <div class="adbirt-section-title text-center wow zoomIn" data-wow-duration="1s"
+                                   data-wow-delay="0.3s" data-wow-offset="0">
+                                   <h5 class="adbirt-sheading"> Testimonial</h5>
+                                   <h2 class="">Client Feedback</h2>
+                                   <p>Lorem ipsum dolor sit amet elit , consectetur adipiscing , sed eiusmod tempor sit amet
+                                    elit dolor sit amet elit.</p>
+                                  </div>
+                                 </div>
+                                 <--- END COL --
+                                </div>
+                                <--- END ROW --
 
 
-                <div class="row">
-                 <-- Testimonials section Starts--
-                 <div class="col-lg-8 offset-lg-2">
-                  <div id="testimonial-slider"
-                   class="adbirt-testimonials-slide adbirt-main-testimonials adbirt-testimonial-slider owl-carousel owl-theme">
-                   <div class="adbirt-testimonial-single">
-                    <div class="adbirt-testimonial-pic">
-                     <a href=""><img src="public/assets-revamp/img/portfolio/3.jpg" alt="Portfolio Image"></a>
-                    </div>
-                    <div class="adbirt-testimonial-content">
-                     <p class="adbirt-testimonial-description">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet animi
-                      blanditiis consequatur debitis dicta distinctio, enim error eum iste libero modi
-                      nam natus perferendis possimus quasi sint.
-                     </p>
-                     <h2 class="adbirt-testimonial-title mt-3">Expediter
-                      <small class="adbirt-testimonial-post">Jzaa Dancer</small>
-                     </h2>
-                     <div class="adbirt-testimonial-icon mt-2">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                     </div>
-                    </div>
-                   </div>
-                   <div class="adbirt-testimonial-single">
-                    <div class="adbirt-testimonial-pic">
-                     <a href=""><img src="public/assets-revamp/img/portfolio/4.jpg" alt="Portfolio Image"></a>
-                    </div>
-                    <div class="adbirt-testimonial-content">
-                     <p class="adbirt-testimonial-description">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet animi
-                      blanditiis consequatur debitis dicta distinctio, enim error eum iste libero modi
-                      nam natus perferendis possimus quasi sint.
-                     </p>
-                     <h2 class="adbirt-testimonial-title mt-3">Originator
-                      <small class="adbirt-testimonial-post">Jzaa Dancer</small>
-                     </h2>
-                     <div class="adbirt-testimonial-icon mt-2">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star-half-alt"></i>
-                     </div>
-                    </div>
-                   </div>
-                  </div>
-                 </div>
-                 <--- END COL --
-                </div>
-                <--- END ROW --
-               </div>
-               <--- END CONTAINER --
-              </section> -->
+                                <div class="row">
+                                 <-- Testimonials section Starts--
+                                 <div class="col-lg-8 offset-lg-2">
+                                  <div id="testimonial-slider"
+                                   class="adbirt-testimonials-slide adbirt-main-testimonials adbirt-testimonial-slider owl-carousel owl-theme">
+                                   <div class="adbirt-testimonial-single">
+                                    <div class="adbirt-testimonial-pic">
+                                     <a href=""><img src="public/assets-revamp/img/portfolio/3.jpg" alt="Portfolio Image"></a>
+                                    </div>
+                                    <div class="adbirt-testimonial-content">
+                                     <p class="adbirt-testimonial-description">
+                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet animi
+                                      blanditiis consequatur debitis dicta distinctio, enim error eum iste libero modi
+                                      nam natus perferendis possimus quasi sint.
+                                     </p>
+                                     <h2 class="adbirt-testimonial-title mt-3">Expediter
+                                      <small class="adbirt-testimonial-post">Jzaa Dancer</small>
+                                     </h2>
+                                     <div class="adbirt-testimonial-icon mt-2">
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                     </div>
+                                    </div>
+                                   </div>
+                                   <div class="adbirt-testimonial-single">
+                                    <div class="adbirt-testimonial-pic">
+                                     <a href=""><img src="public/assets-revamp/img/portfolio/4.jpg" alt="Portfolio Image"></a>
+                                    </div>
+                                    <div class="adbirt-testimonial-content">
+                                     <p class="adbirt-testimonial-description">
+                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet animi
+                                      blanditiis consequatur debitis dicta distinctio, enim error eum iste libero modi
+                                      nam natus perferendis possimus quasi sint.
+                                     </p>
+                                     <h2 class="adbirt-testimonial-title mt-3">Originator
+                                      <small class="adbirt-testimonial-post">Jzaa Dancer</small>
+                                     </h2>
+                                     <div class="adbirt-testimonial-icon mt-2">
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star-half-alt"></i>
+                                     </div>
+                                    </div>
+                                   </div>
+                                  </div>
+                                 </div>
+                                 <--- END COL --
+                                </div>
+                                <--- END ROW --
+                               </div>
+                               <--- END CONTAINER --
+                              </section> -->
     <!-- TESTIMONIAL SECTION END-->
 
 
     <!-- START COMPANY BRAND LOGO  -->
     <!-- <div id="adbirt-brand-area" class="adbirt-section-padding">
-               <div class="adbirt-brand-overlay">
-                <div class="container">
-                 <div class="row clearfix">
-                  <center class="col-md-12 col-lg-12">
-                   <center class="adbirt-brand-active owl-carousel">
-                    <a href="#"><img src="public/assets-revamp/img/partner/1.png" alt="image"></a>
-                    <a href="#"><img src="public/assets-revamp/img/partner/2.png" alt="image"></a>
-                    <a href="#"><img src="public/assets-revamp/img/partner/3.png" alt="image"></a>
-                   </center>
-                  </center><-- END COL  --
-                 </div>
-                 <--END  ROW  --
-                </div><-- END CONTAINER  --
-               </div><-- END OVERLAY --
-              </div> -->
+                               <div class="adbirt-brand-overlay">
+                                <div class="container">
+                                 <div class="row clearfix">
+                                  <center class="col-md-12 col-lg-12">
+                                   <center class="adbirt-brand-active owl-carousel">
+                                    <a href="#"><img src="public/assets-revamp/img/partner/1.png" alt="image"></a>
+                                    <a href="#"><img src="public/assets-revamp/img/partner/2.png" alt="image"></a>
+                                    <a href="#"><img src="public/assets-revamp/img/partner/3.png" alt="image"></a>
+                                   </center>
+                                  </center><-- END COL  --
+                                 </div>
+                                 <--END  ROW  --
+                                </div><-- END CONTAINER  --
+                               </div><-- END OVERLAY --
+                              </div> -->
     <!-- END COMPANY BRAND LOGO -->
 @stop

@@ -29,6 +29,7 @@ Route::any('/campaigns/verified', 'campaigns\orderHistoryController@credit');
 
 Route::any('/api/check-if-url-is-valid-campaign', 'campaigns\orderHistoryController@checkIfUrlIsValidCampaign');
 
+// public pages
 Route::get('/', ['as' => 'home', 'uses' => 'AdminController@home']);
 Route::get('how-it-works', ['as' => 'how-it-works', 'uses' => 'AdminController@howitworks']);
 Route::get('actions-and-events', ['as' => 'actions-and-events', 'uses' => 'AdminController@actionsandevents']);
@@ -57,18 +58,6 @@ Route::group(['middleware' => 'guest'], function () {
     Route::post('login/reset_password/users', ['as' => 'reset-process', 'uses' => 'Auth\AuthController@resetProcess']);
 });
 
-//Messages  from Agent
-Route::group(['prefix' => 'messages'], function () {
-    Route::get('/', ['as' => 'admin_inbox', 'uses' => 'MessageController@index']);
-    Route::get('sent', ['as' => 'admin_sent_message', 'uses' => 'MessageController@sent']);
-    Route::get('read/{id}', ['as' => 'admin_message_read', 'uses' => 'MessageController@show']);
-    Route::post('read/{id}', ['as' => 'admin_message_read', 'uses' => 'MessageController@reply']);
-    Route::get('compose', ['as' => 'admin_message_compose', 'uses' => 'MessageController@create']);
-    Route::post('compose', 'MessageController@store');
-    Route::get('message-inbox-user', ['as' => 'message_inbox_admin', 'uses' => 'MessageController@messageInboxData']);
-    Route::get('message-sent-admin', ['as' => 'message_sent_admin_data', 'uses' => 'MessageController@messageSentData']);
-});
-
 
 //Messages  from Agent
 Route::group(['prefix' => 'messages'], function () {
@@ -82,6 +71,8 @@ Route::group(['prefix' => 'messages'], function () {
     Route::get('message-sent-user', ['as' => 'message_sent_user_data', 'uses' => 'MessageController@messageSentData']);
 });
 
+// misc
+Route::any('/get-campaign-categories-as-json', 'categoriesJson@getAllCategories');
 
 Route::group(array('middleware' => 'auth'), function () {
     Route::get('logout', ['as' => 'logout', 'uses' => 'Auth\AuthController@logout']);
@@ -131,8 +122,6 @@ Route::group(array('middleware' => 'auth'), function () {
         Route::any('/update', 'category\categoryController@store');
         Route::any('/delete', 'category\categoryController@destroy');
     });
-
-    Route::any('/get-campaign-categories-as-json', 'categoriesJson@getAllCategories');
 
     Route::group(['prefix' => 'campaigns'], function () {
         Route::any('/view-campaigns', 'campaigns\campaignsController@index');

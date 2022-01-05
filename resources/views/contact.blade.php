@@ -70,6 +70,9 @@
                             <h4>Send a Message</h4>
                             <form id="contact-form" class="adbirt-contact-form form" method="POST"
                                 action="https://www.adbirt.com/community/send-mail.php">
+
+                                {{ csrf_field() }}
+
                                 <div class="row">
                                     <div class="form-group col-md-6">
                                         <input type="text" name="name" class="form-control" id="name"
@@ -95,13 +98,13 @@
                                     <div class="col-md-12">
                                         <div class="text-left adbirt-contact-btn">
                                             <button type="submit" value="Submit Now" name="submit" id="submitButton"
-                                                class="btn adbirt-themes-btn red" title="Submit Your Message!">Send
+                                                class="btn bg-primary-color text-white" title="Submit Your Message!">Send
                                                 Message</button>
                                         </div>
                                     </div>
                                 </div>
                             </form>
-                            <p class="form-message"></p>
+                            <p class="form-message">Hi</p>
                         </div>
                     </div><!-- END COL -->
                 </div>

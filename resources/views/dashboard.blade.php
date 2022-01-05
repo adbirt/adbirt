@@ -21,9 +21,9 @@
     <div class="layout-content" data-scrollable>
         <div class="container-fluid">
             <!--<ol class="breadcrumb">
-                                                                                                                                                                                                                        <li><a href="{!! route('dashboard') !!}">Home</a></li>
-                                                                                                                                                                                                                        <li class="active">Dashboard</li>
-                                                                                                                                                                                                                    </ol> -->
+                                                                                                                                                                                                                            <li><a href="{!! route('dashboard') !!}">Home</a></li>
+                                                                                                                                                                                                                            <li class="active">Dashboard</li>
+                                                                                                                                                                                                                        </ol> -->
             @include('includes.alert')
             @if (Session::has('flash_message'))
                 <div class="alert bg-success alert-styled-left" id="msg">
@@ -484,7 +484,7 @@
             <!-- ./col -->
             <div class="col-lg-3 col-6">
                 <!-- small box -->
-                <div class="small-box bg-danger">
+                <div class="small-box bg-danger h-100">
                     <div class="inner">
                         <h3>{{ $Leads }}</h3>
 

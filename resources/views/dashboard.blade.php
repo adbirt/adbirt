@@ -21,9 +21,9 @@
     <div class="layout-content" data-scrollable>
         <div class="container-fluid">
             <!--<ol class="breadcrumb">
-                                                                                                                                                                                                    <li><a href="{!! route('dashboard') !!}">Home</a></li>
-                                                                                                                                                                                                    <li class="active">Dashboard</li>
-                                                                                                                                                                                                </ol> -->
+                                                                                                                                                                                                            <li><a href="{!! route('dashboard') !!}">Home</a></li>
+                                                                                                                                                                                                            <li class="active">Dashboard</li>
+                                                                                                                                                                                                        </ol> -->
             @include('includes.alert')
             @if (Session::has('flash_message'))
                 <div class="alert bg-success alert-styled-left" id="msg">
@@ -99,7 +99,7 @@
                             </div>
                             <div class="icon">
                                 <!-- <i class="ion ion-bag"></i> -->
-                                <i class="fa fa-sack-dollar"></i>
+                                <i class="fa fa-money-bill-wave"></i>
                             </div>
                             <!-- <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a> -->
                         </div>
@@ -167,7 +167,7 @@
                                 <p>Email</p>
                             </div>
                             <div class="icon">
-                                <i class="fa fa-envelop"></i>
+                                <i class="fa fa-envelope"></i>
                             </div>
                             <!-- <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a> -->
                         </div>
@@ -176,7 +176,7 @@
 
                     <div class="col-6">
                         <!-- small box -->
-                        <div class="small-box bg-danger">
+                        <div class="small-box bg-danger h-100">
                             <div class="inner">
                                 <h3>
                                     {{ $phoneCount }}
@@ -194,7 +194,7 @@
 
                     <div class="col-6">
                         <!-- small box -->
-                        <div class="small-box bg-info">
+                        <div class="small-box bg-info h-100">
                             <div class="inner">
                                 <h3>
                                     {{ $activeClient }}
@@ -223,7 +223,8 @@
                             <div class="icon">
                                 <i class="fa fa-user-times"></i>
                             </div>
-                            <a href="allUsersInactive" class="small-box-footer">View<i class="fas fa-arrow-circle-right"></i></a>
+                            <a href="allUsersInactive" class="small-box-footer">View<i
+                                    class="fas fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
                     <!-- ./col -->
@@ -296,7 +297,7 @@
                             </div>
                             <div class="icon">
                                 <!-- <i class="ion ion-bag"></i> -->
-                                <i class="fa fa-adversal"></i>
+                                <i class="fa fa-comments-dollar"></i>
                             </div>
                             <!-- <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a> -->
                         </div>
@@ -419,8 +420,8 @@
                         </div>
 
                         <!--<div class="media-right">
-                                                                                                                                                                                                        <a class="btn btn-primary btn-rounded" href="https://www.adbirt.com/transfer/request">Claim $10</a>
-                                                                                                                                                                                                    </div>-->
+                                                                                                                                                                                                                <a class="btn btn-primary btn-rounded" href="https://www.adbirt.com/transfer/request">Claim $10</a>
+                                                                                                                                                                                                            </div>-->
                     @endif
                 </div>
             </div>

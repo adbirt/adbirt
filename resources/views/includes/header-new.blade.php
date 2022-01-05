@@ -102,7 +102,7 @@ $NotifyCnt = count($Notify);
 
         <!-- Begin Notifications Dropdown Menu -->
         <li class="nav-item dropdown">
-            <a class="nav-link btn mx-1 text-primary-color p-2" data-toggle="help" href="#">
+            <a class="nav-link btn mx-1 text-primary-color p-2" data-toggle="dropdown" href="#">
                 <i class="fa fa-bell fa-lg"></i>
                 @if ($NotifyCnt >= 1)
                     <span class="badge badge-warning navbar-badge" style="font-size: 14px;">
@@ -169,11 +169,11 @@ $NotifyCnt = count($Notify);
         <!-- End Notifications Dropdown Menu -->
 
         <!-- Begin Help Menu -->
-        <li class="nav-item dropdown">
-            <a class="nav-link btn mx-1 text-primary-color p-2" data-toggle="dropdown" href="#">
+        <li class="nav-item help">
+            <a class="nav-link btn mx-1 text-primary-color p-2" data-toggle="help" href="#">
                 <i class="fa fa-question fa-lg"></i>
             </a>
-            <div class="help dropdown-menu dropdown-menu-lg dropdown-menu-right"
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right"
                 style="text-overflow: ellipsis !important; overflow: hidden !important;">
                 <span class="dropdown-item dropdown-header">
                     Help Center

@@ -249,7 +249,7 @@ class campaignsController extends Controller
             }
 
             if (Auth::user()->hasRole('admin')) {
-                return back()->withInput();
+                return back()->withInput()->with('Saved', 'Campaign successfully Saved');
             }
 
             return redirect('/campaigns/embedding');

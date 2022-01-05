@@ -86,6 +86,7 @@ class orderHistoryController extends Controller
         $method = $request->method();
         $header = $request->header();
         $destUrl = "";
+
         if (isset($header['referer']['0']) && !empty($header['referer']['0'])) {
             $destUrl = $header['referer']['0'];
         }
@@ -97,48 +98,36 @@ class orderHistoryController extends Controller
                 $this->outputData['message'] = "campaign code is required ";
                 return response()->json($this->outputData, 400);
             }
-            /* if(!isset($input['uniq_id']) || empty($input['uniq_id']) ){
-            $this->outputData['message'] = "uniq id is required";
-            return response()->json($this->outputData,400);
-            }*/
+
             $code = $input['campaign_code'];
             $uniq_id = ""; //$input['uniq_id'];
             $advert = campaignorders::with('campaign', 'advertiser', 'publisher')
                 ->where('advert_code', $code)
                 ->first();
 
-            //print_r($advert);
-            //$destUrl=strtok($destUrl,'?');
             $destUrl = $this->getDomain($destUrl);
-            //echo "*** url ".$advert->campaign->campaign_url.", des url ".$destUrl;
 
-            //if(!empty($advert->campaign) && $advert->campaign->campaign_url == $destUrl ){
             if (!empty($advert->campaign) && (strpos(strval($advert->campaign->campaign_url), strval($destUrl)) !== false)) {
 
                 $startDate = date('Y-m-d H:i:s');
-                // $Time   = date('Y-m-d H:i:s', strtotime("-10 minutes", strtotime($startDate)));
+
                 $Time = date('Y-m-d H:i:s', strtotime("-1 minutes", strtotime($startDate)));
-                /*$isAlredyExist = campaignTransaction::where('client_ip',$this->getUserIp())
-                ->where('campaign_code',$code)
-                ->where('uniq_id',$uniq_id)
-                ->count();*/
+
                 $isAlredyExist = "0";
 
                 if ($isAlredyExist == "0") {
 
-                    $isSpam = campaignTransaction::where('client_ip', $this->getUserIp())
+                    $isSpam = campaignTransaction::where('client_ip', getUserIp())
                         ->where('created_at', '<', $startDate)
                         ->where('created_at', '>', $Time)
                         ->first();
-                    //turn off span protect
-                    // $isSpam = null;
-                    // return response()->json($advert,400);
+
                     if (!empty($advert) && $advert->campaign->isActive == "Active" && empty($isSpam)) {
 
                         $tra = new campaignTransaction;
                         $tra->advertiser_id = $advert->advertiser_id;
                         $tra->publisher_id = $advert->publisher_id;
-                        $tra->client_ip = $this->getUserIp();
+                        $tra->client_ip = getUserIp();
                         $tra->uniq_id = $uniq_id;
                         $tra->campaign_code = $code;
                         $tra->save();
@@ -153,12 +142,9 @@ class orderHistoryController extends Controller
                         $arrAdvertAmt = Transaction::select('id', 'amount')
                             ->where('user_id', $advert->advertiser_id)
                             ->first();
-                        //   return response()->json($arrAdvertAmt,400);
-                        //$Amt = $price + 1;
+
                         $Amt = $price;
-                        //echo "*** adv am ".$arrAdvertAmt['amount'].", amt ".$Amt.", transaction id ".$arrAdvertAmt['id'];
-                        //print_r($arrAdvertAmt);
-                        //die();
+
                         if ($arrAdvertAmt['amount'] >= $Amt) {
                             //$final_advert_price['amount'] = $arrAdvertAmt['amount'] - $price - 1;
                             $remainingAmt = $arrAdvertAmt['amount'] - $price;
@@ -168,14 +154,6 @@ class orderHistoryController extends Controller
                                 ->where('id', $arrAdvertAmt['id'])
                                 ->update($final_advert_price);
 
-                            // $arrAdminWalletAmt = Transaction::select('amount')
-                            // ->where('user_id',"1")
-                            // ->first();
-
-                            //$final_Admin_price['amount'] = $arrAdminWalletAmt['amount'] + $admincommission + 1;
-                            // $final_Admin_price['amount'] = $arrAdminWalletAmt['amount'] + $admincommission;
-
-                            //$adminCommisionAmt = $admincommission + 1;
                             $adminCommisionAmt = $admincommission;
 
                             $wallet = new WalletHistoryModel;
@@ -183,14 +161,10 @@ class orderHistoryController extends Controller
                             $wallet->amount = "0";
                             $wallet->commision = $adminCommisionAmt;
                             $wallet->mode = "commision";
-                            $wallet->comment = "$" . number_format($adminCommisionAmt, 2) . " was Credited to your Wallet for Campaign commision of " . $advert->campaign->campaign_title;
+                            $wallet->comment = "$" . number_format($adminCommisionAmt, 2) . " was Credited to your Wallet for Campaign commision of '" . $advert->campaign->campaign_name . "'";
                             $wallet->save();
 
-                            //$advertPrice = $price - 1;
                             $advertPrice = $price;
-
-                            // Transaction::where('user_id',"1")
-                            // ->update($final_Admin_price);
 
                             $arrPublisherAmt = Transaction::select('amount')
                                 ->where('user_id', $advert->publisher_id)
@@ -379,20 +353,6 @@ class orderHistoryController extends Controller
         }
 
         return response()->json($this->outputData, 200);
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function getUserIp()
-    {
-        if ($_SERVER['REMOTE_ADDR']) {
-            return $_SERVER['REMOTE_ADDR'];
-        } else {
-            return false;
-        }
     }
 
     /**

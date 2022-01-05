@@ -61,26 +61,7 @@ class campaignsController extends Controller
     public function __construct()
     {
         $this->outputData = array();
-        $bannerSizes = array(
-            "468 x 60",
-            "728 x 90",
-            /* "1080 x 565", */
-            "336 x 280",
-            "300 x 250",
-            "300 x 600",
-            "350 x 50",
-            "250 x 250",
-            "160 x 600",
-            "120 x 600",
-            "120 x 240",
-            "240 x 400",
-            "234 x 60",
-            "180 x 150",
-            "125 x 125",
-            "120 x 90",
-            "120 x 60",
-            "88 x 31"
-        );
+        $bannerSizes = getBannerSizes();
         $this->outputData['bannerSize'] = $bannerSizes;
     }
     /**
@@ -1018,8 +999,7 @@ class campaignsController extends Controller
                 ->where('isActive', 'Active')
                 ->where('isDeleted', 'No')
                 ->first();
-            //print_r($bnr);
-            //echo "***** ".$id;
+
             if (!empty($bnr)) {
                 $bnr->campaign_click += 1;
                 $bnr->save();

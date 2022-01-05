@@ -1,0 +1,27 @@
+[12-Apr-2017 12:16:11 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/sparkt4w/public_html/sparkenproduct.in/pos/app/Http/Controllers/product/productController.php on line 316
+[12-Apr-2017 12:34:26 UTC] PHP Fatal error:  Class 'app\Http\Controllers\Auth\rolesModel' not found in /home/sparkt4w/public_html/sparkenproduct.in/pos/app/Http/Controllers/Auth/AuthController.php on line 178
+[12-Apr-2017 13:08:38 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/sparkt4w/public_html/sparkenproduct.in/pos/app/Http/Controllers/Auth/AuthController.php on line 178
+[25-Apr-2017 09:02:08 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting function (T_FUNCTION) in /home/sparkt4w/public_html/sparkenproduct.in/pos/app/Http/Controllers/gift/giftController.php on line 117
+[28-Apr-2017 10:17:00 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/sparkt4w/public_html/sparkenproduct.in/pos/app/Http/Controllers/gift/giftController.php on line 447
+[01-May-2017 04:46:39 UTC] PHP Fatal error:  Class 'App\Http\Controllers\vendor\User' not found in /home/sparkt4w/public_html/sparkenproduct.in/pos/app/Http/Controllers/vendor/vendorController.php on line 61
+[05-May-2017 06:38:50 UTC] PHP Fatal error:  Call to a member function render() on array in /home/sparkt4w/public_html/sparkenproduct.in/pos/storage/framework/views/aff6b49d402864dd18df5e9f4704e204 on line 169
+[05-May-2017 06:38:53 UTC] PHP Fatal error:  Call to a member function render() on array in /home/sparkt4w/public_html/sparkenproduct.in/pos/storage/framework/views/aff6b49d402864dd18df5e9f4704e204 on line 169
+[05-May-2017 06:38:57 UTC] PHP Fatal error:  Call to a member function render() on array in /home/sparkt4w/public_html/sparkenproduct.in/pos/storage/framework/views/aff6b49d402864dd18df5e9f4704e204 on line 169
+[05-May-2017 06:40:24 UTC] PHP Fatal error:  Call to a member function render() on array in /home/sparkt4w/public_html/sparkenproduct.in/pos/storage/framework/views/aff6b49d402864dd18df5e9f4704e204 on line 169
+[05-May-2017 06:41:12 UTC] PHP Fatal error:  Call to a member function render() on array in /home/sparkt4w/public_html/sparkenproduct.in/pos/storage/framework/views/aff6b49d402864dd18df5e9f4704e204 on line 169
+[05-May-2017 06:41:18 UTC] PHP Fatal error:  Call to a member function render() on array in /home/sparkt4w/public_html/sparkenproduct.in/pos/storage/framework/views/aff6b49d402864dd18df5e9f4704e204 on line 169
+[05-May-2017 06:41:18 UTC] PHP Fatal error:  Call to a member function render() on array in /home/sparkt4w/public_html/sparkenproduct.in/pos/storage/framework/views/aff6b49d402864dd18df5e9f4704e204 on line 169
+[05-May-2017 06:41:19 UTC] PHP Fatal error:  Call to a member function render() on array in /home/sparkt4w/public_html/sparkenproduct.in/pos/storage/framework/views/aff6b49d402864dd18df5e9f4704e204 on line 169
+[05-May-2017 06:41:19 UTC] PHP Fatal error:  Call to a member function render() on array in /home/sparkt4w/public_html/sparkenproduct.in/pos/storage/framework/views/aff6b49d402864dd18df5e9f4704e204 on line 169
+[05-May-2017 06:41:20 UTC] PHP Fatal error:  Call to a member function render() on array in /home/sparkt4w/public_html/sparkenproduct.in/pos/storage/framework/views/aff6b49d402864dd18df5e9f4704e204 on line 169
+[05-May-2017 06:41:20 UTC] PHP Fatal error:  Call to a member function render() on array in /home/sparkt4w/public_html/sparkenproduct.in/pos/storage/framework/views/aff6b49d402864dd18df5e9f4704e204 on line 169
+[05-May-2017 06:42:06 UTC] PHP Fatal error:  Call to a member function render() on array in /home/sparkt4w/public_html/sparkenproduct.in/pos/storage/framework/views/aff6b49d402864dd18df5e9f4704e204 on line 169
+[05-May-2017 06:42:07 UTC] PHP Fatal error:  Call to a member function render() on array in /home/sparkt4w/public_html/sparkenproduct.in/pos/storage/framework/views/aff6b49d402864dd18df5e9f4704e204 on line 169
+[05-May-2017 06:42:07 UTC] PHP Fatal error:  Call to a member function render() on array in /home/sparkt4w/public_html/sparkenproduct.in/pos/storage/framework/views/aff6b49d402864dd18df5e9f4704e204 on line 169
+[05-May-2017 06:42:07 UTC] PHP Fatal error:  Call to a member function render() on array in /home/sparkt4w/public_html/sparkenproduct.in/pos/storage/framework/views/aff6b49d402864dd18df5e9f4704e204 on line 169
+[06-May-2017 11:58:53 UTC] PHP Fatal error:  Class 'App\Http\Controllers\gift\Mail' not found in /home/sparkt4w/public_html/sparkenproduct.in/pos/app/Http/Controllers/gift/giftController.php on line 562
+[06-May-2017 11:59:22 UTC] PHP Fatal error:  Class 'mail' not found in /home/sparkt4w/public_html/sparkenproduct.in/pos/app/Http/Controllers/gift/giftController.php on line 560
+[23-May-2017 12:51:45 UTC] PHP Fatal error:  Class 'App\Http\Controllers\tour\Mail' not found in /home/sparkt4w/public_html/sparkenproduct.in/tour/app/Http/Controllers/tour/tourController.php on line 567
+[30-May-2017 06:48:37 UTC] PHP Fatal error:  Class 'App\Model\cityModel' not found in /home/sparkt4w/public_html/sparkenproduct.in/tour/app/Http/Controllers/owner/ownerController.php on line 42
+[30-May-2017 06:48:46 UTC] PHP Fatal error:  Class 'App\Model\cityModel' not found in /home/sparkt4w/public_html/sparkenproduct.in/tour/app/Http/Controllers/owner/ownerController.php on line 42
+[30-May-2017 06:49:01 UTC] PHP Fatal error:  Class 'App\Model\cityModel' not found in /home/sparkt4w/public_html/sparkenproduct.in/tour/app/Http/Controllers/owner/ownerController.php on line 42

@@ -1,0 +1,30 @@
+# Laravel 5 & Lumen specific
+# vendor/
+.env.*.php
+.env.php
+.env
+### PhpStorm ###
+
+# Sub-Sites
+blog
+test
+community
+escrow
+
+*.iml
+# Composer
+composer.phar
+# composer.lock
+
+## Directory-based project format:
+.idea/
+# if you remove the above rule, at least ignore the following:
+
+# User-specific stuff:
+# .idea/workspace.xml
+# .idea/tasks.xml
+# .idea/dictionaries
+# .idea/shelf
+
+# Packages
+# _ide_helper.php

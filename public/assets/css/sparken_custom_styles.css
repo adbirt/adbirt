@@ -1,0 +1,237 @@
+.Formbox .card {background: transparent;border: 1px solid #ddd;padding-bottom: 2%;}/*544px*/
+.Formbox .card form#myform {padding: 40px;}
+.Formbox .card form#myform .btn{width: 100px;}
+.Formbox .card form#myform .form-group.text-right.m-b-0 {text-align: center;padding-top: 21px;}
+.Formbox .card #datatable-example a.btn {padding: 10px 18px;}
+.Formbox .card #datatable-example {width: 100%;margin: 0 auto;}
+.Formbox .card #datatable-example td.cityname {width: 50%;}
+
+.Formbox .card h5 {text-align: center;color: 000;text-transform: capitalize;font-weight: bold;
+    margin-bottom: 0px;}
+.Formbox.viewtable .card h5 {padding-top: 35px;padding-bottom: 16px;}
+.Formbox.viewtable .card {padding-bottom: 35px;}
+.Formbox .card .table td, .table th{padding-top: 2%;font-size: 16px;}
+.Formbox .card .info{font-size: 13px;}
+.Formbox .card .heading{font-weight: bold;text-decoration: underline;}
+.Formbox .card .container center{padding-top: 5%;}
+.Formbox legend{font-size: 17px;font-weight: bold;}
+.Formbox .formLabel{font-size: 13px;}
+.Formbox .button{text-align: center;margin-top: 4%;}
+.error{border:1px solid red!important;}
+button#navigate {float: right;position: relative;top: -36px;}
+.pdet{border-right:1px dotted black;}
+.Formbox .btnsave{padding: 6px;padding-right: 107px;}
+.Formbox .btnreset{padding: 6px;}
+.Formbox .WarnMsg{background-color: red;border-color: red;color: white;padding: 6px;padding-top: 2%;}
+.Formbox label.msg{padding-left: 27%;}
+.parcelheading {align-items: center;display: flex;font-weight: bold;justify-content: center;}
+.info.parcelinfo {padding-left: 57%;}
+.card .nodata {align-items: center !important; color: red !important; display: flex !important;font-size: 23px !important;font-weight: bold !important;justify-content: center !important;}
+.row.searchbox {padding-top: 10%;}
+.action {color: black;padding-right: 7%;}
+.heading {display: flex;font-weight: bold;justify-content: center;margin-bottom: 0 !important;padding-top: 3%;}
+.search {float: right;margin-right: 1%;margin-top: 1%;}
+.info {font-size: 14px;padding-left: 25%;}
+.UserDet {border: 1px solid lightgray;padding: 10px;}
+.parcelDet {border: 1px solid lightgray;margin-top: 2%;padding: 10px;}
+.Statuslabel {color: black !important;margin-top: -5%;padding-bottom: 4%;text-decoration: underline;font-size: 1rem;}
+.row.chngebtn {margin-top: -2%;}
+.code {float: right; font-size: 13px; padding-top: 3%;  font-weight: bold;}
+.dashboardcard{padding: 0px;}
+.order .headline h3{text-align: center;}
+.order .headline h3 span{padding: 3px 12px;}
+/*.msg{ margin-top: -13px;left: 10%;position: relative;}*/
+.successmsg .close {margin-right: -14%;margin-top: 0px;}
+@-moz-document url-prefix(){.dashvalue{margin: -28% auto 0 !important;}}
+@-moz-document url-prefix(){.dashvalue1{margin: -40% auto 0 !important;}}
+@-moz-document url-prefix(){.spcount{font: 1em Open Sans !important;}}
+.spcount{font-size: 80px !important;}
+.msg {font-size: 18px;font-weight: bold;}
+/* .card-columns .card{min-height:220px;} */
+
+.productdescription{padding: 1%;word-break: break-all;margin-bottom: 3%!important;}
+.card-columns.viewproductbox{display: -webkit-box;margin-top: 2%;}
+.viewproductbox label.viewproductlabel {font-weight: bold;font-size: 17px;}
+.viewproductbox .card-block {padding: 20px 17px;}
+.viewproductbox  a.buyproduct{display: inline-block;width: 100%;margin: 10px 0px;text-decoration: none;text-align: center;}
+.viewproductbox  p.description{margin-bottom: 4%;word-break:break-word;}
+a.buyproduct .btn{padding: 5px 30px;}
+.searchproduct{margin-bottom: 2%;}
+.buttonblock{display: inline-block;width: 100%;text-align: center;}
+#searchByname{border-radius: 0px;font-size: 15px;padding: 10px 10px;transition: width 0.4s ease-in-out;}
+
+.searchbox{margin-bottom: 1%;width: 100%;}
+
+.buttonblock input.btn.btn-default.searchbtn {padding: 8px 30px;font-size: 17px;margin-top: 2%;}
+.Searchdetails {display: inline-block;width: 100%;border: 2px solid #ccc;padding: 29px 11px;}
+ .Searchdetails form#filter {margin-bottom: 0px;}
+.searchbox span#searchicon{width:18%;padding: 0px!important;}
+select#Cat_id {background-color: transparent;border: 0px;font-size: 14px;padding-bottom: 10px;padding-top: 14px;}
+.notifylabel {display: inline-block;font-weight: bold; color: #55595c;}/*rgba(0, 0, 0, 0.54);*/
+.notifydivider{margin-top: 0px;}
+.notificationclass{display: inline-block;width: 100%;margin-bottom: 0px;}
+.notifycontent{display: inline-block;color: #000;}
+a.notificationrow{display: inline-block;width: 100%;}
+.notifyrow{	padding: 1% 0% 3% 9%;}
+.notifyrow .bordernotify{border-right: 1px solid #ddd;}
+.notifylabel.longcontent{display: inline-block;width: 100%;color: #55595c;font-weight: bold;}
+.notifylabel.label-warning{color:#fff;font-size: 17px;margin-right: 5px;padding: 5px 12px;}
+.notifycontent.title{color:#000;font-weight: bold;text-transform: capitalize;width: 91%;display: inline-block;float:right;}
+.notifycontent.text-color{font-weight: bold;color: #2196F3;}
+.notifypending{background-color:rgba(33, 150, 243, 0.09);padding-top: 2%;}
+.notifheading {font-size: 13px!important;line-height: 20px!important;padding: 6px 20px;color: #676a6c;text-decoration: none;}
+.alertnotify{font-size: 15px;color:#676a6c;text-decoration: none;cursor: pointer; }
+.alertnotify:hover{text-decoration: none;color:#676a6c; }
+ul.list-unstyled.notificationclass a:hover {text-decoration: none;background-color: transparent;}
+ul.list-unstyled.notificationclass a {background-color: #f5f5f5;display: inline-block; width: 100%;
+   margin-bottom: 2%;color: #262626!important; cursor: pointer;}
+.notificationfirst{left: 71%;}
+li.notifheading .fa {padding-right: 21px;}
+li.notifheading.text-center.nonotification {display: inline-block;width: 100%;text-align: center;margin-bottom: 0px;}
+.breadcrumb, .card, .list-group .card{margin-bottom: 0px!important;}
+.Formbox.viewtable {margin-top: 4%;}
+.col-md-12.dashboardcard {padding: 0px;}
+.col-sm-12.dashboardcard {padding: 0px;}
+.revenue .headline h3{display: block;text-align: center;}
+.profit .headline h3{display: block;text-align: center;}
+.member .headline h3{display: block;text-align: center;}
+.dropdown-menu-list.notificationfirst {max-width: 500px;position: absolute;left: -164px;min-width: 295px;min-height: 83px;}
+@media only screen and (max-width: 1366px){
+	.notificationfirst{left: 64%;}
+}
+
+@media only screen and (max-width:1280px){
+	.notificationfirst{left: 62%;}
+}
+@media only screen and (max-width: 1024px){
+	.viewproductbox label.viewproductlabel{font-size: 16px;}
+	.searchproduct{margin-bottom: 3%;}
+	.searchbox span#searchicon{width:21%;}
+	.notificationfirst{left: 52%;}
+	.alertnotify{font-size: 14px;}
+	.revenue .headline h3 span{padding: 3px 5px!important;font-size: 14px;display: inline-block;}
+	.profit .headline h3 span{padding: 2px 5px!important;display: inline-block;}	
+	.member .headline h3 span{display: inline-block;}
+	.order .headline h3 span{display: inline-block;;}
+	.notifycontent.title{width: 86%;}
+	.notifylabel.label-warning{width:12%;}
+	.notifyrow{padding: 1%;}
+} 
+
+@media only screen and (max-width:980px){
+	select#Cat_id{font-size: 13px;}
+	.notificationfirst {left: 49%;}
+}
+
+@media only screen and (max-width: 960px){
+	.viewproductbox label.viewproductlabel{font-size: 15px;}
+	.viewproductbox span.text-success{font-size: 14px!important}
+	a.buyproduct .btn{padding: 5px 22px;font-size: 15px;}
+	.searchbox span#searchicon{width:22%;}
+	
+}
+
+@media only screen and (max-width: 800px){
+	.viewproductbox label.viewproductlabel{font-size: 11px;}
+	.viewproductbox span.text-success{font-size: 11px!important}
+	a.buyproduct .btn{padding: 5px 22px;font-size: 12px;}
+	.row.detailsproduct {margin-top: 5%;}
+	#searchByname{font-size: 13px;}
+	.row.detailsproduct .form-control{font-size: 12px;}
+	.buttonblock input.btn.btn-default.searchbtn{font-size: 14px;}
+	select#Cat_id{;font-size: 11px;}
+	.searchbox span#searchicon {width: 27%;}
+	.ActionMenu {padding-left: 0;}
+	.notificationfirst{left: 39%;}
+	.navbar .form-inline {margin-right: 9px;width: 21%;}
+}
+@media only screen and (max-width: 768px){
+	.viewproductbox label.viewproductlabel{font-size: 12px;}
+	.viewproductbox span.text-success{font-size: 12px!important}
+	.notificationfirst{left: 42%;}
+	.revenue .value{margin-top: 30px!important;}	
+	.profit .value span{top: 10px!important;left: 0px!important;}
+	.profit .headline h3{padding: 15px 0px;}
+}
+@media only screen and (max-width: 736px){
+	.row.detailsproduct {margin-top: 0%;}
+	.searchproduct {margin-bottom: 2%;}
+	.row.detailsproduct .form-control{margin-bottom: 1%;}
+	.Searchdetails div#search {margin-top: 5%;}
+	.searchbox span#searchicon {width: 22%;}
+	.ActionMenu {padding-left: 27px;}
+	
+}
+
+
+
+@media only screen and (max-width: 568px){
+	.Searchdetails div#search {margin-top: 6%;}
+	select#Cat_id {font-size: 10px;}
+	.searchbox span#searchicon {width: 25%;}
+
+}
+
+@media only screen and (max-width: 480px){
+	.viewproductbox  a.buyproduct{text-align: left;}
+	.searchbox span#searchicon{width:auto;}
+	.notificationfirst{left: 8%;right: 16px!important;}
+	.revenue .headline h3 span{width: 100%;}
+	.profit .headline h3 span{width: 100%;}	
+	.member .headline h3 span{width: 100%;}
+	.order .headline h3 span{width: 100%;}
+	.notifylabel.label-warning {width: 16%;}
+	.notifyrow  .notifylabel{margin-top: 3%;}
+
+}
+
+@media only screen and (max-width:420px){
+	.notifheading{padding: 6px 16px;}
+	.notificationfirst{left: 0%;right: 0px!important;}
+}
+
+@media only screen and (max-width:414px){
+	.row.detailsproduct .form-control {margin-bottom: 3%;}
+	.Searchdetails div#search {margin-top: 10%;}
+	.notifheading {padding: 6px 13px;}
+}
+
+@media only screen and (max-width:375px){
+	.notifylabel.label-warning {color: #fff;font-size: 14px;margin-right: 0px; width: 18%;}
+	.notifycontent.title {width: 77%;}
+}
+}
+
+@media only screen and (max-width: 360px){
+	.notifheading {padding: 6px 0px;line-height: 14px!important;font-size: 11px!important;}
+	.customnotify{right: 151px!important;}
+	
+
+}
+@media only screen and (max-width:320px){
+	.Searchdetails div#search {margin-top: 13%;}
+	li.notifheading .fa {padding-right: 13px;}
+	.notifheading{font-size: 10px!important;padding: 3px 0px;}
+	.customnotify{right: 90px!important;}
+	.notifylabel.label-warning{font-size: 12px;margin-right: 1px;}
+	.notifylabel.label-warning {width: 19%;}
+	.notifycontent.title { width: 77%;font-size: 12px;}
+	.notifycontent{font-size: 13px;}
+
+}
+
+ /* For mobile phones: */
+@media only screen and (max-width: 768px) { 
+  .card-columns .card {
+    width: 100%;
+  }
+
+  #mainDiv{
+    width: 100%;
+    height: auto;
+  }
+
+  html.bootstrap-layout body{
+    overflow: scroll !important; 
+  } 
+}

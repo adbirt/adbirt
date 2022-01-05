@@ -1,0 +1,50 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+<form id="theForm" method="post">
+First Name: <input type="text" name="firstname" required><br/>
+Last Name: <input type="text" name="lastname" required><br/>
+email: <input type="text" id="email" name="email" required><br/>
+Password: <input type="text" name="password" required><br/>
+<input type="submit" value="Submit">
+</form>
+</body>
+<script type="text/javascript">
+$("#theForm").submit(function(e) {
+	
+	e.preventDefault(); // avoid to execute the actual submit of the form.
+
+    var form = $(this);
+    var url = "thankyou.php";
+
+    $.ajax({
+           type: "POST",
+           url: url,
+           data: form.serialize(), // serializes the form's elements.
+           success: function(data)
+           {
+               alert(data); // show response from the php script.
+               $.ajax({     
+	      		     type: "POST",
+	      		     url: 'https://adbirt.com/campaigns/verified',
+	      		     data: {
+	      					campaign_code: '8nrse7rcgo',
+	      					uniq_id: $("#email").val()
+	      				},
+	      		     success: function (data) {
+	      			     alert(JSON.stringify(data) );
+	      		     },
+	      		     dataType: "json"
+	      		 });	
+           }
+         });
+    return false;
+});
+
+</script>
+
+</html>

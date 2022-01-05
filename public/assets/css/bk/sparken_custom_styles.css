@@ -1,0 +1,10 @@
+.Formbox .card {background: transparent;border: 1px solid #ddd;}
+.Formbox .card form#myform {padding: 40px;}
+.Formbox .card form#myform .btn{width: 100px;}
+.Formbox .card form#myform .form-group.text-right.m-b-0 {text-align: center;padding-top: 21px;}
+.Formbox .card #datatable-example a.btn {padding: 10px 30px;}
+.Formbox .card #datatable-example {width: 80%;margin: 0 auto;}
+.Formbox .card #datatable-example td.cityname {width: 50%;}
+.Formbox .card h5 {text-align: center;color: #2196f3;text-transform: uppercase;}
+.Formbox.viewtable .card h5 {padding-top: 35px;padding-bottom: 16px;}
+.Formbox.viewtable .card {padding-bottom: 35px;}

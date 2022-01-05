@@ -1,0 +1,32 @@
+[14-Oct-2021 08:50:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/customer/www/adbirt.com/public_html/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/adbirt.com/public_html/config/services.php on line 18
+[14-Oct-2021 08:52:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/customer/www/adbirt.com/public_html/config/mail.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/adbirt.com/public_html/config/mail.php on line 18
+[14-Oct-2021 09:06:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function storage_path() in /home/customer/www/adbirt.com/public_html/config/filesystems.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/adbirt.com/public_html/config/filesystems.php on line 48
+[14-Oct-2021 09:09:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/customer/www/adbirt.com/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/adbirt.com/public_html/config/app.php on line 16
+[01-Nov-2021 04:53:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/customer/www/adbirt.com/public_html/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/adbirt.com/public_html/config/services.php on line 18
+[01-Nov-2021 04:53:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/customer/www/adbirt.com/public_html/config/mail.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/adbirt.com/public_html/config/mail.php on line 18
+[01-Nov-2021 04:54:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function storage_path() in /home/customer/www/adbirt.com/public_html/config/filesystems.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/adbirt.com/public_html/config/filesystems.php on line 48
+[01-Nov-2021 04:54:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/customer/www/adbirt.com/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/adbirt.com/public_html/config/app.php on line 16

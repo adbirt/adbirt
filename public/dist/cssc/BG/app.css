@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font: 14px sans-serif;
+}
+.header {
+  background: #26699a;
+  height: 60px;
+  position: relative;
+}
+.header .logo {
+  position: absolute;
+  left: 16px;
+}
+.header h1 {
+  margin: 0;
+  padding: 14px 0;
+  color: #f0f6fb;
+}
+.header .buttons.right {
+  position: absolute;
+  right: 16px;
+  top: 22px;
+}
+.header .buttons a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+div {
+  box-sizing: border-box;
+}
+h1.title {
+  font-weight: 300;
+  margin: 30px auto;
+  text-align: center;
+}
+h2 {
+  font-weight: 300;
+  margin: 10px auto 30px auto;
+  text-align: center;
+}
+.tools {
+  width: 100%;
+  padding: -30px;
+  padding-right:0px;
+  background: #edf0f1;
+  margin-bottom: 1px;
+}
+.tools.blocks a {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100px;
+  height: 90px;
+  position: relative;
+  margin: 2px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.tools.blocks a span {
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  bottom: 12px;
+  position: absolute;
+  width: 100%;
+  color: #535557;
+}
+.tools.blocks a i {
+  position: absolute;
+  top: 12px;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  color: #a8adb1;
+}
+.tools.blocks a.obstacle span {
+  bottom: 9px;
+  font-size: 12px;
+}
+.tools.blocks a:hover {
+  background: #ffffff;
+  border-color: #dadedf;
+}
+.tools.blocks a:hover span {
+  color: #0fa1ca;
+}
+.tools.blocks a:hover i {
+  color: #0fa1ca;
+}
+.tools.large-blocks a {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 240px;
+  height: 90px;
+  position: relative;
+  margin: 2px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  border-radius: 3px;
+  background: #ffffff;
+  border-color: #dadedf;
+}
+.tools.large-blocks a span {
+  font-size: 14px;
+  display: block;
+  top: 18px;
+  left: 80px;
+  position: absolute;
+  width: 150px;
+  color: #535557;
+}
+.tools.large-blocks a p {
+  color: #a8adb1;
+  font-size: 12px;
+  left: 80px;
+  top: 28px;
+  position: absolute;
+  padding-right: 10px;
+}
+.tools.large-blocks a i {
+  position: absolute;
+  left: 16px;
+  line-height: 88px;
+  width: 50px;
+  text-align: center;
+  font-size: 24px;
+  color: #dbe4ec;
+  z-index: 5;
+}
+.tools.large-blocks a .circle {
+  width: 50px;
+  height: 50px;
+  display: block;
+  content: '';
+  background: #26699a;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 16px;
+}
+.tools.large-blocks a:hover {
+  background: #f0f6fb;
+  border-color: #dbe4ec;
+}
+.tools.large-blocks a:hover * {
+  color: #0fa1ca;
+}
+.tools.large-blocks a:hover .circle {
+  background: #dbe4ec;
+}
+.tools.large-blocks a.procedures i {
+  line-height: 92px;
+}

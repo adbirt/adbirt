@@ -1041,6 +1041,8 @@ class campaignsController extends Controller
         $MyCampaigns = campaignorders::with('campaign')
             ->where('advertiser_id', Auth::user()->id)
             ->where('campaign_running_status', 'activated')
+            ->orderBy('campaign_price')
+            ->groupBy('campaign_price')
             ->get();
 
         $this->outputData['campaignsData'] = $MyCampaigns;

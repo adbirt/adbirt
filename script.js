@@ -71,7 +71,7 @@
             bannerSizeInputFieldContainer.style.display = '';
             imageBanner.classList.add('d-block');
             videoBanner.classList.add('d-none');
-            imageBanner.src = 'https://adbirt.com/public/assets/photos/Placeholder.jpg';
+            ((!imageBanner.src) || imageBanner.src.includes('.mp4') || imageBanner.src.includes('.webm')) || (imageBanner.src = 'https://adbirt.com/public/assets/photos/Placeholder.jpg');
 
         } else if (value == banner_types.VID) {
 

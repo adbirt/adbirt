@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.dashboard')
 @section('style')
     <link href="{{ asset('assets/css/sparken_custom_styles.css') }}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/sweetalert.min.css') }}">
@@ -31,9 +31,9 @@
             <div class="Formbox viewtable">
                 @include('includes.alert')
                 <!--<ol class="breadcrumb">
-                                                                              <li><a href="{{ url('/') }}">Home</a></li>
-                                                                              <li class="active">{!! $title = 'Watch Advertiser JS' !!}</li>
-                                                                            </ol>-->
+                                                                                  <li><a href="{{ url('/') }}">Home</a></li>
+                                                                                  <li class="active">{!! $title = 'Watch Advertiser JS' !!}</li>
+                                                                                </ol>-->
                 <div class="shadow-sm rounded-sm bg-white">
                     <div class="table-responsive">
                         <table id="datatable-example" class="table table-striped table-hover">

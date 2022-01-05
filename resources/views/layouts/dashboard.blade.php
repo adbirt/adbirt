@@ -12,7 +12,7 @@
     <!--Main bootstrap-->
     <link rel="stylesheet" href="https://adbirt.com/public/assets-revamp/bootstrap/css/bootstrap.css">
 
-    
+
 
     <meta name="shortcut icon" content="https://adbirt.com/public/assets-revamp/img/favicon.png">
 
@@ -118,7 +118,6 @@
 
 
     @yield('style')
-
 
     <!-- 462D25FB-0903-4C3D-8CCB-635AC4D09247 -->
 </head>

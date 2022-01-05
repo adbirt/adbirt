@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.dashboard')
 
 @section('style')
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/sweetalert.min.css') }}">

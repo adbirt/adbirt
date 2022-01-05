@@ -40,6 +40,21 @@
     <link rel="stylesheet" href="public/assets-revamp/css/style.css">
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="public/assets-revamp/css/responsive.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128688871-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-128688871-1');
+    </script>
+
     @yield('style')
 </head>
 
@@ -230,7 +245,7 @@
                                 <div id="adbirt-map-area">
                                     <iframe
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1192.4978464340093!2d-2.9155465418515525!3d53.2896121983381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487adfa45defb54f%3A0x8624a28bde8082f4!2sAdbirt!5e0!3m2!1sen!2sng!4v1628345267368!5m2!1sen!2sng"
-                                        style="border:0;" allowfullscreen="true" loading="lazy"></iframe>
+                                        style="border: 1px solid #000;" allowfullscreen="true" loading="lazy"></iframe>
                                 </div>
                                 <!-- Google Map end -->
                             </div>

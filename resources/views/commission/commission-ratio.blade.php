@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.dashboard')
 
 @section('style')
     <link href="{{ asset('assets/css/sparken_custom_styles.css') }}" rel="stylesheet" type="text/css">
@@ -17,13 +17,13 @@
             <div class="Formbox">
                 @include('includes.alert')
                 <!--<ol class="breadcrumb">
-                            <li><a href="{{ url('/') }}">Home</a></li>
-                            @if (isset($ratioData))
-                            <li class="active">{!! $title = 'Update Commission Ratio' !!}</li>
+                                <li><a href="{{ url('/') }}">Home</a></li>
+                                @if (isset($ratioData))
+                                <li class="active">{!! $title = 'Update Commission Ratio' !!}</li>
                 @else
-                            <li class="active">{!! $title = 'Add Commission Ratio' !!}</li>
-                            @endif
-                        </ol>-->
+                                <li class="active">{!! $title = 'Add Commission Ratio' !!}</li>
+                                @endif
+                            </ol>-->
 
                 <div class="card">
                     <form @if (isset($ratioData)) action="{{ url('/commission-ratio/update') }}" @else action="{{ url('/commission-ratio/store') }}" @endif data-parsley-validate novalidate method="POST" id="myform" name="myform"

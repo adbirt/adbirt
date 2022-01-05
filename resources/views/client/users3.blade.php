@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.dashboard')
 
 @section('style')
     {!! Html::style('plugins/datatables/dataTables.bootstrap.css') !!}

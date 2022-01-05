@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.dashboard')
 
 @section('style')
     {!! Html::style('dist/cssc/bootstrap.striped.min.css') !!}
@@ -41,9 +41,9 @@
 
                 {{-- <ol class="breadcrumb"> --}}
 
-                    {{-- <li><a href="{{ url('/') }}">Home</a></li> --}}
+                {{-- <li><a href="{{ url('/') }}">Home</a></li> --}}
 
-                    <!--<li class="active">{!! $title = 'Search Wallet History' !!}</li>-->
+                <!--<li class="active">{!! $title = 'Search Wallet History' !!}</li>-->
 
                 {{-- </ol> --}}
 

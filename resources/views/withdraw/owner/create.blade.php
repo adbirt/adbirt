@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.dashboard')
 
 
 @section('style')
@@ -31,22 +31,22 @@
                     <div class="tab-pane active" id="first">
                         {!! Form::open(['role' => 'form', 'route' => 'withdraw.requestprocess', 'method' => 'post', 'class' => 'form-horizontal p-3']) !!}
                         <!-- <div class="form-group row">
-                                        <label for="avatar" class="col-sm-3 form-control-label">Avatar</label>
-                                        <div class="col-sm-9">
-                                          <div class="media">
-                                            <div class="media-left">
-                                              <div class="icon-block">
-                                                <i class="material-icons text-muted-light md-36">photo</i>
+                                            <label for="avatar" class="col-sm-3 form-control-label">Avatar</label>
+                                            <div class="col-sm-9">
+                                              <div class="media">
+                                                <div class="media-left">
+                                                  <div class="icon-block">
+                                                    <i class="material-icons text-muted-light md-36">photo</i>
+                                                  </div>
+                                                </div>
+                                                <div class="media-body media-middle">
+                                                  <label class="file">
+                                                    <input type="file" id="file">
+                                                    <span class="file-custom"></span>
+                                                  </label>
+                                                </div> 
                                               </div>
-                                            </div>
-                                            <div class="media-body media-middle">
-                                              <label class="file">
-                                                <input type="file" id="file">
-                                                <span class="file-custom"></span>
-                                              </label>
-                                            </div> 
-                                          </div>
-                                        </div>-->
+                                            </div>-->
                     </div>
                     <div class="form-group row">
                         {!! Form::label('amount', 'Amount* :', ['class' => 'col-sm-3 form-control-label  px-3']) !!}

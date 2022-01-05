@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.dashboard')
 
 @section('style')
     <link href="{{ asset('assets/css/sparken_custom_styles.css') }}" rel="stylesheet" type="text/css">
@@ -20,12 +20,12 @@
             <div class="Formbox-">
                 @include('includes.alert')
                 {{-- <ol class="breadcrumb"> --}}
-                    {{-- <li><a href="{{ url('/') }}">Home</a></li> --}}
-                    @if (isset($profileData))
-                        <!--<li class="active">{!! $title = 'Update Company Profile' !!}</li>-->
-                    @else
-                        <!--<li class="active">{!! $title = 'Add Company Profile' !!}</li>-->
-                    @endif
+                {{-- <li><a href="{{ url('/') }}">Home</a></li> --}}
+                @if (isset($profileData))
+                    <!--<li class="active">{!! $title = 'Update Company Profile' !!}</li>-->
+                @else
+                    <!--<li class="active">{!! $title = 'Add Company Profile' !!}</li>-->
+                @endif
 
                 {{-- </ol> --}}
                 <div class="card">
@@ -138,7 +138,7 @@
 
 
 @section('script')
- <!-- jQuery -->
+    <!-- jQuery -->
 
     {!! Html::script('dist/vendor/jquery.min.js') !!}
 

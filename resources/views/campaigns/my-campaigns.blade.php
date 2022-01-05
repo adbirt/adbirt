@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.dashboard')
 
 @section('style')
     <link href="{{ asset('assets/css/sparken_custom_styles.css') }}" rel="stylesheet" type="text/css">
@@ -60,7 +60,8 @@
                                             <td class="campaigns_name">{!! ucwords($value->campaign->campaign_title) !!}</td>
                                             <td class="campaigns_name">${!! number_format($value->campaign->campaign_cost_per_action, 2) !!}</td>
                                             <td>
-                                                <div class="d-flex flex-row align-items-center justify-content-center w-100 h-100">
+                                                <div
+                                                    class="d-flex flex-row align-items-center justify-content-center w-100 h-100">
                                                     <span
                                                         class="label p-1 bg-{{ $value->campaign_running_status == 'activated' ? 'success' : 'danger' }}"
                                                         style="cursor: pointer;" data-toggle="dropdown"

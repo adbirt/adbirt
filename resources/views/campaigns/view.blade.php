@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.dashboard')
 
 @section('styles')
     {!! Html::style('dist/cssc/bootstrap.striped.min.css') !!}
@@ -174,8 +174,8 @@
         </p> --}}
         <div class="clearfix"></div>
         <div class="row">
-		
-		@if (isset($campaignsData) && count($campaignsData) > 0)
+
+            @if (isset($campaignsData) && count($campaignsData) > 0)
 
                 @foreach ($campaignsData as $campgn)
                     <div class="col-12 col-md-6 col-lg-4 my-3">

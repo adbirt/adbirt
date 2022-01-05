@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.dashboard')
 
 @section('style')
     <link href="{{ asset('assets/css/sparken_custom_styles.css') }}" rel="stylesheet" type="text/css">
@@ -37,9 +37,9 @@
             <div class="viewtable">
                 @include('includes.alert')
                 <!--<ol class="breadcrumb">
-                                                        <li><a href="{{ url('/') }}">Home</a></li>
-                                                        <li class="active">{!! $title = 'View Categories' !!}</li>
-                                                    </ol>-->
+                                                            <li><a href="{{ url('/') }}">Home</a></li>
+                                                            <li class="active">{!! $title = 'View Categories' !!}</li>
+                                                        </ol>-->
 
                 <a href="{{ url('/campaigns-category/add-campaigns-category') }}" class="mb-2">
                     <button class="btn btn-primary waves-effect waves-light mb-2">Add new Category</button>

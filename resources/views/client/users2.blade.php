@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.dashboard')
 
 @section('content')
     <!-- Content -->
@@ -6,9 +6,9 @@
         <div class="container-fluid">
             @include('includes.alert')
             <!--<ol class="breadcrumb">
-                    <li><a href="#">Home</a></li>
-                    <li class="active"> {!! $title !!}</li>
-                  </ol>-->
+                        <li><a href="#">Home</a></li>
+                        <li class="active"> {!! $title !!}</li>
+                      </ol>-->
             <div class="card">
                 @if (count($users))
                     <div class="table-responsive">

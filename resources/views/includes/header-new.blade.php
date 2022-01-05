@@ -166,6 +166,34 @@ $NotifyCnt = count($Notify);
                 @endif
             </div>
         </li>
+        <!-- Help Menu -->
+        <li class="nav-item dropdown">
+            <a class="nav-link btn mx-1 text-primary-color p-2" data-toggle="help" href="#">
+                <i class="fa fa-question fa-lg"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right"
+                style="text-overflow: ellipsis !important; overflow: hidden !important;">
+                <span class="dropdown-item dropdown-header">
+                    Help Center
+                </span>
+
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item p-2 cursor-pointer">
+                    <i class="fa fa-help mr-2"></i> Tour Gide
+                </a>
+
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item p-2 cursor-pointer">
+                    <i class="fa fa-help mr-2"></i> FAQs
+                </a>
+
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item p-2 cursor-pointer">
+                    <i class="fa fa-help mr-2"></i> Contact Us
+                </a>
+
+            </div>
+        </li>
         <li class="nav-item">
             <a class="nav-link btn mx-1 text-primary-color p-2" href="javascript:alert('Coming soon')" role="button"
                 title="Help">

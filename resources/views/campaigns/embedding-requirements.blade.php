@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.dashboard')
 
 @section('style')
 
@@ -30,11 +30,11 @@
 
                 <!--<ol class="breadcrumb">
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li><a href="{{ url('/') }}">Home</a></li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li><a href="{{ url('/') }}">Home</a></li>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="active">{!! $title = 'Add Ads to Website Requirements' !!}</li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="active">{!! $title = 'Add Ads to Website Requirements' !!}</li>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ol>-->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ol>-->
 
                 <div class="card">
                     @if (Auth::user()->hasRole('vendor'))

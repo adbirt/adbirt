@@ -61,8 +61,8 @@ class VerifyCsrfToken extends BaseVerifier
         '/login',
 
         '/contact',
-        'contactus',
-        'contact-us',
-        'send-mail'
+        '/contactus',
+        '/contact-us',
+        '/send-mail'
     ];
 }

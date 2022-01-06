@@ -21,8 +21,8 @@ class MailController extends Controller
         $input = $req->all();
 
         $fromName = $input['fromName'];
-        $fromEmail = $this->adminEmail;
-        $toEmail = $input['toEmail'];
+        $fromEmail = $input['fromEmail'];
+        $toEmail = $input['toEmail'] ?? $this->adminEmail;
         $subject = $input['subject'];
         $body = $input['body'];
 

@@ -168,6 +168,7 @@
                         alertBox.classList.contains('d-block') && alertBox.classList.remove(
                             'd-block');
                     }, 3000);
+
                 }
             }).catch((err) => {
                 alertBox.classList.contains('d-none') && alertBox.classList.add('d-block');

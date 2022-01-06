@@ -155,6 +155,15 @@
 
                 const json = await res.json();
                 console.log(json);
+
+                if (res.ok && Number(json.status) == 200) {
+                    alertBox.classList.contains('d-none') && alertBox.classList.add('d-block');
+                    alertBox.innerHTML = 'Mail Sent successfully';
+                    setTimeout(() => {
+                        alertBox.classList.contains('d-block') && alertBox.classList.add(
+                            'd-none');
+                    }, 3000);
+                }
             }).catch((err) => {
                 alertBox.classList.contains('d-none') && alertBox.classList.add('d-block');
                 alertBox.innerHTML = 'An error occurred';

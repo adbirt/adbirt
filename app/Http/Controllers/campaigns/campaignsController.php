@@ -1031,6 +1031,10 @@ class campaignsController extends Controller
             ->where('campaign_running_status', 'activated')
             ->get();
 
+        $this->outputData['categories'] = json_decode(json_encode(category::where('isActive', 'Active')
+            ->where('isDeleted', 'No')
+            ->get()), true);
+
         $this->outputData['campaignsData'] = $MyCampaigns;
 
         return view('campaigns.my-campaigns', $this->outputData);

@@ -77,13 +77,18 @@ class AuthController extends Controller
         $validation = Validator::make($allInput, $rules);
 
         $is_remote_request = false;
-        if (isset($allInput['is_remote_request'])) {
+        if (isset($allInput['is_remote_request']) && $allInput['is_remote_request'] ==  'true') {
             $is_remote_request = true;
         }
 
         $throttles = $this->isUsingThrottlesLoginsTrait();
 
         if ($throttles && $this->hasTooManyLoginAttempts($request)) {
+
+            if ($is_remote_request) {
+                return response()->json(['status' => 400, 'message' => "Too many login attempts, you've been locked out temporarily!"]);
+            }
+
             return $this->sendLockoutResponse($request);
         }
 

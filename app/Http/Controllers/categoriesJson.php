@@ -18,7 +18,7 @@ class categoriesJson extends BaseController
     {
         $categories = category::where('isActive', 'Active')->where('isDeleted', 'No')->get()->toJson(JSON_PRETTY_PRINT);
 
-        return response()->json(['status' => 200, 'categoories' => $categories]);
+        return response()->json(['status' => 200, 'categories' => $categories]);
     }
 
     public function create()

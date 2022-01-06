@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Model\category;
+use \App\Model\category;
 use Illuminate\Routing\Controller as BaseController;
 
 class categoriesJson extends BaseController
@@ -16,8 +16,16 @@ class categoriesJson extends BaseController
 
     public function getAllCategories()
     {
-        // $categories = category::where('isActive', 'Active')->where('isDeleted', 'No')->get()->toJson(JSON_PRETTY_PRINT);
-        $categories = category::where('isActive', 'Active')->where('isDeleted', 'No')->get();
+        $categories = json_decode(category::where('isActive', 'Active')
+            ->where('isDeleted', 'No')
+            ->get()->toJson(JSON_PRETTY_PRINT), true);
+
+        $categories = array_map(function ($category) {
+            $category['category_name'] = ucwords(
+                $category['category_name']
+            );
+            return $category;
+        }, $categories);
 
         return response()->json(['status' => 200, 'categories' => $categories]);
     }

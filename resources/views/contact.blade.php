@@ -158,17 +158,28 @@
 
                 if (res.ok && Number(json.status) == 200) {
                     alertBox.classList.contains('d-none') && alertBox.classList.add('d-block');
+                    alertBox.classList.contains('d-none') && alertBox.classList.remove('d-none');
+
                     alertBox.innerHTML = 'Mail Sent successfully';
+
                     setTimeout(() => {
                         alertBox.classList.contains('d-block') && alertBox.classList.add(
                             'd-none');
+                        alertBox.classList.contains('d-block') && alertBox.classList.remove(
+                            'd-block');
                     }, 3000);
                 }
             }).catch((err) => {
                 alertBox.classList.contains('d-none') && alertBox.classList.add('d-block');
+                alertBox.classList.contains('d-none') && alertBox.classList.remove('d-none');
+
                 alertBox.innerHTML = 'An error occurred';
+
                 setTimeout(() => {
-                    alertBox.classList.contains('d-block') && alertBox.classList.add('d-none');
+                    alertBox.classList.contains('d-block') && alertBox.classList.add(
+                        'd-none');
+                    alertBox.classList.contains('d-block') && alertBox.classList.remove(
+                        'd-block');
                 }, 3000);
 
                 console.error(err);

@@ -7,21 +7,18 @@ use Illuminate\Routing\Controller as BaseController;
 
 class categoriesJson extends BaseController
 {
+
+    var array $outputData = array();
+
     public function __construct()
     {
-        // $this->middleware('auth', ['except' => 'getAllCategories']);
-        $this->middleware('guest')->except([
-            'getAllCategories',
-        ]);
     }
 
     public function getAllCategories()
     {
         $categories = category::where('isActive', 'Active')->where('isDeleted', 'No')->get()->toJson(JSON_PRETTY_PRINT);
-        return response(array(
-            'categories' => $categories,
-            'class' => DefaultController::class,
-        ), 200);
+
+        return response()->json(['status' => 200, 'categoories' => $categories]);
     }
 
     public function create()

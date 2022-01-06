@@ -40,7 +40,7 @@ class MailController extends Controller
                 $data['TextToClient'] = $body;
 
                 Mail::send('email.mail', $data, function ($message) use ($toEmail, $subject, $fromName, $fromEmail) {
-                    $message->from($fromEmail ?? $this->adminEmail, $fromName);
+                    $message->from($fromEmail ?? $this->adminEmail);
                     $message->to($toEmail)->subject($subject);
                 });
 

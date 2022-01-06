@@ -76,8 +76,11 @@ class AuthController extends Controller
         // return 'login:attempts:'.(Input::get('email').$request->ip());
         $validation = Validator::make($allInput, $rules);
 
+        $is_remote_request = false;
+        if (isset($allInput['is_remote_request'])) {
+            $is_remote_request = true;
+        }
 
-        //
         $throttles = $this->isUsingThrottlesLoginsTrait();
 
         if ($throttles && $this->hasTooManyLoginAttempts($request)) {
@@ -89,27 +92,52 @@ class AuthController extends Controller
         if (is_numeric($login)) {
             if (User::where('phone', $login)->where('active', 0)->exists()) {
                 return $allInput['email'];
+
+                if ($is_remote_request) {
+                    return response()->json(['status' => 300, 'message' => 'Your mobile number has been registered. Please, confirm your account by activation code sent to your mobile.']);
+                }
+
                 return redirect()->route('activation')
                     ->with('title', 'Activation')
-                    ->with('success1', 'Your mobile number is already registered. Please, confirm your account by activation code sent to your mobile.')
+                    ->with('success1', 'Your mobile number has been registered. Please, confirm your account by activation code sent to your mobile.')
                     ->with('phone', $allInput['email'])
                     ->with('login_type', 2);
             } elseif (User::where('phone', $login)->where('active', 2)->exists()) {
+
+                if ($is_remote_request) {
+                    return response()->json(['status' => 300, 'message' => 'We are Sorry, Your Account has been Deactivated.']);
+                }
+
                 return redirect()->route('login')
-                    ->with('error', 'We are Sorry that Your Account has been Deactivated.');
+                    ->with('error', 'We are Sorry, Your Account has been Deactivated.');
             }
         } elseif (User::where('email', $allInput['email'])->where('active', 0)->exists()) {
+
+            if ($is_remote_request) {
+                return response()->json(['status' => 300, 'message' => 'Your email is already registered. Please, confirm your account by activation link sent to your email.']);
+            }
+
             return redirect()->route('activation')
                 ->with('title', 'Activation')
                 ->with('success1', 'Your email is already registered. Please, confirm your account by activation link sent to your email.')
                 ->with('phone', '')
                 ->with('login_type', 1);
         } elseif (User::where('email', $allInput['email'])->where('active', 2)->exists()) {
+
+            if ($is_remote_request) {
+                return response()->json(['status' => 300, 'message' => 'We are Sorry, Account has been Deactivated.']);
+            }
+
             return redirect()->route('login')
-                ->with('error', 'We are Sorry that Your Account has been Deactivated.');
+                ->with('error', 'We are Sorry, Account has been Deactivated.');
         }
 
         if ($validation->fails()) {
+
+            if ($is_remote_request) {
+                return response()->json(['status' => 400, 'message' => 'Username or Password missing or incorrect.']);
+            }
+
             return redirect()->route('login')
                 ->withInput()
                 ->withErrors($validation);
@@ -126,22 +154,42 @@ class AuthController extends Controller
                 if ($throttles) {
                     $this->clearLoginAttempts($request);
                 }
+
+                if ($is_remote_request) {
+                    return response()->json(['status' => 200, 'message' => 'Login Successful.']);
+                }
+
                 return redirect()->intended('dashboard');
             } elseif (Auth::attempt(['phone' => $allInput['email'], 'password' => $allInput['password'], 'active' => 1], $remember)) {
                 if ($throttles) {
                     $this->clearLoginAttempts($request);
                 }
+
+                if ($is_remote_request) {
+                    return response()->json(['status' => 200, 'message' => 'Login Successful.']);
+                }
+
                 return redirect()->intended('dashboard');
             } else {
                 if ($throttles) {
                     $this->incrementLoginAttempts($request);
                 }
+
+                if ($is_remote_request) {
+                    return response()->json(['status' => 200, 'message' => 'Error in Email Address or Password.']);
+                }
+
                 return redirect()->route('login')
                     ->withInput()
                     ->withErrors('Error in Email Address or Password.');
             }
         }
-        return 'Do Login Executes';
+
+        if ($is_remote_request) {
+            return response()->json(['status' => 200, 'message' => 'Something went wrong!']);
+        }
+
+        return 'Something went wrong!';
     }
 
     public function logout()
@@ -149,7 +197,7 @@ class AuthController extends Controller
         Auth::logout();
         return redirect()->route('login')
             //return redirect(\URL::previous())
-            ->with('success', "You are successfully logged out.");
+            ->with('success', "You've logged out successfully!'.");
         // return 'Logout Panel';
     }
 

@@ -56,6 +56,7 @@ Route::group(['middleware' => 'guest'], function () {
     Route::post('user/store', ['as' => 'user.store', 'uses' => 'UsersController@store']);
     Route::get('user/activate', ['as' => 'activation', 'uses' => 'UsersController@activate']);
     Route::get('register/activate', ['as' => 'user.doactivate', 'uses' => 'UsersController@doActivate']);
+    
     Route::post('login', array('uses' => 'Auth\AuthController@doLogin'));
     Route::post('reset', ['as' => 'reset-password', 'uses' => 'Auth\AuthController@resetRequest']);
     Route::get('login/reset_password/users', ['as' => 'reset-page', 'uses' => 'Auth\AuthController@resetPage']);
@@ -217,11 +218,11 @@ Route::group(['middleware' => ['auth', 'role:admin']], function () {
 |
 */
 
-Route::group(['prefix' => 'api'], function () {
-    // Register & login Api Routes
-    Route::any('/login', 'api\ApiGiftController@ApiLogin');
-    Route::any('/register', 'api\ApiGiftController@ApiRegister');
-});
+// Route::group(['prefix' => 'api'], function () {
+//     // Register & login Api Routes
+//     Route::any('/login', 'api\ApiGiftController@ApiLogin');
+//     Route::any('/register', 'api\ApiGiftController@ApiRegister');
+// });
 
 /*
 |

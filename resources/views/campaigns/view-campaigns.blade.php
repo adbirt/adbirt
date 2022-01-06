@@ -52,9 +52,9 @@
         <div class="viewtable">
             @include('includes.alert')
             <!--<ol class="breadcrumb">
-                                                                                                                                                                                                                                    <li><a href="{{ url('/') }}">Home</a></li>
-                                                                                                                                                                                                                                    <li class="active">{!! $title = 'Campaign Status' !!}</li>
-                                                                                                                                                                                                                                </ol>-->
+                                                                                                                                                                                                                                            <li><a href="{{ url('/') }}">Home</a></li>
+                                                                                                                                                                                                                                            <li class="active">{!! $title = 'Campaign Status' !!}</li>
+                                                                                                                                                                                                                                        </ol>-->
             <a href="{{ url('/campaigns/add-campaigns') }}">
                 <button class="btn btn-primary waves-effect waves-light mb-2">Add new Campaign</button>
             </a>
@@ -123,18 +123,16 @@
                                         @endif
                                         <td class="citybtn d-flex flex-row justify-content-start pl-2">
 
-                                            {{-- <pre id="share-embed-code-{{ $value->id }}"
-                                                style="position:absolute; top:0; left:-5000px;">
-                                            &lt;script type='text/javascript' src='https://adbirt.com/public/assets/js/advertiser.js'&gt;&lt;/script&gt;
-                                            </pre>
-                                            <a href="#" class="copy-btn mx-1" data-clipboard-action="copy"
-                                                data-clipboard-target="#share-embed-code-{{ $value->id }}">
-                                                <i class="fa fa-clipboard" aria-hidden="true"></i>
-                                            </a> --}}
                                             <a href="{{ url('/campaigns/edit-campaigns/' . base64_encode($value->id)) }}"
                                                 class="mx-1 btn btn-info">
                                                 <i class="fa fa-edit" aria-hidden="true"></i>
                                             </a>
+
+                                            <a href="{{ url('/campaigns/view-my-campaigns/' . base64_encode($value->id)) }}"
+                                                class="mx-1 btn btn-info">
+                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                            </a>
+
                                             <a href="javascript:void(0);" onclick="Del({{ $value->id }});"
                                                 class="mx-1 btn btn-danger">
                                                 <i class="fa fa-trash" aria-hidden="true"></i>

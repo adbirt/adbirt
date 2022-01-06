@@ -52,9 +52,9 @@
         <div class="viewtable">
             @include('includes.alert')
             <!--<ol class="breadcrumb">
-                                                                                                                                                                                                                                            <li><a href="{{ url('/') }}">Home</a></li>
-                                                                                                                                                                                                                                            <li class="active">{!! $title = 'Campaign Status' !!}</li>
-                                                                                                                                                                                                                                        </ol>-->
+                                                                                                                                                                                                                                                <li><a href="{{ url('/') }}">Home</a></li>
+                                                                                                                                                                                                                                                <li class="active">{!! $title = 'Campaign Status' !!}</li>
+                                                                                                                                                                                                                                            </ol>-->
             <a href="{{ url('/campaigns/add-campaigns') }}">
                 <button class="btn btn-primary waves-effect waves-light mb-2">Add new Campaign</button>
             </a>
@@ -128,7 +128,7 @@
                                                 <i class="fa fa-edit" aria-hidden="true"></i>
                                             </a>
 
-                                            <a href="{{ url('/campaigns/view-my-campaigns/' . base64_encode($value->id)) }}"
+                                            <a href="{{ url('/campaigns/view-my-campaign/' . base64_encode($value->id)) }}"
                                                 class="mx-1 btn btn-info">
                                                 <i class="fa fa-eye" aria-hidden="true"></i>
                                             </a>

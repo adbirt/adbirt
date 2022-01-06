@@ -28,7 +28,7 @@ class MailController extends Controller
 
         unset($input['_token']);
 
-        return $this->sendMail($fromName, $fromEmail, $toEmail, $subject, $body);
+        return $this->sendMail($fromEmail, $fromName, $toEmail, $subject, $body);
     }
 
     public function sendMail(string $fromEmail, string $fromName, string $toEmail, string $subject, string $body)
@@ -40,7 +40,7 @@ class MailController extends Controller
                 $data['TextToClient'] = $body;
 
                 Mail::send('email.mail', $data, function ($message) use ($toEmail, $subject, $fromName, $fromEmail) {
-                    $message->from($fromEmail ?? $this->adminEmail);
+                    $message->from($fromEmail ?? $this->adminEmail, $fromName);
                     $message->to($toEmail)->subject($subject);
                 });
 

@@ -181,7 +181,7 @@ class AuthController extends Controller
                 }
 
                 if ($is_remote_request) {
-                    return response()->json(['status' => 200, 'message' => 'Error in Email Address or Password.']);
+                    return response()->json(['status' => 400, 'message' => 'Error in Email Address or Password.']);
                 }
 
                 return redirect()->route('login')
@@ -191,7 +191,7 @@ class AuthController extends Controller
         }
 
         if ($is_remote_request) {
-            return response()->json(['status' => 200, 'message' => 'Something went wrong!']);
+            return response()->json(['status' => 500, 'message' => 'Something went wrong!']);
         }
 
         return 'Something went wrong!';

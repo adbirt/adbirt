@@ -77,7 +77,7 @@ Route::group(['prefix' => 'messages'], function () {
 });
 
 // misc
-Route::any('/get-campaign-categories-as-json', 'categoriesJson@getAllCategories');
+Route::any('campaigns/get-campaign-categories-as-json', 'categoriesJson@getAllCategories');
 
 Route::group(array('middleware' => 'auth'), function () {
     Route::get('logout', ['as' => 'logout', 'uses' => 'Auth\AuthController@logout']);

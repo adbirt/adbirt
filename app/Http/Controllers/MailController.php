@@ -9,8 +9,8 @@ use Mail;
 class MailController extends Controller
 {
 
-    // var ?string $adminEmail = 'info@adbirt.com';
-    var ?string $adminEmail = 'danroyaleffiong@gmail.com';
+    var ?string $adminEmail = 'info@adbirt.com';
+    // var ?string $adminEmail = 'danroyaleffiong@gmail.com';
 
     public function __construct()
     {

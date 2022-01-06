@@ -16,7 +16,8 @@ class categoriesJson extends BaseController
 
     public function getAllCategories()
     {
-        $categories = category::where('isActive', 'Active')->where('isDeleted', 'No')->get()->toJson(JSON_PRETTY_PRINT);
+        // $categories = category::where('isActive', 'Active')->where('isDeleted', 'No')->get()->toJson(JSON_PRETTY_PRINT);
+        $categories = category::where('isActive', 'Active')->where('isDeleted', 'No')->get();
 
         return response()->json(['status' => 200, 'categories' => $categories]);
     }

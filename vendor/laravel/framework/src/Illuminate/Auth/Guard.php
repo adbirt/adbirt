@@ -93,10 +93,11 @@ class Guard implements GuardContract
      * @param  \Symfony\Component\HttpFoundation\Request  $request
      * @return void
      */
-    public function __construct(UserProvider $provider,
-                                SessionInterface $session,
-                                Request $request = null)
-    {
+    public function __construct(
+        UserProvider $provider,
+        SessionInterface $session,
+        Request $request = null
+    ) {
         $this->session = $session;
         $this->request = $request;
         $this->provider = $provider;
@@ -109,7 +110,7 @@ class Guard implements GuardContract
      */
     public function check()
     {
-        return ! is_null($this->user());
+        return !is_null($this->user());
     }
 
     /**
@@ -119,7 +120,7 @@ class Guard implements GuardContract
      */
     public function guest()
     {
-        return ! $this->check();
+        return !$this->check();
     }
 
     /**
@@ -136,7 +137,7 @@ class Guard implements GuardContract
         // If we've already retrieved the user for the current request we can just
         // return it back immediately. We do not want to fetch the user data on
         // every call to this method because that would be tremendously slow.
-        if (! is_null($this->user)) {
+        if (!is_null($this->user)) {
             return $this->user;
         }
 
@@ -147,7 +148,7 @@ class Guard implements GuardContract
         // request, and if one exists, attempt to retrieve the user using that.
         $user = null;
 
-        if (! is_null($id)) {
+        if (!is_null($id)) {
             $user = $this->provider->retrieveById($id);
         }
 
@@ -156,7 +157,7 @@ class Guard implements GuardContract
         // the application. Once we have a user we can return it to the caller.
         $recaller = $this->getRecaller();
 
-        if (is_null($user) && ! is_null($recaller)) {
+        if (is_null($user) && !is_null($recaller)) {
             $user = $this->getUserByRecaller($recaller);
 
             if ($user) {
@@ -197,12 +198,12 @@ class Guard implements GuardContract
      */
     protected function getUserByRecaller($recaller)
     {
-        if ($this->validRecaller($recaller) && ! $this->tokenRetrievalAttempted) {
+        if ($this->validRecaller($recaller) && !$this->tokenRetrievalAttempted) {
             $this->tokenRetrievalAttempted = true;
 
             list($id, $token) = explode('|', $recaller, 2);
 
-            $this->viaRemember = ! is_null($user = $this->provider->retrieveByToken($id, $token));
+            $this->viaRemember = !is_null($user = $this->provider->retrieveByToken($id, $token));
 
             return $user;
         }
@@ -238,7 +239,7 @@ class Guard implements GuardContract
      */
     protected function validRecaller($recaller)
     {
-        if (! is_string($recaller) || ! Str::contains($recaller, '|')) {
+        if (!is_string($recaller) || !Str::contains($recaller, '|')) {
             return false;
         }
 
@@ -305,7 +306,7 @@ class Guard implements GuardContract
      */
     public function onceBasic($field = 'email')
     {
-        if (! $this->once($this->getBasicCredentials($this->getRequest(), $field))) {
+        if (!$this->once($this->getBasicCredentials($this->getRequest(), $field))) {
             return $this->getBasicResponse();
         }
     }
@@ -319,7 +320,7 @@ class Guard implements GuardContract
      */
     protected function attemptBasic(Request $request, $field)
     {
-        if (! $request->getUser()) {
+        if (!$request->getUser()) {
             return false;
         }
 
@@ -387,7 +388,7 @@ class Guard implements GuardContract
      */
     protected function hasValidCredentials($user, $credentials)
     {
-        return ! is_null($user) && $this->provider->validateCredentials($user, $credentials);
+        return !is_null($user) && $this->provider->validateCredentials($user, $credentials);
     }
 
     /**
@@ -499,7 +500,7 @@ class Guard implements GuardContract
      */
     public function onceUsingId($id)
     {
-        if (! is_null($user = $this->provider->retrieveById($id))) {
+        if (!is_null($user = $this->provider->retrieveById($id))) {
             $this->setUser($user);
 
             return true;
@@ -516,7 +517,7 @@ class Guard implements GuardContract
      */
     protected function queueRecallerCookie(UserContract $user)
     {
-        $value = $user->getAuthIdentifier().'|'.$user->getRememberToken();
+        $value = $user->getAuthIdentifier() . '|' . $user->getRememberToken();
 
         $this->getCookieJar()->queue($this->createRecaller($value));
     }
@@ -546,7 +547,7 @@ class Guard implements GuardContract
         // listening for anytime a user signs out of this application manually.
         $this->clearUserDataFromStorage();
 
-        if (! is_null($this->user)) {
+        if (!is_null($this->user)) {
             $this->refreshRememberToken($user);
         }
 
@@ -571,7 +572,7 @@ class Guard implements GuardContract
     {
         $this->session->remove($this->getName());
 
-        if (! is_null($this->getRecaller())) {
+        if (!is_null($this->getRecaller())) {
             $recaller = $this->getRecallerName();
 
             $this->getCookieJar()->queue($this->getCookieJar()->forget($recaller));
@@ -613,7 +614,7 @@ class Guard implements GuardContract
      */
     public function getCookieJar()
     {
-        if (! isset($this->cookie)) {
+        if (!isset($this->cookie)) {
             throw new RuntimeException('Cookie jar has not been set.');
         }
 
@@ -746,7 +747,7 @@ class Guard implements GuardContract
      */
     public function getName()
     {
-        return 'login_'.md5(get_class($this));
+        return 'login_' . md5(get_class($this));
     }
 
     /**
@@ -756,7 +757,7 @@ class Guard implements GuardContract
      */
     public function getRecallerName()
     {
-        return 'remember_'.md5(get_class($this));
+        return 'remember_' . md5(get_class($this));
     }
 
     /**

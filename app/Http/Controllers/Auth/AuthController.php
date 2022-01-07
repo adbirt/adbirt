@@ -73,7 +73,7 @@ class AuthController extends Controller
             'password' => 'required'
         );
         $allInput = $request->all();
-        // return 'login:attempts:'.(Input::get('email').$request->ip());
+
         $validation = Validator::make($allInput, $rules);
 
         $is_remote_request = false;
@@ -92,7 +92,6 @@ class AuthController extends Controller
             return $this->sendLockoutResponse($request);
         }
 
-        // dd($allInput);
         $login = ltrim($allInput['email'], '+');
         if (is_numeric($login)) {
             if (User::where('phone', $login)->where('active', 0)->exists()) {
@@ -161,7 +160,8 @@ class AuthController extends Controller
                 }
 
                 if ($is_remote_request) {
-                    return response()->json(['status' => 200, 'message' => 'Login Successful.']);
+                    $currentuser = Auth::user();
+                    return response()->json(['status' => 200, 'message' => 'Login Successful.', 'payload' => $currentuser]);
                 }
 
                 return redirect()->intended('dashboard');
@@ -171,7 +171,8 @@ class AuthController extends Controller
                 }
 
                 if ($is_remote_request) {
-                    return response()->json(['status' => 200, 'message' => 'Login Successful.']);
+                    $currentuser = Auth::user();
+                    return response()->json(['status' => 200, 'message' => 'Login Successful.', 'payload' => $currentuser]);
                 }
 
                 return redirect()->intended('dashboard');

@@ -161,7 +161,7 @@ class AuthController extends Controller
 
                 if ($is_remote_request) {
                     $currentuser = Auth::user();
-                    return response()->json(['status' => 200, 'message' => 'Login Successful.', 'payload' => $currentuser]);
+                    return response()->json(['status' => 200, 'message' => 'Login Successful.', 'payload' => $currentuser, 'usesThrottle' => false]);
                 }
 
                 return redirect()->intended('dashboard');
@@ -172,7 +172,7 @@ class AuthController extends Controller
 
                 if ($is_remote_request) {
                     $currentuser = Auth::user();
-                    return response()->json(['status' => 200, 'message' => 'Login Successful.', 'payload' => $currentuser]);
+                    return response()->json(['status' => 200, 'message' => 'Login Successful.', 'payload' => $currentuser, 'usesThrottle' => false]);
                 }
 
                 return redirect()->intended('dashboard');

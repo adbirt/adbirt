@@ -20,7 +20,7 @@
         <div class="container-fluid">
             @if (Session::has('flash_message'))
                 <div class="alert bg-success alert-styled-left" id="msg">
-                    <button type="button" class="close" data-dismiss="alert"><span>×</span><span
+                    <button type="button" class="close" data-dismiss="alert"><span>&nbsp;</span><span
                             class="sr-only">Close</span></button>
                     <span class="text-semibold">
                         {!! session('flash_message') !!}
@@ -28,16 +28,15 @@
             @endif
 
             <div class="alert bg-success alert-styled-left" id="msg" style="display:none;">
-                <button type="button" class="close" data-dismiss="alert"><span>×</span><span
+                <button type="button" class="close" data-dismiss="alert"><span>&nbsp;</span><span
                         class="sr-only">Close</span></button>
                 <span class="text-semibold">
-                    Campaigns Details Deleted Successfully...
+                    Successfully Deleted...
             </div>
 
             <div class="viewtable">
                 @include('includes.alert')
                 {{-- <ol class="breadcrumb"> --}}
-                {{-- <li><a href="{{ url('/') }}">Home</a></li> --}}
                 <!--<li class="active">{!! $title = 'My Ads' !!}</li>-->
                 {{-- </ol> --}}
                 <div class="card">
@@ -47,7 +46,6 @@
                                 <thead>
                                     <tr>
                                         <th>Name</th>
-                                        {{-- <th>Title</th> --}}
                                         <th>Category</th>
                                         <th>Price</th>
                                         <th>Status</th>
@@ -58,7 +56,6 @@
                                     @foreach ($campaignsData as $value)
                                         <tr id="data-{!! $value->campaign->id !!}">
                                             <td class="campaigns_name">{!! ucwords($value->campaign->campaign_name) !!}</td>
-                                            {{-- <td class="campaigns_name">{!! ucwords($value->campaign->campaign_title) !!}</td> --}}
                                             <td class="campaigns_name">{!! getCategoryName($categories, $value->campaign->campaign_category) !!}</td>
                                             <td class="campaigns_name">${!! number_format($value->campaign->campaign_cost_per_action, 2) !!}</td>
                                             <td>

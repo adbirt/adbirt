@@ -17,6 +17,7 @@ use App\Model\campaignTransaction;
 use App\Model\rolesModel;
 use App\Model\WalletHistoryModel;
 // use App\Model\companyprofile;
+use App\Model\category;
 use Redirect;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -168,7 +169,27 @@ class AuthController extends Controller
                         $profilePhotoUrl = 'https://adbirt.com/public/assets-revamp/img/avatar.png';
                     }
 
-                    return response()->json(['status' => 200, 'message' => 'Login Successful.', 'payload' => $currentuser, 'usesThrottle' => false, 'role_id' => $rold_id, 'propic' => $profilePhotoUrl]);
+                    $campaigns = campaignorders::with('campaign')
+                        ->where('publisher_id', Auth::user()->id)
+                        ->where('campaign_running_status', 'activated')
+                        ->get();
+
+                    $categories = category::where('isActive', 'Active')
+                        ->where('isDeleted', 'No')
+                        ->get();
+
+                    return response()->json(
+                        [
+                            'status' => 200,
+                            'message' => 'Login Successful.',
+                            'payload' => $currentuser,
+                            'usesThrottle' => false,
+                            'role_id' => $rold_id,
+                            'propic' => $profilePhotoUrl,
+                            'campaigns' => $campaigns,
+                            'categories' => $categories
+                        ]
+                    );
                 }
 
                 return redirect()->intended('dashboard');
@@ -186,7 +207,27 @@ class AuthController extends Controller
                         $profilePhotoUrl = 'https://adbirt.com/public/assets-revamp/img/avatar.png';
                     }
 
-                    return response()->json(['status' => 200, 'message' => 'Login Successful.', 'payload' => $currentuser, 'usesThrottle' => false, 'role_id' => $rold_id, 'propic' => $profilePhotoUrl]);
+                    $campaigns = campaignorders::with('campaign')
+                        ->where('publisher_id', Auth::user()->id)
+                        ->where('campaign_running_status', 'activated')
+                        ->get();
+
+                    $categories = category::where('isActive', 'Active')
+                        ->where('isDeleted', 'No')
+                        ->get();
+
+                    return response()->json(
+                        [
+                            'status' => 200,
+                            'message' => 'Login Successful.',
+                            'payload' => $currentuser,
+                            'usesThrottle' => false,
+                            'role_id' => $rold_id,
+                            'propic' => $profilePhotoUrl,
+                            'campaigns' => $campaigns,
+                            'categories' => $categories
+                        ]
+                    );
                 }
 
                 return redirect()->intended('dashboard');

@@ -1,9 +1,5 @@
 @extends('layouts.dashboard')
 
-@section('style')
-    {{-- <link href="{{ asset('assets/css/jquery.dataTables.min.css') }}" rel="stylesheet" type="text/css" /> --}}
-@stop
-
 @section('content')
 
     <!-- Material Design Icons  -->
@@ -411,7 +407,7 @@
         <!-- new -->
         <!-- Small boxes (Stat box) -->
         <div class="row">
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-3 col-6 mb-3">
                 <!-- small box -->
                 <div class="small-box bg-info h-100">
                     <div class="inner">
@@ -427,7 +423,7 @@
                 </div>
             </div>
             <!-- ./col -->
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-3 col-6 mb-3">
                 <!-- small box -->
                 <div class="small-box bg-info h-100">
                     <div class="inner">
@@ -444,7 +440,7 @@
                 </div>
             </div>
             <!-- ./col -->
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-3 col-6 mb-3">
                 <!-- small box -->
                 <div class="small-box bg-warning h-100">
                     <div class="inner">
@@ -459,7 +455,7 @@
                 </div>
             </div>
             <!-- ./col -->
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-3 col-6 mb-3">
                 <!-- small box -->
                 <div class="small-box bg-danger h-100">
                     <div class="inner">
@@ -486,6 +482,7 @@
     </div>
 
 @else
+    {{-- Publishers --}}
 
     <div class="card card-stats-primary">
         <div class="card-block">
@@ -518,7 +515,7 @@
     </div>
     <div class="row">
 
-        <div class="col-6 col-lg-3">
+        <div class="col-6 col-lg-3 mb-3">
             <!-- small box -->
             <div class="small-box bg-info h-100">
                 <div class="inner">
@@ -537,7 +534,7 @@
         </div>
         <!-- ./col -->
 
-        <div class="col-6 col-lg-3">
+        <div class="col-6 col-lg-3 mb-3">
             <!-- small box -->
             <div class="small-box bg-info h-100">
                 <div class="inner">
@@ -555,9 +552,9 @@
         </div>
         <!-- ./col -->
 
-        <div class="col-6 col-lg-3">
+        <div class="col-6 col-lg-3 mb-3">
             <!-- small box -->
-            <div class="small-box bg-danger">
+            <div class="small-box bg-danger h-100">
                 <div class="inner">
                     <h3>
                         {{ $Clicks }}
@@ -573,7 +570,7 @@
         </div>
         <!-- ./col -->
 
-        <div class="col-6 col-lg-3">
+        <div class="col-6 col-lg-3 mb-3">
             <!-- small box -->
             <div class="small-box bg-warning h-100">
                 <div class="inner">
@@ -616,38 +613,4 @@
 
     <!-- App JS -->
     {!! Html::script('dist/js/main.min.js') !!}
-
-    {{-- <script type="text/javascript" src="{{ asset('assets/js/datatables.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('assets/js/responsive.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('assets/js/select2.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('assets/js/form_select2.js') }}"></script>
-<script type="text/javascript" src="{{ asset('assets/js/datatables_responsive.js') }}"></script>
-<script type="text/javascript" src="{{ asset('assets/js/datatables_basic.js') }}"></script> --}}
-
-    {{-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-    <script type="text/javascript">
-        var ctx = document.getElementById("myChart").getContext('2d');
-        var d = new Date();
-        var n = d.getFullYear();
-        var myChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-                datasets: [{
-                    label: '# of Ads ' + n,
-                    data: [7, 4, 3, 5, 2, 3],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero: true
-                        }
-                    }]
-                }
-            }
-        });
-    </script> --}}
 @stop

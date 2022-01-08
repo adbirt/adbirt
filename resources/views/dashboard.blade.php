@@ -60,9 +60,9 @@
                     <p class="card-subtitle font-weight-bold">Monetary statistics</p>
                 </div>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-6 mb-3">
                         <!-- small box -->
-                        <div class="small-box bg-info h-100 mb-2">
+                        <div class="small-box bg-info h-100">
                             <div class="inner">
                                 <h3>
                                     @if (!empty($TotalRevenue))
@@ -82,9 +82,9 @@
                         </div>
                     </div>
                     <!-- ./col -->
-                    <div class="col-6">
+                    <div class="col-6 mb-3">
                         <!-- small box -->
-                        <div class="small-box bg-info h-100 mb-2">
+                        <div class="small-box bg-info h-100">
                             <div class="inner">
                                 <h3>
                                     @if (!empty($TotalProfit))
@@ -115,9 +115,9 @@
                     <p class="card-subtitle font-weight-bold">Publisher Statistics</p>
                 </div>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-6 mb-3">
                         <!-- small box -->
-                        <div class="small-box bg-warning h-100 mb-2">
+                        <div class="small-box bg-warning h-100">
                             <div class="inner">
                                 <h3>
                                     {{ $totalClient }}
@@ -133,9 +133,9 @@
                         </div>
                     </div>
                     <!-- ./col -->
-                    <div class="col-6">
+                    <div class="col-6 mb-3">
                         <!-- small box -->
-                        <div class="small-box bg-info h-100 mb-2">
+                        <div class="small-box bg-info h-100">
                             <div class="inner">
                                 <h3>
                                     {{ $emailCount }}
@@ -151,9 +151,9 @@
                     </div>
                     <!-- ./col -->
 
-                    <div class="col-6">
+                    <div class="col-6 mb-3">
                         <!-- small box -->
-                        <div class="small-box bg-danger h-100 mb-2">
+                        <div class="small-box bg-danger h-100">
                             <div class="inner">
                                 <h3>
                                     {{ $phoneCount }}
@@ -169,9 +169,9 @@
                     </div>
                     <!-- ./col -->
 
-                    <div class="col-6">
+                    <div class="col-6 mb-3">
                         <!-- small box -->
-                        <div class="small-box bg-info h-100 mb-2">
+                        <div class="small-box bg-info h-100">
                             <div class="inner">
                                 <h3>
                                     {{ $activeClient }}
@@ -187,9 +187,9 @@
                     </div>
                     <!-- ./col -->
 
-                    <div class="col-lg-6 mt-1">
+                    <div class="col-lg-6 mb-2">
                         <!-- small box -->
-                        <div class="small-box bg-warning h-100 mb-2">
+                        <div class="small-box bg-warning h-100">
                             <div class="inner">
                                 <h3>
                                     {{ $NonActiveClient }}
@@ -218,9 +218,9 @@
                     <p class="card-subtitle font-weight-bold">Total Advertisers Statistics</p>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 mb-2">
                         <!-- small box -->
-                        <div class="small-box bg-danger h-100 mb-2">
+                        <div class="small-box bg-danger h-100">
                             <div class="inner">
                                 <h3>
                                     {{ $totalVendors }}
@@ -245,9 +245,9 @@
                     <p class="card-subtitle font-weight-bold">Total Campaign Statistics</p>
                 </div>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-6 mb-3">
                         <!-- small box -->
-                        <div class="small-box bg-primary h-100 mb-2">
+                        <div class="small-box bg-primary h-100">
                             <div class="inner">
                                 <h3>
                                     {{ $totalCamps }}
@@ -262,9 +262,9 @@
                             <!-- <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a> -->
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 mb-3">
                         <!-- small box -->
-                        <div class="small-box bg-info h-100 mb-2">
+                        <div class="small-box bg-info h-100">
                             <div class="inner">
                                 <h3>
                                     ${{ number_format($totalCampsCost, 2) }}
@@ -289,9 +289,9 @@
                     <p class="card-subtitle font-weight-bold">Total Successful Campaign Statistics</p>
                 </div>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-6 mb-3">
                         <!-- small box -->
-                        <div class="small-box bg-danger h-100 mb-2">
+                        <div class="small-box bg-danger h-100">
                             <div class="inner">
                                 <h3>
                                     {{ $totalSuccessCamps }}
@@ -306,9 +306,9 @@
                             <!-- <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a> -->
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 mb-3">
                         <!-- small box -->
-                        <div class="small-box bg-info h-100 mb-2">
+                        <div class="small-box bg-info h-100">
                             <div class="inner">
                                 <h3>
                                     ${{ number_format($totalSuccessCampsCost, 2) }}

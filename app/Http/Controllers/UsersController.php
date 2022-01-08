@@ -43,7 +43,7 @@ class UsersController extends Controller
     public function create()
     {
         return view('auth.register')
-                    ->with('title', 'Register');
+            ->with('title', 'Register');
     }
 
     /**
@@ -55,7 +55,7 @@ class UsersController extends Controller
     public function store(UserRequest $request)
     {
         $data = $request->all();
-    //    dd($data);
+        //    dd($data);
         $user = new User;
         $user->name = $data['name'];
         $user->login = $data['login'];
@@ -68,7 +68,7 @@ class UsersController extends Controller
         $user->address = $data['address'];
         $user->save();
         $Id = $user->id;
-        if($user->save()) {
+        if ($user->save()) {
             if ($data['Role'] == 'vendor') {
                 $role = new rolesModel;
                 $role->user_id = $Id;;
@@ -80,13 +80,12 @@ class UsersController extends Controller
                 $Trans->amount = "0";
                 $Trans->method_id = "1";
                 $Trans->save();
-                
+
                 $Pro = new Profile;
                 $Pro->user_id = $Id;
-                $Pro->propic = "https://adbirt.com/uploads/default.png";
+                $Pro->propic = "https://adbirt.com/public/assets-revamp/img/avatar.png";
                 $Pro->save();
-            
-            }elseif($data['Role'] == 'client') {        
+            } elseif ($data['Role'] == 'client') {
                 $role = new rolesModel;
                 $role->user_id = $Id;;
                 $role->role_id = "3";
@@ -97,41 +96,40 @@ class UsersController extends Controller
                 $Trans->amount = "0";
                 $Trans->method_id = "1";
                 $Trans->save();
-                
+
                 $Pro = new Profile;
                 $Pro->user_id = $Id;
-                $Pro->propic = "https://adbirt.com/uploads/default.png";
+                $Pro->propic = "https://adbirt.com/public/assets-revamp/img/avatar.png";
                 $Pro->save();
-
             }
 
 
-            
+
             $rand = mt_rand(1000000, 9999999);
-                // insert token for confirmation
+            // insert token for confirmation
             $profile = new Profile();
             $profile->user_id = $user->id;
             $profile->save();
             DB::table('activate')->insert(
-                    ['user_id' => $user->id, 'activation_key' => $rand]
-                    );
-                // assign User Role
-/*            $user_role = Role::where('name', config('customConfig.roles.user'))->first();
+                ['user_id' => $user->id, 'activation_key' => $rand]
+            );
+            // assign User Role
+            /*            $user_role = Role::where('name', config('customConfig.roles.user'))->first();
             $user->attachRole($user_role);*/
 
 
             if ($user->login == 'email') {
                 $email = $user->email;
-               /* Mail::send('auth.mail', [ 'activation_key' => $rand ], function ($message) use ($email) {
+                /* Mail::send('auth.mail', [ 'activation_key' => $rand ], function ($message) use ($email) {
                     $message->to($email)->subject('Account Activation'); // it does not work except Input::get();
                 });*/
                 $input['rand'] = $rand;
-                Mail::send('email.confirmation',$input, function($message) use($email){
+                Mail::send('email.confirmation', $input, function ($message) use ($email) {
                     $message->from('noreply@sparkenproduct.in', 'Adbirt');
                     $message->to($email)->subject('Account Activation');
                 });
 
-                $txt = "<b>Your account has been created succesfully.</b><br>A confirmation email has been sent to <b>".$email."</b>. Please check your inbox or spam folder.";
+                $txt = "<b>Your account has been created succesfully.</b><br>A confirmation email has been sent to <b>" . $email . "</b>. Please check your inbox or spam folder.";
                 $flag = 1;
                 $phone = '';
             } elseif ($user->login == 'phone') {
@@ -142,7 +140,7 @@ class UsersController extends Controller
 
                 //     $client = new \Services_Twilio($AccountSid, $AuthToken);
 
-                    
+
 
                 //     // Display a confirmation message on the screen
                 //     // echo "Sent message {$message->sid}";
@@ -166,38 +164,38 @@ class UsersController extends Controller
                 //         return $e->getMessage();
                 //     }
 
-                    //return $message->sid;
-                    // return redirect()->away($url, ['recipient' => $phone, 'message' => $message]);
+                //return $message->sid;
+                // return redirect()->away($url, ['recipient' => $phone, 'message' => $message]);
             } else {
                 $txt = "<b>One step away</b>";
-                $flag =3;
+                $flag = 3;
                 $phone = '';
             }
-                // return $phone;
-                // return $flag;
-                return redirect()->route('activation')
-                            ->with('title', 'Activation')
-                            ->with('success1', $txt)
-                            ->with('phone', $phone)
-                            ->with('login_type', $flag);
+            // return $phone;
+            // return $flag;
+            return redirect()->route('activation')
+                ->with('title', 'Activation')
+                ->with('success1', $txt)
+                ->with('phone', $phone)
+                ->with('login_type', $flag);
         }
     }
 
     public function activate(Request $request)
     {
         $login_type = ($request->session()->get('login_type') == null) ? 2 : $request->session()->get('login_type'); // getting the values from session
-         $phone = ($request->session()->get('phone') == null) ? '' : $request->session()->get('phone');
+        $phone = ($request->session()->get('phone') == null) ? '' : $request->session()->get('phone');
         return view('auth.activation')
-                    ->with('title', 'Activation')
-                    ->with('phone', $phone)
-                    ->with('login_type', $login_type);
+            ->with('title', 'Activation')
+            ->with('phone', $phone)
+            ->with('login_type', $login_type);
     }
 
     public function doActivate()
     {
         // $request->all();
-         // $key = $request->input['key'];
-        $key= Input::get('key');
+        // $key = $request->input['key'];
+        $key = Input::get('key');
         if (DB::table('activate')->where('activation_key', $key)->exists()) {
             $user_id = DB::table('activate')->where('activation_key', $key)->pluck('user_id');
             $user = User::find($user_id);
@@ -207,7 +205,7 @@ class UsersController extends Controller
                 ->where('user_id', $user_id)
                 ->update(['activation_key' => 'activated']);
             return redirect()->route('login')
-                            ->with('success', "Your registration is confirmed. Please, Log in Now");
+                ->with('success', "Your registration is confirmed. Please, Log in Now");
         } else {
             return redirect()->back()->with('error', 'Token Mismatch.');
         }
@@ -224,9 +222,9 @@ class UsersController extends Controller
         // return $user = User::with('profile')->where('id', Auth::user()->id)->first();
         $noty = Profile::noty();
         return view('auth.profile')
-                    ->with('title', 'Profile')
-                    ->with('info', $noty)
-                    ->with('user', Auth::user());
+            ->with('title', 'Profile')
+            ->with('info', $noty)
+            ->with('user', Auth::user());
     }
     /**
      * Display the specified resource.
@@ -250,15 +248,16 @@ class UsersController extends Controller
     public function edit()
     {
         $user = User::with('profile')->where('id', Auth::user()->id)->first();
-        $gender = [ 'male' => 'male',
-                    'female' => 'female'
-                ];
+        $gender = [
+            'male' => 'male',
+            'female' => 'female'
+        ];
         $profile = Auth::user()->profile;
         return view('user.edit-profile')
-                    ->with('title', 'Edit Profile')
-                    ->with('user', $user)
-                    ->with('gender', $gender)
-                    ->with('profile', $profile);
+            ->with('title', 'Edit Profile')
+            ->with('user', $user)
+            ->with('gender', $gender)
+            ->with('profile', $profile);
     }
 
     /**
@@ -277,7 +276,7 @@ class UsersController extends Controller
             'country' => 'required',
             'gender' => 'required',
             'birthday' => 'required'
-           /* 'fb' => 'url',
+            /* 'fb' => 'url',
             'twitter' => 'url',
             'gp' => 'url',
             'instagram' => 'url',
@@ -288,7 +287,7 @@ class UsersController extends Controller
 
         ];
 
-        $data= $request->all();
+        $data = $request->all();
         $validator = Validator::make($data, $rules);
         if ($validator->fails()) {
             return Redirect::back()->withInput()->withErrors($validator);
@@ -303,16 +302,16 @@ class UsersController extends Controller
         if ($user->save()) {
             $profile_id = $user->id;
             $profile = Profile::find($profile_id);
-	    if(!isset($profile) || empty($profile)){
+            if (!isset($profile) || empty($profile)) {
                 $profile  = new Profile;
-            }	
+            }
             $profile->gender = $data['gender'];
             $profile->city = $data['city'];
-	    $profile->profession = $data['profession'];
+            $profile->profession = $data['profession'];
             $profile->state = $data['state'];
             $profile->aboutmyself = $data['aboutmyself'];
-	    $user->profile()->save($profile);
-           /* $profile->fb = $data['fb'];
+            $user->profile()->save($profile);
+            /* $profile->fb = $data['fb'];
             $profile->twitter = $data['twitter'];
             $profile->gp = $data['gp'];
             $profile->instagram = $data['instagram'];
@@ -339,21 +338,24 @@ class UsersController extends Controller
         if ($request->hasFile('propic')) {
             $file = $request->file('propic');
 
-            $validator = Validator::make([
-            // here use the path to the uploaded Image
-            'image' => $file ],
-            [
-                'image' => 'image'
-            ]);
+            $validator = Validator::make(
+                [
+                    // here use the path to the uploaded Image
+                    'image' => $file
+                ],
+                [
+                    'image' => 'image'
+                ]
+            );
 
             if ($validator->fails()) {
                 return redirect()->back()->withErrors("Size too large or Invalid image");
             }
 
-            $destination = public_path().'/uploads/propics/';
-            $filename = time().'_'.$file->getClientOriginalName();
+            $destination = public_path() . '/uploads/propics/';
+            $filename = time() . '_' . $file->getClientOriginalName();
             $file->move($destination, $filename);
-            $propic = '/uploads/propics/'.$filename;
+            $propic = '/uploads/propics/' . $filename;
             DB::table('profiles')
                 ->where('user_id', Auth::user()->id)
                 ->update(['propic' => $propic]);

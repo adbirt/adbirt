@@ -161,7 +161,8 @@ class AuthController extends Controller
 
                 if ($is_remote_request) {
                     $currentuser = Auth::user();
-                    return response()->json(['status' => 200, 'message' => 'Login Successful.', 'payload' => $currentuser, 'usesThrottle' => false]);
+                    $rold_id = rolesModel::where('user_id', Auth::user()->id)->first()->role_id;
+                    return response()->json(['status' => 200, 'message' => 'Login Successful.', 'payload' => $currentuser, 'usesThrottle' => false, 'role_id' => $rold_id]);
                 }
 
                 return redirect()->intended('dashboard');
@@ -172,7 +173,8 @@ class AuthController extends Controller
 
                 if ($is_remote_request) {
                     $currentuser = Auth::user();
-                    return response()->json(['status' => 200, 'message' => 'Login Successful.', 'payload' => $currentuser, 'usesThrottle' => false]);
+                    $rold_id = rolesModel::where('user_id', Auth::user()->id)->first()->role_id;
+                    return response()->json(['status' => 200, 'message' => 'Login Successful.', 'payload' => $currentuser, 'usesThrottle' => false, 'role_id' => $rold_id]);
                 }
 
                 return redirect()->intended('dashboard');

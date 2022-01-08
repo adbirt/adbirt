@@ -20,30 +20,25 @@
     <!-- Content -->
     <div class="layout-content" data-scrollable>
         <div class="container-fluid">
-            <!--<ol class="breadcrumb">
-                                                                                                                                                                                                                                <li><a href="{!! route('dashboard') !!}">Home</a></li>
-                                                                                                                                                                                                                                <li class="active">Dashboard</li>
-                                                                                                                                                                                                                            </ol> -->
+
             @include('includes.alert')
-            @if (Session::has('flash_message'))
-                <div class="alert bg-success alert-styled-left" id="msg">
-                    <button type="button" class="close" data-dismiss="alert"><span>×</span><span
+
+            @if (Session::has('flash_message') || Session::has('Error_message'))
+                <div class="alert bg-{{ Session::has('flash_message') ? 'success' : 'danger' }}}} alert-styled-left"
+                    id="msg">
+                    <button type="button" class="close" data-dismiss="alert"><span>&times;</span><span
                             class="sr-only">Close</span></button>
                     <span class="text-semibold">
-                        {!! session('flash_message') !!}
-                    </span>
-                </div>
-            @elseif(Session::has('Error_message'))
-                <div class="alert bg-danger alert-styled-left" id="msg">
-                    <button type="button" class="close" data-dismiss="alert"><span>×</span><span
-                            class="sr-only">Close</span></button>
-                    <span class="text-semibold">
-                        {!! session('Error_message') !!}
+                        @if (Session::has('flash_message'))
+                            {!! session('flash_message') !!}
+                        @elseif (Session::has('Error_message'))
+                            {!! session('Error_message') !!}
+                        @endif
                     </span>
                 </div>
             @endif
-            @if (Auth::user()->hasRole('admin'))
 
+            @if (Auth::user()->hasRole('admin'))
                 <div class="card card-stats-primary">
                     <div class="card-block">
                         <div class="media" style="padding: 8px; padding-top: 16px;">
@@ -58,24 +53,6 @@
                     </div>
                 </div>
                 <hr>
-                {{-- <div class="card card-stats-primary">
-            <div class="card-block">
-                <div class="media">
-                    <div class="media-left media-middle">
-                        <i class="material-icons text-muted-light">credit_card</i>
-                    </div>
-                    <div class="media-body media-middle">
-                        <span>Your Current Balance</span>
-                        <strong class="text-success">${!!\App\PendingTransfers::balance() -
-                            \App\PendingTransfers::productCost() !!}</strong>
-                    </div>
-                    <div class="media-right">
-                        <a class="btn btn-success btn-rounded" href="{!! URL::route('paypal.create') !!}">Add Funds</a>
-                    </div>
-                </div>
-            </div>
-        </div> --}}
-
 
                 <!-- Begin: monetary statistics cards -->
                 <div class="card-header bg-white">
@@ -85,7 +62,7 @@
                 <div class="row">
                     <div class="col-6">
                         <!-- small box -->
-                        <div class="small-box bg-info h-100">
+                        <div class="small-box bg-info h-100 mb-2">
                             <div class="inner">
                                 <h3>
                                     @if (!empty($TotalRevenue))
@@ -107,7 +84,7 @@
                     <!-- ./col -->
                     <div class="col-6">
                         <!-- small box -->
-                        <div class="small-box bg-info h-100">
+                        <div class="small-box bg-info h-100 mb-2">
                             <div class="inner">
                                 <h3>
                                     @if (!empty($TotalProfit))
@@ -140,7 +117,7 @@
                 <div class="row">
                     <div class="col-6">
                         <!-- small box -->
-                        <div class="small-box bg-warning h-100">
+                        <div class="small-box bg-warning h-100 mb-2">
                             <div class="inner">
                                 <h3>
                                     {{ $totalClient }}
@@ -158,7 +135,7 @@
                     <!-- ./col -->
                     <div class="col-6">
                         <!-- small box -->
-                        <div class="small-box bg-info h-100">
+                        <div class="small-box bg-info h-100 mb-2">
                             <div class="inner">
                                 <h3>
                                     {{ $emailCount }}
@@ -176,7 +153,7 @@
 
                     <div class="col-6">
                         <!-- small box -->
-                        <div class="small-box bg-danger h-100">
+                        <div class="small-box bg-danger h-100 mb-2">
                             <div class="inner">
                                 <h3>
                                     {{ $phoneCount }}
@@ -194,7 +171,7 @@
 
                     <div class="col-6">
                         <!-- small box -->
-                        <div class="small-box bg-info h-100">
+                        <div class="small-box bg-info h-100 mb-2">
                             <div class="inner">
                                 <h3>
                                     {{ $activeClient }}
@@ -212,7 +189,7 @@
 
                     <div class="col-lg-6 mt-1">
                         <!-- small box -->
-                        <div class="small-box bg-warning h-100">
+                        <div class="small-box bg-warning h-100 mb-2">
                             <div class="inner">
                                 <h3>
                                     {{ $NonActiveClient }}
@@ -243,7 +220,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <!-- small box -->
-                        <div class="small-box bg-danger">
+                        <div class="small-box bg-danger h-100 mb-2">
                             <div class="inner">
                                 <h3>
                                     {{ $totalVendors }}
@@ -270,7 +247,7 @@
                 <div class="row">
                     <div class="col-6">
                         <!-- small box -->
-                        <div class="small-box bg-primary">
+                        <div class="small-box bg-primary h-100 mb-2">
                             <div class="inner">
                                 <h3>
                                     {{ $totalCamps }}
@@ -287,7 +264,7 @@
                     </div>
                     <div class="col-6">
                         <!-- small box -->
-                        <div class="small-box bg-info h-100">
+                        <div class="small-box bg-info h-100 mb-2">
                             <div class="inner">
                                 <h3>
                                     ${{ number_format($totalCampsCost, 2) }}
@@ -314,7 +291,7 @@
                 <div class="row">
                     <div class="col-6">
                         <!-- small box -->
-                        <div class="small-box bg-danger">
+                        <div class="small-box bg-danger h-100 mb-2">
                             <div class="inner">
                                 <h3>
                                     {{ $totalSuccessCamps }}
@@ -331,7 +308,7 @@
                     </div>
                     <div class="col-6">
                         <!-- small box -->
-                        <div class="small-box bg-info h-100">
+                        <div class="small-box bg-info h-100 mb-2">
                             <div class="inner">
                                 <h3>
                                     ${{ number_format($totalSuccessCampsCost, 2) }}

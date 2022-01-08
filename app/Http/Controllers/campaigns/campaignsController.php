@@ -1040,8 +1040,15 @@ class campaignsController extends Controller
         return view('campaigns.my-campaigns', $this->outputData);
     }
 
-    public function activeCamp()
+    public function activeCamp(Request $request)
     {
+        $input = $request->all();
+
+        $is_remote_request = true;
+        if (isset($input['is_remote_request']) && $input['is_remote_request'] == true) {
+            $is_remote_request = true;
+        }
+
         $MyCampaigns = campaignorders::with('campaign')
             ->where('advertiser_id', Auth::user()->id)
             ->where('campaign_running_status', 'activated')
@@ -1054,6 +1061,10 @@ class campaignsController extends Controller
         $this->outputData['categories'] = json_decode(json_encode(category::where('isActive', 'Active')
             ->where('isDeleted', 'No')
             ->get()), true);
+
+        if ($is_remote_request) {
+            return response()->json($this->outputData);
+        }
 
         return view('campaigns.my-campaigns', $this->outputData);
     }

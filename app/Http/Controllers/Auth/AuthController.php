@@ -162,6 +162,12 @@ class AuthController extends Controller
                 if ($is_remote_request) {
                     $currentuser = Auth::user();
                     $rold_id = rolesModel::where('user_id', Auth::user()->id)->first()->role_id;
+
+                    $profilePhotoUrl = strip_tags(substr(Auth::user()->profile->propic, 0, 4) == 'http' ? Auth::user()->profile->propic : (substr(Auth::user()->profile->propic, 0, 8) == '/uploads' ? 'https://adbirt.com/public' . Auth::user()->profile->propic : Auth::user()->profile->propic)) . '';
+                    if (strlen($profilePhotoUrl) == 0) {
+                        $profilePhotoUrl = 'https://adbirt.com/public/assets-revamp/img/avatar.png';
+                    }
+
                     return response()->json(['status' => 200, 'message' => 'Login Successful.', 'payload' => $currentuser, 'usesThrottle' => false, 'role_id' => $rold_id]);
                 }
 
@@ -174,6 +180,12 @@ class AuthController extends Controller
                 if ($is_remote_request) {
                     $currentuser = Auth::user();
                     $rold_id = rolesModel::where('user_id', Auth::user()->id)->first()->role_id;
+
+                    $profilePhotoUrl = strip_tags(substr(Auth::user()->profile->propic, 0, 4) == 'http' ? Auth::user()->profile->propic : (substr(Auth::user()->profile->propic, 0, 8) == '/uploads' ? 'https://adbirt.com/public' . Auth::user()->profile->propic : Auth::user()->profile->propic)) . '';
+                    if (strlen($profilePhotoUrl) == 0) {
+                        $profilePhotoUrl = 'https://adbirt.com/public/assets-revamp/img/avatar.png';
+                    }
+
                     return response()->json(['status' => 200, 'message' => 'Login Successful.', 'payload' => $currentuser, 'usesThrottle' => false, 'role_id' => $rold_id]);
                 }
 

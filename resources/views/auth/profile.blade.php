@@ -57,15 +57,6 @@
                         </div>
                     </div>
 
-                    {{-- <a href="javascript:void(0)" class="mb-1">
-                            {!! Html::image(Auth::user()->profile->propic, 'User profile picture', ['class' => 'img-responsive img-circle profile-pic']) !!}
-                        </a>
-
-                        <h2 class="h2 mb-0">{{ Auth::user()->name }}</h2>
-
-                        <p class="lead text-muted m-b-0">{{ Auth::user()->address }}, {{ Auth::user()->profile->city }},
-                            {{ Auth::user()->profile->state }}, {{ Auth::user()->country }}</p>
-                        <p>{{ Auth::user()->profile->aboutmyself }}</p> --}}
                 </div>
 
                 <div class="col-12 col-lg-8">

@@ -168,7 +168,7 @@ class AuthController extends Controller
                         $profilePhotoUrl = 'https://adbirt.com/public/assets-revamp/img/avatar.png';
                     }
 
-                    return response()->json(['status' => 200, 'message' => 'Login Successful.', 'payload' => $currentuser, 'usesThrottle' => false, 'role_id' => $rold_id]);
+                    return response()->json(['status' => 200, 'message' => 'Login Successful.', 'payload' => $currentuser, 'usesThrottle' => false, 'role_id' => $rold_id, 'propic' => $profilePhotoUrl]);
                 }
 
                 return redirect()->intended('dashboard');
@@ -186,7 +186,7 @@ class AuthController extends Controller
                         $profilePhotoUrl = 'https://adbirt.com/public/assets-revamp/img/avatar.png';
                     }
 
-                    return response()->json(['status' => 200, 'message' => 'Login Successful.', 'payload' => $currentuser, 'usesThrottle' => false, 'role_id' => $rold_id]);
+                    return response()->json(['status' => 200, 'message' => 'Login Successful.', 'payload' => $currentuser, 'usesThrottle' => false, 'role_id' => $rold_id, 'propic' => $profilePhotoUrl]);
                 }
 
                 return redirect()->intended('dashboard');

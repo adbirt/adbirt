@@ -16,11 +16,27 @@
             width: 100% !important;
         }
 
-        input[aria-invalid="false"]+div {
+        input[aria-invalid="false"]+div.max-length {
             display: block;
         }
 
-        input[aria-invalid="false"]+div {
+        input[aria-invalid="false"]+div.max-length {
+            display: none;
+        }
+
+        textarea[aria-invalid="false"]+div.max-length {
+            display: block;
+        }
+
+        textarea[aria-invalid="false"]+div.max-length {
+            display: none;
+        }
+
+        div[aria-invalid="false"]+div.max-length {
+            display: block;
+        }
+
+        div[aria-invalid="false"]+div.max-length {
             display: none;
         }
 
@@ -41,15 +57,13 @@
         <div class="container-fluid">
             <div class="Formbox">
                 @include('includes.alert')
-                <!--<ol class="breadcrumb">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li><a href="{{ url('/') }}">Home</a></li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @if (isset($campaignsData))
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="active">{!! $title = 'Update Ad' !!}</li>
-                    @else
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="active">{!! $title = 'Add new Ad' !!}</li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @endif
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ol>-->
-
+                <?php
+                if (isset($campaignsData)) {
+                    $title = 'Update Ad';
+                } else {
+                    $title = 'Add new Ad';
+                }
+                ?>
                 @if (Session::has('flash_message'))
                     <div class="alert bg-info alert-styled-left">
                         <button type="button" class="close" data-dismiss="alert"><span>&times;</span><span
@@ -78,14 +92,13 @@
                                         <label class="formLabel">Campaign Name</label>
                                     </div>
                                     <div class="col-md-8">
-                                        <input type="text" name="campaign_name" parsley-trigger="change" required
-                                            placeholder="Campaign Name" class="form-control" id="campaign_name"
-                                            parsely-maxlength=150 maxlength=150 @if (isset($campaignsData) && !empty($campaignsData->campaign_name)) value="{{ $campaignsData->campaign_name }}" @endif>
-                                        <div>
+                                        <input type="text" name="campaign_name" required placeholder="Campaign Name"
+                                            class="form-control" id="campaign_name" @if (isset($campaignsData) && !empty($campaignsData->campaign_name)) value="{{ $campaignsData->campaign_name }}" @endif>
+                                        {{-- <div class="max-length">
                                             <small>
                                                 Maximum of 150 characters (including white-spaces) allowed
                                             </small>
-                                        </div>
+                                        </div> --}}
                                     </div>
                                 </div>
                             </div>
@@ -157,8 +170,13 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <textarea name="campaign_description" required placeholder="Campaign Description"
-                                            class="form-control"
-                                            id="campaign_description">@if (isset($campaignsData) && !empty($campaignsData->campaign_description)){{ $campaignsData->campaign_description }}@endif</textarea>
+                                            class="form-control" parsley-trigger="change" parsely-maxlength=150
+                                            maxlength=150 id="campaign_description">@if (isset($campaignsData) && !empty($campaignsData->campaign_description)){{ $campaignsData->campaign_description }}@endif</textarea>
+                                        <div class="max-length">
+                                            <small>
+                                                Maximum of 150 characters (including white-spaces) allowed
+                                            </small>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -220,7 +238,7 @@
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <label class="formLabel">Select Banner Size</label>
+                                            <label class="formLabel">Banner Size</label>
                                         </div>
                                         <div class="col-md-8">
                                             <select name="banner_size" data-placeholder="Select an option"
@@ -275,7 +293,7 @@
 
                                     <span style="color:red;" id="response"></span>
                                     <!-- <span id="width"></span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <span id="height"></span> -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <span id="height"></span> -->
                                 </div>
                             </div>
                             <div class="form-group">

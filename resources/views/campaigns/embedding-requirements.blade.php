@@ -28,13 +28,7 @@
 
                 @include('includes.alert')
 
-                <!--<ol class="breadcrumb">
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li><a href="{{ url('/') }}">Home</a></li>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="active">{!! $title = 'Add Ads to Website Requirements' !!}</li>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ol>-->
+                <?php $title = 'Add Ads to Website Requirements'; ?>
 
                 <div class="card">
                     @if (Auth::user()->hasRole('vendor'))
@@ -102,11 +96,11 @@
                             <ol class="embed-list- px-5 py-3">
 
                                 <li>
-                                    <h2>If your site is built on WordPress:</h2>
+                                    <h2>For Wordpress Sites:</h2>
 
                                     <ol>
                                         <li>
-                                            <p>STEP 1: Install , Activate our WordPress Plugin on your site and your Ads
+                                            <p>Install , Activate our WordPress Plugin on your site and your Ads
                                                 will go
                                                 Live.
                                                 This Plugin will add one piece of code to your site to sync with Adbirt Ads
@@ -117,15 +111,8 @@
                                                 href="https://adbirt.com/public/assets-revamp/adbirt-advertisers-plugin.zip">
                                                 Download Plugin
                                             </a>
-                                        </li>
-
-                                        <li>
-                                            <p>STEP 2: Done, </p>
-                                            {{-- <p>Learn how to add the Adbirt code for Advertisers on any type of
-                                                site
-                                                <a href="https://www.adbirt.com/blog/add-adbirt-code-as-advertiser/">Learn
-                                                    more</a>
-                                            </p> --}}
+                                            <br />
+                                            <a href="http://adbirt.com/blog" target="_blank">Learn More</a>
                                         </li>
                                     </ol>
                                 </li>

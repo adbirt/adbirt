@@ -12,6 +12,13 @@
     </div>
 @endif
 
+{{-- @if ($_sessionErrorMessage = Session::get('Error_message'))
+    <div class="alert alert-danger alert-dismissable fade in">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+        {!! $_sessionErrorMessage !!}
+    </div>
+@endif --}}
+
 @if ($error = Session::get('error'))
     <div class="alert alert-danger alert-dismissable fade in">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>

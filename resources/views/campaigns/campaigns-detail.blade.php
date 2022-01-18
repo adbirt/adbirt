@@ -223,7 +223,7 @@
                                                         <p>Copy the code below and place wherever you need Ads to show on
                                                             your site. </p>
                                                         <p>Click <a href="http://adbirt.com/blog" target="_blank">here</a>
-                                                            to learn more</p>
+                                                            to learn more on how to add an ad to your website</p>
                                                     </div>
                                                 </li>
 

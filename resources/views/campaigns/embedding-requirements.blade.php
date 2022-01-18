@@ -48,43 +48,40 @@
                         @if (Auth::user()->hasRole('client'))
                             <hr class="notifydivider">
 
-                            <ol>
-                                <li>
-                                    <p>For Wordpress sites:</p>
-                                    <ol>
-                                        <li>
-                                            <p>Download and install Adbirt Publisher plugin</p>
-                                            <a href="https://adbirt.com/public/assets-revamp/adbirt-publishers-plugin.zip"
-                                                class="btn btn-info">Download Plugin</a>
-                                            <br />
-                                            <a href="http://adbirt.com/blog" target="_blank">Learn more</a>
-                                        </li>
-                                    </ol>
-                                    <br />
-                                </li>
-                                <li>
-                                    <p>For Non-Wordpress sites:</p>
-                                    <ol>
-                                        <li>
-                                            <p>Copy this script and add it to your site's source code, just before closing
-                                                the
-                                                <code>&lt;body&gt;</code> tag
-                                            </p>
-                                            <div class="row input-group mb-3 w-75">
-                                                <input type="text" value='<script src="https://adbirt.com/public/assets/js/ubm-jsonp.js?ver=2.70"></script>' class="form-control"
-                                                    id="source-code" readonly>
-                                                <div class="input-group-append">
-                                                    <span class="input-group-text copy-btn btn btn-info"
-                                                        title="Copy to clipboard" data-clipboard-target="#source-code"
-                                                        data-clipboard-action="copy">
-                                                        <i class="fa fa-copy"></i>
-                                                    </span>
-                                                </div>
+                            <div>
+                                <p>For Wordpress sites:</p>
+                                <ol>
+                                    <li>
+                                        <p>Download and install Adbirt Publisher plugin</p>
+                                        <a href="https://adbirt.com/public/assets-revamp/adbirt-publishers-plugin.zip"
+                                            class="btn btn-info">Download Plugin</a>
+                                        <br />
+                                        <a href="http://adbirt.com/blog" target="_blank">Learn more</a>
+                                    </li>
+                                </ol>
+                                <br />
+
+                                <p>For Non-Wordpress sites:</p>
+                                <ol>
+                                    <li>
+                                        <p>Copy this script and add it to your site's source code, just before closing
+                                            the
+                                            <code>&lt;body&gt;</code> tag
+                                        </p>
+                                        <div class="row input-group mb-3 w-75">
+                                            <input type="text" value='<script src="https://adbirt.com/public/assets/js/ubm-jsonp.js?ver=2.70"></script>' class="form-control"
+                                                id="source-code" readonly>
+                                            <div class="input-group-append">
+                                                <span class="input-group-text copy-btn btn btn-info"
+                                                    title="Copy to clipboard" data-clipboard-target="#source-code"
+                                                    data-clipboard-action="copy">
+                                                    <i class="fa fa-copy"></i>
+                                                </span>
                                             </div>
-                                        </li>
-                                    </ol>
-                                </li>
-                            </ol>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </div>
 
                             <hr>
                         @endif
@@ -93,72 +90,65 @@
                             <hr class="notifydivider">
 
                             <br />
-                            <ol class="embed-list- px-5 py-3">
+                            <div class="embed-list- px-5 py-3">
 
-                                <li>
-                                    <h2>For Wordpress Sites:</h2>
+                                <h2>For Wordpress Sites:</h2>
 
-                                    <ol>
-                                        <li>
-                                            <p>Install, Activate our WordPress Plugin on your site and your Ads
-                                                will go
-                                                Live.
-                                                This Plugin will add one piece of code to your site to sync with Adbirt Ads
-                                                Engine
-                                                and
-                                                Adbirt will activate your Ads across our Ad network.</p>
-                                            <a type="button" class="btn btn-info"
-                                                href="https://adbirt.com/public/assets-revamp/adbirt-advertisers-plugin.zip">
-                                                Download Plugin
-                                            </a>
-                                            <br />
-                                            <a href="http://adbirt.com/blog" target="_blank">Learn More</a>
-                                        </li>
-                                    </ol>
-                                </li>
+                                <ol>
+                                    <li>
+                                        <p>Install, Activate our WordPress Plugin on your site and your Ads will go
+                                            Live.</p>
+                                        <a type="button" class="btn btn-info"
+                                            href="https://adbirt.com/public/assets-revamp/adbirt-advertisers-plugin.zip">
+                                            Download Plugin
+                                        </a>
+                                        <br />
+                                        <a href="http://adbirt.com/blog" target="_blank">Learn More</a>
+                                    </li>
+                                </ol>
                                 <br />
 
-                                <li>
-                                    <h2>For Other Sites (Node.js, PHP, etc)</h2>
-                                    <ol>
-                                        <li>
-                                            <p>
-                                                Add following script at the bottom of you page before closing
-                                                &lt;/body&gt; tags in campaign landing page.
-                                            </p>
-                                            <div class="row input-group mb-3 w-75">
-                                                <input type="text" value='<script src="https://adbirt.com/public/js/adbirt.js"></script>' class="form-control"
-                                                    id="source-code" readonly>
-                                                <div class="input-group-append">
-                                                    <span class="input-group-text copy-btn btn btn-info"
-                                                        title="Copy to clipboard" data-clipboard-target="#source-code"
-                                                        data-clipboard-action="copy">
-                                                        <i class="fa fa-copy"></i>
-                                                    </span>
-                                                </div>
+                                <h2>For Other Sites (Node.js, PHP, etc)</h2>
+                                <ol>
+                                    <li>
+                                        <p>
+                                            Add following script at the bottom of your page before closing
+                                            &lt;/body&gt; tags in campaign landing page.
+                                        </p>
+                                        <div class="row input-group mb-3 w-75">
+                                            <input type="text" value='<script src="https://adbirt.com/public/js/adbirt.js"></script>' class="form-control"
+                                                id="source-code" readonly>
+                                            <div class="input-group-append">
+                                                <span class="input-group-text copy-btn btn btn-info"
+                                                    title="Copy to clipboard" data-clipboard-target="#source-code"
+                                                    data-clipboard-action="copy">
+                                                    <i class="fa fa-copy"></i>
+                                                </span>
                                             </div>
-                                        </li>
-                                    </ol>
-                                </li>
+                                        </div>
+                                    </li>
+                                </ol>
+
+                            </div>
+
+                            <p class="p-3"> Once you add this code and our system detects the code on your site,
+                                your Ads
+                                will go Live.
+                                <br />
+                                <strong>NOTE:</strong> For the Ads to continue to run, the code must remain on the site,
+                                else it
+                                will go offline
+                            </p>
+                            </ol>
+                        @endif
 
                     </div>
 
-                    <p class="p-3"> Once you add this code and our system detects the code on your site, your Ads
-                        will go Live.
-                        <br />
-                        <strong>NOTE:</strong> For the Ads to continue to run, the code must remain on the site, else it
-                        will go offline
-                    </p>
-                    </ol>
-                    @endif
+                </div><!-- /.box-body -->
 
-                </div>
+            </div><!-- /.box -->
 
-            </div><!-- /.box-body -->
-
-        </div><!-- /.box -->
-
-    </div>
+        </div>
 
     </div><!-- /.col -->
 

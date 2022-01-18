@@ -100,7 +100,7 @@
 
                                     <ol>
                                         <li>
-                                            <p>Install , Activate our WordPress Plugin on your site and your Ads
+                                            <p>Install, Activate our WordPress Plugin on your site and your Ads
                                                 will go
                                                 Live.
                                                 This Plugin will add one piece of code to your site to sync with Adbirt Ads

@@ -20,7 +20,7 @@
             @include('includes.alert')
 
             @if (Session::has('flash_message') || Session::has('Error_message'))
-                <div class="alert bg-{{ Session::has('flash_message') ? 'success' : 'danger' }} alert-styled-left"
+                <div class="alert alert-{{ Session::has('flash_message') ? 'success' : 'danger' }} alert-styled-left"
                     id="msg">
                     <button type="button" class="close" data-dismiss="alert"><span>&times;</span><span
                             class="sr-only">Close</span></button>

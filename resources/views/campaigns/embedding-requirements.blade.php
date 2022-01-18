@@ -56,8 +56,9 @@
                                             <p>Download and install Adbirt Publisher plugin</p>
                                             <a href="https://adbirt.com/public/assets-revamp/adbirt-publishers-plugin.zip"
                                                 class="btn btn-info">Download Plugin</a>
+                                            <br />
+                                            <a href="http://adbirt.com/blog" target="_blank">Learn more</a>
                                         </li>
-                                        <li>Done</li>
                                     </ol>
                                     <br />
                                 </li>
@@ -81,7 +82,6 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li>Done</li>
                                     </ol>
                                 </li>
                             </ol>
@@ -138,7 +138,6 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li>DONE</li>
                                     </ol>
                                 </li>
 

@@ -79,14 +79,14 @@
         <div class="container-fluid">
             @include('includes.alert')
             <!--<ol class="breadcrumb">
-                                                                                                                                                                                                                                                                                                                                                                                                                                        <li><a href="{{ url('/') }}">Home</a></li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="active">{!! $title = 'View Campaign' !!}</li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                    </ol>-->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li><a href="{{ url('/') }}">Home</a></li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="active">{!! $title = 'View Campaign' !!}</li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ol>-->
 
 
             <!-- <div class="loaderParent">
-                                                                                                                                                                                                                                                                                                                                                                                                                                        <div id="loader"></div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                    </div>-->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <div id="loader"></div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </div>-->
             {{-- <div class="clearfix"></div> --}}
             <div class="card-columns viewproductbox">
                 @if (isset($campaignData) && !empty($campaignData))
@@ -216,19 +216,39 @@
                                                 </ul>
                                             </div>
                                         @else
-                                            <p>Copy this code and place wherever you need Ads to show on your site</p>
-                                            <div class="row input-group mb-3 w-75">
-                                                <input type="text"
-                                                    value='<a class="ubm-banner" data-id="{{ base64_encode($campaignData->advert_code) }}"></a>'
-                                                    class="form-control" id="source-code" readonly>
-                                                <div class="input-group-append">
-                                                    <span class="input-group-text copy-btn btn btn-info"
-                                                        title="Copy to clipboard" data-clipboard-target="#source-code"
-                                                        data-clipboard-action="copy">
-                                                        <i class="fa fa-copy"></i>
-                                                    </span>
-                                                </div>
-                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <div>
+                                                        <p>For Wordpress Sites</p>
+                                                        <p>Copy the code below and place wherever you need Ads to show on
+                                                            your site. </p>
+                                                        <p>Click <a href="http://adbirt.com/blog" target="_blank">here</a>
+                                                            to learn more</p>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div>
+                                                        <p>For Other Sites</p>
+                                                        <p>Copy this code and place wherever you need Ads to show on your
+                                                            site</p>
+                                                        <div class="row input-group mb-3 w-75">
+                                                            <input type="text"
+                                                                value='<a class="ubm-banner" data-id="{{ base64_encode($campaignData->advert_code) }}"></a>'
+                                                                class="form-control" id="source-code" readonly>
+                                                            <div class="input-group-append">
+                                                                <span class="input-group-text copy-btn btn btn-info"
+                                                                    title="Copy to clipboard"
+                                                                    data-clipboard-target="#source-code"
+                                                                    data-clipboard-action="copy">
+                                                                    <i class="fa fa-copy"></i>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <hr />
                                         @endif
 
                                     @endif
@@ -344,16 +364,16 @@
         @if (Auth::user()->hasRole('client'))
             <!-- Load Facebook SDK for JavaScript -->
             <!--<div id="fb-root"></div>
-                                                                                                                                                                                                                                                                                                                                                                                                                              <script>
-                                                                                                                                                                                                                                                                                                                                                                                                                                  (function(d, s, id) {
-                                                                                                                                                                                                                                                                                                                                                                                                                                      var js, fjs = d.getElementsByTagName(s)[0];
-                                                                                                                                                                                                                                                                                                                                                                                                                                      if (d.getElementById(id)) return;
-                                                                                                                                                                                                                                                                                                                                                                                                                                      js = d.createElement(s);
-                                                                                                                                                                                                                                                                                                                                                                                                                                      js.id = id;
-                                                                                                                                                                                                                                                                                                                                                                                                                                      js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-                                                                                                                                                                                                                                                                                                                                                                                                                                      fjs.parentNode.insertBefore(js, fjs);
-                                                                                                                                                                                                                                                                                                                                                                                                                                  }(document, 'script', 'facebook-jssdk'));
-                                                                                                                                                                                                                                                                                                                                                                                                                              </script>-->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <script>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              (function(d, s, id) {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  var js, fjs = d.getElementsByTagName(s)[0];
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  if (d.getElementById(id)) return;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  js = d.createElement(s);
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  js.id = id;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  fjs.parentNode.insertBefore(js, fjs);
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              }(document, 'script', 'facebook-jssdk'));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          </script>-->
 
 
 

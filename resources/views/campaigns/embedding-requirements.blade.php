@@ -55,6 +55,7 @@
                                     <a href="https://adbirt.com/public/assets-revamp/adbirt-publishers-plugin.zip"
                                         class="btn btn-info">Download Plugin</a>
                                     <br />
+                                    <a href="http://adbirt.com/blog" target="_blank">Learn More</a>
                                 </div>
                                 <br />
 
@@ -86,7 +87,7 @@
                             <hr class="notifydivider">
 
                             <br />
-                            <div class="embed-list- px-5 py-3">
+                            <div class="pl-3">
 
                                 <h2>For Wordpress Sites:</h2>
 

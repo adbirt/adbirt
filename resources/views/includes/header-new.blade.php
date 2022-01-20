@@ -157,7 +157,8 @@ $NotifyCnt = count($Notify);
                         </a>
                     @endforeach
                     <div class="dropdown-divider"></div>
-                    <a onclick="viewAllNotifications('Chnge')" class="dropdown-item dropdown-footer">See All
+                    <a onclick="viewAllNotifications('Chnge')" class="dropdown-item dropdown-footer"
+                        style="cursor: pointer;">See All
                         Notifications</a>
                 @else
                     <div class="dropdown-divider"></div>

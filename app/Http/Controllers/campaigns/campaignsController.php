@@ -601,7 +601,6 @@ class campaignsController extends Controller
         $data['heading'] = $heading;
         $data['TextToClient'] = $AdvertiserMsg;
         Mail::send('email.campaignconsumed', $data, function ($message) use ($email) {
-            // $message->from('noreply@sparkenproduct.in', 'Adbirt');
             $message->from('info@adbirt.com', 'Adbirt');
             $message->to($email)->subject('Campaign Approved');
         });

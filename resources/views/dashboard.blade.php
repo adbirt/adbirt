@@ -58,7 +58,7 @@
                 <div class="row">
                     <div class="col-6 mb-3">
                         <!-- small box -->
-                        <div class="small-box bg- -info h-100">
+                        <div class="small-box bg-info h-100">
                             <div class="inner">
                                 <h3>
                                     @if (!empty($TotalRevenue))
@@ -80,7 +80,7 @@
                     <!-- ./col -->
                     <div class="col-6 mb-3">
                         <!-- small box -->
-                        <div class="small-box bg- -info h-100">
+                        <div class="small-box bg-info h-100">
                             <div class="inner">
                                 <h3>
                                     @if (!empty($TotalProfit))
@@ -113,7 +113,7 @@
                 <div class="row">
                     <div class="col-6 mb-3">
                         <!-- small box -->
-                        <div class="small-box bg- -warning h-100">
+                        <div class="small-box bg-warning h-100">
                             <div class="inner">
                                 <h3>
                                     {{ $totalClient }}
@@ -131,7 +131,7 @@
                     <!-- ./col -->
                     <div class="col-6 mb-3">
                         <!-- small box -->
-                        <div class="small-box bg- -info h-100">
+                        <div class="small-box bg-info h-100">
                             <div class="inner">
                                 <h3>
                                     {{ $emailCount }}
@@ -149,7 +149,7 @@
 
                     <div class="col-6 mb-3">
                         <!-- small box -->
-                        <div class="small-box bg- -danger h-100">
+                        <div class="small-box bg-danger h-100">
                             <div class="inner">
                                 <h3>
                                     {{ $phoneCount }}
@@ -167,7 +167,7 @@
 
                     <div class="col-6 mb-3">
                         <!-- small box -->
-                        <div class="small-box bg- -info h-100">
+                        <div class="small-box bg-info h-100">
                             <div class="inner">
                                 <h3>
                                     {{ $activeClient }}
@@ -185,7 +185,7 @@
 
                     <div class="col-lg-6 mb-2">
                         <!-- small box -->
-                        <div class="small-box bg- -warning h-100">
+                        <div class="small-box bg-warning h-100">
                             <div class="inner">
                                 <h3>
                                     {{ $NonActiveClient }}
@@ -216,7 +216,7 @@
                 <div class="row">
                     <div class="col-lg-6 mb-2">
                         <!-- small box -->
-                        <div class="small-box bg- -danger h-100">
+                        <div class="small-box bg-danger h-100">
                             <div class="inner">
                                 <h3>
                                     {{ $totalVendors }}
@@ -243,7 +243,7 @@
                 <div class="row">
                     <div class="col-6 mb-3">
                         <!-- small box -->
-                        <div class="small-box bg- -primary h-100">
+                        <div class="small-box bg-primary h-100">
                             <div class="inner">
                                 <h3>
                                     {{ $totalCamps }}
@@ -260,7 +260,7 @@
                     </div>
                     <div class="col-6 mb-3">
                         <!-- small box -->
-                        <div class="small-box bg- -info h-100">
+                        <div class="small-box bg-info h-100">
                             <div class="inner">
                                 <h3>
                                     ${{ number_format($totalCampsCost, 2) }}
@@ -287,7 +287,7 @@
                 <div class="row">
                     <div class="col-6 mb-3">
                         <!-- small box -->
-                        <div class="small-box bg- -danger h-100">
+                        <div class="small-box bg-danger h-100">
                             <div class="inner">
                                 <h3>
                                     {{ $totalSuccessCamps }}
@@ -304,7 +304,7 @@
                     </div>
                     <div class="col-6 mb-3">
                         <!-- small box -->
-                        <div class="small-box bg- -info h-100">
+                        <div class="small-box bg-info h-100">
                             <div class="inner">
                                 <h3>
                                     ${{ number_format($totalSuccessCampsCost, 2) }}
@@ -409,7 +409,7 @@
         <div class="row">
             <div class="col-lg-3 col-6 mb-3">
                 <!-- small box -->
-                <div class="small-box bg- -info h-100">
+                <div class="small-box bg-info h-100">
                     <div class="inner">
                         <h3>{{ $ActiveAd }}</h3>
 
@@ -425,7 +425,7 @@
             <!-- ./col -->
             <div class="col-lg-3 col-6 mb-3">
                 <!-- small box -->
-                <div class="small-box bg- -info h-100">
+                <div class="small-box bg-info h-100">
                     <div class="inner">
                         <h3>{{ $Impressions ?? 0 }}
                             <!-- <sup style="font-size: 20px">%</sup> -->
@@ -442,7 +442,7 @@
             <!-- ./col -->
             <div class="col-lg-3 col-6 mb-3">
                 <!-- small box -->
-                <div class="small-box bg- -warning h-100">
+                <div class="small-box bg-warning h-100">
                     <div class="inner">
                         <h3>{{ $Clicks ?? 0 }}</h3>
 
@@ -457,7 +457,7 @@
             <!-- ./col -->
             <div class="col-lg-3 col-6 mb-3">
                 <!-- small box -->
-                <div class="small-box bg- -danger h-100">
+                <div class="small-box bg-danger h-100">
                     <div class="inner">
                         <h3>{{ $Leads }}</h3>
 
@@ -517,7 +517,7 @@
 
         <div class="col-6 col-lg-3 mb-3">
             <!-- small box -->
-            <div class="small-box bg- -info h-100">
+            <div class="small-box bg-info h-100">
                 <div class="inner">
                     <h3>
                         {{ $ActiveAd }}
@@ -536,7 +536,7 @@
 
         <div class="col-6 col-lg-3 mb-3">
             <!-- small box -->
-            <div class="small-box bg- -info h-100">
+            <div class="small-box bg-info h-100">
                 <div class="inner">
                     <h3>
                         {{ $Impressions }}
@@ -554,7 +554,7 @@
 
         <div class="col-6 col-lg-3 mb-3">
             <!-- small box -->
-            <div class="small-box bg- -danger h-100">
+            <div class="small-box bg-danger h-100">
                 <div class="inner">
                     <h3>
                         {{ $Clicks }}
@@ -572,7 +572,7 @@
 
         <div class="col-6 col-lg-3 mb-3">
             <!-- small box -->
-            <div class="small-box bg- -warning h-100">
+            <div class="small-box bg-warning h-100">
                 <div class="inner">
                     <h3>
                         {{ $Leads }}

@@ -111,7 +111,7 @@
                     <p class="card-subtitle font-weight-bold">Publisher Statistics</p>
                 </div>
                 <div class="row">
-                    <div class="col-6 mb-3">
+                    <div class="col-6 col-md-4 mb-3">
                         <!-- small box -->
                         <div class="small-box bg-warning h-100">
                             <div class="inner">
@@ -129,7 +129,7 @@
                         </div>
                     </div>
                     <!-- ./col -->
-                    <div class="col-6 mb-3">
+                    <div class="col-6 col-md-4 mb-3">
                         <!-- small box -->
                         <div class="small-box bg-info h-100">
                             <div class="inner">
@@ -147,7 +147,7 @@
                     </div>
                     <!-- ./col -->
 
-                    <div class="col-6 mb-3">
+                    <div class="col-6 col-md-4 mb-3">
                         <!-- small box -->
                         <div class="small-box bg-danger h-100">
                             <div class="inner">
@@ -165,7 +165,7 @@
                     </div>
                     <!-- ./col -->
 
-                    <div class="col-6 mb-3">
+                    <div class="col-6 col-md-4 mb-3">
                         <!-- small box -->
                         <div class="small-box bg-info h-100">
                             <div class="inner">
@@ -183,7 +183,7 @@
                     </div>
                     <!-- ./col -->
 
-                    <div class="col-lg-6 mb-2">
+                    <div class="col-6 col-md-4 mb-2">
                         <!-- small box -->
                         <div class="small-box bg-warning h-100">
                             <div class="inner">

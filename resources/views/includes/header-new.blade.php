@@ -104,7 +104,7 @@ $NotifyCnt = count($Notify);
         <li class="nav-item dropdown">
             <a class="nav-link btn mx-1 text-primary-color p-2 dropdown-toggle" role="button" aria-haspopup="true"
                 aria-expanded="false" id="notificationsDropdown" data-toggle="dropdown" href="#">
-                <i class="fa fa-bell fa-sm"></i>
+                <i class="fa fa-bell fa-md"></i>
                 @if ($NotifyCnt >= 1)
                     <span class="badge badge-warning navbar-badge" style="font-size: 14px;">
                         {{ $NotifyCnt }}
@@ -174,7 +174,7 @@ $NotifyCnt = count($Notify);
         <li class="nav-item dropdown">
             <a class="nav-link btn mx-1 text-primary-color p-2 dropdown-toggle" role="button" aria-haspopup="true"
                 aria-expanded="false" id="helpDropdown" data-toggle="dropdown" href="#">
-                <i class="fa fa-question fa-sm"></i>
+                <i class="fa fa-question fa-md"></i>
             </a>
             <div aria-labelledby="helpDropdown" class="dropdown-menu dropdown-menu-lg dropdown-menu-right"
                 style="text-overflow: ellipsis !important; overflow: hidden !important;">
@@ -203,7 +203,7 @@ $NotifyCnt = count($Notify);
 
         <li class="nav-item">
             <a class="nav-link btn mx-1 text-primary-color p-2" data-widget="fullscreen" href="#" role="button">
-                <i class="fa fa-expand-arrows-alt fa-sm"></i>
+                <i class="fa fa-expand-arrows-alt fa-md"></i>
             </a>
         </li>
         <li class="nav-item">

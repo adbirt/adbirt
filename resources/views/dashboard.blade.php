@@ -24,7 +24,7 @@
                     id="msg">
                     <button type="button" class="close" data-dismiss="alert"><span>&times;</span><span
                             class="sr-only">Close</span></button>
-                    <span class="text-semibold">
+                    <span class="font-weight-bold">
                         @if (Session::has('flash_message'))
                             {!! session('flash_message') !!}
                         @elseif (Session::has('Error_message'))

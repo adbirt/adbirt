@@ -50,37 +50,31 @@
 
                             <div>
                                 <p>For Wordpress sites:</p>
-                                <ol>
-                                    <li>
-                                        <p>Download and install Adbirt Publisher plugin</p>
-                                        <a href="https://adbirt.com/public/assets-revamp/adbirt-publishers-plugin.zip"
-                                            class="btn btn-info">Download Plugin</a>
-                                        <br />
-                                        <a href="http://adbirt.com/blog" target="_blank">Learn more</a>
-                                    </li>
-                                </ol>
+                                <div>
+                                    <p>Download and install Adbirt Publisher plugin</p>
+                                    <a href="https://adbirt.com/public/assets-revamp/adbirt-publishers-plugin.zip"
+                                        class="btn btn-info">Download Plugin</a>
+                                    <br />
+                                </div>
                                 <br />
 
                                 <p>For Non-Wordpress sites:</p>
-                                <ol>
-                                    <li>
-                                        <p>Copy this script and add it to your site's source code, just before closing
-                                            the
-                                            <code>&lt;body&gt;</code> tag
-                                        </p>
-                                        <div class="row input-group mb-3 w-75">
-                                            <input type="text" value='<script src="https://adbirt.com/public/assets/js/ubm-jsonp.js?ver=2.70"></script>' class="form-control"
-                                                id="source-code" readonly>
-                                            <div class="input-group-append">
-                                                <span class="input-group-text copy-btn btn btn-info"
-                                                    title="Copy to clipboard" data-clipboard-target="#source-code"
-                                                    data-clipboard-action="copy">
-                                                    <i class="fa fa-copy"></i>
-                                                </span>
-                                            </div>
+                                <div>
+                                    <p>Copy this script and add it to your site's source code, just before closing
+                                        the
+                                        <code>&lt;body&gt;</code> tag
+                                    </p>
+                                    <div class="row input-group mb-3 w-75">
+                                        <input type="text" value='<script src="https://adbirt.com/public/assets/js/ubm-jsonp.js?ver=2.70"></script>' class="form-control" id="source-code"
+                                            readonly>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text copy-btn btn btn-info" title="Copy to clipboard"
+                                                data-clipboard-target="#source-code" data-clipboard-action="copy">
+                                                <i class="fa fa-copy"></i>
+                                            </span>
                                         </div>
-                                    </li>
-                                </ol>
+                                    </div>
+                                </div>
                             </div>
 
                             <hr>
@@ -94,40 +88,35 @@
 
                                 <h2>For Wordpress Sites:</h2>
 
-                                <ol>
-                                    <li>
-                                        <p>Install, Activate our WordPress Plugin on your site and your Ads will go
-                                            Live.</p>
-                                        <a type="button" class="btn btn-info"
-                                            href="https://adbirt.com/public/assets-revamp/adbirt-advertisers-plugin.zip">
-                                            Download Plugin
-                                        </a>
-                                        <br />
-                                        <a href="http://adbirt.com/blog" target="_blank">Learn More</a>
-                                    </li>
-                                </ol>
+                                <div>
+                                    <p>Install, Activate our WordPress Plugin on your site and your Ads will go
+                                        Live.</p>
+                                    <a type="button" class="btn btn-info"
+                                        href="https://adbirt.com/public/assets-revamp/adbirt-advertisers-plugin.zip">
+                                        Download Plugin
+                                    </a>
+                                    <br />
+                                    <a href="http://adbirt.com/blog" target="_blank">Learn More</a>
+                                </div>
                                 <br />
 
                                 <h2>For Other Sites (Node.js, PHP, etc)</h2>
-                                <ol>
-                                    <li>
-                                        <p>
-                                            Add following script at the bottom of your page before closing
-                                            &lt;/body&gt; tags in campaign landing page.
-                                        </p>
-                                        <div class="row input-group mb-3 w-75">
-                                            <input type="text" value='<script src="https://adbirt.com/public/js/adbirt.js"></script>' class="form-control"
-                                                id="source-code" readonly>
-                                            <div class="input-group-append">
-                                                <span class="input-group-text copy-btn btn btn-info"
-                                                    title="Copy to clipboard" data-clipboard-target="#source-code"
-                                                    data-clipboard-action="copy">
-                                                    <i class="fa fa-copy"></i>
-                                                </span>
-                                            </div>
+                                <div>
+                                    <p>
+                                        Add following script at the bottom of your page before closing
+                                        &lt;/body&gt; tags in campaign landing page.
+                                    </p>
+                                    <div class="row input-group mb-3 w-75">
+                                        <input type="text" value='<script src="https://adbirt.com/public/js/adbirt.js"></script>' class="form-control" id="source-code"
+                                            readonly>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text copy-btn btn btn-info" title="Copy to clipboard"
+                                                data-clipboard-target="#source-code" data-clipboard-action="copy">
+                                                <i class="fa fa-copy"></i>
+                                            </span>
                                         </div>
-                                    </li>
-                                </ol>
+                                    </div>
+                                </div>
 
                             </div>
 

@@ -74,6 +74,8 @@
                                             </span>
                                         </div>
                                     </div>
+                                    <br />
+                                    <a href="http://adbirt.com/blog" target="_blank">Learn More</a>
                                 </div>
                             </div>
 
@@ -116,6 +118,8 @@
                                             </span>
                                         </div>
                                     </div>
+                                    <br />
+                                    <a href="http://adbirt.com/blog" target="_blank">Learn More</a>
                                 </div>
 
                             </div>

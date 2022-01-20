@@ -148,18 +148,24 @@ $NotifyCnt = count($Notify);
                                 })
                         };
                     </script>
+                    <style>
+                        .single-notification-item {
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+
+                    </style>
                     @foreach (array_slice($Notify, 0, 5, true) as $single_notification)
                         <div class="dropdown-divider"></div>
                         <a onclick="viewSingleNotification({{ $single_notification['id'] }})"
-                            class="dropdown-item p-2 cursor-pointer">
+                            class="dropdown-item p-2 cursor-pointer single-notification-item">
                             <i class="fa fa-envelope mr-2"></i> {{ $single_notification['heading'] }}
                             <!-- <span class="float-right text-muted text-sm">3 mins</span> -->
                         </a>
                     @endforeach
                     <div class="dropdown-divider"></div>
-                    <a onclick="viewAllNotifications('Chnge')" class="dropdown-item dropdown-footer"
-                        style="cursor: pointer;">See All
-                        Notifications</a>
+                    <a onclick="viewAllNotifications('Chnge')" class="dropdown-item dropdown-footer cursor-pointer">See
+                        All Notifications</a>
                 @else
                     <div class="dropdown-divider"></div>
                     <a href="#" class="dropdown-item">

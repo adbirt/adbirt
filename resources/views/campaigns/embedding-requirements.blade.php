@@ -44,12 +44,12 @@
 
                     @endif
 
-                    <div class="embed-">
+                    <div class="">
                         @if (Auth::user()->hasRole('client'))
                             <hr class="notifydivider">
 
                             <div>
-                                <p>For Wordpress sites:</p>
+                                <h2>For Wordpress sites:</h2>
                                 <div class="pl-4">
                                     <p>Download and install Adbirt Publisher plugin</p>
                                     <a href="https://adbirt.com/public/assets-revamp/adbirt-publishers-plugin.zip"
@@ -59,7 +59,7 @@
                                 </div>
                                 <br />
 
-                                <p>For Non-Wordpress sites:</p>
+                                <h2>For Non-Wordpress sites:</h2>
                                 <div class="pl-4">
                                     <p>Copy this script and add it to your site's source code, just before closing
                                         the

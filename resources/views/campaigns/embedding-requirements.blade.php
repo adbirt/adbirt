@@ -50,7 +50,7 @@
 
                             <div>
                                 <p>For Wordpress sites:</p>
-                                <div>
+                                <div class="pl-4">
                                     <p>Download and install Adbirt Publisher plugin</p>
                                     <a href="https://adbirt.com/public/assets-revamp/adbirt-publishers-plugin.zip"
                                         class="btn btn-info">Download Plugin</a>
@@ -59,7 +59,7 @@
                                 <br />
 
                                 <p>For Non-Wordpress sites:</p>
-                                <div>
+                                <div class="pl-4">
                                     <p>Copy this script and add it to your site's source code, just before closing
                                         the
                                         <code>&lt;body&gt;</code> tag
@@ -88,7 +88,7 @@
 
                                 <h2>For Wordpress Sites:</h2>
 
-                                <div>
+                                <div class="pl-4">
                                     <p>Install, Activate our WordPress Plugin on your site and your Ads will go
                                         Live.</p>
                                     <a type="button" class="btn btn-info"
@@ -101,7 +101,7 @@
                                 <br />
 
                                 <h2>For Other Sites (Node.js, PHP, etc)</h2>
-                                <div>
+                                <div class="pl-4">
                                     <p>
                                         Add following script at the bottom of your page before closing
                                         &lt;/body&gt; tags in campaign landing page.

@@ -44,7 +44,7 @@
 
                     @endif
 
-                    <div class="">
+                    <div class="pl-3">
                         @if (Auth::user()->hasRole('client'))
                             <hr class="notifydivider">
 

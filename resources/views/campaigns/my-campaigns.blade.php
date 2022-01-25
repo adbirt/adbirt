@@ -47,8 +47,8 @@
                                     <tr>
                                         <th>Name</th>
                                         <th>Category</th>
-                                        <th>Pricing Type</th>
                                         <th>Price</th>
+                                        <th>Pricing Type</th>
                                         <th>Status</th>
                                         <th>Action</th>
                                     </tr>
@@ -58,8 +58,8 @@
                                         <tr id="data-{!! $value->campaign->id !!}">
                                             <td class="campaigns_name">{!! ucwords($value->campaign->campaign_name) !!}</td>
                                             <td class="campaigns_name">{!! getCategoryName($categories, $value->campaign->campaign_category) !!}</td>
-                                            <td class="campaigns_name">{!! $value->campaign->campaign_type !!}</td>
                                             <td class="campaigns_name">${!! number_format($value->campaign->campaign_cost_per_action, 2) !!}</td>
+                                            <td class="campaigns_name">{!! $value->campaign->campaign_type !!}</td>
                                             <td>
                                                 <div
                                                     class="d-flex flex-row align-items-center justify-content-center w-100 h-100">

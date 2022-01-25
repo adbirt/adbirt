@@ -293,7 +293,7 @@
 
                                     <span style="color:red;" id="response"></span>
                                     <!-- <span id="width"></span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <span id="height"></span> -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <span id="height"></span> -->
                                 </div>
                             </div>
                             <div class="form-group">
@@ -538,9 +538,6 @@
                 }
             }
 
-            setBannerType(window.bannerType);
-            setCampaignType(window.campaignType);
-
             const bannerTypeChanged = (e) => {
 
                 /**
@@ -567,6 +564,10 @@
             campaign_type_selector.addEventListener('change', campaignTypeChanged);
 
             bannerTypeInputField.addEventListener('change', bannerTypeChanged);
+
+
+            setBannerType(window.bannerType);
+            setCampaignType(window.campaignType);
 
         })();
     </script>

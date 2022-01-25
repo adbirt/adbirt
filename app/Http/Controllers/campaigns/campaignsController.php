@@ -1043,7 +1043,7 @@ class campaignsController extends Controller
     {
         $input = $request->all();
 
-        $is_remote_request = true;
+        $is_remote_request = false;
         if (isset($input['is_remote_request']) && $input['is_remote_request'] == true) {
             $is_remote_request = true;
         }

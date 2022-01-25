@@ -85,6 +85,12 @@
 
     const setCampaignType = (value) => {
 
+        /**
+         * 
+         * @param {Event} e 
+         */
+        const landingPage_successPage_sync = (e) => { };
+
         successPageInputContainer.style.display = '';
         landingpageHint.style.display = '';
         bannerSizeInputFieldContainer.style.display = 'none';

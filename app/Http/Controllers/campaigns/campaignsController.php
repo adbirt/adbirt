@@ -156,6 +156,12 @@ class campaignsController extends Controller
     {
         $input = $request->all();
 
+        if (isset($input['campaign_type'])) {
+            if ($input['campaign_type'] == 'CPC' || $input['campaign_type'] == 'Native Content Ad') {
+                $input['campaign_success_url'] = $input['campaign_url'];
+            }
+        }
+
         // Edit campaign, redirect to page ☑
 
         if (!empty($id)) {

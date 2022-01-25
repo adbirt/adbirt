@@ -100,6 +100,7 @@
         bannerSizeInputFieldContainer.style.display = 'none';
         (bannerTypeInputField.getAttribute('disabled')) && bannerTypeInputField.removeAttribute(
             'disabled');
+        (!successPageinputField.value || successPageinputField.value == '') && (successPageinputField.value = '');
 
         window.campaignType = value;
 

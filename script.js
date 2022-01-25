@@ -23,6 +23,10 @@
     /**
      * @type {HTMLDivElement}
      */
+    const landingPageInputField = document.querySelector('#campaign_url');
+    /**
+     * @type {HTMLDivElement}
+     */
     const successPageInputContainer = document.querySelector("#myform > fieldset > div:nth-child(8) > div.row");
     /**
      * @type {HTMLDivElement}
@@ -107,7 +111,7 @@
 
         } else if (value == campaign_types.CPC) {
 
-            successPageinputField.value = '';
+            successPageinputField.value = landingPageInputField.value ?? '';
             (bannerTypeInputField.getAttribute('disabled')) && bannerTypeInputField.removeAttribute(
                 'disabled');
             bannerSizeInputFieldContainer.style.display = '';

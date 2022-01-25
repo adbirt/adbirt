@@ -293,7 +293,7 @@
 
                                     <span style="color:red;" id="response"></span>
                                     <!-- <span id="width"></span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <span id="height"></span> -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <span id="height"></span> -->
                                 </div>
                             </div>
                             <div class="form-group">
@@ -402,6 +402,16 @@
 
     <script src="{{ asset('assets/ckeditor/ckeditor.js') }}"></script>
     <script src="{{ asset('assets/js/sweetalert.min.js') }}"></script>
+
+    <script>
+        @if (isset($campaignsData))
+            window.campaignType = `{!! $campaignsData->campaign_type !!}`.trim();
+            window.bannerType = `{!! $campaignsData->banner_type !!}`.trim();
+        @else
+            window.campaignType = "CPA";
+            window.bannerType = "image";
+        @endif
+    </script>
 
     <script id="input-toggle-script">
         (() => {

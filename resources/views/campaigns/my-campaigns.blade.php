@@ -49,8 +49,8 @@
                                         <th>Category</th>
                                         <th>Price</th>
                                         <th>Pricing Type</th>
-                                        <th>Status</th>
                                         <th>Clicks</th>
+                                        <th>Status</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -61,6 +61,7 @@
                                             <td class="campaigns_name">{!! getCategoryName($categories, $value->campaign->campaign_category) !!}</td>
                                             <td class="campaigns_name">${!! number_format($value->campaign->campaign_cost_per_action, 2) !!}</td>
                                             <td class="campaigns_name">{!! $value->campaign->campaign_type !!}</td>
+                                            <td class="campaigns_clicks">{!! $value->campaign->campaign_click !!}</td>
                                             <td>
                                                 <div
                                                     class="d-flex flex-row align-items-center justify-content-center w-100 h-100">
@@ -70,7 +71,6 @@
                                                         aria-hidden="true">{{ $value->campaign_running_status == 'activated' ? 'Activated' : 'Deactivated' }}</span>
                                                 </div>
                                             </td>
-                                            <td class="campaigns_clicks">{!! $value->campaign->campaign_click !!}</td>
                                             <td>
                                                 <a href="{{ url('/campaigns/view-my-campaign/' . base64_encode($value->campaign_id)) }}"
                                                     class="btn btn-info">

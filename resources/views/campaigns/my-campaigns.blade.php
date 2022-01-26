@@ -50,6 +50,7 @@
                                         <th>Price</th>
                                         <th>Pricing Type</th>
                                         <th>Clicks</th>
+                                        <th>Impressions</th>
                                         <th>Status</th>
                                         <th>Action</th>
                                     </tr>
@@ -62,6 +63,7 @@
                                             <td class="campaigns_name">${!! number_format($value->campaign->campaign_cost_per_action, 2) !!}</td>
                                             <td class="campaigns_name">{!! $value->campaign->campaign_type !!}</td>
                                             <td class="campaigns_clicks">{!! $value->campaign->campaign_click !!}</td>
+                                            <td class="campaigns_clicks">{!! $value->campaign->campaign_view !!}</td>
                                             <td>
                                                 <div
                                                     class="d-flex flex-row align-items-center justify-content-center w-100 h-100">

@@ -50,6 +50,7 @@
                                         <th>Price</th>
                                         <th>Pricing Type</th>
                                         <th>Status</th>
+                                        <th>Clicks</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -69,6 +70,7 @@
                                                         aria-hidden="true">{{ $value->campaign_running_status == 'activated' ? 'Activated' : 'Deactivated' }}</span>
                                                 </div>
                                             </td>
+                                            <td class="campaigns_clicks">{!! $value->campaign->campaign_click !!}</td>
                                             <td>
                                                 <a href="{{ url('/campaigns/view-my-campaign/' . base64_encode($value->campaign_id)) }}"
                                                     class="btn btn-info">

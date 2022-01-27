@@ -101,6 +101,8 @@ class orderHistoryController extends Controller
         if (!isset($input['campaign_code']) || empty($input['campaign_code'])) {
             $this->outputData['message'] = "campaign code is required ";
             return response()->json($this->outputData, 409);
+        } else {
+            $this->outputData['campaign_code'] = $input['campaign_code'];
         }
 
         $code = $input['campaign_code'];

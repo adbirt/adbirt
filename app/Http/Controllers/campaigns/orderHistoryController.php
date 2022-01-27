@@ -92,7 +92,7 @@ class orderHistoryController extends Controller
         }
 
         if ($destUrl == "") {
-            $destUrl = "https://adbirt.com";
+            $destUrl = "https://adbirt.com/";
         }
 
         // Check if Method Is POST Or Not
@@ -101,8 +101,6 @@ class orderHistoryController extends Controller
         if (!isset($input['campaign_code']) || empty($input['campaign_code'])) {
             $this->outputData['message'] = "campaign code is required ";
             return response()->json($this->outputData, 409);
-        } else {
-            $this->outputData['campaign_code'] = $input['campaign_code'];
         }
 
         $code = $input['campaign_code'];
@@ -113,7 +111,8 @@ class orderHistoryController extends Controller
 
         $destUrl = $this->getDomain($destUrl);
 
-        if (!empty($advert->campaign) && (strpos(strval($advert->campaign->campaign_url), strval($destUrl)) !== false)) {
+        // if (!empty($advert->campaign) && (strpos(strval($advert->campaign->campaign_url), strval($destUrl)) !== false)) {
+        if (!empty($advert->campaign)) {
 
             $startDate = date('Y-m-d H:i:s');
 

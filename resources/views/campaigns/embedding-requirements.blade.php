@@ -100,7 +100,7 @@
                                 <div class="pl-4">
                                     <p>
                                         Add following script at the bottom of your page before closing
-                                        &lt;/body&gt; tags in campaign landing page.
+                                        <code>&lt;body&gt;</code> tags in campaign landing page.
                                     </p>
                                     <div class="row input-group mb-3 w-75">
                                         <input type="text" value='<script src="https://adbirt.com/public/js/adbirt.js"></script>' class="form-control" id="source-code"

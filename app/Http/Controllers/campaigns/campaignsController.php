@@ -254,8 +254,8 @@ class campaignsController extends Controller
                 \Session::flash('flash_message', 'Campaign has been updated successfully.');
             }
 
-            if (Auth::user()->hasRole('admin')) {
-                return back()->withInput()->with('flash_message', 'Campaign has been updated successfully.');
+            if (Auth::user()->hasRole('admin') || strtoupper($campaign->campaign_type) != 'CPA') {
+                return back()->withInput()->with('flash_message', 'Campaign has been saved successfully.');
             }
 
             return redirect('/campaigns/embedding');

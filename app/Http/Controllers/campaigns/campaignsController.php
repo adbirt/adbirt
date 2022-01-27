@@ -179,6 +179,8 @@ class campaignsController extends Controller
             return view('campaigns.add-campaigns', $this->outputData);
         } else {
 
+            $type = "";
+
             // Edit campaign too, api insert
 
             if (isset($input['id'])) {
@@ -239,6 +241,8 @@ class campaignsController extends Controller
                 $campaign_code = substr(str_shuffle($permitted_chars), 0, 10);
                 $campaign->campaign_code = $campaign_code;
 
+                $type = $campaign->campaign_type;
+
 
                 $campaign->save();
 
@@ -254,7 +258,7 @@ class campaignsController extends Controller
                 \Session::flash('flash_message', 'Campaign has been updated successfully.');
             }
 
-            if (Auth::user()->hasRole('admin') || strtoupper($campaign->campaign_type) != 'CPA') {
+            if (Auth::user()->hasRole('admin') || strtoupper($type) != 'CPA') {
                 return back()->withInput()->with('flash_message', 'Campaign has been saved successfully.');
             }
 

@@ -467,6 +467,17 @@ $NotifyCnt = count($Notify);
                                         </p>
                                     </a>
                                 </li>
+
+                                <li class="nav-header">OTHER</li>
+                                <li class="nav-item">
+                                    <a href="{!! url('/campaigns/embedding') !!}" class="nav-link">
+                                        <i class="nav-icon fa fa-globe"></i>
+                                        <p>
+                                            Add Ads to website
+                                            <!-- <span class="right badge badge-danger">New</span> -->
+                                        </p>
+                                    </a>
+                                </li>
                                 <!-- ===== End Admin ===== -->
                             @elseif(Auth::user()->hasRole('vendor'))
                                 <!-- ===== Begin vendor/advertiser ===== -->

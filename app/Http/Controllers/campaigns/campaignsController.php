@@ -249,8 +249,8 @@ class campaignsController extends Controller
                 $campaign->save();
 
                 $Notify            = new NotificationAlertModel;
-                $Notify->heading  = "New Campaign has been added";
-                $Notify->content  = $input['campaign_title'] . " Campaign has been added";
+                $Notify->heading  = "New Campaign \"<b>" . $campaign->campaign_name . "</b>\" has been added";
+                $Notify->content  = $input['campaign_name'] . " Campaign has been added";
                 $Notify->type  = "Campaign Added";
                 $Notify->Notify_Receivers_Id  = "1";
                 $Notify->save();

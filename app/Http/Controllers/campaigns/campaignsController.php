@@ -258,7 +258,7 @@ class campaignsController extends Controller
                 \Session::flash('flash_message', 'Campaign has been updated successfully.');
             }
 
-            if (Auth::user()->hasRole('admin') || strtoupper($type) != 'CPA') {
+            if (strtoupper($type) != 'CPA') {
                 return back()->withInput()->with('flash_message', 'Campaign has been saved successfully.');
             }
 

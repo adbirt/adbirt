@@ -91,6 +91,10 @@ class orderHistoryController extends Controller
             $destUrl = $header['referer']['0'];
         }
 
+        if ($destUrl == "") {
+            $destUrl = "https://adbirt.com";
+        }
+
         // Check if Method Is POST Or Not
         // if ($method == "POST") {
 

@@ -25,7 +25,7 @@ Route::any('/campaigns/share/{id}', 'campaigns\campaignsController@share');
 
 Route::any('/campaigns/inccampview/{id}', 'campaigns\campaignsController@inccampview');
 
-Route::get('/campaigns/verified', 'campaigns\orderHistoryController@credit');
+Route::any('/campaigns/verified', 'campaigns\orderHistoryController@credit');
 
 Route::any('/api/check-if-url-is-valid-campaign', 'campaigns\orderHistoryController@checkIfUrlIsValidCampaign');
 

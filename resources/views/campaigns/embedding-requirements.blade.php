@@ -38,14 +38,14 @@
                             away to get your ad running across our ad
                             network, to activate your ad, kindly compelete this few steps below:</h5>
 
-                    @elseif (Auth::user()->hasRole('client'))
+                    @elseif (Auth::user()->hasRole('client') || Auth::user()->hasRole('admin'))
 
                         <h5 class="notificationheading text-center p-2 font-weight-bold">For Publishers</h5>
 
                     @endif
 
                     <div class="pl-3">
-                        @if (Auth::user()->hasRole('client'))
+                        @if (Auth::user()->hasRole('client') || Auth::user()->hasRole('admin'))
                             <hr class="notifydivider">
 
                             <div>
@@ -82,7 +82,7 @@
                             <hr>
                         @endif
 
-                        @if (Auth::user()->hasRole('vendor'))
+                        @if (Auth::user()->hasRole('vendor') || Auth::user()->hasRole('admin'))
                             <hr class="notifydivider">
 
                             <br />

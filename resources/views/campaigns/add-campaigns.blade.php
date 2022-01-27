@@ -74,7 +74,7 @@
                 @endif
 
                 <a href="{{ url('/campaigns/view-campaigns') }}">
-                    <button class="btn btn-primary waves-effect waves-light mb-2">View Ads</button>
+                    <button class="btn btn-primary waves-effect waves-light mb-2">View All Ads</button>
                 </a>
                 <div class="card">
                     <form @if (isset($campaignsData)) action="{{ url('/campaigns/update') }}" @else action="{{ url('/campaigns/store') }}" @endif data-parsley-validate novalidate method="POST" id="myform" name="myform"
@@ -293,7 +293,7 @@
 
                                     <span style="color:red;" id="response"></span>
                                     <!-- <span id="width"></span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <span id="height"></span> -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <span id="height"></span> -->
                                 </div>
                             </div>
                             <div class="form-group">

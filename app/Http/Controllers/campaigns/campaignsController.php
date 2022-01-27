@@ -1026,6 +1026,7 @@ class campaignsController extends Controller
                     // charge immediately if campaign type is anything order than CPA
                     $_request = Request::create('/campaigns/verified', 'POST', array(), array(), array(), array(), "?campaign_code=$id");
                     $_request->headers->set('referer', $destUrl);
+                    $_request->headers->set('Content-Type', 'X-www-form-urlencoded');
                     $_response = Route::dispatch($_request);
                     if (!$_response->isOk()) {
                         return response()->json(array('message' => 'could not make request', 'status' => $_response->status(), 'body' => $_request->getContent()), 500);

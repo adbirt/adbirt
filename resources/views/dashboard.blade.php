@@ -511,7 +511,7 @@
     <!-- Begin: publisher statistics cards -->
     <div class="card-header bg-white">
         <!-- <h4 class="card-title">Your monetary statistics</h4> -->
-        <p class="card-subtitle font-weight-bold">Your tatistics</p>
+        <p class="card-subtitle font-weight-bold">Your Statistics</p>
     </div>
     <div class="row">
 

@@ -1,7 +1,7 @@
 /**
  * Adbirt publisher script
  */
-(() => {
+ (() => {
     try {
         let iter_index = 0;
         let payload = "";

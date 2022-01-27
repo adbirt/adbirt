@@ -72,7 +72,7 @@
 
                     if (is_valid) {
                         console.log(`${mode} is valid`);
-                        this.actionMap(mode);
+                        this.actionMap(mode, json['campaign']);
                     } else {
                         // not a campaign page
                     }
@@ -88,6 +88,8 @@
                 'landing': async () => await this.redirectFormSubmitInit(),
                 'success': async () => await this.redirectFormSubmit()
             }
+
+            if ((a['campaign'] !== null) && (String(a['campaign']['campaign_type']) != 'CPA')) return;
 
             return await map[mode]();
         }

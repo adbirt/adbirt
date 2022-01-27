@@ -1018,7 +1018,7 @@ class campaignsController extends Controller
                     $_request = Request::create('/campaigns/verified', 'POST', array('campaign_code' => $id));
                     $_response = Route::dispatch($_request);
                     if (!$_response->isOk()) {
-                        // catch error
+                        return response()->json(array('message' => 'could not make request', 'status' => $_response->status()), 500);
                     }
                 }
 

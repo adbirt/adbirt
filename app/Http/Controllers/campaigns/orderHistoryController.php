@@ -327,12 +327,9 @@ class orderHistoryController extends Controller
 
     public function checkIfUrlIsValidCampaign(Request $request)
     {
-
-        // e.g https://birotojob.com
-
         $input = $request->all();
-        $method = $request->method();
-        $header = $request->header();
+        // $method = $request->method();
+        // $header = $request->header();
 
         $url_in_question = $input['url_in_question'];
         $url_type = 'success'; // 'landing' or 'success'
@@ -345,6 +342,7 @@ class orderHistoryController extends Controller
 
         // $this->outputData['campaign'] = $campaign;
         $this->outputData['type'] = $url_type;
+        $this->outputData['campaign'] = $campaign;
 
         if (is_null($campaign)) {
             $this->outputData['is_valid'] = false;

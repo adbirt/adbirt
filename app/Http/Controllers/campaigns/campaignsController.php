@@ -1013,6 +1013,10 @@ class campaignsController extends Controller
 
                 // return redirect($_url);
 
+                if (strtoupper($bnr->campaign_type) != 'CPA') {
+                    // charge immediately
+                }
+
                 return redirect($bnr->campaign_url . "?camp_code=" . $id);
             } else {
                 dd('Invalid campaign, or campaign not yet approved');

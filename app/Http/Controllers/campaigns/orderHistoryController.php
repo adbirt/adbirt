@@ -83,7 +83,7 @@ class orderHistoryController extends Controller
     public function credit(Request $request)
     {
         $input = $request->all();
-        $method = $request->method();
+        // $method = $request->method();
         $header = $request->header();
         $destUrl = "";
 

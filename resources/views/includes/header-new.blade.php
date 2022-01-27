@@ -200,7 +200,7 @@ $NotifyCnt = count($Notify);
 
                 <div class="dropdown-divider"></div>
                 <a href="/contact" target="_blank" class="dropdown-item p-2 cursor-pointer">
-                    Contact Us
+                    Feedback / Contact Us
                 </a>
 
             </div>

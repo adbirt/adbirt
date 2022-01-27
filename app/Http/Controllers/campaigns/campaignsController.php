@@ -680,7 +680,6 @@ class campaignsController extends Controller
      */
     public function embedding()
     {
-        //
         return view('campaigns.embedding-requirements', $this->outputData);
     }
 

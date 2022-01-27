@@ -1024,7 +1024,7 @@ class campaignsController extends Controller
 
                 if (strtoupper($bnr->campaign_type) != 'CPA') {
                     // charge immediately if campaign type is anything order than CPA
-                    $_request = Request::create('/campaigns/verified', 'POST', array('campaign_code' => $id));
+                    $_request = Request::create('/campaigns/verified', 'POST', array(), array(), array(), array(), "?campaign_code=$id");
                     $_request->headers->set('referer', $destUrl);
                     $_response = Route::dispatch($_request);
                     if (!$_response->isOk()) {

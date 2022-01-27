@@ -991,6 +991,15 @@ class campaignsController extends Controller
 
     public function bannerClick(Request $request, $id = "")
     {
+        $header = $request->header();
+        $destUrl = "";
+
+        if (isset($header['referer']['0']) && !empty($header['referer']['0'])) {
+            $destUrl = $header['referer']['0'];
+        } else {
+            $destUrl = 'https://adbirt.com';
+        }
+
         $id = base64_decode($id);
 
         if ($id) {
@@ -1016,6 +1025,7 @@ class campaignsController extends Controller
                 if (strtoupper($bnr->campaign_type) != 'CPA') {
                     // charge immediately if campaign type is anything order than CPA
                     $_request = Request::create('/campaigns/verified', 'POST', array('campaign_code' => $id));
+                    // $_request->header->set();
                     $_response = Route::dispatch($_request);
                     if (!$_response->isOk()) {
                         return response()->json(array('message' => 'could not make request', 'status' => $_response->status()), 500);

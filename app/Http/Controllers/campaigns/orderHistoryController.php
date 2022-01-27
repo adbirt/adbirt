@@ -92,7 +92,7 @@ class orderHistoryController extends Controller
         }
 
         // Check if Method Is POST Or Not
-        if ($method == "POST") {
+        // if ($method == "POST") {
 
             if (!isset($input['campaign_code']) || empty($input['campaign_code'])) {
                 $this->outputData['message'] = "campaign code is required ";
@@ -318,10 +318,10 @@ class orderHistoryController extends Controller
                 $this->outputData['message'] = "source host & destination host not matched";
                 return response()->json($this->outputData, 400);
             }
-        } else {
-            $this->outputData['message'] = "method_not_allowed";
-            return response()->json($this->outputData, 405);
-        }
+        // } else {
+        //     $this->outputData['message'] = "method_not_allowed";
+        //     return response()->json($this->outputData, 405);
+        // }
     }
 
 

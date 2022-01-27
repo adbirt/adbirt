@@ -206,6 +206,8 @@ class campaignsController extends Controller
                     $input['campaign_banner'] = $input['old_campaign_banner'];
                 }
 
+                $type = $input['campaign_type'];
+
                 unset($input['old_campaign_banner']);
                 campaign::where('id', $Id)->update($input);
                 \Session::flash('flash_message', 'Campaign has been updated successfully.');

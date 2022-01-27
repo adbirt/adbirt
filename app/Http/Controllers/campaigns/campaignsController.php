@@ -1029,7 +1029,7 @@ class campaignsController extends Controller
                     $_request->headers->set('Content-Type', 'X-www-form-urlencoded');
                     $_response = Route::dispatch($_request);
                     if (!$_response->isOk()) {
-                        return response()->json(array('message' => 'could not make request', 'status' => $_response->status(), 'body' => $_request->getContent()), 500);
+                        return response()->json(array('message' => 'could not make request', 'status' => $_response->status(), 'body' => $_response->getContent()), 500);
                     }
                 }
 

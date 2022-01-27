@@ -15,6 +15,7 @@ use App\Model\NotificationAlertModel;
 use App\Http\Controllers\Controller;
 use App\Classes\SocialMedia;
 use Mail;
+use Route;
 
 /**
  * Generate URL from its components (i.e., opposite of built-in php function, parse_url())
@@ -1010,11 +1011,15 @@ class campaignsController extends Controller
                 // $_url_object = parse_url($bnr->campaign_url);
                 // $_url_object['query']['camp_code'] = strval($id);
                 // $_url = build_url($_url_object);
-
                 // return redirect($_url);
 
                 if (strtoupper($bnr->campaign_type) != 'CPA') {
-                    // charge immediately
+                    // charge immediately if campaign type is anything order than CPA
+                    $_request = Request::create('/campaigns/verified', 'POST', array('campaign_code' => $id));
+                    $_response = Route::dispatch($request);
+                    if ($_response->status() != 200) {
+                        // catch error
+                    }
                 }
 
                 return redirect($bnr->campaign_url . "?camp_code=" . $id);

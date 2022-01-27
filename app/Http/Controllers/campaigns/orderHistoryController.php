@@ -304,23 +304,23 @@ class orderHistoryController extends Controller
                         });
 
                         $this->outputData['message'] = "Unable to proceed, not enough balance available";
-                        return response()->json($this->outputData, 400);
+                        return response()->json($this->outputData, 401);
                     }
                 } else {
                     $this->outputData['message'] = "InCorrect Campaign Code Given or alredy requested from this source";
-                    return response()->json($this->outputData, 401);
+                    return response()->json($this->outputData, 402);
                 }
             } else {
                 $this->outputData['message'] = "user exist";
-                return response()->json($this->outputData, 402);
+                return response()->json($this->outputData, 403);
             }
         } else {
             $this->outputData['message'] = "source host & destination host not matched";
-            return response()->json($this->outputData, 403);
+            return response()->json($this->outputData, 405);
         }
         // } else {
         //     $this->outputData['message'] = "method_not_allowed";
-        //     return response()->json($this->outputData, 405);
+        //     return response()->json($this->outputData, 406);
         // }
     }
 

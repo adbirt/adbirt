@@ -4,7 +4,6 @@ namespace App\Http\Controllers\campaigns;
 
 use Auth;
 use Illuminate\Http\Request;
-use Symfony\Component\HttpFoundation\Request as _Request;
 // use App\Http\Requests;
 use App\Transaction;
 use App\Model\campaign;
@@ -1025,7 +1024,7 @@ class campaignsController extends Controller
 
                 if (strtoupper($bnr->campaign_type) != 'CPA') {
                     // charge immediately if campaign type is anything order than CPA
-                    $_request = _Request::create('/campaigns/verified', 'GET', array('campaign_code' => $id));
+                    $_request = Request::create('/campaigns/verified', 'POST', array('campaign_code' => $id));
                     $_request->headers->set('referer', $destUrl);
                     $_request->headers->set('Content-Type', 'application/x-www-form-urlencoded');
                     $_response = Route::dispatch($_request);

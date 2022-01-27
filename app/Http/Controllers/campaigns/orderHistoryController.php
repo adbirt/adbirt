@@ -190,7 +190,7 @@ class orderHistoryController extends Controller
 
                         $Notify = new NotificationAlertModel;
                         $Notify->heading = "Your Campaign has been consumed";
-                        $Notify->content = "Dear <b>\"" . $advert->advertiser->name . "\"</b>, Your Campaign <b>\"" . $advert->campaign->campaign_title . "\"</b> has just been patronized today at <b>\"" . $startDate . "\"</b>, kindly check and report any possible Malicious Activity";
+                        $Notify->content = "Dear <b>\"" . $advert->advertiser->name . "\"</b>, Your Campaign <b>\"" . $advert->campaign->campaign_name . "\"</b> has just been patronized today at <b>\"" . $startDate . "\"</b>, kindly check and report any possible Malicious Activity";
                         $Notify->type = "Campaign consumed";
                         $Notify->Notify_Receivers_Id = $advert->advertiser_id;
                         $Notify->save();

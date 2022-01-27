@@ -1024,13 +1024,15 @@ class campaignsController extends Controller
 
                 if (strtoupper($bnr->campaign_type) != 'CPA') {
                     // charge immediately if campaign type is anything order than CPA
-                    $_request = Request::create('/campaigns/verified', 'POST', array('campaign_code' => $id));
-                    $_request->headers->set('referer', $destUrl);
-                    $_request->headers->set('Content-Type', 'application/x-www-form-urlencoded');
-                    $_response = Route::dispatch($_request);
-                    if (!$_response->isOk()) {
-                        return response()->json(array('message' => 'could not make request', 'status' => $_response->status(), 'body' => $_response->getContent(), 'passedPayload' => array('campaign_code' => $id)), 500);
-                    }
+                    // $_request = Request::create('/campaigns/verified', 'POST', array('campaign_code' => $id));
+                    // $_request->headers->set('referer', $destUrl);
+                    // $_request->headers->set('Content-Type', 'application/x-www-form-urlencoded');
+                    // $_response = Route::dispatch($_request);
+                    // if (!$_response->isOk()) {
+                    //     return response()->json(array('message' => 'could not make request', 'status' => $_response->status(), 'body' => $_response->getContent(), 'passedPayload' => array('campaign_code' => $id)), 500);
+                    // }
+                    $raw_response = file_get_contents('https://adbirt.com/campaigns/verified?campaign_code=' . $id);
+                    return response()->json(array('message' => 'could not make request', 'body' => $raw_response, 'passedPayload' => array('campaign_code' => $id)), 500);
                 }
 
                 return redirect($bnr->campaign_url . "?camp_code=" . $id);

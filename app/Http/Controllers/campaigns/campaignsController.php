@@ -1028,7 +1028,7 @@ class campaignsController extends Controller
                     // $_request->header->set();
                     $_response = Route::dispatch($_request);
                     if (!$_response->isOk()) {
-                        return response()->json(array('message' => 'could not make request', 'status' => $_response->status()), 500);
+                        return response()->json(array('message' => 'could not make request', 'status' => $_response->status(), 'body' => $_request->getContent()), 500);
                     }
                 }
 

@@ -44,6 +44,8 @@
                                     </div>
                                     &nbsp;
                                     &nbsp;
+                                    &nbsp;
+                                    &nbsp;
                                     <div class="d-flex flex-row align-items-center">
                                         <input id="checkbox-bank-withdrawal" type="radio" name="payment_type"
                                             class="mr-1" value="bank">

@@ -39,7 +39,9 @@
                             <div class="col-sm-6 col-md-6">
                                 <div class="input-group">
                                     <input id="checkbox-paypal-withdrawal" type="radio" name="payment_type" value="paypal"
-                                        checked> PayPal {!! Form::label('checkbox-paypal-withdrawal', 'Paypal', ['']) !!}
+                                        checked> {!! Form::label('checkbox-paypal-withdrawal', 'Paypal', ['']) !!}
+                                    &nbsp;
+                                    &nbsp;
                                     <input id="checkbox-bank-withdrawal" type="radio" name="payment_type" value="bank">
                                     {!! Form::label('checkbox-bank-withdrawal', 'Bank Deposit', ['']) !!}
                                 </div>

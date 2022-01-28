@@ -42,8 +42,10 @@
                                         checked> {!! Form::label('checkbox-paypal-withdrawal', 'Paypal', ['']) !!}
                                     &nbsp;
                                     &nbsp;
-                                    <input id="checkbox-bank-withdrawal" type="radio" name="payment_type" value="bank">
-                                    {!! Form::label('checkbox-bank-withdrawal', 'Bank Deposit', ['']) !!}
+                                    <div class="d-flex">
+                                        <input id="checkbox-bank-withdrawal" type="radio" name="payment_type" value="bank">
+                                        {!! Form::label('checkbox-bank-withdrawal', 'Bank Deposit', ['']) !!}
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -56,14 +58,14 @@
                                         <i class="material-icons md-18 text-muted">email</i>
                                     </span>
                                     <input class="form-control" type="email" name="paypal_email_id" id="paypal_email_id"
-                                        required / @if (isset($BankDetails) && !empty($BankDetails->paypal_email_id)) value="{{ $BankDetails->paypal_email_id }}" @endif>
+                                        required @if (isset($BankDetails) && !empty($BankDetails->paypal_email_id)) value="{{ $BankDetails->paypal_email_id }}" @endif />
                                 </div>
                             </div>
                         </div>
 
                         <div id="bank_div" style="display:none;">
                             <div class="form-group row">
-                                <label class="col-sm-3 form-control-label">Bank Name*</label>
+                                <label class="col-sm-3 form-control-label px-3">Bank Name*</label>
                                 <div class="col-sm-6 col-md-6">
                                     <div class="input-group">
                                         <span class="input-group-addon" id="basic-addon1">
@@ -75,7 +77,7 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-sm-3 form-control-label">Bank Holder Name*</label>
+                                <label class="col-sm-3 form-control-label px-3">Bank Holder Name*</label>
                                 <div class="col-sm-6 col-md-6">
                                     <div class="input-group">
                                         <span class="input-group-addon" id="basic-addon1">
@@ -87,7 +89,7 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-sm-3 form-control-label">Bank Account Number*</label>
+                                <label class="col-sm-3 form-control-label px-3">Bank Account Number*</label>
                                 <div class="col-sm-6 col-md-6">
                                     <div class="input-group">
                                         <span class="input-group-addon" id="basic-addon1">

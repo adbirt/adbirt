@@ -40,12 +40,13 @@
                                 <div class="input-group">
                                     <div class="d-flex flex-row align-items-center">
                                         <input id="checkbox-paypal-withdrawal" type="radio" name="payment_type"
-                                            value="paypal" checked> {!! Form::label('checkbox-paypal-withdrawal', 'Paypal', ['class' => 'pt-2']) !!}
+                                            class="mr-1" value="paypal" checked> {!! Form::label('checkbox-paypal-withdrawal', 'Paypal', ['class' => 'pt-2']) !!}
                                     </div>
                                     &nbsp;
                                     &nbsp;
                                     <div class="d-flex flex-row align-items-center">
-                                        <input id="checkbox-bank-withdrawal" type="radio" name="payment_type" value="bank">
+                                        <input id="checkbox-bank-withdrawal" type="radio" name="payment_type"
+                                            class="mr-1" value="bank">
                                         {!! Form::label('checkbox-bank-withdrawal', 'Bank Deposit', ['class' => 'pt-2']) !!}
                                     </div>
                                 </div>

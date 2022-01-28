@@ -38,8 +38,10 @@
                             {!! Form::label('how_pay', 'How to Pay* :', ['class' => 'col-sm-3 form-control-label px-3']) !!}
                             <div class="col-sm-6 col-md-6">
                                 <div class="input-group">
-                                    <input type="radio" name="payment_type" value="paypal" checked> PayPal
-                                    <input type="radio" name="payment_type" value="bank"> Bank Deposit
+                                    <input id="checkbox-paypal-withdrawal" type="radio" name="payment_type" value="paypal"
+                                        checked> PayPal {!! Form::label('checkbox-paypal-withdrawal', 'Paypal', ['']) !!}
+                                    <input id="checkbox-bank-withdrawal" type="radio" name="payment_type" value="bank">
+                                    {!! Form::label('checkbox-bank-withdrawal', 'Bank Deposit', ['']) !!}
                                 </div>
                             </div>
                         </div>
@@ -102,7 +104,7 @@
                             <div class="col-sm-8 col-sm-offset-3">
                                 <div class="media">
                                     <div class="media-left">
-                                        {!! Form::submit('Withdraw Request', ['class' => 'btn btn-success btn-rounded ml-3']) !!}
+                                        {!! Form::submit('Withdraw', ['class' => 'btn btn-success btn-rounded ml-3']) !!}
                                     </div>
                                 </div>
                             </div>

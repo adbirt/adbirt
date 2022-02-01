@@ -319,7 +319,7 @@
         <br />
         <br />
 
-        <ul class="d-flex flex-row align-items-center">
+        <ul class="d-flex flex-row align-items-center justify-content-center text-primary-color">
             <li class="p-3"> <a class="no-text-decoration" href="# ">DISPLAY BANNER</a></li>
             <li class="p-3"> <a class="no-text-decoration" href="# ">NATIVE ADS</a></li>
             <li class="p-3"> <a class="no-text-decoration" href="# ">DIRECT LINKS</a></li>

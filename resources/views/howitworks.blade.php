@@ -4,7 +4,8 @@
     <style>
         .join-free-feature-img {
             transform: scale(1);
-            transition: 1.5s all
+            transition: 1.5s all;
+            object-position: 50px 0;
         }
 
         .join-free-feature-img:hover {
@@ -105,17 +106,14 @@
                     <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn"
                         data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
                         <div class="adbirt-best-service-img">
-                            <img src="public/assets-revamp/img/services//cpa.png" alt="CPA"
+                            <img src="/public/assets-revamp/img/services/shopping-action.png" alt="CPA"
                                 style="height: 232px !important;">
                         </div>
                         <div class="adbirt-best-service-content">
-                            <h3 class="adbirt-best-service-title">CPA</h3>
+                            <h3 class="adbirt-best-service-title">Cost Per Action</h3>
                             <p class="adbirt-best-service-height adbirt-best-service-description"
-                                style="height: 200px !important;">CPA marketing,
-                                also known as
-                                cost-per-action marketing, is the means of promoting your business online. <br>
-                                And only pay when you make a sale or when a specific action occurs on your
-                                website.
+                                style="height: 200px !important;">Promote your products or service online pay your desired
+                                amount when you make a sale or get a new lead to your business.
                             </p>
                             <a href="/actions-and-events" class="adbirt-themes-btn red mt-3">learn more</a>
                         </div>
@@ -125,15 +123,14 @@
                     <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn"
                         data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
                         <div class="adbirt-best-service-img">
-                            <img src="public/assets-revamp/img/services/cost-per-sale.png" alt="CPC"
+                            <img src="/public/assets-revamp/img/services/cost-per-sale.png" alt="CPC"
                                 style="height: 232px !important;">
                         </div>
                         <div class="adbirt-best-service-content">
-                            <h3 class="adbirt-best-service-title">CPS</h3>
+                            <h3 class="adbirt-best-service-title">Cost per Sales</h3>
                             <p class="adbirt-best-service-height adbirt-best-service-description px-1"
-                                style="height: 200px !important;">CPS cost-per-sales is a metric used in advertising
-                                to determine the amount of money you paid out for every generated sale on your
-                                promoted campaign.
+                                style="height: 200px !important;">You're in total control of your ad budget, set the cost
+                                within your means and only pay after a successful sales or leads.
                             </p>
                             <a href="/actions-and-events" class="adbirt-themes-btn red mt-3">learn more</a>
                         </div>
@@ -143,16 +140,14 @@
                     <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn"
                         data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
                         <div class="adbirt-best-service-img">
-                            <img src="public/assets-revamp/img/services/cpd.png" alt="CPD"
+                            <img src="/public/assets-revamp/img/services/click-action.png" alt="CPD"
                                 style="height: 232px !important;">
                         </div>
                         <div class="adbirt-best-service-content">
-                            <h3 class="adbirt-best-service-title">CPD</h3>
+                            <h3 class="adbirt-best-service-title">Cost Per Click</h3>
                             <p class="adbirt-best-service-height adbirt-best-service-description"
-                                style="height: 200px !important;">(CPD)
-                                cost-per-download is an advertising
-                                model that allows advertisers pays for each specified action, typically the
-                                downloading of an application or file.
+                                style="height: 200px !important;">Get unlimited impressions to your business for free and
+                                only pay for a valid click when users visit or land on your websites.
                             </p>
                             <a href="/actions-and-events" class="adbirt-themes-btn red mt-3">learn more</a>
                         </div>

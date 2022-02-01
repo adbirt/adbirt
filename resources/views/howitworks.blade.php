@@ -106,7 +106,7 @@
                     <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn"
                         data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
                         <div class="adbirt-best-service-img">
-                            <img src="/public/assets-revamp/img/services/shopping-action.png" alt="CPA"
+                            <img src="/public/assets-revamp/img/services/shopping-action.jpg" alt="CPA"
                                 style="height: 232px !important;">
                         </div>
                         <div class="adbirt-best-service-content">
@@ -140,7 +140,7 @@
                     <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn"
                         data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
                         <div class="adbirt-best-service-img">
-                            <img src="/public/assets-revamp/img/services/click-action.png" alt="CPD"
+                            <img src="/public/assets-revamp/img/services/click-action.jpeg" alt="CPD"
                                 style="height: 232px !important;">
                         </div>
                         <div class="adbirt-best-service-content">

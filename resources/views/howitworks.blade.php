@@ -97,7 +97,7 @@
                             <img src="/public/assets-revamp/img/services/shopping-action.jpg" alt="CPA"
                                 style="height: 232px !important;">
                         </div>
-                        <div class="adbirt-best-service-content">
+                        <div class="adbirt-best-service-content p-2">
                             <h3 class="adbirt-best-service-title">Cost Per Action</h3>
                             <p class="adbirt-best-service-height adbirt-best-service-description"
                                 style="height: 200px !important;">Promote your products or service online pay your
@@ -117,7 +117,7 @@
                             <img src="/public/assets-revamp/img/services/cost-per-sale.png" alt="CPC"
                                 style="height: 232px !important;">
                         </div>
-                        <div class="adbirt-best-service-content">
+                        <div class="adbirt-best-service-content p-2">
                             <h3 class="adbirt-best-service-title">Cost per Sales</h3>
                             <p class="adbirt-best-service-height adbirt-best-service-description px-1"
                                 style="height: 200px !important;">You're in total control of your ad budget, set the
@@ -137,7 +137,7 @@
                             <img src="/public/assets-revamp/img/services/click-action.jpeg" alt="CPD"
                                 style="height: 232px !important;">
                         </div>
-                        <div class="adbirt-best-service-content">
+                        <div class="adbirt-best-service-content p-2">
                             <h3 class="adbirt-best-service-title">Cost Per Click</h3>
                             <p class="adbirt-best-service-height adbirt-best-service-description"
                                 style="height: 200px !important;">Get unlimited impressions to your business for free
@@ -238,7 +238,7 @@
                             <img src="/public/assets-revamp/img/services/shopping-action.jpg" alt="CPA"
                                 style="height: 232px !important;">
                         </div>
-                        <div class="adbirt-best-service-content">
+                        <div class="adbirt-best-service-content p-2">
                             <h3 class="adbirt-best-service-title">Cost Per Action</h3>
                             <p class="adbirt-best-service-height adbirt-best-service-description"
                                 style="height: 200px !important;">Promote your products or service online pay your
@@ -258,7 +258,7 @@
                             <img src="/public/assets-revamp/img/services/cost-per-sale.png" alt="CPC"
                                 style="height: 232px !important;">
                         </div>
-                        <div class="adbirt-best-service-content">
+                        <div class="adbirt-best-service-content p-2">
                             <h3 class="adbirt-best-service-title">Cost per Sales</h3>
                             <p class="adbirt-best-service-height adbirt-best-service-description px-1"
                                 style="height: 200px !important;">You're in total control of your ad budget, set the
@@ -278,7 +278,7 @@
                             <img src="/public/assets-revamp/img/services/click-action.jpeg" alt="CPD"
                                 style="height: 232px !important;">
                         </div>
-                        <div class="adbirt-best-service-content">
+                        <div class="adbirt-best-service-content p-2">
                             <h3 class="adbirt-best-service-title">Cost Per Click</h3>
                             <p class="adbirt-best-service-height adbirt-best-service-description"
                                 style="height: 200px !important;">Get unlimited impressions to your business for free

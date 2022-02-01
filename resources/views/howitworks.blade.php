@@ -115,7 +115,6 @@
                                 style="height: 200px !important;">Promote your products or service online pay your desired
                                 amount when you make a sale or get a new lead to your business.
                             </p>
-                            <a href="/actions-and-events" class="adbirt-themes-btn red mt-3">learn more</a>
                         </div>
                     </div>
 
@@ -132,7 +131,6 @@
                                 style="height: 200px !important;">You're in total control of your ad budget, set the cost
                                 within your means and only pay after a successful sales or leads.
                             </p>
-                            <a href="/actions-and-events" class="adbirt-themes-btn red mt-3">learn more</a>
                         </div>
                     </div>
 
@@ -149,9 +147,12 @@
                                 style="height: 200px !important;">Get unlimited impressions to your business for free and
                                 only pay for a valid click when users visit or land on your websites.
                             </p>
-                            <a href="/actions-and-events" class="adbirt-themes-btn red mt-3">learn more</a>
                         </div>
                     </div>
+
+                    <br />
+
+                    <a href="/actions-and-events" class="adbirt-themes-btn red mt-3">learn more</a>
                 </div>
             </div>
 

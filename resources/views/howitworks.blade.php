@@ -152,7 +152,9 @@
 
                     <br />
 
-                    <a href="/actions-and-events" class="adbirt-themes-btn red mt-3">learn more</a>
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <a href="/dashboard" class="adbirt-themes-btn red mt-3">Start now for free</a>
+                    </div>
                 </div>
             </div>
 
@@ -184,60 +186,118 @@
         <br>
 
         <div class="row">
-            <div class="col-md-12">
-                <div class="owl-carousel owl-theme adbirt-main-testimonials adbirt-testimonial-slider">
 
-                    <div class="adbirt-best-service-slide">
+            <div class="col-12 col-md-6">
+                <div class="">
+                    <h3 style="font-size: 35px !important; line-height: 1.3 !important;"
+                        class="font-weight-bold text-left w-75">Increase your sales
+                        and generate new leads with Adbirt Ads</h3>
+
+                    <p>With our robust technology, we'll tailor your product
+                        or service in front of the prospective customer who is
+                        searching for your business online. And pay your des
+                        ired amount only when you make sale or leads.
+                    </p>
+
+                    <br />
+
+                    <a href="/" class="btn bg-primary-color text-white font-weight-bold">Learn More</a>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <div style="overflow: hidden !important;">
+                    <img src="/public/assets-revamp/img/phone-join-free.png" alt="Join Adbirt for free"
+                        class="img-fluid join-free-feature-img" />
+                </div>
+            </div>
+
+            {{-- <div class="adbirt-best-service-slide">
                         <div class="adbirt-best-service-img">
                             <img src="public/assets-revamp/img/how-it-works/signup.png" alt="Sign up" height="232">
                         </div>
                         <div class="adbirt-best-service-content">
                             <h3 class="adbirt-best-service-title">1. Create an Account</h3>
-                            <p class="adbirt-best-service-description">Setup your Publishers Account by telling us
-                                more about your medium of Monetization.
+                            <p class="adbirt-best-service-description">Signing up on Adbirt as an Advertiser is the
+                                first step to putting your message across our Ad Network.
                             </p>
                         </div>
-                    </div>
+                    </div> --}}
 
-                    <div class="adbirt-best-service-slide">
+            <br />
+            <br />
+            <br />
+
+            <h3 style="font-size: 30px !important;" class="text-center w-100">Get the best results that interest you</h3>
+
+            <br />
+            <br />
+            <br />
+
+            <div>
+                <div class="row owl-theme d-flex align-items-center justify-content-between p-0 m-0">
+
+                    <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn"
+                        data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
                         <div class="adbirt-best-service-img">
-                            <img src="public/assets-revamp/img/how-it-works/choose-campaign.png" alt="Sign up" height="232">
+                            <img src="/public/assets-revamp/img/services/shopping-action.jpg" alt="CPA"
+                                style="height: 232px !important;">
                         </div>
                         <div class="adbirt-best-service-content">
-                            <h3 class="adbirt-best-service-title">2. Choose an Ad Campaign</h3>
-                            <p class="adbirt-best-service-description">Pick a Campaign that is suitable to the
-                                interest of your Audience, be it Email list or website.
+                            <h3 class="adbirt-best-service-title">Cost Per Action</h3>
+                            <p class="adbirt-best-service-height adbirt-best-service-description"
+                                style="height: 200px !important;">Promote your products or service online pay your desired
+                                amount when you make a sale or get a new lead to your business.
                             </p>
                         </div>
                     </div>
 
-                    <div class="adbirt-best-service-slide">
+
+                    <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn"
+                        data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
                         <div class="adbirt-best-service-img">
-                            <img src="public/assets-revamp/img/how-it-works/place-on-website.png" alt="Sign up"
-                                height="232">
+                            <img src="/public/assets-revamp/img/services/cost-per-sale.png" alt="CPC"
+                                style="height: 232px !important;">
                         </div>
                         <div class="adbirt-best-service-content">
-                            <h3 class="adbirt-best-service-title">3. Place it on your Website</h3>
-                            <p class="adbirt-best-service-description">Place it on your Website, Email list, Social
-                                media handles, WhatsApp group, Blog or other channels.
+                            <h3 class="adbirt-best-service-title">Cost per Sales</h3>
+                            <p class="adbirt-best-service-height adbirt-best-service-description px-1"
+                                style="height: 200px !important;">You're in total control of your ad budget, set the cost
+                                within your means and only pay after a successful sales or leads.
                             </p>
                         </div>
                     </div>
 
-                    <div class="adbirt-best-service-slide">
+
+                    <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn"
+                        data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
                         <div class="adbirt-best-service-img">
-                            <img src="public/assets-revamp/img/how-it-works/setbudget.jpg" alt="Sign up" height="232">
+                            <img src="/public/assets-revamp/img/services/click-action.jpeg" alt="CPD"
+                                style="height: 232px !important;">
                         </div>
                         <div class="adbirt-best-service-content">
-                            <h3 class="adbirt-best-service-title">4. Earn and Withdraw Instantly</h3>
-                            <p class="adbirt-best-service-description">Track your earnings and make withdrawal
-                                request anytime you earn, No threshold, no limit to earnings.
+                            <h3 class="adbirt-best-service-title">Cost Per Click</h3>
+                            <p class="adbirt-best-service-height adbirt-best-service-description"
+                                style="height: 200px !important;">Get unlimited impressions to your business for free and
+                                only pay for a valid click when users visit or land on your websites.
                             </p>
                         </div>
                     </div>
 
+                    <br />
+
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <a href="/dashboard" class="adbirt-themes-btn red mt-3">Start now for free</a>
+                    </div>
                 </div>
             </div>
+
+            <br />
+            <br />
+            <br />
+            <!--- END ROW -->
+
+
         </div>
         <!--- END ROW -->
     </div>

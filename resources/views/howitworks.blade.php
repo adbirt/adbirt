@@ -78,18 +78,6 @@
                 </div>
             </div>
 
-            {{-- <div class="adbirt-best-service-slide">
-                        <div class="adbirt-best-service-img">
-                            <img src="public/assets-revamp/img/how-it-works/signup.png" alt="Sign up" height="232">
-                        </div>
-                        <div class="adbirt-best-service-content">
-                            <h3 class="adbirt-best-service-title">1. Create an Account</h3>
-                            <p class="adbirt-best-service-description">Signing up on Adbirt as an Advertiser is the
-                                first step to putting your message across our Ad Network.
-                            </p>
-                        </div>
-                    </div> --}}
-
             <br />
             <br />
             <br />
@@ -100,11 +88,11 @@
             <br />
             <br />
 
-            <div>
-                <div class="row owl-theme d-flex align-items-center justify-content-between p-0 m-0">
+            <div class="row owl-theme d-flex align-items-center justify-content-between p-0 m-0">
 
-                    <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn"
-                        data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
+                <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn p-3"
+                    data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
+                    <div class="shadow">
                         <div class="adbirt-best-service-img">
                             <img src="/public/assets-revamp/img/services/shopping-action.jpg" alt="CPA"
                                 style="height: 232px !important;">
@@ -112,15 +100,19 @@
                         <div class="adbirt-best-service-content">
                             <h3 class="adbirt-best-service-title">Cost Per Action</h3>
                             <p class="adbirt-best-service-height adbirt-best-service-description"
-                                style="height: 200px !important;">Promote your products or service online pay your desired
+                                style="height: 200px !important;">Promote your products or service online pay your
+                                desired
                                 amount when you make a sale or get a new lead to your business.
                             </p>
                         </div>
                     </div>
+                </div>
 
 
-                    <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn"
-                        data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
+                <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn p-3"
+                    data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
+                    <div class="shadow">
+
                         <div class="adbirt-best-service-img">
                             <img src="/public/assets-revamp/img/services/cost-per-sale.png" alt="CPC"
                                 style="height: 232px !important;">
@@ -128,15 +120,19 @@
                         <div class="adbirt-best-service-content">
                             <h3 class="adbirt-best-service-title">Cost per Sales</h3>
                             <p class="adbirt-best-service-height adbirt-best-service-description px-1"
-                                style="height: 200px !important;">You're in total control of your ad budget, set the cost
+                                style="height: 200px !important;">You're in total control of your ad budget, set the
+                                cost
                                 within your means and only pay after a successful sales or leads.
                             </p>
                         </div>
+
                     </div>
+                </div>
 
 
-                    <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn"
-                        data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
+                <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn p-3"
+                    data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
+                    <div class="shadow">
                         <div class="adbirt-best-service-img">
                             <img src="/public/assets-revamp/img/services/click-action.jpeg" alt="CPD"
                                 style="height: 232px !important;">
@@ -144,17 +140,16 @@
                         <div class="adbirt-best-service-content">
                             <h3 class="adbirt-best-service-title">Cost Per Click</h3>
                             <p class="adbirt-best-service-height adbirt-best-service-description"
-                                style="height: 200px !important;">Get unlimited impressions to your business for free and
+                                style="height: 200px !important;">Get unlimited impressions to your business for free
+                                and
                                 only pay for a valid click when users visit or land on your websites.
                             </p>
                         </div>
                     </div>
+                </div>
 
-                    <br />
-
-                    <div class="d-flex flex-column align-items-center justify-content-center w-100">
-                        <a href="/dashboard" class="adbirt-themes-btn red mt-3">Start now for free</a>
-                    </div>
+                <div class="d-flex flex-column align-items-center justify-content-center w-100">
+                    <a href="/dashboard" class="adbirt-themes-btn red mt-3">Start now for free</a>
                 </div>
             </div>
 
@@ -234,11 +229,11 @@
             <br />
             <br />
 
-            <div>
-                <div class="row owl-theme d-flex align-items-center justify-content-between p-0 m-0">
+            <div class="row owl-theme d-flex align-items-center justify-content-between p-0 m-0">
 
-                    <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn"
-                        data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
+                <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn p-3"
+                    data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
+                    <div class="shadow">
                         <div class="adbirt-best-service-img">
                             <img src="/public/assets-revamp/img/services/shopping-action.jpg" alt="CPA"
                                 style="height: 232px !important;">
@@ -246,15 +241,19 @@
                         <div class="adbirt-best-service-content">
                             <h3 class="adbirt-best-service-title">Cost Per Action</h3>
                             <p class="adbirt-best-service-height adbirt-best-service-description"
-                                style="height: 200px !important;">Promote your products or service online pay your desired
+                                style="height: 200px !important;">Promote your products or service online pay your
+                                desired
                                 amount when you make a sale or get a new lead to your business.
                             </p>
                         </div>
                     </div>
+                </div>
 
 
-                    <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn"
-                        data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
+                <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn p-3"
+                    data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
+                    <div class="shadow">
+
                         <div class="adbirt-best-service-img">
                             <img src="/public/assets-revamp/img/services/cost-per-sale.png" alt="CPC"
                                 style="height: 232px !important;">
@@ -262,15 +261,19 @@
                         <div class="adbirt-best-service-content">
                             <h3 class="adbirt-best-service-title">Cost per Sales</h3>
                             <p class="adbirt-best-service-height adbirt-best-service-description px-1"
-                                style="height: 200px !important;">You're in total control of your ad budget, set the cost
+                                style="height: 200px !important;">You're in total control of your ad budget, set the
+                                cost
                                 within your means and only pay after a successful sales or leads.
                             </p>
                         </div>
+
                     </div>
+                </div>
 
 
-                    <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn"
-                        data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
+                <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn p-3"
+                    data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
+                    <div class="shadow">
                         <div class="adbirt-best-service-img">
                             <img src="/public/assets-revamp/img/services/click-action.jpeg" alt="CPD"
                                 style="height: 232px !important;">
@@ -278,17 +281,16 @@
                         <div class="adbirt-best-service-content">
                             <h3 class="adbirt-best-service-title">Cost Per Click</h3>
                             <p class="adbirt-best-service-height adbirt-best-service-description"
-                                style="height: 200px !important;">Get unlimited impressions to your business for free and
+                                style="height: 200px !important;">Get unlimited impressions to your business for free
+                                and
                                 only pay for a valid click when users visit or land on your websites.
                             </p>
                         </div>
                     </div>
+                </div>
 
-                    <br />
-
-                    <div class="d-flex flex-column align-items-center justify-content-center w-100">
-                        <a href="/dashboard" class="adbirt-themes-btn red mt-3">Start now for free</a>
-                    </div>
+                <div class="d-flex flex-column align-items-center justify-content-center w-100">
+                    <a href="/dashboard" class="adbirt-themes-btn red mt-3">Start now for free</a>
                 </div>
             </div>
 

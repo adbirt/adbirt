@@ -152,7 +152,7 @@
 
                     <br />
 
-                    <div class="d-flex flex-column align-items-center justify-content-center">
+                    <div class="d-flex flex-column align-items-center justify-content-center w-100">
                         <a href="/dashboard" class="adbirt-themes-btn red mt-3">Start now for free</a>
                     </div>
                 </div>
@@ -286,7 +286,7 @@
 
                     <br />
 
-                    <div class="d-flex flex-column align-items-center justify-content-center">
+                    <div class="d-flex flex-column align-items-center justify-content-center w-100">
                         <a href="/dashboard" class="adbirt-themes-btn red mt-3">Start now for free</a>
                     </div>
                 </div>

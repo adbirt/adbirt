@@ -36,7 +36,7 @@
 
 
     <!-- Begin Adbirt for Advertisers -->
-    <div class="container my-5">
+    <div class="container my-3">
 
         <div class="row justify-content-center">
             <div class="col-lg-7 col-xl-6">
@@ -165,7 +165,7 @@
     <!-- End Adbirt for Advertisers -->
 
     <!-- Begin Adbirt for Publishers -->
-    <div class="container my-5">
+    <div class="container my-3">
 
         <div class="row justify-content-center">
             <div class="col-lg-7 col-xl-6">
@@ -304,8 +304,8 @@
     <!-- End Adbirt for Publishers -->
 
 
-    <div class="container my-5">
-        .
+    <div class="container my-3">
+        <h3 class="text-center"><span class="text-primary-color">Best-</span>Converting Ad formats</h3>
     </div>
 
 

@@ -288,7 +288,7 @@
                 </div>
 
                 <div class="d-flex flex-column align-items-center justify-content-center w-100">
-                    <a href="/dashboard" class="adbirt-themes-btn red mt-3">Start now for free</a>
+                    <a href="/dashboard" class="adbirt-themes-btn red mt-3">Start earning now</a>
                 </div>
             </div>
 
@@ -302,6 +302,11 @@
         <!--- END ROW -->
     </div>
     <!-- End Adbirt for Publishers -->
+
+
+    <div class="container my-5">
+        .
+    </div>
 
 
 

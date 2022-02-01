@@ -275,13 +275,13 @@
                                             <center class="campaign-type-holder">
                                                 <img style="max-width: 500px;"
                                                     class="w-100 image-banner {!! isset($campaignsData) && !empty($campaignsData->banner_type) && $campaignsData->banner_type == 'image' ? 'd-block' : 'd-none' !!} @if (!isset($campaignsData)) d-block @endif"
-                                                    src="{{ isset($campaignsData) && !empty($campaignsData->campaign_banner) ? asset('uploads/campaign_banners/' . $campaignsData->campaign_banner) : asset('assets/photos/Placeholder.jpg') }}"
+                                                    src="{{ isset($campaignsData) && !empty($campaignsData->campaign_banner)? asset('uploads/campaign_banners/' . $campaignsData->campaign_banner): asset('assets/photos/Placeholder.jpg') }}"
                                                     id="{!! isset($campaignsData) && !empty($campaignsData->campaign_banner) ? '' : 'view' !!}" class="img-responsive">
                                                 <br />
                                                 <video style="max-width: 450px;"
                                                     class="w-100 video-banner {!! isset($campaignsData) && !empty($campaignsData->banner_type) && $campaignsData->banner_type == 'video' ? 'd-block' : 'd-none' !!} @if (!isset($campaignsData)) d-none @endif"
                                                     controls loop autoplay
-                                                    src="{{ isset($campaignsData) && !empty($campaignsData->campaign_banner) ? asset('uploads/campaign_banners/' . $campaignsData->campaign_banner) : asset('assets-revamp/video/Placeholder.mp4') }}"
+                                                    src="{{ isset($campaignsData) && !empty($campaignsData->campaign_banner)? asset('uploads/campaign_banners/' . $campaignsData->campaign_banner): asset('assets-revamp/video/Placeholder.mp4') }}"
                                                     id="{!! isset($campaignsData) && !empty($campaignsData->campaign_banner) ? '' : 'view' !!}" class="img-responsive"></video>
                                             </center>
                                             @if (isset($campaignsData) && !empty($campaignsData->campaign_banner))
@@ -293,7 +293,7 @@
 
                                     <span style="color:red;" id="response"></span>
                                     <!-- <span id="width"></span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <span id="height"></span> -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <span id="height"></span> -->
                                 </div>
                             </div>
                             <div class="form-group">
@@ -305,10 +305,10 @@
                                         <input type="number" min="0.20" name="campaign_cost_per_action"
                                             parsley-trigger="change" required placeholder="($) Campaign Cost Per Action"
                                             class="form-control" id="campaign_cost_per_action" title="Cost Per Action"
-                                            data-parsley-error-message="Minimum amount is $0.2" @if (isset($campaignsData) && !empty($campaignsData->campaign_cost_per_action)) value="{{ $campaignsData->campaign_cost_per_action }}" @endif>
+                                            data-parsley-error-message="Minimum amount is $0.20" @if (isset($campaignsData) && !empty($campaignsData->campaign_cost_per_action)) value="{{ $campaignsData->campaign_cost_per_action }}" @endif>
                                         <div>
                                             <small>
-                                                Minimum amount is $0.2
+                                                Minimum amount is $<span id="display-min-amount">0.20</span>
                                             </small>
                                         </div>
                                     </div>
@@ -476,6 +476,10 @@
              * @type {HTMLVideoElement}
              */
             const videoBanner = document.querySelector('.video-banner');
+            /**
+             * @type {HTMLInputElement}
+             */
+            const costPerActionInput = document.querySelector('#campaign_cost_per_action');
 
             const setBannerType = (value) => {
 
@@ -517,6 +521,12 @@
                 (bannerTypeInputField.getAttribute('disabled')) && bannerTypeInputField.removeAttribute(
                     'disabled');
 
+                const minAmountHint = document.querySelector('#display-min-amount');
+                minAmountHint.textContent = '0.20';
+
+                costPerActionInput.setAttribute('data-parsley-error-message', 'Minimum amount is 0.20');
+                costPerActionInput.setAttribute('min', '0.20');
+
                 window.campaignType = value;
 
                 if (value == campaign_types.CPA) {
@@ -526,6 +536,10 @@
                     bannerSizeInputFieldContainer.style.display = '';
 
                 } else if (value == campaign_types.CPC) {
+
+                    minAmountHint.textContent = '0.10';
+                    costPerActionInput.setAttribute('data-parsley-error-message', 'Minimum amount is 0.10');
+                    costPerActionInput.setAttribute('min', '0.10');
 
                     successPageinputField.value = landingPageInputField.value ?? '';
                     (bannerTypeInputField.getAttribute('disabled')) && bannerTypeInputField.removeAttribute(

@@ -19,94 +19,94 @@
 
         <!-- START OUR TEAM -->
         <!-- <section id="team" class="adbirt-team-area adbirt-section-padding">
-                                                 <div class="container">	
-                                                  <div class="row justify-content-center">
-                                                   <div class="col-lg-7 col-xl-6">
-                                                    <div class="adbirt-section-title text-center wow zoomIn" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
-                                                     <h5 class="adbirt-sheading">Our Team Member</h5>
-                                                     <h2 class="">Meet Our Exclusive Member For Your Help</h2>
-                                                     <p>Lorem ipsum dolor sit amet elit , consectetur adipiscing , sed eiusmod tempor sit amet elit dolor sit amet elit.</p>
-                                                    </div>
-                                                   </div><!--- END COL --
-                                                  </div><!--- END ROW --
-                                                  
-                                                  <div class="row clearfix">
-                                                   <div class="col-lg-3 col-md-6 col-12">
-                                                    <div class="adbirt-single-team wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
-                                                     <div class="adbirt-team-pic">
-                                                      <img src="public/assets-revamp/img/team/1.jpg" alt="">
-                                                     </div>
-                                                     <div class="adbirt-team-content">
-                                                      <h3 class="adbirt-team-title">Khabir</h3>
-                                                      <span class="adbirt-team-post">IT Consultant</span>
-                                                     </div>
-                                                     <ul class="adbirt-team-social">
-                                                      <li><a href="#" class="fab fa-facebook"></a></li>
-                                                      <li><a href="#" class="fab fa-google-plus"></a></li>
-                                                      <li><a href="#" class="fab fa-instagram"></a></li>
-                                                      <li><a href="#" class="fab fa-linkedin"></a></li>
-                                                     </ul>
-                                                    </div>
-                                                
-                                                   </div><!--- END COL --
-                                                   
-                                                   <div class="col-lg-3 col-md-6 col-12">
-                                                    <div class="adbirt-single-team wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
-                                                     <div class="adbirt-team-pic">
-                                                      <img src="public/assets-revamp/img/team/2.jpg" alt="">
-                                                     </div>
-                                                     <div class="adbirt-team-content">
-                                                      <h3 class="adbirt-team-title">Malik</h3>
-                                                      <span class="adbirt-team-post">IT Developer</span>
-                                                     </div>
-                                                     <ul class="adbirt-team-social">
-                                                      <li><a href="#" class="fab fa-facebook"></a></li>
-                                                      <li><a href="#" class="fab fa-google-plus"></a></li>
-                                                      <li><a href="#" class="fab fa-instagram"></a></li>
-                                                      <li><a href="#" class="fab fa-linkedin"></a></li>
-                                                     </ul>
-                                                    </div>
-                                                   </div><!--- END COL --
-                                                   
-                                                   <div class="col-lg-3 col-md-6 col-12">
-                                                    <div class="adbirt-single-team wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="0">
-                                                     <div class="adbirt-team-pic">
-                                                      <img src="public/assets-revamp/img/team/3.jpg" alt="">
-                                                     </div>
-                                                     <div class="adbirt-team-content">
-                                                      <h3 class="adbirt-team-title">Mubdi</h3>
-                                                      <span class="adbirt-team-post">IT Service</span>
-                                                     </div>
-                                                     <ul class="adbirt-team-social">
-                                                      <li><a href="#" class="fab fa-facebook"></a></li>
-                                                      <li><a href="#" class="fab fa-google-plus"></a></li>
-                                                      <li><a href="#" class="fab fa-instagram"></a></li>
-                                                      <li><a href="#" class="fab fa-linkedin"></a></li>
-                                                     </ul>
-                                                    </div>
-                                                   </div><!--- END COL --
-                                                   
-                                                   <div class="col-lg-3 col-md-6 col-12">
-                                                    <div class="adbirt-single-team wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="0">
-                                                     <div class="adbirt-team-pic">
-                                                      <img src="public/assets-revamp/img/team/4.jpg" alt="">
-                                                     </div>
-                                                     <div class="adbirt-team-content">
-                                                      <h3 class="adbirt-team-title">Raqib</h3>
-                                                      <span class="adbirt-team-post">Web Developer</span>
-                                                     </div>
-                                                     <ul class="adbirt-team-social">
-                                                      <li><a href="#" class="fab fa-facebook"></a></li>
-                                                      <li><a href="#" class="fab fa-google-plus"></a></li>
-                                                      <li><a href="#" class="fab fa-instagram"></a></li>
-                                                      <li><a href="#" class="fab fa-linkedin"></a></li>
-                                                     </ul>
-                                                    </div>
-                                                   </div><!--- END COL --
-                                                  </div><!--- END ROW --	
-                                                 </div><!--- END CONTAINER --
-                                                </section> --
-                                                <!-- END TEAM -->
+                                                             <div class="container">	
+                                                              <div class="row justify-content-center">
+                                                               <div class="col-lg-7 col-xl-6">
+                                                                <div class="adbirt-section-title text-center wow zoomIn" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
+                                                                 <h5 class="adbirt-sheading">Our Team Member</h5>
+                                                                 <h2 class="">Meet Our Exclusive Member For Your Help</h2>
+                                                                 <p>Lorem ipsum dolor sit amet elit , consectetur adipiscing , sed eiusmod tempor sit amet elit dolor sit amet elit.</p>
+                                                                </div>
+                                                               </div><!--- END COL --
+                                                              </div><!--- END ROW --
+                                                              
+                                                              <div class="row clearfix">
+                                                               <div class="col-lg-3 col-md-6 col-12">
+                                                                <div class="adbirt-single-team wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
+                                                                 <div class="adbirt-team-pic">
+                                                                  <img src="public/assets-revamp/img/team/1.jpg" alt="">
+                                                                 </div>
+                                                                 <div class="adbirt-team-content">
+                                                                  <h3 class="adbirt-team-title">Khabir</h3>
+                                                                  <span class="adbirt-team-post">IT Consultant</span>
+                                                                 </div>
+                                                                 <ul class="adbirt-team-social">
+                                                                  <li><a href="#" class="fab fa-facebook"></a></li>
+                                                                  <li><a href="#" class="fab fa-google-plus"></a></li>
+                                                                  <li><a href="#" class="fab fa-instagram"></a></li>
+                                                                  <li><a href="#" class="fab fa-linkedin"></a></li>
+                                                                 </ul>
+                                                                </div>
+                                                            
+                                                               </div><!--- END COL --
+                                                               
+                                                               <div class="col-lg-3 col-md-6 col-12">
+                                                                <div class="adbirt-single-team wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
+                                                                 <div class="adbirt-team-pic">
+                                                                  <img src="public/assets-revamp/img/team/2.jpg" alt="">
+                                                                 </div>
+                                                                 <div class="adbirt-team-content">
+                                                                  <h3 class="adbirt-team-title">Malik</h3>
+                                                                  <span class="adbirt-team-post">IT Developer</span>
+                                                                 </div>
+                                                                 <ul class="adbirt-team-social">
+                                                                  <li><a href="#" class="fab fa-facebook"></a></li>
+                                                                  <li><a href="#" class="fab fa-google-plus"></a></li>
+                                                                  <li><a href="#" class="fab fa-instagram"></a></li>
+                                                                  <li><a href="#" class="fab fa-linkedin"></a></li>
+                                                                 </ul>
+                                                                </div>
+                                                               </div><!--- END COL --
+                                                               
+                                                               <div class="col-lg-3 col-md-6 col-12">
+                                                                <div class="adbirt-single-team wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="0">
+                                                                 <div class="adbirt-team-pic">
+                                                                  <img src="public/assets-revamp/img/team/3.jpg" alt="">
+                                                                 </div>
+                                                                 <div class="adbirt-team-content">
+                                                                  <h3 class="adbirt-team-title">Mubdi</h3>
+                                                                  <span class="adbirt-team-post">IT Service</span>
+                                                                 </div>
+                                                                 <ul class="adbirt-team-social">
+                                                                  <li><a href="#" class="fab fa-facebook"></a></li>
+                                                                  <li><a href="#" class="fab fa-google-plus"></a></li>
+                                                                  <li><a href="#" class="fab fa-instagram"></a></li>
+                                                                  <li><a href="#" class="fab fa-linkedin"></a></li>
+                                                                 </ul>
+                                                                </div>
+                                                               </div><!--- END COL --
+                                                               
+                                                               <div class="col-lg-3 col-md-6 col-12">
+                                                                <div class="adbirt-single-team wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="0">
+                                                                 <div class="adbirt-team-pic">
+                                                                  <img src="public/assets-revamp/img/team/4.jpg" alt="">
+                                                                 </div>
+                                                                 <div class="adbirt-team-content">
+                                                                  <h3 class="adbirt-team-title">Raqib</h3>
+                                                                  <span class="adbirt-team-post">Web Developer</span>
+                                                                 </div>
+                                                                 <ul class="adbirt-team-social">
+                                                                  <li><a href="#" class="fab fa-facebook"></a></li>
+                                                                  <li><a href="#" class="fab fa-google-plus"></a></li>
+                                                                  <li><a href="#" class="fab fa-instagram"></a></li>
+                                                                  <li><a href="#" class="fab fa-linkedin"></a></li>
+                                                                 </ul>
+                                                                </div>
+                                                               </div><!--- END COL --
+                                                              </div><!--- END ROW --	
+                                                             </div><!--- END CONTAINER --
+                                                            </section> --
+                                                            <!-- END TEAM -->
 
     </div>
 
@@ -121,8 +121,6 @@
                 <div class="adbirt-section-title text-center wow zoomIn" data-wow-duration="0.3s" data-wow-delay="0.1s"
                     data-wow-offset="0">
                     <h2 class="text-primary-color font-weight-bold">For Advertisers</h2>
-                    <p class="text-black">Signup as an Advertiser within minutes & get your Ads across our Ad
-                        Networks.</p>
                 </div>
             </div>
             <!--- END COL -->
@@ -132,7 +130,7 @@
         <br>
 
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-12">
                 <div class="owl-carousel owl-theme adbirt-main-testimonials adbirt-testimonial-slider">
 
                     <div class="adbirt-best-service-slide">
@@ -143,43 +141,6 @@
                             <h3 class="adbirt-best-service-title">1. Create an Account</h3>
                             <p class="adbirt-best-service-description">Signing up on Adbirt as an Advertiser is the
                                 first step to putting your message across our Ad Network.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="adbirt-best-service-slide px-1">
-                        <div class="adbirt-best-service-img">
-                            <img src="public/assets-revamp/img/how-it-works/fundwallet.jpg" alt="Sign up" height="232">
-                        </div>
-                        <div class="adbirt-best-service-content">
-                            <h3 class="adbirt-best-service-title">2. Fund your Ads Wallet</h3>
-                            <p class="adbirt-best-service-description">You can Fund your Wallet with as low as $1
-                                and you can set a CPA (Cost per action) to as low as $0.01/Action.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="adbirt-best-service-slide px-1">
-                        <div class="adbirt-best-service-img">
-                            <img src="public/assets-revamp/img/how-it-works/createads.jpg" alt="Sign up" height="232">
-                        </div>
-                        <div class="adbirt-best-service-content">
-                            <h3 class="adbirt-best-service-title">3. Create your First Ads</h3>
-                            <p class="adbirt-best-service-description">Create a nice and professional looking Ads
-                                to
-                                capture your Audience using our Ads Campaign builder.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="adbirt-best-service-slide px-1">
-                        <div class="adbirt-best-service-img">
-                            <img src="public/assets-revamp/img/how-it-works/setbudget.jpg" alt="Sign up" height="232">
-                        </div>
-                        <div class="adbirt-best-service-content">
-                            <h3 class="adbirt-best-service-title">4. Set your Budget</h3>
-                            <p class="adbirt-best-service-description">Like we made mention earlier, you are in
-                                control of the CPA, set your Budget your way, within your means.
                             </p>
                         </div>
                     </div>

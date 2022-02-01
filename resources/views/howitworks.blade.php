@@ -29,99 +29,6 @@
             </div>
         </div><!-- .adbirt-page-heading -->
 
-
-
-        <!-- START OUR TEAM -->
-        <!-- <section id="team" class="adbirt-team-area adbirt-section-padding">
-                                                                                                                                                                                                                                 <div class="container">	
-                                                                                                                                                                                                                                  <div class="row justify-content-center">
-                                                                                                                                                                                                                                   <div class="col-lg-7 col-xl-6">
-                                                                                                                                                                                                                                    <div class="adbirt-section-title text-center wow zoomIn" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
-                                                                                                                                                                                                                                     <h5 class="adbirt-sheading">Our Team Member</h5>
-                                                                                                                                                                                                                                     <h2 class="">Meet Our Exclusive Member For Your Help</h2>
-                                                                                                                                                                                                                                     <p>Lorem ipsum dolor sit amet elit , consectetur adipiscing , sed eiusmod tempor sit amet elit dolor sit amet elit.</p>
-                                                                                                                                                                                                                                    </div>
-                                                                                                                                                                                                                                   </div><!--- END COL --
-                                                                                                                                                                                                                                  </div><!--- END ROW --
-                                                                                                                                                                                                                                  
-                                                                                                                                                                                                                                  <div class="row clearfix">
-                                                                                                                                                                                                                                   <div class="col-lg-3 col-md-6 col-12">
-                                                                                                                                                                                                                                    <div class="adbirt-single-team wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
-                                                                                                                                                                                                                                     <div class="adbirt-team-pic">
-                                                                                                                                                                                                                                      <img src="public/assets-revamp/img/team/1.jpg" alt="">
-                                                                                                                                                                                                                                     </div>
-                                                                                                                                                                                                                                     <div class="adbirt-team-content">
-                                                                                                                                                                                                                                      <h3 class="adbirt-team-title">Khabir</h3>
-                                                                                                                                                                                                                                      <span class="adbirt-team-post">IT Consultant</span>
-                                                                                                                                                                                                                                     </div>
-                                                                                                                                                                                                                                     <ul class="adbirt-team-social">
-                                                                                                                                                                                                                                      <li><a href="#" class="fab fa-facebook"></a></li>
-                                                                                                                                                                                                                                      <li><a href="#" class="fab fa-google-plus"></a></li>
-                                                                                                                                                                                                                                      <li><a href="#" class="fab fa-instagram"></a></li>
-                                                                                                                                                                                                                                      <li><a href="#" class="fab fa-linkedin"></a></li>
-                                                                                                                                                                                                                                     </ul>
-                                                                                                                                                                                                                                    </div>
-                                                                                                                                                                                                                                
-                                                                                                                                                                                                                                   </div><!--- END COL --
-                                                                                                                                                                                                                                   
-                                                                                                                                                                                                                                   <div class="col-lg-3 col-md-6 col-12">
-                                                                                                                                                                                                                                    <div class="adbirt-single-team wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
-                                                                                                                                                                                                                                     <div class="adbirt-team-pic">
-                                                                                                                                                                                                                                      <img src="public/assets-revamp/img/team/2.jpg" alt="">
-                                                                                                                                                                                                                                     </div>
-                                                                                                                                                                                                                                     <div class="adbirt-team-content">
-                                                                                                                                                                                                                                      <h3 class="adbirt-team-title">Malik</h3>
-                                                                                                                                                                                                                                      <span class="adbirt-team-post">IT Developer</span>
-                                                                                                                                                                                                                                     </div>
-                                                                                                                                                                                                                                     <ul class="adbirt-team-social">
-                                                                                                                                                                                                                                      <li><a href="#" class="fab fa-facebook"></a></li>
-                                                                                                                                                                                                                                      <li><a href="#" class="fab fa-google-plus"></a></li>
-                                                                                                                                                                                                                                      <li><a href="#" class="fab fa-instagram"></a></li>
-                                                                                                                                                                                                                                      <li><a href="#" class="fab fa-linkedin"></a></li>
-                                                                                                                                                                                                                                     </ul>
-                                                                                                                                                                                                                                    </div>
-                                                                                                                                                                                                                                   </div><!--- END COL --
-                                                                                                                                                                                                                                   
-                                                                                                                                                                                                                                   <div class="col-lg-3 col-md-6 col-12">
-                                                                                                                                                                                                                                    <div class="adbirt-single-team wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="0">
-                                                                                                                                                                                                                                     <div class="adbirt-team-pic">
-                                                                                                                                                                                                                                      <img src="public/assets-revamp/img/team/3.jpg" alt="">
-                                                                                                                                                                                                                                     </div>
-                                                                                                                                                                                                                                     <div class="adbirt-team-content">
-                                                                                                                                                                                                                                      <h3 class="adbirt-team-title">Mubdi</h3>
-                                                                                                                                                                                                                                      <span class="adbirt-team-post">IT Service</span>
-                                                                                                                                                                                                                                     </div>
-                                                                                                                                                                                                                                     <ul class="adbirt-team-social">
-                                                                                                                                                                                                                                      <li><a href="#" class="fab fa-facebook"></a></li>
-                                                                                                                                                                                                                                      <li><a href="#" class="fab fa-google-plus"></a></li>
-                                                                                                                                                                                                                                      <li><a href="#" class="fab fa-instagram"></a></li>
-                                                                                                                                                                                                                                      <li><a href="#" class="fab fa-linkedin"></a></li>
-                                                                                                                                                                                                                                     </ul>
-                                                                                                                                                                                                                                    </div>
-                                                                                                                                                                                                                                   </div><!--- END COL --
-                                                                                                                                                                                                                                   
-                                                                                                                                                                                                                                   <div class="col-lg-3 col-md-6 col-12">
-                                                                                                                                                                                                                                    <div class="adbirt-single-team wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="0">
-                                                                                                                                                                                                                                     <div class="adbirt-team-pic">
-                                                                                                                                                                                                                                      <img src="public/assets-revamp/img/team/4.jpg" alt="">
-                                                                                                                                                                                                                                     </div>
-                                                                                                                                                                                                                                     <div class="adbirt-team-content">
-                                                                                                                                                                                                                                      <h3 class="adbirt-team-title">Raqib</h3>
-                                                                                                                                                                                                                                      <span class="adbirt-team-post">Web Developer</span>
-                                                                                                                                                                                                                                     </div>
-                                                                                                                                                                                                                                     <ul class="adbirt-team-social">
-                                                                                                                                                                                                                                      <li><a href="#" class="fab fa-facebook"></a></li>
-                                                                                                                                                                                                                                      <li><a href="#" class="fab fa-google-plus"></a></li>
-                                                                                                                                                                                                                                      <li><a href="#" class="fab fa-instagram"></a></li>
-                                                                                                                                                                                                                                      <li><a href="#" class="fab fa-linkedin"></a></li>
-                                                                                                                                                                                                                                     </ul>
-                                                                                                                                                                                                                                    </div>
-                                                                                                                                                                                                                                   </div><!--- END COL --
-                                                                                                                                                                                                                                  </div><!--- END ROW --	
-                                                                                                                                                                                                                                 </div><!--- END CONTAINER --
-                                                                                                                                                                                                                                </section> --
-                                                                                                                                                                                                                                <!-- END TEAM -->
-
     </div>
 
 
@@ -181,6 +88,74 @@
                             </p>
                         </div>
                     </div> --}}
+
+            <br />
+            <br />
+
+            <h3 style="font-size: 30px !important;" class="text-center w-100">Get the best results that interest you</h3>
+            <br />
+
+            <div>
+                <div class="row owl-theme d-flex align-items-center justify-content-between p-0 m-0">
+
+                    <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn"
+                        data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
+                        <div class="adbirt-best-service-img">
+                            <img src="public/assets-revamp/img/services//cpa.png" alt="CPA"
+                                style="height: 232px !important;">
+                        </div>
+                        <div class="adbirt-best-service-content">
+                            <h3 class="adbirt-best-service-title">CPA</h3>
+                            <p class="adbirt-best-service-height adbirt-best-service-description"
+                                style="height: 200px !important;">CPA marketing,
+                                also known as
+                                cost-per-action marketing, is the means of promoting your business online. <br>
+                                And only pay when you make a sale or when a specific action occurs on your
+                                website.
+                            </p>
+                            <a href="/actions-and-events" class="adbirt-themes-btn red mt-3">learn more</a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn"
+                        data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
+                        <div class="adbirt-best-service-img">
+                            <img src="public/assets-revamp/img/services/cost-per-sale.png" alt="CPC"
+                                style="height: 232px !important;">
+                        </div>
+                        <div class="adbirt-best-service-content">
+                            <h3 class="adbirt-best-service-title">CPS</h3>
+                            <p class="adbirt-best-service-height adbirt-best-service-description px-1"
+                                style="height: 200px !important;">CPS cost-per-sales is a metric used in advertising
+                                to determine the amount of money you paid out for every generated sale on your
+                                promoted campaign.
+                            </p>
+                            <a href="/actions-and-events" class="adbirt-themes-btn red mt-3">learn more</a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn"
+                        data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
+                        <div class="adbirt-best-service-img">
+                            <img src="public/assets-revamp/img/services/cpd.png" alt="CPD"
+                                style="height: 232px !important;">
+                        </div>
+                        <div class="adbirt-best-service-content">
+                            <h3 class="adbirt-best-service-title">CPD</h3>
+                            <p class="adbirt-best-service-height adbirt-best-service-description"
+                                style="height: 200px !important;">(CPD)
+                                cost-per-download is an advertising
+                                model that allows advertisers pays for each specified action, typically the
+                                downloading of an application or file.
+                            </p>
+                            <a href="/actions-and-events" class="adbirt-themes-btn red mt-3">learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--- END ROW -->
 
 
         </div>

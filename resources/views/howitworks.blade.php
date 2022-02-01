@@ -304,9 +304,9 @@
     <!-- End Adbirt for Publishers -->
 
 
-    <div class="container my-3">
+    <div class="container mt-3 mb-2">
         <h3 class="text-center" style="font-size: 30px !important;">
-            <span class="text-primary-color">Best-</span>Converting Ad formats
+            <span class="text-primary-color" style="font-size: 30px !important;">Best-</span>Converting Ad formats
         </h3>
 
         <p class="text-center">
@@ -316,7 +316,16 @@
 
         <p style="font-size: 20px !important;" class="text-center">See all our Ad Formats:</p>
 
-        {{--  --}}
+        <br />
+        <br />
+
+        <ul class="d-flex flex-row align-items-center">
+            <li class="p-3"> <a class="no-text-decoration" href="# ">DISPLAY BANNER</a></li>
+            <li class="p-3"> <a class="no-text-decoration" href="# ">NATIVE ADS</a></li>
+            <li class="p-3"> <a class="no-text-decoration" href="# ">DIRECT LINKS</a></li>
+            <li class="p-3"> <a class="no-text-decoration" href="# ">VIDEO ADS</a></li>
+            <li class="p-3"> <a class="no-text-decoration" href="# ">PUSH NOTIFICATIONS</a></li>
+        </ul>
     </div>
 
 
@@ -477,12 +486,12 @@
     </div>
     <!-- End Adbirt for Publishers --> --}}
 
-    <div class="container pt-1 pb-4">
+    {{-- <div class="container pt-1 pb-4">
         <br>
         <div class="d-flex align-items-center justify-content-center">
             <a href="/dashboard" class="text-white font-weight-bold bg-primary-color btn">Let's Start</a>
         </div>
         <br>
-    </div>
+    </div> --}}
 
 @stop

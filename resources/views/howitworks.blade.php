@@ -57,7 +57,7 @@
                 <div class="">
                     <h3 style="font-size: 35px !important; line-height: 1.3 !important;"
                         class="font-weight-bold text-left w-75">Increase your sales
-                        and generate new leads with Adbirt Ads</h3>
+                        and generate new leads with Adbirt Ads.</h3>
 
                     <p>With our robust technology, we'll tailor your product
                         or service in front of the prospective customer who is
@@ -67,7 +67,7 @@
 
                     <br />
 
-                    <a href="/" class="btn bg-primary-color text-white font-weight-bold">Learn More</a>
+                    <a href="/dashboard" class="btn bg-primary-color text-white font-weight-bold">Learn More</a>
                 </div>
             </div>
 
@@ -185,24 +185,25 @@
             <div class="col-12 col-md-6">
                 <div class="">
                     <h3 style="font-size: 35px !important; line-height: 1.3 !important;"
-                        class="font-weight-bold text-left w-75">Increase your sales
-                        and generate new leads with Adbirt Ads</h3>
+                        class="font-weight-bold text-left w-75">No minimum threshold
+                        is required and there's
+                        no limit to earnings.</h3>
 
-                    <p>With our robust technology, we'll tailor your product
-                        or service in front of the prospective customer who is
-                        searching for your business online. And pay your des
-                        ired amount only when you make sale or leads.
+                    <p>We acknowledge creating good content is hard. Therefore monetizing it shouldn't be difficult. Join
+                        thousands of pub
+                        lishers like yours to Monetize your website traffic and with
+                        draw instantly when you earn as Adbirt Publisher.
                     </p>
 
                     <br />
 
-                    <a href="/" class="btn bg-primary-color text-white font-weight-bold">Learn More</a>
+                    <a href="/dashboard" class="btn bg-primary-color text-white font-weight-bold">Learn More</a>
                 </div>
             </div>
 
             <div class="col-12 col-md-6">
                 <div style="overflow: hidden !important;">
-                    <img src="/public/assets-revamp/img/phone-join-free.png" alt="Join Adbirt for free"
+                    <img src="/public/assets-revamp/img/phone-monetize.png" alt="Join Adbirt for free"
                         class="img-fluid join-free-feature-img" />
                 </div>
             </div>
@@ -223,7 +224,7 @@
             <br />
             <br />
 
-            <h3 style="font-size: 30px !important;" class="text-center w-100">Get the best results that interest you</h3>
+            <h3 style="font-size: 30px !important;" class="text-center w-100">Monetize Your Website Traffic With Adbirt</h3>
 
             <br />
             <br />
@@ -239,11 +240,10 @@
                                 style="height: 232px !important;">
                         </div>
                         <div class="adbirt-best-service-content p-2">
-                            <h3 class="adbirt-best-service-title">Cost Per Action</h3>
+                            <h3 class="adbirt-best-service-title">Create Account</h3>
                             <p class="adbirt-best-service-height adbirt-best-service-description"
-                                style="height: 200px !important;">Promote your products or service online pay your
-                                desired
-                                amount when you make a sale or get a new lead to your business.
+                                style="height: 200px !important;">Set up your publishers account by telling us more about
+                                your medium of monetization.
                             </p>
                         </div>
                     </div>
@@ -259,11 +259,10 @@
                                 style="height: 232px !important;">
                         </div>
                         <div class="adbirt-best-service-content p-2">
-                            <h3 class="adbirt-best-service-title">Cost per Sales</h3>
+                            <h3 class="adbirt-best-service-title">Choose Campaign Type</h3>
                             <p class="adbirt-best-service-height adbirt-best-service-description px-1"
-                                style="height: 200px !important;">You're in total control of your ad budget, set the
-                                cost
-                                within your means and only pay after a successful sales or leads.
+                                style="height: 200px !important;">Pick a Campaign that is suitable to the interests of your
+                                Audience, i.e email leads or website.
                             </p>
                         </div>
 
@@ -279,11 +278,10 @@
                                 style="height: 232px !important;">
                         </div>
                         <div class="adbirt-best-service-content p-2">
-                            <h3 class="adbirt-best-service-title">Cost Per Click</h3>
+                            <h3 class="adbirt-best-service-title">Put it on your website</h3>
                             <p class="adbirt-best-service-height adbirt-best-service-description"
-                                style="height: 200px !important;">Get unlimited impressions to your business for free
-                                and
-                                only pay for a valid click when users visit or land on your websites.
+                                style="height: 200px !important;">Place it on your website, Email Leads, Social Media
+                                handles,Whatsapp group, Blog or other Channels.
                             </p>
                         </div>
                     </div>

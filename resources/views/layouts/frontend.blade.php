@@ -320,21 +320,6 @@
     <!-- jQuery Wavify JS -->
     <script src="public/assets-revamp/js/jquery.wavify.js"></script>
     <script src="public/assets-revamp/js/main.js"></script>
-    <script>
-        //**===================a Adbirt banner waves ===================**//		
-        $('#adbirt-wavify') && $("#adbirt-wavify svg path#wave").wavify({
-            height: 80,
-            bones: 2,
-            amplitude: 75,
-            color: "#fff",
-            speed: .45
-        });
-
-        $('#adbirt-wavify').length && $('#adbirt-wavify').css({
-            width: '100%',
-            zIndex: 999
-        })
-    </script>
 
     @yield('script')
 </body>

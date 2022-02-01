@@ -305,7 +305,18 @@
 
 
     <div class="container my-3">
-        <h3 class="text-center"><span class="text-primary-color">Best-</span>Converting Ad formats</h3>
+        <h3 class="text-center" style="font-size: 30px !important;">
+            <span class="text-primary-color">Best-</span>Converting Ad formats
+        </h3>
+
+        <p class="text-center">
+            We offer the best-performing Ad formats that match the latest trending technology - choose the best ads format
+            that interests you!
+        </p>
+
+        <p style="font-size: 20px !important;" class="text-center">See all our Ad Formats:</p>
+
+        {{--  --}}
     </div>
 
 

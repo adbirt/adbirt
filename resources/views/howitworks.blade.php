@@ -53,7 +53,7 @@
 
         <div class="row">
 
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 w-100 d-flex flex-column justify-content-center">
                 <div class="">
                     <h3 style="font-size: 35px !important; line-height: 1.3 !important;"
                         class="font-weight-bold text-left w-75">Increase your sales
@@ -61,8 +61,7 @@
 
                     <p>With our robust technology, we'll tailor your product
                         or service in front of the prospective customer who is
-                        searching for your business online. And pay your des
-                        ired amount only when you make sale or leads.
+                        searching for your business online. And pay your desired amount only when you make sale or leads.
                     </p>
 
                     <br />
@@ -182,7 +181,7 @@
 
         <div class="row">
 
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 w-100 d-flex flex-column justify-content-center">
                 <div class="">
                     <h3 style="font-size: 35px !important; line-height: 1.3 !important;"
                         class="font-weight-bold text-left w-75">No minimum threshold

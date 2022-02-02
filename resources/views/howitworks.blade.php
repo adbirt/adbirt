@@ -17,7 +17,7 @@
         }
 
         .adbirt-best-service-img>img {
-            width: 150px !important;
+            width: 145px !important;
         }
 
     </style>
@@ -99,7 +99,7 @@
 
                 <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn p-3"
                     data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
-                    <div class="shadow">
+                    <div class="">
                         <div class="adbirt-best-service-img d-flex flex-row justify-content-center">
                             <img src="/public/assets-revamp/img/services/shopping-action.jpg" alt="CPA">
                         </div>
@@ -117,7 +117,7 @@
 
                 <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn p-3"
                     data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
-                    <div class="shadow">
+                    <div class="">
 
                         <div class="adbirt-best-service-img d-flex flex-row justify-content-center">
                             <img src="/public/assets-revamp/img/services/cost-per-sale.png" alt="CPC">
@@ -137,7 +137,7 @@
 
                 <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn p-3"
                     data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
-                    <div class="shadow">
+                    <div class="">
                         <div class="adbirt-best-service-img d-flex flex-row justify-content-center">
                             <img src="/public/assets-revamp/img/services/click-action.jpeg" alt="CPD">
                         </div>
@@ -240,7 +240,7 @@
 
                 <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn p-3"
                     data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
-                    <div class="shadow">
+                    <div class="">
                         <div class="adbirt-best-service-img d-flex flex-row justify-content-center">
                             <img src="/public/assets-revamp/img/create-account.jpg" alt="">
                         </div>
@@ -257,7 +257,7 @@
 
                 <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn p-3"
                     data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
-                    <div class="shadow">
+                    <div class="">
 
                         <div class="adbirt-best-service-img d-flex flex-row justify-content-center">
                             <img src="/public/assets-revamp/img/choose-campaign.png" alt="">
@@ -276,7 +276,7 @@
 
                 <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn p-3"
                     data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
-                    <div class="shadow">
+                    <div class="">
                         <div class="adbirt-best-service-img d-flex flex-row justify-content-center">
                             <img src="/public/assets-revamp/img/place-on-website.png" alt="">
                         </div>

@@ -12,6 +12,14 @@
             transform: scale(1.2);
         }
 
+        .adbirt-best-service-slide .adbirt-best-service-img:before {
+            background: none !important;
+        }
+
+        .adbirt-best-service-img>img {
+            width: 150px !important;
+        }
+
     </style>
 @stop
 
@@ -92,9 +100,8 @@
                 <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn p-3"
                     data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
                     <div class="shadow">
-                        <div class="adbirt-best-service-img">
-                            <img src="/public/assets-revamp/img/services/shopping-action.jpg" alt="CPA"
-                                style="height: 232px !important;">
+                        <div class="adbirt-best-service-img d-flex flex-row justify-content-center">
+                            <img src="/public/assets-revamp/img/services/shopping-action.jpg" alt="CPA">
                         </div>
                         <div class="adbirt-best-service-content p-2">
                             <h3 class="adbirt-best-service-title">Cost Per Action</h3>
@@ -112,9 +119,8 @@
                     data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
                     <div class="shadow">
 
-                        <div class="adbirt-best-service-img">
-                            <img src="/public/assets-revamp/img/services/cost-per-sale.png" alt="CPC"
-                                style="height: 232px !important;">
+                        <div class="adbirt-best-service-img d-flex flex-row justify-content-center">
+                            <img src="/public/assets-revamp/img/services/cost-per-sale.png" alt="CPC">
                         </div>
                         <div class="adbirt-best-service-content p-2">
                             <h3 class="adbirt-best-service-title">Cost per Sales</h3>
@@ -132,9 +138,8 @@
                 <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn p-3"
                     data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
                     <div class="shadow">
-                        <div class="adbirt-best-service-img">
-                            <img src="/public/assets-revamp/img/services/click-action.jpeg" alt="CPD"
-                                style="height: 232px !important;">
+                        <div class="adbirt-best-service-img d-flex flex-row justify-content-center">
+                            <img src="/public/assets-revamp/img/services/click-action.jpeg" alt="CPD">
                         </div>
                         <div class="adbirt-best-service-content p-2">
                             <h3 class="adbirt-best-service-title">Cost Per Click</h3>
@@ -236,9 +241,8 @@
                 <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn p-3"
                     data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
                     <div class="shadow">
-                        <div class="adbirt-best-service-img">
-                            <img src="/public/assets-revamp/img/create-account.jpg" alt="CPA"
-                                style="height: 232px !important;">
+                        <div class="adbirt-best-service-img d-flex flex-row justify-content-center">
+                            <img src="/public/assets-revamp/img/create-account.jpg" alt="">
                         </div>
                         <div class="adbirt-best-service-content p-2">
                             <h3 class="adbirt-best-service-title">Create Account</h3>
@@ -255,9 +259,8 @@
                     data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
                     <div class="shadow">
 
-                        <div class="adbirt-best-service-img">
-                            <img src="/public/assets-revamp/img/choose-campaign.png" alt="CPC"
-                                style="height: 232px !important;">
+                        <div class="adbirt-best-service-img d-flex flex-row justify-content-center">
+                            <img src="/public/assets-revamp/img/choose-campaign.png" alt="">
                         </div>
                         <div class="adbirt-best-service-content p-2">
                             <h3 class="adbirt-best-service-title">Choose Campaign Type</h3>
@@ -274,9 +277,8 @@
                 <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn p-3"
                     data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
                     <div class="shadow">
-                        <div class="adbirt-best-service-img">
-                            <img src="/public/assets-revamp/img/place-on-website.png" alt="CPD"
-                                style="height: 232px !important;">
+                        <div class="adbirt-best-service-img d-flex flex-row justify-content-center">
+                            <img src="/public/assets-revamp/img/place-on-website.png" alt="">
                         </div>
                         <div class="adbirt-best-service-content p-2">
                             <h3 class="adbirt-best-service-title">Put it on your website</h3>
@@ -330,6 +332,7 @@
     </div>
 
 
+    {{-- begin: old how it works --}}
     {{-- <!-- Begin Adbirt for Advertisers -->
     <div class="container my-5">
 
@@ -492,5 +495,6 @@
         </div>
         <br>
     </div> --}}
+    {{-- end: old how it works --}}
 
 @stop

@@ -168,6 +168,10 @@
     </div>
     <!-- End Adbirt for Advertisers -->
 
+    <div class="d-flex flex-row align-items-center justify-content-center w-100">
+        <img src="/public/assets-revamp/img/adbirt-plus.png" alt="" />
+    </div>
+
     <!-- Begin Adbirt for Publishers -->
     <div class="container my-3">
 

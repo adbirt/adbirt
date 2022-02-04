@@ -20,6 +20,18 @@
             width: 145px !important;
         }
 
+        .serif-font {
+            font-family: sans-serif;
+        }
+
+        .cursive-font {
+            font-family: cursive !important;
+        }
+
+        .times-roman-font {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
     </style>
 @stop
 
@@ -50,7 +62,7 @@
             <div class="col-lg-7 col-xl-6">
                 <div class="adbirt-section-title text-center wow zoomIn" data-wow-duration="0.3s" data-wow-delay="0.1s"
                     data-wow-offset="0">
-                    <h2 class="text-primary-color font-weight-bold">For Advertisers</h2>
+                    <h2 class="text-primary-color font-weight-bold cursive-font">For Advertisers</h2>
                 </div>
             </div>
             <!--- END COL -->
@@ -67,14 +79,14 @@
                         class="font-weight-bold text-left w-75">Increase your sales
                         and generate new leads with Adbirt Ads.</h3>
 
-                    <p>With our robust technology, we'll tailor your product
+                    <p class="serif-font">With our robust technology, we'll tailor your product
                         or service in front of the prospective customer who is
                         searching for your business online. And pay your desired amount only when you make sale or leads.
                     </p>
 
                     <br />
 
-                    <a href="/dashboard" class="btn bg-primary-color text-white font-weight-bold">Learn More</a>
+                    <a href="/dashboard" class="btn bg-primary-color text-white font-weight-bold serif-font">Learn More</a>
                 </div>
             </div>
 
@@ -89,7 +101,8 @@
             <br />
             <br />
 
-            <h3 style="font-size: 30px !important;" class="text-center w-100">Get the best results that interest you</h3>
+            <h3 style="font-size: 30px !important;" class="text-center w-100 times-roman-font">Get the best results that
+                interest you</h3>
 
             <br />
             <br />
@@ -105,7 +118,7 @@
                         </div>
                         <div class="adbirt-best-service-content p-2">
                             <h3 class="adbirt-best-service-title">Cost Per Action</h3>
-                            <p class="adbirt-best-service-height adbirt-best-service-description"
+                            <p class="adbirt-best-service-height adbirt-best-service-description cursive-font"
                                 style="height: 200px !important;">Promote your products or service online pay your
                                 desired
                                 amount when you make a sale or get a new lead to your business.
@@ -124,7 +137,7 @@
                         </div>
                         <div class="adbirt-best-service-content p-2">
                             <h3 class="adbirt-best-service-title">Cost per Sales</h3>
-                            <p class="adbirt-best-service-height adbirt-best-service-description px-1"
+                            <p class="adbirt-best-service-height adbirt-best-service-description px-1 cursive-font"
                                 style="height: 200px !important;">You're in total control of your ad budget, set the
                                 cost
                                 within your means and only pay after a successful sales or leads.
@@ -143,7 +156,7 @@
                         </div>
                         <div class="adbirt-best-service-content p-2">
                             <h3 class="adbirt-best-service-title">Cost Per Click</h3>
-                            <p class="adbirt-best-service-height adbirt-best-service-description"
+                            <p class="adbirt-best-service-height adbirt-best-service-description cursive-font"
                                 style="height: 200px !important;">Get unlimited impressions to your business for free
                                 and
                                 only pay for a valid click when users visit or land on your websites.
@@ -179,7 +192,7 @@
             <div class="col-lg-7 col-xl-6">
                 <div class="adbirt-section-title text-center wow zoomIn" data-wow-duration="0.3s" data-wow-delay="0.1s"
                     data-wow-offset="0">
-                    <h2 class="text-primary-color font-weight-bold">For Publishers</h2>
+                    <h2 class="text-primary-color font-weight-bold cursive-font">For Publishers</h2>
                 </div>
             </div>
             <!--- END COL -->
@@ -197,7 +210,8 @@
                         is required and there's
                         no limit to earnings.</h3>
 
-                    <p>We acknowledge creating good content is hard. Therefore monetizing it shouldn't be difficult. Join
+                    <p class="serif-font">We acknowledge creating good content is hard. Therefore monetizing it
+                        shouldn't be difficult. Join
                         thousands of pub
                         lishers like yours to Monetize your website traffic and with
                         draw instantly when you earn as Adbirt Publisher.
@@ -234,7 +248,8 @@
             <br />
             <br />
 
-            <h3 style="font-size: 30px !important;" class="text-center w-100">Monetize Your Website Traffic With Adbirt</h3>
+            <h3 style="font-size: 30px !important;" class="text-center w-100 times-roman-font">Monetize Your Website Traffic
+                With Adbirt</h3>
 
             <br />
             <br />
@@ -250,8 +265,8 @@
                         </div>
                         <div class="adbirt-best-service-content p-2">
                             <h3 class="adbirt-best-service-title">Create Account</h3>
-                            <p class="adbirt-best-service-height adbirt-best-service-description"
-                                style="height: 200px !important;">Set up your publishers account by telling us more about
+                            <p class="adbirt-best-service-height adbirt-best-service-description cursive-font"
+                                style="height: 200px !important;">Setup your publishers account by telling us more about
                                 your medium of monetization.
                             </p>
                         </div>
@@ -268,7 +283,7 @@
                         </div>
                         <div class="adbirt-best-service-content p-2">
                             <h3 class="adbirt-best-service-title">Choose Campaign Type</h3>
-                            <p class="adbirt-best-service-height adbirt-best-service-description px-1"
+                            <p class="adbirt-best-service-height adbirt-best-service-description px-1 cursive-font"
                                 style="height: 200px !important;">Pick a Campaign that is suitable to the interests of your
                                 Audience, i.e email leads or website.
                             </p>
@@ -286,7 +301,7 @@
                         </div>
                         <div class="adbirt-best-service-content p-2">
                             <h3 class="adbirt-best-service-title">Put it on your website</h3>
-                            <p class="adbirt-best-service-height adbirt-best-service-description"
+                            <p class="adbirt-best-service-height adbirt-best-service-description cursive-font"
                                 style="height: 200px !important;">Place it on your website, Email Leads, Social Media
                                 handles,Whatsapp group, Blog or other Channels.
                             </p>
@@ -313,15 +328,16 @@
 
     <div class="container mt-3 mb-2">
         <h3 class="text-center" style="font-size: 30px !important;">
-            <span class="text-primary-color" style="font-size: 30px !important;">Best-</span>Converting Ad formats
+            <span class="text-primary-color times-roman-font" style="font-size: 30px !important;">Best-</span>Converting Ad
+            formats
         </h3>
 
-        <p class="text-center">
+        <p class="text-center cursive-font">
             We offer the best-performing Ad formats that match the latest trending technology - choose the best ads format
             that interests you!
         </p>
 
-        <p style="font-size: 20px !important;" class="text-center">See all our Ad Formats:</p>
+        <p style="font-size: 20px !important;" class="text-center times-roman-font">See all our Ad Formats:</p>
 
         <br />
         <br />

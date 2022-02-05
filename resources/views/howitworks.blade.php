@@ -25,7 +25,7 @@
         }
 
         .cursive-font {
-            font-family: cursive !important;
+            font-family: cursive;
         }
 
         .times-roman-font {
@@ -34,6 +34,12 @@
 
         .adbirt-best-service-height {
             height: 100px !important;
+        }
+
+        @media only screen and (max-width: 500) {
+            .cursive-font {
+                font-family: verdana !important;
+            }
         }
 
     </style>

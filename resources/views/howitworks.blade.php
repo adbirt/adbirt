@@ -33,10 +33,10 @@
         }
 
         .adbirt-best-service-height {
-            height: 100px !important;
+            height: 150px !important;
         }
 
-        @media only screen and (max-width: 500) {
+        @media screen (max-width: 600px) {
             .cursive-font {
                 font-family: verdana !important;
             }
@@ -128,7 +128,9 @@
                         </div>
                         <div class="adbirt-best-service-content p-2">
                             <h3 class="adbirt-best-service-title">Cost Per Action</h3>
-                            <p class="adbirt-best-service-height adbirt-best-service-description cursive-font">Promote your
+                            <p
+                                class="shadow-lg p-3 adbirt-best-service-height adbirt-best-service-description cursive-font">
+                                Promote your
                                 products or service online pay your
                                 desired
                                 amount when you make a sale or get a new lead to your business.
@@ -147,7 +149,9 @@
                         </div>
                         <div class="adbirt-best-service-content p-2">
                             <h3 class="adbirt-best-service-title">Cost per Sales</h3>
-                            <p class="adbirt-best-service-height adbirt-best-service-description px-1 cursive-font">You're
+                            <p
+                                class="shadow-lg p-3 adbirt-best-service-height adbirt-best-service-description px-1 cursive-font">
+                                You're
                                 in total control of your ad budget, set the
                                 cost
                                 within your means and only pay after a successful sales or leads.
@@ -166,7 +170,9 @@
                         </div>
                         <div class="adbirt-best-service-content p-2">
                             <h3 class="adbirt-best-service-title">Cost Per Click</h3>
-                            <p class="adbirt-best-service-height adbirt-best-service-description cursive-font">Get unlimited
+                            <p
+                                class="shadow-lg p-3 adbirt-best-service-height adbirt-best-service-description cursive-font">
+                                Get unlimited
                                 impressions to your business for free
                                 and
                                 only pay for a valid click when users visit or land on your websites.
@@ -275,7 +281,9 @@
                         </div>
                         <div class="adbirt-best-service-content p-2">
                             <h3 class="adbirt-best-service-title">Create Account</h3>
-                            <p class="adbirt-best-service-height adbirt-best-service-description cursive-font">Setup your
+                            <p
+                                class="shadow-lg p-3 adbirt-best-service-height adbirt-best-service-description cursive-font">
+                                Setup your
                                 publishers account by telling us more about
                                 your medium of monetization.
                             </p>
@@ -293,7 +301,9 @@
                         </div>
                         <div class="adbirt-best-service-content p-2">
                             <h3 class="adbirt-best-service-title">Choose Campaign Type</h3>
-                            <p class="adbirt-best-service-height adbirt-best-service-description px-1 cursive-font">Pick a
+                            <p
+                                class="shadow-lg p-3 adbirt-best-service-height adbirt-best-service-description px-1 cursive-font">
+                                Pick a
                                 Campaign that is suitable to the interests of your
                                 Audience, i.e email leads or website.
                             </p>
@@ -311,7 +321,9 @@
                         </div>
                         <div class="adbirt-best-service-content p-2">
                             <h3 class="adbirt-best-service-title">Put it on your website</h3>
-                            <p class="adbirt-best-service-height adbirt-best-service-description cursive-font">Place it on
+                            <p
+                                class="shadow-lg p-3 adbirt-best-service-height adbirt-best-service-description cursive-font">
+                                Place it on
                                 your website, Email Leads, Social Media
                                 handles,Whatsapp group, Blog or other Channels.
                             </p>

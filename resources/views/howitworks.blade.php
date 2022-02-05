@@ -36,6 +36,10 @@
             height: 150px !important;
         }
 
+        .adbirt-best-service-height:hover {
+            transform: scale(1.3);
+        }
+
         @media screen (max-width: 600px) {
             .cursive-font {
                 font-family: verdana !important;
@@ -364,12 +368,12 @@
         <br />
         <br />
 
-        <ul class="d-flex flex-row align-items-center justify-content-center text-primary-color">
-            <li class="p-3"> <a class="no-text-decoration" href="# ">DISPLAY BANNER</a></li>
-            <li class="p-3"> <a class="no-text-decoration" href="# ">NATIVE ADS</a></li>
-            <li class="p-3"> <a class="no-text-decoration" href="# ">DIRECT LINKS</a></li>
-            <li class="p-3"> <a class="no-text-decoration" href="# ">VIDEO ADS</a></li>
-            <li class="p-3"> <a class="no-text-decoration" href="# ">PUSH NOTIFICATIONS</a></li>
+        <ul class="w-100 p-2 d-flex flex-row align-items-center justify-content-center text-primary-color">
+            <li class="p-3"> <a class="no-text-decoration" href="#">DISPLAY BANNER</a></li>
+            <li class="p-3"> <a class="no-text-decoration" href="#">NATIVE ADS</a></li>
+            <li class="p-3"> <a class="no-text-decoration" href="#">DIRECT LINKS</a></li>
+            <li class="p-3"> <a class="no-text-decoration" href="#">VIDEO ADS</a></li>
+            <li class="p-3"> <a class="no-text-decoration" href="#">PUSH NOTIFICATIONS</a></li>
         </ul>
     </div>
 

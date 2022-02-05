@@ -24,11 +24,9 @@
             font-family: sans-serif;
         }
 
-        .cursive-font {
+        {{-- .cursive-font {
             font-family: cursive;
-        }
-
-        .times-roman-font {
+        } --}} .times-roman-font {
             font-family: 'Times New Roman', Times, serif;
         }
 

@@ -34,10 +34,11 @@
 
         .adbirt-best-service-height {
             height: 150px !important;
+            transition: 1.5s all;
         }
 
         .adbirt-best-service-height:hover {
-            transform: scale(1.3);
+            transform: scale(1.23);
         }
 
         @media screen (max-width: 600px) {

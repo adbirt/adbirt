@@ -522,11 +522,11 @@
         <!-- <h4 class="card-title">Your monetary statistics</h4> -->
         <p class="card-subtitle font-weight-bold">Your Statistics</p>
     </div>
-    <div class="row">
+    <div class="row p-2 shadow bg-primary rounded-lg">
 
         <div class="col-6 col-lg-3 mb-3">
             <!-- small box -->
-            <div class="small-box bg-info h-100">
+            <div class="small-box bg-primary h-100">
                 <div class="inner">
                     <h3>
                         {{ $ActiveAd }}
@@ -545,7 +545,7 @@
 
         <div class="col-6 col-lg-3 mb-3">
             <!-- small box -->
-            <div class="small-box bg-info h-100">
+            <div class="small-box bg-primary h-100">
                 <div class="inner">
                     <h3>
                         {{ $Impressions }}
@@ -563,7 +563,7 @@
 
         <div class="col-6 col-lg-3 mb-3">
             <!-- small box -->
-            <div class="small-box bg-danger h-100">
+            <div class="small-box bg-primary h-100">
                 <div class="inner">
                     <h3>
                         {{ $Clicks }}
@@ -581,7 +581,7 @@
 
         <div class="col-6 col-lg-3 mb-3">
             <!-- small box -->
-            <div class="small-box bg-warning h-100">
+            <div class="small-box bg-primary h-100">
                 <div class="inner">
                     <h3>
                         {{ $Leads }}

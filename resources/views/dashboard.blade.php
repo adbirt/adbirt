@@ -1,5 +1,14 @@
 @extends('layouts.dashboard')
 
+@section('style')
+    <style>
+        .small-box {
+            box-shadow: none !important;
+        }
+
+    </style>
+@endsection
+
 @section('content')
 
     <!-- Material Design Icons  -->
@@ -406,14 +415,14 @@
 
         <!-- new -->
         <!-- Small boxes (Stat box) -->
-        <div class="row">
+        <div class="row shadow bg-primary rounded-lg p-3">
             <div class="col-lg-3 col-6 mb-3">
                 <!-- small box -->
-                <div class="small-box bg-info h-100">
+                <div class="small-box bg-primary h-100">
                     <div class="inner">
                         <h3>{{ $ActiveAd }}</h3>
 
-                        <p>Active Ads</p>
+                        <p class="font-weight-bold">Active Ads</p>
                     </div>
                     <div class="icon">
                         <!-- <i class="ion ion-bag"></i> -->
@@ -425,13 +434,13 @@
             <!-- ./col -->
             <div class="col-lg-3 col-6 mb-3">
                 <!-- small box -->
-                <div class="small-box bg-info h-100">
+                <div class="small-box bg-primary h-100">
                     <div class="inner">
                         <h3>{{ $Impressions ?? 0 }}
                             <!-- <sup style="font-size: 20px">%</sup> -->
                         </h3>
 
-                        <p>Impressions</p>
+                        <p class="font-weight-bold">Impressions</p>
                     </div>
                     <div class="icon">
                         <i class="fa fa-eye"></i>
@@ -442,11 +451,11 @@
             <!-- ./col -->
             <div class="col-lg-3 col-6 mb-3">
                 <!-- small box -->
-                <div class="small-box bg-warning h-100">
+                <div class="small-box bg-primary h-100">
                     <div class="inner">
                         <h3>{{ $Clicks ?? 0 }}</h3>
 
-                        <p>Clicks</p>
+                        <p class="font-weight-bold">Clicks</p>
                     </div>
                     <div class="icon">
                         <i class="fa fa-mouse-pointer"></i>
@@ -457,11 +466,11 @@
             <!-- ./col -->
             <div class="col-lg-3 col-6 mb-3">
                 <!-- small box -->
-                <div class="small-box bg-danger h-100">
+                <div class="small-box bg-primary h-100">
                     <div class="inner">
                         <h3>{{ $Leads }}</h3>
 
-                        <p>Leads</p>
+                        <p class="font-weight-bold">Leads</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-pie-graph"></i>

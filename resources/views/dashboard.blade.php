@@ -466,7 +466,7 @@
             <!-- ./col -->
             <div class="col-lg-3 col-6 mb-3">
                 <!-- small box -->
-                <div class="small-box bg-primary h-100 border-right border-light">
+                <div class="small-box bg-primary h-100">
                     <div class="inner">
                         <h3>{{ $Leads }}</h3>
 

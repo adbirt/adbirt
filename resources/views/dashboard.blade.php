@@ -526,7 +526,7 @@
 
         <div class="col-6 col-lg-3 mb-3">
             <!-- small box -->
-            <div class="small-box bg-primary h-100">
+            <div class="small-box bg-primary h-100 border-right border-light">
                 <div class="inner">
                     <h3>
                         {{ $ActiveAd }}
@@ -545,7 +545,7 @@
 
         <div class="col-6 col-lg-3 mb-3">
             <!-- small box -->
-            <div class="small-box bg-primary h-100">
+            <div class="small-box bg-primary h-100 border-right border-light">
                 <div class="inner">
                     <h3>
                         {{ $Impressions }}
@@ -563,7 +563,7 @@
 
         <div class="col-6 col-lg-3 mb-3">
             <!-- small box -->
-            <div class="small-box bg-primary h-100">
+            <div class="small-box bg-primary h-100 border-right border-light">
                 <div class="inner">
                     <h3>
                         {{ $Clicks }}
@@ -581,7 +581,7 @@
 
         <div class="col-6 col-lg-3 mb-3">
             <!-- small box -->
-            <div class="small-box bg-primary h-100">
+            <div class="small-box bg-primary h-100 border-right border-light">
                 <div class="inner">
                     <h3>
                         {{ $Leads }}

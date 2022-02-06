@@ -130,6 +130,7 @@
                                             @foreach ($campaign_types as $type)
                                                 <option value="{!! $type !!}" @if (isset($campaignsData) && $campaignsData->campaign_type == $type) selected="true" @endif>
                                                     {!! $type !!}
+                                                    {!! $type == 'Native Content Ad' ? '[beta]' : '' !!}
                                                 </option>
                                             @endforeach
                                         </select>
@@ -293,7 +294,7 @@
 
                                     <span style="color:red;" id="response"></span>
                                     <!-- <span id="width"></span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <span id="height"></span> -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <span id="height"></span> -->
                                 </div>
                             </div>
                             <div class="form-group">

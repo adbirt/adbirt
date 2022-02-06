@@ -418,7 +418,7 @@
         <div class="row shadow bg-primary rounded-lg p-3">
             <div class="col-lg-3 col-6 mb-3">
                 <!-- small box -->
-                <div class="small-box bg-primary h-100">
+                <div class="small-box bg-primary h-100 border-right border-light">
                     <div class="inner">
                         <h3>{{ $ActiveAd }}</h3>
 
@@ -434,7 +434,7 @@
             <!-- ./col -->
             <div class="col-lg-3 col-6 mb-3">
                 <!-- small box -->
-                <div class="small-box bg-primary h-100">
+                <div class="small-box bg-primary h-100 border-right border-light">
                     <div class="inner">
                         <h3>{{ $Impressions ?? 0 }}
                             <!-- <sup style="font-size: 20px">%</sup> -->
@@ -451,7 +451,7 @@
             <!-- ./col -->
             <div class="col-lg-3 col-6 mb-3">
                 <!-- small box -->
-                <div class="small-box bg-primary h-100">
+                <div class="small-box bg-primary h-100 border-right border-light">
                     <div class="inner">
                         <h3>{{ $Clicks ?? 0 }}</h3>
 
@@ -466,7 +466,7 @@
             <!-- ./col -->
             <div class="col-lg-3 col-6 mb-3">
                 <!-- small box -->
-                <div class="small-box bg-primary h-100">
+                <div class="small-box bg-primary h-100 border-right border-light">
                     <div class="inner">
                         <h3>{{ $Leads }}</h3>
 

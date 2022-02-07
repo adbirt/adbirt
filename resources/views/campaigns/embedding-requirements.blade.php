@@ -48,21 +48,18 @@
                                     <p>STEP 1: Download and install Adbirt Publisher plugin</p>
                                     <a href="https://adbirt.com/public/assets-revamp/adbirt-publishers-plugin.zip"
                                         class="btn btn-info">Download Plugin</a>
-                                    <br />
                                     {{-- <a href="http://adbirt.com/blog" target="_blank">Learn More</a>
                                     <br /> --}}
 
-                                    <p>Step 2. Login to the plugin with your Adbirt publisher email and password</p>
                                     <br />
+                                    <p>Step 2. Login to the plugin with your Adbirt publisher email and password</p>
 
                                     <p>Step 3. Copy the shortcode from the plugin </p>
                                     <br />
 
                                     <p>Step 4. Place the code wherever you need ads to show on your websites</p>
-                                    <br />
 
                                     <p>That's it, you're all done!</p>
-                                    <br />
                                 </div>
                                 <br />
 
@@ -70,7 +67,6 @@
                                 <div class="pl-4">
                                     <p>Step 1. Make sure you add this script to your site's source code for the ad to show,
                                         just before the closing <code>&lt;body&gt;</code> tag </p>
-                                    <br />
                                     <div class="row input-group mb-3 w-75">
                                         <input type="text" value='<script src="https://adbirt.com/public/assets/js/ubm-jsonp.js?ver=2.70"></script>' class="form-control" id="source-code"
                                             readonly>

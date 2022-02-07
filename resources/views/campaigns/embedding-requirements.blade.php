@@ -56,7 +56,6 @@
                                     <p>Step 2. Login to the plugin with your Adbirt publisher email and password</p>
 
                                     <p>Step 3. Copy the shortcode from the plugin </p>
-                                    <br />
 
                                     <p>Step 4. Place the code wherever you need ads to show on your websites</p>
 

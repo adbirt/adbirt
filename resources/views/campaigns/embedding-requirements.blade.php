@@ -52,6 +52,7 @@
                                     <br /> --}}
 
                                     <br />
+                                    <br />
                                     <p>Step 2. Login to the plugin with your Adbirt publisher email and password</p>
 
                                     <p>Step 3. Copy the shortcode from the plugin </p>

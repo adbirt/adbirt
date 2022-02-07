@@ -130,7 +130,7 @@
                                             @foreach ($campaign_types as $type)
                                                 <option value="{!! $type !!}" @if (isset($campaignsData) && $campaignsData->campaign_type == $type) selected="true" @endif>
                                                     {!! $type !!}
-                                                    {!! $type == 'Native Content Ad' ? '[beta]' : '' !!}
+                                                    {!! $type == 'Native Content Ad' ? ' [beta]' : '' !!}
                                                 </option>
                                             @endforeach
                                         </select>

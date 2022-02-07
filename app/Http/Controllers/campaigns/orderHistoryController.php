@@ -47,7 +47,9 @@ class orderHistoryController extends Controller
         $Notify->save();
 
         \Session::flash('flash_message', "Campaign activated successfully");
-        return redirect('/campaigns/show/' . $id);
+
+        // return redirect('/campaigns/show/' . $id);
+        return redirect('campaigns/embedding');
     }
 
     public function code()

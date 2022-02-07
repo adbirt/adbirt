@@ -1,0 +1,17 @@
+For WordPress Sites:
+Step 1. Download, install and activate Adbirt WordPress plugin on your site
+Add the Download button here under the step one instructions. 
+
+Step 2. Login to the plugin with your Adbirt publisher email and password
+
+Step 3. Copy the shortcode from the plugin 
+
+Step 4. Place the code wherever you need ads to show on your websites
+
+That's it, you're all done!
+
+For Other Sites:
+
+Step 1. Make sure you add this script to your site's source code for the ad to show, just before the closing <body> tag 
+
+Step 2. Copy the campaign code and place it wherever you need ads to show on your websites

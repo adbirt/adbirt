@@ -132,67 +132,63 @@
                                     <div class="col-md-4 col-sm-4 col-lg-4 col-xs-12 "></div>
                                     @if (Auth::user()->hasRole('client'))
 
-                                        @if (isset($campaignData->campaign_type) && $campaignData->campaign_type == 'Native Content Ad')
-                                            <div>
-                                                <h2>For Wordpress sites:</h2>
-                                                <div class="pl-4">
-                                                    <p>STEP 1: Download and install Adbirt Publisher plugin</p>
-                                                    <a href="https://adbirt.com/public/assets-revamp/adbirt-publishers-plugin.zip"
-                                                        class="btn btn-info">Download Plugin</a>
+                                        <div>
+                                            <h2>For Wordpress sites:</h2>
+                                            <div class="pl-4">
+                                                <p>STEP 1: Download and install Adbirt Publisher plugin</p>
+                                                <a href="https://adbirt.com/public/assets-revamp/adbirt-publishers-plugin.zip"
+                                                    class="btn btn-info">Download Plugin</a>
 
-                                                    <br />
-                                                    <br />
-                                                    <p>Step 2. Login to the plugin with your Adbirt publisher email and
-                                                        password</p>
+                                                <br />
+                                                <br />
+                                                <p>Step 2. Login to the plugin with your Adbirt publisher email and
+                                                    password</p>
 
-                                                    <p>Step 3. Copy the campaign shortcode from the plugin </p>
+                                                <p>Step 3. Copy the campaign shortcode from the plugin </p>
 
-                                                    <p>Step 4. Place the code wherever you need ads to show on your websites
-                                                    </p>
+                                                <p>Step 4. Place the code wherever you need ads to show on your websites
+                                                </p>
 
-                                                    <p>That's it, you're all done!</p>
+                                                <p>That's it, you're all done!</p>
+                                            </div>
+                                            <br />
+
+                                            <h2>For Other Sites:</h2>
+                                            <div class="pl-4">
+                                                <p>Step 1. Make sure you add this script to your site's source code for
+                                                    the ad to show,
+                                                    just before the closing <code>&lt;body&gt;</code> tag </p>
+                                                <div class="row input-group mb-3 w-75">
+                                                    <input type="text" value='<script src="https://adbirt.com/public/assets/js/ubm-jsonp.js?ver=2.70"></script>' class="form-control"
+                                                        id="source-code" readonly>
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text copy-btn btn btn-info"
+                                                            title="Copy to clipboard" data-clipboard-target="#source-code"
+                                                            data-clipboard-action="copy">
+                                                            <i class="fa fa-copy"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                {{-- <a href="http://adbirt.com/blog" target="_blank">Learn More</a> --}}
+                                                <br />
+                                                <p>Step 2. Copy the campaign code and place it wherever you need ads to
+                                                    show on your
+                                                    websites</p>
+                                                <div class="row input-group mb-3 w-75">
+                                                    <input type="text"
+                                                        value='<a class="ubm-banner" data-id="{{ base64_encode($campaignData->advert_code) }}"></a>'
+                                                        class="form-control" id="source-code" readonly>
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text copy-btn btn btn-info"
+                                                            title="Copy to clipboard" data-clipboard-target="#source-code"
+                                                            data-clipboard-action="copy">
+                                                            <i class="fa fa-copy"></i>
+                                                        </span>
+                                                    </div>
                                                 </div>
                                                 <br />
-
-                                                <h2>For Other Sites:</h2>
-                                                <div class="pl-4">
-                                                    <p>Step 1. Make sure you add this script to your site's source code for
-                                                        the ad to show,
-                                                        just before the closing <code>&lt;body&gt;</code> tag </p>
-                                                    <div class="row input-group mb-3 w-75">
-                                                        <input type="text" value='<script src="https://adbirt.com/public/assets/js/ubm-jsonp.js?ver=2.70"></script>' class="form-control"
-                                                            id="source-code" readonly>
-                                                        <div class="input-group-append">
-                                                            <span class="input-group-text copy-btn btn btn-info"
-                                                                title="Copy to clipboard"
-                                                                data-clipboard-target="#source-code"
-                                                                data-clipboard-action="copy">
-                                                                <i class="fa fa-copy"></i>
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                    {{-- <a href="http://adbirt.com/blog" target="_blank">Learn More</a> --}}
-                                                    <br />
-                                                    <p>Step 2. Copy the campaign code and place it wherever you need ads to
-                                                        show on your
-                                                        websites</p>
-                                                    <div class="row input-group mb-3 w-75">
-                                                        <input type="text"
-                                                            value='<a class="ubm-banner" data-id="{{ base64_encode($campaignData->advert_code) }}"></a>'
-                                                            class="form-control" id="source-code" readonly>
-                                                        <div class="input-group-append">
-                                                            <span class="input-group-text copy-btn btn btn-info"
-                                                                title="Copy to clipboard"
-                                                                data-clipboard-target="#source-code"
-                                                                data-clipboard-action="copy">
-                                                                <i class="fa fa-copy"></i>
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                    <br />
-                                                </div>
                                             </div>
-                                        @endif
+                                        </div>
 
                                     @endif
                                 @endif
@@ -297,16 +293,16 @@
         @if (Auth::user()->hasRole('client'))
             <!-- Load Facebook SDK for JavaScript -->
             <!--<div id="fb-root"></div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <script>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          (function(d, s, id) {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              var js, fjs = d.getElementsByTagName(s)[0];
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              if (d.getElementById(id)) return;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              js = d.createElement(s);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              js.id = id;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              fjs.parentNode.insertBefore(js, fjs);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          }(document, 'script', 'facebook-jssdk'));
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      </script>-->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <script>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              (function(d, s, id) {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  var js, fjs = d.getElementsByTagName(s)[0];
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  if (d.getElementById(id)) return;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  js = d.createElement(s);
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  js.id = id;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  fjs.parentNode.insertBefore(js, fjs);
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              }(document, 'script', 'facebook-jssdk'));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          </script>-->
 
 
 

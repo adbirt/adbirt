@@ -92,6 +92,7 @@
                             <h5 class="notificationheading text-center p-2 font-weight-bold">For Advertisers</h5>
                             <hr class="notifydivider">
                             <br />
+
                             <div class="pl-3">
 
                                 <h2>For Wordpress Sites:</h2>
@@ -138,7 +139,6 @@
                                 else it
                                 will go offline
                             </p>
-                            </ol>
                         @endif
 
                     </div>

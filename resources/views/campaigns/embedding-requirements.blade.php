@@ -41,6 +41,8 @@
                     <div class="pl-3">
                         @if (Auth::user()->hasRole('client') || Auth::user()->hasRole('admin'))
                             <h5 class="notificationheading text-center p-2 font-weight-bold">For Publishers</h5>
+                            <p class="notificationheading text-center p-2">To display adbirt ads on your website, follow
+                                these steps</p>
                             <hr class="notifydivider">
                             <div>
                                 <h2>For Wordpress sites:</h2>

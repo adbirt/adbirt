@@ -145,8 +145,7 @@
 
                                                 <p>Step 2. Copy the campaign shortcode from the plugin </p>
 
-                                                <p>Step 3. Place the code wherever you need ads to show on your websites
-                                                </p>
+                                                <p>Step 3. Place the code wherever you need ads to show on your websites</p>
 
                                                 <p>That's it, you're all done!</p>
                                             </div>

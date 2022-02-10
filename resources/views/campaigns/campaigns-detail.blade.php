@@ -81,7 +81,6 @@
             <?php $title = 'View Campaign'; ?>
             <div class="card-columns viewproductbox">
                 @if (isset($campaignData) && !empty($campaignData))
-
                     <div class="card">
                         <div class="card-header bg-white center">
                             <h4 class="card-title text-center w-100 font-weight-bold">
@@ -117,7 +116,6 @@
                             <hr style="border: 1px solid rgba(0, 0, 0, .7) !important;" />
 
                             @if (!Auth::user()->hasRole('admin'))
-
                                 {{-- @if (isset($campaignData->isCampaignActive))
                                     
                                 @endif --}}
@@ -131,6 +129,11 @@
                                 @else
                                     <div class="col-md-4 col-sm-4 col-lg-4 col-xs-12 "></div>
                                     @if (Auth::user()->hasRole('client'))
+
+
+                                        <p class="notificationheading text-center p-2">To display adbirt ads on your
+                                            website, follow
+                                            the steps below:</p>
 
                                         <div>
                                             <h2>For Wordpress sites:</h2>
@@ -187,7 +190,6 @@
                                                 <br />
                                             </div>
                                         </div>
-
                                     @endif
                                 @endif
 
@@ -291,16 +293,16 @@
         @if (Auth::user()->hasRole('client'))
             <!-- Load Facebook SDK for JavaScript -->
             <!--<div id="fb-root"></div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <script>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              (function(d, s, id) {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  var js, fjs = d.getElementsByTagName(s)[0];
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  if (d.getElementById(id)) return;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  js = d.createElement(s);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  js.id = id;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  fjs.parentNode.insertBefore(js, fjs);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              }(document, 'script', 'facebook-jssdk'));
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          </script>-->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <script>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  (function(d, s, id) {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      var js, fjs = d.getElementsByTagName(s)[0];
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      if (d.getElementById(id)) return;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      js = d.createElement(s);
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      js.id = id;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      fjs.parentNode.insertBefore(js, fjs);
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  }(document, 'script', 'facebook-jssdk'));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              </script>-->
 
 
 
@@ -317,8 +319,6 @@
                             alt="{{ $key }}" width="8%" style="padding-bottom: 7px;"></a>
                 @endforeach
             </div> --}}
-
-
         @endif
     @endif
     </div>

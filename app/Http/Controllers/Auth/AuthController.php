@@ -398,9 +398,8 @@ class AuthController extends Controller
             $Impressions = $totalImpressionsByVenodr;
             $Clicks = $totalClicksByVenodr;
             $Leads = $totalLeadsByVendor;
-        }
+        } elseif (Auth::user()->hasRole('client')) {
 
-        if (Auth::user()->hasRole('client')) {
             $totalCampsByClient = campaignorders::with('campaign')
                 ->where('publisher_id', Auth::user()->id)
                 ->where('campaign_running_status', 'activated')
@@ -422,6 +421,19 @@ class AuthController extends Controller
             $Impressions = $totalImpressionsByClient;
             $Clicks = $totalClicksByClient;
             $Leads = $totalLeadsByClient;
+        } elseif (Auth::user()->hasRole('admin')) {
+
+            $totalImpressionsByVenodr = campaign::all()
+                ->sum('campaign_view');
+
+            $totalClicksByVenodr = campaign::all()
+                ->sum('campaign_click');
+
+            $totalLeadsByVendor = campaignTransaction::all()->count();
+
+            $Impressions = $totalImpressionsByVenodr;
+            $Clicks = $totalClicksByVenodr;
+            $Leads = $totalLeadsByVendor;
         }
 
         $totalCamps = count(campaign::where('campaign_approval_status', 'Approved')->get());

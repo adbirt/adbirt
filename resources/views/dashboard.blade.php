@@ -113,7 +113,7 @@
 
                 <hr>
                 <p class="card p-2">
-                    <strong>Clicks, leads & impressions</strong>
+                    <strong>Total Clicks, Leads & Impressions</strong>
                 </p>
                 <!-- new -->
                 <!-- Small boxes (Stat box) -->

@@ -217,7 +217,7 @@
                 <br />
 
                 <hr>
-                <p>
+                <p class="card p-2">
                     <strong>Clicks, leads & impressions</strong>
                 </p>
                 <!-- new -->

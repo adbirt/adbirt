@@ -273,12 +273,13 @@ class AuthController extends Controller
 
     public function dashboard()
     {
-
         $totalClient = count(rolesModel::with('GetClient')->where('role_id', '3')->get());
 
         $arrAllClient = rolesModel::with('GetClient')->where('role_id', '3')->get();
+
         $emailCount = 0;
         $phoneCount = 0;
+
         foreach ($arrAllClient as $key => $value) {
             if ($value->GetClient->login == "email") {
                 $emailCount += 1;
@@ -286,13 +287,17 @@ class AuthController extends Controller
                 $phoneCount += 1;
             }
         }
+
         $activeClient = 0;
+
         foreach ($arrAllClient as $key => $value) {
             if ($value->GetClient->active == "1") {
                 $activeClient += 1;
             }
         }
+
         $NonActiveClient = 0;
+
         foreach ($arrAllClient as $key => $value) {
             if ($value->GetClient->active == "0") {
                 $NonActiveClient += 1;
@@ -315,8 +320,6 @@ class AuthController extends Controller
         if (isset($VendorAmt)) {
             foreach ($VendorAmt as $key => $value) {
                 if (isset($value) && count($value) > 0) {
-                    //print_r($key);
-                    //echo " value is  $value";	
                     foreach ($value as $val) {
                         $TotalVendorAmt += $val['amount'];
                     }
@@ -331,7 +334,6 @@ class AuthController extends Controller
                     foreach ($value as $val) {
                         $TotalClientAmt += $val['amount'];
                     }
-                    //$TotalClientAmt+= $value['0']['amount']; 
                 }
             }
         }
@@ -339,7 +341,6 @@ class AuthController extends Controller
         $TotalAmt = $TotalVendorAmt + $TotalClientAmt;
 
         // vendors Statastics
-
         $totalVendors = count(rolesModel::with('GetOwner')->where('role_id', '2')->get());
 
         $Vendors = rolesModel::select('user_id')->where('role_id', '2')->get();
@@ -360,7 +361,6 @@ class AuthController extends Controller
 
         //$TotalRevenue = WalletHistoryModel::where('user_id','1')->where('mode','!=','WalletCredit')->sum('amount');
         $TotalRevenue = WalletHistoryModel::where('user_id', '1')->where('mode', '!=', 'WalletCredit')->sum('commision');
-
 
         //adding commision in total deposit fund
         $TotalAmt = $TotalAmt + $TotalRevenue;
@@ -401,13 +401,10 @@ class AuthController extends Controller
         }
 
         if (Auth::user()->hasRole('client')) {
-
-
             $totalCampsByClient = campaignorders::with('campaign')
                 ->where('publisher_id', Auth::user()->id)
                 ->where('campaign_running_status', 'activated')
                 ->count();
-
 
             $campaignorders_data = campaignorders::with('campaign')->where('publisher_id', Auth::user()->id)->get();
             $totalImpressionsByClient = 0;
@@ -428,13 +425,10 @@ class AuthController extends Controller
         }
 
         $totalCamps = count(campaign::where('campaign_approval_status', 'Approved')->get());
-
         $totalCampsCost = campaign::where('campaign_approval_status', 'Approved')->sum('campaign_cost_per_action');
 
         $totalSuccessCamps = count(campaignorders::where('campaign_running_status', 'activated')->get());
-
         $totalSuccessCampsCost = campaignorders::where('campaign_running_status', 'activated')->sum('campaign_price');
-
 
         return view('dashboard')
             ->with('title', 'Dashboard')
@@ -457,7 +451,6 @@ class AuthController extends Controller
             ->with('Impressions', $Impressions)
             ->with('Clicks', $Clicks)
             ->with('Leads', $Leads);
-        // return 'Dashboard';
     }
 
     public function changePassword()

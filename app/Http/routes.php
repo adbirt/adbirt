@@ -44,8 +44,10 @@ Route::get('terms', ['as' => 'terms', 'uses' => 'AdminController@terms']);
 Route::get('about', ['as' => 'about', 'uses' => 'AdminController@about']);
 Route::get('pricing', ['as' => 'pricing', 'uses' => 'AdminController@pricing']);
 
+// The Dashboard route
 Route::group(['middleware' => 'superAdminAuth'], function () {
-    Route::get('dashboard', ['as' => 'dashboard', 'uses' => 'AdminController@dashboard']);
+    // Route::get('dashboard', ['as' => 'dashboard', 'uses' => 'AdminController@dashboard']);
+    Route::get('dashboard', ['as' => 'dashboard', 'uses' => 'Auth\AuthController@dashboard']);
 });
 
 Route::group(['middleware' => 'guest'], function () {

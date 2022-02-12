@@ -214,6 +214,81 @@
                 <!-- End: publisher statistics cards -->
 
 
+                <br />
+
+                <hr>
+                <p>
+                    <strong>Clicks, leads & impressions</strong>
+                </p>
+                <!-- new -->
+                <!-- Small boxes (Stat box) -->
+                <div class="row shadow bg-primary rounded-lg p-3">
+                    {{-- <div class="col-lg-3 col-6 mb-3">
+                        <!-- small box -->
+                        <div class="small-box bg-primary h-100 border-right border-light">
+                            <div class="inner">
+                                <h3>{{ $ActiveAd }}</h3>
+
+                                <p class="font-weight-bold">Active Ads</p>
+                            </div>
+                            <div class="icon">
+                                <!-- <i class="ion ion-bag"></i> -->
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <!-- <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a> -->
+                        </div>
+                    </div> --}}
+                    <!-- ./col -->
+                    <div class="col-lg-4 col-6 mb-4">
+                        <!-- small box -->
+                        <div class="small-box bg-primary h-100 border-right border-light">
+                            <div class="inner">
+                                <h3>{{ $Impressions ?? 0 }}
+                                    <!-- <sup style="font-size: 20px">%</sup> -->
+                                </h3>
+
+                                <p class="font-weight-bold">Impressions</p>
+                            </div>
+                            <div class="icon">
+                                <i class="fa fa-eye"></i>
+                            </div>
+                            <!-- <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a> -->
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                    <div class="col-lg-4 col-6 mb-4">
+                        <!-- small box -->
+                        <div class="small-box bg-primary h-100 border-right border-light">
+                            <div class="inner">
+                                <h3>{{ $Clicks ?? 0 }}</h3>
+
+                                <p class="font-weight-bold">Clicks</p>
+                            </div>
+                            <div class="icon">
+                                <i class="fa fa-mouse-pointer"></i>
+                            </div>
+                            <!-- <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a> -->
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                    <div class="col-lg-4 col-12 mb-4">
+                        <!-- small box -->
+                        <div class="small-box bg-primary h-100">
+                            <div class="inner">
+                                <h3>{{ $Leads }}</h3>
+
+                                <p class="font-weight-bold">Leads</p>
+                            </div>
+                            <div class="icon">
+                                <i class="ion ion-pie-graph"></i>
+                            </div>
+                            <!-- <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a> -->
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                </div>
+                <!-- end new  -->
+
 
                 <hr>
 
@@ -409,10 +484,9 @@
         <br />
 
         <hr>
-        <p class="card-subtitle">
-            <strong>Your Advertiser Statistics</strong>
+        <p>
+            <strong>Your Statistics</strong>
         </p>
-
         <!-- new -->
         <!-- Small boxes (Stat box) -->
         <div class="row shadow bg-primary rounded-lg p-3">
@@ -481,8 +555,6 @@
             <!-- ./col -->
         </div>
         <!-- end new  -->
-
-        <!-- <canvas id="myChart" width="100" height="100"></canvas> -->
 
     </div>
     </div>

@@ -222,7 +222,7 @@
                 </p>
                 <!-- new -->
                 <!-- Small boxes (Stat box) -->
-                <div class="row p-3">
+                <div class="row">
                     {{-- <div class="col-lg-3 col-6 mb-3">
                         <!-- small box -->
                         <div class="small-box bg-primary h-100 border-right border-light">

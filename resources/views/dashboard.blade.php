@@ -112,8 +112,8 @@
                 <!-- End: monetary statistics cards -->
 
                 <hr>
-                <p class="card p-2">
-                    <strong>Total Clicks, Leads & Impressions</strong>
+                <p class="card p-2 text-center font-weight-bold">
+                    <strong>TOTAL CLICKS, LEADS & IMPRESSIONS</strong>
                 </p>
                 <!-- new -->
                 <!-- Small boxes (Stat box) -->
@@ -488,7 +488,6 @@
                 <div class="small-box bg-primary h-100">
                     <div class="inner">
                         <h3>{{ $ActiveAd }}</h3>
-
                         <p class="font-weight-bold">Active Ads</p>
                     </div>
                     <div class="icon">

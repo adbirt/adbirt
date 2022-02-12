@@ -658,7 +658,6 @@ class campaignsController extends Controller
      */
     public function ChngeToReject($id)
     {
-        //
         $Id = base64_decode($id);
 
         $campaignData = campaign::find($Id);
@@ -668,8 +667,8 @@ class campaignsController extends Controller
             ->update($status);
 
         $Notify            = new NotificationAlertModel;
-        $Notify->heading  = "Your Campaign " . $campaignData['campaign_title'] . " is Rejected By Admin";
-        $Notify->content  = "Your Campaign " . $campaignData['campaign_title'] . " is Rejected By Admin";
+        $Notify->heading  = "Your Campaign has been Rejected By Admin";
+        $Notify->content  = "Your Campaign \"" . $campaignData['campaign_name'] . "\" has been Rejected By Admin";
         $Notify->type  = "Campaign Rejected";
         $Notify->Notify_Receivers_Id  = $campaignData['advertiser_id'];
         $Notify->save();

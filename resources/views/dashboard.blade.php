@@ -111,10 +111,82 @@
                 </div>
                 <!-- End: monetary statistics cards -->
 
+                <br />
+                <hr>
+                <p class="card p-2">
+                    <strong>Clicks, leads & impressions</strong>
+                </p>
+                <!-- new -->
+                <!-- Small boxes (Stat box) -->
+                <div class="row">
+                    {{-- <div class="col-lg-3 col-6 mb-3">
+                        <!-- small box -->
+                        <div class="small-box bg-primary h-100 border-right border-light">
+                            <div class="inner">
+                                <h3>{{ $ActiveAd }}</h3>
+
+                                <p class="font-weight-bold">Active Ads</p>
+                            </div>
+                            <div class="icon">
+                                <!-- <i class="ion ion-bag"></i> -->
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <!-- <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a> -->
+                        </div>
+                    </div> --}}
+                    <!-- ./col -->
+                    <div class="col-lg-4 col-6 mb-4">
+                        <!-- small box -->
+                        <div class="small-box bg-primary h-100 border-right border-light">
+                            <div class="inner">
+                                <h3>{{ $Impressions ?? 0 }}
+                                    <!-- <sup style="font-size: 20px">%</sup> -->
+                                </h3>
+
+                                <p class="font-weight-bold">Impressions</p>
+                            </div>
+                            <div class="icon">
+                                <i class="fa fa-eye"></i>
+                            </div>
+                            <!-- <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a> -->
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                    <div class="col-lg-4 col-6 mb-4">
+                        <!-- small box -->
+                        <div class="small-box bg-warning h-100 border-right border-light">
+                            <div class="inner">
+                                <h3>{{ $Clicks ?? 0 }}</h3>
+
+                                <p class="font-weight-bold">Clicks</p>
+                            </div>
+                            <div class="icon">
+                                <i class="fa fa-mouse-pointer"></i>
+                            </div>
+                            <!-- <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a> -->
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                    <div class="col-lg-4 col-12 mb-4">
+                        <!-- small box -->
+                        <div class="small-box bg-danger h-100">
+                            <div class="inner">
+                                <h3>{{ $Leads }}</h3>
+
+                                <p class="font-weight-bold">Leads</p>
+                            </div>
+                            <div class="icon">
+                                <i class="ion ion-pie-graph"></i>
+                            </div>
+                            <!-- <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a> -->
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                </div>
+                <!-- end new  -->
+
 
                 <hr />
-
-
                 <!-- Begin: publisher statistics cards -->
                 <div class="card-header bg-white">
                     <p class="card-subtitle font-weight-bold">Publisher Statistics</p>
@@ -192,7 +264,7 @@
                     </div>
                     <!-- ./col -->
 
-                    <div class="col-6 col-md-4 mb-2">
+                    <div class="col-6 col-md-4 mb-3">
                         <!-- small box -->
                         <div class="small-box bg-warning h-100">
                             <div class="inner">
@@ -212,82 +284,6 @@
                     <!-- ./col -->
                 </div>
                 <!-- End: publisher statistics cards -->
-
-
-                <br />
-
-                <hr>
-                <p class="card p-2">
-                    <strong>Clicks, leads & impressions</strong>
-                </p>
-                <!-- new -->
-                <!-- Small boxes (Stat box) -->
-                <div class="row">
-                    {{-- <div class="col-lg-3 col-6 mb-3">
-                        <!-- small box -->
-                        <div class="small-box bg-primary h-100 border-right border-light">
-                            <div class="inner">
-                                <h3>{{ $ActiveAd }}</h3>
-
-                                <p class="font-weight-bold">Active Ads</p>
-                            </div>
-                            <div class="icon">
-                                <!-- <i class="ion ion-bag"></i> -->
-                                <i class="fa fa-check"></i>
-                            </div>
-                            <!-- <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a> -->
-                        </div>
-                    </div> --}}
-                    <!-- ./col -->
-                    <div class="col-lg-4 col-6 mb-4">
-                        <!-- small box -->
-                        <div class="small-box bg-primary h-100 border-right border-light">
-                            <div class="inner">
-                                <h3>{{ $Impressions ?? 0 }}
-                                    <!-- <sup style="font-size: 20px">%</sup> -->
-                                </h3>
-
-                                <p class="font-weight-bold">Impressions</p>
-                            </div>
-                            <div class="icon">
-                                <i class="fa fa-eye"></i>
-                            </div>
-                            <!-- <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a> -->
-                        </div>
-                    </div>
-                    <!-- ./col -->
-                    <div class="col-lg-4 col-6 mb-4">
-                        <!-- small box -->
-                        <div class="small-box bg-warning h-100 border-right border-light">
-                            <div class="inner">
-                                <h3>{{ $Clicks ?? 0 }}</h3>
-
-                                <p class="font-weight-bold">Clicks</p>
-                            </div>
-                            <div class="icon">
-                                <i class="fa fa-mouse-pointer"></i>
-                            </div>
-                            <!-- <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a> -->
-                        </div>
-                    </div>
-                    <!-- ./col -->
-                    <div class="col-lg-4 col-12 mb-4">
-                        <!-- small box -->
-                        <div class="small-box bg-danger h-100">
-                            <div class="inner">
-                                <h3>{{ $Leads }}</h3>
-
-                                <p class="font-weight-bold">Leads</p>
-                            </div>
-                            <div class="icon">
-                                <i class="ion ion-pie-graph"></i>
-                            </div>
-                            <!-- <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a> -->
-                        </div>
-                    </div>
-                    <!-- ./col -->
-                </div>
-                <!-- end new  -->
 
 
                 <hr>

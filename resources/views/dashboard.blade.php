@@ -67,7 +67,7 @@
                 <div class="row">
                     <div class="col-6 mb-3">
                         <!-- small box -->
-                        <div class="small-box bg-info h-100">
+                        <div class="small-box bg-danger h-100">
                             <div class="inner">
                                 <h3>
                                     @if (!empty($TotalRevenue))

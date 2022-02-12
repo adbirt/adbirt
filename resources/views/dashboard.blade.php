@@ -111,7 +111,6 @@
                 </div>
                 <!-- End: monetary statistics cards -->
 
-                <br />
                 <hr>
                 <p class="card p-2">
                     <strong>Clicks, leads & impressions</strong>

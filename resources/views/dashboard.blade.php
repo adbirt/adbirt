@@ -258,7 +258,7 @@
                     <!-- ./col -->
                     <div class="col-lg-4 col-6 mb-4">
                         <!-- small box -->
-                        <div class="small-box bg-primary h-100 border-right border-light">
+                        <div class="small-box bg-warning h-100 border-right border-light">
                             <div class="inner">
                                 <h3>{{ $Clicks ?? 0 }}</h3>
 
@@ -273,7 +273,7 @@
                     <!-- ./col -->
                     <div class="col-lg-4 col-12 mb-4">
                         <!-- small box -->
-                        <div class="small-box bg-primary h-100">
+                        <div class="small-box bg-danger h-100">
                             <div class="inner">
                                 <h3>{{ $Leads }}</h3>
 

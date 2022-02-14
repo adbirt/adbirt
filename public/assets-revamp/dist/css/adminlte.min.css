@@ -41,7 +41,8 @@
     "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
-    --theme-color: #bc6a44;
+    --theme-color: #ff7c00;
+    --theme-accent-color: #bc6a44;
 }
 *,
 ::after,

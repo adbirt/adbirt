@@ -205,7 +205,9 @@
         </div>
         <!-- End Navbar Area -->
 
-
+        <br />
+        <br />
+        <br />
 
         <section class="my-5">
             <div class="d-flex justify-content-center">
@@ -400,11 +402,6 @@
                 </ul>
             </div>
         </section>
-
-
-        <br />
-        <br />
-        <br />
 
         {{-- <div class="adbirt-content clearfix">
             <div class="adbirt-page-heading adbirt-size-md adbirt-dynamic-bg"

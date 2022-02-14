@@ -43,9 +43,9 @@
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't gallery if you view the page via file:// -->
     <!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
 </head>
 
 <body>
@@ -90,8 +90,8 @@
                                             class="fab fa-facebook"></i>
                                     </a>
 
-                                    <a target="_blank" href="https://www.instagram.com/adbirthq/" class="icon"> <i
-                                            class="fab fa-instagram"></i>
+                                    <a target="_blank" href="https://www.instagram.com/adbirthq/"
+                                        class="icon"> <i class="fab fa-instagram"></i>
                                     </a>
 
                                     <a target="_blank" href="https://twitter.com/Adbirt_HQ" class="icon"> <i
@@ -151,7 +151,199 @@
 
 
 
-        <div class="adbirt-content clearfix">
+        <section class="my-5">
+            <div class="d-flex justify-content-center">
+                <p class="text_title">For Advertiser</p>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col col-12 col-md-6 d-flex align-items-center">
+                        <div class="px-0 mx-0 px-md-2 mx-md-2 px-lg-4 mx-lg-5">
+                            <div class="px-2 mx-0 px-md-2 mx-md-2 px-xl-4 mx-xl-5">
+                                <h1 class="h2">
+                                    Increase your sales and generate a new lead with Adbirt Ads
+                                </h1>
+                                <p class="">
+                                    With our robust technology, we'll tailor your product
+                                    or service in front of the prospective customer who is
+                                    searching for your business online. And pay your des
+                                    ired amount only when you make sale or leads.
+                                </p>
+                                <button class="btn btn-primary">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-6 d-flex justify-content-center">
+                        <img src="/images/second_new.png" class="hero_image" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FEATURES SECTION  -->
+        <section class="my-5 mx-4 mx-md-5 px-md-5 pt-5">
+            <div class="my-5">
+                <div class="row mx-2 mx-sm-0 mx-md-5">
+                    <div class="col col-lg-4 col-md-6 col-12">
+                        <div class="feature_card d-flex flex-column align-items-center">
+                            <div class="feature_iconWrap">
+                                <img src="./images/double-click.png" class="feature_icon" alt="click" />
+                            </div>
+                            <div class="my-4 d-flex flex-column align-items-center">
+                                <p class="h4 mt-3">Cost Per Action</p>
+                                <p class="mx-0 mx-lg-2 text-center">
+                                    Promote your products or service online pay your desired amount when you make a sale
+                                    or get a new lead to
+                                    your business.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12">
+                        <div class="feature_card d-flex flex-column align-items-center">
+                            <div class="feature_iconWrap">
+                                <img src="./images/acquisition.png" class="feature_icon" alt="click" />
+                            </div>
+                            <div class="my-4 d-flex flex-column align-items-center">
+                                <p class="h4 mt-3">Cost Per Sales</p>
+                                <p class="mx-0 mx-lg-2 text-center">
+                                    You're in total control of your ad budget, set the cost within your means and only
+                                    pay after a successful
+                                    sales or leads.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12">
+                        <div class="feature_card d-flex flex-column align-items-center">
+                            <div class="feature_iconWrap">
+                                <img src="./images/click.png" class="feature_icon" alt="click icon" />
+                            </div>
+                            <div class="my-4 d-flex flex-column align-items-center">
+                                <p class="h4 mt-3">Cost Per Click</p>
+                                <p class="mx-0 mx-lg-2 text-center">
+                                    Get unlimited impressions to your business for free and only pay for a valid click
+                                    when users visit or
+                                    land on your websites.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <button class="btn btn-primary">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="d-flex justify-content-center">
+                <img src="./images/adbirt_logo.png" class="" />
+            </div>
+        </section>
+
+        <!-- FOR PUBLISHER  -->
+        <section>
+            <div class="d-flex justify-content-center">
+                <p class="text_title">For Publisher</p>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col col-12 col-md-6 d-flex justify-content-end">
+                        <img src="/images/screen_second.png" class="hero_image" />
+                    </div>
+                    <div class="col col-12 col-md-6 d-flex align-items-center">
+                        <div class="px-0 mx-0 px-md-2 mx-md-2 px-lg-4 mx-lg-5">
+                            <div class="px-2 mx-0 px-md-2 mx-md-2">
+                                <h2 class="h2">
+                                    No minimum threshold
+                                    is required and there's
+                                    no limit to earnings.
+                                </h2>
+                                <p class="mr-5">
+                                    We acknowledge creating good content is hard. Therefore monetizing it shouldn't be
+                                    difficult. Join thousands of pub
+                                    lishers like yours to Monetize your website traffic and with
+                                    draw instantly when you earn as Adbirt Publisher.
+                                </p>
+                                <button class="btn btn-primary">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STEPS -->
+        <section class="container my-5">
+            <div class="row d-flex justify-content-center mx-2">
+                <p class="h3">Monetize Your Website Traffic With Adbirt</p>
+            </div>
+            <div class="mx-4">
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <img src="./images/register.png" class="steps_image" />
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <div class="px-1 mx-1 px-sm-5 mx-sm-5">
+                            <p class="h3 font-weight-bold">1. Create An Account</p>
+                            <p>Set up your publishers account by telling us more about your medium of monetization.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-5 d-flex">
+                    <div class="col d-flex align-items-center order-2 order-sm-1">
+                        <div class="px-1 mx-1 px-sm-5 mx-sm-5">
+                            <p class="h3 font-weight-bold">2. Choose An Ad Campaign</p>
+                            <p>Pick a Campaign that is suitable to the interests of your Audience, i.e email leads or
+                                website.</p>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-start order-1 order-sm-2">
+                        <img src="./images/choose-ad.png" class="steps_image" />
+                    </div>
+                </div>
+
+                <div class="row my-5">
+                    <div class="col d-flex justify-content-center">
+                        <img src="./images/upload-ad.png" class="steps_image" />
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <div class="px-1 mx-1 px-sm-5 mx-sm-5">
+                            <p class="h3 font-weight-bold">3. Place It On Your Website</p>
+                            <p>Place it on your website, Email Leads, Social Media handles,Whatsapp group, Blog or other
+                                Channels.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row d-flex justify-content-center">
+                <button class="btn btn-primary">Start Earning Now</button>
+            </div>
+        </section>
+
+        <section class="container my-5">
+            <p class="text-center h2">Best Converting Ad Formats</p>
+            <p class="text-center">
+                We offer the best-performing Ad formats that match the latest trending technology - choose the best ads
+                format that interests you!
+            </p>
+            <div class="w-100">
+                <p>See all our Ad Formats:</p>
+                <ul class="format_list w-100 d-md-flex justify-content-center pl-0">
+                    <li>Display Banner</li>
+                    <li>Native Ads</li>
+                    <li>Direct Links</li>
+                    <li>Video Ads</li>
+                    <li>Push Notifications</li>
+                </ul>
+            </div>
+        </section>
+
+
+
+        {{-- <div class="adbirt-content clearfix">
             <div class="adbirt-page-heading adbirt-size-md adbirt-dynamic-bg"
                 style="background-image: url(public/assets-revamp/img/blog/5.jpg); background-size:cover; background-position: center center;">
                 <div class="container">
@@ -166,9 +358,6 @@
             </div><!-- adbirt-page-heading -->
 
         </div>
-
-
-
 
         <!-- Begin Adbirt for Advertisers -->
         <div class="container my-5">
@@ -314,7 +503,7 @@
                 <a href="/dashboard" class="text-white font-weight-bold bg-primary-color btn">Let's Start</a>
             </div>
             <br>
-        </div>
+        </div> --}}
 
 
 
@@ -355,16 +544,16 @@
                                     </p>
                                     <div class="adbirt-footer-social-icon mt-3">
 
-                                        <a target="_blank" href="https://facebook.com/AdbirtHQ" class="icon"> <i
-                                                class="fab fa-facebook"></i>
+                                        <a target="_blank" href="https://facebook.com/AdbirtHQ" class="icon">
+                                            <i class="fab fa-facebook"></i>
                                         </a>
 
-                                        <a target="_blank" href="https://www.instagram.com/adbirthq/" class="icon"> <i
-                                                class="fab fa-instagram"></i>
+                                        <a target="_blank" href="https://www.instagram.com/adbirthq/"
+                                            class="icon"> <i class="fab fa-instagram"></i>
                                         </a>
 
-                                        <a target="_blank" href="https://twitter.com/Adbirt_HQ" class="icon"> <i
-                                                class="fab fa-twitter"></i> </a>
+                                        <a target="_blank" href="https://twitter.com/Adbirt_HQ" class="icon">
+                                            <i class="fab fa-twitter"></i> </a>
 
                                     </div>
                                 </div>
@@ -466,7 +655,6 @@
     <script src="public/assets-revamp/js/jquery.wavify.js"></script>
     <script src="public/assets-revamp/js/main.js"></script>
     <script>
-
         //**===================a Adbirt banner waves ===================**//		
         $('#adbirt-wavify') && $("#adbirt-wavify svg path#wave").wavify({
             height: 80,

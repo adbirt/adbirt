@@ -40,12 +40,68 @@
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="public/assets-revamp/css/responsive.css">
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't gallery if you view the page via file:// -->
-    <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
+    <style>
+        .btn-primary {
+            background-color: #ff7c00;
+            border: #ff7c00;
+        }
+
+        .text_title {
+            color: #ff7c00;
+            font-family: cursive;
+            font-size: 2rem;
+        }
+
+        .hero_image {
+            width: 300px;
+            object-fit: cover;
+        }
+
+        .feature_icon {
+            width: 75px;
+            height: 75px;
+        }
+
+        .feature_iconWrap {
+            background-color: #fff;
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+            display: inline-block;
+            padding: 20px;
+            border-radius: 50%;
+            border: #fff;
+        }
+
+        .steps_image {
+            width: 200px;
+        }
+
+        .format_list {
+            list-style: none;
+        }
+
+        .format_list li {
+            margin: 0;
+        }
+
+        @media (min-width: 992px) {
+            .hero_image {
+                width: 600px;
+            }
+
+            .steps_image {
+                width: 300px;
+            }
+
+            .format_list li {
+                margin: 0 1.5rem;
+            }
+
+            .text_title {
+                font-size: 2.5rem;
+            }
+        }
+
+    </style>
 </head>
 
 <body>
@@ -174,7 +230,7 @@
                         </div>
                     </div>
                     <div class="col col-12 col-md-6 d-flex justify-content-center">
-                        <img src="/images/second_new.png" class="hero_image" />
+                        <img src="/public/assets-revamp/img/actions-and-events/second_new.png" class="hero_image" />
                     </div>
                 </div>
             </div>
@@ -186,7 +242,7 @@
                     <div class="col col-lg-4 col-md-6 col-12">
                         <div class="feature_card d-flex flex-column align-items-center">
                             <div class="feature_iconWrap">
-                                <img src="./images/double-click.png" class="feature_icon" alt="click" />
+                                <img src="/public/assets-revamp/img/actions-and-events/double-click.png" class="feature_icon" alt="click" />
                             </div>
                             <div class="my-4 d-flex flex-column align-items-center">
                                 <p class="h4 mt-3">Cost Per Action</p>
@@ -201,7 +257,7 @@
                     <div class="col col-lg-4 col-md-6 col-12">
                         <div class="feature_card d-flex flex-column align-items-center">
                             <div class="feature_iconWrap">
-                                <img src="./images/acquisition.png" class="feature_icon" alt="click" />
+                                <img src="/public/assets-revamp/img/actions-and-events/acquisition.png" class="feature_icon" alt="click" />
                             </div>
                             <div class="my-4 d-flex flex-column align-items-center">
                                 <p class="h4 mt-3">Cost Per Sales</p>
@@ -216,7 +272,7 @@
                     <div class="col col-lg-4 col-md-6 col-12">
                         <div class="feature_card d-flex flex-column align-items-center">
                             <div class="feature_iconWrap">
-                                <img src="./images/click.png" class="feature_icon" alt="click icon" />
+                                <img src="/public/assets-revamp/img/actions-and-events/click.png" class="feature_icon" alt="click icon" />
                             </div>
                             <div class="my-4 d-flex flex-column align-items-center">
                                 <p class="h4 mt-3">Cost Per Click</p>
@@ -237,7 +293,7 @@
 
         <section>
             <div class="d-flex justify-content-center">
-                <img src="./images/adbirt_logo.png" class="" />
+                <img src="/public/assets-revamp/img/actions-and-events/adbirt_logo.png" class="" />
             </div>
         </section>
 
@@ -249,7 +305,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col col-12 col-md-6 d-flex justify-content-end">
-                        <img src="/images/screen_second.png" class="hero_image" />
+                        <img src="/public/assets-revamp/img/actions-and-events/screen_second.png" class="hero_image" />
                     </div>
                     <div class="col col-12 col-md-6 d-flex align-items-center">
                         <div class="px-0 mx-0 px-md-2 mx-md-2 px-lg-4 mx-lg-5">
@@ -281,7 +337,7 @@
             <div class="mx-4">
                 <div class="row">
                     <div class="col d-flex justify-content-center">
-                        <img src="./images/register.png" class="steps_image" />
+                        <img src="/public/assets-revamp/img/actions-and-events/register.png" class="steps_image" />
                     </div>
                     <div class="col d-flex align-items-center">
                         <div class="px-1 mx-1 px-sm-5 mx-sm-5">
@@ -300,13 +356,13 @@
                         </div>
                     </div>
                     <div class="col d-flex justify-content-start order-1 order-sm-2">
-                        <img src="./images/choose-ad.png" class="steps_image" />
+                        <img src="/public/assets-revamp/img/actions-and-events/choose-ad.png" class="steps_image" />
                     </div>
                 </div>
 
                 <div class="row my-5">
                     <div class="col d-flex justify-content-center">
-                        <img src="./images/upload-ad.png" class="steps_image" />
+                        <img src="/public/assets-revamp/img/actions-and-events/upload-ad.png" class="steps_image" />
                     </div>
                     <div class="col d-flex align-items-center">
                         <div class="px-1 mx-1 px-sm-5 mx-sm-5">
@@ -343,7 +399,7 @@
 
 
 
-        {{-- <div class="adbirt-content clearfix">
+        <div class="adbirt-content clearfix">
             <div class="adbirt-page-heading adbirt-size-md adbirt-dynamic-bg"
                 style="background-image: url(public/assets-revamp/img/blog/5.jpg); background-size:cover; background-position: center center;">
                 <div class="container">
@@ -360,7 +416,7 @@
         </div>
 
         <!-- Begin Adbirt for Advertisers -->
-        <div class="container my-5">
+        {{-- <div class="container my-5">
 
             <div class="row justify-content-center">
                 <div class="col-lg-7 col-xl-6">
@@ -495,9 +551,9 @@
 
             </div>
 
-        </div>
+        </div> --}}
 
-        <div class="container pt-1 pb-4">
+        {{-- <div class="container pt-1 pb-4">
             <br>
             <div class="d-flex align-items-center justify-content-center">
                 <a href="/dashboard" class="text-white font-weight-bold bg-primary-color btn">Let's Start</a>

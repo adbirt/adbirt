@@ -242,7 +242,8 @@
                     <div class="col col-lg-4 col-md-6 col-12">
                         <div class="feature_card d-flex flex-column align-items-center">
                             <div class="feature_iconWrap">
-                                <img src="/public/assets-revamp/img/actions-and-events/double-click.png" class="feature_icon" alt="click" />
+                                <img src="/public/assets-revamp/img/actions-and-events/double-click.png"
+                                    class="feature_icon" alt="click" />
                             </div>
                             <div class="my-4 d-flex flex-column align-items-center">
                                 <p class="h4 mt-3">Cost Per Action</p>
@@ -257,7 +258,8 @@
                     <div class="col col-lg-4 col-md-6 col-12">
                         <div class="feature_card d-flex flex-column align-items-center">
                             <div class="feature_iconWrap">
-                                <img src="/public/assets-revamp/img/actions-and-events/acquisition.png" class="feature_icon" alt="click" />
+                                <img src="/public/assets-revamp/img/actions-and-events/acquisition.png"
+                                    class="feature_icon" alt="click" />
                             </div>
                             <div class="my-4 d-flex flex-column align-items-center">
                                 <p class="h4 mt-3">Cost Per Sales</p>
@@ -272,7 +274,8 @@
                     <div class="col col-lg-4 col-md-6 col-12">
                         <div class="feature_card d-flex flex-column align-items-center">
                             <div class="feature_iconWrap">
-                                <img src="/public/assets-revamp/img/actions-and-events/click.png" class="feature_icon" alt="click icon" />
+                                <img src="/public/assets-revamp/img/actions-and-events/click.png" class="feature_icon"
+                                    alt="click icon" />
                             </div>
                             <div class="my-4 d-flex flex-column align-items-center">
                                 <p class="h4 mt-3">Cost Per Click</p>
@@ -305,7 +308,8 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col col-12 col-md-6 d-flex justify-content-end">
-                        <img src="/public/assets-revamp/img/actions-and-events/screen_second.png" class="hero_image" />
+                        <img src="/public/assets-revamp/img/actions-and-events/screen_second.png"
+                            class="hero_image" />
                     </div>
                     <div class="col col-12 col-md-6 d-flex align-items-center">
                         <div class="px-0 mx-0 px-md-2 mx-md-2 px-lg-4 mx-lg-5">
@@ -398,8 +402,11 @@
         </section>
 
 
+        <br />
+        <br />
+        <br />
 
-        <div class="adbirt-content clearfix">
+        {{-- <div class="adbirt-content clearfix">
             <div class="adbirt-page-heading adbirt-size-md adbirt-dynamic-bg"
                 style="background-image: url(public/assets-revamp/img/blog/5.jpg); background-size:cover; background-position: center center;">
                 <div class="container">
@@ -413,7 +420,7 @@
                 </div>
             </div><!-- adbirt-page-heading -->
 
-        </div>
+        </div> --}}
 
         <!-- Begin Adbirt for Advertisers -->
         {{-- <div class="container my-5">

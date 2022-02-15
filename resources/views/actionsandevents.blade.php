@@ -320,6 +320,7 @@
             format that interests you!
         </p>
         <br />
+        <br />
         <div class="w-100">
             <p class="w-100 text-center">See all our Ad Formats:</p>
             <ul class="format_list w-100 d-md-flex justify-content-center pl-0 text-primary-color">

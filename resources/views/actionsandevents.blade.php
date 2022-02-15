@@ -90,7 +90,7 @@
 
     <section class="my-5">
         <div class="d-flex flex-column justify-content-center align-items-center">
-            <p class="text_title">FOR ADVERTISERS</p>
+            <p class="h3 text_title font-weight-bold">FOR ADVERTISERS</p>
         </div>
         <div class="container-fluid">
             <div class="row">
@@ -191,7 +191,7 @@
     <!-- FOR PUBLISHER  -->
     <section>
         <div class="d-flex justify-content-center">
-            <p class="text_title">FOR PUBLISHERS</p>
+            <p class="h3 text_title font-weight-bold">FOR PUBLISHERS</p>
         </div>
         <div class="container-fluid">
             <div class="row">
@@ -271,7 +271,8 @@
                 <div class="col-12 col-md-6 d-flex align-items-center">
                     <div class="px-1 mx-1 px-sm-5 mx-sm-5">
                         <p class="h3 font-weight-bold open-sans-text text-black">1. Create An Account</p>
-                        <p class="roboto-text font-size-16 text-black font-weight-bold">Set up your publishers account by telling us more
+                        <p class="roboto-text font-size-16 text-black font-weight-bold">Set up your publishers account by
+                            telling us more
                             about your
                             medium of
                             monetization.</p>
@@ -283,7 +284,8 @@
                 <div class="col-12 col-md-6 d-flex align-items-center order-2 order-sm-1">
                     <div class="px-1 mx-1 px-sm-5 mx-sm-5">
                         <p class="h3 font-weight-bold open-sans-text text-black">2. Choose An Ad Campaign</p>
-                        <p class="roboto-text font-size-16 text-black font-weight-bold">Pick a Campaign that is suitable to the interests of
+                        <p class="roboto-text font-size-16 text-black font-weight-bold">Pick a Campaign that is suitable to
+                            the interests of
                             your
                             Audience, i.e
                             email leads or website.
@@ -302,7 +304,8 @@
                 <div class="col-12 col-md-6 d-flex align-items-center">
                     <div class="px-1 mx-1 px-sm-5 mx-sm-5">
                         <p class="h3 font-weight-bold open-sans-text text-black">3. Place It On Your Website</p>
-                        <p class="roboto-text font-size-16 text-black font-weight-bold">Place it on your website, Email Leads, Social Media
+                        <p class="roboto-text font-size-16 text-black font-weight-bold">Place it on your website, Email
+                            Leads, Social Media
                             handles,Whatsapp
                             group, Blog or other
                             Channels.</p>

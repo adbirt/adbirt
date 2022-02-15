@@ -49,6 +49,22 @@
     <link rel="stylesheet" href="https://adbirt.com/public/assets-revamp/plugins/daterangepicker/daterangepicker.css">
     <!-- summernote -->
     <link rel="stylesheet" href="https://adbirt.com/public/assets-revamp/plugins/summernote/summernote-bs4.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:wght@100&display=swap');
+
+        .open-sans-text {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .roboto-text {
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Roboto', sans-serif;
+        }
+
+    </style>
+
     <style type="text/css">
         /* Chart.js */
         @keyframes chartjs-render-animation {

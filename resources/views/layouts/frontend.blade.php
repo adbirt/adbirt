@@ -41,6 +41,21 @@
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="public/assets-revamp/css/responsive.css">
 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:wght@100&display=swap');
+
+        .open-sans-text {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .roboto-text {
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Roboto', sans-serif;
+        }
+
+    </style>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128688871-1"></script>
     <script>

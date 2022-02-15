@@ -11,7 +11,6 @@
             color: #ff7c00;
             font-family: cursive;
             font-size: 2rem !important;
-            /*font-size: 50px;*/
         }
 
         .hero_image {
@@ -103,6 +102,7 @@
                                 searching for your business online. And pay your des
                                 ired amount only when you make sale or leads.
                             </p>
+                            <br />
                             <button class="btn btn-danger bg-primary-color">Learn More</button>
                         </div>
                     </div>
@@ -171,6 +171,7 @@
                     </div>
                 </div>
             </div>
+            <br />
             <div class="row d-flex justify-content-center">
                 <button class="btn btn-danger bg-primary-color">Learn More</button>
             </div>
@@ -208,6 +209,7 @@
                                 lishers like yours to Monetize your website traffic and with
                                 draw instantly when you earn as Adbirt Publisher.
                             </p>
+                            <br />
                             <button class="btn btn-danger bg-primary-color">Learn More</button>
                         </div>
                     </div>
@@ -264,8 +266,9 @@
                 </div>
                 <div class="col-12 col-md-6 d-flex align-items-center">
                     <div class="px-1 mx-1 px-sm-5 mx-sm-5">
-                        <p class="h3 font-weight-bold">1. Create An Account</p>
-                        <p>Set up your publishers account by telling us more about your medium of monetization.</p>
+                        <p class="h3 font-weight-bold open-sans-text">1. Create An Account</p>
+                        <p class="roboto-text">Set up your publishers account by telling us more about your medium of
+                            monetization.</p>
                     </div>
                 </div>
             </div>
@@ -273,8 +276,9 @@
             <div class="row my-5 d-flex">
                 <div class="col-12 col-md-6 d-flex align-items-center order-2 order-sm-1">
                     <div class="px-1 mx-1 px-sm-5 mx-sm-5">
-                        <p class="h3 font-weight-bold">2. Choose An Ad Campaign</p>
-                        <p>Pick a Campaign that is suitable to the interests of your Audience, i.e email leads or website.
+                        <p class="h3 font-weight-bold open-sans-text">2. Choose An Ad Campaign</p>
+                        <p class="roboto-text">Pick a Campaign that is suitable to the interests of your Audience, i.e
+                            email leads or website.
                         </p>
                     </div>
                 </div>
@@ -289,8 +293,9 @@
                 </div>
                 <div class="col-12 col-md-6 d-flex align-items-center">
                     <div class="px-1 mx-1 px-sm-5 mx-sm-5">
-                        <p class="h3 font-weight-bold">3. Place It On Your Website</p>
-                        <p>Place it on your website, Email Leads, Social Media handles,Whatsapp group, Blog or other
+                        <p class="h3 font-weight-bold open-sans-text">3. Place It On Your Website</p>
+                        <p class="roboto-text">Place it on your website, Email Leads, Social Media handles,Whatsapp
+                            group, Blog or other
                             Channels.</p>
                     </div>
                 </div>

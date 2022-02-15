@@ -10,8 +10,8 @@
         .text_title {
             color: #ff7c00;
             font-family: cursive;
-            /*font-size: 2rem;*/
-            font-size: 50px;
+            font-size: 2rem !important;
+            /*font-size: 50px;*/
         }
 
         .hero_image {
@@ -34,7 +34,7 @@
         }
 
         .steps_image {
-            width: 200px;
+            width: 150px;
         }
 
         .format_list {
@@ -51,15 +51,15 @@
             }
 
             .steps_image {
-                width: 300px;
+                width: 200px;
             }
 
             .format_list li {
-                margin: 0 1.5rem;
+                margin: 0 1.5rem !important;
             }
 
             .text_title {
-                font-size: 2.5rem;
+                font-size: 2rem !important;
             }
         }
 
@@ -89,7 +89,7 @@
     <br />
 
     <section class="my-5">
-        <div class="d-flex justify-content-center">
+        <div class="d-flex flex-column justify-content-center align-items-center">
             <p class="text_title">FOR ADVERTISERS</p>
             <br />
             <p class="h5 text-center text-black">Get the best result that interest you </p>
@@ -226,7 +226,7 @@
                 <div>
                     <img src="/public/assets-revamp/img/actions-and-events/choose-ad.png" class="steps_image" />
                 </div>
-                <div class="text-black text-center">
+                <div class="text-black text-center p-3 shadow-lg">
                     text
                 </div>
             </div>
@@ -235,7 +235,7 @@
                 <div>
                     <img src="/public/assets-revamp/img/actions-and-events/choose-ad.png" class="steps_image" />
                 </div>
-                <div class="text-black text-center">
+                <div class="text-black text-center p-3 shadow-lg">
                     text
                 </div>
             </div>
@@ -244,7 +244,7 @@
                 <div>
                     <img src="/public/assets-revamp/img/actions-and-events/choose-ad.png" class="steps_image" />
                 </div>
-                <div class="text-black text-center">
+                <div class="text-black text-center p-3 shadow-lg">
                     text
                 </div>
             </div>
@@ -304,7 +304,7 @@
         </p>
         <div class="w-100">
             <p>See all our Ad Formats:</p>
-            <ul class="format_list w-100 d-md-flex justify-content-center pl-0">
+            <ul class="format_list w-100 d-md-flex justify-content-center pl-0 text-primary-color">
                 <li>Display Banner</li>
                 <li>Native Ads</li>
                 <li>Direct Links</li>

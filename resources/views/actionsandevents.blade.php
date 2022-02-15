@@ -315,6 +315,7 @@
         <p class="text-center h2">
             <span class="text-primary-color">Best-</span>Converting Ad Formats
         </p>
+        <br />
         <p class="text-center">
             We offer the best-performing Ad formats that match the latest trending technology - choose the best ads
             format that interests you!

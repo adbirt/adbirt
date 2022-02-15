@@ -220,6 +220,13 @@
         <div class="row d-flex justify-content-center mx-2">
             <p class="h2 text-black">Monetize Your Website Traffic With Adbirt</p>
         </div>
+
+        <div class="mx-4 row">
+            <div class="col-12 col-md-4 d-flex-flex-row align-items-center justify-content-center">.</div>
+            <div class="col-12 col-md-4 d-flex-flex-row align-items-center justify-content-center">.</div>
+            <div class="col-12 col-md-4 d-flex-flex-row align-items-center justify-content-center">.</div>
+        </div>
+
         <div class="mx-4 row">
             <div class="col-12 col-md-4">
                 <div class="col-12 d-flex justify-content-center">
@@ -234,7 +241,7 @@
             </div>
 
             <div class="col-12 col-md-4 my-5 d-flex">
-                <div class="col-12 d-flex justify-content-start order-1 order-sm-2">
+                <div class="col-12 d-flex justify-content-center align-items-center">
                     <img src="/public/assets-revamp/img/actions-and-events/choose-ad.png" class="steps_image" />
                 </div>
                 <div class="col-12 d-flex align-items-center order-2 order-sm-1">

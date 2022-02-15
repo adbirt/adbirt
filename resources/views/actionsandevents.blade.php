@@ -49,6 +49,10 @@
             margin: 0;
         }
 
+        .adbirt-page-heading {
+            height: 200px !important;
+        }
+
         @media (min-width: 992px) {
             .hero_image {
                 width: 600px;
@@ -73,7 +77,7 @@
 @section('content')
 
     <div class="adbirt-content clearfix">
-        <div class="adbirt-page-heading adbirt-size-md adbirt-dynamic-bg">
+        <div class="adbirt-page-heading">
             {{-- <div class="container">
                 <div class="adbirt-page-heading-in text-center">
                     <h1 class="adbirt-page-heading-title">Actions and events</h1>

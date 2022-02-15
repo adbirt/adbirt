@@ -2,7 +2,7 @@
 
 @section('style')
     <style>
-        .btn-primary {
+        .btn-danger {
             background-color: #ff7c00;
             border: #ff7c00;
         }
@@ -31,6 +31,10 @@
             padding: 20px;
             border-radius: 50%;
             border: #fff;
+        }
+
+        .step-card {
+            height: 180px !important;
         }
 
         .steps_image {
@@ -69,9 +73,8 @@
 @section('content')
 
     <div class="adbirt-content clearfix">
-        <div class="adbirt-page-heading adbirt-size-md adbirt-dynamic-bg"
-            style="background-image: url(public/assets-revamp/img/blog/5.jpg); background-size:cover; background-position: center center;">
-            <div class="container">
+        <div class="adbirt-page-heading adbirt-size-md adbirt-dynamic-bg">
+            {{-- <div class="container">
                 <div class="adbirt-page-heading-in text-center">
                     <h1 class="adbirt-page-heading-title">Actions and events</h1>
                     <div class="adbirt-post-label">
@@ -79,7 +82,7 @@
                         <span>Actions and events</span>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div><!-- adbirt-page-heading -->
 
     </div>
@@ -108,7 +111,7 @@
                                 searching for your business online. And pay your des
                                 ired amount only when you make sale or leads.
                             </p>
-                            <button class="btn btn-primary">Learn More</button>
+                            <button class="btn btn-danger bg-primary-color">Learn More</button>
                         </div>
                     </div>
                 </div>
@@ -172,7 +175,7 @@
                 </div>
             </div>
             <div class="row d-flex justify-content-center">
-                <button class="btn btn-primary">Learn More</button>
+                <button class="btn btn-danger bg-primary-color">Learn More</button>
             </div>
         </div>
     </section>
@@ -207,7 +210,7 @@
                                 lishers like yours to Monetize your website traffic and with
                                 draw instantly when you earn as Adbirt Publisher.
                             </p>
-                            <button class="btn btn-primary">Learn More</button>
+                            <button class="btn btn-danger bg-primary-color">Learn More</button>
                         </div>
                     </div>
                 </div>
@@ -226,7 +229,7 @@
                 <div>
                     <img src="/public/assets-revamp/img/actions-and-events/register.png" class="steps_image" />
                 </div>
-                <div class="text-black text-center p-3 shadow">
+                <div class="text-black text-center p-3 shadow step-card">
                     <p class="h3 font-weight-bold">1. Create An Account</p>
                     <p>Set up your publishers account by telling us more about your medium of monetization.</p>
                 </div>
@@ -236,7 +239,7 @@
                 <div>
                     <img src="/public/assets-revamp/img/actions-and-events/choose-ad.png" class="steps_image" />
                 </div>
-                <div class="text-black text-center p-3 shadow">
+                <div class="text-black text-center p-3 shadow step-card">
                     <p class="h3 font-weight-bold">2. Choose An Ad Campaign</p>
                     <p>Pick a Campaign that is suitable to the interests of your Audience, i.e email leads or
                         website.</p>
@@ -247,7 +250,7 @@
                 <div>
                     <img src="/public/assets-revamp/img/actions-and-events/upload-ad.png" class="steps_image" />
                 </div>
-                <div class="text-black text-center p-3 shadow">
+                <div class="text-black text-center p-3 shadow step-card">
                     <p class="h3 font-weight-bold">3. Place It On Your Website</p>
                     <p>Place it on your website, Email Leads, Social Media handles,Whatsapp group, Blog or other
                         Channels.</p>
@@ -257,7 +260,7 @@
         </div>
 
         <div class="row d-flex justify-content-center">
-            <button class="btn btn-primary">Start Earning Now</button>
+            <button class="btn btn-danger bg-primary-color">Start Earning Now</button>
         </div>
     </section>
 
@@ -268,7 +271,7 @@
             format that interests you!
         </p>
         <div class="w-100">
-            <p>See all our Ad Formats:</p>
+            <p class="w-100 text-center">See all our Ad Formats:</p>
             <ul class="format_list w-100 d-md-flex justify-content-center pl-0 text-primary-color">
                 <li>Display Banner</li>
                 <li>Native Ads</li>

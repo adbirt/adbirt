@@ -315,11 +315,11 @@
         <p class="text-center h2">
             <span class="text-primary-color">Best-</span>Converting Ad Formats
         </p>
-        <br />
         <p class="text-center">
             We offer the best-performing Ad formats that match the latest trending technology - choose the best ads
             format that interests you!
         </p>
+        <br />
         <div class="w-100">
             <p class="w-100 text-center">See all our Ad Formats:</p>
             <ul class="format_list w-100 d-md-flex justify-content-center pl-0 text-primary-color">

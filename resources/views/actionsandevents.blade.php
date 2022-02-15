@@ -1,5 +1,70 @@
 @extends('layouts.frontend')
 
+@section('style')
+    <style>
+        .btn-primary {
+            background-color: #ff7c00;
+            border: #ff7c00;
+        }
+
+        .text_title {
+            color: #ff7c00;
+            font-family: cursive;
+            font-size: 2rem;
+        }
+
+        .hero_image {
+            width: 300px;
+            object-fit: cover;
+        }
+
+        .feature_icon {
+            width: 75px;
+            height: 75px;
+        }
+
+        .feature_iconWrap {
+            background-color: #fff;
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+            display: inline-block;
+            padding: 20px;
+            border-radius: 50%;
+            border: #fff;
+        }
+
+        .steps_image {
+            width: 200px;
+        }
+
+        .format_list {
+            list-style: none;
+        }
+
+        .format_list li {
+            margin: 0;
+        }
+
+        @media (min-width: 992px) {
+            .hero_image {
+                width: 600px;
+            }
+
+            .steps_image {
+                width: 300px;
+            }
+
+            .format_list li {
+                margin: 0 1.5rem;
+            }
+
+            .text_title {
+                font-size: 2.5rem;
+            }
+        }
+
+    </style>
+@stop
+
 @section('content')
     <br />
     <br />

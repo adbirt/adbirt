@@ -256,7 +256,7 @@
         <div class="mx-4">
             <div class="row">
                 <div class="col d-flex justify-content-center">
-                    <img src="./images/register.png" class="steps_image" />
+                    <img src="/public/assets-revamp/img/actions-and-events/register.png" class="steps_image" />
                 </div>
                 <div class="col d-flex align-items-center">
                     <div class="px-1 mx-1 px-sm-5 mx-sm-5">
@@ -275,13 +275,13 @@
                     </div>
                 </div>
                 <div class="col d-flex justify-content-start order-1 order-sm-2">
-                    <img src="./images/choose-ad.png" class="steps_image" />
+                    <img src="/public/assets-revamp/img/actions-and-events/choose-ad.png" class="steps_image" />
                 </div>
             </div>
 
             <div class="row my-5">
                 <div class="col d-flex justify-content-center">
-                    <img src="./images/upload-ad.png" class="steps_image" />
+                    <img src="/public/assets-revamp/img/actions-and-events/upload-ad.png" class="steps_image" />
                 </div>
                 <div class="col d-flex align-items-center">
                     <div class="px-1 mx-1 px-sm-5 mx-sm-5">

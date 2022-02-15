@@ -133,7 +133,7 @@
                                 alt="click" />
                         </div>
                         <div class="my-4 d-flex flex-column align-items-center">
-                            <p class="h4 mt-3 open-sans-text">Cost Per Action</p>
+                            <p class="h4 mt-3 open-sans-text text-black">Cost Per Action</p>
                             <p class="mx-0 mx-lg-2 text-center roboto-text font-size-16 text-black font-weight-bold">
                                 Promote your products or service online pay your desired amount when you make a sale
                                 or get a new lead to
@@ -149,7 +149,7 @@
                                 alt="click" />
                         </div>
                         <div class="my-4 d-flex flex-column align-items-center">
-                            <p class="h4 mt-3 open-sans-text">Cost Per Sales</p>
+                            <p class="h4 mt-3 open-sans-text text-black">Cost Per Sales</p>
                             <p class="mx-0 mx-lg-2 text-center roboto-text font-size-16 text-black font-weight-bold">
                                 You're in total control of your ad budget, set the cost within your means and only
                                 pay after a successful
@@ -165,7 +165,7 @@
                                 alt="click icon" />
                         </div>
                         <div class="my-4 d-flex flex-column align-items-center">
-                            <p class="h4 mt-3 open-sans-text">Cost Per Click</p>
+                            <p class="h4 mt-3 open-sans-text text-black">Cost Per Click</p>
                             <p class="mx-0 mx-lg-2 text-center roboto-text font-size-16 text-black font-weight-bold">
                                 Get unlimited impressions to your business for free and only pay for a valid click
                                 when users visit or
@@ -270,7 +270,7 @@
                 </div>
                 <div class="col-12 col-md-6 d-flex align-items-center">
                     <div class="px-1 mx-1 px-sm-5 mx-sm-5">
-                        <p class="h3 font-weight-bold open-sans-text">1. Create An Account</p>
+                        <p class="h3 font-weight-bold open-sans-text text-black">1. Create An Account</p>
                         <p class="roboto-text font-size-16 text-black font-weight-bold">Set up your publishers account by telling us more
                             about your
                             medium of
@@ -282,7 +282,7 @@
             <div class="row my-5 d-flex">
                 <div class="col-12 col-md-6 d-flex align-items-center order-2 order-sm-1">
                     <div class="px-1 mx-1 px-sm-5 mx-sm-5">
-                        <p class="h3 font-weight-bold open-sans-text">2. Choose An Ad Campaign</p>
+                        <p class="h3 font-weight-bold open-sans-text text-black">2. Choose An Ad Campaign</p>
                         <p class="roboto-text font-size-16 text-black font-weight-bold">Pick a Campaign that is suitable to the interests of
                             your
                             Audience, i.e
@@ -301,7 +301,7 @@
                 </div>
                 <div class="col-12 col-md-6 d-flex align-items-center">
                     <div class="px-1 mx-1 px-sm-5 mx-sm-5">
-                        <p class="h3 font-weight-bold open-sans-text">3. Place It On Your Website</p>
+                        <p class="h3 font-weight-bold open-sans-text text-black">3. Place It On Your Website</p>
                         <p class="roboto-text font-size-16 text-black font-weight-bold">Place it on your website, Email Leads, Social Media
                             handles,Whatsapp
                             group, Blog or other

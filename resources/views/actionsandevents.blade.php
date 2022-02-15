@@ -11,7 +11,7 @@
             color: #ff7c00;
             font-family: cursive;
             /*font-size: 2rem;*/
-            font-size: 30px;
+            font-size: 50px;
         }
 
         .hero_image {
@@ -91,6 +91,7 @@
     <section class="my-5">
         <div class="d-flex justify-content-center">
             <p class="text_title">FOR ADVERTISERS</p>
+            <br />
             <p class="h5 text-center text-black">Get the best result that interest you </p>
         </div>
         <div class="container-fluid">
@@ -217,14 +218,14 @@
     <!-- STEPS -->
     <section class="container my-5">
         <div class="row d-flex justify-content-center mx-2">
-            <p class="h3">Monetize Your Website Traffic With Adbirt</p>
+            <p class="h2 text-black">Monetize Your Website Traffic With Adbirt</p>
         </div>
-        <div class="mx-4">
-            <div class="row">
-                <div class="col-12 col-md-6 d-flex justify-content-center">
+        <div class="mx-4 row">
+            <div class="col-12 col-md-4 row">
+                <div class="col-12 d-flex justify-content-center">
                     <img src="/public/assets-revamp/img/actions-and-events/register.png" class="steps_image" />
                 </div>
-                <div class="col-12 col-md-6 d-flex align-items-center">
+                <div class="col-12 d-flex align-items-center">
                     <div class="px-1 mx-1 px-sm-5 mx-sm-5">
                         <p class="h3 font-weight-bold">1. Create An Account</p>
                         <p>Set up your publishers account by telling us more about your medium of monetization.</p>
@@ -232,24 +233,24 @@
                 </div>
             </div>
 
-            <div class="row my-5 d-flex">
-                <div class="col-12 col-md-6 d-flex align-items-center order-2 order-sm-1">
+            <div class="col-12 col-md-4 row my-5 d-flex">
+                <div class="col-12 d-flex align-items-center order-2 order-sm-1">
                     <div class="px-1 mx-1 px-sm-5 mx-sm-5">
                         <p class="h3 font-weight-bold">2. Choose An Ad Campaign</p>
                         <p>Pick a Campaign that is suitable to the interests of your Audience, i.e email leads or
                             website.</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 d-flex justify-content-start order-1 order-sm-2">
+                <div class="col-12 d-flex justify-content-start order-1 order-sm-2">
                     <img src="/public/assets-revamp/img/actions-and-events/choose-ad.png" class="steps_image" />
                 </div>
             </div>
 
-            <div class="row my-5">
-                <div class="col-12 col-md-6 d-flex justify-content-center">
+            <div class="col-12 col-md-4 row my-5">
+                <div class="col-12 d-flex justify-content-center">
                     <img src="/public/assets-revamp/img/actions-and-events/upload-ad.png" class="steps_image" />
                 </div>
-                <div class="col-12 col-md-6 d-flex align-items-center">
+                <div class="col-12 d-flex align-items-center">
                     <div class="px-1 mx-1 px-sm-5 mx-sm-5">
                         <p class="h3 font-weight-bold">3. Place It On Your Website</p>
                         <p>Place it on your website, Email Leads, Social Media handles,Whatsapp group, Blog or other

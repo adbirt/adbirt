@@ -50,7 +50,7 @@
         }
 
         .adbirt-page-heading {
-            height: 200px !important;
+            height: 140px !important;
         }
 
         @media (min-width: 992px) {

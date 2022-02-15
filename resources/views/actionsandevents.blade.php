@@ -10,7 +10,8 @@
         .text_title {
             color: #ff7c00;
             font-family: cursive;
-            font-size: 2rem;
+            /*font-size: 2rem;*/
+            font-size: 30px;
         }
 
         .hero_image {
@@ -89,7 +90,8 @@
 
     <section class="my-5">
         <div class="d-flex justify-content-center">
-            <p class="text_title">For Advertiser</p>
+            <p class="text_title">FOR ADVERTISERS</p>
+            <p class="h5 text-center text-black">Get the best result that interest you </p>
         </div>
         <div class="container-fluid">
             <div class="row">
@@ -183,7 +185,7 @@
     <!-- FOR PUBLISHER  -->
     <section>
         <div class="d-flex justify-content-center">
-            <p class="text_title">For Publisher</p>
+            <p class="text_title">FOR PUBLISHERS</p>
         </div>
         <div class="container-fluid">
             <div class="row">

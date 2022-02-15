@@ -13,8 +13,8 @@
             font-size: 2rem !important;
         }
 
-        .font-size-15 {
-            font-size: 15px !important;
+        .font-size-16 {
+            font-size: 16px !important;
         }
 
         .hero_image {
@@ -134,7 +134,7 @@
                         </div>
                         <div class="my-4 d-flex flex-column align-items-center">
                             <p class="h4 mt-3 open-sans-text">Cost Per Action</p>
-                            <p class="mx-0 mx-lg-2 text-center roboto-text font-size-15 text-black">
+                            <p class="mx-0 mx-lg-2 text-center roboto-text font-size-16 text-black">
                                 Promote your products or service online pay your desired amount when you make a sale
                                 or get a new lead to
                                 your business.
@@ -150,7 +150,7 @@
                         </div>
                         <div class="my-4 d-flex flex-column align-items-center">
                             <p class="h4 mt-3 open-sans-text">Cost Per Sales</p>
-                            <p class="mx-0 mx-lg-2 text-center roboto-text font-size-15 text-black">
+                            <p class="mx-0 mx-lg-2 text-center roboto-text font-size-16 text-black">
                                 You're in total control of your ad budget, set the cost within your means and only
                                 pay after a successful
                                 sales or leads.
@@ -166,7 +166,7 @@
                         </div>
                         <div class="my-4 d-flex flex-column align-items-center">
                             <p class="h4 mt-3 open-sans-text">Cost Per Click</p>
-                            <p class="mx-0 mx-lg-2 text-center roboto-text font-size-15 text-black">
+                            <p class="mx-0 mx-lg-2 text-center roboto-text font-size-16 text-black">
                                 Get unlimited impressions to your business for free and only pay for a valid click
                                 when users visit or
                                 land on your websites.
@@ -271,7 +271,7 @@
                 <div class="col-12 col-md-6 d-flex align-items-center">
                     <div class="px-1 mx-1 px-sm-5 mx-sm-5">
                         <p class="h3 font-weight-bold open-sans-text">1. Create An Account</p>
-                        <p class="roboto-text font-size-15 text-black">Set up your publishers account by telling us more
+                        <p class="roboto-text font-size-16 text-black">Set up your publishers account by telling us more
                             about your
                             medium of
                             monetization.</p>
@@ -283,7 +283,7 @@
                 <div class="col-12 col-md-6 d-flex align-items-center order-2 order-sm-1">
                     <div class="px-1 mx-1 px-sm-5 mx-sm-5">
                         <p class="h3 font-weight-bold open-sans-text">2. Choose An Ad Campaign</p>
-                        <p class="roboto-text font-size-15 text-black">Pick a Campaign that is suitable to the interests of
+                        <p class="roboto-text font-size-16 text-black">Pick a Campaign that is suitable to the interests of
                             your
                             Audience, i.e
                             email leads or website.
@@ -302,7 +302,7 @@
                 <div class="col-12 col-md-6 d-flex align-items-center">
                     <div class="px-1 mx-1 px-sm-5 mx-sm-5">
                         <p class="h3 font-weight-bold open-sans-text">3. Place It On Your Website</p>
-                        <p class="roboto-text font-size-15 text-black">Place it on your website, Email Leads, Social Media
+                        <p class="roboto-text font-size-16 text-black">Place it on your website, Email Leads, Social Media
                             handles,Whatsapp
                             group, Blog or other
                             Channels.</p>

@@ -235,6 +235,8 @@
                                             us</a></li>
                                     <li> <a href="/privacy"><i class="fas fa-long-arrow-alt-right mr-2"></i>Privacy
                                             policy</a></li>
+                                    <li> <a href="/actions-and-events"><i
+                                                class="fas fa-long-arrow-alt-right mr-2"></i>Actions And Events</a></li>
                                 </ul>
                             </div>
                             <!--- END COL -->

@@ -78,20 +78,10 @@
 
     <div class="adbirt-content clearfix">
         <div class="adbirt-page-heading">
-            {{-- <div class="container">
-                <div class="adbirt-page-heading-in text-center">
-                    <h1 class="adbirt-page-heading-title">Actions and events</h1>
-                    <div class="adbirt-post-label">
-                        <span><a href="/">Home</a></span>
-                        <span>Actions and events</span>
-                    </div>
-                </div>
-            </div> --}}
         </div><!-- adbirt-page-heading -->
 
     </div>
 
-    <br />
     <br />
     <br />
 
@@ -269,7 +259,9 @@
     </section>
 
     <section class="container my-5">
-        <p class="text-center h2">Best Converting Ad Formats</p>
+        <p class="text-center h2">
+            <span class="text-primary-color">Best-</span>Converting Ad Formats
+        </p>
         <p class="text-center">
             We offer the best-performing Ad formats that match the latest trending technology - choose the best ads
             format that interests you!

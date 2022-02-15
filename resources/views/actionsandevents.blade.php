@@ -267,7 +267,8 @@
                 <div class="col-12 col-md-6 d-flex align-items-center">
                     <div class="px-1 mx-1 px-sm-5 mx-sm-5">
                         <p class="h3 font-weight-bold open-sans-text">1. Create An Account</p>
-                        <p class="roboto-text">Set up your publishers account by telling us more about your medium of
+                        <p class="roboto-text text-black">Set up your publishers account by telling us more about your
+                            medium of
                             monetization.</p>
                     </div>
                 </div>
@@ -277,7 +278,8 @@
                 <div class="col-12 col-md-6 d-flex align-items-center order-2 order-sm-1">
                     <div class="px-1 mx-1 px-sm-5 mx-sm-5">
                         <p class="h3 font-weight-bold open-sans-text">2. Choose An Ad Campaign</p>
-                        <p class="roboto-text">Pick a Campaign that is suitable to the interests of your Audience, i.e
+                        <p class="roboto-text text-black">Pick a Campaign that is suitable to the interests of your
+                            Audience, i.e
                             email leads or website.
                         </p>
                     </div>
@@ -294,7 +296,8 @@
                 <div class="col-12 col-md-6 d-flex align-items-center">
                     <div class="px-1 mx-1 px-sm-5 mx-sm-5">
                         <p class="h3 font-weight-bold open-sans-text">3. Place It On Your Website</p>
-                        <p class="roboto-text">Place it on your website, Email Leads, Social Media handles,Whatsapp
+                        <p class="roboto-text text-black">Place it on your website, Email Leads, Social Media
+                            handles,Whatsapp
                             group, Blog or other
                             Channels.</p>
                     </div>

@@ -221,10 +221,34 @@
             <p class="h2 text-black">Monetize Your Website Traffic With Adbirt</p>
         </div>
 
-        <div class="mx-4 row">
-            <div class="col-12 col-md-4 d-flex-flex-row align-items-center justify-content-center">.</div>
-            <div class="col-12 col-md-4 d-flex-flex-row align-items-center justify-content-center">.</div>
-            <div class="col-12 col-md-4 d-flex-flex-row align-items-center justify-content-center">.</div>
+        <div class="m-4 row">
+            <div class="col-12 col-md-4 d-flex-flex-row align-items-center justify-content-center text-center">
+                <div>
+                    <img src="/public/assets-revamp/img/actions-and-events/choose-ad.png" class="steps_image" />
+                </div>
+                <div class="text-black text-center">
+                    text
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 d-flex-flex-row align-items-center justify-content-center text-center">
+                <div>
+                    <img src="/public/assets-revamp/img/actions-and-events/choose-ad.png" class="steps_image" />
+                </div>
+                <div class="text-black text-center">
+                    text
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 d-flex-flex-row align-items-center justify-content-center text-center">
+                <div>
+                    <img src="/public/assets-revamp/img/actions-and-events/choose-ad.png" class="steps_image" />
+                </div>
+                <div class="text-black text-center">
+                    text
+                </div>
+            </div>
+
         </div>
 
         <div class="mx-4 row">

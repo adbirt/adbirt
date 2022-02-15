@@ -322,11 +322,11 @@
         <div class="w-100">
             <p class="w-100 text-center">See all our Ad Formats:</p>
             <ul class="format_list w-100 d-md-flex justify-content-center pl-0 text-primary-color">
-                <li>Display Banner</li>
-                <li>Native Ads</li>
-                <li>Direct Links</li>
-                <li>Video Ads</li>
-                <li>Push Notifications</li>
+                <li class="text-center">Display Banner</li>
+                <li class="text-center">Native Ads</li>
+                <li class="text-center">Direct Links</li>
+                <li class="text-center">Video Ads</li>
+                <li class="text-center">Push Notifications</li>
             </ul>
         </div>
     </section>

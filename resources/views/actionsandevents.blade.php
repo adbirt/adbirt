@@ -88,8 +88,6 @@
     <section class="my-5">
         <div class="d-flex flex-column justify-content-center align-items-center">
             <p class="text_title">FOR ADVERTISERS</p>
-            <br />
-            <p class="h5 text-center text-black">Get the best result that interest you </p>
         </div>
         <div class="container-fluid">
             <div class="row">
@@ -115,6 +113,11 @@
             </div>
         </div>
     </section>
+
+    <br />
+    <p class="h5 text-center text-black">Get the best result that interest you </p>
+
+
     <!-- FEATURES SECTION  -->
     <section class="my-5 mx-4 mx-md-5 px-md-5 pt-5">
         <div class="my-5">
@@ -188,7 +191,8 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col col-12 col-md-6 d-flex flex-row justify-content-end">
-                    <img src="/public/assets-revamp/img/actions-and-events/screen_second.png" class="hero_image" />
+                    <img src="/public/assets-revamp/img/actions-and-events/screen_second.png" class="hero_image"
+                        style="height: 550px;object-fit: contain;" />
                 </div>
                 <div class="col col-12 col-md-6 d-flex align-items-center">
                     <div class="px-0 mx-0 px-md-2 mx-md-2 px-lg-4 mx-lg-5">
@@ -255,10 +259,10 @@
 
         <div class="mx-4">
             <div class="row">
-                <div class="col d-flex justify-content-center">
+                <div class="col-12 col-md-6 d-flex justify-content-center">
                     <img src="/public/assets-revamp/img/actions-and-events/register.png" class="steps_image" />
                 </div>
-                <div class="col d-flex align-items-center">
+                <div class="col-12 col-md-6 d-flex align-items-center">
                     <div class="px-1 mx-1 px-sm-5 mx-sm-5">
                         <p class="h3 font-weight-bold">1. Create An Account</p>
                         <p>Set up your publishers account by telling us more about your medium of monetization.</p>
@@ -267,23 +271,23 @@
             </div>
 
             <div class="row my-5 d-flex">
-                <div class="col d-flex align-items-center order-2 order-sm-1">
+                <div class="col-12 col-md-6 d-flex align-items-center order-2 order-sm-1">
                     <div class="px-1 mx-1 px-sm-5 mx-sm-5">
                         <p class="h3 font-weight-bold">2. Choose An Ad Campaign</p>
                         <p>Pick a Campaign that is suitable to the interests of your Audience, i.e email leads or website.
                         </p>
                     </div>
                 </div>
-                <div class="col d-flex justify-content-start order-1 order-sm-2">
+                <div class="col-12 col-md-6 d-flex justify-content-start order-1 order-sm-2">
                     <img src="/public/assets-revamp/img/actions-and-events/choose-ad.png" class="steps_image" />
                 </div>
             </div>
 
             <div class="row my-5">
-                <div class="col d-flex justify-content-center">
+                <div class="col-12 col-md-6 d-flex justify-content-center">
                     <img src="/public/assets-revamp/img/actions-and-events/upload-ad.png" class="steps_image" />
                 </div>
-                <div class="col d-flex align-items-center">
+                <div class="col-12 col-md-6 d-flex align-items-center">
                     <div class="px-1 mx-1 px-sm-5 mx-sm-5">
                         <p class="h3 font-weight-bold">3. Place It On Your Website</p>
                         <p>Place it on your website, Email Leads, Social Media handles,Whatsapp group, Blog or other

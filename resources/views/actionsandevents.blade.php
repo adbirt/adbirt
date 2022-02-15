@@ -129,8 +129,8 @@
                                 alt="click" />
                         </div>
                         <div class="my-4 d-flex flex-column align-items-center">
-                            <p class="h4 mt-3">Cost Per Action</p>
-                            <p class="mx-0 mx-lg-2 text-center">
+                            <p class="h4 mt-3 open-sans-text">Cost Per Action</p>
+                            <p class="mx-0 mx-lg-2 text-center roboto-text text-black">
                                 Promote your products or service online pay your desired amount when you make a sale
                                 or get a new lead to
                                 your business.
@@ -145,8 +145,8 @@
                                 alt="click" />
                         </div>
                         <div class="my-4 d-flex flex-column align-items-center">
-                            <p class="h4 mt-3">Cost Per Sales</p>
-                            <p class="mx-0 mx-lg-2 text-center">
+                            <p class="h4 mt-3 open-sans-text">Cost Per Sales</p>
+                            <p class="mx-0 mx-lg-2 text-center roboto-text text-black">
                                 You're in total control of your ad budget, set the cost within your means and only
                                 pay after a successful
                                 sales or leads.
@@ -161,8 +161,8 @@
                                 alt="click icon" />
                         </div>
                         <div class="my-4 d-flex flex-column align-items-center">
-                            <p class="h4 mt-3">Cost Per Click</p>
-                            <p class="mx-0 mx-lg-2 text-center">
+                            <p class="h4 mt-3 open-sans-text">Cost Per Click</p>
+                            <p class="mx-0 mx-lg-2 text-center roboto-text text-black">
                                 Get unlimited impressions to your business for free and only pay for a valid click
                                 when users visit or
                                 land on your websites.

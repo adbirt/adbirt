@@ -36,6 +36,10 @@
             border: #fff;
         }
 
+        .text-custom-color {
+            color: #3c404 !important;
+        }
+
         .step-card {
             height: 180px !important;
         }
@@ -119,7 +123,7 @@
     </section>
 
     <br />
-    <p class="h5 text-center text-black">Get the best result that interest you </p>
+    <p class="h5 text-center text-custom-color">Get the best result that interest you </p>
 
 
     <!-- FEATURES SECTION  -->
@@ -133,8 +137,9 @@
                                 alt="click" />
                         </div>
                         <div class="my-4 d-flex flex-column align-items-center">
-                            <p class="h4 mt-3 open-sans-text text-black">Cost Per Action</p>
-                            <p class="mx-0 mx-lg-2 text-center open-sans-text font-size-16 text-black font-weight-bold">
+                            <p class="h4 mt-3 open-sans-text text-custom-color">Cost Per Action</p>
+                            <p
+                                class="mx-0 mx-lg-2 text-center open-sans-text font-size-16 text-custom-color font-weight-bold">
                                 Promote your products or service online pay your desired amount when you make a sale
                                 or get a new lead to
                                 your business.
@@ -149,8 +154,9 @@
                                 alt="click" />
                         </div>
                         <div class="my-4 d-flex flex-column align-items-center">
-                            <p class="h4 mt-3 open-sans-text text-black">Cost Per Sales</p>
-                            <p class="mx-0 mx-lg-2 text-center open-sans-text font-size-16 text-black font-weight-bold">
+                            <p class="h4 mt-3 open-sans-text text-custom-color">Cost Per Sales</p>
+                            <p
+                                class="mx-0 mx-lg-2 text-center open-sans-text font-size-16 text-custom-color font-weight-bold">
                                 You're in total control of your ad budget, set the cost within your means and only
                                 pay after a successful
                                 sales or leads.
@@ -165,8 +171,9 @@
                                 alt="click icon" />
                         </div>
                         <div class="my-4 d-flex flex-column align-items-center">
-                            <p class="h4 mt-3 open-sans-text text-black">Cost Per Click</p>
-                            <p class="mx-0 mx-lg-2 text-center open-sans-text font-size-16 text-black font-weight-bold">
+                            <p class="h4 mt-3 open-sans-text text-custom-color">Cost Per Click</p>
+                            <p
+                                class="mx-0 mx-lg-2 text-center open-sans-text font-size-16 text-custom-color font-weight-bold">
                                 Get unlimited impressions to your business for free and only pay for a valid click
                                 when users visit or
                                 land on your websites.
@@ -225,7 +232,7 @@
     <!-- STEPS -->
     <section class="container my-5">
         <div class="row d-flex justify-content-center mx-2">
-            <p class="h2 text-black">Monetize Your Website Traffic With Adbirt</p>
+            <p class="h2 text-custom-color">Monetize Your Website Traffic With Adbirt</p>
         </div>
 
         {{-- <div class="m-4 row">
@@ -233,7 +240,7 @@
                 <div>
                     <img src="/public/assets-revamp/img/actions-and-events/register.png" class="steps_image" />
                 </div>
-                <div class="text-black text-center p-3 shadow step-card">
+                <div class="text-custom-color text-center p-3 shadow step-card">
                     <p class="h3 font-weight-bold">1. Create An Account</p>
                     <p>Set up your publishers account by telling us more about your medium of monetization.</p>
                 </div>
@@ -243,7 +250,7 @@
                 <div>
                     <img src="/public/assets-revamp/img/actions-and-events/choose-ad.png" class="steps_image" />
                 </div>
-                <div class="text-black text-center p-3 shadow step-card">
+                <div class="text-custom-color text-center p-3 shadow step-card">
                     <p class="h3 font-weight-bold">2. Choose An Ad Campaign</p>
                     <p>Pick a Campaign that is suitable to the interests of your Audience, i.e email leads or
                         website.</p>
@@ -254,7 +261,7 @@
                 <div>
                     <img src="/public/assets-revamp/img/actions-and-events/upload-ad.png" class="steps_image" />
                 </div>
-                <div class="text-black text-center p-3 shadow step-card">
+                <div class="text-custom-color text-center p-3 shadow step-card">
                     <p class="h3 font-weight-bold">3. Place It On Your Website</p>
                     <p>Place it on your website, Email Leads, Social Media handles,Whatsapp group, Blog or other
                         Channels.</p>
@@ -270,8 +277,9 @@
                 </div>
                 <div class="col-12 col-md-6 d-flex align-items-center">
                     <div class="px-1 mx-1 px-sm-5 mx-sm-5">
-                        <p class="h3 font-weight-bold open-sans-text text-black">1. Create An Account</p>
-                        <p class="open-sans-text font-size-16 text-black font-weight-bold">Set up your publishers account by
+                        <p class="h3 font-weight-bold open-sans-text text-custom-color">1. Create An Account</p>
+                        <p class="open-sans-text font-size-16 text-custom-color font-weight-bold">Set up your publishers
+                            account by
                             telling us more
                             about your
                             medium of
@@ -283,8 +291,9 @@
             <div class="row my-5 d-flex">
                 <div class="col-12 col-md-6 d-flex align-items-center order-2 order-sm-1">
                     <div class="px-1 mx-1 px-sm-5 mx-sm-5">
-                        <p class="h3 font-weight-bold open-sans-text text-black">2. Choose An Ad Campaign</p>
-                        <p class="open-sans-text font-size-16 text-black font-weight-bold">Pick a Campaign that is suitable
+                        <p class="h3 font-weight-bold open-sans-text text-custom-color">2. Choose An Ad Campaign</p>
+                        <p class="open-sans-text font-size-16 text-custom-color font-weight-bold">Pick a Campaign that is
+                            suitable
                             to
                             the interests of
                             your
@@ -304,8 +313,9 @@
                 </div>
                 <div class="col-12 col-md-6 d-flex align-items-center">
                     <div class="px-1 mx-1 px-sm-5 mx-sm-5">
-                        <p class="h3 font-weight-bold open-sans-text text-black">3. Place It On Your Website</p>
-                        <p class="open-sans-text font-size-16 text-black font-weight-bold">Place it on your website, Email
+                        <p class="h3 font-weight-bold open-sans-text text-custom-color">3. Place It On Your Website</p>
+                        <p class="open-sans-text font-size-16 text-custom-color font-weight-bold">Place it on your website,
+                            Email
                             Leads, Social Media
                             handles,Whatsapp
                             group, Blog or other
@@ -366,7 +376,7 @@
                 <div class="col-lg-7 col-xl-6">
                     <div class="adbirt-section-title text-center wow zoomIn" data-wow-duration="0.3s"
                         data-wow-delay="0.1s" data-wow-offset="0">
-                        <p class="text-black">Advertise your Products & Services and only pay when any of these Events
+                        <p class="text-custom-color">Advertise your Products & Services and only pay when any of these Events
                             or Actions occur</p>
                     </div>
                 </div>

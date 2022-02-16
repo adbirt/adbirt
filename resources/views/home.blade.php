@@ -454,11 +454,11 @@
     <br /> --}}
 
     {{-- begin Chilo's design --}}
-    <div class="adbirt-content clearfix">
+    {{-- <div class="adbirt-content clearfix">
         <div class="adbirt-page-heading custom-clearfix">
         </div><!-- adbirt-page-heading -->
 
-    </div>
+    </div> --}}
 
     <br />
     <br />

@@ -555,7 +555,7 @@
             </div>
             <br />
             <div class="row d-flex justify-content-center">
-                <a href="/actions-and-events" class="btn btn-danger bg-primary-color">Learn More</a>
+                <a href="/dashboard" class="btn btn-danger bg-primary-color">Start Now</a>
             </div>
         </div>
     </section>

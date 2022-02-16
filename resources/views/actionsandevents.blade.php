@@ -359,6 +359,8 @@
         </div>
     </section>
 
+    {{-- demarcation --}}
+
     {{-- <div class="adbirt-content clearfix">
             <div class="adbirt-page-heading adbirt-size-md adbirt-dynamic-bg"
                 style="background-image: url(public/assets-revamp/img/blog/5.jpg); background-size:cover; background-position: center center;">

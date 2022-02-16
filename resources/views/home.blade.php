@@ -65,6 +65,12 @@
             height: 140px !important;
         }
 
+        @media (max-width: 600px) {
+            .for-advertisers {
+                margin-bottom: 20px;
+            }
+        }
+
         @media (min-width: 992px) {
             .hero_image {
                 width: 600px;
@@ -465,7 +471,7 @@
 
     <section class="my-5">
         <div class="d-flex flex-column justify-content-center align-items-center">
-            <p class="h3 text_title font-weight-bold">FOR ADVERTISERS</p>
+            <p class="h3 text_title font-weight-bold for-advertisers">FOR ADVERTISERS</p>
         </div>
         <div class="container-fluid">
             <div class="row">

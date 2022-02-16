@@ -1,5 +1,92 @@
 @extends('layouts.frontend')
 
+@section('style')
+    <style>
+        .btn-danger {
+            background-color: #ff7c00;
+            border: #ff7c00;
+        }
+
+        .text_title {
+            color: #ff7c00;
+            font-family: cursive;
+            font-size: 2rem !important;
+        }
+
+        .font-size-16 {
+            font-size: 16px !important;
+        }
+
+        .hero_image {
+            width: 300px;
+            object-fit: cover;
+        }
+
+        .feature_icon {
+            width: 75px;
+            height: 75px;
+        }
+
+        .sub-heads {
+            font-family: 'Times New Roman', Times, serif !important;
+            font-size: 1.7rem !important;
+        }
+
+        .feature_iconWrap {
+            background-color: #fff;
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+            display: inline-block;
+            padding: 20px;
+            border-radius: 50%;
+            border: #fff;
+        }
+
+        .text-custom-color {
+            color: #3c404 !important;
+        }
+
+        .step-card {
+            height: 180px !important;
+        }
+
+        .steps_image {
+            width: 150px;
+        }
+
+        .format_list {
+            list-style: none;
+        }
+
+        .format_list li {
+            margin: 0;
+        }
+
+        .custom-clearfix {
+            height: 140px !important;
+        }
+
+        @media (min-width: 992px) {
+            .hero_image {
+                width: 600px;
+                image-rendering: pixelated !important;
+            }
+
+            .steps_image {
+                width: 200px;
+            }
+
+            .format_list li {
+                margin: 0 1.5rem !important;
+            }
+
+            .text_title {
+                font-size: 2rem !important;
+            }
+        }
+
+    </style>
+@stop
+
 @section('content')
     <!-- Slider Start -->
     <div id="adbirt-slider" class="adbirt-slider slider2">
@@ -87,14 +174,14 @@
             <div class="row">
                 <div class="col-lg-6">
                     <!-- <div class="row">
-                                                                                                <div class="col-6">
-                                                                                                    <img class="mb-3" src="public/assets-revamp/img/about/about-2.jpg" alt="">
-                                                                                                    <img src="public/assets-revamp/img/about/about-1.jpg" alt="">
-                                                                                                </div>
-                                                                                                <div class="col-6">
-                                                                                                    <img src="public/assets-revamp/img/about/about-3.jpg" alt="">
-                                                                                                </div>
-                                                                                            </div> -->
+                                                                                                                        <div class="col-6">
+                                                                                                                            <img class="mb-3" src="public/assets-revamp/img/about/about-2.jpg" alt="">
+                                                                                                                            <img src="public/assets-revamp/img/about/about-1.jpg" alt="">
+                                                                                                                        </div>
+                                                                                                                        <div class="col-6">
+                                                                                                                            <img src="public/assets-revamp/img/about/about-3.jpg" alt="">
+                                                                                                                        </div>
+                                                                                                                    </div> -->
                     <img src="/public/assets-revamp/img/digital-marketing-simplified.png" alt="Digital Marketing"
                         style="margin-top: 4rem !important;" class="wow slideInLeft" data-wow-duration="0.95s"
                         data-wow-delay="0.1s" data-wow-offset="0" />
@@ -135,41 +222,41 @@
 
     <!-- START PROGRAM -->
     <!-- <section id="program" class="adbirt-program-area" data-stellar-background-ratio="0.3"
-                                                                       style="background-image:url(public/assets-revamp/img/bg/11.jpg);background-size:cover; background-position: center center">
-                                                                       <div class="adbirt-home-overlay adbirt-section-padding">
-                                                                        <div class="container">
-                                                                         <div class="row clearfix justify-content-left">
-                                                                          <div class="col-xl-6 col-lg-6 col-12 mx-auto my-auto wow fadeIn" data-wow-duration="1s"
-                                                                           data-wow-delay="0.3s" data-wow-offset="0">
-                                                                           <div class="adbirt-section-title text-left">
-                                                                            <h5 class="adbirt-sheading text-white">Intro Video</h5>
-                                                                            <h2 class="mb-3 text-white">You can It Solution Easy to Learn and Program that you can
-                                                                             easily Develop</h2>
-                                                                           </div>
-                                                                          </div>
-                                                                          <--- END COL --
+                                                                                               style="background-image:url(public/assets-revamp/img/bg/11.jpg);background-size:cover; background-position: center center">
+                                                                                               <div class="adbirt-home-overlay adbirt-section-padding">
+                                                                                                <div class="container">
+                                                                                                 <div class="row clearfix justify-content-left">
+                                                                                                  <div class="col-xl-6 col-lg-6 col-12 mx-auto my-auto wow fadeIn" data-wow-duration="1s"
+                                                                                                   data-wow-delay="0.3s" data-wow-offset="0">
+                                                                                                   <div class="adbirt-section-title text-left">
+                                                                                                    <h5 class="adbirt-sheading text-white">Intro Video</h5>
+                                                                                                    <h2 class="mb-3 text-white">You can It Solution Easy to Learn and Program that you can
+                                                                                                     easily Develop</h2>
+                                                                                                   </div>
+                                                                                                  </div>
+                                                                                                  <--- END COL --
 
-                                                                          <div class="col-xl-6 col-12 adbirt-program-img">
-                                                                           <div class="waves-box">
-                                                                            <-- If dont need Video then add class .adbirt-hidden --
-                                                                            <a href="https://www.youtube.com/watch?v=Ao2XIhZ0JGs"
-                                                                             class="iq-video popup-video mfp-iframe"> <i class="fa fa-play"></i>
-                                                                            </a>
-                                                                            <div class="iq-waves">
-                                                                             <div class="waves wave-1"></div>
-                                                                             <div class="waves wave-2"></div>
-                                                                             <div class="waves wave-3"></div>
-                                                                            </div>
-                                                                           </div>
-                                                                          </div>
-                                                                          <--- END COL --
-                                                                         </div>
-                                                                         <--- END ROW --
-                                                                        </div>
-                                                                        <--- END CONTAINER --
-                                                                       </div>
-                                                                       <--- END CONTAINER --
-                                                                      </section> -->
+                                                                                                  <div class="col-xl-6 col-12 adbirt-program-img">
+                                                                                                   <div class="waves-box">
+                                                                                                    <-- If dont need Video then add class .adbirt-hidden --
+                                                                                                    <a href="https://www.youtube.com/watch?v=Ao2XIhZ0JGs"
+                                                                                                     class="iq-video popup-video mfp-iframe"> <i class="fa fa-play"></i>
+                                                                                                    </a>
+                                                                                                    <div class="iq-waves">
+                                                                                                     <div class="waves wave-1"></div>
+                                                                                                     <div class="waves wave-2"></div>
+                                                                                                     <div class="waves wave-3"></div>
+                                                                                                    </div>
+                                                                                                   </div>
+                                                                                                  </div>
+                                                                                                  <--- END COL --
+                                                                                                 </div>
+                                                                                                 <--- END ROW --
+                                                                                                </div>
+                                                                                                <--- END CONTAINER --
+                                                                                               </div>
+                                                                                               <--- END CONTAINER --
+                                                                                              </section> -->
     <!-- END PROGRAM -->
 
     <!-- START SERVICE -->
@@ -370,46 +457,46 @@
     <!-- Benefit session start here -->
     <!-- <section>
 
-                                                                                <div class="text-center feed-back pt-5">
-                                                                                    <h2 class="text-primary-color font-weight-bold font-size-35">What you'll benefit</h2>
+                                                                                                        <div class="text-center feed-back pt-5">
+                                                                                                            <h2 class="text-primary-color font-weight-bold font-size-35">What you'll benefit</h2>
 
-                                                                                    <center>
-                                                                                        <hr>
-                                                                                    </center>
-                                                                                </div>
+                                                                                                            <center>
+                                                                                                                <hr>
+                                                                                                            </center>
+                                                                                                        </div>
 
-                                                                                <div class="container mt-2">
+                                                                                                        <div class="container mt-2">
 
 
-                                                                                    <div class="row">
-                                                                                        <div class="col-md-4">
-                                                                                            <h3 class="text-center">01</h3>
-                                                                                            <p class="all-second">
-                                                                                                We offer you the lowest cost for your marketing, and you're in total control of your
-                                                                                                marketing budget set your cost within your means & only pay for the result.
-                                                                                            </p>
-                                                                                        </div>
+                                                                                                            <div class="row">
+                                                                                                                <div class="col-md-4">
+                                                                                                                    <h3 class="text-center">01</h3>
+                                                                                                                    <p class="all-second">
+                                                                                                                        We offer you the lowest cost for your marketing, and you're in total control of your
+                                                                                                                        marketing budget set your cost within your means & only pay for the result.
+                                                                                                                    </p>
+                                                                                                                </div>
 
-                                                                                        <div class="col-md-4">
-                                                                                            <h3 class="text-center">02</h3>
-                                                                                            <p class="all-second">
-                                                                                                With the innovation of our technology, We will promote your product or service to the
-                                                                                                targeted audience who are likely to buy from you only
-                                                                                            </p>
-                                                                                        </div>
+                                                                                                                <div class="col-md-4">
+                                                                                                                    <h3 class="text-center">02</h3>
+                                                                                                                    <p class="all-second">
+                                                                                                                        With the innovation of our technology, We will promote your product or service to the
+                                                                                                                        targeted audience who are likely to buy from you only
+                                                                                                                    </p>
+                                                                                                                </div>
 
-                                                                                        <div class="col-md-4">
-                                                                                            <h3 class="text-center">03</h3>
-                                                                                            <p class="all-second">
-                                                                                                We guarantee our advertisers 100% return on investment from their ads-spend.YOu don't have
-                                                                                                to pay a dime if you don't make a sale or get a new lead to your business
-                                                                                            </p>
-                                                                                        </div>
-                                                                                    </div>
+                                                                                                                <div class="col-md-4">
+                                                                                                                    <h3 class="text-center">03</h3>
+                                                                                                                    <p class="all-second">
+                                                                                                                        We guarantee our advertisers 100% return on investment from their ads-spend.YOu don't have
+                                                                                                                        to pay a dime if you don't make a sale or get a new lead to your business
+                                                                                                                    </p>
+                                                                                                                </div>
+                                                                                                            </div>
 
-                                                                                </div>
+                                                                                                        </div>
 
-                                                                            </section> -->
+                                                                                                    </section> -->
     <!-- End Benefit session start here -->
 
     <br />
@@ -417,7 +504,7 @@
 
     {{-- begin Chilo's design --}}
     <div class="adbirt-content clearfix">
-        <div class="adbirt-page-heading">
+        <div class="adbirt-page-heading custom-clearfix">
         </div><!-- adbirt-page-heading -->
 
     </div>

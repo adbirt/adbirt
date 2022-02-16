@@ -29,6 +29,7 @@
 
         .sub-heads {
             font-family: 'Times New Roman', Times, serif !important;
+            font-size: 1.7rem !important;
         }
 
         .feature_iconWrap {
@@ -67,6 +68,7 @@
         @media (min-width: 992px) {
             .hero_image {
                 width: 600px;
+                image-rendering: pixelated !important;
             }
 
             .steps_image {

@@ -27,6 +27,10 @@
             height: 75px;
         }
 
+        .get-the-best-results {
+            /**/
+        }
+
         .feature_iconWrap {
             background-color: #fff;
             box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
@@ -123,11 +127,11 @@
     </section>
 
     <br />
-    <p class="h5 text-center text-custom-color">Get the best result that interest you </p>
+    <h3 class="text-center text-black get-the-best-results">Get the best result that interest you </h3>
 
 
     <!-- FEATURES SECTION  -->
-    <section class="my-5 mx-4 mx-md-5 px-md-5 pt-5">
+    <section class="mb-5 mx-4 mx-md-5 px-md-5 pt-0">
         <div class="my-5">
             <div class="row mx-2 mx-sm-0 mx-md-5">
                 <div class="col col-lg-4 col-md-6 col-12">

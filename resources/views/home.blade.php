@@ -87,14 +87,14 @@
             <div class="row">
                 <div class="col-lg-6">
                     <!-- <div class="row">
-                                                                                <div class="col-6">
-                                                                                    <img class="mb-3" src="public/assets-revamp/img/about/about-2.jpg" alt="">
-                                                                                    <img src="public/assets-revamp/img/about/about-1.jpg" alt="">
-                                                                                </div>
-                                                                                <div class="col-6">
-                                                                                    <img src="public/assets-revamp/img/about/about-3.jpg" alt="">
-                                                                                </div>
-                                                                            </div> -->
+                                                                                                <div class="col-6">
+                                                                                                    <img class="mb-3" src="public/assets-revamp/img/about/about-2.jpg" alt="">
+                                                                                                    <img src="public/assets-revamp/img/about/about-1.jpg" alt="">
+                                                                                                </div>
+                                                                                                <div class="col-6">
+                                                                                                    <img src="public/assets-revamp/img/about/about-3.jpg" alt="">
+                                                                                                </div>
+                                                                                            </div> -->
                     <img src="/public/assets-revamp/img/digital-marketing-simplified.png" alt="Digital Marketing"
                         style="margin-top: 4rem !important;" class="wow slideInLeft" data-wow-duration="0.95s"
                         data-wow-delay="0.1s" data-wow-offset="0" />
@@ -135,41 +135,41 @@
 
     <!-- START PROGRAM -->
     <!-- <section id="program" class="adbirt-program-area" data-stellar-background-ratio="0.3"
-                                                       style="background-image:url(public/assets-revamp/img/bg/11.jpg);background-size:cover; background-position: center center">
-                                                       <div class="adbirt-home-overlay adbirt-section-padding">
-                                                        <div class="container">
-                                                         <div class="row clearfix justify-content-left">
-                                                          <div class="col-xl-6 col-lg-6 col-12 mx-auto my-auto wow fadeIn" data-wow-duration="1s"
-                                                           data-wow-delay="0.3s" data-wow-offset="0">
-                                                           <div class="adbirt-section-title text-left">
-                                                            <h5 class="adbirt-sheading text-white">Intro Video</h5>
-                                                            <h2 class="mb-3 text-white">You can It Solution Easy to Learn and Program that you can
-                                                             easily Develop</h2>
-                                                           </div>
-                                                          </div>
-                                                          <--- END COL --
+                                                                       style="background-image:url(public/assets-revamp/img/bg/11.jpg);background-size:cover; background-position: center center">
+                                                                       <div class="adbirt-home-overlay adbirt-section-padding">
+                                                                        <div class="container">
+                                                                         <div class="row clearfix justify-content-left">
+                                                                          <div class="col-xl-6 col-lg-6 col-12 mx-auto my-auto wow fadeIn" data-wow-duration="1s"
+                                                                           data-wow-delay="0.3s" data-wow-offset="0">
+                                                                           <div class="adbirt-section-title text-left">
+                                                                            <h5 class="adbirt-sheading text-white">Intro Video</h5>
+                                                                            <h2 class="mb-3 text-white">You can It Solution Easy to Learn and Program that you can
+                                                                             easily Develop</h2>
+                                                                           </div>
+                                                                          </div>
+                                                                          <--- END COL --
 
-                                                          <div class="col-xl-6 col-12 adbirt-program-img">
-                                                           <div class="waves-box">
-                                                            <-- If dont need Video then add class .adbirt-hidden --
-                                                            <a href="https://www.youtube.com/watch?v=Ao2XIhZ0JGs"
-                                                             class="iq-video popup-video mfp-iframe"> <i class="fa fa-play"></i>
-                                                            </a>
-                                                            <div class="iq-waves">
-                                                             <div class="waves wave-1"></div>
-                                                             <div class="waves wave-2"></div>
-                                                             <div class="waves wave-3"></div>
-                                                            </div>
-                                                           </div>
-                                                          </div>
-                                                          <--- END COL --
-                                                         </div>
-                                                         <--- END ROW --
-                                                        </div>
-                                                        <--- END CONTAINER --
-                                                       </div>
-                                                       <--- END CONTAINER --
-                                                      </section> -->
+                                                                          <div class="col-xl-6 col-12 adbirt-program-img">
+                                                                           <div class="waves-box">
+                                                                            <-- If dont need Video then add class .adbirt-hidden --
+                                                                            <a href="https://www.youtube.com/watch?v=Ao2XIhZ0JGs"
+                                                                             class="iq-video popup-video mfp-iframe"> <i class="fa fa-play"></i>
+                                                                            </a>
+                                                                            <div class="iq-waves">
+                                                                             <div class="waves wave-1"></div>
+                                                                             <div class="waves wave-2"></div>
+                                                                             <div class="waves wave-3"></div>
+                                                                            </div>
+                                                                           </div>
+                                                                          </div>
+                                                                          <--- END COL --
+                                                                         </div>
+                                                                         <--- END ROW --
+                                                                        </div>
+                                                                        <--- END CONTAINER --
+                                                                       </div>
+                                                                       <--- END CONTAINER --
+                                                                      </section> -->
     <!-- END PROGRAM -->
 
     <!-- START SERVICE -->
@@ -370,49 +370,288 @@
     <!-- Benefit session start here -->
     <!-- <section>
 
-                                                                <div class="text-center feed-back pt-5">
-                                                                    <h2 class="text-primary-color font-weight-bold font-size-35">What you'll benefit</h2>
+                                                                                <div class="text-center feed-back pt-5">
+                                                                                    <h2 class="text-primary-color font-weight-bold font-size-35">What you'll benefit</h2>
 
-                                                                    <center>
-                                                                        <hr>
-                                                                    </center>
-                                                                </div>
+                                                                                    <center>
+                                                                                        <hr>
+                                                                                    </center>
+                                                                                </div>
 
-                                                                <div class="container mt-2">
+                                                                                <div class="container mt-2">
 
 
-                                                                    <div class="row">
-                                                                        <div class="col-md-4">
-                                                                            <h3 class="text-center">01</h3>
-                                                                            <p class="all-second">
-                                                                                We offer you the lowest cost for your marketing, and you're in total control of your
-                                                                                marketing budget set your cost within your means & only pay for the result.
-                                                                            </p>
-                                                                        </div>
+                                                                                    <div class="row">
+                                                                                        <div class="col-md-4">
+                                                                                            <h3 class="text-center">01</h3>
+                                                                                            <p class="all-second">
+                                                                                                We offer you the lowest cost for your marketing, and you're in total control of your
+                                                                                                marketing budget set your cost within your means & only pay for the result.
+                                                                                            </p>
+                                                                                        </div>
 
-                                                                        <div class="col-md-4">
-                                                                            <h3 class="text-center">02</h3>
-                                                                            <p class="all-second">
-                                                                                With the innovation of our technology, We will promote your product or service to the
-                                                                                targeted audience who are likely to buy from you only
-                                                                            </p>
-                                                                        </div>
+                                                                                        <div class="col-md-4">
+                                                                                            <h3 class="text-center">02</h3>
+                                                                                            <p class="all-second">
+                                                                                                With the innovation of our technology, We will promote your product or service to the
+                                                                                                targeted audience who are likely to buy from you only
+                                                                                            </p>
+                                                                                        </div>
 
-                                                                        <div class="col-md-4">
-                                                                            <h3 class="text-center">03</h3>
-                                                                            <p class="all-second">
-                                                                                We guarantee our advertisers 100% return on investment from their ads-spend.YOu don't have
-                                                                                to pay a dime if you don't make a sale or get a new lead to your business
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
+                                                                                        <div class="col-md-4">
+                                                                                            <h3 class="text-center">03</h3>
+                                                                                            <p class="all-second">
+                                                                                                We guarantee our advertisers 100% return on investment from their ads-spend.YOu don't have
+                                                                                                to pay a dime if you don't make a sale or get a new lead to your business
+                                                                                            </p>
+                                                                                        </div>
+                                                                                    </div>
 
-                                                                </div>
+                                                                                </div>
 
-                                                            </section> -->
+                                                                            </section> -->
     <!-- End Benefit session start here -->
 
     <br />
+    <br />
+
+    {{-- begin Chilo's design --}}
+    <div class="adbirt-content clearfix">
+        <div class="adbirt-page-heading">
+        </div><!-- adbirt-page-heading -->
+
+    </div>
+
+    <br />
+    <br />
+
+    <section class="my-5">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <p class="h3 text_title font-weight-bold">FOR ADVERTISERS</p>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col col-12 col-md-6 d-flex align-items-center">
+                    <div class="px-0 mx-0 px-md-2 mx-md-2 px-lg-4 mx-lg-5">
+                        <div class="px-2 mx-0 px-md-2 mx-md-2 px-xl-4 mx-xl-5">
+                            <h1 class="h2">
+                                Increase your sales and generate a new lead with Adbirt Ads
+                            </h1>
+                            <p class="">
+                                With our robust technology, we'll tailor your product
+                                or service in front of the prospective customer who is
+                                searching for your business online. And pay your des
+                                ired amount only when you make sale or leads.
+                            </p>
+                            <br />
+                            <button class="btn btn-danger bg-primary-color">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-12 col-md-6 d-flex justify-content-center">
+                    <img src="/public/assets-revamp/img/actions-and-events/second_new.png" class="hero_image" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br />
+    <h3 class="text-center text-black sub-heads">Get the best result that interest you </h3>
+
+
+    <!-- FEATURES SECTION  -->
+    <section class="mb-5 mx-4 mx-md-5 px-md-5 pt-0">
+        <div class="my-5">
+            <div class="row mx-2 mx-sm-0 mx-md-5">
+                <div class="col col-lg-4 col-md-6 col-12">
+                    <div class="feature_card d-flex flex-column align-items-center">
+                        <div class="feature_iconWrap">
+                            <img src="/public/assets-revamp/img/actions-and-events/double-click.png" class="feature_icon"
+                                alt="click" />
+                        </div>
+                        <div class="my-4 d-flex flex-column align-items-center">
+                            <p class="h4 mt-3 open-sans-text text-custom-color">Cost Per Action</p>
+                            <p
+                                class="mx-0 mx-lg-2 text-center open-sans-text font-size-16 text-custom-color font-weight-bold">
+                                Promote your products or service online pay your desired amount when you make a sale
+                                or get a new lead to
+                                your business.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-4 col-md-6 col-12">
+                    <div class="feature_card d-flex flex-column align-items-center">
+                        <div class="feature_iconWrap">
+                            <img src="/public/assets-revamp/img/actions-and-events/acquisition.png" class="feature_icon"
+                                alt="click" />
+                        </div>
+                        <div class="my-4 d-flex flex-column align-items-center">
+                            <p class="h4 mt-3 open-sans-text text-custom-color">Cost Per Sales</p>
+                            <p
+                                class="mx-0 mx-lg-2 text-center open-sans-text font-size-16 text-custom-color font-weight-bold">
+                                You're in total control of your ad budget, set the cost within your means and only
+                                pay after a successful
+                                sales or leads.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-4 col-md-6 col-12">
+                    <div class="feature_card d-flex flex-column align-items-center">
+                        <div class="feature_iconWrap">
+                            <img src="/public/assets-revamp/img/actions-and-events/click.png" class="feature_icon"
+                                alt="click icon" />
+                        </div>
+                        <div class="my-4 d-flex flex-column align-items-center">
+                            <p class="h4 mt-3 open-sans-text text-custom-color">Cost Per Click</p>
+                            <p
+                                class="mx-0 mx-lg-2 text-center open-sans-text font-size-16 text-custom-color font-weight-bold">
+                                Get unlimited impressions to your business for free and only pay for a valid click
+                                when users visit or
+                                land on your websites.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="row d-flex justify-content-center">
+                <button class="btn btn-danger bg-primary-color">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="d-flex justify-content-center">
+            <img src="/public/assets-revamp/img/actions-and-events/adbirt_logo.png" class="" />
+        </div>
+    </section>
+
+    <!-- FOR PUBLISHER  -->
+    <section>
+        <div class="d-flex justify-content-center">
+            <p class="h3 text_title font-weight-bold">FOR PUBLISHERS</p>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col col-12 col-md-6 d-flex flex-row justify-content-end">
+                    <img src="/public/assets-revamp/img/actions-and-events/screen_second.png" class="hero_image"
+                        style="height: 550px;object-fit: contain;" />
+                </div>
+                <div class="col col-12 col-md-6 d-flex align-items-center">
+                    <div class="px-0 mx-0 px-md-2 mx-md-2 px-lg-4 mx-lg-5">
+                        <div class="px-2 mx-0 px-md-2 mx-md-2">
+                            <h2 class="h2">
+                                No minimum threshold
+                                is required and there's
+                                no limit to earnings.
+                            </h2>
+                            <p class="mr-5">
+                                We acknowledge creating good content is hard. Therefore monetizing it shouldn't be
+                                difficult. Join thousands of pub
+                                lishers like yours to Monetize your website traffic and with
+                                draw instantly when you earn as Adbirt Publisher.
+                            </p>
+                            <br />
+                            <button class="btn btn-danger bg-primary-color">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STEPS -->
+    <section class="container my-5">
+        <div class="row d-flex justify-content-center mx-2">
+            <h3 class="text-center text-black sub-heads">Monetize Your Website Traffic With Adbirt</h3>
+        </div>
+
+        <div class="mx-4">
+            <div class="row">
+                <div class="col-12 col-md-6 d-flex justify-content-center">
+                    <img src="/public/assets-revamp/img/actions-and-events/register.png" class="steps_image" />
+                </div>
+                <div class="col-12 col-md-6 d-flex align-items-center">
+                    <div class="px-1 mx-1 px-sm-5 mx-sm-5">
+                        <p class="h3 font-weight-bold open-sans-text text-custom-color">1. Create An Account</p>
+                        <p class="open-sans-text font-size-16 text-custom-color font-weight-bold">Set up your publishers
+                            account by
+                            telling us more
+                            about your
+                            medium of
+                            monetization.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row my-5 d-flex">
+                <div class="col-12 col-md-6 d-flex align-items-center order-2 order-sm-1">
+                    <div class="px-1 mx-1 px-sm-5 mx-sm-5">
+                        <p class="h3 font-weight-bold open-sans-text text-custom-color">2. Choose An Ad Campaign</p>
+                        <p class="open-sans-text font-size-16 text-custom-color font-weight-bold">Pick a Campaign that is
+                            suitable
+                            to
+                            the interests of
+                            your
+                            Audience, i.e
+                            email leads or website.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 d-flex justify-content-start order-1 order-sm-2">
+                    <img src="/public/assets-revamp/img/actions-and-events/choose-ad.png" class="steps_image" />
+                </div>
+            </div>
+
+            <div class="row my-5">
+                <div class="col-12 col-md-6 d-flex justify-content-center">
+                    <img src="/public/assets-revamp/img/actions-and-events/upload-ad.png" class="steps_image" />
+                </div>
+                <div class="col-12 col-md-6 d-flex align-items-center">
+                    <div class="px-1 mx-1 px-sm-5 mx-sm-5">
+                        <p class="h3 font-weight-bold open-sans-text text-custom-color">3. Place It On Your Website</p>
+                        <p class="open-sans-text font-size-16 text-custom-color font-weight-bold">Place it on your website,
+                            Email
+                            Leads, Social Media
+                            handles,Whatsapp
+                            group, Blog or other
+                            Channels.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <button class="btn btn-danger bg-primary-color">Start Earning Now</button>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <p class="text-center h2">
+            <span class="text-primary-color">Best-</span>Converting Ad Formats
+        </p>
+        <p class="text-center">
+            We offer the best-performing Ad formats that match the latest trending technology - choose the best ads
+            format that interests you!
+        </p>
+        <br />
+        <br />
+        <div class="w-100">
+            <p class="w-100 text-center">See all our Ad Formats:</p>
+            <ul class="format_list w-100 d-md-flex justify-content-center pl-0 text-primary-color">
+                <li class="text-center">Display Banner</li>
+                <li class="text-center">Native Ads</li>
+                <li class="text-center">Direct Links</li>
+                <li class="text-center">Video Ads</li>
+                <li class="text-center">Push Notifications</li>
+            </ul>
+        </div>
+    </section>
+    {{-- End Chilo's Design --}}
+
     <br />
 
     <!-- Testimonial page here -->

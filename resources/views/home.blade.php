@@ -88,7 +88,7 @@
 @stop
 
 @section('content')
-    <!-- Slider Start -->
+    {{-- <!-- Slider Start -->
     <div id="adbirt-slider" class="adbirt-slider slider2">
         <div class="adbirt-carousel owl-carousel" data-loop="true" data-items="1" data-margin="0" data-autoplay="true"
             data-hoverpause="false" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="true" data-nav="false"
@@ -164,7 +164,7 @@
     </div>
     <!-- Wavify end -->
 
-    <br>
+    <br> --}}
 
 
     {{-- <!-- About Section Start -->
@@ -458,10 +458,10 @@
         <div class="adbirt-page-heading custom-clearfix">
         </div><!-- adbirt-page-heading -->
 
-    </div> --}}
+    </div>
 
     <br />
-    <br />
+    <br /> --}}
 
     <section class="my-5">
         <div class="d-flex flex-column justify-content-center align-items-center">

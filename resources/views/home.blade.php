@@ -482,7 +482,7 @@
                                 ired amount only when you make sale or leads.
                             </p>
                             <br />
-                            <button class="btn btn-danger bg-primary-color">Learn More</button>
+                            <a href="/actions-and-events" class="btn btn-danger bg-primary-color">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -555,7 +555,7 @@
             </div>
             <br />
             <div class="row d-flex justify-content-center">
-                <button class="btn btn-danger bg-primary-color">Learn More</button>
+                <a href="/actions-and-events" class="btn btn-danger bg-primary-color">Learn More</a>
             </div>
         </div>
     </section>
@@ -592,7 +592,7 @@
                                 draw instantly when you earn as Adbirt Publisher.
                             </p>
                             <br />
-                            <button class="btn btn-danger bg-primary-color">Learn More</button>
+                            <a href="/actions-and-events" class="btn btn-danger bg-primary-color">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -663,7 +663,7 @@
         </div>
 
         <div class="row d-flex justify-content-center">
-            <button class="btn btn-danger bg-primary-color">Start Earning Now</button>
+            <a href="/dashboard" class="btn btn-danger bg-primary-color">Start Earning Now</a>
         </div>
     </section>
 

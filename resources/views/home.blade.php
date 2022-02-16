@@ -67,7 +67,7 @@
 
         @media (max-width: 600px) {
             .for-advertisers {
-                margin-bottom: 20px;
+                margin-bottom: 30px !important;
             }
         }
 

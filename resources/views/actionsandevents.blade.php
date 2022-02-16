@@ -27,8 +27,8 @@
             height: 75px;
         }
 
-        .get-the-best-results {
-            /**/
+        .sub-heads {
+            font-family: 'Times New Roman', Times, serif !important;
         }
 
         .feature_iconWrap {
@@ -127,7 +127,7 @@
     </section>
 
     <br />
-    <h3 class="text-center text-black get-the-best-results">Get the best result that interest you </h3>
+    <h3 class="text-center text-black sub-heads">Get the best result that interest you </h3>
 
 
     <!-- FEATURES SECTION  -->
@@ -236,7 +236,7 @@
     <!-- STEPS -->
     <section class="container my-5">
         <div class="row d-flex justify-content-center mx-2">
-            <p class="h2 text-custom-color">Monetize Your Website Traffic With Adbirt</p>
+            <h3 class="text-center text-black sub-heads">Monetize Your Website Traffic With Adbirt</h3>
         </div>
 
         {{-- <div class="m-4 row">

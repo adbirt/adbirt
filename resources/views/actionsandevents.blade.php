@@ -284,7 +284,8 @@
                 <div class="col-12 col-md-6 d-flex align-items-center order-2 order-sm-1">
                     <div class="px-1 mx-1 px-sm-5 mx-sm-5">
                         <p class="h3 font-weight-bold open-sans-text text-black">2. Choose An Ad Campaign</p>
-                        <p class="open-sans-text font-size-16 text-black font-weight-bold">Pick a Campaign that is suitable to
+                        <p class="open-sans-text font-size-16 text-black font-weight-bold">Pick a Campaign that is suitable
+                            to
                             the interests of
                             your
                             Audience, i.e

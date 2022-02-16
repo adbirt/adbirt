@@ -454,14 +454,14 @@
     <br /> --}}
 
     {{-- begin Chilo's design --}}
-    {{-- <div class="adbirt-content clearfix">
+    <div class="adbirt-content clearfix">
         <div class="adbirt-page-heading custom-clearfix">
         </div><!-- adbirt-page-heading -->
 
     </div>
 
     <br />
-    <br /> --}}
+    <br />
 
     <section class="my-5">
         <div class="d-flex flex-column justify-content-center align-items-center">

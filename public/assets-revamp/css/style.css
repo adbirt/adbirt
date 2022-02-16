@@ -72,6 +72,10 @@ body {
   --animate-duration: 2s;
 }
 
+* {
+  scroll-behavior: smooth !important;
+}
+
 h1,
 h2,
 h3,

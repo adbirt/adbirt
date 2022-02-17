@@ -107,7 +107,7 @@
                                         Download Plugin
                                     </a>
                                     <br />
-                                    <a href="http://adbirt.com/blog" target="_blank">Learn More</a>
+                                    <a href="https://www.adbirt.com/blog/add-adbirt-code-as-advertiser/" class="btn btn-info" target="_blank">Learn More</a>
                                 </div>
                                 <br />
 
@@ -128,7 +128,7 @@
                                         </div>
                                     </div>
                                     <br />
-                                    <a href="http://adbirt.com/blog" target="_blank">Learn More</a>
+                                    <a href="https://www.adbirt.com/blog/add-adbirt-code-as-advertiser/" class="btn btn-info" target="_blank">Learn More</a>
                                 </div>
 
                             </div>

@@ -589,7 +589,7 @@
                             <h2 class="h2">
                                 No minimum threshold
                                 is required and there's
-                                no li<br />mit to earnings
+                                no limit to earnings
                             </h2>
                             <p class="mr-5">
                                 We acknowledge creating good content is hard. Therefore monetizing it shouldn't be

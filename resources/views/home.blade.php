@@ -594,7 +594,7 @@
                             <p class="mr-5">
                                 We acknowledge creating good content is hard. Therefore monetizing it shouldn't be
                                 difficult. Join thousands of publishers like yours to Monetize your website traffic and
-                                withdraw instantly when you earn as Adbirt Publisher.
+                                withdraw instantly when you earn as Adbirt Publisher
                             </p>
                             <br />
                             <a href="/actions-and-events" class="btn btn-danger bg-primary-color">Learn More</a>

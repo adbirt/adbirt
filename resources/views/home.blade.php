@@ -482,7 +482,7 @@
                                 Increase your sales and generate a new lead with Adbirt Ads
                             </h1>
                             <p class="">
-                                With our robust technology, we'll tailor your products
+                                Let out technology tailor your products
                                 or services in front of the prospective customer who is
                                 searching for your business online. And pay your desired amount only when you make sale or
                                 leads.
@@ -586,10 +586,10 @@
                 <div class="col col-12 col-md-6 d-flex align-items-center">
                     <div class="px-0 mx-0 px-md-2 mx-md-2 px-lg-4 mx-lg-5">
                         <div class="px-2 mx-0 px-md-2 mx-md-2">
-                            <h2 class="h2 text-justify">
+                            <h2 class="h2">
                                 No minimum threshold
                                 is required and there's
-                                no limit<wbr /> to earnings
+                                no limit<br /> to earnings
                             </h2>
                             <p class="mr-5">
                                 We acknowledge creating good content is hard. Therefore monetizing it shouldn't be

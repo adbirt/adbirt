@@ -482,10 +482,10 @@
                                 Increase your sales and generate a new lead with Adbirt Ads
                             </h1>
                             <p class="">
-                                Let out technology tailor your products
-                                or services in front of the prospective customer who is
-                                searching for your business online. And pay your desired amount only when you make sale or
-                                leads.
+                                Let our technology tailor your products or services in front of prospective
+                                customer who is searching for your business online and only pay your desired amount when you
+                                make sales or leads. Get started with as low as $5 budget in your wallet. You don't have to
+                                break the banks.
                             </p>
                             <br />
                             <a href="/actions-and-events" class="btn btn-danger bg-primary-color">Learn More</a>

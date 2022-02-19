@@ -586,10 +586,10 @@
                 <div class="col col-12 col-md-6 d-flex align-items-center">
                     <div class="px-0 mx-0 px-md-2 mx-md-2 px-lg-4 mx-lg-5">
                         <div class="px-2 mx-0 px-md-2 mx-md-2">
-                            <h2 class="h2">
+                            <h2 class="h2 text-justify">
                                 No minimum threshold
                                 is required and there's
-                                no limit to earnings
+                                no limit<wbr /> to earnings
                             </h2>
                             <p class="mr-5">
                                 We acknowledge creating good content is hard. Therefore monetizing it shouldn't be

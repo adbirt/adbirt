@@ -482,10 +482,10 @@
                                 Increase your sales and generate a new lead with Adbirt Ads
                             </h1>
                             <p class="">
-                                With our robust technology, we'll tailor your product
-                                or service in front of the prospective customer who is
-                                searching for your business online. And pay your des
-                                ired amount only when you make sale or leads.
+                                With our robust technology, we'll tailor your products
+                                or services in front of the prospective customer who is
+                                searching for your business online. And pay your desired amount only when you make sale or
+                                leads.
                             </p>
                             <br />
                             <a href="/actions-and-events" class="btn btn-danger bg-primary-color">Learn More</a>
@@ -593,9 +593,8 @@
                             </h2>
                             <p class="mr-5">
                                 We acknowledge creating good content is hard. Therefore monetizing it shouldn't be
-                                difficult. Join thousands of pub
-                                lishers like yours to Monetize your website traffic and with
-                                draw instantly when you earn as Adbirt Publisher.
+                                difficult. Join thousands of publishers like yours to Monetize your website traffic and
+                                withdraw instantly when you earn as Adbirt Publisher.
                             </p>
                             <br />
                             <a href="/actions-and-events" class="btn btn-danger bg-primary-color">Learn More</a>
@@ -738,7 +737,7 @@
 
 
                 <p class="all-sentence  card px-4 pt-4 feedback-card">
-                    I worked with this platform for lead generation the results were impressive and their customer
+                    I worked with this platform for lead generation, the results were impressive and their customer
                     care support is top-notch, I like the fact we only paid for successful leads & their platform
                     allows us to set budget within our means.
                 </p>
@@ -756,7 +755,7 @@
 
                 <p class="all-sentence card px-4 pt-4 feedback-card">
                     Excellent communication and a great team to work with! I recommend this ad network highly. The
-                    ad works for me on sale and new lead to my business .I had a good experience with the company
+                    ad works for me on sale and new lead to my business. I had a good experience with the company
                     you may want to give them a trial.
                 </p>
             </div>

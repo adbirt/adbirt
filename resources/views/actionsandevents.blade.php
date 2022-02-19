@@ -122,7 +122,7 @@
                 </div>
                 <div class="adbirt-best-service-content">
                     <h3 class="adbirt-best-service-title">6. Cost Per Call (Cost Per Call)</h3>
-                    <p class="adbirt-best-service-description">PDo you have an Offer where you need interested
+                    <p class="adbirt-best-service-description">Do you have an Offer where you need interested
                         Prospect to Call you for negotiation and more details. Create an Ad about this Offer, set
                         your Cost Per call and go Live across our Ad network. Once a Customer clicks the button and
                         call you, you get charged, else your money remains intact. Learn more on integrating the

@@ -481,7 +481,7 @@
                             <h1 class="h2">
                                 Increase your sales and generate a new lead with Adbirt Ads
                             </h1>
-                            <p class="">
+                            <p class="text-left w-100">
                                 Let our technology tailor your products or services in front of prospective
                                 customer who is searching for your business online and only pay your desired amount when you
                                 make sales or leads. Get started with as low as $5 budget in your wallet. You don't have to

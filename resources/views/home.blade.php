@@ -588,8 +588,8 @@
                         <div class="px-2 mx-0 px-md-2 mx-md-2">
                             <h2 class="h2">
                                 No minimum threshold
-                                is required and there's
-                                no<br /> limit to earnings
+                                is required and<br /><wbr /> there's
+                                no limit to earnings
                             </h2>
                             <p class="mr-5">
                                 We acknowledge creating good content is hard. Therefore monetizing it shouldn't be

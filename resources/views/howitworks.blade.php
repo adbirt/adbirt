@@ -69,7 +69,7 @@
 
 
     <!-- Begin Adbirt for Advertisers -->
-    <div class="container my-3">
+    {{-- <div class="container my-3">
 
         <div class="row justify-content-center">
             <div class="col-lg-7 col-xl-6">
@@ -375,11 +375,12 @@
             <li class="p-3"> <a class="no-text-decoration" href="/dashboard">VIDEO ADS</a></li>
             <li class="p-3"> <a class="no-text-decoration" href="/dashboard">PUSH NOTIFICATIONS</a></li>
         </ul>
-    </div>
+    </div> --}}
+    {{-- end: new home page --}}
 
 
     {{-- begin: old how it works --}}
-    {{-- <!-- Begin Adbirt for Advertisers -->
+    <!-- Begin Adbirt for Advertisers -->
     <div class="container my-5">
 
         <div class="row justify-content-center">
@@ -540,7 +541,7 @@
             <a href="/dashboard" class="text-white font-weight-bold bg-primary-color btn">Let's Start</a>
         </div>
         <br>
-    </div> --}}
+    </div>
     {{-- end: old how it works --}}
 
 @stop

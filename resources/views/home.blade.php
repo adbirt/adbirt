@@ -477,7 +477,7 @@
             <div class="row">
                 <div class="col col-12 col-md-6 d-flex align-items-center">
                     <div class="px-0 mx-0 px-md-2 mx-md-2 px-lg-4 mx-lg-5">
-                        <div class="px-2 mx-0 px-md-2 mx-md-2 px-xl-4 mx-xl-5">
+                        <div class="px-2 mx-0 px-md-2 mx-md-2 px-xl-4">
                             <h1 class="h2">
                                 Increase your sales and generate a new lead with Adbirt Ads
                             </h1>

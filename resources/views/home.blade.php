@@ -587,7 +587,7 @@
                     <div class="px-0 mx-0 px-md-2 mx-md-2 px-lg-4 mx-lg-5">
                         <div class="px-2 mx-0 px-md-2 mx-md-2">
                             <h2 class="h2">
-                                No<br /><wbr /> minimum threshold
+                                No minimum threshold<br /><wbr />
                                 required and there's
                                 no limit to earnings
                             </h2>

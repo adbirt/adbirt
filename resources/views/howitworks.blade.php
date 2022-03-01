@@ -197,15 +197,15 @@
 
         </div>
         <!--- END ROW -->
-    </div>
+    </div> --}}
     <!-- End Adbirt for Advertisers -->
 
-    <div class="d-flex flex-row align-items-center justify-content-center w-100">
+    {{-- <div class="d-flex flex-row align-items-center justify-content-center w-100">
         <img src="/public/assets-revamp/img/adbirt-plus.png" alt="" />
-    </div>
+    </div> --}}
 
     <!-- Begin Adbirt for Publishers -->
-    <div class="container my-3">
+    {{-- <div class="container my-3">
 
         <div class="row justify-content-center">
             <div class="col-lg-7 col-xl-6">
@@ -259,7 +259,7 @@
                                 first step to putting your message across our Ad Network.
                             </p>
                         </div>
-                    </div> --}}
+                    </div> --}
 
             <br />
             <br />
@@ -347,11 +347,11 @@
 
         </div>
         <!--- END ROW -->
-    </div>
+    </div> --}}
     <!-- End Adbirt for Publishers -->
 
 
-    <div class="container mt-3 mb-2">
+    {{-- <div class="container mt-3 mb-2">
         <h3 class="text-center" style="font-size: 30px !important;">
             <span class="text-primary-color times-roman-font" style="font-size: 30px !important;">Best-</span>Converting Ad
             formats

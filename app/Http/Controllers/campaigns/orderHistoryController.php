@@ -97,9 +97,6 @@ class orderHistoryController extends Controller
             $destUrl = "https://adbirt.com/";
         }
 
-        // Check if Method Is POST Or Not
-        // if ($method == "POST") {
-
         if (!isset($input['campaign_code']) || empty($input['campaign_code'])) {
             $this->outputData['message'] = "campaign code is required ";
             return response()->json($this->outputData, 409);

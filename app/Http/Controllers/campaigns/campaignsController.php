@@ -1022,25 +1022,44 @@ class campaignsController extends Controller
                 $bnr->campaign_click += 1;
                 $bnr->save();
 
-                // $_url_object = parse_url($bnr->campaign_url);
-                // $_url_object['query']['camp_code'] = strval($id);
-                // $_url = build_url($_url_object);
-                // return redirect($_url);
-
                 if (strtoupper($bnr->campaign_type) != 'CPA') {
-                    // charge immediately if campaign type is anything order than CPA
-                    // file_get_contents("https://adbirt.com/campaigns/verified?campaign_code=$id");
 
-                    $url = "https://adbirt.com/campaigns/verified?campaign_code=$id";
-                    $curl = curl_init($url);
-                    curl_setopt($curl, CURLOPT_URL, $url);
-                    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-                    //for debug only!
-                    curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
-                    curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
-                    // run
-                    curl_exec($curl);
-                    curl_close($curl);
+                    // charge immediately if campaign type is anything order than CPA
+                    // $url = "https://adbirt.com/campaigns/verified?campaign_code=$id";
+                    // $curl = curl_init($url);
+                    // curl_setopt($curl, CURLOPT_URL, $url);
+                    // curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+                    // //for debug only!
+                    // curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
+                    // curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+                    // // run
+                    // curl_exec($curl);
+                    // curl_close($curl);
+
+                    // -- | --
+
+                    $url = "https://adbirt.com/campaigns/verified";
+                    $_fields = array(
+                        'campaign_code' => $id
+                    );
+                    $_fields_string = '';
+                    foreach ($_fields as $key => $value) {
+                        $_fields_string .= $key . '=' . $value . '&';
+                    }
+                    rtrim($_fields_string, '&');
+                    //open connection
+                    $ch = curl_init();
+
+                    //set the url, number of POST vars, POST data
+                    curl_setopt($ch, CURLOPT_URL, $url);
+                    curl_setopt($ch, CURLOPT_POST, count($_fields));
+                    curl_setopt($ch, CURLOPT_POSTFIELDS, $_fields_string);
+
+                    //execute post
+                    $result = curl_exec($ch);
+                    //close connection
+                    curl_close($ch);
+                    // -- | --
                 }
 
                 return redirect($bnr->campaign_url . "?camp_code=" . $id);

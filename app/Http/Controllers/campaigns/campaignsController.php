@@ -1029,7 +1029,18 @@ class campaignsController extends Controller
 
                 if (strtoupper($bnr->campaign_type) != 'CPA') {
                     // charge immediately if campaign type is anything order than CPA
-                    file_get_contents("https://adbirt.com/campaigns/verified?campaign_code=$id");
+                    // file_get_contents("https://adbirt.com/campaigns/verified?campaign_code=$id");
+
+                    $url = "https://adbirt.com/campaigns/verified?campaign_code=$id";
+                    $curl = curl_init($url);
+                    curl_setopt($curl, CURLOPT_URL, $url);
+                    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+                    //for debug only!
+                    curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
+                    curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+                    // run
+                    curl_exec($curl);
+                    curl_close($curl);
                 }
 
                 return redirect($bnr->campaign_url . "?camp_code=" . $id);

@@ -50,6 +50,11 @@
             padding: 2% !important;
         }
 
+
+        .adbirt-page-heading {
+            height: 200px;
+        }
+
     </style>
 @stop
 

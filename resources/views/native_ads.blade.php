@@ -126,7 +126,7 @@
 
 
                 <p class="Start-two">
-                    <button class="btn btn-danger bg-primary-color">Start Now For Free</button>
+                    <button class="btn btn-danger bg-primary-color border-0">Start Now For Free</button>
                 </p>
 
             </div>
@@ -177,7 +177,7 @@
                                 desktop, tablet)</a></li>
                     </ul>
                     <p class="Start-one">
-                        <button class="btn btn-danger bg-primary-color">Start Earning Now</button>
+                        <button class="btn btn-danger bg-primary-color border-0">Start Earning Now</button>
                     </p>
 
                 </div>

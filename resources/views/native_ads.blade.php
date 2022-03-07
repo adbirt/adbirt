@@ -7,7 +7,6 @@
             height: 80% !important;
         }
 
-
         .ads-three {
             margin-left: 5% !important;
         }
@@ -16,20 +15,7 @@
             font-family: 'Times New Roman', Times, serif;
         }
 
-        /* .All-one{
-                            font-family: cursive;
-                            font-weight: bolder;
-                            } */
-
-        .Our-difference {
-            background: #BC6A44;
-            color: white;
-        }
-
-
         button {
-            background: #BC6A44;
-            color: white;
             border: 1px solid;
             padding: 4px !important;
         }
@@ -45,10 +31,6 @@
 
         }
 
-        /* .images-one{
-                                background-size: cover;
-                            } */
-
         .no-text-decoration:hover {
             color: cadetblue;
         }
@@ -57,11 +39,6 @@
             text-decoration: none;
             color: #000;
             font-family: 'Times New Roman', Times, serif;
-        }
-
-        .Second-pub {
-            background: #BC6A44;
-            color: white;
         }
 
         .Start-one {
@@ -106,7 +83,7 @@
                 </p>
 
                 <div class="d-flex flex-row align-items-center justify-content-center">
-                    <span class="Our-difference text-center  p-2">
+                    <span class="bg-primary-color text-white text-center  p-2">
                         What makes us different from others.
                     </span>
                 </div>
@@ -134,7 +111,7 @@
 
 
                 <p class="Start-two">
-                    <button>Start Now For Free</button>
+                    <button class="btn btn-danger bg-primary-color">Start Now For Free</button>
                 </p>
 
             </div>
@@ -185,7 +162,7 @@
                                 desktop, tablet)</a></li>
                     </ul>
                     <p class="Start-one">
-                        <button>Start Earning Now</button>
+                        <button class="btn btn-danger bg-primary-color">Start Earning Now</button>
                     </p>
 
                 </div>

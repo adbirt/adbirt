@@ -52,7 +52,7 @@
 
 
         .adbirt-page-heading {
-            height: 200px;
+            height: 140px;
         }
 
     </style>

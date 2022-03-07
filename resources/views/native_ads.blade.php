@@ -54,6 +54,16 @@
 @stop
 
 @section('content')
+
+    <div class="adbirt-content clearfix">
+        <div class="adbirt-page-heading custom-clearfix">
+        </div><!-- adbirt-page-heading -->
+
+    </div>
+
+    <br />
+    <br />
+
     <div class="container-lg">
         <div class="mt-5  All-one ">
             <h4 class=" text-center">
@@ -123,7 +133,7 @@
 
                 <div>
                     <marquee>
-                        <span class="text-center Second-pub p-3">
+                        <span class="text-center bg-primary-color text-white p-3">
                             NEW! NATIVE ADS fOR PUBLISHERS
                         </span>
                     </marquee>

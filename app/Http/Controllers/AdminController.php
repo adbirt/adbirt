@@ -33,6 +33,12 @@ class AdminController extends Controller
             ->with('title', 'Terms');
     }
 
+    public function nativeAds()
+    {
+        return view('native_ads')
+            ->with('title', 'Adbirt native Ads');
+    }
+
     public function privacy()
     {
         return view('privacy')

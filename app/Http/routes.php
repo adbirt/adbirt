@@ -32,6 +32,7 @@ Route::any('/api/check-if-url-is-valid-campaign', 'campaigns\orderHistoryControl
 Route::get('/', ['as' => 'home', 'uses' => 'AdminController@home']);
 Route::get('how-it-works', ['as' => 'how-it-works', 'uses' => 'AdminController@howitworks']);
 Route::get('actions-and-events', ['as' => 'actions-and-events', 'uses' => 'AdminController@actionsandevents']);
+Route::get('native-ads', ['as' => 'native_ads', 'uses' => 'AdminController@nativeAds']);
 
 Route::get('contact', ['as' => 'contact', 'uses' => 'AdminController@contact']);
 Route::get('contactus', ['as' => 'contactus', 'uses' => 'AdminController@contact']);

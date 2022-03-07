@@ -17,9 +17,9 @@
         }
 
         /* .All-one{
-                    font-family: cursive;
-                    font-weight: bolder;
-                    } */
+                            font-family: cursive;
+                            font-weight: bolder;
+                            } */
 
         .Our-difference {
             background: #BC6A44;
@@ -46,8 +46,8 @@
         }
 
         /* .images-one{
-                        background-size: cover;
-                    } */
+                                background-size: cover;
+                            } */
 
         .no-text-decoration:hover {
             color: cadetblue;
@@ -91,7 +91,7 @@
 
         <div class="row">
             <div class="col-lg-6 mt-3 ">
-                <img src="../images/point (1).png" alt="" class="ads-three">
+                <img src="/public/assets-revamp/img/point-ad.png" alt="" class="ads-three">
             </div>
 
             <div class="col-lg-6">
@@ -194,7 +194,7 @@
             </div>
 
             <div class="col-lg-6">
-                <img src="../images/vibe.png" alt="" srcset="" class="images-one">
+                <img src="/public/assets-revamp/img/vibe.png" alt="" srcset="" class="images-one">
             </div>
         </div>
 

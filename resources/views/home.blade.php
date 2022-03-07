@@ -685,9 +685,10 @@
         <div class="w-100">
             <p class="w-100 text-center">See all our Ad Formats:</p>
             <ul class="format_list w-100 d-md-flex justify-content-center pl-0">
-                <li class="text-center"><a href="/native-ads" target="_blank" class="text-primary-color">Display
+                <li class="text-center"><a href="#" target="_blank" class="text-primary-color">Display
                         Banner</a></li>
-                <li class="text-center"><a href="#" target="_blank" class="text-primary-color">Native Ads</a></li>
+                <li class="text-center"><a href="/native-ads" target="_blank" class="text-primary-color">Native Ads</a>
+                </li>
                 <li class="text-center"><a href="#" target="_blank" class="text-primary-color">Direct Links</a></li>
                 <li class="text-center"><a href="#" target="_blank" class="text-primary-color">Video Ads</a></li>
                 <li class="text-center"><a href="#" target="_blank" class="text-primary-color">Push Notifications</a>

@@ -55,6 +55,10 @@
             height: 140px;
         }
 
+        .adbirt-feature-list {
+            list-style-type: disc !important;
+        }
+
     </style>
 @stop
 
@@ -87,7 +91,7 @@
             </div>
 
             <div class="col-lg-6">
-                <p class="ads-four mt-4 ">
+                <p class="text-black ads-four mt-4 ">
                     Unlike banner ads that interfere and can be completely ignored, Native ads appear in a design that
                     blends with
                     the real organic content. Due to its non-intrusive nature, it is user-friendly, which provides an
@@ -108,7 +112,7 @@
 
                 <div>
 
-                    <ul class="">
+                    <ul class="adbirt-feature-list">
                         <li class="p-2"> <a class="no-text-decoration" href="# ">Increase your sales and generate
                                 a new lead to your
                                 business</a></li>
@@ -148,7 +152,7 @@
                     </marquee>
                 </div>
 
-                <p class="All-every mt-3 ">
+                <p class="text-black All-every mt-3 ">
                     Take advantage of our Native Ads to drive more revenue from your website traffic that completely blends
                     with
                     the content on your websites. This is the most effective ad format for building audience engagement and

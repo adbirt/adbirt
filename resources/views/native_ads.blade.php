@@ -168,6 +168,7 @@
                     the content on your websites. This is the most effective ad format for building audience engagement and
                     retaining users on your website that reduces bounce rate for all Publishers
                 </p>
+                <br />
 
                 <div>
 

@@ -175,9 +175,8 @@
                     <ul class="">
                         <li class="p-2"> <i
                                 class="fa fa-check text-primary-color border rounded-circle border-danger p-1"></i> <a
-                                class="no-text-decoration" href="# ">Withdraw directly into your
-                                Naija bank account when
-                                you earn, and there's no minimum threshold required to withdrawal</a></li>
+                                class="no-text-decoration" href="# ">Withdraw instantly when you Earn. There's no minimum
+                                threshold required for withdrawal</a></li>
 
                         <li class="p-2"> <i
                                 class="fa fa-check text-primary-color border rounded-circle border-danger p-1"></i> <a

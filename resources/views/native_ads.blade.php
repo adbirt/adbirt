@@ -92,16 +92,20 @@
                     blends with
                     the real organic content. Due to its non-intrusive nature, it is user-friendly, which provides an
                     opportunity
-                    for advertisers to engage with consumers and archive better performance that drives revenue and p <br>
-                    roduce
+                    for advertisers to engage with consumers and archive better performance that drives revenue and produce
                     a high return on investment.
                 </p>
+
+                <br />
 
                 <div class="d-flex flex-row align-items-center justify-content-center">
                     <span class="bg-primary-color text-white text-center  p-2">
                         What makes us different from others.
                     </span>
                 </div>
+
+                <br />
+
                 <div>
 
                     <ul class="">

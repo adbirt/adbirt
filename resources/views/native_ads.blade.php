@@ -156,7 +156,7 @@
 
                 <div>
                     <marquee>
-                        <span class="text-center bg-primary-color text-white p-3">
+                        <span class="text-center bg-primary-color text-white p-3 rounded-circle">
                             NEW! NATIVE ADS fOR PUBLISHERS
                         </span>
                     </marquee>

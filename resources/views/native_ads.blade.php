@@ -56,7 +56,7 @@
         }
 
         .adbirt-feature-list {
-            list-style-type: disc !important;
+            list-style-type: none !important;
         }
 
     </style>
@@ -113,20 +113,29 @@
                 <div>
 
                     <ul class="adbirt-feature-list">
-                        <li class="p-2"> <i class="fa fa-check text-primary-color"></i> <a
+                        <li class="p-2"> <i
+                                class="fa fa-check text-primary-color border rounded-circle border-danger p-1"></i> <a
                                 class="no-text-decoration" href="# ">Increase your sales and generate
                                 a new lead to your
                                 business</a></li>
-                        <li class="p-2"> <a class="no-text-decoration" href="# ">You don't have to break the
+                        <li class="p-2"> <i
+                                class="fa fa-check text-primary-color border rounded-circle border-danger p-1"></i> <a
+                                class="no-text-decoration" href="# ">You don't have to break the
                                 banks to get
                                 started</a></li>
-                        <li class="p-2"> <a class="no-text-decoration" href="# ">Native Ads click rates are 10
+                        <li class="p-2"> <i
+                                class="fa fa-check text-primary-color border rounded-circle border-danger p-1"></i> <a
+                                class="no-text-decoration" href="# ">Native Ads click rates are 10
                                 times higher than
                                 regular banner</a></li>
-                        <li class="p-2"> <a class="no-text-decoration" href="# ">Write a short description of
+                        <li class="p-2"> <i
+                                class="fa fa-check text-primary-color border rounded-circle border-danger p-1"></i> <a
+                                class="no-text-decoration" href="# ">Write a short description of
                                 your product or
                                 service</a></li>
-                        <li class="p-2"> <a class="no-text-decoration" href="# ">Responsive designs for all
+                        <li class="p-2"> <i
+                                class="fa fa-check text-primary-color border rounded-circle border-danger p-1"></i> <a
+                                class="no-text-decoration" href="# ">Responsive designs for all
                                 devices (mobile,
                                 desktop, tablet)</a></li>
                     </ul>
@@ -163,25 +172,35 @@
                 <div>
 
                     <ul class="">
-                        <li class="p-2"> <a class="no-text-decoration" href="# ">Withdraw directly into your
+                        <li class="p-2"> <i
+                                class="fa fa-check text-primary-color border rounded-circle border-danger p-1"></i> <a
+                                class="no-text-decoration" href="# ">Withdraw directly into your
                                 Naija bank account when
                                 you earn, and there's no minimum threshold required to withdrawal</a></li>
 
-                        <li class="p-2"> <a class="no-text-decoration" href="# ">Generate high revenue with ads
+                        <li class="p-2"> <i
+                                class="fa fa-check text-primary-color border rounded-circle border-danger p-1"></i> <a
+                                class="no-text-decoration" href="# ">Generate high revenue with ads
                                 that blend on your
                                 website</a></li>
 
 
-                        <li class="p-2"> <a class="no-text-decoration" href="# ">Easy to set up and
+                        <li class="p-2"> <i
+                                class="fa fa-check text-primary-color border rounded-circle border-danger p-1"></i> <a
+                                class="no-text-decoration" href="# ">Easy to set up and
                                 hassle-free</a></li>
 
 
-                        <li class="p-2"> <a class="no-text-decoration" href="# ">Native Ads click rates are 10
+                        <li class="p-2"> <i
+                                class="fa fa-check text-primary-color border rounded-circle border-danger p-1"></i> <a
+                                class="no-text-decoration" href="# ">Native Ads click rates are 10
                                 times higher than
                                 regular banner</a></li>
 
 
-                        <li class="p-2"> <a class="no-text-decoration" href="# ">Responsive designs for all
+                        <li class="p-2"> <i
+                                class="fa fa-check text-primary-color border rounded-circle border-danger p-1"></i> <a
+                                class="no-text-decoration" href="# ">Responsive designs for all
                                 devices (mobile,
                                 desktop, tablet)</a></li>
                     </ul>

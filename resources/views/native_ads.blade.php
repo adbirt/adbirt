@@ -113,7 +113,8 @@
                 <div>
 
                     <ul class="adbirt-feature-list">
-                        <li class="p-2"> <a class="no-text-decoration" href="# ">Increase your sales and generate
+                        <li class="p-2"> <i class="fa fa-check text-primary-color"></i> <a
+                                class="no-text-decoration" href="# ">Increase your sales and generate
                                 a new lead to your
                                 business</a></li>
                         <li class="p-2"> <a class="no-text-decoration" href="# ">You don't have to break the

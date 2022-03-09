@@ -39,7 +39,7 @@
                 })
             }).then(async (res) => {
                 if (res.ok) {
-                    const payload = await res.text();
+                    const payload = await res.json();
                     console.log('response payload: ', payload);
                     const banners = JSON.parse(payload.html);
                     iter_index = 0;

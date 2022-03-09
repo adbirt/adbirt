@@ -1,7 +1,7 @@
 /**
  * Adbirt publisher script
  */
- (() => {
+(() => {
     try {
         let iter_index = 0;
         let payload = "";
@@ -24,10 +24,10 @@
             iter_index++;
         }
 
-        console.log('payload: ', payload);
+        console.log('request payload: ', payload);
 
         if (iter_index > 0) {
-            fetch("https://www.adbirt.com/ubm_getbanner", {
+            fetch(`https://www.adbirt.com/ubm_getbanner?no-cache-token=${Math.random()}`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded"
@@ -40,6 +40,7 @@
             }).then(async (res) => {
                 if (res.ok) {
                     const payload = await res.json();
+                    console.log('response payload: ', payload);
                     const banners = JSON.parse(payload.html);
                     iter_index = 0;
                     for (const banner of banners) {
@@ -54,6 +55,8 @@
                         }
                         iter_index++;
                     }
+                } else {
+                    throw new Error('Adbirt publisher script error')
                 }
             }).catch((err) => {
                 console.error('Adbirt publisher script error: ', err);

@@ -696,6 +696,8 @@ class campaignsController extends Controller
         $bannerCodes = explode('-sep-', $input['ubm_banners']);
         $bannerCodes = array_filter($bannerCodes);
 
+        $html = '';
+
         $banners = array();
         foreach ($bannerCodes as $key => $value) {
             $value = json_decode($value, true);
@@ -728,7 +730,6 @@ class campaignsController extends Controller
                 $_time = time();
                 $rand_id = "adbirt-$_time";
 
-                $html = '';
                 ob_start();
                 if (($bnr->campaign_type == 'CPA') || ($bnr->campaign_type == 'CPC')) {
                     if ($bnr->banner_type == 'image') {

@@ -712,13 +712,13 @@ class campaignsController extends Controller
                 ->where('campaign_running_status', 'activated')
                 ->first();
 
-            return $campaign;
-
             $bnr = campaign::where('id', $campaign->campaign_id)
                 ->where('campaign_approval_status', 'Approved')
                 ->where('isActive', 'Active')
                 ->where('isDeleted', 'No')
                 ->first();
+
+            return $bnr;
 
             if (!empty($bnr)) {
                 $size = explode(' x ', $bnr->banner_size);

@@ -1024,21 +1024,6 @@ class campaignsController extends Controller
                 $bnr->save();
 
                 if (strtoupper($bnr->campaign_type) != 'CPA') {
-
-                    // charge immediately if campaign type is anything order than CPA
-                    // $url = "https://adbirt.com/campaigns/verified?campaign_code=$id";
-                    // $curl = curl_init($url);
-                    // curl_setopt($curl, CURLOPT_URL, $url);
-                    // curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-                    // //for debug only!
-                    // curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
-                    // curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
-                    // // run
-                    // curl_exec($curl);
-                    // curl_close($curl);
-
-                    // -- | --
-
                     $url = "https://adbirt.com/campaigns/verified";
                     $_fields = array(
                         'campaign_code' => $id
@@ -1057,10 +1042,9 @@ class campaignsController extends Controller
                     curl_setopt($ch, CURLOPT_POSTFIELDS, $_fields_string);
 
                     //execute post
-                    $result = curl_exec($ch);
+                    curl_exec($ch);
                     //close connection
                     curl_close($ch);
-                    // -- | --
                 }
 
                 return redirect($bnr->campaign_url . "?camp_code=" . $id);

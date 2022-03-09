@@ -704,6 +704,9 @@ class campaignsController extends Controller
 
             $bannerCode = $value['bannerCode'];
             $nativeType = $value['nativeType'] ?? 'recommended'; // 'recommended', 'feed'
+            if ($nativeType == 'undefined') {
+                $nativeType = 'recommended';
+            }
 
             $publisher_code = base64_decode($bannerCode);
 

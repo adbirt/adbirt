@@ -734,7 +734,9 @@ class campaignsController extends Controller
                 if (($bnr->campaign_type == 'CPA') || ($bnr->campaign_type == 'CPC')) {
                     if ($bnr->banner_type == 'image') {
 ?>
-                        <a id="<?php echo $rand_id; ?>" target="_blank" class="ubm_banner" href="<?php echo url('ubm_banner_click/' . base64_encode($publisher_code)) ?>" style="<?php echo (empty($bnr->campaign_url) ? 'cursor: default; ' : 'cursor: pointer;') . ' width: ' . $type_details["width"] . 'px !important; height: ' . $type_details["height"] . 'px !important; line-height: ' . $type_details["height"] . 'px; background: transparent url(https://www.adbirt.com/public/uploads/campaign_banners/' . $bnr->campaign_banner ?>) 0 0 no-repeat; border: 1px solid transparent !important;" <?php (empty($bnr->campaign_url) ? ' onclick="return false;"' : '') ?> title="<?php echo $bnr->campaign_name; ?>">&nbsp;</a>
+                        <a id="<?php echo $rand_id; ?>" target="_blank" class="ubm_banner" href="<?php echo url('ubm_banner_click/' . base64_encode($publisher_code)) ?>" style="<?php echo (empty($bnr->campaign_url) ? 'cursor: default; ' : 'cursor: pointer;') . ' width: ' . $type_details["width"] . 'px !important; height: ' . $type_details["height"] . 'px !important; line-height: ' . $type_details["height"] . 'px; background: url(' ?>); border: 1px solid transparent !important;" <?php (empty($bnr->campaign_url) ? ' onclick="return false;"' : '') ?> title="<?php echo $bnr->campaign_name; ?>">
+                            <img width="<?php echo $type_details["width"]; ?>" height="<?php echo $type_details["height"]; ?>" src="https://www.adbirt.com/public/uploads/campaign_banners/<?php echo $bnr->campaign_banner; ?>" />
+                        </a>
                     <?php
                     } elseif ($bnr->banner_type == 'video') {
                     ?>

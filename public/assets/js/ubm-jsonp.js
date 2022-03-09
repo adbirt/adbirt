@@ -15,6 +15,7 @@
 
             let campaignType = String(banner.dataset.type) || 'CPA';
             let nativeType = (String(banner.dataset.native) || 'recommended') ?? 'recommended'; // 'recommended', 'feed'
+            console.log('nativeType: ', nativeType);
 
             banner.id = `ubm_${iter_index}`;
             payload += `${JSON.stringify({

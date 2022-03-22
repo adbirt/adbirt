@@ -1,0 +1,1 @@
+ssh u585-pxylz0ndukp0@adbirt.com -p18765

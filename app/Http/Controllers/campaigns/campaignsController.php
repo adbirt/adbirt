@@ -722,7 +722,7 @@ class campaignsController extends Controller
                 ->where('isDeleted', 'No')
                 ->first();
 
-            if (!empty($bnr)) {
+            if (!empty($bnr) && $bnr != null) {
                 $size = explode(' x ', $bnr->banner_size);
                 $type_details['width'] = $size['0'];
                 $type_details['height'] = $size['1'];

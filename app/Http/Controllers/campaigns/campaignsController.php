@@ -715,6 +715,7 @@ class campaignsController extends Controller
                 ->where('campaign_running_status', 'activated')
                 ->first();
 
+            unset($bnr);
             $bnr = campaign::where('id', $campaign->campaign_id)
                 ->where('campaign_approval_status', 'Approved')
                 ->where('isActive', 'Active')

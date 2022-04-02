@@ -711,6 +711,7 @@ class campaignsController extends Controller
             $publisher_code = base64_decode($bannerCode);
 
             // get campaign id from publisher code
+            unset($campaign);
             $campaign = campaignorders::where('advert_code', $publisher_code)
                 ->where('campaign_running_status', 'activated')
                 ->first();

@@ -21,6 +21,9 @@
     <!-- Theme style -->
     {!! Html::style('dist/css/style.min.css') !!}
 
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="public/assets-revamp/css/style.css">
+
 </head>
 
 <body class="login">

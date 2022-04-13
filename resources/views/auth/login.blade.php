@@ -33,10 +33,10 @@
 
             <div class="center m-a-2">
 
-                <div class="icon-block img-circle">
+                <div class="icon-block img-circle" style="border: 1px solid var(--theme-color)">
 
                     <a href="{{ route('dashboard') }}">
-                        <i class="material-icons md-36 text-muted">lock</i>
+                        <i class="material-icons md-36 text-muted text-primary-color">lock</i>
                     </a>
 
                 </div>
@@ -75,7 +75,7 @@
 
                     <div class="form-group ">
 
-                        {!! Form::submit('Log in', ['class' => 'btn btn-primary bg-primary-color btn-block btn-rounded', 'type' => 'submit']) !!}
+                        {!! Form::submit('Log in', ['class' => 'btn btn-danger bg-primary-color btn-block btn-rounded', 'type' => 'submit']) !!}
 
                         <br />
 

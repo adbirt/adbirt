@@ -32,7 +32,9 @@
 
                 <div class="icon-block img-circle">
 
-                    <a href="{{ route('dashboard') }}"><i class="material-icons md-36 text-muted">lock</i></a>
+                    <a href="{{ route('dashboard') }}">
+                        <i class="material-icons md-36 text-muted">lock</i>
+                    </a>
 
                 </div>
 
@@ -70,7 +72,7 @@
 
                     <div class="form-group ">
 
-                        {!! Form::submit('Log in', ['class' => 'btn btn-primary btn-block btn-rounded', 'type' => 'submit']) !!}
+                        {!! Form::submit('Log in', ['class' => 'btn btn-primary bg-primary-color btn-block btn-rounded', 'type' => 'submit']) !!}
 
                         <br />
 

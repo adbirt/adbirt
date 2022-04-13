@@ -797,9 +797,12 @@ class campaignsController extends Controller
                                     color: black !important;
                                 }
                             </style>
-                            <video controls loop class="adbirt-banner-video" src="<?php echo 'https://adbirt.com/public/uploads/campaign_banners/' . $bnr->campaign_banner; ?>"></video>
                             <div class="content">
                                 <p class="banner-title"><?php echo $bnr->campaign_name; ?></p>
+                            </div>
+                            <video controls loop class="adbirt-banner-video" src="<?php echo 'https://adbirt.com/public/uploads/campaign_banners/' . $bnr->campaign_banner; ?>"></video>
+                            <div class="content">
+                                <p class="banner-title"><?php echo $bnr->campaign_description; ?></p>
                                 <p class="banner-link-holder">
                                     <a target="_blank" class="adbirt-banner-link" href="<?php echo url('ubm_banner_click/' . base64_encode($publisher_code)) ?>">Visit</a>
                                 </p>

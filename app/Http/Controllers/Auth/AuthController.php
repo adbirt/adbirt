@@ -210,6 +210,7 @@ class AuthController extends Controller
                     $campaigns = campaignorders::with('campaign')
                         ->where('publisher_id', Auth::user()->id)
                         ->where('campaign_running_status', 'activated')
+                        ->where('isDeleted', 'No')
                         ->get();
 
                     $categories = category::where('isActive', 'Active')

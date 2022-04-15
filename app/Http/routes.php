@@ -82,6 +82,8 @@ Route::group(['prefix' => 'messages'], function () {
 // misc
 Route::any('campaigns/get-campaign-categories-as-json', 'categoriesJson@getAllCategories');
 
+Route::any('campaigns/get-campaigns-as-json', 'categoriesJson@getCampaignsForUser');
+
 Route::group(array('middleware' => 'auth'), function () {
     Route::get('logout', ['as' => 'logout', 'uses' => 'Auth\AuthController@logout']);
     Route::get('profile', ['as' => 'profile', 'uses' => 'UsersController@profile']);

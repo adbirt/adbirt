@@ -136,9 +136,11 @@ Route::group(array('middleware' => 'auth'), function () {
     Route::group(['prefix' => 'campaigns'], function () {
         Route::any('/view-campaigns', 'campaigns\campaignsController@index');
         Route::any('/add-campaigns', 'campaigns\campaignsController@create');
-        Route::any('/store', 'campaigns\campaignsController@store');
         Route::any('/edit-campaigns/{id}', 'campaigns\campaignsController@store');
+
+        Route::any('/store', 'campaigns\campaignsController@store');
         Route::any('/update', 'campaigns\campaignsController@store');
+
         Route::any('/delete', 'campaigns\campaignsController@destroy');
 
         Route::any('/view', 'campaigns\campaignsController@view');

@@ -157,6 +157,12 @@ class campaignsController extends Controller
     {
         $input = $request->all();
 
+        $is_cpa = false;
+
+        if ($input['campaign_type'] == 'CPA') {
+            $is_cpa = true;
+        }
+
         if (isset($input['campaign_type'])) {
             if ($input['campaign_type'] == 'CPC' || $input['campaign_type'] == 'Native Content Ad') {
                 $input['campaign_success_url'] = $input['campaign_url'];
@@ -264,7 +270,11 @@ class campaignsController extends Controller
                 return back()->withInput()->with('flash_message', 'Campaign has been saved successfully.');
             }
 
-            return redirect('/campaigns/embedding');
+            if ($is_cpa) {
+                return redirect('/campaigns/embedding');
+            }
+
+            return redirect('/dashboard');
         }
     }
 

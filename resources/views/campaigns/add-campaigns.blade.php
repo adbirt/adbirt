@@ -77,7 +77,9 @@
                     <button class="btn btn-primary waves-effect waves-light mb-2">View All Ads</button>
                 </a>
                 <div class="card">
-                    <form @if (isset($campaignsData)) action="{{ url('/campaigns/update') }}" @else action="{{ url('/campaigns/store') }}" @endif data-parsley-validate novalidate method="POST" id="myform" name="myform"
+                    <form
+                        @if (isset($campaignsData)) action="{{ url('/campaigns/update') }}" @else action="{{ url('/campaigns/store') }}" @endif
+                        data-parsley-validate novalidate method="POST" id="myform" name="myform"
                         enctype="multipart/form-data">
                         {{ csrf_field() }}
                         @if (isset($campaignsData))
@@ -93,7 +95,8 @@
                                     </div>
                                     <div class="col-md-8">
                                         <input type="text" name="campaign_name" required placeholder="Campaign Name"
-                                            class="form-control" id="campaign_name" @if (isset($campaignsData) && !empty($campaignsData->campaign_name)) value="{{ $campaignsData->campaign_name }}" @endif>
+                                            class="form-control" id="campaign_name"
+                                            @if (isset($campaignsData) && !empty($campaignsData->campaign_name)) value="{{ $campaignsData->campaign_name }}" @endif>
                                         {{-- <div class="max-length">
                                             <small>
                                                 Maximum of 150 characters (including white-spaces) allowed
@@ -126,9 +129,11 @@
                                             <?php
                                             $campaign_types = ['CPA', 'CPC', 'Native Content Ad'];
                                             ?>
-                                            <option disabled @if (!isset($campaignsData)) selected="true" @endif>Choose Campaign Type</option>
+                                            <option disabled @if (!isset($campaignsData)) selected="true" @endif>Choose
+                                                Campaign Type</option>
                                             @foreach ($campaign_types as $type)
-                                                <option value="{!! $type !!}" @if (isset($campaignsData) && $campaignsData->campaign_type == $type) selected="true" @endif>
+                                                <option value="{!! $type !!}"
+                                                    @if (isset($campaignsData) && $campaignsData->campaign_type == $type) selected="true" @endif>
                                                     {!! $type !!}
                                                     {!! $type == 'Native Content Ad' ? ' [beta]' : '' !!}
                                                 </option>
@@ -147,7 +152,8 @@
                                         <select name="campaign_category" data-placeholder="Select Ads Category"
                                             class="form-control" id="campaign_category">
                                             @if (isset($categoryData) && count($categoryData) > 0)
-                                                <option disabled @if (!isset($campaignsData)) selected="true" @endif>Select Ads Category</option>
+                                                <option disabled @if (!isset($campaignsData)) selected="true" @endif>
+                                                    Select Ads Category</option>
                                                 @foreach ($categoryData as $value)
                                                     @if (isset($campaignsData) && $campaignsData->campaign_category == $value->id)
                                                         <option value="{{ $value->id }}" selected>
@@ -170,9 +176,13 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <textarea name="campaign_description" required placeholder="Campaign Description"
-                                            class="form-control" parsley-trigger="change" parsely-maxlength=150
-                                            maxlength=150 id="campaign_description">@if (isset($campaignsData) && !empty($campaignsData->campaign_description)){{ $campaignsData->campaign_description }}@endif</textarea>
+                                        <textarea name="campaign_description" required placeholder="Campaign Description" class="form-control"
+                                            parsley-trigger="change" parsely-maxlength=150 maxlength=150
+                                            id="campaign_description">
+@if (isset($campaignsData) && !empty($campaignsData->campaign_description))
+{{ $campaignsData->campaign_description }}
+@endif
+</textarea>
                                         <div class="max-length">
                                             <small>
                                                 Maximum of 150 characters (including white-spaces) allowed
@@ -190,7 +200,8 @@
                                         title="Landing page is the webpage where people end up after they click on your banner ad.">
                                         <input type="url" name="campaign_url" parsley-trigger="change" required
                                             placeholder="Ad Landing page URL" class="form-control" id="campaign_url"
-                                            title="" @if (isset($campaignsData) && !empty($campaignsData->campaign_url)) value="{{ $campaignsData->campaign_url }}" @endif
+                                            title=""
+                                            @if (isset($campaignsData) && !empty($campaignsData->campaign_url)) value="{{ $campaignsData->campaign_url }}" @endif
                                             title="Landing page is the webpage where people end up after they click on your banner ad.">
                                         <small>Landing page is the webpage where people end up after they click on your
                                             banner ad.</small>
@@ -205,8 +216,9 @@
                                     </div>
                                     <div class="col-md-8">
                                         <input type="url" parsley-trigger="change" required title=""
-                                            @if (isset($campaignsData) && !empty($campaignsData->campaign_success_url)) value="{{ $campaignsData->campaign_success_url }}" @elseif (isset($campaignsData) && !empty($campaignsData->campaign_success_url)) value="{{ $campaignsData->campaign_url }}" @else value="" @endif placeholder="Ad Success page URL"
-                                            class="form-control" id="campaign_success_url" name="campaign_success_url">
+                                            @if (isset($campaignsData) && !empty($campaignsData->campaign_success_url)) value="{{ $campaignsData->campaign_success_url }}" @elseif (isset($campaignsData) && !empty($campaignsData->campaign_success_url)) value="{{ $campaignsData->campaign_url }}" @else value="" @endif
+                                            placeholder="Ad Success page URL" class="form-control"
+                                            id="campaign_success_url" name="campaign_success_url">
                                         <small>Success pages, or thank you pages, are pages on your website that users are
                                             directed to after completing a form successfully.</small>
                                         <br />
@@ -222,12 +234,14 @@
                                         <div class="col-md-8">
                                             <select data-placeholder="Select an option" id="banner_type" name="banner_type"
                                                 class="form-control">
-                                                <option disabled @if (!isset($campaignsData)) selected="true" @endif>Select Banner Type</option>
+                                                <option disabled @if (!isset($campaignsData)) selected="true" @endif>
+                                                    Select Banner Type</option>
                                                 <?php
                                                 $banner_types = ['image', 'video'];
                                                 ?>
                                                 @foreach ($banner_types as $type)
-                                                    <option value="{!! $type !!}" @if (isset($campaignsData) && $campaignsData->banner_type == $type) selected="true" @endif>
+                                                    <option value="{!! $type !!}"
+                                                        @if (isset($campaignsData) && $campaignsData->banner_type == $type) selected="true" @endif>
                                                         {!! ucfirst($type) !!}</option>
                                                     </option>
                                                 @endforeach
@@ -244,7 +258,8 @@
                                         <div class="col-md-8">
                                             <select name="banner_size" data-placeholder="Select an option"
                                                 class="form-control" id="banner_size">
-                                                <option disabled @if (!isset($campaignsData)) selected="true" @endif>Select Banner Size</option>
+                                                <option disabled @if (!isset($campaignsData)) selected="true" @endif>
+                                                    Select Banner Size</option>
                                                 @if (isset($bannerSize) && !empty($bannerSize))
                                                     @foreach ($bannerSize as $key => $value)
                                                         @if (isset($campaignsData) && $campaignsData->banner_size == $value)
@@ -294,7 +309,7 @@
 
                                     <span style="color:red;" id="response"></span>
                                     <!-- <span id="width"></span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <span id="height"></span> -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <span id="height"></span> -->
                                 </div>
                             </div>
                             <div class="form-group">
@@ -306,7 +321,8 @@
                                         <input type="number" min="0.20" name="campaign_cost_per_action"
                                             parsley-trigger="change" required placeholder="($) Campaign Cost Per Action"
                                             class="form-control" id="campaign_cost_per_action" title="Cost Per Action"
-                                            data-parsley-error-message="Minimum amount is $0.20" @if (isset($campaignsData) && !empty($campaignsData->campaign_cost_per_action)) value="{{ $campaignsData->campaign_cost_per_action }}" @endif>
+                                            data-parsley-error-message="Minimum amount is $0.20"
+                                            @if (isset($campaignsData) && !empty($campaignsData->campaign_cost_per_action)) value="{{ $campaignsData->campaign_cost_per_action }}" @endif>
                                         <div>
                                             <small>
                                                 Minimum amount is $<span id="display-min-amount">0.20</span>
@@ -362,7 +378,11 @@
                         </fieldset>
                         <div class="form-group text-right m-b-0">
                             <button class="btn btn-primary waves-effect waves-light" type="submit" id="btn-submit">
-                                @if (isset($campaignsData))  Update  @else   Save  @endif <i class="icon-arrow-right14 position-right"></i>
+                                @if (isset($campaignsData))
+                                    Update
+                                @else
+                                    Save
+                                    @endif <i class="icon-arrow-right14 position-right"></i>
                             </button>
                             <a href="{{ url('/campaigns/view-campaigns') }}" type="reset"
                                 class="btn btn-danger waves-effect waves-light m-l-5">

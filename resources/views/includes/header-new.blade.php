@@ -561,7 +561,7 @@ $NotifyCnt = count($Notify);
                                     </ul>
                                 </li>
 
-                                <li class="nav-header">OTHER</li>
+                                {{-- <li class="nav-header">OTHER</li>
                                 <li class="nav-item">
                                     <a href="{!! url('/campaigns/embedding') !!}" class="nav-link">
                                         <i class="nav-icon fa fa-globe"></i>
@@ -570,7 +570,7 @@ $NotifyCnt = count($Notify);
                                             <!-- <span class="right badge badge-danger">New</span> -->
                                         </p>
                                     </a>
-                                </li>
+                                </li> --}}
                                 <!-- ===== End vendor/Advertiser ===== -->
                             @else
                                 <!-- ===== Begin Other (publishers) ===== -->

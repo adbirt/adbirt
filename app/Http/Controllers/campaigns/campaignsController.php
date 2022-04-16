@@ -266,9 +266,11 @@ class campaignsController extends Controller
                 \Session::flash('flash_message', 'Campaign has been updated successfully.');
             }
 
-            if (strtoupper($type) != 'CPA') {
-                return back()->withInput()->with('flash_message', 'Campaign has been saved successfully.');
-            }
+            // if (strtoupper($type) != 'CPA') {
+            //     return back()->withInput()->with('flash_message', 'Campaign has been saved successfully.');
+            // }
+
+            \Session::flash('flash_message', 'Campaign has been saved successfully.');
 
             if ($is_cpa) {
                 return redirect('/campaigns/embedding');

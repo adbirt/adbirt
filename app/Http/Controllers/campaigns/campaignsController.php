@@ -159,12 +159,12 @@ class campaignsController extends Controller
 
         $is_cpa = false;
 
-        if ($input['campaign_type'] == 'CPA') {
-            $is_cpa = true;
-        }
-
         if (isset($input['campaign_type'])) {
-            if ($input['campaign_type'] == 'CPC' || $input['campaign_type'] == 'Native Content Ad') {
+            if ($input['campaign_type'] == 'CPA') {
+                $is_cpa = true;
+            }
+
+            if (!$is_cpa) {
                 $input['campaign_success_url'] = $input['campaign_url'];
             }
         }

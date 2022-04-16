@@ -518,6 +518,7 @@ class campaignsController extends Controller
         $campaignData = campaign::with('advertiser')
             ->where('id', $Id)
             ->first();
+            
         if (Auth::user()->hasRole('vendor')) {
             $isCampaignActive = campaignorders::where('campaign_id', $Id)
                 ->where('advertiser_id', Auth::user()->id)

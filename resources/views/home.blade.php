@@ -74,7 +74,7 @@
         @media (min-width: 992px) {
             .hero_image {
                 width: 600px;
-                image-rendering: pixelated !important;
+                {{-- image-rendering: pixelated !important; --}}
             }
 
             .steps_image {

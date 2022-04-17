@@ -185,7 +185,7 @@
 </textarea>
                                         <div class="max-length">
                                             <small>
-                                                Maximum of 150 characters (including white-spaces) allowed
+                                                Maximum of 120 characters (including white-spaces) allowed
                                             </small>
                                         </div>
                                     </div>
@@ -309,7 +309,7 @@
 
                                     <span style="color:red;" id="response"></span>
                                     <!-- <span id="width"></span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <span id="height"></span> -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <span id="height"></span> -->
                                 </div>
                             </div>
                             <div class="form-group">
@@ -621,13 +621,22 @@
         CKEDITOR.replace('campaign_description');
 
         CKEDITOR.instances.campaign_description.on('change', (e) => {
+            /**
+             * @type {string} string
+             */
             let htmlString = CKEDITOR.instances.campaign_description.getData();
+            /**
+             * @type {string} string
+             */
             const textString = htmlString.replace(/<[^>]*>/g, '');
+            /**
+             * @type {number} number
+             */
             const textLength = textString.length;
 
             if (textLength > 120) {
                 alert('Description should not be greater than 120 characters');
-                htmlString = htmlString.slice(0, 119);
+                htmlString = htmlString.slice(0, 100);
                 CKEDITOR.instances.campaign_description.setData(htmlString);
             }
         });

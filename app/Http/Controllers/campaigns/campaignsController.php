@@ -370,11 +370,16 @@ class campaignsController extends Controller
             ->where('isDeleted', 'No')
             ->min('campaign_cost_per_action');
 
+        $campCat = category::where('isDeleted', 'No')
+            ->where('isActive', 'Active')
+            ->orderBy('id', 'desc')
+            ->get();
+
 
         $this->outputData['MaxPrice'] = $MaxPrice;
         $this->outputData['MinPrice'] = $MinPrice;
         $this->outputData['campaignsData'] = $campaign;
-        $this->outputData['campCatData'] = array();
+        $this->outputData['campCatData'] = json_decode(json_encode($campCat), true);
 
         return view('campaigns.view', $this->outputData)->with('title', 'Campaigns');
     }

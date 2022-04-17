@@ -374,6 +374,7 @@ class campaignsController extends Controller
         $this->outputData['MaxPrice'] = $MaxPrice;
         $this->outputData['MinPrice'] = $MinPrice;
         $this->outputData['campaignsData'] = $campaign;
+        $this->outputData['campCatData'] = array();
 
         return view('campaigns.view', $this->outputData)->with('title', 'Campaigns');
     }

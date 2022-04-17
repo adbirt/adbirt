@@ -289,7 +289,8 @@ class campaignsController extends Controller
 
     public function view()
     {
-        //
+        $this->outputData['campCatData'] = array();
+
         $campaign = campaign::where('campaign_approval_status', 'Approved')
             ->where('isDeleted', 'No')
             ->orderBy('id', 'desc')
@@ -320,6 +321,7 @@ class campaignsController extends Controller
 
         $this->outputData['campaignsData'] = $campaign;
         $this->outputData['campCatData'] = json_decode(json_encode($campCat), true);
+
         return view('campaigns.view', $this->outputData)->with('title', 'Available Ads');
     }
 

@@ -303,6 +303,7 @@ class campaignsController extends Controller
         $arrVendor = rolesModel::with('GetVendor')
             ->where('role_id', "2")
             ->get();
+
         $this->outputData['Advertiser'] = $arrVendor;
 
         $MaxPrice = campaign::where('campaign_approval_status', 'Approved')
@@ -319,7 +320,7 @@ class campaignsController extends Controller
 
         $this->outputData['campaignsData'] = $campaign;
         $this->outputData['campCatData'] = json_decode(json_encode($campCat), true);
-        return view('campaigns.view', $this->outputData)->with('title', 'Campaigns');
+        return view('campaigns.view', $this->outputData)->with('title', 'Available Ads');
     }
 
     public function filter(Request $request)
@@ -352,6 +353,7 @@ class campaignsController extends Controller
         }
 
         $campaign = $campaign->orderBy('id', 'desc')->paginate(4);
+
         $arrVendor = rolesModel::with('GetVendor')
             ->where('role_id', "2")
             ->get();
@@ -368,10 +370,9 @@ class campaignsController extends Controller
 
 
         $this->outputData['MaxPrice'] = $MaxPrice;
-
         $this->outputData['MinPrice'] = $MinPrice;
-
         $this->outputData['campaignsData'] = $campaign;
+
         return view('campaigns.view', $this->outputData)->with('title', 'Campaigns');
     }
 
@@ -518,7 +519,7 @@ class campaignsController extends Controller
         $campaignData = campaign::with('advertiser')
             ->where('id', $Id)
             ->first();
-            
+
         if (Auth::user()->hasRole('vendor')) {
             $isCampaignActive = campaignorders::where('campaign_id', $Id)
                 ->where('advertiser_id', Auth::user()->id)

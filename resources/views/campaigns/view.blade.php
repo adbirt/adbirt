@@ -96,10 +96,11 @@
                     <div class="col-md-12">
                         <div class="input-group searchbox">
                             <input type="text" name="searchByname" id="searchByname" class="form-control"
-                                placeholder="Search Campaign.." @if (isset($_GET['searchByname']) && !empty($_GET['searchByname'])) value="{{ $_GET['searchByname'] }}" @endif>
-
+                                placeholder="Search Campaign.."
+                                @if (isset($_GET['searchByname']) && !empty($_GET['searchByname'])) value="{{ $_GET['searchByname'] }}" @endif>
                         </div>
                     </div>
+
                 </div>
                 <div class="row detailsproduct">
                     <div class="col-md-4">
@@ -126,18 +127,20 @@
                         <select name="category_id" data-placeholder="Select an option" class="form-control"
                             id="category_id">
                             <option value="">Select Category</option>
-                            @if (isset($campCatData) && count($campCatData) > 0)
-                                @foreach ($campCatData as $value)
-                                    @if (isset($_GET['category_id']) && $_GET['category_id'] == $value['id'])
-                                        <option value="{{ $value['id'] }}" selected>
-                                            {{ ucfirst($value['category_name']) }}
-                                        </option>
-                                    @else
-                                        <option value="{{ $value['id'] }}">
-                                            {{ ucfirst($value['category_name']) }}
-                                        </option>
-                                    @endif
-                                @endforeach
+                            @if (isset($campCatData))
+                                @if (count($campCatData) > 0)
+                                    @foreach ($campCatData as $value)
+                                        @if (isset($_GET['category_id']) && $_GET['category_id'] == $value['id'])
+                                            <option value="{{ $value['id'] }}" selected>
+                                                {{ ucfirst($value['category_name']) }}
+                                            </option>
+                                        @else
+                                            <option value="{{ $value['id'] }}">
+                                                {{ ucfirst($value['category_name']) }}
+                                            </option>
+                                        @endif
+                                    @endforeach
+                                @endif
                             @endif
                         </select>
                     </div>
@@ -148,7 +151,6 @@
                     @endif
                 </div>
                 @if (isset($MinPrice) && !empty($MinPrice))
-
                     <input type="hidden" name="Min_price" value="{{ $MinPrice }}" id="Min_price">
                     <input type="hidden" name="Max_price" value="{{ $MaxPrice }}" id="Max_price">
                 @endif
@@ -241,9 +243,7 @@
                         </div>
                     </div>
                 @endforeach
-
             @else
-
                 <h3><span class="nodata">No campaigns found<span></h3>
 
             @endif

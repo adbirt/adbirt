@@ -39,7 +39,7 @@
                 </div>
             </div>
 
-            <div class="card bg-transparent">
+            <div class="card bg-transparent shadow shadow-lg" style="border: 1px solid var(--theme-color)">
 
                 <div class="card-header bg-white center">
 

@@ -309,7 +309,7 @@
 
                                     <span style="color:red;" id="response"></span>
                                     <!-- <span id="width"></span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <span id="height"></span> -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <span id="height"></span> -->
                                 </div>
                             </div>
                             <div class="form-group">
@@ -619,7 +619,18 @@
 
     <script>
         CKEDITOR.replace('campaign_description');
-        {{-- CKEDITOR.replace('campaign_policy'); --}}
+
+        CKEDITOR.instances.campaign_description.on('change', (e) => {
+            let htmlString = CKEDITOR.instances.campaign_description.getData();
+            const textString = htmlString.replace(/<[^>]*>/g, '');
+            const textLength = textString.length;
+
+            if (textLength > 120) {
+                alert('Description should not be greater than 120 characters');
+                htmlString = htmlString.slice(0, 119);
+                CKEDITOR.instances.campaign_description.setData(htmlString);
+            }
+        });
 
         function readURL(input, isVideo = false) { // quiz_avatar preview
             if (input.files && input.files[0]) {

@@ -578,7 +578,7 @@ class AuthController extends Controller
             });
             return Redirect::route('login')->with('success', 'To reset your password, Please follow the link sent your email.');
         } else {
-            return Redirect::route('register')->with('error', 'Sorry, that account wasn\'t found in our database');
+            return Redirect::route('register')->with('error', 'Sorry, that account wasn\'t found in our database, you need to signup');
         }
     }
 

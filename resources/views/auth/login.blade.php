@@ -127,7 +127,8 @@
 
                 <div class="modal-body">
 
-                    <p>Enter your e-mail/phone below to reset your password.</p>
+                    {{-- <p>Enter your e-mail/phone below to reset your password.</p> --}}
+                    <p>Enter your e-mail below to reset your password.</p>
 
 
 
@@ -137,7 +138,8 @@
 
 
 
-                    {!! Form::text('email', '', ['class' => 'form-control placeholder-no-fix', 'placeholder' => 'Email/Phone', 'autocomplete' => 'off']) !!}
+                    {{-- {!! Form::text('email', '', ['class' => 'form-control placeholder-no-fix', 'placeholder' => 'Email/Phone', 'autocomplete' => 'off']) !!} --}}
+                    {!! Form::text('email', '', ['class' => 'form-control placeholder-no-fix', 'placeholder' => 'Email', 'autocomplete' => 'off']) !!}
 
                 </div>
 

@@ -599,6 +599,7 @@ class AuthController extends Controller
             return Redirect::route('login')->with('error', 'Something went wrong. Please, try again.');
         }
     }
+
     // with phone
     public function resetPagePhone()
     {

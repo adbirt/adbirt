@@ -145,7 +145,7 @@
 
                     <button type="button" class="btn btn-white" data-dismiss="modal">Cancel</button>
 
-                    {!! Form::submit('Submit', ['class' => 'btn btn-success']) !!}
+                    {!! Form::submit('Submit', ['class' => 'tn btn-danger bg-primary-color btn-rounded']) !!}
 
                     <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
 

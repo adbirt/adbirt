@@ -576,9 +576,9 @@ class AuthController extends Controller
             Mail::send('emails.reset', ['url' => $reset_url], function ($message) {
                 $message->to(Input::get('email'))->subject('Password Reset'); // it does not work except Input::get();
             });
-            return Redirect::route('login')->with('success', 'An email has been sent to your email address. Please, follow the link.');
+            return Redirect::route('login')->with('success', 'To reset your password, Please follow the link sent your email.');
         } else {
-            return Redirect::route('register')->with('error', 'Sorry, Your email does not exist');
+            return Redirect::route('register')->with('error', 'Sorry, that account wasn\'t found in our database');
         }
     }
 

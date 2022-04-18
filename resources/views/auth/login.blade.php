@@ -139,13 +139,13 @@
 
 
                     {{-- {!! Form::text('email', '', ['class' => 'form-control placeholder-no-fix', 'placeholder' => 'Email/Phone', 'autocomplete' => 'off']) !!} --}}
-                    {!! Form::text('email', '', ['class' => 'form-control placeholder-no-fix', 'placeholder' => 'Email', 'autocomplete' => 'off']) !!}
+                    {!! Form::text('email', '', ['class' => 'form-control placeholder-no-fix', 'placeholder' => 'Email', 'autocomplete' => 'on']) !!}
 
                 </div>
 
                 <div class="modal-footer">
 
-                    <button type="button" class="btn btn-white" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
 
                     {!! Form::submit('Submit', ['class' => 'tn btn-danger bg-primary-color btn-rounded']) !!}
 

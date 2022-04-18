@@ -81,11 +81,11 @@
 
                     <div class="center">
 
-                        {{-- <a href="#">
+                        <a href="#">
 
                             <a data-toggle="modal" href="#myModal"><small>Forgot Password?</small></a>
 
-                        </a> --}}
+                        </a>
 
                     </div>
 

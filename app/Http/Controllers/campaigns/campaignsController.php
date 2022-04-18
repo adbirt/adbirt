@@ -212,8 +212,6 @@ class campaignsController extends Controller
                     $input['campaign_banner'] = $input['old_campaign_banner'];
                 }
 
-                $type = $input['campaign_type'];
-
                 unset($input['old_campaign_banner']);
                 campaign::where('id', $Id)->update($input);
                 \Session::flash('flash_message', 'Campaign has been updated successfully.');
@@ -241,16 +239,12 @@ class campaignsController extends Controller
                 unset($input['_token']);
                 $campaign = new campaign;
                 foreach ($input as $key => $value) {
-                    // $campaign->$key  = strtolower(trim($value));
                     $campaign->$key  = trim($value);
                 }
 
                 $permitted_chars = '0123456789abcdefghijklmnopqrstuvwxyz';
                 $campaign_code = substr(str_shuffle($permitted_chars), 0, 10);
                 $campaign->campaign_code = $campaign_code;
-
-                $type = $campaign->campaign_type;
-
 
                 $campaign->save();
 
@@ -261,8 +255,6 @@ class campaignsController extends Controller
                 $Notify->Notify_Receivers_Id  = "1";
                 $Notify->save();
 
-                //\Session::flash('flash_message',"Congrats your ads have been updated, kindly copy our js, and add it on your landing page to get your ads running, you can add this in either header, footer or above form on your website.");   
-                //<input class='form-control valid' style='width:81%;' type='text' value='<script type=\'text/javascript\' src=\'https://adbirt.com/public/assets/js/advertiser.js\'></script>' id='advrcopy'><button class='btn btn-primary waves-effect waves-light' onclick='advrCopy()'>Copy text</button>
                 \Session::flash('flash_message', 'Campaign has been updated successfully.');
             }
 
@@ -286,11 +278,8 @@ class campaignsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-
     public function view()
     {
-        $this->outputData['campCatData'] = array();
-
         $campaign = campaign::where('campaign_approval_status', 'Approved')
             ->where('isDeleted', 'No')
             ->orderBy('id', 'desc')
@@ -305,8 +294,6 @@ class campaignsController extends Controller
             ->where('role_id', "2")
             ->get();
 
-        $this->outputData['Advertiser'] = $arrVendor;
-
         $MaxPrice = campaign::where('campaign_approval_status', 'Approved')
             ->where('isDeleted', 'No')
             ->max('campaign_cost_per_action');
@@ -316,9 +303,8 @@ class campaignsController extends Controller
             ->min('campaign_cost_per_action');
 
         $this->outputData['MaxPrice'] = $MaxPrice;
-
         $this->outputData['MinPrice'] = $MinPrice;
-
+        $this->outputData['Advertiser'] = $arrVendor;
         $this->outputData['campaignsData'] = $campaign;
         $this->outputData['campCatData'] = json_decode(json_encode($campCat), true);
 
@@ -327,10 +313,9 @@ class campaignsController extends Controller
 
     public function filter(Request $request)
     {
-        //
         $input = $request->all();
 
-        $arrSearchTerms = array();
+        // $arrSearchTerms = array();
         $arrWhere = array("isDeleted" => "No", "campaign_approval_status" => "Approved");
         $campaign = campaign::where($arrWhere);
 
@@ -360,8 +345,6 @@ class campaignsController extends Controller
             ->where('role_id', "2")
             ->get();
 
-        $this->outputData['Advertiser'] = $arrVendor;
-
         $MaxPrice = campaign::where('campaign_approval_status', 'Approved')
             ->where('isDeleted', 'No')
             ->max('campaign_cost_per_action');
@@ -375,8 +358,8 @@ class campaignsController extends Controller
             ->orderBy('id', 'desc')
             ->get();
 
-
         $this->outputData['MaxPrice'] = $MaxPrice;
+        $this->outputData['Advertiser'] = $arrVendor;
         $this->outputData['MinPrice'] = $MinPrice;
         $this->outputData['campaignsData'] = $campaign;
         $this->outputData['campCatData'] = json_decode(json_encode($campCat), true);
@@ -386,7 +369,6 @@ class campaignsController extends Controller
 
     public function viewbyArtist($id)
     {
-        //
         $Id = base64_decode($id);
         $campaign = campaign::where('campaign_approval_status', 'Approved')
             ->where('advertiser_id', $Id)

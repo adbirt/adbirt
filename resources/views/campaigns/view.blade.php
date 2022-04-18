@@ -150,6 +150,7 @@
                         </div>
                     @endif
                 </div>
+
                 @if (isset($MinPrice) && !empty($MinPrice))
                     <input type="hidden" name="Min_price" value="{{ $MinPrice }}" id="Min_price">
                     <input type="hidden" name="Max_price" value="{{ $MaxPrice }}" id="Max_price">

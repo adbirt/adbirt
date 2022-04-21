@@ -151,9 +151,9 @@
                     @endif --}}
 
                     <div class="col-md-4">
-                        <input type="search" placeholder="Min Price" name="searchByPriceMin" id="price_range"
+                        <input type="number" placeholder="Min Price" name="searchByPriceMin" id="price_range"
                             class="form-control">
-                        <input type="search" placeholder="Max Price" name="searchByPriceMax" id="price_range"
+                        <input type="number" placeholder="Max Price" name="searchByPriceMax" id="price_range"
                             class="form-control">
                     </div>
 

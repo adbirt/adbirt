@@ -6,9 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class campaign extends Model
 {
-    //
-    function advertiser()
+	//
+	function advertiser()
 	{
-		return $this->hasOne('App\User','id','advertiser_id');
+		return $this->hasOne('App\User', 'id', 'advertiser_id');
 	}
 }

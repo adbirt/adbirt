@@ -23,6 +23,17 @@
                 nativeType
             })}-sep-`;
             iter_index++;
+
+            fetch(`https://www.adbirt.com/register_publisher_site?no-cache-token=${Math.random()}`, {
+                method: 'POST',
+                body: new URLSearchParams({
+                    bannerCode
+                })
+            }).then((res) => {
+                // 
+            }).catch((err) => {
+                // 
+            });
         }
 
         console.log('request payload: ', payload);
@@ -62,6 +73,7 @@
             }).catch((err) => {
                 console.error('Adbirt publisher script error: ', err);
             });
+
         }
     } catch (error) {
         console.error(error);

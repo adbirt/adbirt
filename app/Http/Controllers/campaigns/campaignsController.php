@@ -693,6 +693,25 @@ class campaignsController extends Controller
         return view('campaigns.embedding-requirements', $this->outputData);
     }
 
+    public function registerPublisherSite(Request $request)
+    {
+        $input = $request->all();
+        $bannerCode = $input['bannerCode'];
+        $publisher_code = base64_decode($bannerCode);
+
+        $campaign = campaignorders::where('advert_code', $publisher_code)
+            ->where('campaign_running_status', 'activated')
+            ->first();
+
+        $bnr = campaign::where('id', $campaign->campaign_id)
+            ->where('campaign_approval_status', 'Approved')
+            ->where('isActive', 'Active')
+            ->where('isDeleted', 'No')
+            ->first();
+
+        $_time = time();
+    }
+
     public function getbanner(Request $request)
     {
         $input = $request->all();

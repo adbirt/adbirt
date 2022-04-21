@@ -717,6 +717,11 @@ class campaignsController extends Controller
 
         if (isset($campaign)) {
             $published_by = $campaign->published_by;
+
+            if ($campaign->published_by == '--UNKNOWN--') {
+                $campaign->published_by = '';
+            }
+
             $_published_by = explode("-sep-", $published_by);
 
             if (in_array($url, $_published_by)) {

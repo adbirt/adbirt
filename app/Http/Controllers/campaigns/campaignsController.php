@@ -699,17 +699,22 @@ class campaignsController extends Controller
         $bannerCode = $input['bannerCode'];
         $publisher_code = base64_decode($bannerCode);
 
-        $campaign = campaignorders::where('advert_code', $publisher_code)
+        $campaignorder = campaignorders::where('advert_code', $publisher_code)
             ->where('campaign_running_status', 'activated')
             ->first();
 
-        $bnr = campaign::where('id', $campaign->campaign_id)
+        $campaign = campaign::where('id', $campaignorder->campaign_id)
             ->where('campaign_approval_status', 'Approved')
             ->where('isActive', 'Active')
             ->where('isDeleted', 'No')
             ->first();
 
         $_time = time();
+
+        if (isset($campaign)) {
+            $published_by = $campaign->published_by;
+            $_published_by = explode("-sep-", $published_by);
+        }
     }
 
     public function getbanner(Request $request)

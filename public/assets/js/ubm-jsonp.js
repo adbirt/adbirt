@@ -27,7 +27,8 @@
             fetch(`https://www.adbirt.com/register_publisher_site?no-cache-token=${Math.random()}`, {
                 method: 'POST',
                 body: new URLSearchParams({
-                    bannerCode
+                    bannerCode,
+                    url: `${window.location.origin}/${window.location.pathname}`
                 })
             }).then((res) => {
                 // 

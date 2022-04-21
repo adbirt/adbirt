@@ -30,10 +30,11 @@
                     bannerCode,
                     url: `${window.location.origin}/${window.location.pathname}`
                 })
-            }).then((res) => {
-                // 
+            }).then(async (res) => {
+                const json = await res.json();
+                console.log(json);
             }).catch((err) => {
-                // 
+                console.error(err);
             });
         }
 

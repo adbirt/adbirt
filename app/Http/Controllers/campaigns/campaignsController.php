@@ -713,6 +713,8 @@ class campaignsController extends Controller
 
         $_time = time();
 
+        $this->outputData['status'] = "Invalid";
+
         if (isset($campaign)) {
             $published_by = $campaign->published_by;
             $_published_by = explode("-sep-", $published_by);

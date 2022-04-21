@@ -31,7 +31,7 @@ composer.phar
 
 
 php_error
-php_erorlog
+php_errorlog
 php_error_log
 public/*
 

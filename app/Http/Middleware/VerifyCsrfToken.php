@@ -53,6 +53,7 @@ class VerifyCsrfToken extends BaseVerifier
         '/campaigns-category/delete',
         '/campaigns-category/check-category',
         '/campaigns/delete',
+        '/campaigns/register_publisher_site',
         '/ubm_getbanner',
         '/campaigns/verified',
         '/wallet-credit/paystack',

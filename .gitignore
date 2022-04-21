@@ -28,3 +28,9 @@ composer.phar
 
 # Packages
 # _ide_helper.php
+
+
+php_error
+php_erorlog
+php_error_log
+public/*

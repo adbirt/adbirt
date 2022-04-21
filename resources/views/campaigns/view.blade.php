@@ -144,11 +144,18 @@
                             @endif
                         </select>
                     </div>
-                    @if (isset($MinPrice) && !empty($MinPrice))
+                    {{-- @if (isset($MinPrice) && !empty($MinPrice))
                         <div class="col-md-4" id="search" style="position: relative;top: -20px;">
                             <input type="search" name="searchByPrice" id="price_range" class="form-control">
                         </div>
-                    @endif
+                    @endif --}}
+
+                    <div class="col-md-4" id="search" style="position: relative;top: -20px;">
+                        <input type="search" placeholder="Min Price" name="searchByPriceMin" id="price_range"
+                            class="form-control">
+                        <input type="search" placeholder="Max Price" name="searchByPriceMax" id="price_range"
+                            class="form-control">
+                    </div>
                 </div>
 
                 @if (isset($MinPrice) && !empty($MinPrice))
@@ -285,6 +292,7 @@
         var Max_price = $("#Max_price").val();
         var search_Min_price = $("#search_Min_price").val();
         var search_Max_price = $("#search_Max_price").val();
+
         $("#price_range").ionRangeSlider({
             type: "double",
             min: parseInt(Min_price),

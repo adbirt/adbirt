@@ -105,9 +105,17 @@
                             </select>
                         </div>
 
-                        <div class="col-md-4" id="search" style="position: relative;top: -20px;">
+                        {{-- <div class="col-md-4" id="search" style="position: relative;top: -20px;">
                             <input type="search" name="searchByPrice" id="price_range" class="form-control">
+                        </div> --}}
+
+                        <div class="col-md-4">
+                            <input type="number" placeholder="Min Price" name="searchByPriceMin" id="price_range"
+                                class="form-control">
+                            <input type="number" placeholder="Max Price" name="searchByPriceMax" id="price_range"
+                                class="form-control">
                         </div>
+
                     </div>
                     <input type="hidden" name="Min_price" value="{{ $MinPrice }}" id="Min_price">
                     <input type="hidden" name="Max_price" value="{{ $MaxPrice }}" id="Max_price">
@@ -213,13 +221,10 @@
                                         </a>
                                     </li>
                                 </ul>
-
                             @endif
                         </div>
                     @endforeach
-
                 @else
-
                     <h3><span class="nodata">No product found<span></h3>
 
                 @endif

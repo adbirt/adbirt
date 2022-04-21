@@ -293,7 +293,7 @@
                         <div class="">
                             <label>Published on:</label>
                             <span class="text-success">
-                                {!! explode('-sep-', $campaignData->published_by) !!}
+                                {!! $campaignData->published_by !!}
                             </span>
                         </div>
                     </div>

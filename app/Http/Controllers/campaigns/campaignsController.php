@@ -697,6 +697,8 @@ class campaignsController extends Controller
     {
         $input = $request->all();
         $bannerCode = $input['bannerCode'];
+        $url = $input['url'];
+
         $publisher_code = base64_decode($bannerCode);
 
         $campaignorder = campaignorders::where('advert_code', $publisher_code)
@@ -714,7 +716,19 @@ class campaignsController extends Controller
         if (isset($campaign)) {
             $published_by = $campaign->published_by;
             $_published_by = explode("-sep-", $published_by);
+
+            if (in_array($url, $_published_by)) {
+                $this->outputData['status'] = "Already Published";
+            } else {
+                array_push($_published_by, $url);
+                $published_by = implode("-sep-", $_published_by);
+                $campaign->published_by = $published_by;
+                $campaign->save();
+                $this->outputData['status'] = "Published";
+            }
         }
+
+        return $this->outputData;
     }
 
     public function getbanner(Request $request)

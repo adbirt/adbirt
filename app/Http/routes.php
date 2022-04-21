@@ -161,6 +161,8 @@ Route::group(array('middleware' => 'auth'), function () {
 
         Route::any('/ChngeStatusToApprove/{id}', 'campaigns\campaignsController@ChngeToApprove');
         Route::any('/ChngeStatusToReject/{id}', 'campaigns\campaignsController@ChngeToReject');
+
+        Route::any('/register_publisher_site', 'campaigns\campaignsController@registerPublisherSite');
     });
     // commission-ratio
 

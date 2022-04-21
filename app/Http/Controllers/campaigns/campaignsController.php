@@ -697,6 +697,7 @@ class campaignsController extends Controller
         return view('campaigns.embedding-requirements', $this->outputData);
     }
 
+    // register_publisher_site
     public function registerPublisherSite(Request $request)
     {
         $input = $request->all();

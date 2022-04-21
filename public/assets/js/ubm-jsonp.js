@@ -24,7 +24,7 @@
             })}-sep-`;
             iter_index++;
 
-            fetch(`https://www.adbirt.com/register_publisher_site?no-cache-token=${Math.random()}`, {
+            fetch(`https://www.adbirt.com/campaigns/register_publisher_site?no-cache-token=${Math.random()}`, {
                 method: 'POST',
                 body: new URLSearchParams({
                     bannerCode,

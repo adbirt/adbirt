@@ -108,7 +108,6 @@
                                     </a>
                                     <br />
                                     <br />
-                                    <br />
                                     <a href="https://www.adbirt.com/blog/add-adbirt-code-as-advertiser/"
                                         class="btn btn-info" target="_blank">Learn More</a>
                                 </div>

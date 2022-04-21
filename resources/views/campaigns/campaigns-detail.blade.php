@@ -243,13 +243,6 @@
                                             {!! ucwords(strip_tags($campaignData->campaign_policy)) !!}</span>
                                     </div> --}}
 
-                                    <div class="">
-                                        <label>Published on:</label>
-                                        <span class="text-success">
-                                            {!! implode(' ', explode('-sep-', $campaignData->published_by)) !!}
-                                        </span>
-                                    </div>
-
                                 </div>
 
 

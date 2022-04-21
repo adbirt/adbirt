@@ -334,9 +334,13 @@ class campaignsController extends Controller
         }
 
         if (isset($input['searchByPrice'])  && !empty($input['searchByPrice'])) {
-            $price_range = explode(";", $input['searchByPrice']);
-            $campaign = $campaign->whereBetween('campaign_cost_per_action', [$price_range[0] - 1, $price_range[1] + 1]);
-            $this->outputData['price_range'] = $price_range;
+            // $price_range = explode(";", $input['searchByPrice']);
+            $_min_range = $input['searchByPriceMin'];
+            $_max_range = $input['searchByPriceMax'];
+            // $campaign = $campaign->whereBetween('campaign_cost_per_action', [$price_range[0] - 1, $price_range[1] + 1]);
+            $campaign = $campaign->whereBetween('campaign_cost_per_action', [$_min_range[0] - 1, $_max_range[1] + 1]);
+            // $this->outputData['price_range'] = $price_range;
+            $this->outputData['price_range'] = array($_min_range, $_max_range);
         }
 
         $campaign = $campaign->orderBy('id', 'desc')->paginate(4);

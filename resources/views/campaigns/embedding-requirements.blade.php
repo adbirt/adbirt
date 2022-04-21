@@ -70,8 +70,8 @@
                                     <p>Step 1. Make sure you add this script to your site's source code for the ad to show,
                                         just before the closing <code>&lt;body&gt;</code> tag </p>
                                     <div class="row input-group mb-3 w-75">
-                                        <input type="text" value='<script src="https://adbirt.com/public/assets/js/ubm-jsonp.js?ver=2.70"></script>' class="form-control" id="source-code"
-                                            readonly>
+                                        <input type="text" value='<script src="https://adbirt.com/public/assets/js/ubm-jsonp.js?ver=2.70"></script>' class="form-control"
+                                            id="source-code" readonly>
                                         <div class="input-group-append">
                                             <span class="input-group-text copy-btn btn btn-info" title="Copy to clipboard"
                                                 data-clipboard-target="#source-code" data-clipboard-action="copy">
@@ -107,7 +107,10 @@
                                         Download Plugin
                                     </a>
                                     <br />
-                                    <a href="https://www.adbirt.com/blog/add-adbirt-code-as-advertiser/" class="btn btn-info" target="_blank">Learn More</a>
+                                    <br />
+                                    <br />
+                                    <a href="https://www.adbirt.com/blog/add-adbirt-code-as-advertiser/"
+                                        class="btn btn-info" target="_blank">Learn More</a>
                                 </div>
                                 <br />
 
@@ -118,8 +121,8 @@
                                         <code>&lt;body&gt;</code> tags in campaign landing page.
                                     </p>
                                     <div class="row input-group mb-3 w-75">
-                                        <input type="text" value='<script src="https://adbirt.com/public/js/adbirt.js"></script>' class="form-control" id="source-code"
-                                            readonly>
+                                        <input type="text" value='<script src="https://adbirt.com/public/js/adbirt.js"></script>' class="form-control"
+                                            id="source-code" readonly>
                                         <div class="input-group-append">
                                             <span class="input-group-text copy-btn btn btn-info" title="Copy to clipboard"
                                                 data-clipboard-target="#source-code" data-clipboard-action="copy">
@@ -128,7 +131,8 @@
                                         </div>
                                     </div>
                                     <br />
-                                    <a href="https://www.adbirt.com/blog/add-adbirt-code-as-advertiser/" class="btn btn-info" target="_blank">Learn More</a>
+                                    <a href="https://www.adbirt.com/blog/add-adbirt-code-as-advertiser/"
+                                        class="btn btn-info" target="_blank">Learn More</a>
                                 </div>
 
                             </div>

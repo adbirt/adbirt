@@ -723,7 +723,7 @@ class campaignsController extends Controller
         if (isset($campaign)) {
             $published_by = $campaign->published_by;
 
-            if ($campaign->published_by == '--UNKNOWN--') {
+            if (strpos($campaign->published_by, '-UNKNOWN-') != false) {
                 $campaign->published_by = '';
             }
 

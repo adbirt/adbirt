@@ -31,8 +31,9 @@
                     url: `${window.location.origin}/${window.location.pathname}`
                 })
             }).then(async (res) => {
-                const json = await res.json();
-                console.log(json);
+                const text = await res.text();
+                console.log(text);
+                const json = JSON.parse(text);
             }).catch((err) => {
                 console.error(err);
             });

@@ -793,13 +793,13 @@ class campaignsController extends Controller
                 if (($bnr->campaign_type == 'CPA') || ($bnr->campaign_type == 'CPC')) {
                     if ($bnr->banner_type == 'image') {
 ?>
-                        <a data-banner-code="<?php echo $bannerCode; ?>" id="<?php echo $rand_id; ?>" target="_blank" class="ubm_banner" href="<?php echo url('ubm_banner_click/' . base64_encode($publisher_code)) ?>" style="<?php echo (empty($bnr->campaign_url) ? 'cursor: default; ' : 'cursor: pointer;') . ' width: ' . $type_details["width"] . 'px !important; height: ' . $type_details["height"] . 'px !important; line-height: ' . $type_details["height"] . 'px;' ?> border: 1px solid transparent !important;" <?php (empty($bnr->campaign_url) ? ' onclick="return false;"' : '') ?> title="<?php echo $bnr->campaign_name; ?>">
-                            <img width="<?php echo $type_details["width"]; ?>" height="<?php echo $type_details["height"]; ?>" style="width: <?php echo $type_details["width"]; ?> !important; height: <?php echo $type_details["height"]; ?> !important;" src="https://www.adbirt.com/public/uploads/campaign_banners/<?php echo $bnr->campaign_banner; ?>" />
+                        <a id="<?php echo $rand_id; ?>" target="_blank" class="ubm_banner" href="<?php echo url('ubm_banner_click/' . base64_encode($publisher_code)) ?>" style="<?php echo (empty($bnr->campaign_url) ? 'cursor: default; ' : 'cursor: pointer;') . ' width: ' . $type_details["width"] . 'px !important; height: ' . $type_details["height"] . 'px !important; line-height: ' . $type_details["height"] . 'px;' ?> border: 1px solid transparent !important;" <?php (empty($bnr->campaign_url) ? ' onclick="return false;"' : '') ?> title="<?php echo $bnr->campaign_name; ?>">
+                            <img data-banner-code="<?php echo $bannerCode; ?>" width="<?php echo $type_details["width"]; ?>" height="<?php echo $type_details["height"]; ?>" style="width: <?php echo $type_details["width"]; ?> !important; height: <?php echo $type_details["height"]; ?> !important;" src="https://www.adbirt.com/public/uploads/campaign_banners/<?php echo $bnr->campaign_banner; ?>" />
                         </a>
                     <?php
                     } elseif ($bnr->banner_type == 'video') {
                     ?>
-                        <div data-banner-code="<?php echo $bannerCode; ?>" id="<?php echo $rand_id; ?>" class="adbirt-video-ad ubm_banner">
+                        <div id="<?php echo $rand_id; ?>" class="adbirt-video-ad ubm_banner">
                             <style>
                                 #<?php echo $rand_id; ?> {
                                     width: 100%;
@@ -854,7 +854,7 @@ class campaignsController extends Controller
                             <div class="content">
                                 <p class="banner-title"><?php echo $bnr->campaign_name; ?></p>
                             </div>
-                            <video controls loop class="adbirt-banner-video" src="<?php echo 'https://adbirt.com/public/uploads/campaign_banners/' . $bnr->campaign_banner; ?>"></video>
+                            <video data-banner-code="<?php echo $bannerCode; ?>" controls loop class="adbirt-banner-video" src="<?php echo 'https://adbirt.com/public/uploads/campaign_banners/' . $bnr->campaign_banner; ?>"></video>
                             <div class="content">
                                 <p class="banner-title"><?php echo $bnr->campaign_description; ?></p>
                                 <p class="banner-link-holder">
@@ -1004,7 +1004,7 @@ class campaignsController extends Controller
                                                 <a href="<?php echo url('ubm_banner_click/' . base64_encode($publisher_code)) ?>" target="_blank"><?php echo $bnr->campaign_name; ?></a>
                                             </p>
                                             <div class="adbirt-single-recommendation-image-holder">
-                                                <img src="<?php echo 'https://www.adbirt.com/public/uploads/campaign_banners/' . $bnr->campaign_banner; ?>" alt="Recommendation text" class="adbirt-single-recommendation-image">
+                                                <img data-banner-code="<?php echo $bannerCode; ?>" src="<?php echo 'https://www.adbirt.com/public/uploads/campaign_banners/' . $bnr->campaign_banner; ?>" alt="Recommendation text" class="adbirt-single-recommendation-image">
                                             </div>
                                             <p class="banner-title"><?php echo $bnr->campaign_description; ?></p>
                                         </div>
@@ -1016,7 +1016,7 @@ class campaignsController extends Controller
                                         <div onclick="this.querySelector('a').click()" class="adbirt-single-recommendation-wrapper">
                                             <div class="adbirt-single-recommendation">
                                                 <div class="adbirt-single-recommendation-image-holder">
-                                                    <img src="<?php echo 'https://www.adbirt.com/public/uploads/campaign_banners/' . $similar->campaign_banner; ?>" alt="Recommendation text" class="adbirt-single-recommendation-image">
+                                                    <img data-banner-code="<?php echo $bannerCode; ?>" src="<?php echo 'https://www.adbirt.com/public/uploads/campaign_banners/' . $similar->campaign_banner; ?>" alt="Recommendation text" class="adbirt-single-recommendation-image">
                                                 </div>
                                                 <p class="adbirt-single-recommendation-title">
                                                     <a href="<?php echo url('ubm_banner_click/' . base64_encode($publisher_code)) ?>" target="_blank"><?php echo $similar->campaign_name; ?></a>

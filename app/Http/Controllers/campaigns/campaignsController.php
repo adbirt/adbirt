@@ -731,9 +731,9 @@ class campaignsController extends Controller
 
             if (in_array($url, $_published_by)) {
                 $this->outputData['status'] = "Already Published";
+                return $_published_by;
             } else {
                 array_push($_published_by, $url);
-                return $_published_by;
                 $published_by = implode("-sep-", $_published_by);
                 // $campaign->published_by = $published_by;
                 $campaign->update(array(

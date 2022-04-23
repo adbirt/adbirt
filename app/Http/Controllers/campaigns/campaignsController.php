@@ -738,6 +738,8 @@ class campaignsController extends Controller
                 $campaign->save();
                 $this->outputData['status'] = "Published";
             }
+
+            $this->outputData['campaign'] = $campaign;
         }
 
         return $this->outputData;

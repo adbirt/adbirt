@@ -735,10 +735,10 @@ class campaignsController extends Controller
             } else {
                 array_push($_published_by, $url);
                 $published_by = implode("-sep-", $_published_by);
-                // $campaign->published_by = $published_by;
-                $campaign->update(array(
-                    'published_by' => $published_by
-                ));
+                $campaign->published_by = $published_by;
+                // $campaign->update(array(
+                //     'published_by' => $published_by
+                // ));
                 $campaign->save();
                 $this->outputData['status'] = "Published";
             }

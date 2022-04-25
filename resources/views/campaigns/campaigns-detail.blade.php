@@ -294,6 +294,9 @@
                             <label>Published on:</label>
                             <span class="text-success">
                                 {!! implode(' ', explode('-sep-', $campaignData->published_by)) !!}
+                                <ul>
+                                {!! implode(' ', array_map(explode('-sep-', $campaignData->published_by)), function ($url) { return "<li>$url</li>"; }) !!}
+                                </ul>
                             </span>
                         </div>
                     </div>

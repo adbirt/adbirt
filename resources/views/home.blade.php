@@ -108,7 +108,7 @@
         <div class="content">
             <div class="content_top">
                 <div class="wrap">
-                    <div class="banner_desc">
+                    <div class="banner_desc" style="background-color: url(bg-parallax2.jpg)">
                         <h1><small class="set">Set the Cost!</small> <br /><span>Pay for Result!</span></h1>
                         <h3> <small class="set2">You set your Budget (Cost Per Action) and<br /> only pay when
                                 your Product is consumed.</small></h3>

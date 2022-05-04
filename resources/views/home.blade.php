@@ -99,7 +99,7 @@
 
     <link href="{{ asset('/css/magnific-popup.css') }}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
-    <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    {{-- <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" /> --}}
 
 
 @stop
@@ -813,9 +813,7 @@
                         <h3> <small class="set2">You set your Budget (Cost Per Action) and<br /> only pay when
                                 your Product is consumed.</small></h3>
                         <a class="play_icon fancybox-media" href="https://vimeo.com/33790882">
-
                             <!-- <img src="{{ asset('images/play-icon.png') }}"> -->
-
                         </a>
                         <h3>Signup for <span>FREE</span> today!</h3>
                         <p>No credit card required.</p>
@@ -841,46 +839,34 @@
                     <div class="features_grids">
                         <div class="section group">
                             <div class="grid_1_of_4 images_1_of_4">
-
                                 <img src="{{ asset('images/signup.jpg') }}">
-
-
                                 <h3>Create an Account</h3>
                                 <p>Signing up on Adbirt as an Advertiser is the first step to putting your message across
                                     our Ad Network.</p>
                             </div>
                             <div class="grid_1_of_4 images_1_of_4">
-
                                 <img src="{{ asset('images/fundwallet.jpg') }}">
-
-
                                 <h3>Fund your Ads Wallet</h3>
                                 <p>You can Fund your Wallet with as low as $1 and you can set a CPA (Cost per action) to as
                                     low as $0.01 / Action.</p>
                             </div>
                             <div class="grid_1_of_4 images_1_of_4">
-
                                 <img src="{{ asset('images/createads.jpg') }}">
-
-
                                 <h3>Create your First Ads</h3>
                                 <p>Create a nice and professional looking Ads to capture your Audience using our Ads
                                     Campaign builder .</p>
                             </div>
                             <div class="grid_1_of_4 images_1_of_4">
-
                                 <img src="{{ asset('images/setbudget.jpg') }}">
-
-
                                 <h3>Set your Budget</h3>
                                 <p>Like we made mention earlier, you are in control of the CPA, set your Budget your way,
                                     within your means.</p>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
+
             <div class="features" id="features">
                 <div class="wrap">
                     <h2>Adbirt for <span class="pub">Publishers</span></h2>

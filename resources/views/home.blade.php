@@ -888,37 +888,25 @@
                     <div class="features_grids">
                         <div class="section group">
                             <div class="grid_1_of_4 images_1_of_4">
-
                                 <img src="{{ asset('images/publisher-signup.jpg') }}">
-
-
                                 <h3>Create an Account</h3>
                                 <p>Setup your Publishers Account by telling us more about your medium of Monetization.</p>
                             </div>
                             <div class="grid_1_of_4 images_1_of_4">
-
                                 <img src="{{ asset('images/choosead.jpg') }}">
-
-
                                 <h3>Choose an Ad Campaign</h3>
                                 <p>Pick a Campaign that is suitable to the interest of your Audience, be it Email list or
                                     website.</p>
                             </div>
                             <div class="grid_1_of_4 images_1_of_4">
-
                                 <img src="{{ asset('images/placeitonyourwebsite.jpg') }}">
-
-
                                 <h3>Place it on your Website</h3>
                                 <p>Place it on your Website, Email list, Social media handles, WhatsApp group, Blog or other
                                     channels.</p>
                             </div>
                             <div class="grid_1_of_4 images_1_of_4">
-
                                 <img
                                     src="{{ asset('images/earn-and-withdraw-instantly-from-adbirt-publisher-account.jpg') }}">
-
-
                                 <h3>Earn and Withdraw Instantly</h3>
                                 <p>Track your earnings and make withdrawal request anytime you earn, No threshold, no limit
                                     to earnings.</p>
@@ -927,8 +915,6 @@
                         <div class="button"><a class="" href="/register">Signup Now
                                 <img src="{{ asset('images/arrow.png') }}">
                             </a>
-
-
                         </div>
                     </div>
                 </div>

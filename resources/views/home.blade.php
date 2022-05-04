@@ -1,5 +1,104 @@
 @extends('layouts.frontend')
 
+@section('style')
+    {{-- <style>
+        .btn-danger {
+            background-color: #ff7c00;
+            border: #ff7c00;
+        }
+
+        .text_title {
+            color: #ff7c00;
+            font-family: cursive;
+            font-size: 2rem !important;
+        }
+
+        .font-size-16 {
+            font-size: 16px !important;
+        }
+
+        .hero_image {
+            width: 300px;
+            object-fit: cover;
+        }
+
+        .feature_icon {
+            width: 75px;
+            height: 75px;
+        }
+
+        .sub-heads {
+            font-family: 'Times New Roman', Times, serif !important;
+            font-size: 1.7rem !important;
+        }
+
+        .feature_iconWrap {
+            background-color: #fff;
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+            display: inline-block;
+            padding: 20px;
+            border-radius: 50%;
+            border: #fff;
+        }
+
+        .text-custom-color {
+            color: #3c404 !important;
+        }
+
+        .step-card {
+            height: 180px !important;
+        }
+
+        .steps_image {
+            width: 150px;
+        }
+
+        .format_list {
+            list-style: none;
+        }
+
+        .format_list li {
+            margin: 0;
+        }
+
+        .custom-clearfix {
+            height: 140px !important;
+        }
+
+        @media (max-width: 600px) {
+            .for-advertisers {
+                margin-bottom: 30px !important;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .hero_image {
+                width: 600px;
+                image-rendering: pixelated !important;
+            }
+
+            .steps_image {
+                width: 200px;
+            }
+
+            .format_list li {
+                margin: 0 1.5rem !important;
+            }
+
+            .text_title {
+                font-size: 2rem !important;
+            }
+        }
+
+    </style> --}}
+
+    <link href="{{ asset('/css/style.css') }}" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,500,900' rel='stylesheet' type='text/css'>
+    <link href="{{ asset('/css/magnific-popup.css') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
+    {{-- <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" /> --}}
+
+@stop
 
 
 @section('content')

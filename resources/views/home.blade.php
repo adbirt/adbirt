@@ -933,12 +933,14 @@
                     </div>
                 </div>
             </div>
-            {{-- End Reverted design --}}
+        </div>
+    </div>
+    {{-- End Reverted design --}}
 
-        @stop
+@stop
 
-        @section('script')
-            {{-- <!-- Wavify JS -->
+@section('script')
+    {{-- <!-- Wavify JS -->
     <script src="public/assets-revamp/js/wavify.js"></script>
     <script src="public/assets-revamp/js/TweenMax.min.js"></script>
     <!-- jQuery Wavify JS -->
@@ -959,4 +961,4 @@
             zIndex: 999
         })
     </script> --}}
-        @stop
+@stop

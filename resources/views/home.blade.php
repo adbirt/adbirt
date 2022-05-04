@@ -804,7 +804,7 @@
             </div>
         </div>
     </div> --}}
-    <div class="main">
+    {{-- <div class="main">
         <div class="content">
             <div class="content_top">
                 <div class="wrap">
@@ -906,7 +906,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}Big O
     {{-- End Reverted design --}}
 
 @stop

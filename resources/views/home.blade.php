@@ -777,15 +777,12 @@
     {{-- End Chilo's Design --}}
 
     {{-- Begin Reverted design --}}
-    <div class="header" id="home">
+    {{-- <div class="header" id="home">
         <div class="header_top">
             <div class="wrap">
                 <div class="logo">
                     <a href="/">
-
                         <img src="{{ asset('images/logo.png') }}">
-
-
                     </a>
                 </div>
                 <div class="menu">
@@ -806,7 +803,7 @@
                 <div class="clear"></div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <div class="main">
         <div class="content">
             <div class="content_top">

@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/danroyal001/Documents/adbirt-stuff/adbirt.com'
+make: Leaving directory '/home/danroyal001/Documents/adbirt-stuff/adbirt.com'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+

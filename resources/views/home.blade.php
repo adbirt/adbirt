@@ -109,7 +109,7 @@
             <div class="wrap">
                 <div class="banner_desc">
                     <h1>Set the Cost!</h1><br />
-                    <h1><span>Pay for Result!</span></h1>
+                    <h2>Pay for Result!</h2>
                     <h3> <small class="set2">You set your Budget (Cost Per Action) and<br /> only pay when
                             your Product is consumed.</small></h3>
                     <a class="play_icon fancybox-media" href="https://vimeo.com/33790882">

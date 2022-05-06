@@ -29,18 +29,18 @@ Version      : 1.0
 	$(window).on('scroll', function () {
 		if ($(this).scrollTop() > 76) {
 			$('.navbar-area').addClass("adbirt-sticky-header");
-			// $('.adbirt-main-nav').css({
-			// 	backgroundColor: '#fff'
-			// });
-			// $('.adbirt-nav').css({
-			// 	background: '#fff'
-			// });
+			$('.adbirt-main-nav').css({
+				backgroundColor: '#fff'
+			});
+			$('.adbirt-nav').css({
+				background: '#fff'
+			});
 			$(mobileMenuIcon).css({
 				background: '#000'
 			});
-			// $('.adbirt-main-nav .navbar .navbar-nav .nav-item a:not([href="/dashboard"])').css({
-			// 	color: '#000'
-			// });
+			$('.adbirt-main-nav .navbar .navbar-nav .nav-item a:not([href="/dashboard"])').css({
+				color: '#000'
+			});
 		}
 		else {
 			$('.navbar-area').removeClass("adbirt-sticky-header");

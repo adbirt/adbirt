@@ -108,13 +108,13 @@
         <div class="content_top">
             <div class="wrap">
                 <div class="banner_desc" style="color: #fff !important;">
-                    <h1 style="font-weight: 900;">Set the Cost!</h1><br />
-                    <h2>Pay for Result!</h2>
-                    <h3> <small class="set2">You set your Budget (Cost Per Action) and<br /> only pay when
+                    <h1 style="font-weight: 900; color: #fff !important;">Set the Cost!</h1><br />
+                    <h2 style="font-size: 30px !important; color: #fff !important;">Pay for Result!</h2>
+                    <h3> <small class="set2" style="color: #fff !important;">You set your Budget (Cost Per Action) and<br /> only pay when
                             your Product is consumed.</small></h3>
-                    <a class="play_icon fancybox-media" href="https://vimeo.com/33790882">
+                    <!-- <a class="play_icon fancybox-media" href="https://vimeo.com/33790882">
                         <!-- <img src="{{ asset('images/play-icon.png') }}"> -->
-                    </a>
+                    </a> -->
                     <h3>Signup for <span>FREE</span> today!</h3>
                     <p style="text-decoration: none !important; color: #fff !important;">No credit card required.</p>
                     <div class="sign_up">
@@ -198,7 +198,7 @@
                                 to earnings.</p>
                         </div>
                     </div>
-                    <div class="button"><a class="" href="/register">Signup Now
+                    <div class="button"><a class="" href="/dashboard">Signup Now
                             <img src="{{ asset('images/arrow.png') }}">
                         </a>
                     </div>

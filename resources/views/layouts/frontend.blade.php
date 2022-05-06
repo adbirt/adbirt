@@ -53,7 +53,6 @@
             font-family: 'Open Sans', sans-serif;
             font-family: 'Roboto', sans-serif;
         }
-
     </style>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -100,10 +99,8 @@
                         <div class="col-lg-9 col-md-8">
                             <div class="adbirt-top-header-in">
                                 <ul class="adbirt-top-header-list">
-                                    <li><i class="fas fa-envelope"></i> <a target="_blank"
-                                            href="mailto:info@adbirt.com">info@adbirt.com</a></li>
-                                    <li><i class="fas fa-phone-volume"></i><a target="_blank"
-                                            href="https://wa.me/447312906574">+44-7312-906574 </a></li>
+                                    <li><i class="fas fa-envelope"></i> <a target="_blank" href="mailto:info@adbirt.com">info@adbirt.com</a></li>
+                                    <li><i class="fas fa-phone-volume"></i><a target="_blank" href="https://wa.me/447312906574">+44-7312-906574 </a></li>
                                     <li><i class="fas fa-map-marker-alt"></i><a href="#map">United Kingdom</a></li>
                                 </ul>
                             </div>
@@ -111,16 +108,13 @@
                         <div class="col-lg-3 col-md-4">
                             <div class="adbirt-top-social">
                                 <div class="adbirt-top-social-icon">
-                                    <a target="_blank" href="https://facebook.com/AdbirtHQ" class="icon"> <i
-                                            class="fab fa-facebook"></i>
+                                    <a target="_blank" href="https://facebook.com/AdbirtHQ" class="icon"> <i class="fab fa-facebook"></i>
                                     </a>
 
-                                    <a target="_blank" href="https://www.instagram.com/adbirthq/"
-                                        class="icon"> <i class="fab fa-instagram"></i>
+                                    <a target="_blank" href="https://www.instagram.com/adbirthq/" class="icon"> <i class="fab fa-instagram"></i>
                                     </a>
 
-                                    <a target="_blank" href="https://twitter.com/Adbirt_HQ" class="icon"> <i
-                                            class="fab fa-twitter"></i>
+                                    <a target="_blank" href="https://twitter.com/Adbirt_HQ" class="icon"> <i class="fab fa-twitter"></i>
                                     </a>
                                 </div>
                             </div>
@@ -143,38 +137,37 @@
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light">
                         <a class="navbar-brand" href="/">
-                            <img src="public/assets-revamp/img/logo.png"
-                                class="logo animate__animated animate__fadeInDown" alt="logo">
+                            <img src="public/assets-revamp/img/logo.png" class="logo animate__animated animate__fadeInDown" alt="logo">
                         </a>
                         @if (Request::segment(1) != 'contact')
-                            <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                                <ul class="navbar-nav ml-auto animate__animated animate__fadeInDown">
-                                    <li class="nav-item">
-                                        <a href="/" class="nav-link">Home</a>
+                        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto animate__animated animate__fadeInDown">
+                                <li class="nav-item">
+                                    <a href="/" class="nav-link">Home</a>
 
-                                    <li class="nav-item">
-                                        <a href="/how-it-works" class="nav-link">How it works</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="/pricing" class="nav-link">Pricing</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="/blog" class="nav-link">Blog</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="/contact" class="nav-link">Contact</a>
-                                    </li>
-                                    <li class="nav-item text-white">
-                                        <a href="/dashboard" class="nav-link rounded-lg bg-primary-color px-3 py-1">
-                                            @if (Auth::user())
-                                                Dashboard
-                                            @else
-                                                Login
-                                            @endif
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                                <li class="nav-item">
+                                    <a href="/how-it-works" class="nav-link">How it works</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/pricing" class="nav-link">Pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/blog" class="nav-link">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/contact" class="nav-link">Contact</a>
+                                </li>
+                                <li class="nav-item text-white">
+                                    <a href="/dashboard" class="nav-link rounded-lg bg-primary-color px-3 py-1">
+                                        @if (Auth::user())
+                                        Dashboard
+                                        @else
+                                        Login
+                                        @endif
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                         @endif
                     </nav>
                 </div>
@@ -199,8 +192,7 @@
                         <!--- END COL -->
                         <div class="col-lg-6 col-md-6 col-12 adbirt-mailchamp-subscribe">
                             <form class="form-group" id="mc-form">
-                                <input type="email" name="email" class="form-control" id="email"
-                                    placeholder="Your Email" required="required">
+                                <input type="email" name="email" class="form-control" id="email" placeholder="Your Email" required="required">
                                 <button type="submit" id="subscribe-button" class="btn">Subcribe</button>
                                 <!-- SUBSCRIPTION SUCCESSFUL OR ERROR MESSAGES -->
                                 <br>
@@ -228,8 +220,7 @@
                                             <i class="fab fa-facebook"></i>
                                         </a>
 
-                                        <a target="_blank" href="https://www.instagram.com/adbirthq/"
-                                            class="icon"> <i class="fab fa-instagram"></i>
+                                        <a target="_blank" href="https://www.instagram.com/adbirthq/" class="icon"> <i class="fab fa-instagram"></i>
                                         </a>
 
                                         <a target="_blank" href="https://twitter.com/Adbirt_HQ" class="icon">
@@ -250,8 +241,7 @@
                                             us</a></li>
                                     <li> <a href="/privacy"><i class="fas fa-long-arrow-alt-right mr-2"></i>Privacy
                                             policy</a></li>
-                                    <li> <a href="/actions-and-events"><i
-                                                class="fas fa-long-arrow-alt-right mr-2"></i>Actions And Events</a></li>
+                                    <li> <a href="/actions-and-events"><i class="fas fa-long-arrow-alt-right mr-2"></i>Actions And Events</a></li>
                                 </ul>
                             </div>
                             <!--- END COL -->
@@ -260,9 +250,7 @@
                                 <h5>Map </h5>
                                 <!-- Google Map start-->
                                 <div id="adbirt-map-area">
-                                    <iframe id="map"
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1192.4978464340093!2d-2.9155465418515525!3d53.2896121983381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487adfa45defb54f%3A0x8624a28bde8082f4!2sAdbirt!5e0!3m2!1sen!2sng!4v1628345267368!5m2!1sen!2sng"
-                                        style="border: 1px solid #000;" allowfullscreen="true" loading="lazy"></iframe>
+                                    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1192.4978464340093!2d-2.9155465418515525!3d53.2896121983381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487adfa45defb54f%3A0x8624a28bde8082f4!2sAdbirt!5e0!3m2!1sen!2sng!4v1628345267368!5m2!1sen!2sng" style="border: 1px solid #000;" allowfullscreen="true" loading="lazy"></iframe>
                                 </div>
                                 <!-- Google Map end -->
                             </div>

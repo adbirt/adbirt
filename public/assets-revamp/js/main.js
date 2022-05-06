@@ -44,12 +44,20 @@ Version      : 1.0
 		}
 		else {
 			$('.navbar-area').removeClass("adbirt-sticky-header");
+			// $('.adbirt-main-nav').css({
+			// 	backgroundColor: 'transparent'
+			// });
+			// $('.adbirt-nav').css({
+			// 	background: 'transparent'
+			// });
+
 			$('.adbirt-main-nav').css({
-				backgroundColor: 'transparent'
+				backgroundColor: '#ecedef'
 			});
 			$('.adbirt-nav').css({
-				background: 'transparent'
+				background: '#ecedef'
 			});
+
 			$(mobileMenuIcon).css({
 				background: '#fff'
 			});

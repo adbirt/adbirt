@@ -3387,7 +3387,8 @@ textarea:focus {
 
 .adbirt-top-header {
   overflow: hidden;
-  background: transparent;
+  /* background: transparent; */
+  background: #ededef;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 

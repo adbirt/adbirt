@@ -2837,7 +2837,8 @@ textarea:focus {
 
 .adbirt-scroll-top {
   position: fixed;
-  right: 105%;
+  /* right: 105%; */
+  left: 105%;
   bottom: 70px;
   z-index: 99;
   cursor: pointer;
@@ -2864,7 +2865,8 @@ textarea:focus {
 }
 
 .adbirt-scroll-top.open {
-  right: 30px;
+  /* right: 30px; */
+  left: 30px;
 }
 
 /*END SCROLL TO TOP*/

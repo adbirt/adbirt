@@ -115,7 +115,7 @@
                         <!-- <img src="{{ asset('images/play-icon.png') }}"> -->
                     </a>
                     <h3>Signup for <span>FREE</span> today!</h3>
-                    <p>No credit card required.</p>
+                    <p style="text-decoration: none !important; color: #fff !important;">No credit card required.</p>
                     <div class="sign_up">
                         <!-- <form>
                                 <input type="text" value="E-mail address " onFocus="this.value = '';"

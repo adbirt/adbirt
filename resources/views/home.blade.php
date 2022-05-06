@@ -113,7 +113,7 @@
                     <h3> <small class="set2" style="color: #fff !important;">You set your Budget (Cost Per Action) and<br /> only pay when
                             your Product is consumed.</small></h3>
                     <!-- <a class="play_icon fancybox-media" href="https://vimeo.com/33790882">
-                        <!-- <img src="{{ asset('images/play-icon.png') }}"> -->
+                         <img src="{{ asset('images/play-icon.png') }}"> 
                     </a> -->
                     <h3>Signup for <span>FREE</span> today!</h3>
                     <p style="text-decoration: none !important; color: #fff !important;">No credit card required.</p>

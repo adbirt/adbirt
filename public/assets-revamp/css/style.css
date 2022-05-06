@@ -58,7 +58,8 @@ body {
   --theme-line: linear-gradient(to bottom, #bc6a44, #ff4b2b);
   /* --theme-color: #ff6363; */
 
-  --theme-color: #ff7c00;
+  /* --theme-color: #ff7c00; */
+  --theme-color: #BC6A44;
   --theme-accent-color: #bc6a44;
   --theme-black: #0a0a0a;
   --theme-white: #ffffff;

@@ -97,7 +97,6 @@
     <link href="{{ asset('/css/magnific-popup.css') }}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
     {{-- <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" /> --}}
-
 @stop
 
 

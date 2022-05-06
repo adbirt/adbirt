@@ -254,7 +254,7 @@ input:focus {
 .content_top{	
 	position:relative;
 	background:#BC6A44;
-	/**/ background-image:url(../images/bg.jpg); 
+	/* background-image:url(../images/bg.jpg);  */
 }
 .banner_desc{
 	float:left;

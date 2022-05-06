@@ -107,8 +107,8 @@
     <div class="content">
         <div class="content_top">
             <div class="wrap">
-                <div class="banner_desc">
-                    <h1>Set the Cost!</h1><br />
+                <div class="banner_desc" style="color: #fff !important;">
+                    <h1 style="font-weight: 900;">Set the Cost!</h1><br />
                     <h2>Pay for Result!</h2>
                     <h3> <small class="set2">You set your Budget (Cost Per Action) and<br /> only pay when
                             your Product is consumed.</small></h3>
@@ -135,7 +135,7 @@
 
         <div class="features" id="features">
             <div class="wrap">
-                <h2>Adbirt for <span>Advertisers</span></h2>
+                <h2 class="text-primary-color">Adbirt for Advertisers</h2>
                 <h4>Signup as an Advertiser within minutes &amp; get your Ads across our Ad Networks</h4>
                 <div class="features_grids">
                     <div class="section group">
@@ -170,7 +170,7 @@
 
         <div class="features" id="features">
             <div class="wrap">
-                <h2>Adbirt for <span class="pub">Publishers</span></h2>
+                <h2 class="theme-primary-color">Adbirt for Publishers</h2>
                 <h4>Signup as a Publisher within minutes &amp; start earning</h4>
                 <div class="features_grids">
                     <div class="section group">

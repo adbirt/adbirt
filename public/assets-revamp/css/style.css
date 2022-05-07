@@ -2962,7 +2962,8 @@ textarea:focus {
 .adbirt-main-nav .navbar .navbar-nav .nav-item a {
   font-size: 16px;
   font-weight: 500;
-  color: var(--theme-white);
+  /* color: var(--theme-white); */
+  color: #000;
   text-transform: none;
   padding-left: 0;
   padding-right: 0;

@@ -61,9 +61,9 @@ Version      : 1.0
 			$(mobileMenuIcon).css({
 				background: '#fff'
 			});
-			$('.adbirt-main-nav .navbar .navbar-nav .nav-item a:not([href="/dashboard"])').css({
-				color: '#fff'
-			});
+			// $('.adbirt-main-nav .navbar .navbar-nav .nav-item a:not([href="/dashboard"])').css({
+			// 	color: '#fff'
+			// });
 		}
 	});
 	// Mean Menu

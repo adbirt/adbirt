@@ -3421,7 +3421,8 @@ textarea:focus {
 
 .adbirt-top-social a i {
   margin-left: 4px;
-  color: rgba(255, 255, 255, 0.8);
+  /* color: rgba(255, 255, 255, 0.8); */
+  color: #000;
   width: 30px;
   height: 30px;
   line-height: 30px;

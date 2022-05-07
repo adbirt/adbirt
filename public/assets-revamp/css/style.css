@@ -3446,8 +3446,7 @@ textarea:focus {
 
 .adbirt-top-header-list li {
   margin-right: 30px;
-  /* color: rgba(255, 255, 255, 0.8); */
-  color: #000;
+  color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
 }
 

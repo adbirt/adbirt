@@ -3368,6 +3368,14 @@ textarea:focus {
   }
 }
 
+
+.adbirt-top-header {
+  overflow: hidden;
+  /* background: transparent; */
+  background: #ededef;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 .adbirt-top-header .adbirt-top-header-in ul li:last-child {
   border: none;
 }
@@ -3383,13 +3391,6 @@ textarea:focus {
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   color: var(--theme-white);
   font-size: 14px;
-}
-
-.adbirt-top-header {
-  overflow: hidden;
-  /* background: transparent; */
-  background: #ededef;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .adbirt-top-header .adbirt-top-header-in {
@@ -3445,7 +3446,8 @@ textarea:focus {
 
 .adbirt-top-header-list li {
   margin-right: 30px;
-  color: rgba(255, 255, 255, 0.8);
+  /* color: rgba(255, 255, 255, 0.8); */
+  color: #000;
   font-size: 14px;
 }
 

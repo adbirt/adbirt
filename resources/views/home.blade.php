@@ -115,7 +115,7 @@
                     <!-- <a class="play_icon fancybox-media" href="https://vimeo.com/33790882">
                          <img src="{{ asset('images/play-icon.png') }}"> 
                     </a> -->
-                    <h3>Signup for <span>FREE</span> today!</h3>
+                    <h3 style="color: #fff !important;">Sign up for <span>FREE</span> today!</h3>
                     <p style="text-decoration: none !important; color: #fff !important;">No credit card required.</p>
                     <div class="sign_up">
                         <!-- <form>

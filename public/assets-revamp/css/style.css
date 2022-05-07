@@ -3389,7 +3389,8 @@ textarea:focus {
   margin-right: 20px;
   padding: 10px 20px 11px 0;
   border-right: 1px solid rgba(255, 255, 255, 0.2);
-  color: var(--theme-white);
+  /* color: var(--theme-white); */
+  color: #000;
   font-size: 14px;
 }
 

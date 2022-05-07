@@ -135,7 +135,7 @@
 
         <div class="features" id="features">
             <div class="wrap">
-                <h2 class="text-primary-color">Adbirt for Advertisers</h2>
+                <h2 class="text-primary-color font-weight-bold">Adbirt for Advertisers</h2>
                 <h4>Signup as an Advertiser within minutes &amp; get your Ads across our Ad Networks</h4>
                 <div class="features_grids">
                     <div class="section group">

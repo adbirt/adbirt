@@ -93,7 +93,7 @@
         <!-- END back-to-top button -->
 
         <!-- Start Navbar Area -->
-        <div class="navbar-area">
+        {{-- <div class="navbar-area">
             <div class="adbirt-top-header">
                 <div class="container">
                     <div class="row">
@@ -129,7 +129,7 @@
                 </div>
             </div>
 
-            {{-- <div class="adbirt-main-responsive-nav">
+            <div class="adbirt-main-responsive-nav">
                 <div class="container">
                     <div class="adbirt-main-responsive-menu">
                         <div class="logo">
@@ -180,9 +180,9 @@
                         @endif
                     </nav>
                 </div>
-            </div> --}}
+            </div>
 
-        </div>
+        </div> --}}
         <!-- End Navbar Area -->
 
 

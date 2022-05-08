@@ -128,7 +128,8 @@
                     </div>
                 </div>
             </div>
-            <div class="adbirt-main-responsive-nav">
+
+            {{-- <div class="adbirt-main-responsive-nav">
                 <div class="container">
                     <div class="adbirt-main-responsive-menu">
                         <div class="logo">
@@ -139,6 +140,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="adbirt-main-nav">
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light">
@@ -178,7 +180,8 @@
                         @endif
                     </nav>
                 </div>
-            </div>
+            </div> --}}
+
         </div>
         <!-- End Navbar Area -->
 

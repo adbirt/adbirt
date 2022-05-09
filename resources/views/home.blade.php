@@ -175,13 +175,13 @@
                         </a>
                         <h3>Signup for <span>FREE</span> today!</h3>
                         <p>No credit card required.</p>
-                        <div class="sign_up">
+                        {{-- <div class="sign_up">
                             <form>
                                 <input type="text" value="E-mail address " onFocus="this.value = '';"
                                     onBlur="if (this.value == '') {this.value = 'E-mail address';}" />
                                 <input type="submit" value="Sign Up" />
                             </form>
-                        </div>
+                        </div> --}}
                     </div>
 
                     <div class="ipad">

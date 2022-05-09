@@ -144,7 +144,8 @@
         <div class="content">
             <div class="content_top">
                 <div class="wrap">
-                    <div class="banner_desc" style="color: #fff !important;">
+
+                    {{-- <div class="banner_desc" style="color: #fff !important;">
                         <h1 style="font-weight: 900; color: #fff !important;">Set the Cost!</h1><br />
                         <h2 style="font-size: 30px !important; color: #fff !important;">Pay for Result!</h2>
                         <h3> <small class="set2" style="color: #fff !important;">You set your Budget (Cost Per
@@ -163,7 +164,26 @@
                                                                                                     </form> -->
                             <a href="/dashboard" class="btn btn-danger bg-primary-color">Get Started</a>
                         </div>
+                    </div> --}}
+
+                    <div class="banner_desc">
+                        <h1><small class="set">Set the Cost!</small> <br /><span>Pay for Result!</span></h1>
+                        <h3> <small class="set2">You set your Budget (Cost Per Action) and<br /> only pay when
+                                your Product is consumed.</small></h3>
+                        <a class="play_icon fancybox-media" href="https://vimeo.com/33790882">
+                            <!-- <img src="{{ asset('images/play-icon.png') }}"> -->
+                        </a>
+                        <h3>Signup for <span>FREE</span> today!</h3>
+                        <p>No credit card required.</p>
+                        <div class="sign_up">
+                            <form>
+                                <input type="text" value="E-mail address " onFocus="this.value = '';"
+                                    onBlur="if (this.value == '') {this.value = 'E-mail address';}" />
+                                <input type="submit" value="Sign Up" />
+                            </form>
+                        </div>
                     </div>
+
                     <div class="ipad">
                         <!-- <img src="images/ipad.png" alt="" /> -->
                     </div>

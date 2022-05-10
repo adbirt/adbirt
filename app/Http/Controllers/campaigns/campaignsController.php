@@ -24,37 +24,18 @@ use Route;
  *
  * @return string
  */
-function build_url($components)
+function build_url(array $parts)
 {
-    $url = $components['scheme'] . '://';
-
-    if (!empty($components['username']) && !empty($components['password'])) {
-        $url .= $components['username'] . ':' . $components['password'] . '@';
-    }
-
-    $url .= $components['host'];
-
-    if (
-        !empty($components['port']) &&
-        (($components['scheme'] === 'http' && $components['port'] !== 80) ||
-            ($components['scheme'] === 'https' && $components['port'] !== 443))
-    ) {
-        $url .= ':' . $components['port'];
-    }
-
-    if (!empty($components['path'])) {
-        $url .= $components['path'];
-    }
-
-    if (!empty($components['fragment'])) {
-        $url .= '#' . $components['fragment'];
-    }
-
-    if (!empty($components['query'])) {
-        $url .= '?' . http_build_query($components['query']);
-    }
-
-    return $url;
+    return (isset($parts['scheme']) ? "{$parts['scheme']}:" : '') .
+        ((isset($parts['user']) || isset($parts['host'])) ? '//' : '') .
+        (isset($parts['user']) ? "{$parts['user']}" : '') .
+        (isset($parts['pass']) ? ":{$parts['pass']}" : '') .
+        (isset($parts['user']) ? '@' : '') .
+        (isset($parts['host']) ? "{$parts['host']}" : '') .
+        (isset($parts['port']) ? ":{$parts['port']}" : '') .
+        (isset($parts['path']) ? "{$parts['path']}" : '') .
+        (isset($parts['query']) ? "?{$parts['query']}" : '') .
+        (isset($parts['fragment']) ? "#{$parts['fragment']}" : '');
 }
 
 class campaignsController extends Controller
@@ -1118,7 +1099,20 @@ class campaignsController extends Controller
                     curl_close($ch);
                 }
 
-                return redirect($bnr->campaign_url . "?camp_code=" . $id);
+                $_camp_code = $id;
+
+                $url_components = parse_url($bnr->campaign_url);
+
+                parse_str($url_components['query'], $_query_params);
+
+                $_query_params['camp_code'] = $_camp_code;
+
+                $url_components['query'] = http_build_query($_query_params);
+
+                $destination_url = build_url($url_components['query']);
+
+                // return redirect($bnr->campaign_url . "?camp_code=" . $id);
+                return redirect($destination_url);
             } else {
                 dd('Invalid campaign, or campaign not yet approved');
             }

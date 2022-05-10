@@ -180,6 +180,7 @@
                                 <input type="text" value="E-mail address " onFocus="this.value = '';"
                                     onBlur="if (this.value == '') {this.value = 'E-mail address';}" />
                                 <input type="submit" value="Sign Up" />
+                                
                             </form>
                         </div> --}}
                     </div>

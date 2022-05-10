@@ -1102,7 +1102,7 @@ class campaignsController extends Controller
                 $_camp_code = $id;
 
                 $url_components = parse_url($bnr->campaign_url);
-                $url_components['query'] = $url_components['query'] ?? array();
+                $url_components['query'] = $url_components['query'] ?? '';
 
                 parse_str($url_components['query'], $_query_params);
 

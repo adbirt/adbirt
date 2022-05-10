@@ -1109,7 +1109,7 @@ class campaignsController extends Controller
 
                 $url_components['query'] = http_build_query($_query_params);
 
-                $destination_url = build_url($url_components['query']);
+                $destination_url = build_url($url_components);
 
                 // return redirect($bnr->campaign_url . "?camp_code=" . $id);
                 return redirect($destination_url);

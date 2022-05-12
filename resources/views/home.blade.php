@@ -182,8 +182,9 @@
                         <h3 style="background-color: var(--theme-color) !important; display: inline !important;">Signup for
                             <span>FREE</span> today!
                         </h3>
-                        <span style="background-color: var(--theme-color) !important; color: #fff !important;">No credit
-                            card required.</span>
+                        <br>
+                        <i style="background-color: var(--theme-color) !important; color: #fff !important;">No credit card
+                            required.</i>
                         {{-- <div class="sign_up">
                             <form>
                                 <input type="text" value="E-mail address " onFocus="this.value = '';"

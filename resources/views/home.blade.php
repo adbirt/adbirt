@@ -179,9 +179,11 @@
                         {{-- <a class="play_icon fancybox-media" href="https://vimeo.com/33790882">
                             <!-- <img src="{{ asset('images/play-icon.png') }}"> -->
                         </a> --}}
-                        <h3 style="background-color: var(--theme-color) !important;">Signup for <span>FREE</span> today!
+                        <h3 style="background-color: var(--theme-color) !important; display: inline !important;">Signup for
+                            <span>FREE</span> today!
                         </h3>
-                        <p style="background-color: var(--theme-color) !important;">No credit card required.</p>
+                        <span style="background-color: var(--theme-color) !important; color: #fff !important;">No credit
+                            card required.</span>
                         {{-- <div class="sign_up">
                             <form>
                                 <input type="text" value="E-mail address " onFocus="this.value = '';"

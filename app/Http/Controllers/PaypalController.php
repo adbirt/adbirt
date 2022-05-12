@@ -4,6 +4,8 @@ namespace app\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Auth;
+
 use PayPal\Rest\ApiContext;
 use PayPal\Auth\OAuthTokenCredential;
 use PayPal\Api\Amount;
@@ -204,9 +206,10 @@ class PaypalController extends Controller
             if (\Config::get('app.debug')) {
                 echo "Exception: " . $ex->getMessage() . PHP_EOL;
                 $err_data = json_decode($ex->getData(), true);
-                exit;
+                return $err_data;
+                // exit;
             } else {
-                die('Some error occur, sorry for inconvenient');
+                die('Some error occurred, sorry for inconvenient');
             }
         }
 
@@ -262,18 +265,53 @@ class PaypalController extends Controller
 
         if ($result->getState() == 'approved') { // payment made
 
+            $_amount = Session::get('amountToPay');
+
+            // $Balance = \App\Transaction::select('amount')
+            //     ->where('user_id', Auth::user()->id)
+            //     ->first();
+
+            // $_update = array();
+            // $_update['amount'] = $Balance['amount'] + $_amount;
+            // $_update['method_id'] = \App\PaymentMethod::where('name', 'Paypal Transfer')->first()->id;
+
+            // \App\Transaction::where('user_id', Auth::user()->id)->first()
+            //     ->update($_update);
+
+            $wallet = new \App\Model\WalletHistoryModel;
+            $wallet->user_id  = Auth::user()->id;
+            $wallet->amount  = $_amount;
+            $wallet->commision  = "0";
+            $wallet->mode  = "Wallet Credit";
+            $wallet->pay_currency  = "NGN";
+            $wallet->ngn_amt  = $_amount * 400;
+            $wallet->credit_type  = "Paystack Credit";
+            $wallet->comment  = "$" . $_amount . " Funds Credited Successfully via Paypal";
+            $wallet->save();
+
+            $Notify = new \App\Model\NotificationAlertModel;
+            $Notify->heading  = "Funds Credited";
+            $Notify->content  = "$" . $_amount . " Funds Credited Successfully via Paypal";
+            $Notify->type  = "Credit";
+            $Notify->Notify_Receivers_Id  = Auth::user()->id;
+            $Notify->save();
+
+            // --
 
             //record stored to transaction table
             $new_transaction = new \App\Transaction();
-            $new_transaction->amount = Session::get('amountToPay');
+            $new_transaction->amount = $_amount;
             $new_transaction->method_id = 2; //paypal
             $new_transaction->user_id = \Auth::user()->id;
+
             Session::forget('amountToPay');
+
             if ($new_transaction->save()) {
                 return Redirect::route('dashboard')
                     ->with('success', 'Payment successful');
             }
         }
+
         return Redirect::route('dashboard')
             ->with('error', 'Payment failed');
     }

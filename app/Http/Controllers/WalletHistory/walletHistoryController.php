@@ -88,10 +88,11 @@ class walletHistoryController extends Controller
         $Balance = Transaction::select('amount')
             ->where('user_id', Auth::user()->id)
             ->first();
+
         $amt = (int) $amt;
         $ngn_amt = (int) $input['ngn_amt'] / 100;
-        $update['amount'] = $Balance['amount'] + $amt;
 
+        $update['amount'] = $Balance['amount'] + $amt;
         $update['method_id'] = PaymentMethod::where('name', 'Paystack Transfer')->first()->id;
 
         /*$Transdone = Transaction::where('user_id',Auth::user()->id)
@@ -100,7 +101,7 @@ class walletHistoryController extends Controller
         $Transdone = Transaction::where('user_id', Auth::user()->id)->first()
             ->update($update);
 
-        $wallet            = new WalletHistoryModel;
+        $wallet = new WalletHistoryModel;
         $wallet->user_id  = Auth::user()->id;
         $wallet->amount  = $amt;
         $wallet->commision  = "0";
@@ -111,7 +112,7 @@ class walletHistoryController extends Controller
         $wallet->comment  = "$" . $amt . " Funds Credited Successfully via Paystack";
         $wallet->save();
 
-        $Notify            = new NotificationAlertModel;
+        $Notify = new NotificationAlertModel;
         $Notify->heading  = "Funds Credited";
         $Notify->content  = "$" . $amt . " Funds Credited Successfully via Paystack";
         $Notify->type  = "Credit";
@@ -121,6 +122,7 @@ class walletHistoryController extends Controller
         echo "true";
         die;
     }
+
     /**
      * Remove the specified resource from storage.
      *

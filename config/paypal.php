@@ -7,9 +7,9 @@ return array(
     'client_id' => 'AYdcch4XiIZyh27f2P63VmsM_dEoV4edzQTz4rcNQbs1b129JrSxbjEJwcG2sDgl7RKHolwyR3KwUvxE',
     'secret' => 'EAbV4lFoKcWuvdGEcxwwSX75dqmkTo369xieILxRuWilZMKrJakKJjl4iHorCca_ahPW76puUJ2mzwI6',
 
-    
-   // 'client_id' => 'AeO0XkJq8GJW6FT2Fs4L-GBLt7CFyAEltdoKQvqptw9JAzh3SgpWQhzXQH6kgtJxaFHlcWV3qJ6RirBO',
-   // 'secret' => 'ECiiBVtTIc23mAaZOmIAFFlWfkutFKaRIjILbMcIFiceeRoN-c69HuZUK34M2QW13mfpCY24bqpDU6Kw',
+
+    // 'client_id' => 'AeO0XkJq8GJW6FT2Fs4L-GBLt7CFyAEltdoKQvqptw9JAzh3SgpWQhzXQH6kgtJxaFHlcWV3qJ6RirBO',
+    // 'secret' => 'ECiiBVtTIc23mAaZOmIAFFlWfkutFKaRIjILbMcIFiceeRoN-c69HuZUK34M2QW13mfpCY24bqpDU6Kw',
 
     /**
      * SDK configuration

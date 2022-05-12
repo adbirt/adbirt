@@ -153,19 +153,19 @@
                                 Result!</span>
                         </h1>
                         <h3> <small class="set2"
-                                style="background-color: darkgreen !important; padding: 4px !important; border-radius: 4px !important;">
+                                style="background-color: rgb(25, 77, 25) !important; padding: 4px !important; border-radius: 4px !important;">
                                 You set your Budget (Cost Per Action) and<br /> only pay when your Product is
                                 consumed.</small></h3>
                         {{-- <a class="play_icon fancybox-media" href="https://vimeo.com/33790882">
                             <!-- <img src="{{ asset('images/play-icon.png') }}"> -->
                         </a> --}}
                         {{-- <h3
-                            style="background-color: darkgreen !important; display: inline !important; color: #fff !important;">
+                            style="background-color: rgb(25, 77, 25) !important; display: inline !important; color: #fff !important;">
                             Signup for
                             <span>FREE</span> today!
                         </h3> --}}
                         <br>
-                        <i style="background-color: darkgreen !important; color: #fff !important;">No credit card
+                        <i style="background-color: rgb(25, 77, 25) !important; color: #fff !important;">No credit card
                             required.</i>
                         <br />
                         <br />

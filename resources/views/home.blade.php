@@ -167,15 +167,20 @@
                     </div> --}}
 
                     <div class="banner_desc">
-                        <h1 style="font-size: 30px"><small class="set">Set the Cost!</small> <br /><span>Pay for
-                                Result!</span></h1>
-                        <h3> <small class="set2">You set your Budget (Cost Per Action) and<br /> only pay when
+                        <h1><small class="set" style="font-size: 40px !important;">Set the Cost!</small>
+                            <br />
+                            <span style="font-size: 40px !important;">Pay for
+                                Result!</span>
+                        </h1>
+                        <h3> <small class="set2" style="background-color: var(--theme-color) !important;">You set
+                                your Budget (Cost Per Action) and<br /> only pay when
                                 your Product is consumed.</small></h3>
-                        <a class="play_icon fancybox-media" href="https://vimeo.com/33790882">
+                        {{-- <a class="play_icon fancybox-media" href="https://vimeo.com/33790882">
                             <!-- <img src="{{ asset('images/play-icon.png') }}"> -->
-                        </a>
-                        <h3>Signup for <span>FREE</span> today!</h3>
-                        <p>No credit card required.</p>
+                        </a> --}}
+                        <h3 style="background-color: var(--theme-color) !important;">Signup for <span>FREE</span> today!
+                        </h3>
+                        <p style="background-color: var(--theme-color) !important;">No credit card required.</p>
                         {{-- <div class="sign_up">
                             <form>
                                 <input type="text" value="E-mail address " onFocus="this.value = '';"

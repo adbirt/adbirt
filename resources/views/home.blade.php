@@ -172,9 +172,10 @@
                             <span style="font-size: 40px !important;">Pay for
                                 Result!</span>
                         </h1>
-                        <h3> <small class="set2" style="background-color: var(--theme-color) !important;">You set
-                                your Budget (Cost Per Action) and<br /> only pay when
-                                your Product is consumed.</small></h3>
+                        <h3> <small class="set2"
+                                style="background-color: var(--theme-color) !important; padding: 4px !important; border-radius: 4px !important;">
+                                You set your Budget (Cost Per Action) and<br /> only pay when your Product is
+                                consumed.</small></h3>
                         {{-- <a class="play_icon fancybox-media" href="https://vimeo.com/33790882">
                             <!-- <img src="{{ asset('images/play-icon.png') }}"> -->
                         </a> --}}

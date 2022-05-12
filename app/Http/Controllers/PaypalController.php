@@ -17,6 +17,9 @@ use PayPal\Api\ExecutePayment;
 use PayPal\Api\PaymentExecution;
 use PayPal\Api\Transaction;
 
+use PayPal\Api;
+use PayPal;
+
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Session;
@@ -130,7 +133,7 @@ class PaypalController extends Controller
             return Redirect::route('dashboard')
                 ->with('error', 'Payment failed');
         }
-        
+
         $payment = Payment::get($payment_id, $this->_api_context);
 
         // PaymentExecution object includes information necessary
@@ -139,10 +142,10 @@ class PaypalController extends Controller
         // when the user is redirected from paypal back to your site
         $execution = new PaymentExecution();
         $execution->setPayerId(Input::get('PayerID'));
-        
+
         //Execute the payment
         $result = $payment->execute($execution, $this->_api_context);
-        
+
         // echo '<pre>';print_r($result);echo '</pre>';exit; // DEBUG RESULT, remove it later
 
         if ($result->getState() == 'approved') { // payment made
@@ -152,11 +155,6 @@ class PaypalController extends Controller
         return Redirect::route('dashboard')
             ->with('error', 'Payment failed');
     }
-
-
-
-
-
 
 
     ////////////.............Wallet Portion......////////////////
@@ -169,13 +167,12 @@ class PaypalController extends Controller
         //adding data to session
         Session::set('amountToPay', $current_amount);
 
-
         $payer = new Payer();
         $payer->setPaymentMethod('paypal');
 
         $item = new Item();
         $item->setName('Add Funds to your Wallet') // item name
-        ->setCurrency('USD')
+            ->setCurrency('USD')
             ->setQuantity(1)
             ->setPrice($current_amount); // unit price
 
@@ -189,7 +186,7 @@ class PaypalController extends Controller
         $transaction = new Transaction();
         $transaction->setAmount($amount)
             ->setItemList($item_list)
-            ->setDescription('This Payment will Add Funds to your 360 Wallet ');
+            ->setDescription('This Payment will Add Funds to your Adbirt Wallet ');
 
         $redirect_urls = new RedirectUrls();
         $redirect_urls->setReturnUrl(URL::route('paypal.confirmation'))
@@ -266,7 +263,7 @@ class PaypalController extends Controller
         if ($result->getState() == 'approved') { // payment made
 
 
-           //record stored to transaction table
+            //record stored to transaction table
             $new_transaction = new \App\Transaction();
             $new_transaction->amount = Session::get('amountToPay');
             $new_transaction->method_id = 2; //paypal

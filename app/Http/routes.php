@@ -96,7 +96,6 @@ Route::group(array('middleware' => 'auth'), function () {
     Route::get('change-password', array('as' => 'password.change', 'uses' => 'Auth\AuthController@changePassword'));
     Route::post('change-password', array('as' => 'password.doChange', 'uses' => 'Auth\AuthController@doChangePassword'));
 
-
     /* Withraw Request */
 
     Route::get('withdraw/request', ['as' => 'withdraw.create', 'uses' => 'owner\withDrawController@index']);

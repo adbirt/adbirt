@@ -167,7 +167,8 @@
                     </div> --}}
 
                     <div class="banner_desc">
-                        <h1><small class="set">Set the Cost!</small> <br /><span>Pay for Result!</span></h1>
+                        <h1 style="font-size: 30px"><small class="set">Set the Cost!</small> <br /><span>Pay for
+                                Result!</span></h1>
                         <h3> <small class="set2">You set your Budget (Cost Per Action) and<br /> only pay when
                                 your Product is consumed.</small></h3>
                         <a class="play_icon fancybox-media" href="https://vimeo.com/33790882">

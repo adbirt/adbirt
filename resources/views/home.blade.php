@@ -159,15 +159,16 @@
                             <!-- <img src="{{ asset('images/play-icon.png') }}"> -->
                         </a> --}}
                         <h3
-                            style="background-color: var(--theme-color) !important; display: inline !important; color: #fff !important;">
+                            style="background-color: darkgreen !important; display: inline !important; color: #fff !important;">
                             Signup for
                             <span>FREE</span> today!
                         </h3>
                         <br>
-                        <i style="background-color: var(--theme-color) !important; color: #fff !important;">No credit card
+                        <i style="background-color: darkgreen !important; color: #fff !important;">No credit card
                             required.</i>
-                            <br />
-                            <a href="/dashboard" class="btn btn-danger bg-primary-color">Sign up for FREE</a>
+                        <br />
+                        <br />
+                        <a href="/dashboard" class="btn btn-danger bg-primary-color">Sign up for FREE</a>
                         {{-- <div class="sign_up">
                             <form>
                                 <input type="text" value="E-mail address " onFocus="this.value = '';"

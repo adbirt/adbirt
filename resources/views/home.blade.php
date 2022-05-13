@@ -159,11 +159,9 @@
                                 consumed.</small>
                             <br />
                             <small>
-                                <i style="color: #fff !important;">No credit
-                                    card
+                                <i style="color: #fff !important;">No credit card required.</i>
                             </small>
                         </h3>
-                        required.</i>
                         <br />
                         <br />
                         <a href="/dashboard" style="border: none !important;" class="btn btn-danger bg-primary-color">Sign

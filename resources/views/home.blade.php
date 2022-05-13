@@ -158,6 +158,7 @@
                                 style="background-color: rgb(25, 77, 25) !important; padding: 4px !important; border-radius: 4px !important;">
                                 You set your Budget (Cost Per Action) and<br /> only pay when your Product is
                                 consumed.</small>
+                            <br />
                             <small>
                                 <i style="background-color: rgb(25, 77, 25) !important; color: #fff !important;">No credit
                                     card

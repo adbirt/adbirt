@@ -146,8 +146,7 @@
                 <div class="wrap">
 
                     <div class="banner_desc" style="text-align: center !important;">
-                        <h1 style="line-height: 1 !important;"><small class="set"
-                                style="font-size: 40px !important;">Set the Cost!</small>
+                        <h1><small class="set" style="font-size: 40px !important;">Set the Cost!</small>
                             <br />
                             <span style="font-size: 40px !important; color: #fff !important;">Pay for
                                 Result!</span>

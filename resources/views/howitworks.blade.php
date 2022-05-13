@@ -369,7 +369,7 @@
 
         <ul class="w-100 p-2 d-flex flex-row flex-wrap align-items-center justify-content-center text-primary-color">
             <li class="p-3"> <a class="no-text-decoration" href="/dashboard">DISPLAY BANNER</a></li>
-            <li class="p-3"> <a class="no-text-decoration" href="/dashboard">NATIVE ADS <code>[beta]</code></a>
+            <li class="p-3"> <a class="no-text-decoration" href="/dashboard">NATIVE ADS</a>
             </li>
             <li class="p-3"> <a class="no-text-decoration" href="/dashboard">DIRECT LINKS</a></li>
             <li class="p-3"> <a class="no-text-decoration" href="/dashboard">VIDEO ADS</a></li>

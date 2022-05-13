@@ -135,7 +135,7 @@
                                                 <option value="{!! $type !!}"
                                                     @if (isset($campaignsData) && $campaignsData->campaign_type == $type) selected="true" @endif>
                                                     {!! $type !!}
-                                                    {!! $type == 'Native Content Ad' ? ' [beta]' : '' !!}
+                                                    {{-- {!! $type == 'Native Content Ad' ? ' [beta]' : '' !!} --}}
                                                 </option>
                                             @endforeach
                                         </select>
@@ -291,13 +291,13 @@
                                             <center class="campaign-type-holder">
                                                 <img style="max-width: 500px;"
                                                     class="w-100 image-banner {!! isset($campaignsData) && !empty($campaignsData->banner_type) && $campaignsData->banner_type == 'image' ? 'd-block' : 'd-none' !!} @if (!isset($campaignsData)) d-block @endif"
-                                                    src="{{ isset($campaignsData) && !empty($campaignsData->campaign_banner)? asset('uploads/campaign_banners/' . $campaignsData->campaign_banner): asset('assets/photos/Placeholder.jpg') }}"
+                                                    src="{{ isset($campaignsData) && !empty($campaignsData->campaign_banner) ? asset('uploads/campaign_banners/' . $campaignsData->campaign_banner) : asset('assets/photos/Placeholder.jpg') }}"
                                                     id="{!! isset($campaignsData) && !empty($campaignsData->campaign_banner) ? '' : 'view' !!}" class="img-responsive">
                                                 <br />
                                                 <video style="max-width: 450px;"
                                                     class="w-100 video-banner {!! isset($campaignsData) && !empty($campaignsData->banner_type) && $campaignsData->banner_type == 'video' ? 'd-block' : 'd-none' !!} @if (!isset($campaignsData)) d-none @endif"
                                                     controls loop autoplay
-                                                    src="{{ isset($campaignsData) && !empty($campaignsData->campaign_banner)? asset('uploads/campaign_banners/' . $campaignsData->campaign_banner): asset('assets-revamp/video/Placeholder.mp4') }}"
+                                                    src="{{ isset($campaignsData) && !empty($campaignsData->campaign_banner) ? asset('uploads/campaign_banners/' . $campaignsData->campaign_banner) : asset('assets-revamp/video/Placeholder.mp4') }}"
                                                     id="{!! isset($campaignsData) && !empty($campaignsData->campaign_banner) ? '' : 'view' !!}" class="img-responsive"></video>
                                             </center>
                                             @if (isset($campaignsData) && !empty($campaignsData->campaign_banner))
@@ -309,7 +309,7 @@
 
                                     <span style="color:red;" id="response"></span>
                                     <!-- <span id="width"></span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <span id="height"></span> -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <span id="height"></span> -->
                                 </div>
                             </div>
                             <div class="form-group">
@@ -754,8 +754,8 @@
                         required: true,
                     },
                     @if (!isset($campaignsData))
-                        campaign_banner:{
-                        required: true,
+                        campaign_banner: {
+                            required: true,
                         },
                     @endif
                     campaign_url: {

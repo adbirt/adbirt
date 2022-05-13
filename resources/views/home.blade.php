@@ -153,7 +153,7 @@
                                 Result!</span>
                         </h1>
                         <br />
-                        <h3>
+                        <h3 style="background-color: rgb(25, 77, 25) !important; display: inline !important;">
                             <small class="set2"
                                 style="background-color: rgb(25, 77, 25) !important; padding: 4px !important; border-radius: 4px !important;">
                                 You set your Budget (Cost Per Action) and<br /> only pay when your Product is

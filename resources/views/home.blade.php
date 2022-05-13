@@ -151,24 +151,22 @@
                             <span style="font-size: 40px !important; color: #fff !important;">Pay for
                                 Result!</span>
                         </h1>
-                        <h3> <small class="set2"
+                        <br />
+                        <h3>
+                            <small class="set2"
                                 style="background-color: rgb(25, 77, 25) !important; padding: 4px !important; border-radius: 4px !important;">
                                 You set your Budget (Cost Per Action) and<br /> only pay when your Product is
-                                consumed.</small></h3>
-                        {{-- <a class="play_icon fancybox-media" href="https://vimeo.com/33790882">
-                            <!-- <img src="{{ asset('images/play-icon.png') }}"> -->
-                        </a> --}}
-                        {{-- <h3
-                            style="background-color: rgb(25, 77, 25) !important; display: inline !important; color: #fff !important;">
-                            Signup for
-                            <span>FREE</span> today!
-                        </h3> --}}
-                        <br>
-                        <i style="background-color: rgb(25, 77, 25) !important; color: #fff !important;">No credit card
-                            required.</i>
+                                consumed.</small>
+                            <small>
+                                <i style="background-color: rgb(25, 77, 25) !important; color: #fff !important;">No credit
+                                    card
+                            </small>
+                        </h3>
+                        required.</i>
                         <br />
                         <br />
-                        <a href="/dashboard" class="btn btn-danger bg-primary-color">Sign up for FREE</a>
+                        <a href="/dashboard" style="border: none !important;" class="btn btn-danger bg-primary-color">Sign
+                            up for FREE</a>
                         {{-- <div class="sign_up">
                             <form>
                                 <input type="text" value="E-mail address " onFocus="this.value = '';"

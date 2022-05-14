@@ -170,7 +170,8 @@
                         </a> --}}
 
                         <div class="button">
-                            <a class="" href="/dashboard">Signup Now
+                            <a class="" href="/dashboard">
+                                Sign up for <span style="font-weight: 900 !important;">FREE</span>
                                 <img src="{{ asset('images/arrow.png') }}">
                             </a>
                         </div>

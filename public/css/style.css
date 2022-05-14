@@ -275,7 +275,8 @@ input:focus {
 }
 
 small.set{
-	background-color:#B4B6AC;
+	/* background-color:#B4B6AC; */
+	background-color:#B1B7A9;
 }
 
 small.set2{

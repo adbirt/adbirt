@@ -164,8 +164,17 @@
                         </h3>
                         <br />
                         <br />
-                        <a href="/dashboard" style="border: none !important;" class="btn btn-danger bg-primary-color">Sign
-                            up for <span style="font-weight: 900 !important;">FREE</span></a>
+
+                        {{-- <a href="/dashboard" style="border: none !important;" class="btn btn-danger bg-primary-color">
+                            Sign up for <span style="font-weight: 900 !important;">FREE</span>
+                        </a> --}}
+
+                        <div class="button">
+                            <a class="" href="/dashboard">Signup Now
+                                <img src="{{ asset('images/arrow.png') }}">
+                            </a>
+                        </div>
+
                         {{-- <div class="sign_up">
                             <form>
                                 <input type="text" value="E-mail address " onFocus="this.value = '';"
@@ -251,7 +260,8 @@
                                     to earnings.</p>
                             </div>
                         </div>
-                        <div class="button"><a class="" href="/dashboard">Signup Now
+                        <div class="button">
+                            <a class="" href="/dashboard">Signup Now
                                 <img src="{{ asset('images/arrow.png') }}">
                             </a>
                         </div>

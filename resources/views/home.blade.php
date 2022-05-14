@@ -231,7 +231,7 @@
 
             <div class="features" id="features">
                 <div class="wrap">
-                    <h2>Adbirt for <span class="theme-primary-color" style="font-size: 64px !important;">Publishers</span>
+                    <h2>Adbirt for <span style="font-size: 64px !important; color: #B1B7A9 !important;">Publishers</span>
                     </h2>
                     <h4>Signup as a Publisher within minutes &amp; start earning</h4>
                     <div class="features_grids">

@@ -165,7 +165,7 @@
                         <br />
                         <br />
                         <a href="/dashboard" style="border: none !important;" class="btn btn-danger bg-primary-color">Sign
-                            up for FREE</a>
+                            up for <span style="font-weight: 900 !important;">FREE</span></a>
                         {{-- <div class="sign_up">
                             <form>
                                 <input type="text" value="E-mail address " onFocus="this.value = '';"

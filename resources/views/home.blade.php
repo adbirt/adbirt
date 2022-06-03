@@ -195,7 +195,7 @@
 
             <div class="features" id="features">
 
-                <div class="wrap">
+                {{-- <div class="wrap">
                     <h2>Adbirt for <span class="text-primary-color" style="font-size: 64px !important;">Advertisers</span>
                     </h2>
                     <h4>Signup as an Advertiser within minutes &amp; get your Ads across our Ad Networks</h4>
@@ -227,7 +227,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
                 {{-- begin: Chilo --}}
                 <!-- FEATURES SECTION  -->

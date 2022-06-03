@@ -194,6 +194,7 @@
             </div>
 
             <div class="features" id="features">
+
                 <div class="wrap">
                     <h2>Adbirt for <span class="text-primary-color" style="font-size: 64px !important;">Advertisers</span>
                     </h2>
@@ -227,6 +228,91 @@
                         </div>
                     </div>
                 </div>
+
+                <br />
+                <br />
+                <br />
+
+                <h3 style="font-size: 30px !important;" class="text-center w-100 times-roman-font">Get the best results that
+                    interest you</h3>
+
+                <br />
+                <br />
+                <br />
+
+                <div class="row owl-theme d-flex align-items-center justify-content-between p-0 m-0">
+
+                    <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn p-3"
+                        data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
+                        <div class="">
+                            <div class="adbirt-best-service-img d-flex flex-row justify-content-center">
+                                <img src="/public/assets-revamp/img/services/shopping-action.jpg" alt="CPA">
+                            </div>
+                            <div class="adbirt-best-service-content p-2">
+                                <h3 class="adbirt-best-service-title">Cost Per Action</h3>
+                                <p
+                                    class="shadow-lg p-3 adbirt-best-service-height adbirt-best-service-description cursive-font">
+                                    Promote your
+                                    products or service online pay your
+                                    desired
+                                    amount when you make a sale or get a new lead to your business.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn p-3"
+                        data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
+                        <div class="">
+
+                            <div class="adbirt-best-service-img d-flex flex-row justify-content-center">
+                                <img src="/public/assets-revamp/img/services/cost-per-sale.png" alt="CPC">
+                            </div>
+                            <div class="adbirt-best-service-content p-2">
+                                <h3 class="adbirt-best-service-title">Cost per Sales</h3>
+                                <p
+                                    class="shadow-lg p-3 adbirt-best-service-height adbirt-best-service-description px-1 cursive-font">
+                                    You're
+                                    in total control of your ad budget, set the
+                                    cost
+                                    within your means and only pay after a successful sales or leads.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-4 col-lg-4 adbirt-best-service-slide m-0 p-0 wow zoomIn p-3"
+                        data-wow-duration="0.45s" data-wow-delay="0.4s" data-wow-offset="0">
+                        <div class="">
+                            <div class="adbirt-best-service-img d-flex flex-row justify-content-center">
+                                <img src="/public/assets-revamp/img/services/click-action.jpeg" alt="CPD">
+                            </div>
+                            <div class="adbirt-best-service-content p-2">
+                                <h3 class="adbirt-best-service-title">Cost Per Click</h3>
+                                <p
+                                    class="shadow-lg p-3 adbirt-best-service-height adbirt-best-service-description cursive-font">
+                                    Get unlimited
+                                    impressions to your business for free
+                                    and
+                                    only pay for a valid click when users visit or land on your websites.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column align-items-center justify-content-center w-100">
+                        <a href="/dashboard" class="adbirt-themes-btn red mt-3">Start now for free</a>
+                    </div>
+                </div>
+
+                <br />
+                <br />
+                <br />
+                <!--- END ROW -->
+
             </div>
 
             <div class="features" id="features">
@@ -235,7 +321,7 @@
                     </h2>
                     <h4>Signup as a Publisher within minutes &amp; start earning</h4>
                     <div class="features_grids">
-                        <div class="section group">
+                        <divcd class="section group">
                             <div class="grid_1_of_4 images_1_of_4">
                                 <img src="{{ asset('images/publisher-signup.jpg') }}">
                                 <h3>Create an Account</h3>
@@ -260,7 +346,7 @@
                                 <p>Track your earnings and make withdrawal request anytime you earn, No threshold, no limit
                                     to earnings.</p>
                             </div>
-                        </div>
+                        </divcd>
                         <div class="button">
                             <a class="" href="/dashboard">Signup Now
                                 <img src="{{ asset('images/arrow.png') }}">

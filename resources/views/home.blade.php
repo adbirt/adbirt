@@ -229,6 +229,9 @@
                     </div>
                 </div> --}}
 
+                <h2>Adbirt for <span class="text-primary-color" style="font-size: 64px !important;">Advertisers</span>
+                </h2>
+
                 {{-- begin: Chilo --}}
                 <!-- FEATURES SECTION  -->
                 <section class="mb-5 mx-4 mx-md-5 px-md-5 pt-0">

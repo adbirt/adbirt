@@ -612,7 +612,7 @@ small.set2 {
 /**** Content top ****/
 .features {
 	background: #FFF;
-	padding: 10em 0 6em 0;
+	/* padding: 10em 0 6em 0; */
 	text-align: center;
 }
 

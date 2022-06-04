@@ -231,6 +231,8 @@
 
                 <br />
                 <br />
+                <br />
+                <br />
 
                 <h2>Adbirt for <span class="text-primary-color" style="font-size: 64px !important;">Advertisers</span>
                 </h2>

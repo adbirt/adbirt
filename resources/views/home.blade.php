@@ -243,7 +243,7 @@
                     <div class="my-5">
                         <div class="row mx-2 mx-sm-0 mx-md-5">
 
-                            <div class="col col-lg-4 col-md-6 col-12">
+                            <div class="col col-lg-3 col-md-6 col-12">
                                 <div class="feature_card d-flex flex-column align-items-center">
                                     <div class="feature_iconWrap">
                                         <img src="/public/assets-revamp/img/actions-and-events/theme-cpa.png"
@@ -262,7 +262,7 @@
                                 </div>
                             </div>
 
-                            <div class="col col-lg-4 col-md-6 col-12">
+                            <div class="col col-lg-3 col-md-6 col-12">
                                 <div class="feature_card d-flex flex-column align-items-center">
                                     <div class="feature_iconWrap">
                                         <img src="/public/assets-revamp/img/actions-and-events/theme-cps.png"
@@ -281,7 +281,7 @@
                                 </div>
                             </div>
 
-                            <div class="col col-lg-4 col-md-6 col-12">
+                            <div class="col col-lg-3 col-md-6 col-12">
                                 <div class="feature_card d-flex flex-column align-items-center">
                                     <div class="feature_iconWrap">
                                         <img src="/public/assets-revamp/img/actions-and-events/theme-cpc.png"
@@ -300,7 +300,7 @@
                                 </div>
                             </div>
 
-                            <div class="col col-lg-4 col-md-6 col-12">
+                            <div class="col col-lg-3 col-md-6 col-12">
                                 <div class="feature_card d-flex flex-column align-items-center">
                                     <div class="feature_iconWrap">
                                         <img src="/public/assets-revamp/img/actions-and-events/theme-native.png"

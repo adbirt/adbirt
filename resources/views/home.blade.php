@@ -246,6 +246,23 @@
                             <div class="col col-lg-3 col-md-6 col-12">
                                 <div class="feature_card d-flex flex-column align-items-center">
                                     <div class="feature_iconWrap">
+                                        <img src="/public/assets-revamp/img/actions-and-events/theme-native.png"
+                                            class="feature_icon" alt="click icon" width="100" style="width: 100px;" />
+                                    </div>
+                                    <div class="my-4 d-flex flex-column align-items-center">
+                                        <p class="h4 mt-3 open-sans-text text-custom-color">Native Ads</p>
+                                        <p
+                                            class="mx-0 mx-lg-2 text-center open-sans-text font-size-16 text-custom-color font-weight-bold">
+                                            Increase your sales and generate a new lead with Adbirt Native Ads that get
+                                            higher click rates than the regular banner
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col col-lg-3 col-md-6 col-12">
+                                <div class="feature_card d-flex flex-column align-items-center">
+                                    <div class="feature_iconWrap">
                                         <img src="/public/assets-revamp/img/actions-and-events/theme-cpa.png"
                                             class="feature_icon" alt="click" width="100" style="width: 100px;" />
                                     </div>
@@ -295,23 +312,6 @@
                                             click
                                             when users visit or
                                             land on your websites.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col col-lg-3 col-md-6 col-12">
-                                <div class="feature_card d-flex flex-column align-items-center">
-                                    <div class="feature_iconWrap">
-                                        <img src="/public/assets-revamp/img/actions-and-events/theme-native.png"
-                                            class="feature_icon" alt="click icon" width="100" style="width: 100px;" />
-                                    </div>
-                                    <div class="my-4 d-flex flex-column align-items-center">
-                                        <p class="h4 mt-3 open-sans-text text-custom-color">Native Ads</p>
-                                        <p
-                                            class="mx-0 mx-lg-2 text-center open-sans-text font-size-16 text-custom-color font-weight-bold">
-                                            Increase your sales and generate a new lead with Adbirt Native Ads that get
-                                            higher click rates than the regular banner
                                         </p>
                                     </div>
                                 </div>

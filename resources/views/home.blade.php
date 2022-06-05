@@ -242,10 +242,11 @@
                 <section class="mb-5 mx-4 mx-md-5 px-md-5 pt-0">
                     <div class="my-5">
                         <div class="row mx-2 mx-sm-0 mx-md-5">
+
                             <div class="col col-lg-4 col-md-6 col-12">
                                 <div class="feature_card d-flex flex-column align-items-center">
                                     <div class="feature_iconWrap">
-                                        <img src="/public/assets-revamp/img/actions-and-events/double-click.png"
+                                        <img src="/public/assets-revamp/img/actions-and-events/theme-cpa.png"
                                             class="feature_icon" alt="click" width="100" style="width: 100px;" />
                                     </div>
                                     <div class="my-4 d-flex flex-column align-items-center">
@@ -260,10 +261,11 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col col-lg-4 col-md-6 col-12">
                                 <div class="feature_card d-flex flex-column align-items-center">
                                     <div class="feature_iconWrap">
-                                        <img src="/public/assets-revamp/img/actions-and-events/acquisition.png"
+                                        <img src="/public/assets-revamp/img/actions-and-events/theme-cps.png"
                                             class="feature_icon" alt="click" width="100" style="width: 100px;" />
                                     </div>
                                     <div class="my-4 d-flex flex-column align-items-center">
@@ -278,10 +280,11 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col col-lg-4 col-md-6 col-12">
                                 <div class="feature_card d-flex flex-column align-items-center">
                                     <div class="feature_iconWrap">
-                                        <img src="/public/assets-revamp/img/actions-and-events/click.png"
+                                        <img src="/public/assets-revamp/img/actions-and-events/theme-cpc.png"
                                             class="feature_icon" alt="click icon" width="100" style="width: 100px;" />
                                     </div>
                                     <div class="my-4 d-flex flex-column align-items-center">
@@ -296,6 +299,24 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="col col-lg-4 col-md-6 col-12">
+                                <div class="feature_card d-flex flex-column align-items-center">
+                                    <div class="feature_iconWrap">
+                                        <img src="/public/assets-revamp/img/actions-and-events/theme-native.png"
+                                            class="feature_icon" alt="click icon" width="100" style="width: 100px;" />
+                                    </div>
+                                    <div class="my-4 d-flex flex-column align-items-center">
+                                        <p class="h4 mt-3 open-sans-text text-custom-color">Native Ads</p>
+                                        <p
+                                            class="mx-0 mx-lg-2 text-center open-sans-text font-size-16 text-custom-color font-weight-bold">
+                                            Increase your sales and generate a new lead with Adbirt Native Ads that get
+                                            higher click rates than the regular banner
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                         <br />
                         <div class="row d-flex justify-content-center">

@@ -44,7 +44,6 @@
                 font-family: verdana !important;
             }
         }
-
     </style>
 @stop
 
@@ -420,8 +419,8 @@
                         </div>
                         <div class="adbirt-best-service-content">
                             <h3 class="adbirt-best-service-title">2. Fund your Ads Wallet</h3>
-                            <p class="adbirt-best-service-description">You can Fund your Wallet with as low as $1
-                                and you can set a CPA (Cost per action) to as low as $0.01/Action.
+                            <p class="adbirt-best-service-description">You can Fund your Wallet with as low as $5
+                                and you can set a CPA (Cost per action) to as low as $0.02/Action.
                             </p>
                         </div>
                     </div>

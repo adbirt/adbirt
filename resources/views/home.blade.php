@@ -246,10 +246,11 @@
                                 <div class="feature_card d-flex flex-column align-items-center">
                                     <div class="feature_iconWrap">
                                         <img src="/public/assets-revamp/img/actions-and-events/theme-native.png"
-                                            class="feature_icon" alt="click icon" width="150" style="width: 150px;" />
+                                            class="feature_icon" alt="click icon" width="150" height="150"
+                                            style="width: 150px !important; height: 150px !important;" />
                                     </div>
                                     <div class="my-4 d-flex flex-column align-items-center">
-                                        <p class="h4 mt-3 open-sans-text text-custom-color">Native Ads</p>
+                                        <h3 class="h3 mt-3 open-sans-text text-custom-color">Native Ads</h3>
                                         <p
                                             class="mx-0 mx-lg-2 text-center open-sans-text font-size-16 text-custom-color font-weight-bold">
                                             Increase your sales and generate a new lead with Adbirt Native Ads that get
@@ -263,10 +264,11 @@
                                 <div class="feature_card d-flex flex-column align-items-center">
                                     <div class="feature_iconWrap">
                                         <img src="/public/assets-revamp/img/actions-and-events/theme-cpa.png"
-                                            class="feature_icon" alt="click" width="150" style="width: 150px;" />
+                                            class="feature_icon" alt="click" width="150" height="150"
+                                            style="width: 150px !important; height: 150px !important;" />
                                     </div>
                                     <div class="my-4 d-flex flex-column align-items-center">
-                                        <p class="h4 mt-3 open-sans-text text-custom-color">Cost Per Action</p>
+                                        <h3 class="h3 mt-3 open-sans-text text-custom-color">Cost Per Action</h3>
                                         <p
                                             class="mx-0 mx-lg-2 text-center open-sans-text font-size-16 text-custom-color font-weight-bold">
                                             Promote your products or service online pay your desired amount when you make a
@@ -282,10 +284,11 @@
                                 <div class="feature_card d-flex flex-column align-items-center">
                                     <div class="feature_iconWrap">
                                         <img src="/public/assets-revamp/img/actions-and-events/theme-cps.png"
-                                            class="feature_icon" alt="click" width="150" style="width: 150px;" />
+                                            class="feature_icon" alt="click" width="150" height="150"
+                                            style="width: 150px !important; height: 150px !important;" />
                                     </div>
                                     <div class="my-4 d-flex flex-column align-items-center">
-                                        <p class="h4 mt-3 open-sans-text text-custom-color">Cost Per Sales</p>
+                                        <h3 class="h3 mt-3 open-sans-text text-custom-color">Cost Per Sales</h3>
                                         <p
                                             class="mx-0 mx-lg-2 text-center open-sans-text font-size-16 text-custom-color font-weight-bold">
                                             You're in total control of your ad budget, set the cost within your means and
@@ -301,10 +304,11 @@
                                 <div class="feature_card d-flex flex-column align-items-center">
                                     <div class="feature_iconWrap">
                                         <img src="/public/assets-revamp/img/actions-and-events/theme-cpc.png"
-                                            class="feature_icon" alt="click icon" width="150" style="width: 150px;" />
+                                            class="feature_icon" alt="click icon" width="150" height="150"
+                                            style="width: 150px; height: 150px !important" />
                                     </div>
                                     <div class="my-4 d-flex flex-column align-items-center">
-                                        <p class="h4 mt-3 open-sans-text text-custom-color">Cost Per Click</p>
+                                        <h3 class="h3 mt-3 open-sans-text text-custom-color">Cost Per Click</h3>
                                         <p
                                             class="mx-0 mx-lg-2 text-center open-sans-text font-size-16 text-custom-color font-weight-bold">
                                             Get unlimited impressions to your business for free and only pay for a valid

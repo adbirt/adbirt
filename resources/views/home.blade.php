@@ -146,6 +146,7 @@
                 <div class="wrap">
 
                     <div class="banner_desc" style="text-align: center !important;">
+                        <br />
                         <h1><small class="set" style="font-size: 40px !important; color: #fff !important;">Set
                                 the Cost!</small>
                             <br />

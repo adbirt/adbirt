@@ -247,7 +247,7 @@
                                 <div class="feature_card d-flex flex-column align-items-center">
                                     <div class="feature_iconWrap">
                                         <img src="/public/assets-revamp/img/actions-and-events/theme-native.png"
-                                            class="feature_icon" alt="click icon" width="100" style="width: 100px;" />
+                                            class="feature_icon" alt="click icon" width="150" style="width: 150px;" />
                                     </div>
                                     <div class="my-4 d-flex flex-column align-items-center">
                                         <p class="h4 mt-3 open-sans-text text-custom-color">Native Ads</p>
@@ -264,7 +264,7 @@
                                 <div class="feature_card d-flex flex-column align-items-center">
                                     <div class="feature_iconWrap">
                                         <img src="/public/assets-revamp/img/actions-and-events/theme-cpa.png"
-                                            class="feature_icon" alt="click" width="100" style="width: 100px;" />
+                                            class="feature_icon" alt="click" width="150" style="width: 150px;" />
                                     </div>
                                     <div class="my-4 d-flex flex-column align-items-center">
                                         <p class="h4 mt-3 open-sans-text text-custom-color">Cost Per Action</p>
@@ -283,7 +283,7 @@
                                 <div class="feature_card d-flex flex-column align-items-center">
                                     <div class="feature_iconWrap">
                                         <img src="/public/assets-revamp/img/actions-and-events/theme-cps.png"
-                                            class="feature_icon" alt="click" width="100" style="width: 100px;" />
+                                            class="feature_icon" alt="click" width="150" style="width: 150px;" />
                                     </div>
                                     <div class="my-4 d-flex flex-column align-items-center">
                                         <p class="h4 mt-3 open-sans-text text-custom-color">Cost Per Sales</p>
@@ -302,7 +302,7 @@
                                 <div class="feature_card d-flex flex-column align-items-center">
                                     <div class="feature_iconWrap">
                                         <img src="/public/assets-revamp/img/actions-and-events/theme-cpc.png"
-                                            class="feature_icon" alt="click icon" width="100" style="width: 100px;" />
+                                            class="feature_icon" alt="click icon" width="150" style="width: 150px;" />
                                     </div>
                                     <div class="my-4 d-flex flex-column align-items-center">
                                         <p class="h4 mt-3 open-sans-text text-custom-color">Cost Per Click</p>

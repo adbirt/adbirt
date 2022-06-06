@@ -247,7 +247,7 @@
                                     <div class="feature_iconWrap">
                                         <img src="/public/assets-revamp/img/actions-and-events/theme-native.png"
                                             class="feature_icon" alt="click icon" width="150" height="150"
-                                            style="width: 150px !important; height: 150px !important;" />
+                                            style="width: 150px !important; height: 150px !important; object-fit: cover !important;" />
                                     </div>
                                     <div class="my-4 d-flex flex-column align-items-center">
                                         <h3 class="mt-3 open-sans-text text-custom-color">Native Ads</h3>
@@ -265,7 +265,7 @@
                                     <div class="feature_iconWrap">
                                         <img src="/public/assets-revamp/img/actions-and-events/theme-cpa.png"
                                             class="feature_icon" alt="click" width="150" height="150"
-                                            style="width: 150px !important; height: 150px !important;" />
+                                            style="width: 150px !important; height: 150px !important; object-fit: cover !important;" />
                                     </div>
                                     <div class="my-4 d-flex flex-column align-items-center">
                                         <h3 class="mt-3 open-sans-text text-custom-color">Cost Per Action</h3>
@@ -285,7 +285,7 @@
                                     <div class="feature_iconWrap">
                                         <img src="/public/assets-revamp/img/actions-and-events/theme-cps.png"
                                             class="feature_icon" alt="click" width="150" height="150"
-                                            style="width: 150px !important; height: 150px !important;" />
+                                            style="width: 150px !important; height: 150px !important; object-fit: cover !important;" />
                                     </div>
                                     <div class="my-4 d-flex flex-column align-items-center">
                                         <h3 class="mt-3 open-sans-text text-custom-color">Cost Per Sales</h3>
@@ -305,7 +305,7 @@
                                     <div class="feature_iconWrap">
                                         <img src="/public/assets-revamp/img/actions-and-events/theme-cpc.png"
                                             class="feature_icon" alt="click icon" width="150" height="150"
-                                            style="width: 150px; height: 150px !important" />
+                                            style="width: 150px; height: 150px !important; object-fit: cover !important;" />
                                     </div>
                                     <div class="my-4 d-flex flex-column align-items-center">
                                         <h3 class="mt-3 open-sans-text text-custom-color">Cost Per Click</h3>

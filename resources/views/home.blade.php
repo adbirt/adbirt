@@ -239,7 +239,7 @@
 
                 {{-- begin: Chilo --}}
                 <!-- FEATURES SECTION  -->
-                <section class="mb-5 mx-4 mx-md-5 px-md-5 pt-0">
+                <section class="mb-5 mx-4 mx-md-5- -px-md-5 pt-0">
                     <div class="my-5">
                         <div class="row mx-2 mx-sm-0 mx-md-5">
 

@@ -4282,3 +4282,7 @@ h6,
 .font-weight-semibold {
   font-weight: 500;
 }
+
+#home>div>div>div.logo>a>img {
+  height: 35px !important;
+}

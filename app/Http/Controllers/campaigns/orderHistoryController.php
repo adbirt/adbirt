@@ -257,14 +257,14 @@ class orderHistoryController extends Controller
                             } catch (\Services_Twilio_RestException $e) {
                             }
                         } else {
-                            $email = $advert->publisher->email;
-                            $heading = "Campaign Consumed";
-                            $data['heading'] = $heading;
-                            $data['TextToClient'] = $PublisherMsg;
-                            Mail::send('email.campaignconsumed', $data, function ($message) use ($email) {
-                                $message->from('noreply@sparkenproduct.in', 'Adbirt');
-                                $message->to($email)->subject('Campaign Consumed');
-                            });
+                            // $email = $advert->publisher->email;
+                            // $heading = "Campaign Consumed";
+                            // $data['heading'] = $heading;
+                            // $data['TextToClient'] = $PublisherMsg;
+                            // Mail::send('email.campaignconsumed', $data, function ($message) use ($email) {
+                            //     $message->from('noreply@sparkenproduct.in', 'Adbirt');
+                            //     $message->to($email)->subject('Campaign Consumed');
+                            // });
                         }
 
                         //process if campaign cost have been finished

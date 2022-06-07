@@ -331,8 +331,8 @@
 
             </div>
 
-                <br />
-                <br />
+            <br />
+            <br />
 
 
             <div class="features" id="features">

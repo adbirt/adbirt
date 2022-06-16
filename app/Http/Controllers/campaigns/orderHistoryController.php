@@ -52,12 +52,12 @@ class orderHistoryController extends Controller
         return redirect('campaigns/embedding');
     }
 
-    public function stopRunning($advert_code, $user_id)
+    public function stopRunning($advert_code)
     {
         $id = base64_decode($advert_code);
 
         $order = campaignorders::with('campaign')
-                ->where('publisher_id', $user_id)
+                // ->where('publisher_id', $user_id)
                 ->where('advert_code', $advert_code)
                 ->where('campaign_running_status', 'activated')
                 ->where('isDeleted', 'No')

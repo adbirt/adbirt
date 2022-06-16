@@ -159,6 +159,7 @@ Route::group(array('middleware' => 'auth'), function () {
         Route::any('/view-my-campaign/{id}', 'campaigns\campaignsController@viewCamp');
 
         Route::any('/run/{id}', 'campaigns\orderHistoryController@run');
+        Route::any('/stop-running/{id}', 'campaigns\orderHistoryController@stopRunning');
 
         Route::any('/ChngeStatusToApprove/{id}', 'campaigns\campaignsController@ChngeToApprove');
         Route::any('/ChngeStatusToReject/{id}', 'campaigns\campaignsController@ChngeToReject');

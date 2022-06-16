@@ -52,6 +52,27 @@ class orderHistoryController extends Controller
         return redirect('campaigns/embedding');
     }
 
+    public function stopRunning($id)
+    {
+        $Id = base64_decode($id);
+        $RunCam = campaign::find($Id);
+
+        $ordr = campaignorders::where([
+            'campaign_id' => $Id,
+            'publisher_id' => Auth::user()->id,
+            'advertiser_id' => $RunCam->advertiser_id,
+            'advert_code' => $this->code(),
+            'campaign_price' => $RunCam->campaign_cost_per_action,
+        ])->first();
+
+        $ordr->delete();
+
+        \Session::flash('flash_message', "Campaign successfully unpublished");
+
+        return redirect('/campaigns/show/' . $id);
+        // return redirect('campaigns/embedding');
+    }
+
     public function code()
     {
         $characters = 'abcdefghijklmnopqrstuvwxyz0123456789';

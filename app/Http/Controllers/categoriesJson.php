@@ -44,7 +44,7 @@ class categoriesJson extends BaseController
                 ->where('isDeleted', 'No')
                 ->get();
 
-            return response()->json(['status' => 200, 'categories' => $campaigns]);
+            return response()->json(['status' => 200, 'campaigns' => $campaigns]);
         } catch (\Throwable $th) {
             return response()->json(['status' => 500]);
         }

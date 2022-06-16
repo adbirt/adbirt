@@ -52,14 +52,18 @@ class orderHistoryController extends Controller
         return redirect('campaigns/embedding');
     }
 
-    public function stopRunning($advert_code)
+    public function stopRunning($advert_code, $user_id)
     {
-
         $id = base64_decode($advert_code);
 
-        $ordr = campaignorders::where('advert_code', $advert_code)->first();
+        $order = campaignorders::with('campaign')
+                ->where('publisher_id', $user_id)
+                ->where('advert_code', $advert_code)
+                ->where('campaign_running_status', 'activated')
+                ->where('isDeleted', 'No')
+                ->firstOrFail();
 
-        $ordr->delete();
+        $order->delete();
 
         \Session::flash('flash_message', "Campaign successfully unpublished");
 

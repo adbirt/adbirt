@@ -67,7 +67,8 @@ class orderHistoryController extends Controller
 
         \Session::flash('flash_message', "Campaign successfully unpublished");
 
-        return redirect('/campaigns/show/' . $advert_code);
+        return redirect('/');
+        // return redirect('/campaigns/show/' . $advert_code);
         // return redirect('campaigns/embedding');
     }
 

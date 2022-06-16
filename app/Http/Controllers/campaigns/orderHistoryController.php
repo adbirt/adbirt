@@ -57,7 +57,7 @@ class orderHistoryController extends Controller
 
         $id = base64_decode($advert_code);
 
-        $ordr = campaignorders::where('advert_code', $id)->first();
+        $ordr = campaignorders::where('advert_code', $advert_code)->first();
 
         $ordr->delete();
 

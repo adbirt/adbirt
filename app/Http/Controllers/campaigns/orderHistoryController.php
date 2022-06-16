@@ -52,11 +52,8 @@ class orderHistoryController extends Controller
         return redirect('campaigns/embedding');
     }
 
-    public function stopRunning(Request $request)
+    public function stopRunning($advert_code)
     {
-        $input = $request->all();
-
-        $advert_code = $input['advert_code'];
 
         $id = base64_decode($advert_code);
 

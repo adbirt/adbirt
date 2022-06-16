@@ -61,7 +61,7 @@ class orderHistoryController extends Controller
                 ->where('advert_code', $advert_code)
                 ->where('campaign_running_status', 'activated')
                 ->where('isDeleted', 'No')
-                ->firstOrFail();
+                ->first();
 
         $order->delete();
 

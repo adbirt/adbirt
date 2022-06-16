@@ -65,7 +65,7 @@ class orderHistoryController extends Controller
 
         $order->delete();
 
-        \Session::flash('flash_message', "Campaign successfully unpublished");
+        \Session::flash('flash_message', "Campaign successfully Unpublished!");
 
         return redirect('/dashboard');
         // return redirect('/campaigns/show/' . $advert_code);

@@ -54,7 +54,7 @@ class orderHistoryController extends Controller
 
     public function stopRunning($advert_code)
     {
-        $id = base64_decode($advert_code);
+        // $id = base64_decode($advert_code);
 
         $order = campaignorders::with('campaign')
                 // ->where('publisher_id', $user_id)
@@ -67,7 +67,7 @@ class orderHistoryController extends Controller
 
         \Session::flash('flash_message', "Campaign successfully unpublished");
 
-        return redirect('/campaigns/show/' . $id);
+        return redirect('/campaigns/show/' . $advert_code);
         // return redirect('campaigns/embedding');
     }
 

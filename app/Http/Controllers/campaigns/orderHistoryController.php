@@ -52,9 +52,13 @@ class orderHistoryController extends Controller
         return redirect('campaigns/embedding');
     }
 
-    public function stopRunning($id)
+    public function stopRunning(Request $request)
     {
-        $Id = base64_decode($id);
+        $input = $request->all();
+
+        $advert_code = $input['advert_code'];
+
+        $id = base64_decode($advert_code);
 
         $ordr = campaignorders::where('advert_code', $id)->first();
 

@@ -55,15 +55,8 @@ class orderHistoryController extends Controller
     public function stopRunning($id)
     {
         $Id = base64_decode($id);
-        $RunCam = campaign::find($Id);
 
-        $ordr = campaignorders::where([
-            'campaign_id' => $Id,
-            'publisher_id' => Auth::user()->id,
-            'advertiser_id' => $RunCam->advertiser_id,
-            'advert_code' => $this->code(),
-            'campaign_price' => $RunCam->campaign_cost_per_action,
-        ])->first();
+        $ordr = campaignorders::where('advert_code', $id)->first();
 
         $ordr->delete();
 

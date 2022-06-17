@@ -86,7 +86,7 @@ Route::any('campaigns/get-campaigns-as-json', 'categoriesJson@getCampaignsForUse
 
 Route::post('campaigns/register_publisher_site', 'campaigns\campaignsController@registerPublisherSite');
 
-Route::any('/stop-running/{advert_code}', 'campaigns\orderHistoryController@stopRunning');
+Route::any('campaigns/stop-running/{advert_code}', 'campaigns\orderHistoryController@stopRunning');
 
 Route::group(array('middleware' => 'auth'), function () {
     Route::get('logout', ['as' => 'logout', 'uses' => 'Auth\AuthController@logout']);

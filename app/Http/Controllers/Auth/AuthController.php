@@ -186,7 +186,7 @@ class AuthController extends Controller
                             'usesThrottle' => false,
                             'role_id' => $rold_id,
                             'propic' => $profilePhotoUrl,
-                            'campaigns' => $campaigns,
+                            // 'campaigns' => $campaigns,
                             'categories' => $categories
                         ]
                     );

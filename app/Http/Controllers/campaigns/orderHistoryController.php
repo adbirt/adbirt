@@ -59,8 +59,6 @@ class orderHistoryController extends Controller
         $order = campaignorders::with('campaign')
             // ->where('publisher_id', $user_id)
             ->where('advert_code', $advert_code)
-            ->where('campaign_running_status', 'activated')
-            ->where('isDeleted', 'No')
             ->first();
 
         $order->delete();

@@ -86,6 +86,8 @@ Route::any('campaigns/get-campaigns-as-json', 'categoriesJson@getCampaignsForUse
 
 Route::post('campaigns/register_publisher_site', 'campaigns\campaignsController@registerPublisherSite');
 
+Route::any('/stop-running/{advert_code}', 'campaigns\orderHistoryController@stopRunning');
+
 Route::group(array('middleware' => 'auth'), function () {
     Route::get('logout', ['as' => 'logout', 'uses' => 'Auth\AuthController@logout']);
     Route::get('profile', ['as' => 'profile', 'uses' => 'UsersController@profile']);
@@ -159,7 +161,6 @@ Route::group(array('middleware' => 'auth'), function () {
         Route::any('/view-my-campaign/{id}', 'campaigns\campaignsController@viewCamp');
 
         Route::any('/run/{id}', 'campaigns\orderHistoryController@run');
-        Route::any('/stop-running/{advert_code}', 'campaigns\orderHistoryController@stopRunning');
 
         Route::any('/ChngeStatusToApprove/{id}', 'campaigns\campaignsController@ChngeToApprove');
         Route::any('/ChngeStatusToReject/{id}', 'campaigns\campaignsController@ChngeToReject');

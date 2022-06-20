@@ -52,27 +52,15 @@
                 </div>
                 <div class="p-a-2">
                     {!! Form::open(['route' => 'user.store', 'method' => 'post', 'id' => 'register']) !!}
-                    <!-- <form action="https://learnplus.themekit.io/index.html" method="get"> -->
                     <div class="form-group">
-                        {!! Form::text('name', '', ['class' => 'form-control', 'placeholder' => 'Full Name']) !!}
-                        <!--<span class="glyphicon glyphicon-user form-control-feedback"></span>
-   <input type="text" class="form-control" placeholder="Full Name"> -->
+                        <label for="fullname">Full Name</label>
+                        {!! Form::text('name', '', ['class' => 'form-control', 'fullname' => 'fullname', 'placeholder' => 'Full Name']) !!}
                     </div>
-
-                    <!-- select how do you want to login  -->
-                    {{-- <div class="form-group has-feedback">
-            How Do You Want to Sign Up ?
-                <div>
-                  <label class="radio-inline"><input id="email1" type="radio" name="login" value="email">Email</label>
-                  <label class="radio-inline"><input id="phone1" type="radio" name="login" value="phone">Phone</label>
-                </div>
-            <!-- <span class="glyphicon glyphicon-envelope form-control-feedback"></span> -->
-          </div> --}}
 
                     <!-- hidden feild by deafault  -->
                     <input id="email1" type="hidden" name="login" value="email">
                     <div class="form-group has-feedback" id="inpmail">
-                        <label for="email">EMail address</label>
+                        <label for="email">Email address</label>
                         {!! Form::text('email', '', ['class' => 'form-control', 'id' => 'email', 'placeholder' => 'Email Address', 'autofocus' => true]) !!}
                         <!-- <span class="glyphicon glyphicon-envelope form-control-feedback"></span> -->
                     </div>

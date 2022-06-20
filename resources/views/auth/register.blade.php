@@ -20,7 +20,7 @@
     <title>Signup</title>
 
     <!-- Prevent the demo from appearing in search engines (REMOVE THIS) -->
-    <meta name="robots" content="noindex">
+    {{-- <meta name="robots" content="noindex"> --}}
 
     <!-- Font Awesome -->
     {!! Html::style('https://fonts.googleapis.com/icon?family=Material+Icons') !!}
@@ -36,7 +36,7 @@
     <div class="row">
         <div class="col-sm-8 col-sm-push-1 col-md-4 col-md-push-3 col-lg-4 col-lg-push-4">
             <div class="center m-a-2">
-                <div class="icon-block img-circle">
+                <div class="icon-block img-circle" style="border: 1px solid var(--theme-color); color: var(--theme-color);">
                     <i class="material-icons md-36 text-muted">account_box</i>
                 </div>
             </div>

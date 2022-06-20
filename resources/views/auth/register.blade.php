@@ -150,7 +150,7 @@
               <button type="submit" class="btn btn-primary btn-rounded btn-block">Sign Up</button>
             </p> -->
                     <div class="form-group">
-                        {!! Form::submit('Sign Up', ['class' => 'btn btn-primary btn-block btn-rounded', 'type' => 'submit']) !!}
+                        {!! Form::submit('Sign Up', ['class' => 'btn btn-danger bg-primary-color btn-block btn-rounded', 'type' => 'submit']) !!}
                     </div>
 
                     {!! Form::close() !!}

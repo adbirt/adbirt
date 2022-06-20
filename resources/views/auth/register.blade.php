@@ -45,7 +45,7 @@
                     <i class="material-icons md-36 text-muted">account_box</i>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" style="border: 1px solid var(--theme-color);">
                 <div class="card-header bg-white center">
                     <h4 class="card-title">Sign Up</h4>
                     <p class="card-subtitle">Create a new account</p>

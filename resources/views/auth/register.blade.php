@@ -105,11 +105,11 @@
                         <!-- <span class="glyphicon glyphicon-log-in form-control-feedback"></span> -->
                     </div>
 
-                    <div class="form-group has-feedback">
+                    {{-- <div class="form-group has-feedback">
 
                         {!! Form::text('birthday', null, ['class' => 'form-control', 'placeholder' => 'Birthday', 'id' => 'birthday', 'data-relmax' => '-18']) !!}
                         <!-- <span class="glyphicon glyphicon-calendar form-control-feedback"></span> -->
-                    </div>
+                    </div> --}}
 
                     <div class="form-group has-feedback">
                         <!-- <input type="select" id="country"> -->
@@ -250,11 +250,11 @@
         });
 
 
-        $("#birthday").datepicker({
-            format: 'yyyy-mm-dd',
-            endDate: '+0d',
-            autoclose: true
-        });
+        // $("#birthday").datepicker({
+        //     format: 'yyyy-mm-dd',
+        //     endDate: '+0d',
+        //     autoclose: true
+        // });
         // $( "#birthday" ).datepicker( "setDate", new Date() );
     </script>
 

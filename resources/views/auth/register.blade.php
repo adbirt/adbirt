@@ -127,7 +127,7 @@
 
                     <div class="form-group has-feedback">
                         <label for="address">Street Address</label>
-                        {!! Form::text('address', null, ['class' => 'form-control', 'id'=>'address', 'placeholder' => 'Street No, Area']) !!}
+                        {!! Form::text('address', null, ['class' => 'form-control', 'id' => 'address', 'placeholder' => 'Street No, Area']) !!}
                         <!-- <span class="glyphicon glyphicon-log-in form-control-feedback"></span> -->
                     </div>
 

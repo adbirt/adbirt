@@ -40,8 +40,7 @@
     <div class="row">
         <div class="col-sm-8 col-sm-push-1 col-md-4 col-md-push-3 col-lg-4 col-lg-push-4">
             <div class="center m-a-2">
-                <div class="icon-block img-circle"
-                    style="border: 1px solid var(--theme-color);">
+                <div class="icon-block img-circle" style="border: 1px solid var(--theme-color);">
                     <i class="material-icons md-36 text-muted text-primary-color">account_box</i>
                 </div>
             </div>
@@ -73,11 +72,13 @@
                     <!-- hidden feild by deafault  -->
                     <input id="email1" type="hidden" name="login" value="email">
                     <div class="form-group has-feedback" id="inpmail">
-                        {!! Form::text('email', '', ['class' => 'form-control', 'placeholder' => 'Email Address', 'autofocus']) !!}
+                        <label for="email">EMail address</label>
+                        {!! Form::text('email', '', ['class' => 'form-control', 'id' => 'email', 'placeholder' => 'Email Address', 'autofocus']) !!}
                         <!-- <span class="glyphicon glyphicon-envelope form-control-feedback"></span> -->
                     </div>
 
                     <div class="form-group has-feedback" id="inpphone" style="display:block;">
+                        <label for="tel">Phone Number</label>
                         {!! Form::tel('phone', '', ['class' => 'form-control', 'id' => 'tel', 'placeholder' => 'e.g  +2430000000']) !!}
                         <!-- <span class="glyphicon glyphicon-phone form-control-feedback"></span> -->
                     </div>
@@ -97,10 +98,12 @@
                     </div>
 
                     <div class="form-group has-feedback">
+                        <label for="passwd">Password</label>
                         {!! Form::password('password', ['class' => 'form-control', 'placeholder' => 'Password', 'id' => 'passwd']) !!}
                         <!-- <span class="glyphicon glyphicon-lock form-control-feedback"></span> -->
                     </div>
                     <div class="form-group has-feedback">
+                        <label for="cnpasswd">Confirm Password</label>
                         {!! Form::password('password_confirmation', ['class' => 'form-control', 'placeholder' => 'Confirm Password', 'id' => 'cnpasswd']) !!}
                         <!-- <span class="glyphicon glyphicon-log-in form-control-feedback"></span> -->
                     </div>
@@ -113,17 +116,20 @@
 
                     <div class="form-group has-feedback">
                         <!-- <input type="select" id="country"> -->
+                        <label for="country">Country</label>
                         {!! Form::text('country', '', ['class' => 'form-control', 'id' => 'country']) !!}
                         <!-- <span class="glyphicon glyphicon-log-in form-control-feedback"></span> -->
                     </div>
 
                     <div class="form-group has-feedback">
-                        {!! Form::text('city', null, ['class' => 'form-control', 'placeholder' => 'City']) !!}
+                        <label for="city">City</label>
+                        {!! Form::text('city', null, ['class' => 'form-control', 'id' => 'city', 'placeholder' => 'City']) !!}
                         <!-- <span class="glyphicon glyphicon-log-in form-control-feedback"></span> -->
                     </div>
 
                     <div class="form-group has-feedback">
-                        {!! Form::text('address', null, ['class' => 'form-control', 'placeholder' => 'Street No, Area']) !!}
+                        <label for="address">Street Address</label>
+                        {!! Form::text('address', null, ['class' => 'form-control', 'id'=>'address' 'placeholder' => 'Street No, Area']) !!}
                         <!-- <span class="glyphicon glyphicon-log-in form-control-feedback"></span> -->
                     </div>
 
@@ -140,7 +146,8 @@
                     <div class="form-group has-feedback">
                         <label class="c-input c-checkbox">
                             {!! Form::checkbox('agree', 'yes', ['class' => 'form-control form-group']) !!}
-                            <span class="c-indicator"></span> I agree to the <a href="/terms" class="text-primary-color">Terms of Use</a> &amp;
+                            <span class="c-indicator"></span> I agree to the <a href="/terms"
+                                class="text-primary-color">Terms of Use</a> &amp;
                             <a href="privacy" class="text-primary-color">Privacy Policy</a>
                             <!-- <span class="glyphicon glyphicon-log-in form-control-feedback"></span> -->
                         </label>
@@ -155,7 +162,8 @@
 
                     {!! Form::close() !!}
                     <br />
-                    <div class="center">Already signed up? <a href="{{ route('login') }}" class="text-primary-color">Log in</a></div>
+                    <div class="center">Already signed up? <a href="{{ route('login') }}"
+                            class="text-primary-color">Log in</a></div>
                     </form>
                 </div>
             </div>

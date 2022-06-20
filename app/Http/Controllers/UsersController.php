@@ -56,18 +56,22 @@ class UsersController extends Controller
     {
         $data = $request->all();
         //    dd($data);
+        
         $user = new User;
+
         $user->name = $data['name'];
         $user->login = $data['login'];
         $user->email = $data['email'];
         $user->phone = $data['phone'];
         $user->password = Hash::make($data['password']);
-        $user->birthday = $data['birthday'];
+        // $user->birthday = $data['birthday'];
         $user->country = $data['country'];
         $user->city = $data['city'];
         $user->address = $data['address'];
         $user->save();
+
         $Id = $user->id;
+
         if ($user->save()) {
             if ($data['Role'] == 'vendor') {
                 $role = new rolesModel;
@@ -103,8 +107,6 @@ class UsersController extends Controller
                 $Pro->save();
             }
 
-
-
             $rand = mt_rand(1000000, 9999999);
             // insert token for confirmation
             $profile = new Profile();
@@ -113,10 +115,6 @@ class UsersController extends Controller
             DB::table('activate')->insert(
                 ['user_id' => $user->id, 'activation_key' => $rand]
             );
-            // assign User Role
-            /*            $user_role = Role::where('name', config('customConfig.roles.user'))->first();
-            $user->attachRole($user_role);*/
-
 
             if ($user->login == 'email') {
                 $email = $user->email;
@@ -275,7 +273,7 @@ class UsersController extends Controller
             'phone' => 'required|numeric',
             'country' => 'required',
             'gender' => 'required',
-            'birthday' => 'required'
+            // 'birthday' => 'required'
             /* 'fb' => 'url',
             'twitter' => 'url',
             'gp' => 'url',

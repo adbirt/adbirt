@@ -73,7 +73,7 @@
                     <input id="email1" type="hidden" name="login" value="email">
                     <div class="form-group has-feedback" id="inpmail">
                         <label for="email">EMail address</label>
-                        {!! Form::text('email', '', ['class' => 'form-control', 'id' => 'email', 'placeholder' => 'Email Address', 'autofocus']) !!}
+                        {!! Form::text('email', '', ['class' => 'form-control', 'id' => 'email', 'placeholder' => 'Email Address', 'autofocus' => true]) !!}
                         <!-- <span class="glyphicon glyphicon-envelope form-control-feedback"></span> -->
                     </div>
 
@@ -118,18 +118,16 @@
                         <!-- <input type="select" id="country"> -->
                         <label for="country">Country</label>
                         {!! Form::text('country', '', ['class' => 'form-control', 'id' => 'country']) !!}
-                        <!-- <span class="glyphicon glyphicon-log-in form-control-feedback"></span> -->
                     </div>
 
                     <div class="form-group has-feedback">
                         <label for="city">City</label>
                         {!! Form::text('city', null, ['class' => 'form-control', 'id' => 'city', 'placeholder' => 'City']) !!}
-                        <!-- <span class="glyphicon glyphicon-log-in form-control-feedback"></span> -->
                     </div>
 
                     <div class="form-group has-feedback">
                         <label for="address">Street Address</label>
-                        {!! Form::text('address', null, ['class' => 'form-control', 'id'=>'address' 'placeholder' => 'Street No, Area']) !!}
+                        {!! Form::text('address', null, ['class' => 'form-control', 'id'=>'address', 'placeholder' => 'Street No, Area']) !!}
                         <!-- <span class="glyphicon glyphicon-log-in form-control-feedback"></span> -->
                     </div>
 

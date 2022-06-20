@@ -2,22 +2,23 @@
 <html lang="en">
 
 @include('includes.header')
-{!! Html::style('plugins/iCheck/square/blue.css') !!}
-{!! Html::style('tel/build/css/intlTelInput.css') !!}
-{!! Html::style('countryselect/css/countrySelect.css') !!}
-{!! Html::style('plugins/datepicker/datepicker3.css') !!}
-<!--<style>
-.iti-flag {background-image: url("/public/countryselect/img/flags.png");}
-</style>-->
-
-
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Signup</title>
+
+    {!! Html::style('plugins/iCheck/square/blue.css') !!}
+    {!! Html::style('tel/build/css/intlTelInput.css') !!}
+    {!! Html::style('countryselect/css/countrySelect.css') !!}
+    {!! Html::style('plugins/datepicker/datepicker3.css') !!}
+    <!--<style>
+.iti-flag {background-image: url("/public/countryselect/img/flags.png");}
+</style>-->
+
+
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
     <!-- Prevent the demo from appearing in search engines (REMOVE THIS) -->
     {{-- <meta name="robots" content="noindex"> --}}
@@ -29,6 +30,9 @@
     <!-- Theme style -->
     {!! Html::style('dist/css/style.min.css') !!}
 
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="public/assets-revamp/css/style.css">
+
 </head>
 
 <body class="login">
@@ -36,7 +40,8 @@
     <div class="row">
         <div class="col-sm-8 col-sm-push-1 col-md-4 col-md-push-3 col-lg-4 col-lg-push-4">
             <div class="center m-a-2">
-                <div class="icon-block img-circle" style="border: 1px solid var(--theme-color); color: var(--theme-color);">
+                <div class="icon-block img-circle"
+                    style="border: 1px solid var(--theme-color); color: var(--theme-color);">
                     <i class="material-icons md-36 text-muted">account_box</i>
                 </div>
             </div>
@@ -76,7 +81,7 @@
                         {!! Form::tel('phone', '', ['class' => 'form-control', 'id' => 'tel', 'placeholder' => 'e.g  +2430000000']) !!}
                         <!-- <span class="glyphicon glyphicon-phone form-control-feedback"></span> -->
                     </div>
-                    <!--<div class="form-group has-feedback" id="phoneee">	
+                    <!--<div class="form-group has-feedback" id="phoneee">
  <input class="form-control" id="phonee" placeholder="Phone e.g +2430000000" name="phone" type="text" value="" autocomplete="off">
  </div>-->
                     <!-- hidden feild by deafault end -->
@@ -163,7 +168,7 @@
 
     {!! Html::script('dist/vendor/tether.min.js') !!}
     {!! Html::script('bootstrap/js/bootstrap.min.js') !!}
-    <!-- <script src="assets/vendor/tether.min.js"></script> 
+    <!-- <script src="assets/vendor/tether.min.js"></script>
   <script src="assets/vendor/bootstrap.min.js"></script>-->
 
     <!-- AdminPlus -->
@@ -250,7 +255,7 @@
             endDate: '+0d',
             autoclose: true
         });
-        // $( "#birthday" ).datepicker( "setDate", new Date() ); 
+        // $( "#birthday" ).datepicker( "setDate", new Date() );
     </script>
 
     <script type="text/javascript">

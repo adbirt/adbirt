@@ -94,8 +94,8 @@
                 </div>
 
                 <div class="card-footer center bg-white">
-                    <p>Not yet a User? <a href="{{ route('register') }}" class="text-center">Sign up</a></p>
-                    <p>Or, return to <a href="/">Home Page</a></p>
+                    <p>Not yet a User? <a href="{{ route('register') }}" class="text-center text-primary-color">Sign up</a></p>
+                    <p>Or, return to <a href="/" class="text-primary-color">Home Page</a></p>
                 </div>
 
             </div>

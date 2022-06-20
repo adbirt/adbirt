@@ -155,7 +155,7 @@
 
                     {!! Form::close() !!}
                     <br />
-                    <div class="center">Already signed up? <a href="{{ route('login') }}">Log in</a></div>
+                    <div class="center">Already signed up? <a href="{{ route('login') }}" class="text-primary-color">Log in</a></div>
                     </form>
                 </div>
             </div>

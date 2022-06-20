@@ -41,8 +41,8 @@
         <div class="col-sm-8 col-sm-push-1 col-md-4 col-md-push-3 col-lg-4 col-lg-push-4">
             <div class="center m-a-2">
                 <div class="icon-block img-circle"
-                    style="border: 1px solid var(--theme-color); color: var(--theme-color);">
-                    <i class="material-icons md-36 text-muted">account_box</i>
+                    style="border: 1px solid var(--theme-color);">
+                    <i class="material-icons md-36 text-muted text-primary-color">account_box</i>
                 </div>
             </div>
             <div class="card" style="border: 1px solid var(--theme-color);">

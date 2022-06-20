@@ -105,6 +105,7 @@
                     <div class="form-group has-feedback">
                         <!-- <input type="select" id="country"> -->
                         <label for="country">Country</label>
+                        <br />
                         {!! Form::text('country', '', ['class' => 'form-control', 'id' => 'country']) !!}
                     </div>
 

@@ -145,8 +145,6 @@
 
                     {!! Form::submit('Submit', ['class' => 'btn btn-danger bg-primary-color btn-rounded']) !!}
 
-                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-
                     {!! Form::close() !!}
 
                 </div>

@@ -135,8 +135,8 @@
                         <label class="c-input c-checkbox">
                             {!! Form::checkbox('agree', 'yes', ['class' => 'form-control form-group']) !!}
                             <span class="c-indicator"></span> I agree to the <a href="/terms"
-                                class="text-primary-color">Terms of Use</a> &amp;
-                            <a href="privacy" class="text-primary-color">Privacy Policy</a>
+                                class="text-primary-color" target="_blank">Terms of Use</a> &amp;
+                            <a href="privacy" class="text-primary-color" target="_blank">Privacy Policy</a>
                             <!-- <span class="glyphicon glyphicon-log-in form-control-feedback"></span> -->
                         </label>
                     </div>

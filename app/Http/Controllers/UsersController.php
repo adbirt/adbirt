@@ -50,10 +50,8 @@ class UsersController extends Controller
     public function store(UserRequest $request)
     {
         $data = $request->all();
-        //    dd($data);
 
         $user = new User;
-
         $user->name = $data['name'];
         $user->login = $data['login'];
         $user->email = $data['email'];
@@ -63,53 +61,45 @@ class UsersController extends Controller
         $user->country = $data['country'];
         $user->city = $data['city'];
         $user->address = $data['address'];
-        $user->save();
+
+        $saved = $user->save();
 
         $Id = $user->id;
 
-        if ($user->save()) {
+        if ($saved) {
+            $role = new rolesModel;
+            $role->user_id = $Id;
             if ($data['Role'] == 'vendor') {
-                $role = new rolesModel;
-                $role->user_id = $Id;
                 $role->role_id = "2";
-                $role->save();
-
-                $Trans = new Transaction;
-                $Trans->user_id = $Id;
-                $Trans->amount = "0";
-                $Trans->method_id = "1";
-                $Trans->save();
-
-                $Pro = new Profile;
-                $Pro->user_id = $Id;
-                $Pro->propic = "https://adbirt.com/public/assets-revamp/img/avatar.png";
-                $Pro->save();
             } elseif ($data['Role'] == 'client') {
-                $role = new rolesModel;
-                $role->user_id = $Id;
                 $role->role_id = "3";
-                $role->save();
-
-                $Trans = new Transaction;
-                $Trans->user_id = $Id;
-                $Trans->amount = "0";
-                $Trans->method_id = "1";
-                $Trans->save();
-
-                $Pro = new Profile;
-                $Pro->user_id = $Id;
-                $Pro->propic = "https://adbirt.com/public/assets-revamp/img/avatar.png";
-                $Pro->save();
             }
+            $role->save();
+
+            $Trans = new Transaction;
+            $Trans->user_id = $Id;
+            $Trans->amount = 0;
+            $Trans->method_id = 1;
+            $Trans->save();
+
+            $Pro = new Profile;
+            $Pro->user_id = $Id;
+            $Pro->propic = "https://adbirt.com/public/assets-revamp/img/avatar.png";
+            $Pro->save();
 
             $rand = mt_rand(1000000, 9999999);
             // insert token for confirmation
             $profile = new Profile();
             $profile->user_id = $user->id;
             $profile->save();
+
             DB::table('activate')->insert(
                 ['user_id' => $user->id, 'activation_key' => $rand]
             );
+
+            $flag = 0;
+            $txt = '';
+            $phone = '';
 
             if ($user->login == 'email') {
                 $email = $user->email;
@@ -118,7 +108,7 @@ class UsersController extends Controller
                 });*/
                 $input['rand'] = $rand;
                 Mail::send('email.confirmation', $input, function ($message) use ($email) {
-                    $message->from('noreply@sparkenproduct.in', 'Adbirt');
+                    $message->from('info@adbirt.com', 'Adbirt');
                     $message->to($email)->subject('Account Activation');
                 });
 
@@ -156,10 +146,11 @@ class UsersController extends Controller
                 //return $message->sid;
                 // return redirect()->away($url, ['recipient' => $phone, 'message' => $message]);
             } else {
-                $txt = "<b>One step away</b>";
+                $txt = '<b>One step away</b>';
                 $flag = 3;
                 $phone = '';
             }
+
             // return $phone;
             // return $flag;
             return redirect()->route('activation')
@@ -215,6 +206,7 @@ class UsersController extends Controller
             ->with('info', $noty)
             ->with('user', Auth::user());
     }
+
     /**
      * Display the specified resource.
      *
@@ -264,8 +256,8 @@ class UsersController extends Controller
             'phone' => 'required|numeric',
             'country' => 'required',
             'gender' => 'required',
-            // 'birthday' => 'required'
-            /* 'fb' => 'url',
+            /* 'birthday' => 'required'
+        'fb' => 'url',
         'twitter' => 'url',
         'gp' => 'url',
         'instagram' => 'url',
@@ -273,14 +265,15 @@ class UsersController extends Controller
         'aboutme' => 'url',
         'linkedin' => 'url',
         'pinterest' => 'url' */
-
         ];
 
         $data = $request->all();
+
         $validator = Validator::make($data, $rules);
         if ($validator->fails()) {
             return Redirect::back()->withInput()->withErrors($validator);
         }
+
         $user = Auth::user();
         $user->name = $data['name'];
         $user->email = $data['email'];
@@ -288,6 +281,7 @@ class UsersController extends Controller
         $user->country = $data['country'];
         // $user->birthday = $data['birthday'];
         $user->address = $data['address'];
+
         if ($user->save()) {
             $profile_id = $user->id;
             $profile = Profile::find($profile_id);
@@ -301,15 +295,15 @@ class UsersController extends Controller
             $profile->aboutmyself = $data['aboutmyself'];
             $user->profile()->save($profile);
             /* $profile->fb = $data['fb'];
-            $profile->twitter = $data['twitter'];
-            $profile->gp = $data['gp'];
-            $profile->instagram = $data['instagram'];
-            $profile->personal_site = $data['personal_site'];
-            $profile->aboutme = $data['aboutme'];
-            $profile->linkedin = $data['linkedin'];
-            $profile->pinterest = $data['pinterest'];
-            // $profile = $user->profile()->save($profile); */
-            //$profile->save();
+        $profile->twitter = $data['twitter'];
+        $profile->gp = $data['gp'];
+        $profile->instagram = $data['instagram'];
+        $profile->personal_site = $data['personal_site'];
+        $profile->aboutme = $data['aboutme'];
+        $profile->linkedin = $data['linkedin'];
+        $profile->pinterest = $data['pinterest'];
+        $profile = $user->profile()->save($profile);
+        $profile->save(); */
         } else {
             return redirect()->back()->withInput()->withInfo("Something went wrong. Please, try again");
         }

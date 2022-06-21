@@ -34,7 +34,8 @@
             <div class="center m-a-2">
                 <div class="icon-block img-circle" style="border: 1px solid var(--theme-color)">
                     <a href="{{ route('dashboard') }}">
-                        <i class="material-icons md-36 text-muted text-primary-color">lock</i>
+                        <i class="material-icons md-36 text-muted text-primary-color"
+                            style="font-size: 35px !important;">lock</i>
                     </a>
                 </div>
             </div>
@@ -140,7 +141,7 @@
 
 
                     {{-- {!! Form::text('email', '', ['class' => 'form-control placeholder-no-fix', 'placeholder' => 'Email/Phone', 'autocomplete' => 'off']) !!} --}}
-                    {!! Form::text('email', '', ['class' => 'form-control placeholder-no-fix', 'placeholder' => 'Email', 'autocomplete' => 'on']) !!}
+                    {!! Form::text('email', '', ['class' => 'form-control placeholder-no-fix', 'placeholder' => 'Email', 'autocomplete' => 'on', 'style' => 'border: 1px solid var(--theme-color);']) !!}
 
                 </div>
 

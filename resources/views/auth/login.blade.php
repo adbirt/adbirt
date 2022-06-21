@@ -146,7 +146,7 @@
 
                 <div class="modal-footer">
 
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-danger btn-rounded" data-dismiss="modal">Cancel</button>
 
                     {!! Form::submit('Submit', ['class' => 'btn btn-danger bg-primary-color btn-rounded']) !!}
 

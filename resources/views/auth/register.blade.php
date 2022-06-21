@@ -78,10 +78,17 @@
                     <div class="form-group has-feedback">
                         What do you want to become?
                         <div>
-                            <label class="radio-inline"><input id="" type="radio" name="Role"
-                                    value="vendor">Advertiser</label>
-                            <label class="radio-inline"><input id="" type="radio" name="Role" checked
-                                    value="client">Publisher</label>
+                            <label class="radio-inline">
+                                {{-- <input type="radio" name="Role" value="vendor" /> --}}
+                                {!! Form::radio('Role', 'vendor') !!}
+                                Advertiser
+                            </label>
+
+                            <label class="radio-inline">
+                                {{-- <input type="radio" name="Role" checked value="client" /> --}}
+                                {!! Form::radio('Role', 'client') !!}
+                                Publisher
+                            </label>
                         </div>
                         <!-- <span class="glyphicon glyphicon-envelope form-control-feedback"></span> -->
                     </div>

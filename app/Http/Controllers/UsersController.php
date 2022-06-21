@@ -2,26 +2,21 @@
 
 namespace app\Http\Controllers;
 
-use Illuminate\Support\Facades\Input;
-use Illuminate\Http\Request;
-use App\User;
+use App\Http\Controllers\Controller;
+use App\Http\Requests\UserRequest;
+use App\Model\rolesModel;
 use App\Profile;
 use App\Transaction;
-use Validator;
+use App\User;
 use Auth;
-use Hash;
 use DB;
+use Hash;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Input;
 use Mail;
 use Redirect;
-use App\Role;
-use App\Model\rolesModel;
-use App\Model\NotificationAlertModel;
-use App\Http\Requests;
-use App\Http\Requests\UserRequest;
-use App\Http\Controllers\Controller;
+use Validator;
 use View;
-use Twilio\Rest\Client;
-use Services\Twilio;
 
 class UsersController extends Controller
 {
@@ -56,7 +51,7 @@ class UsersController extends Controller
     {
         $data = $request->all();
         //    dd($data);
-        
+
         $user = new User;
 
         $user->name = $data['name'];
@@ -75,7 +70,7 @@ class UsersController extends Controller
         if ($user->save()) {
             if ($data['Role'] == 'vendor') {
                 $role = new rolesModel;
-                $role->user_id = $Id;;
+                $role->user_id = $Id;
                 $role->role_id = "2";
                 $role->save();
 
@@ -91,7 +86,7 @@ class UsersController extends Controller
                 $Pro->save();
             } elseif ($data['Role'] == 'client') {
                 $role = new rolesModel;
-                $role->user_id = $Id;;
+                $role->user_id = $Id;
                 $role->role_id = "3";
                 $role->save();
 
@@ -119,7 +114,7 @@ class UsersController extends Controller
             if ($user->login == 'email') {
                 $email = $user->email;
                 /* Mail::send('auth.mail', [ 'activation_key' => $rand ], function ($message) use ($email) {
-                    $message->to($email)->subject('Account Activation'); // it does not work except Input::get();
+                $message->to($email)->subject('Account Activation'); // it does not work except Input::get();
                 });*/
                 $input['rand'] = $rand;
                 Mail::send('email.confirmation', $input, function ($message) use ($email) {
@@ -138,12 +133,8 @@ class UsersController extends Controller
 
                 //     $client = new \Services_Twilio($AccountSid, $AuthToken);
 
-
-
                 //     // Display a confirmation message on the screen
                 //     // echo "Sent message {$message->sid}";
-
-
 
                 //     $txt = "<b>Your account has been created succesfully.</b><br>A confirmation key has been sent to <b>".$user->phone."</b>. Please check your message inbox.";
                 // $flag =2;
@@ -248,7 +239,7 @@ class UsersController extends Controller
         $user = User::with('profile')->where('id', Auth::user()->id)->first();
         $gender = [
             'male' => 'male',
-            'female' => 'female'
+            'female' => 'female',
         ];
         $profile = Auth::user()->profile;
         return view('user.edit-profile')
@@ -275,13 +266,13 @@ class UsersController extends Controller
             'gender' => 'required',
             // 'birthday' => 'required'
             /* 'fb' => 'url',
-            'twitter' => 'url',
-            'gp' => 'url',
-            'instagram' => 'url',
-            'personal_site' => 'url',
-            'aboutme' => 'url',
-            'linkedin' => 'url',
-            'pinterest' => 'url' */
+        'twitter' => 'url',
+        'gp' => 'url',
+        'instagram' => 'url',
+        'personal_site' => 'url',
+        'aboutme' => 'url',
+        'linkedin' => 'url',
+        'pinterest' => 'url' */
 
         ];
 
@@ -295,13 +286,13 @@ class UsersController extends Controller
         $user->email = $data['email'];
         $user->phone = $data['phone'];
         $user->country = $data['country'];
-        $user->birthday = $data['birthday'];
+        // $user->birthday = $data['birthday'];
         $user->address = $data['address'];
         if ($user->save()) {
             $profile_id = $user->id;
             $profile = Profile::find($profile_id);
             if (!isset($profile) || empty($profile)) {
-                $profile  = new Profile;
+                $profile = new Profile;
             }
             $profile->gender = $data['gender'];
             $profile->city = $data['city'];
@@ -339,10 +330,10 @@ class UsersController extends Controller
             $validator = Validator::make(
                 [
                     // here use the path to the uploaded Image
-                    'image' => $file
+                    'image' => $file,
                 ],
                 [
-                    'image' => 'image'
+                    'image' => 'image',
                 ]
             );
 

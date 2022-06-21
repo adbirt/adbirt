@@ -42,7 +42,7 @@
             <div class="center m-a-2">
                 <div class="icon-block img-circle" style="border: 1px solid var(--theme-color);">
                     <i class="material-icons md-36 text-muted text-primary-color"
-                        style='border: 1px solid var(--theme-color);'>account_box</i>
+                        style='border: 1px solid var(--theme-color); font-size: 25px !important;'>account_box</i>
                 </div>
             </div>
             <div class="card" style="border: 1px solid var(--theme-color);">

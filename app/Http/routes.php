@@ -8,7 +8,7 @@
 | It's a breeze. Simply tell Laravel the URIs it should respond to
 | and give it the controller to call when that URI is requested.
 |
-*/
+ */
 
 Route::get('/', function () {
     return Redirect::route('dashboard');
@@ -66,7 +66,6 @@ Route::group(['middleware' => 'guest'], function () {
     Route::post('login/reset_password/users', ['as' => 'reset-process', 'uses' => 'Auth\AuthController@resetProcess']);
 });
 
-
 //Messages  from Agent
 Route::group(['prefix' => 'messages'], function () {
     Route::get('/', ['as' => 'agent_inbox', 'uses' => 'MessageController@index']);
@@ -107,7 +106,6 @@ Route::group(array('middleware' => 'auth'), function () {
     Route::any('withdraw/account-info/{withdraw_id}', 'owner\withDrawController@accountInfo');
     Route::any('withdraw/updated', 'owner\withDrawController@withdrawUpdated');
 
-
     //-----User Views-----
 
     //Transfer Requests
@@ -117,7 +115,6 @@ Route::group(array('middleware' => 'auth'), function () {
     // Feedback
     Route::get('report', array('as' => 'getcontact', 'uses' => 'PageController@getContact'));
     Route::post('report', array('as' => 'postcontact', 'uses' => 'PageController@postContact'));
-
 
     //Paypal Payments
     Route::get('paypal/request', ['as' => 'paypal.create', 'uses' => 'PaypalController@create']);
@@ -166,7 +163,6 @@ Route::group(array('middleware' => 'auth'), function () {
         Route::any('/ChngeStatusToReject/{id}', 'campaigns\campaignsController@ChngeToReject');
     });
 
-
     // commission-ratio
     Route::any('/commission-ratio', 'commission\commissionratioController@create');
     Route::any('/commission-ratio/store', 'commission\commissionratioController@store');
@@ -189,7 +185,7 @@ Route::group(array('middleware' => 'auth'), function () {
     Route::any('/advertiser/CheckEmail', 'owner\ownerController@CheckEmail');
     Route::any('/advertiser/CheckPhone', 'owner\ownerController@CheckPhone');
 
-    // Notification 
+    // Notification
     Route::any('/notify/view-notifications', 'notify\notificationController@notify');
     Route::any('/notify/ChngeStatus', 'notify\notificationController@ChngeStatus');
 
@@ -223,10 +219,10 @@ Route::group(['middleware' => ['auth', 'role:admin']], function () {
 /*
 |
 |-------------------------------------------------------------------------
-|                     Api Routes Starts                                     
-|-------------------------------------------------------------------------   
+|                     Api Routes Starts
+|-------------------------------------------------------------------------
 |
-*/
+ */
 
 // Route::group(['prefix' => 'api'], function () {
 //     // Register & login Api Routes
@@ -237,10 +233,10 @@ Route::group(['middleware' => ['auth', 'role:admin']], function () {
 /*
 |
 |-------------------------------------------------------------------------
-|                     Api Routes Ends                                     
-|-------------------------------------------------------------------------   
+|                     Api Routes Ends
+|-------------------------------------------------------------------------
 |
-*/
+ */
 
 // paypal //
 Route::get('payment', array(

@@ -157,17 +157,11 @@
 
     </div>
 
-
-
-
-
     <!-- jQuery -->
 
     {!! Html::script('dist/vendor/jquery.min.js') !!}
 
     <!-- <script src="assets/vendor/jquery.min.js"></script> -->
-
-
 
     <!-- Bootstrap -->
 

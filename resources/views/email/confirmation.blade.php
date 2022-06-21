@@ -201,11 +201,11 @@
 <body style="margin: 0; padding: 0;">
 
     <!-- HEADER -->
-    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; width: 100% !important;">
         <tr>
             <td bgcolor="#ffffff">
                 <div align="center" style="padding: 0px 15px 0px 15px;">
-                    <table border="0" cellpadding="0" cellspacing="0" width="500" class="wrapper">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100% !important;" class="wrapper">
                         <!-- LOGO/PREHEADER TEXT -->
                         <tr>
                             <td style="padding: 20px 0px 30px 0px;" class="logo">
@@ -243,7 +243,7 @@
     <tr>
         <td>
             <!-- BULLETPROOF BUTTON -->
-            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mobile-button-container">
+            <table width="100%" style="width: 100% !important;" border="0" cellspacing="0" cellpadding="0" class="mobile-button-container">
                 <tr>
                     <td align="center" style="padding: 25px 0 0 0;" class="padding-copy">
                         <table border="0" cellspacing="0" cellpadding="0" class="responsive-table">
@@ -275,14 +275,16 @@
 
 
     <!-- TWO COLUMN SECTION -->
-    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%"
+        style="table-layout: fixed; width: 100% !important;">
         <tr>
             <td bgcolor="#ffffff" align="center" style="padding: 70px 15px 70px 15px;" class="section-padding">
                 <table border="0" cellpadding="0" cellspacing="0" width="500" class="responsive-table">
                     <tr>
                         <td>
                             <!-- TITLE SECTION AND COPY -->
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <table width="100%" style="width: 100% !important;" border="0" cellspacing="0"
+                                cellpadding="0">
                                 <tr>
                                     <td align="center"
                                         style="font-size: 25px; font-family: Helvetica, Arial, sans-serif; color: #333333;"
@@ -296,112 +298,12 @@
                             </table>
                         </td>
                     </tr>
-
-                    <!-- <tr>
-                    <td>
-                        <!-- TWO COLUMNS
-                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
-                            <tr>
-                                <td valign="top" style="padding: 0;" class="mobile-wrapper">
-                                    <!-- LEFT COLUMN
-                                    <table cellpadding="0" cellspacing="0" border="0" width="47%" align="left" class="responsive-table">
-                                        <tr>
-                                            <td style="padding: 20px 0 40px 0;">
-                                                <table cellpadding="0" cellspacing="0" border="0" width="100%">
-                                                    <tr>
-                                                        <td align="center" bgcolor="#ffffff" valign="middle"><a href="https://alistapart.com/article/can-email-be-responsive/" target="_blank"><img src="https://www.adbirt.com/public/images/fluid-images.jpg" width="240" height="130" style="display: block; color: #666666; font-family: Helvetica, arial, sans-serif; font-size: 13px; width: 240px; height: 130px;" alt="Fluid images" border="0" class="img-max"></a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="center" style="padding: 15px 0 0 0; font-family: Arial, sans-serif; color: #333333; font-size: 20px;" bgcolor="#ffffff">Cost Per Click</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="center" style="padding: 5px 0 0 0; font-family: Arial, sans-serif; color: #666666; font-size: 14px; line-height: 20px;" bgcolor="#ffffff">Cost Per Click Starting at $0.01 per click, you can advertise with $1</span></td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!-- RIGHT COLUMN
-                                    <table cellpadding="0" cellspacing="0" border="0" width="47%" align="right" class="responsive-table">
-                                        <tr>
-                                            <td style="padding: 20px 0 40px 0;">
-                                                <table cellpadding="0" cellspacing="0" border="0" width="100%">
-                                                    <tr>
-                                                        <td align="center" bgcolor="#ffffff" valign="middle"><a href="https://alistapart.com/article/can-email-be-responsive/" target="_blank"><img src="https://www.adbirt.com/public/images/fluid-structure.jpg" width="240" height="130" style="display: block; color: #666666; font-family: Helvetica, arial, sans-serif; font-size: 13px; width: 240px; height: 130px;" alt="Fluid structures" border="0" class="img-max"></a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="center" style="padding: 15px 0 0 0; font-family: Arial, sans-serif; color: #333333; font-size: 20px;" bgcolor="#ffffff">Cost Per Action</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="center" style="padding: 5px 0 0 0; font-family: Arial, sans-serif; color: #666666; font-size: 14px; line-height: 20px;" bgcolor="#ffffff"><span class="appleBody">Starting at $0.05 per action, you can advertise with <em>just</em> $1</span></td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <!-- TWO COLUMNS
-                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
-                            <tr>
-                                <td valign="top" style="padding: 0;" class="mobile-wrapper">
-                                    <!-- LEFT COLUMN
-                                    <table cellpadding="0" cellspacing="0" border="0" width="47%" align="left" class="responsive-table">
-                                        <tr>
-                                            <td style="padding: 20px 0 40px 0;">
-                                                <table cellpadding="0" cellspacing="0" border="0" width="100%">
-                                                    <tr>
-                                                        <td align="center" bgcolor="#ffffff" valign="middle"><a href="https://alistapart.com/article/can-email-be-responsive/" target="_blank"><img src="https://www.adbirt.com/public/images/media-queries.jpg" width="240" height="130" style="display: block; color: #666666; font-family: Helvetica, arial, sans-serif; font-size: 13px; width: 240px; height: 130px;" alt="Media queries" border="0" class="img-max"></a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="center" style="padding: 15px 0 0 0; font-family: Arial, sans-serif; color: #333333; font-size: 20px;" bgcolor="#ffffff">Add Ads to your Website</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="center" style="padding: 5px 0 0 0; font-family: Arial, sans-serif; color: #666666; font-size: 14px; line-height: 20px;" bgcolor="#ffffff"><span class="appleBody">Integrate our Ads on your website to start earning with a Live Support</span></td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!-- RIGHT COLUMN
-                                    <table cellpadding="0" cellspacing="0" border="0" width="47%" align="right" class="responsive-table">
-                                        <tr>
-                                            <td style="padding: 20px 0 40px 0;">
-                                                <table cellpadding="0" cellspacing="0" border="0" width="100%">
-                                                    <tr>
-                                                        <td align="center" bgcolor="#ffffff" valign="middle"><a href="https://alistapart.com/article/can-email-be-responsive/" target="_blank"><img src="https://www.adbirt.com/public/images/bulletproof-buttons.jpg" width="240" height="130" style="display: block; color: #666666; font-family: Helvetica, arial, sans-serif; font-size: 13px; width: 240px; height: 130px;" alt="Bulletproof buttons" border="0" class="img-max"></a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="center" style="padding: 15px 0 0 0; font-family: Arial, sans-serif; color: #333333; font-size: 20px;" bgcolor="#ffffff">View Ads Performance</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td align="center" style="padding: 5px 0 0 0; font-family: Arial, sans-serif; color: #666666; font-size: 14px; line-height: 20px;" bgcolor="#ffffff"><span class="appleBody">You will see how your Ads are performing each day.</span></td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
- -->
-
                 </table>
 
 
 
                 <!-- FOOTER -->
-                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; width: 100% !important;">
                     <tr>
                         <td bgcolor="#ffffff" align="center">
                             <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">

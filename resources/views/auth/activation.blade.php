@@ -64,7 +64,7 @@
                         <!-- <h4>An email has been sent to your email address. Please, follow the instructions
           </h4> -->
                     @endif
-                    <a href="{{ route('login') }}" class="text-center">Go to Login Section</a>
+                    <a href="{{ route('login') }}" class="text-center text-primary-color">Go to Login Section</a>
 
 
 

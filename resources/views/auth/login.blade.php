@@ -135,7 +135,7 @@
                     {!! Form::open(['route' => 'reset-password', 'method' => 'post']) !!}
 
                     {{-- {!! Form::text('email', '', ['class' => 'form-control placeholder-no-fix', 'placeholder' => 'Email/Phone', 'autocomplete' => 'off']) !!} --}}
-                    {!! Form::text('email', '', ['class' => 'form-control placeholder-no-fix', 'placeholder' => 'Email', 'autocomplete' => 'on', 'style' => 'border: 1px solid var(--theme-color);']) !!}
+                    {!! Form::text('email', '', ['class' => 'form-control placeholder-no-fix', 'placeholder' => 'Email', 'autocomplete' => 'on', 'style' => 'border: .1px solid var(--theme-color);']) !!}
 
                 </div>
 

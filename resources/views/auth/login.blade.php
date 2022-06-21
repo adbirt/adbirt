@@ -82,9 +82,9 @@
                     <div class="center">
 
                         <a href="#">
-
-                            <a data-toggle="modal" href="#myModal"><small>Forgot Password?</small></a>
-
+                            <a data-toggle="modal" href="#myModal">
+                                <small class="text-primary-color">Forgot Password?</small>
+                            </a>
                         </a>
 
                     </div>

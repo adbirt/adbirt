@@ -56,7 +56,7 @@
                         <!-- provide acvtivation key   -->
 
                         <div class="form-group">
-                            {!! Form::submit('Proceed', ['class' => 'btn btn-primary btn-block btn-flat']) !!}
+                            {!! Form::submit('Proceed', ['class' => 'btn btn-primary bg-primary-color btn-block btn-flat']) !!}
                         </div>
 
                         {!! Form::close() !!}

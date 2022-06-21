@@ -169,7 +169,7 @@ class ownerController extends Controller
                 $owner->phone  = trim($input['phone']);
                 $owner->address  = strtolower(trim($input['address']));
                 $owner->country  = strtolower(trim($input['country']));
-                $owner->birthday  = trim($input['birthday']);
+                // $owner->birthday  = trim($input['birthday']);
                 $owner->city  = trim($input['city']);
                 $owner->login  = $input['login'];
                 $owner->active  = "1";

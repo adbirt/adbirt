@@ -90,10 +90,10 @@
             <!-- <span class="glyphicon glyphicon-log-in form-control-feedback"></span> -->
           </div>
 
-          <div class="form-group has-feedback">
+          {{-- <div class="form-group has-feedback">
 {!! Form::text('birthday', null, array('class' => 'form-control', 'placeholder' => 'Birthday', 'id' => 'birthday', 'data-relmax' => '-18')) !!}
             <!-- <span class="glyphicon glyphicon-calendar form-control-feedback"></span> -->
-          </div>
+          </div> --}}
 
           <div class="form-group has-feedback">
           <!-- <input type="select" id="country"> -->

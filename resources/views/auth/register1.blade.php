@@ -268,11 +268,11 @@
     });
 
     
-          $("#birthday").datepicker({
-              format: 'yyyy-mm-dd',
-              endDate: '+0d',
-              autoclose: true 
-          });
+          // $("#birthday").datepicker({
+          //     format: 'yyyy-mm-dd',
+          //     endDate: '+0d',
+          //     autoclose: true 
+          // });
             // $( "#birthday" ).datepicker( "setDate", new Date() ); 
 
 

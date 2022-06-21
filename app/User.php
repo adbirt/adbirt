@@ -34,7 +34,8 @@ AuthenticatableContract,
      * @var array
      */
     //protected $fillable = ['name', 'email', 'password'];
-    protected $fillable = ['name', 'email', 'password','phone','country','birthday','address','gender','city','state','profession','aboutmyself'];
+    // protected $fillable = ['name', 'email', 'password','phone','country','birthday','address','gender','city','state','profession','aboutmyself'];
+    protected $fillable = ['name', 'email', 'password','phone','country','address','gender','city','state','profession','aboutmyself'];
 
     /**
      * The attributes excluded from the model's JSON form.

@@ -47,7 +47,7 @@
                                     <th>Email</th>
                                     <th>Balance</th>
                                     <th>Phone Number</th>
-                                    <th>BirthDay</th>
+                                    {{-- <th>BirthDay</th> --}}
                                     <th>Address</th>
                                     <th>City</th>
                                     <th>Country</th>
@@ -61,7 +61,7 @@
                                         <td class="product_name">{!! $value->GetOwner->email !!}</td>
                                         <td class="product_name greenclass">{!! $balanceAmount[$value->user_id] !!}$</td>
                                         <td class="product_name">{!! $value->GetOwner->phone !!}</td>
-                                        <td class="product_name">{!! $value->GetOwner->birthday !!}</td>
+                                        {{-- <td class="product_name">{!! $value->GetOwner->birthday !!}</td> --}}
                                         <td class="product_name">{!! $value->GetOwner->address !!}</td>
                                         <td class="product_name">{!! $value->GetOwner->city !!}</td>
                                         <td class="product_name">{!! $value->GetOwner->country !!}</td>

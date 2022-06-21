@@ -103,7 +103,7 @@
                             </div>
                         </div>
 
-                        <div class="col-12 col-md-6 bio-card my-1">
+                        {{-- <div class="col-12 col-md-6 bio-card my-1">
                             <div class="small-box bg-info">
                                 <div class="inner">
                                     <h4 class="font-weight-bold">
@@ -119,7 +119,7 @@
                                 </div>
                                 <!-- <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a> -->
                             </div>
-                        </div>
+                        </div> --}}
 
                         <div class="col-12 col-md-6 bio-card my-1">
                             <div class="small-box bg-danger">

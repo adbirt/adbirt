@@ -101,7 +101,7 @@
                         </div>
 
 
-                        <div class="form-group row">
+                        {{-- <div class="form-group row">
                             {!! Form::label('birthday', 'Birthday', ['class' => 'col-sm-3 control-label']) !!}
                             <div class="col-sm-6 col-md-4">
                                 <div class="input-group">
@@ -112,7 +112,8 @@
                                     {!! Form::text('birthday', null, ['class' => 'datepicker form-control', 'placeholder' => '01/28/2016', 'id' => 'birthday', 'required' => 'required']) !!}
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
+                        
                         <div class="form-group row">
                             {!! Form::label('address', 'Address', ['class' => 'col-sm-3 control-label']) !!}
                             <div class="col-sm-6 col-md-4">

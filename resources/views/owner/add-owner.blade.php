@@ -119,7 +119,7 @@
                                     </div>
                                 </div>
                             @endif
-                            <div class="form-group">
+                            {{-- <div class="form-group">
                                 <div class="row">
                                     <div class="col-md-4">
                                         <label class="formLabel">BirthDay</label>
@@ -127,10 +127,10 @@
                                     <div class="col-md-8">
 
                                         <input class="form-control" name="birthday" id="date" placeholder="DD/MM/YYYY"
-                                            type="text" / @if (isset($ownerData) && !empty($ownerData->birthday)) value="{{ $ownerData->birthday }}" @endif>
+                                            type="text"  @if (isset($ownerData) && !empty($ownerData->birthday)) value="{{ $ownerData->birthday }}" @endif />
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                             <div class="form-group">
                                 <div class="row">
                                     <div class="col-md-4">
@@ -231,7 +231,7 @@
     <script type="text/javascript">
         jQuery(document).ready(function() {
 
-            var date_input = $('input[name="birthday"]'); //our date input has the name "date"
+            // var date_input = $('input[name="birthday"]'); //our date input has the name "date"
             var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
             var options = {
                 format: 'dd/mm/yyyy',
@@ -239,7 +239,7 @@
                 todayHighlight: true,
                 autoclose: true,
             };
-            date_input.datepicker(options);
+            // date_input.datepicker(options);
 
 
             $('.chngpass').change(function() {
@@ -296,9 +296,9 @@
                             }
                         },
                     },
-                    birthday: {
-                        required: true,
-                    },
+                    // birthday: {
+                    //     required: true,
+                    // },
                     address: {
                         required: true,
                     },

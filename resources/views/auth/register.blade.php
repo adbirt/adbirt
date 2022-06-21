@@ -303,6 +303,6 @@
 </body>
 
 
-<!-- Mirrored from learnplus.themekit.io/sign-up.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 26 Sep 2016 20:47:12 GMT -->
+{{-- <!-- Mirrored from learnplus.themekit.io/sign-up.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 26 Sep 2016 20:47:12 GMT --> --}}
 
 </html>

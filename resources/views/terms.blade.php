@@ -422,12 +422,12 @@
             </div>
         </div>
     </div> --}}
-
-    {{-- <div class="copy_right">
+    <br />
+    <div class="copy_right">
         <div class="wrap">
-            <p>&copy; 2017 - 2021 Adbirt, Inc. All Rights Reserved</p>
+            <p>&copy; Adbirt, Inc. All Rights Reserved</p>
         </div>
-    </div> --}}
+    </div>
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 </body>
 

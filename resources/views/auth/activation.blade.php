@@ -20,7 +20,7 @@
     {!! Html::style('dist/css/style.min.css') !!}
 
     <!-- Style CSS -->
-    <link rel="stylesheet" href="public/assets-revamp/css/style.css">
+    <link rel="stylesheet" href="/public/assets-revamp/css/style.css">
 
 </head>
 

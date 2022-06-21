@@ -30,7 +30,7 @@
         <div class="col-sm-8 col-sm-push-1 col-md-4 col-md-push-4 col-lg-4 col-lg-push-4">
             <div class="center m-a-2">
                 <div class="icon-block img-circle" style="border: 1px solid var(--theme-color);">
-                    <a href="{{ route('dashboard') }}"><i class="material-icons md-36 text-muted"
+                    <a href="{{ route('dashboard') }}"><i class="material-icons md-36 text-muted text-primary-color"
                             style="font-size: 25px !important;">contact_mail</i></a>
                 </div>
             </div>

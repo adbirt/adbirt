@@ -18,7 +18,6 @@
         .bio-card {
             height: 100px !important;
         }
-
     </style>
 @stop
 
@@ -121,7 +120,7 @@
                             </div>
                         </div> --}}
 
-                        <div class="col-12 col-md-6 bio-card my-1">
+                        {{-- <div class="col-12 col-md-6 bio-card my-1">
                             <div class="small-box bg-danger">
                                 <div class="inner">
                                     <h4 class="font-weight-bold">
@@ -137,7 +136,7 @@
                                 </div>
                                 <!-- <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a> -->
                             </div>
-                        </div>
+                        </div> --}}
 
                     </div>
                     <!-- End: Bio -->
@@ -146,23 +145,23 @@
 
 
             <!--  <hr>
-                                              <div class="row">
-                                                <div class="col-md-6 col-md-offset-3 center">
-                                                  <h4 class="m-b-0">Social Profiles</h4>
-                                                  <p class="text-muted ">{{ Auth::user()->name }}'s Social Circle</p>
-                                                  <div class="btn btn-primary btn-circle"><a href="{{ Auth::user()->profile->personal_site }}">{{ Auth::user()->profile->personal_site }}<i class="material-icons">thumb_up</i></a></div>
-                                                 <li>Personal Website: <a href="{{ Auth::user()->profile->personal_site }}">{{ Auth::user()->profile->personal_site }}</a></li>
-                                                            <li>Facebook URL: <a href="{{ Auth::user()->profile->fb }}">{!! Auth::user()->profile->fb !!}</a></li>
-                                                            <li>Twitter Account: <a href="{{ Auth::user()->profile->twitter }}">{{ Auth::user()->profile->twitter }}</a></li>
-                                                            <li>Google+ Profile: <a href="{{ Auth::user()->profile->gp }}">{{ Auth::user()->profile->gp }}</a></li>
-                                                            <li>Pinterest: <a href="{{ Auth::user()->profile->pinterest }}">{{ Auth::user()->profile->pinterest }}</a></li>
-                                                            <li>Instagram: <a href="{{ Auth::user()->profile->instagram }}">{{ Auth::user()->profile->instagram }}</a></li>
-                                                            <li>About.me: <a href="{{ Auth::user()->profile->aboutme }}">{{ Auth::user()->profile->aboutme }}</a></li>
-                                                            <li>LinkedIn: <a href="{{ Auth::user()->profile->linkedin }}">{{ Auth::user()->profile->linkedin }}</a></li>
-                                                  <br>
-                                                  <br>
-                                                </div>
-                                              </div> -->
+                                                  <div class="row">
+                                                    <div class="col-md-6 col-md-offset-3 center">
+                                                      <h4 class="m-b-0">Social Profiles</h4>
+                                                      <p class="text-muted ">{{ Auth::user()->name }}'s Social Circle</p>
+                                                      <div class="btn btn-primary btn-circle"><a href="{{ Auth::user()->profile->personal_site }}">{{ Auth::user()->profile->personal_site }}<i class="material-icons">thumb_up</i></a></div>
+                                                     <li>Personal Website: <a href="{{ Auth::user()->profile->personal_site }}">{{ Auth::user()->profile->personal_site }}</a></li>
+                                                                <li>Facebook URL: <a href="{{ Auth::user()->profile->fb }}">{!! Auth::user()->profile->fb !!}</a></li>
+                                                                <li>Twitter Account: <a href="{{ Auth::user()->profile->twitter }}">{{ Auth::user()->profile->twitter }}</a></li>
+                                                                <li>Google+ Profile: <a href="{{ Auth::user()->profile->gp }}">{{ Auth::user()->profile->gp }}</a></li>
+                                                                <li>Pinterest: <a href="{{ Auth::user()->profile->pinterest }}">{{ Auth::user()->profile->pinterest }}</a></li>
+                                                                <li>Instagram: <a href="{{ Auth::user()->profile->instagram }}">{{ Auth::user()->profile->instagram }}</a></li>
+                                                                <li>About.me: <a href="{{ Auth::user()->profile->aboutme }}">{{ Auth::user()->profile->aboutme }}</a></li>
+                                                                <li>LinkedIn: <a href="{{ Auth::user()->profile->linkedin }}">{{ Auth::user()->profile->linkedin }}</a></li>
+                                                      <br>
+                                                      <br>
+                                                    </div>
+                                                  </div> -->
 
         </div>
     </div>

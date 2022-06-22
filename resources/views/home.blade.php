@@ -113,7 +113,7 @@
                     <ul>
                         <li><a href="/" class="scroll">Home</a></li>
                         <li><a href="/how-it-works" class="scroll">How it works</a></li>
-                        <li><a class="/pricing" class="scroll">Pricing</a></li>
+                        <li><a href="/pricing" class="scroll">Pricing</a></li>
                         <li><a target="_blank" href="https://adbirt.com/blog" class="scroll">Blog</a></li>
                         <li><a target="_blank" href="https://adbirt.com/contact" class="scroll">Contact</a></li>
                         <li class="login">

@@ -231,14 +231,14 @@ class orderHistoryController extends Controller
                             } catch (\Services_Twilio_RestException $e) {
                             }
                         } else {
-                            $email = $advert->advertiser->email;
-                            $heading = "Campaign Consumed";
-                            $data['heading'] = $heading;
-                            $data['TextToClient'] = $AdvertiserMsg;
-                            Mail::send('email.campaignconsumed', $data, function ($message) use ($email) {
-                                $message->from('noreply@sparkenproduct.in', 'Adbirt');
-                                $message->to($email)->subject('Campaign Consumed');
-                            });
+                            // $email = $advert->advertiser->email;
+                            // $heading = "Campaign Consumed";
+                            // $data['heading'] = $heading;
+                            // $data['TextToClient'] = $AdvertiserMsg;
+                            // Mail::send('email.campaignconsumed', $data, function ($message) use ($email) {
+                            //     $message->from('info@adbirt.com', 'Adbirt');
+                            //     $message->to($email)->subject('Campaign Consumed');
+                            // });
                         }
 
                         $wallet = new WalletHistoryModel;
@@ -267,11 +267,11 @@ class orderHistoryController extends Controller
                             $client = new \Services_Twilio($AccountSid, $AuthToken);
 
                             try {
-                                $Client_message = $client->account->messages->create(array(
-                                    "From" => "+12018856171", // From a valid Twilio number
-                                    "To" => $advert->publisher->phone, // Text this number
-                                    "Body" => $PublisherMsg,
-                                ));
+                                // $Client_message = $client->account->messages->create(array(
+                                //     "From" => "+12018856171", // From a valid Twilio number
+                                //     "To" => $advert->publisher->phone, // Text this number
+                                //     "Body" => $PublisherMsg,
+                                // ));
                             } catch (\Services_Twilio_RestException $e) {
                             }
                         } else {
@@ -280,7 +280,7 @@ class orderHistoryController extends Controller
                             // $data['heading'] = $heading;
                             // $data['TextToClient'] = $PublisherMsg;
                             // Mail::send('email.campaignconsumed', $data, function ($message) use ($email) {
-                            //     $message->from('noreply@sparkenproduct.in', 'Adbirt');
+                            //     $message->from('info@adbirt.com', 'Adbirt');
                             //     $message->to($email)->subject('Campaign Consumed');
                             // });
                         }
@@ -299,10 +299,10 @@ class orderHistoryController extends Controller
 
                             $data['heading'] = $heading;
                             $data['TextToClient'] = $paymentMsg;
-                            Mail::send('email.campaignconsumed', $data, function ($message) use ($email) {
-                                $message->from('noreply@sparkenproduct.in', 'Adbirt');
-                                $message->to($email)->subject('Campaign Consumed');
-                            });
+                            // Mail::send('email.campaignconsumed', $data, function ($message) use ($email) {
+                            //     $message->from('info@adbirt.com', 'Adbirt');
+                            //     $message->to($email)->subject('Campaign Consumed');
+                            // });
                         }
 
                         $this->outputData['message'] = "Verified";
@@ -320,10 +320,10 @@ class orderHistoryController extends Controller
 
                         $data['heading'] = $heading;
                         $data['TextToClient'] = $paymentMsg;
-                        Mail::send('email.campaignconsumed', $data, function ($message) use ($email) {
-                            $message->from('noreply@sparkenproduct.in', 'Adbirt');
-                            $message->to($email)->subject('Campaign Consumed');
-                        });
+                        // Mail::send('email.campaignconsumed', $data, function ($message) use ($email) {
+                        //     $message->from('info@adbirt.com', 'Adbirt');
+                        //     $message->to($email)->subject('Campaign Consumed');
+                        // });
 
                         $this->outputData['message'] = "Unable to proceed, not enough balance available";
                         return response()->json($this->outputData, 401);

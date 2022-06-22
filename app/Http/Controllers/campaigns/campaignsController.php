@@ -602,10 +602,10 @@ class campaignsController extends Controller
         $heading = "Campaign Approved";
         $data['heading'] = $heading;
         $data['TextToClient'] = $AdvertiserMsg;
-        Mail::send('email.campaignconsumed', $data, function ($message) use ($email) {
-            $message->from('info@adbirt.com', 'Adbirt');
-            $message->to($email)->subject('Campaign Approved');
-        });
+        // Mail::send('email.campaignconsumed', $data, function ($message) use ($email) {
+        //     $message->from('info@adbirt.com', 'Adbirt');
+        //     $message->to($email)->subject('Campaign Approved');
+        // });
         //echo "**email sent";
 
 
@@ -624,10 +624,10 @@ class campaignsController extends Controller
             $heading = "Campaign Activated";
             $data['heading'] = $heading;
             $data['TextToClient'] = $AdvertiserMsg;
-            Mail::send('email.campaignconsumed', $data, function ($message) use ($pubEMail) {
-                $message->from('info@adbirt.com', 'Adbirt');
-                $message->to($pubEMail)->subject('Campaign Activated');
-            });
+            // Mail::send('email.campaignconsumed', $data, function ($message) use ($pubEMail) {
+            //     $message->from('info@adbirt.com', 'Adbirt');
+            //     $message->to($pubEMail)->subject('Campaign Activated');
+            // });
             //echo "**email sent";		
 
 

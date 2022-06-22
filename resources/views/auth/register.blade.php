@@ -33,7 +33,7 @@
     <!-- Style CSS -->
     <link rel="stylesheet" href="public/assets-revamp/css/style.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css">
+    {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css"> --}}
 
 </head>
 
@@ -106,9 +106,9 @@
                         <!-- <span class="glyphicon glyphicon-log-in form-control-feedback"></span> -->
                     </div>
 
-                    <div class="form-group has-feedback">
+                    {{-- <div class="form-group has-feedback">
                         {!! Form::text('birthday', null, ['class' => 'form-control birthday-picker', 'placeholder' => 'Birthday', 'id' => 'birthday', 'data-relmax' => '-18']) !!}
-                    </div>
+                    </div> --}}
 
                     <div class="form-group has-feedback">
                         <!-- <input type="select" id="country"> -->
@@ -307,14 +307,14 @@
         });
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker.min.js"></script>
+    {{-- <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker.min.js"></script>
 
     <script>
         const elem = document.querySelector('.birthday-picker');
         const datepicker = new Datepicker(elem, {
             // ...options
         });
-    </script>
+    </script> --}}
 
 </body>
 

@@ -12,7 +12,7 @@
     {!! Html::style('plugins/iCheck/square/blue.css') !!}
     {!! Html::style('tel/build/css/intlTelInput.css') !!}
     {!! Html::style('countryselect/css/countrySelect.css') !!}
-    {!! Html::style('plugins/datepicker/datepicker3.css') !!}
+    {{-- {!! Html::style('plugins/datepicker/datepicker3.css') !!} --}}
     <!--<style>
 .iti-flag {background-image: url("/public/countryselect/img/flags.png");}
 </style>-->
@@ -187,7 +187,7 @@
     {!! Html::script('plugins/slimScroll/jquery.slimscroll.min.js') !!}
     {!! Html::script('tel/build/js/intlTelInput.js') !!}
     {!! Html::script('countryselect/js/countrySelect.min.js') !!}
-    {!! Html::script('plugins/datepicker/bootstrap-datepicker.js') !!}
+    {{-- {!! Html::script('plugins/datepicker/bootstrap-datepicker.js') !!} --}}
 
 
     <script>

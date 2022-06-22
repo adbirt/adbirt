@@ -24,6 +24,10 @@
             }
         }
 
+        .pagination li {
+            padding-left: 5px !important;
+            padding-right: 5px !important;
+        }
     </style>
 @stop
 @section('content')
@@ -52,9 +56,9 @@
         <div class="viewtable">
             @include('includes.alert')
             <!--<ol class="breadcrumb">
-                                                                                                                                                                                                                                                <li><a href="{{ url('/') }}">Home</a></li>
-                                                                                                                                                                                                                                                <li class="active">{!! $title = 'Campaign Status' !!}</li>
-                                                                                                                                                                                                                                            </ol>-->
+                                                                                                                                                                                                                                                    <li><a href="{{ url('/') }}">Home</a></li>
+                                                                                                                                                                                                                                                    <li class="active">{!! $title = 'Campaign Status' !!}</li>
+                                                                                                                                                                                                                                                </ol>-->
             <a href="{{ url('/campaigns/add-campaigns') }}">
                 <button class="btn btn-primary waves-effect waves-light mb-2">Add new Campaign</button>
             </a>

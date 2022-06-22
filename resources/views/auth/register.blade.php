@@ -74,8 +74,8 @@
                         <!-- <span class="glyphicon glyphicon-phone form-control-feedback"></span> -->
                     </div>
                     <!--<div class="form-group has-feedback" id="phoneee">
- <input class="form-control" id="phonee" placeholder="Phone e.g +2430000000" name="phone" type="text" value="" autocomplete="off">
- </div>-->
+                        <input class="form-control" id="phonee" placeholder="Phone e.g +2430000000" name="phone" type="text" value="" autocomplete="off">
+                        </div>-->
                     <!-- hidden feild by deafault end -->
                     <div class="form-group has-feedback">
                         What do you want to become?
@@ -129,14 +129,14 @@
                     </div>
 
                     <!--  <div class="form-group">
-              <input type="email" class="form-control" placeholder="Email">
-            </div>
-            <div class="form-group">
-              <input type="password" class="form-control" placeholder="Password">
-            </div>
-            <div class="form-group">
-              <input type="password" class="form-control" placeholder="Confirm Password">
-            </div> -->
+                            <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Confirm Password">
+                            </div> -->
 
                     <div class="form-group has-feedback">
                         <label class="c-input c-checkbox">
@@ -148,9 +148,9 @@
                         </label>
                     </div>
 
-                    <!-- <p class="center">
-              <button type="submit" class="btn btn-primary btn-rounded btn-block">Sign Up</button>
-            </p> -->
+                      <!-- <p class="center">
+                        <button type="submit" class="btn btn-primary btn-rounded btn-block">Sign Up</button>
+                        </p> -->
                     <div class="form-group">
                         {!! Form::submit('Sign Up', ['class' => 'btn btn-danger bg-primary-color btn-block btn-rounded', 'type' => 'submit']) !!}
                     </div>
@@ -162,6 +162,11 @@
                     </form>
                 </div>
             </div>
+
+            <br />
+            <br />
+            <br />
+            <br />
         </div>
     </div>
 

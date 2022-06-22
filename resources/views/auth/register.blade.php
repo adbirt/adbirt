@@ -56,20 +56,20 @@
                 <div class="p-a-2">
                     {!! Form::open(['route' => 'user.store', 'method' => 'post', 'id' => 'register']) !!}
                     <div class="form-group">
-                        <label for="fullname">Full Name</label>
+                        {{-- <label for="fullname">Full Name</label> --}}
                         {!! Form::text('name', '', ['class' => 'form-control', 'fullname' => 'fullname', 'placeholder' => 'Full Name']) !!}
                     </div>
 
                     <!-- hidden feild by deafault  -->
                     <input id="email1" type="hidden" name="login" value="email">
                     <div class="form-group has-feedback" id="inpmail">
-                        <label for="email">Email address</label>
+                        {{-- <label for="email">Email address</label> --}}
                         {!! Form::text('email', '', ['class' => 'form-control', 'id' => 'email', 'placeholder' => 'Email Address', 'autofocus' => true]) !!}
                         <!-- <span class="glyphicon glyphicon-envelope form-control-feedback"></span> -->
                     </div>
 
                     <div class="form-group has-feedback" id="inpphone" style="display:block;">
-                        <label for="tel">Phone Number</label>
+                        {{-- <label for="tel">Phone Number</label> --}}
                         {!! Form::tel('phone', '', ['class' => 'form-control', 'id' => 'tel', 'placeholder' => 'e.g  +2430000000']) !!}
                         <!-- <span class="glyphicon glyphicon-phone form-control-feedback"></span> -->
                     </div>
@@ -96,12 +96,12 @@
                     </div>
 
                     <div class="form-group has-feedback">
-                        <label for="passwd">Password</label>
+                        {{-- <label for="passwd">Password</label> --}}
                         {!! Form::password('password', ['class' => 'form-control', 'placeholder' => 'Password', 'id' => 'passwd']) !!}
                         <!-- <span class="glyphicon glyphicon-lock form-control-feedback"></span> -->
                     </div>
                     <div class="form-group has-feedback">
-                        <label for="cnpasswd">Confirm Password</label>
+                        {{-- <label for="cnpasswd">Confirm Password</label> --}}
                         {!! Form::password('password_confirmation', ['class' => 'form-control', 'placeholder' => 'Confirm Password', 'id' => 'cnpasswd']) !!}
                         <!-- <span class="glyphicon glyphicon-log-in form-control-feedback"></span> -->
                     </div>
@@ -112,18 +112,18 @@
 
                     <div class="form-group has-feedback">
                         <!-- <input type="select" id="country"> -->
-                        <label for="country">Country</label>
+                        {{-- <label for="country">Country</label> --}}
                         <br />
-                        {!! Form::text('country', '', ['class' => 'form-control', 'id' => 'country']) !!}
+                        {!! Form::text('country', '', ['class' => 'form-control', 'id' => 'country', 'placeholder' => 'Country']) !!}
                     </div>
 
                     <div class="form-group has-feedback">
-                        <label for="city">City</label>
+                        {{-- <label for="city">City</label> --}}
                         {!! Form::text('city', null, ['class' => 'form-control', 'id' => 'city', 'placeholder' => 'City']) !!}
                     </div>
 
                     <div class="form-group has-feedback">
-                        <label for="address">Street Address</label>
+                        {{-- <label for="address">Street Address</label> --}}
                         {!! Form::text('address', null, ['class' => 'form-control', 'id' => 'address', 'placeholder' => 'Street N.O, Area']) !!}
                         <!-- <span class="glyphicon glyphicon-log-in form-control-feedback"></span> -->
                     </div>

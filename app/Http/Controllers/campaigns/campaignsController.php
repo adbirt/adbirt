@@ -1009,6 +1009,7 @@ class campaignsController extends Controller
                                                 <div class="adbirt-single-recommendation-image-holder">
                                                     <img data-banner-code="<?php echo $bannerCode; ?>" src="<?php echo 'https://www.adbirt.com/public/uploads/campaign_banners/' . $similar->campaign_banner; ?>" alt="Recommendation text" class="adbirt-single-recommendation-image">
                                                 </div>
+                                                <p class="banner-title"><?php echo $bnr->campaign_description; ?></p>
                                             </div>
                                         </div>
                                     <?php

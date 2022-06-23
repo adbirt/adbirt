@@ -959,13 +959,13 @@ class campaignsController extends Controller
 
                                 @media (min-width: 250px) {
                                     .adbirt-single-recommendation-wrapper {
-                                        width: <?php echo $has_similar_campaigns ? '50%' : '100%'; ?>;
+                                        width: 50%;
                                     }
                                 }
 
                                 @media (min-width: 600px) {
                                     .adbirt-single-recommendation-wrapper {
-                                        width: <?php echo $has_similar_campaigns ? '25%' : '100%'; ?>;
+                                        width: 25%;
                                     }
 
                                     .adbirt-native-recommendations-header {
@@ -979,11 +979,12 @@ class campaignsController extends Controller
                                         <h4>Recommended</h4>
                                     </div>
                                     <div class="adbirt-native-recommendations-info">
-                                        <a href="https://adbirt.com/actions-and-events" target="_blank">
+                                        <!-- <a href="https://adbirt.com/actions-and-events" target="_blank">
                                             <small>
                                                 Learn More >
                                             </small>
-                                        </a>
+                                        </a> -->
+                                        &nbsp;
                                     </div>
                                 </div>
 

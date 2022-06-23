@@ -122,11 +122,10 @@
                         {!! Form::text('city', null, ['class' => 'form-control', 'id' => 'city', 'placeholder' => 'City']) !!}
                     </div>
 
-                    <div class="form-group has-feedback">
-                        {{-- <label for="address">Street Address</label> --}}
+                    {{-- <div class="form-group has-feedback">
                         {!! Form::text('address', null, ['class' => 'form-control', 'id' => 'address', 'placeholder' => 'Street N.O, Area']) !!}
                         <!-- <span class="glyphicon glyphicon-log-in form-control-feedback"></span> -->
-                    </div>
+                    </div> --}}
 
                     <!--  <div class="form-group">
                             <input type="email" class="form-control" placeholder="Email">

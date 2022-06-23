@@ -159,7 +159,7 @@ $NotifyCnt = count($Notify);
                         <div class="dropdown-divider"></div>
                         <a onclick="viewSingleNotification({{ $single_notification['id'] }})"
                             class="dropdown-item p-2 cursor-pointer single-notification-item">
-                            <i class="fa fa-envelope mr-2"></i> {{ $single_notification['heading'] }}
+                            <i class="fa fa-envelope mr-2"></i> {{!! $single_notification['heading'] !!}}
                             <!-- <span class="float-right text-muted text-sm">3 mins</span> -->
                         </a>
                     @endforeach

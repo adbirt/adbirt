@@ -1,1 +1,0 @@
-[19-Apr-2022 23:07:08 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/customer/www/adbirt.com/public_html/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/AbstractSmtpTransport.php on line 399

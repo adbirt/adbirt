@@ -863,6 +863,8 @@ class campaignsController extends Controller
                             ->where('isDeleted', 'No')
                             ->limit(3)->get();
 
+                            $has_similar_campaigns = count($similar_campaigns) > 0;
+
                     ?>
                         <!-- Begin: Adbirt Native Ads recommendation -->
                         <div id="<?php echo $rand_id; ?>" class="adbirt-native-recommendations ubm_banner">
@@ -957,13 +959,13 @@ class campaignsController extends Controller
 
                                 @media (min-width: 250px) {
                                     .adbirt-single-recommendation-wrapper {
-                                        width: 50%;
+                                        width: <?php echo $has_similar_campaigns ? '50%' : '100%'; ?>;
                                     }
                                 }
 
                                 @media (min-width: 600px) {
                                     .adbirt-single-recommendation-wrapper {
-                                        width: 25%;
+                                        width: <?php echo $has_similar_campaigns ? '25%' : '100%'; ?>;
                                     }
 
                                     .adbirt-native-recommendations-header {

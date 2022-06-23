@@ -914,6 +914,7 @@ class campaignsController extends Controller
                                 .adbirt-native-recommendations-footer {
                                     padding: 8px;
                                     /* border-top: 1px solid #000; */
+                                    margin-bottom: 8px;
                                 }
 
                                 .adbirt-single-recommendation-title {

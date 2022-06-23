@@ -813,7 +813,7 @@ class campaignsController extends Controller
                                 #<?php echo $rand_id; ?>>.content>.banner-title {
                                     text-overflow: ellipsis;
                                     font-size: 18px;
-                                    padding: 4px;
+                                    padding: 8px;
                                     padding-bottom: 10px;
                                     color: #fff !important;
                                 }

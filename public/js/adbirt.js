@@ -63,15 +63,11 @@
                     const req_url_encoded = encodeURIComponent(newUrl.toString());
 
                     const res = await fetch(`https://adbirt.com/api/check-if-url-is-valid-campaign?url_in_question=${req_url_encoded}&url_type=${mode}&code=${this.camp_code}`);
-                    console.log(`Response for ${mode} is: `, res);
                     const json = await res.json();
-                    console.log(`json for ${mode}: `, json);
 
                     const is_valid = json['is_valid'];
-                    console.log(is_valid);
 
                     if (is_valid) {
-                        console.log(`${mode} is valid`);
                         this.actionMap(mode, json['campaign']);
                     } else {
                         // not a campaign page
@@ -83,7 +79,6 @@
         }
 
         async actionMap(mode) {
-            console.log(`adbirt action map ${mode}`);
             const map = {
                 'landing': async () => await this.redirectFormSubmitInit(),
                 'success': async () => await this.redirectFormSubmit()
@@ -103,7 +98,6 @@
             if (this.isCampaignPage) {
                 try {
                     window.localStorage.setItem(this.#storageKey, this.camp_code);
-                    console.log('adbirt campaign init');
                 } catch (error) {
                     console.error(error);
                 }
@@ -124,11 +118,9 @@
                     try {
                         const res = await this.makeApiCall(formUrlParams, 'Campaign Consumed');
                         window.localStorage.removeItem(this.#storageKey);
-                        console.log('adbirt campaign submit');
 
                         return res;
                     } catch (err) {
-                        console.log(err);
                         // window.localStorage.removeItem('camp_code');
                         // if request failed, dont charge teh advertiser, just return
                         return err;
@@ -191,7 +183,6 @@
                 });
 
                 const json = await res.json();
-                console.log(json);
 
                 return json;
             } catch (error) {
@@ -210,7 +201,7 @@
      * Kickstart the script
      */
     try {
-        console.log('Kickstart');
+        // console.log('Kickstart');
         const AB = new AdbirtAdvertiser;
 
         if (window.AB) {

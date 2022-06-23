@@ -35,8 +35,8 @@ class UserRequest extends Request
             'password'              => 'required|confirmed',
             'password_confirmation' => 'required',
             // 'birthday'              => 'required',
-            'country'               => 'required',
-            'address'               => 'required',
+            // 'country'               => 'required',
+            // 'address'               => 'required',
             'agree'                 => 'accepted'
         ];
     }

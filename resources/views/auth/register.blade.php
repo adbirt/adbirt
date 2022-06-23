@@ -110,10 +110,7 @@
                         {!! Form::text('birthday', null, ['class' => 'form-control birthday-picker', 'placeholder' => 'Birthday', 'id' => 'birthday', 'data-relmax' => '-18']) !!}
                     </div> --}}
 
-                    <div class="form-group has-feedback">
-                        <!-- <input type="select" id="country"> -->
-                        {{-- <label for="country">Country</label> --}}
-                        <br />
+                    <div class="form-group">
                         {!! Form::text('country', '', ['class' => 'form-control', 'id' => 'country', 'placeholder' => 'Country']) !!}
                     </div>
 
@@ -121,21 +118,6 @@
                         {{-- <label for="city">City</label> --}}
                         {!! Form::text('city', null, ['class' => 'form-control', 'id' => 'city', 'placeholder' => 'City']) !!}
                     </div>
-
-                    {{-- <div class="form-group has-feedback">
-                        {!! Form::text('address', null, ['class' => 'form-control', 'id' => 'address', 'placeholder' => 'Street N.O, Area']) !!}
-                        <!-- <span class="glyphicon glyphicon-log-in form-control-feedback"></span> -->
-                    </div> --}}
-
-                    <!--  <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Password">
-                            </div>
-                            <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Confirm Password">
-                            </div> -->
 
                     <div class="form-group has-feedback">
                         <label class="c-input c-checkbox">
@@ -147,7 +129,7 @@
                         </label>
                     </div>
 
-                      <!-- <p class="center">
+                    <!-- <p class="center">
                         <button type="submit" class="btn btn-primary btn-rounded btn-block">Sign Up</button>
                         </p> -->
                     <div class="form-group">

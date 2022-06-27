@@ -307,15 +307,15 @@ body {
 }
 
 h1 {
-  font-weight: 700;
-  font-size: 174px;
-  color: #fff;
-  opacity: 0.5;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -1;
+  font-weight: 700 !important;
+  font-size: 174px !important;
+  color: #fff !important;
+  opacity: 0.5 !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: -1 !important;
   text-align: center !important;
 }
 

@@ -337,7 +337,7 @@ h1 {
 }
 
 .sign-up-content {
-  padding: 40px 60px 32px 60px;
+  padding: 40px 30px 32px 30px;
   position: relative;
   z-index: 99;
 }
@@ -491,7 +491,6 @@ input[type="checkbox"]:not(old) + label {
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 30px white inset;
 }
-
 
 body > div > h1 {
   position: absolute;

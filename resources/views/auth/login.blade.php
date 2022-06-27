@@ -23,6 +23,54 @@
 
 <body>
 
+    <!-- Forgot password Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+
+        <div class="modal-dialog" role="document">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+                        <span aria-hidden="true">&times;</span>
+
+                    </button>
+
+                    <h4 class="modal-title text-primary-color" id="myModalLabel">Forgot Password?</h4>
+
+                </div>
+
+                <div class="modal-body">
+
+                    {{-- <p>Enter your e-mail/phone below to reset your password.</p> --}}
+                    <p>Enter your e-mail below to reset your password.</p>
+
+                    {!! Form::open(['route' => 'reset-password', 'method' => 'post']) !!}
+
+                    {{-- {!! Form::text('email', '', ['class' => 'form-control placeholder-no-fix', 'placeholder' => 'Email/Phone', 'autocomplete' => 'off']) !!} --}}
+                    {!! Form::text('email', '', ['class' => 'form-control placeholder-no-fix', 'placeholder' => 'Email', 'autocomplete' => 'on', 'style' => 'border: .1px solid var(--theme-color);']) !!}
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-danger btn-rounded" data-dismiss="modal">Cancel</button>
+
+                    {!! Form::submit('Submit', ['class' => 'btn btn-danger bg-primary-color btn-rounded']) !!}
+
+                    {!! Form::close() !!}
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
     <div class="main">
 
         <h1>Login</h1>
@@ -47,19 +95,17 @@
                     {!! Form::password('password', ['id' => 'pass', 'type' => 'password']) !!}
                 </div>
 
-                {{-- <div class="form-group">
-                    <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
-                    <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all
-                        statements in <a href="#" class="term-service">Terms of service</a></label>
-                </div> --}}
-
                 <div class="form-textbox">
                     {!! Form::submit('Log in', ['class' => 'submit bg-primary-color']) !!}
                 </div>
                 {!! Form::close() !!}
 
                 <p class="loginhere">
-                    Dont have an account ?<a href="/register" class="loginhere-link text-primary-color">Register</a>
+                    Forgot your password?<a href="#forgotPasswordModal"
+                        class="loginhere-link text-primary-color">Register</a>
+                </p>
+                <p class="loginhere">
+                    Dont have an account?<a href="/register" class="loginhere-link text-primary-color">Register</a>
                 </p>
             </div>
         </div>

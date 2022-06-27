@@ -101,11 +101,10 @@
                 {!! Form::close() !!}
 
                 <p class="loginhere">
-                    Forgot your password?<a href="#forgotPasswordModal"
-                        class="loginhere-link text-primary-color">Register</a>
-                </p>
-                <p class="loginhere">
-                    Dont have an account?<a href="/register" class="loginhere-link text-primary-color">Register</a>
+                    Forgot your password? click <a href="#forgotPasswordModal"
+                        class="loginhere-link text-primary-color">here</a>
+                    <br />
+                    Dont have an account? <a href="/register" class="loginhere-link text-primary-color">Register</a>
                 </p>
             </div>
         </div>

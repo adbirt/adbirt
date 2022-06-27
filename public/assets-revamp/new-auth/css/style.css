@@ -319,6 +319,7 @@ h1 {
 }
 
 .container {
+  z-index: 4;
   width: 520px;
   background: #fff;
   margin: 0 auto;
@@ -495,4 +496,5 @@ body > div > h1 {
   position: absolute;
   top: 0;
   right: 10px;
+  z-index: -1;
 }

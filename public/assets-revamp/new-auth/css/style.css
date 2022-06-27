@@ -470,7 +470,7 @@ input[type="checkbox"]:not(old) + label {
   -ms-border-radius: 5px;
 }
 .submit:hover {
-  background: #0c85d0;
+  background: #5e2409;
 }
 
 .loginhere {

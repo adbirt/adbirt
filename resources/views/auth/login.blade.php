@@ -39,12 +39,12 @@
 
                 <div class="form-textbox">
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" />
+                    {!! Form::text('email', '', ['id' => 'email', 'type' => 'email', 'autofocus' => true]) !!}
                 </div>
 
                 <div class="form-textbox">
                     <label for="pass">Password</label>
-                    <input type="password" name="pass" id="pass" />
+                    {!! Form::password('password', ['id' => 'pass', 'type' => 'password']) !!}
                 </div>
 
 

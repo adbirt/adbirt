@@ -28,7 +28,7 @@
         <div class="container">
             <div class="sign-up-content">
                 <form method="POST" class="signup-form">
-                    <h2 class="form-title">Join Adbirt</h2>
+                    {{-- <h2 class="form-title">Join Adbirt</h2> --}}
                     <style>
                         input[type="email"]{
                             border: 1px solid

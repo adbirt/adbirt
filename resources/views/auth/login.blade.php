@@ -59,7 +59,7 @@
                 {!! Form::close() !!}
 
                 <p class="loginhere">
-                    Dont have an account ?<a href="/register" class="loginhere-link">Register</a>
+                    Dont have an account ?<a href="/register" class="loginhere-link text-primary-color">Register</a>
                 </p>
             </div>
         </div>

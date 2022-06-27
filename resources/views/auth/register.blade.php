@@ -75,7 +75,9 @@
                 {!! Form::close() !!}
 
                 <p class="loginhere">
-                    Already have an account ?<a href="/login" class="loginhere-link"> Log in</a>
+                    Already have an account?<a href="/login" class="loginhere-link"> Log in</a>
+                    <br />
+                    Or, return to <a href="/" class="loginhere-link text-primary-color">home page</a>
                 </p>
             </div>
         </div>

@@ -47,8 +47,6 @@
                     {!! Form::password('password', ['id' => 'pass', 'type' => 'password']) !!}
                 </div>
 
-
-
                 <div class="form-group">
                     <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
                     <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all

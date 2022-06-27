@@ -70,11 +70,11 @@
                         <span><span></span></span>I agree all statements in
                         <a href="/terms" class="text-primary-color">Terms of service</a> and <a href="/privacy"
                             class="text-primary-color">privacy policy</a>
-                        </label>
+                    </label>
                 </div>
 
                 <div class="form-textbox">
-                    <input type="submit" name="submit" id="submit" class="submit" value="Create account" />
+                    {!! Form::submit('Create account', ['class' => 'submit bg-primary-color']) !!}
                 </div>
                 {!! Form::close() !!}
 

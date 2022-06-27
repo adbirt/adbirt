@@ -10,10 +10,10 @@
     <title>Signup</title>
 
     <!-- Font Icon -->
-    <link rel="stylesheet" href="/public/assets-revamp/css/new-auth/fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="/public/assets-revamp/new-auth/fonts/material-icon/css/material-design-iconic-font.min.css">
 
     <!-- Main css -->
-    <link rel="stylesheet" href="/public/assets-revamp/css/new-auth/css/style.css">
+    <link rel="stylesheet" href="/public/assets-revamp/new-auth/css/style.css">
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="/public/assets-revamp/css/style.css">
@@ -80,8 +80,8 @@
     </div>
 
         <!-- JS -->
-        <script src="/public/assets-revamp/css/new-auth/vendor/jquery/jquery.min.js"></script>
-        <script src="/public/assets-revamp/css/new-auth/js/main.js"></script>
+        <script src="/public/assets-revamp/new-auth/vendor/jquery/jquery.min.js"></script>
+        <script src="/public/assets-revamp/new-auth/js/main.js"></script>
 
 </body>
 

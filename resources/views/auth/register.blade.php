@@ -49,12 +49,17 @@
 
                 <div class="form-textbox">
                     <label for="name">Full name</label>
-                    <input type="text" name="name" id="name" />
+                    {!! Form::text('name', '', ['id' => 'name']) !!}
                 </div>
 
                 <div class="form-textbox">
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" />
+                    {!! Form::text('email', '', ['type' => 'email', 'id' => 'email', 'autofocus' => true]) !!}
+                </div>
+
+                <div class="form-textbox">
+                    <label for="tel">Phone</label>
+                    {!! Form::tel('phone', '', ['id' => 'tel']) !!}
                 </div>
 
                 <div class="form-textbox">

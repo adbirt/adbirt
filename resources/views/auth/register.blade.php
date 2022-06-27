@@ -68,8 +68,8 @@
                     <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
                     <label for="agree-term" class="label-agree-term">
                         <span><span></span></span>I agree all statements in
-                        <a href="/terms" class="text-primary-color">Terms of service</a> and <a href="/privacy"
-                            class="text-primary-color">privacy policy</a>
+                        <a href="/terms" class="text-primary-color" target="_blank">Terms of service</a> and <a
+                            href="/privacy" class="text-primary-color" target="_blank">privacy policy</a>
                     </label>
                 </div>
 

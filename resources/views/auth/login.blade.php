@@ -28,36 +28,37 @@
         <h1>Login</h1>
         <div class="container">
             <div class="sign-up-content">
-                <form method="POST" class="signup-form">
-                    <h2 class="form-title">Welcome back</h2>
-                    <style>
-                        input[type="email"] {
-                            border: 1px solid
-                        }
-                    </style>
+                {!! Form::open(['route' => 'login', 'method' => 'post', 'class' => 'signup-form']) !!}
+                @include('includes.alert')
+                <h2 class="form-title">Welcome back</h2>
+                <style>
+                    input[type="email"] {
+                        border: 1px solid
+                    }
+                </style>
 
-                    <div class="form-textbox">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" />
-                    </div>
+                <div class="form-textbox">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" />
+                </div>
 
-                    <div class="form-textbox">
-                        <label for="pass">Password</label>
-                        <input type="password" name="pass" id="pass" />
-                    </div>
+                <div class="form-textbox">
+                    <label for="pass">Password</label>
+                    <input type="password" name="pass" id="pass" />
+                </div>
 
 
 
-                    <div class="form-group">
-                        <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
-                        <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all
-                            statements in <a href="#" class="term-service">Terms of service</a></label>
-                    </div>
+                <div class="form-group">
+                    <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                    <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all
+                        statements in <a href="#" class="term-service">Terms of service</a></label>
+                </div>
 
-                    <div class="form-textbox">
-                        <input type="submit" name="submit" id="submit" class="submit" value="Create account" />
-                    </div>
-                </form>
+                <div class="form-textbox">
+                    <input type="submit" name="submit" id="submit" class="submit" value="Create account" />
+                </div>
+                {!! Form::close() !!}
 
                 <p class="loginhere">
                     Dont have an account ?<a href="/register" class="loginhere-link">Register</a>

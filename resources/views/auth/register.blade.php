@@ -29,6 +29,7 @@
         <div class="container">
             <div class="sign-up-content">
                 {!! Form::open(['route' => 'user.store', 'method' => 'post', 'id' => 'register', 'class' => 'signup-form']) !!}
+                @include('includes.alert')
                 <h2 class="form-title">What do you want to become ?</h2>
                 <div class="form-radio">
                     <input type="radio" name="member_level" value="newbie" id="newbie" checked="checked" />

@@ -23,9 +23,10 @@
 
 <body>
 
+    <h1 class="text-primary-color">Sign up</h1>
+
     <div class="main">
 
-        <h1>Sign up</h1>
         <div class="container">
             <div class="sign-up-content">
                 {!! Form::open(['route' => 'user.store', 'method' => 'post', 'id' => 'register', 'class' => 'signup-form']) !!}

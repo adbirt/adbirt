@@ -71,7 +71,7 @@
 
     </div>
 
-    <h1>Login</h1>
+    <h1 class="text-primary-color">Login</h1>
 
     <div class="main">
         <div class="container">

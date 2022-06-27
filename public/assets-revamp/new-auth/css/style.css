@@ -307,15 +307,16 @@ body {
 }
 
 h1 {
-  position: absolute;
   font-weight: 700;
   font-size: 174px;
   color: #fff;
   opacity: 0.5;
-  right: 105px;
-  top: 45px;
-  top: -149px;
-  z-index: 9;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  text-align: center !important;
 }
 
 .container {
@@ -490,13 +491,4 @@ input[type="checkbox"]:not(old) + label {
 
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 30px white inset;
-}
-
-body > div > h1 {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -1;
-  text-align: center !important;
 }

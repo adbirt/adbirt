@@ -71,9 +71,9 @@
 
     </div>
 
-    <div class="main">
+    <h1>Login</h1>
 
-        <h1>Login</h1>
+    <div class="main">
         <div class="container">
             <div class="sign-up-content">
                 {!! Form::open(['route' => 'login', 'method' => 'post', 'class' => 'signup-form']) !!}

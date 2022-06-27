@@ -54,7 +54,7 @@
                 </div>
 
                 <div class="form-textbox">
-                    <input type="submit" name="submit" id="submit" class="submit" value="Create account" />
+                    {!! Form::submit('Log in', ['class' => 'submit bg-primary-color']) !!}
                 </div>
                 {!! Form::close() !!}
 

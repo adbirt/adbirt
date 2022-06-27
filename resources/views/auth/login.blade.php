@@ -10,7 +10,8 @@
     <title>Login</title>
 
     <!-- Font Icon -->
-    <link rel="stylesheet" href="/public/assets-revamp/new-auth/fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet"
+        href="/public/assets-revamp/new-auth/fonts/material-icon/css/material-design-iconic-font.min.css">
 
     <!-- Main css -->
     <link rel="stylesheet" href="/public/assets-revamp/new-auth/css/style.css">
@@ -28,9 +29,9 @@
         <div class="container">
             <div class="sign-up-content">
                 <form method="POST" class="signup-form">
-                    {{-- <h2 class="form-title">Join Adbirt</h2> --}}
+                    <h2 class="form-title">Welcome back</h2>
                     <style>
-                        input[type="email"]{
+                        input[type="email"] {
                             border: 1px solid
                         }
                     </style>
@@ -45,11 +46,12 @@
                         <input type="password" name="pass" id="pass" />
                     </div>
 
-                    
-                    
-                 <div class="form-group">
+
+
+                    <div class="form-group">
                         <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
-                        <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                        <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all
+                            statements in <a href="#" class="term-service">Terms of service</a></label>
                     </div>
 
                     <div class="form-textbox">
@@ -58,16 +60,16 @@
                 </form>
 
                 <p class="loginhere">
-                    Already have an account ?<a href="#" class="loginhere-link"> Log in</a>
+                    Dont have an account ?<a href="/register" class="loginhere-link">Register</a>
                 </p>
             </div>
         </div>
 
     </div>
 
-        <!-- JS -->
-        <script src="/public/assets-revamp/new-auth/vendor/jquery/jquery.min.js"></script>
-        <script src="/public/assets-revamp/new-auth/js/main.js"></script>
+    <!-- JS -->
+    <script src="/public/assets-revamp/new-auth/vendor/jquery/jquery.min.js"></script>
+    <script src="/public/assets-revamp/new-auth/js/main.js"></script>
 
 </body>
 

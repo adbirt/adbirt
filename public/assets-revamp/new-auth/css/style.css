@@ -374,9 +374,9 @@ h1 {
   -ms-border-radius: 5px;
 }
 .form-radio input:checked + label {
-  background-color: #1da0f2;
+  background-color: var(--theme-color);
   color: #fff;
-  border-color: #1da0f2;
+  border-color: var(--theme-color);
   z-index: 1;
 }
 .form-radio input:focus + label {

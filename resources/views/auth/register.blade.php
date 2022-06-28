@@ -82,12 +82,12 @@
                 </div>
 
                 <div class="form-group">
-                    <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                    {!! Form::checkbox('agree', 'yes', ['class' => 'form-control form-group']) !!}
                     <label for="agree-term" class="label-agree-term">
                         {{--  --}}
                         <span>
                             <span>
-                                {!! Form::checkbox('agree', 'yes', ['class' => 'form-control form-group']) !!}
+                                {{--  --}}
                             </span>
                         </span>
                         {{--  --}}

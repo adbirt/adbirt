@@ -78,7 +78,7 @@
             <div class="sign-up-content">
                 {!! Form::open(['route' => 'login', 'method' => 'post', 'class' => 'signup-form']) !!}
                 @include('includes.alert')
-                <h2 class="form-title">Welcome back</h2>
+                <p class="form-title">Welcome back</p>
 
                 <div class="form-textbox">
                     <label for="email">Email</label>

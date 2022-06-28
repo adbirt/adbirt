@@ -74,11 +74,13 @@
                 <div class="form-textbox">
                     <label for="country">Country</label>
                     {{-- {!! Form::text('country', ['id' => 'country']) !!} --}}
+                    <input type="text">
                 </div>
 
                 <div class="form-textbox">
                     <label for="city">City</label>
                     {{-- {!! Form::text('city', ['id' => 'city']) !!} --}}
+                    <input type="text">
                 </div>
 
                 <div class="form-group">

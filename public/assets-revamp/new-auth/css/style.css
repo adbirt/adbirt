@@ -496,7 +496,6 @@ input:-webkit-autofill {
 }
 
 input[type="checkbox"] {
-  display: inherit !important;
   appearance: checkbox !important;
   width: 10px !important;
 }

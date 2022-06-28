@@ -73,7 +73,7 @@
 
                 <div class="form-textbox">
                     <label for="country">Country</label>
-                    {{-- {!! Form::text('country', ['id' => 'country']) !!} --}}
+                    {!! Form::text('country', ['id' => 'country']) !!}
                 </div>
 
                 <div class="form-textbox">

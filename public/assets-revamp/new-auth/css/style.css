@@ -433,7 +433,7 @@ input {
   border-right: solid 2px #ebebeb;
 }
 
-input[type="checkbox"]:not(old) {
+.account-type-checkbox input[type="checkbox"]:not(old) {
   width: 2em;
   margin: 0;
   padding: 0;

@@ -495,9 +495,12 @@ input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 30px white inset;
 }
 
-
 input[type="checkbox"] {
   display: inherit !important;
   appearance: checkbox !important;
   width: 10px !important;
+}
+
+.checkbox-container {
+  display: inline-block;
 }

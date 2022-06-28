@@ -81,7 +81,7 @@
                     {!! Form::text('city','', ['id' => 'city']) !!}
                 </div>
 
-                <div class="form-group">
+                <div class="form-group checkbox-container">
                     {!! Form::checkbox('agree', 'yes', ['class' => 'form-control form-group']) !!}
                     <label for="agree-term" class="label-agree-term">
                         {{--  --}}

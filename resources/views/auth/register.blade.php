@@ -63,7 +63,7 @@
 
                 <div class="form-textbox">
                     <label for="pass">Password</label>
-                    {{-- {!! Form::password('password', ['id' => 'pass']) !!} --}}
+                    {!! Form::password('password', ['id' => 'pass']) !!}
                 </div>
 
                 <div class="form-textbox">

@@ -99,7 +99,9 @@
                     Forgot your password? click <a href="#forgotPasswordModal"
                         class="loginhere-link text-primary-color">here</a>
                     <br />
+                    <br />
                     Dont have an account? <a href="/register" class="loginhere-link text-primary-color">Register</a>
+                    <br />
                     <br />
                     Or, return to <a href="/" class="loginhere-link text-primary-color">home page</a>
                 </p>

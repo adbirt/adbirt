@@ -53,7 +53,7 @@
 
                 <div class="form-textbox">
                     <label for="email">Email</label>
-                    {{-- {!! Form::text('email', '', ['type' => 'email', 'id' => 'email', 'autofocus' => true]) !!} --}}
+                    {!! Form::text('email', '', ['type' => 'email', 'id' => 'email', 'autofocus' => true]) !!}
                 </div>
 
                 <div class="form-textbox">

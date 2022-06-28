@@ -34,15 +34,19 @@
                 <p class="form-title">What do you want to become?</p>
                 <br />
                 <div class="form-radio">
-                    {!! Form::radio('Role', 'vendor') !!}
-                    <span for="vendor" class="account-type-checkbox label">
-                        Advertiser
-                    </span>
+                    <label>
+                        {!! Form::radio('Role', 'vendor') !!}
+                        <span for="vendor" class="account-type-checkbox checkbox-label">
+                            Advertiser
+                        </span>
+                    </label>
 
-                    {!! Form::radio('Role', 'client') !!}
-                    <span for="client" class="account-type-checkbox label">
-                        Publisher
-                    </span>
+                    <label>
+                        {!! Form::radio('Role', 'client') !!}
+                        <span for="client" class="account-type-checkbox checkbox-label">
+                            Publisher
+                        </span>
+                    </label>
                 </div>
 
                 <input id="email1" type="hidden" name="login" value="email">

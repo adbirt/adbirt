@@ -33,11 +33,15 @@
                 @include('includes.alert')
                 <h2 class="form-title">What do you want to become ?</h2>
                 <div class="form-radio">
-                    {!! Form::radio('Role', 'vendor') !!}
-                    <label for="vendor">Advertiser</label>
+                    <label for="vendor">
+                        Advertiser
+                        {!! Form::radio('Role', 'vendor', ['id' => 'vendor']) !!}
+                    </label>
 
-                    {!! Form::radio('Role', 'client', ['id' => 'client']) !!}
-                    <label for="client">Publisher</label>
+                    <label for="client">
+                        Publisher
+                        {!! Form::radio('Role', 'client', ['id' => 'client']) !!}
+                    </label>
 
                 </div>
                 <style>

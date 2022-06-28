@@ -79,11 +79,6 @@
                 {!! Form::open(['route' => 'login', 'method' => 'post', 'class' => 'signup-form']) !!}
                 @include('includes.alert')
                 <h2 class="form-title">Welcome back</h2>
-                <style>
-                    input[type="email"] {
-                        border: 1px solid
-                    }
-                </style>
 
                 <div class="form-textbox">
                     <label for="email">Email</label>

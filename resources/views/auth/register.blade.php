@@ -42,55 +42,52 @@
                         Publisher
                         {{-- {!! Form::radio('Role', 'client') !!} --}}
                     </label>
-
                 </div>
-                <style>
-                    input[type="email"] {
-                        border: 1px solid
-                    }
-                </style>
 
                 <input id="email1" type="hidden" name="login" value="email">
 
                 <div class="form-textbox">
                     <label for="name">Full name</label>
-                    {!! Form::text('name', '', ['id' => 'name']) !!}
+                    {{-- {!! Form::text('name', '', ['id' => 'name']) !!} --}}
                 </div>
 
                 <div class="form-textbox">
                     <label for="email">Email</label>
-                    {!! Form::text('email', '', ['type' => 'email', 'id' => 'email', 'autofocus' => true]) !!}
+                    {{-- {!! Form::text('email', '', ['type' => 'email', 'id' => 'email', 'autofocus' => true]) !!} --}}
                 </div>
 
                 <div class="form-textbox">
                     <label for="tel">Phone</label>
-                    {!! Form::tel('phone', '', ['id' => 'tel']) !!}
+                    {{-- {!! Form::tel('phone', '', ['id' => 'tel']) !!} --}}
                 </div>
 
                 <div class="form-textbox">
                     <label for="pass">Password</label>
-                    {!! Form::password('password', ['id' => 'pass']) !!}
+                    {{-- {!! Form::password('password', ['id' => 'pass']) !!} --}}
                 </div>
 
                 <div class="form-textbox">
                     <label for="password_confirmation">Confirm Password</label>
-                    {!! Form::password('password_confirmation', ['id' => 'password_confirmation']) !!}
+                    {{-- {!! Form::password('password_confirmation', ['id' => 'password_confirmation']) !!} --}}
                 </div>
 
                 <div class="form-textbox">
                     <label for="country">Country</label>
-                    {!! Form::text('country', ['id' => 'country']) !!}
+                    {{-- {!! Form::text('country', ['id' => 'country']) !!} --}}
                 </div>
 
                 <div class="form-textbox">
                     <label for="city">City</label>
-                    {!! Form::text('city', ['id' => 'city']) !!}
+                    {{-- {!! Form::text('city', ['id' => 'city']) !!} --}}
                 </div>
 
                 <div class="form-group">
                     <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
                     <label for="agree-term" class="label-agree-term">
-                        <span><span></span></span>
+                        <span>
+                            <span>
+                            </span>
+                        </span>
                         I agree all statements in
                         <a href="/terms" class="text-primary-color" target="_blank">Terms of service</a> and <a
                             href="/privacy" class="text-primary-color" target="_blank">privacy policy</a>

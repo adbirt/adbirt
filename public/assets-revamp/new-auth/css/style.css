@@ -494,3 +494,7 @@ input[type="checkbox"]:not(old) + label {
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 30px white inset;
 }
+
+input[type="email"] {
+  border: 1px solid;
+}

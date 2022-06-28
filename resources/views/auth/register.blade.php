@@ -33,12 +33,11 @@
                 @include('includes.alert')
                 <h2 class="form-title">What do you want to become ?</h2>
                 <div class="form-radio">
-                    <input type="radio" name="member_level" value="newbie" id="newbie" checked="checked" />
-                    <label for="newbie">Advertiser</label>
+                    {!! Form::radio('Role', 'vendor') !!}
+                    <label for="vendor">Advertiser</label>
 
-                    <input type="radio" name="member_level" value="average" id="average" />
-                    <label for="average">Publisher</label>
-
+                    {!! Form::radio('Role', 'client', ['id' => 'client']) !!}
+                    <label for="client">Publisher</label>
 
                 </div>
                 <style>
@@ -64,10 +63,23 @@
 
                 <div class="form-textbox">
                     <label for="pass">Password</label>
-                    <input type="password" name="pass" id="pass" />
+                    {!! Form::password('password', ['id' => 'pass']) !!}
                 </div>
 
+                <div class="form-textbox">
+                    <label for="password_confirmation">Confirm Password</label>
+                    {!! Form::password('password_confirmation', ['id' => 'password_confirmation']) !!}
+                </div>
 
+                <div class="form-textbox">
+                    <label for="country">Country</label>
+                    {!! Form::password('country', ['id' => 'country']) !!}
+                </div>
+
+                <div class="form-textbox">
+                    <label for="city">Country</label>
+                    {!! Form::password('city', ['id' => 'city']) !!}
+                </div>
 
                 <div class="form-group">
                     <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />

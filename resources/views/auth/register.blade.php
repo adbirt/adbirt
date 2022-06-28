@@ -35,7 +35,7 @@
                 <br />
                 <div class="form-radio">
                     <label>
-                        {!! Form::radio('Role', 'vendor') !!}
+                        {!! Form::radio('Role', 'vendor', true) !!}
                         <span for="vendor" class="account-type-checkbox checkbox-label">
                             Advertiser
                         </span>

@@ -48,7 +48,7 @@
 
                 <div class="form-textbox">
                     <label for="name">Full name</label>
-                    {{-- {!! Form::text('name', '', ['id' => 'name']) !!} --}}
+                    {!! Form::text('name', '', ['id' => 'name']) !!}
                 </div>
 
                 <div class="form-textbox">

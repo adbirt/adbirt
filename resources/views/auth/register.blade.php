@@ -58,7 +58,7 @@
 
                 <div class="form-textbox">
                     <label for="tel">Phone</label>
-                    {{-- {!! Form::tel('phone', '', ['id' => 'tel']) !!} --}}
+                    {!! Form::tel('phone', '', ['id' => 'tel']) !!}
                 </div>
 
                 <div class="form-textbox">

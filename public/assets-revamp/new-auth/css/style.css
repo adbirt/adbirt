@@ -494,3 +494,9 @@ input {
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 30px white inset;
 }
+
+
+input[type="checkbox"] {
+  display: inherit !important;
+  appearance: checkbox !important;
+}

@@ -35,12 +35,12 @@
                 <div class="form-radio">
                     <label for="vendor" class="account-type-checkbox">
                         Advertiser
-                        {!! Form::radio('Role', 'vendor', ['id' => 'vendor']) !!}
+                        {!! Form::radio('Role', 'vendor') !!}
                     </label>
 
                     <label for="client" class="account-type-checkbox">
                         Publisher
-                        {!! Form::radio('Role', 'client', ['id' => 'client']) !!}
+                        {!! Form::radio('Role', 'client') !!}
                     </label>
 
                 </div>

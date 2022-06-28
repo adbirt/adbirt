@@ -84,10 +84,13 @@
                 <div class="form-group">
                     <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
                     <label for="agree-term" class="label-agree-term">
+                        {{--  --}}
                         <span>
                             <span>
+                                {!! Form::checkbox('agree', 'yes', ['class' => 'form-control form-group']) !!}
                             </span>
                         </span>
+                        {{--  --}}
                         I agree all statements in
                         <a href="/terms" class="text-primary-color" target="_blank">Terms of service</a> and <a
                             href="/privacy" class="text-primary-color" target="_blank">privacy policy</a>

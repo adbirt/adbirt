@@ -33,14 +33,14 @@
                 @include('includes.alert')
                 <h2 class="form-title">What do you want to become?</h2>
                 <div class="form-radio">
+                    {!! Form::radio('Role', 'vendor') !!}
                     <label for="vendor" class="account-type-checkbox">
                         Advertiser
-                        {!! Form::radio('Role', 'vendor') !!}
                     </label>
 
+                    {!! Form::radio('Role', 'client') !!}
                     <label for="client" class="account-type-checkbox">
                         Publisher
-                        {!! Form::radio('Role', 'client') !!}
                     </label>
                 </div>
 
@@ -73,12 +73,12 @@
 
                 <div class="form-textbox">
                     <label for="country">Country</label>
-                    {!! Form::text('country','', ['id' => 'country']) !!}
+                    {!! Form::text('country', '', ['id' => 'country']) !!}
                 </div>
 
                 <div class="form-textbox">
                     <label for="city">City</label>
-                    {!! Form::text('city','', ['id' => 'city']) !!}
+                    {!! Form::text('city', '', ['id' => 'city']) !!}
                 </div>
 
                 <div class="form-group checkbox-container">

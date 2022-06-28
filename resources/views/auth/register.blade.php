@@ -31,7 +31,7 @@
             <div class="sign-up-content">
                 {!! Form::open(['route' => 'user.store', 'method' => 'post', 'id' => 'register', 'class' => 'signup-form']) !!}
                 @include('includes.alert')
-                <h2 class="form-title">What do you want to become ?</h2>
+                <h2 class="form-title">What do you want to become?</h2>
                 <div class="form-radio">
                     <label for="vendor" class="account-type-checkbox">
                         Advertiser

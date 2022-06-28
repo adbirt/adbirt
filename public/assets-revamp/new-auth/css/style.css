@@ -246,7 +246,7 @@ textarea:focus {
   -ms-box-shadow: none !important;
 }
 
-input[type="checkbox"] {
+.account-type-checkbox {
   appearance: checkbox !important;
   -moz-appearance: checkbox !important;
   -webkit-appearance: checkbox !important;
@@ -433,7 +433,7 @@ input {
   border-right: solid 2px #ebebeb;
 }
 
-input[type="checkbox"]:not(old) {
+.account-type-checkbox:not(old) {
   width: 2em;
   margin: 0;
   padding: 0;
@@ -441,7 +441,7 @@ input[type="checkbox"]:not(old) {
   display: none;
 }
 
-input[type="checkbox"]:not(old) + label {
+.account-type-checkbox:not(old) + label {
   display: inline-block;
   margin-top: 27px;
   margin-bottom: 45px;

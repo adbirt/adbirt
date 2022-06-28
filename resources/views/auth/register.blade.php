@@ -77,7 +77,7 @@
                 </div>
 
                 <div class="form-textbox">
-                    <label for="city">Country</label>
+                    <label for="city">City</label>
                     {!! Form::password('city', ['id' => 'city']) !!}
                 </div>
 

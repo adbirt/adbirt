@@ -501,6 +501,6 @@ input[type="checkbox"] {
   width: 10px !important;
 }
 
-.checkbox-container {
-  display: inline-block;
+.checkbox-container * {
+  display: inline !important;
 }

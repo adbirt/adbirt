@@ -306,7 +306,7 @@ body {
   position: relative;
 }
 
-h1 {
+/* h1 {
   font-weight: 700 !important;
   font-size: 174px !important;
   color: #fff !important;
@@ -317,7 +317,7 @@ h1 {
   transform: translateX(-50%) !important;
   z-index: -1 !important;
   text-align: center !important;
-}
+} */
 
 .container {
   z-index: 4;
@@ -373,6 +373,7 @@ h1 {
   -o-border-radius: 5px;
   -ms-border-radius: 5px;
 }
+
 .form-radio input:checked + label {
   background-color: var(--theme-color);
   color: #fff;

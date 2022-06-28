@@ -23,7 +23,7 @@
 
 <body>
 
-    <h1 class="text-primary-color">Sign up</h1>
+    {{-- <h1 class="text-primary-color">Sign up</h1> --}}
 
     <div class="main">
 
@@ -63,16 +63,6 @@
                 </div>
 
                 <div class="form-textbox">
-                    <label for="pass">Password</label>
-                    {!! Form::password('password', ['id' => 'pass']) !!}
-                </div>
-
-                <div class="form-textbox">
-                    <label for="password_confirmation">Confirm Password</label>
-                    {!! Form::password('password_confirmation', ['id' => 'password_confirmation']) !!}
-                </div>
-
-                <div class="form-textbox">
                     <label for="country">Country</label>
                     {!! Form::text('country', '', ['id' => 'country']) !!}
                 </div>
@@ -80,6 +70,16 @@
                 <div class="form-textbox">
                     <label for="city">City</label>
                     {!! Form::text('city', '', ['id' => 'city']) !!}
+                </div>
+
+                <div class="form-textbox">
+                    <label for="pass">Password</label>
+                    {!! Form::password('password', ['id' => 'pass']) !!}
+                </div>
+
+                <div class="form-textbox">
+                    <label for="password_confirmation">Confirm Password</label>
+                    {!! Form::password('password_confirmation', ['id' => 'password_confirmation']) !!}
                 </div>
 
                 <div class="form-group checkbox-container">

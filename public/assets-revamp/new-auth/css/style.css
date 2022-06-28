@@ -373,15 +373,17 @@ h1 {
   -o-border-radius: 5px;
   -ms-border-radius: 5px;
 }
-.form-radio label:has(input:checked) {
+.form-radio input:checked + label {
   background-color: var(--theme-color);
   color: #fff;
   border-color: var(--theme-color);
   z-index: 1;
 }
+
 .form-radio input:focus + label {
   outline: none;
 }
+
 .form-radio input:hover {
   background-color: #1da0f2;
   color: #fff;

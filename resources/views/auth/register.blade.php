@@ -50,6 +50,8 @@
                     }
                 </style>
 
+                <input id="email1" type="hidden" name="login" value="email">
+
                 <div class="form-textbox">
                     <label for="name">Full name</label>
                     {!! Form::text('name', '', ['id' => 'name']) !!}
@@ -88,7 +90,9 @@
                 <div class="form-group">
                     <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
                     <label for="agree-term" class="label-agree-term">
-                        <span><span></span></span>I agree all statements in
+                        <span><span></span></span>
+                        {!! Form::checkbox('agree', 'yes', ['class' => 'form-control form-group']) !!}
+                        I agree all statements in
                         <a href="/terms" class="text-primary-color" target="_blank">Terms of service</a> and <a
                             href="/privacy" class="text-primary-color" target="_blank">privacy policy</a>
                     </label>

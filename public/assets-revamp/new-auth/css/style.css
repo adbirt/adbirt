@@ -246,13 +246,13 @@ textarea:focus {
   -ms-box-shadow: none !important;
 }
 
-input[type="checkbox"] {
+/* input[type="checkbox"] {
   appearance: checkbox !important;
   -moz-appearance: checkbox !important;
   -webkit-appearance: checkbox !important;
   -o-appearance: checkbox !important;
   -ms-appearance: checkbox !important;
-}
+} */
 
 input[type="radio"] {
   appearance: radio !important;
@@ -433,19 +433,19 @@ input {
   border-right: solid 2px #ebebeb;
 }
 
-.account-type-checkbox input[type="checkbox"]:not(old) {
+/* input[type="checkbox"]:not(old) {
   width: 2em;
   margin: 0;
   padding: 0;
   font-size: 1em;
   display: none;
-}
+} */
 
-input[type="checkbox"]:not(old) + label {
+/* input[type="checkbox"]:not(old) + label {
   display: inline-block;
   margin-top: 27px;
   margin-bottom: 45px;
-}
+} */
 
 .label-agree-term {
   color: #888;

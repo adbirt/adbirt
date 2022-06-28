@@ -373,7 +373,7 @@ h1 {
   -o-border-radius: 5px;
   -ms-border-radius: 5px;
 }
-.form-radio input:checked + label {
+.form-radio label:has(input:checked) {
   background-color: var(--theme-color);
   color: #fff;
   border-color: var(--theme-color);

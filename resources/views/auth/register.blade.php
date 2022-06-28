@@ -68,7 +68,7 @@
 
                 <div class="form-textbox">
                     <label for="password_confirmation">Confirm Password</label>
-                    {{-- {!! Form::password('password_confirmation', ['id' => 'password_confirmation']) !!} --}}
+                    {!! Form::password('password_confirmation', ['id' => 'password_confirmation']) !!}
                 </div>
 
                 <div class="form-textbox">

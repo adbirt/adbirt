@@ -353,7 +353,7 @@ body {
   position: absolute;
   left: -9999px;
 }
-.form-radio input + label {
+.form-radio input + .label {
   margin: 0 8px;
   padding: 11px 31px;
   box-sizing: border-box;
@@ -374,14 +374,14 @@ body {
   -ms-border-radius: 5px;
 }
 
-.form-radio input:checked + label {
+.form-radio input:checked + .label {
   background-color: var(--theme-color);
   color: #fff;
   border-color: var(--theme-color);
   z-index: 1;
 }
 
-.form-radio input:focus + label {
+.form-radio input:focus + .label {
   outline: none;
 }
 
@@ -404,7 +404,7 @@ input {
 .form-textbox {
   position: relative;
 }
-.form-textbox label {
+.form-textbox .label {
   position: absolute;
   left: 28px;
   top: 50%;

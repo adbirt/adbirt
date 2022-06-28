@@ -35,14 +35,14 @@
                 <br />
                 <div class="form-radio">
                     {!! Form::radio('Role', 'vendor') !!}
-                    <label for="vendor" class="account-type-checkbox">
+                    <span for="vendor" class="account-type-checkbox label">
                         Advertiser
-                    </label>
+                    </span>
 
                     {!! Form::radio('Role', 'client') !!}
-                    <label for="client" class="account-type-checkbox">
+                    <span for="client" class="account-type-checkbox label">
                         Publisher
-                    </label>
+                    </span>
                 </div>
 
                 <input id="email1" type="hidden" name="login" value="email">

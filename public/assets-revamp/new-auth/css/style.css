@@ -498,7 +498,8 @@ input:-webkit-autofill {
 
 input[type="checkbox"] {
   appearance: checkbox !important;
-  width: 10px !important;
+  width: 20px !important;
+  height: 15px !important;
 }
 
 .checkbox-container * {

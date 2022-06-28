@@ -78,7 +78,7 @@
 
                 <div class="form-textbox">
                     <label for="city">City</label>
-                    {!! Form::text('city', ['id' => 'city']) !!}
+                    {{-- {!! Form::text('city', ['id' => 'city']) !!} --}}
                 </div>
 
                 <div class="form-group">

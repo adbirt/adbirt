@@ -79,12 +79,12 @@
 
                 <div class="form-textbox">
                     <label for="country">Country</label>
-                    {!! Form::password('country', ['id' => 'country']) !!}
+                    {!! Form::text('country', ['id' => 'country']) !!}
                 </div>
 
                 <div class="form-textbox">
                     <label for="city">City</label>
-                    {!! Form::password('city', ['id' => 'city']) !!}
+                    {!! Form::text('city', ['id' => 'city']) !!}
                 </div>
 
                 <div class="form-group">

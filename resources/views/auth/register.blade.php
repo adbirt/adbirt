@@ -126,6 +126,8 @@
 
     </div>
 
+    {{ countries }}
+
     <!-- JS -->
     <script src="/public/assets-revamp/new-auth/vendor/jquery/jquery.min.js"></script>
     <script src="/public/assets-revamp/new-auth/js/main.js"></script>

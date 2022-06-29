@@ -37,8 +37,23 @@ class UsersController extends Controller
      */
     public function create()
     {
+
+        $countries_url = "https://reqbin.com/echo";
+
+        $curl = curl_init($countries_url);
+        curl_setopt($curl, CURLOPT_URL, $countries_url);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+
+        //for debug only!
+        curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
+        curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+
+        $resp = curl_exec($curl);
+        curl_close($curl);
+        $countries = $resp;
+
         return view('auth.register')
-            ->with('title', 'Register');
+            ->with('title', 'Register')->with('countries', $countries);
     }
 
     /**

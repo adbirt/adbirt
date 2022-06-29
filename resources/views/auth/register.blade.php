@@ -26,7 +26,7 @@
 
     {!! Html::script('countryselect/js/countrySelect.min.js') !!}
 
-    {!! Html::script('countryselect/js/countrySelect.min.js') !!}
+    {!! Html::style('countryselect/css/countrySelect.css') !!}
 
     <script>
         $("#country").countrySelect();

@@ -400,6 +400,7 @@ input {
   font-size: 14px;
   font-family: Poppins;
   padding: 16px 30px 16px 140px;
+  margin-bottom: 14px;
 }
 
 .form-textbox {

@@ -14,9 +14,8 @@
     {!! Html::style('countryselect/css/countrySelect.css') !!}
     {{-- {!! Html::style('plugins/datepicker/datepicker3.css') !!} --}}
     <!--<style>
-.iti-flag {background-image: url("/public/countryselect/img/flags.png");}
-</style>-->
-
+    .iti-flag {background-image: url("/public/countryselect/img/flags.png");}
+    </style>-->
 
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 

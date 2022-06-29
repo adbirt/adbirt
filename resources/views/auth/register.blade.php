@@ -16,6 +16,42 @@
     <!-- Main css -->
     <link rel="stylesheet" href="/public/assets-revamp/new-auth/css/style.css">
 
+    {!! Html::script('dist/vendor/jquery.min.js') !!}
+    <!--<script src="https://adbirt.com/public/assets/js/advertiser5.js"></script>	-->
+
+    {!! Html::script('dist/vendor/tether.min.js') !!}
+    {!! Html::script('bootstrap/js/bootstrap.min.js') !!}
+
+    {!! Html::script('tel/build/js/intlTelInput.js') !!}
+
+    {!! Html::script('countryselect/js/countrySelect.min.js') !!}
+
+    {!! Html::script('countryselect/js/countrySelect.min.js') !!}
+
+    <script>
+        $("#country").countrySelect();
+
+        var countryData = $.fn.intlTelInput.getCountryData(),
+            telInput = $("#tel"),
+
+            addressDropdown = $("#country");
+
+        $.each(countryData, function(i, country) {
+            country.name = country.name.replace(/.+\((.+)\)/, "$1");
+        });
+        telInput.intlTelInput({
+            utilsScript: "tel/build/js/utils.js",
+            autoHideDialCode: false,
+            autoPlaceholder: false, // just for formatting/placeholders etc
+        });
+    </script>
+
+    <style>
+        .iti-flag {
+            background-image: url("/public/countryselect/img/flags.png");
+        }
+    </style>
+
     <!-- Style CSS -->
     <link rel="stylesheet" href="/public/assets-revamp/css/style.css">
 

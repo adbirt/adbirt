@@ -354,6 +354,7 @@ body {
   left: -9999px;
 }
 .form-radio input + .checkbox-label {
+  cursor: pointer;
   margin: 0 8px;
   padding: 11px 31px;
   box-sizing: border-box;

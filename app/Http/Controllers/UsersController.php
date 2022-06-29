@@ -60,7 +60,7 @@ class UsersController extends Controller
         // $user->birthday = $data['birthday'];
         $user->country = $data['country'];
         $user->city = $data['city'];
-        $user->address = $data['address'];
+        // $user->address = $data['address'];
 
         $saved = $user->save();
 

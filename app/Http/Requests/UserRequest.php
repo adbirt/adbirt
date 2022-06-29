@@ -28,16 +28,16 @@ class UserRequest extends Request
         $this->replace($input);
 
         return [
-            'name'                  => 'required',
-            'login'                 => 'required|in:phone,email',
-            'email'                 => 'required_if:login,email|unique:users,email',
-            'phone'                 => 'required_if:login,phone|numeric|unique:users,phone',
-            'password'              => 'required|confirmed',
+            'name' => 'required',
+            'login' => 'required|in:phone,email',
+            'email' => 'required_if:login,email|unique:users,email',
+            'phone' => 'required_if:login,phone|numeric|unique:users,phone',
+            'password' => 'required|confirmed',
             'password_confirmation' => 'required',
             // 'birthday'              => 'required',
             // 'country'               => 'required',
             // 'address'               => 'required',
-            'agree'                 => 'accepted'
+            'agree' => 'accepted',
         ];
     }
 

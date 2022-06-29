@@ -136,8 +136,6 @@
     {!! Html::script('bootstrap/js/bootstrap.min.js') !!}
     {!! Html::script('tel/build/js/intlTelInput.js') !!}
 
-    <script src="/public/assets-revamp/new-auth/json/countries-states-cities.js"></script>
-
     {!! Html::script('countryselect/js/countrySelect.min.js') !!}
 
     <script>

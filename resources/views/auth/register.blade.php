@@ -133,24 +133,13 @@
     {!! Html::script('dist/vendor/tether.min.js') !!}
     {!! Html::script('bootstrap/js/bootstrap.min.js') !!}
     {!! Html::script('tel/build/js/intlTelInput.js') !!}
+
+    <script src="/public/assets-revamp/new-auth/json/countries-states-cities.js"></script>
+
     {!! Html::script('countryselect/js/countrySelect.min.js') !!}
 
     <script>
         $("#country").countrySelect();
-
-        var countryData = $.fn.intlTelInput.getCountryData(),
-            telInput = $("#tel"),
-
-            addressDropdown = $("#country");
-
-        $.each(countryData, function(i, country) {
-            country.name = country.name.replace(/.+\((.+)\)/, "$1");
-        });
-        telInput.intlTelInput({
-            utilsScript: "tel/build/js/utils.js",
-            autoHideDialCode: false,
-            autoPlaceholder: false, // just for formatting/placeholders etc
-        });
     </script>
 
 </body>

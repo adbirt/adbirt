@@ -37,7 +37,6 @@ class UsersController extends Controller
      */
     public function create()
     {
-
         $countries_url = "/public/assets-revamp/new-auth/json/countries-states-cities.json";
 
         $curl = curl_init($countries_url);

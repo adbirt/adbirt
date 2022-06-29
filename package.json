@@ -16,7 +16,7 @@
   },
   "scripts": {
     "test": "echo \"No test\" && exit o",
-    "deploy": "git add . && git commit -m '_' && git push -u origin master && exit 0"
+    "sync": "git add . && git commit -m '_' && git pull && git add . && git commit -m '_' && git push -u origin master && exit 0"
   },
   "repository": {
     "type": "git",

@@ -16,7 +16,6 @@
     <!-- Main css -->
     <link rel="stylesheet" href="/public/assets-revamp/new-auth/css/style.css">
 
-    {!! Html::script('dist/vendor/jquery.min.js') !!}
     <!--<script src="https://adbirt.com/public/assets/js/advertiser5.js"></script>	-->
 
     {!! Html::script('dist/vendor/tether.min.js') !!}
@@ -27,24 +26,6 @@
     {!! Html::script('countryselect/js/countrySelect.min.js') !!}
 
     {!! Html::style('countryselect/css/countrySelect.css') !!}
-
-    <script>
-        $("#country").countrySelect();
-
-        var countryData = $.fn.intlTelInput.getCountryData(),
-            telInput = $("#tel"),
-
-            addressDropdown = $("#country");
-
-        $.each(countryData, function(i, country) {
-            country.name = country.name.replace(/.+\((.+)\)/, "$1");
-        });
-        telInput.intlTelInput({
-            utilsScript: "tel/build/js/utils.js",
-            autoHideDialCode: false,
-            autoPlaceholder: false, // just for formatting/placeholders etc
-        });
-    </script>
 
     <style>
         .iti-flag {
@@ -157,6 +138,24 @@
     <!-- JS -->
     <script src="/public/assets-revamp/new-auth/vendor/jquery/jquery.min.js"></script>
     <script src="/public/assets-revamp/new-auth/js/main.js"></script>
+
+    <script>
+        $("#country").countrySelect();
+
+        var countryData = $.fn.intlTelInput.getCountryData(),
+            telInput = $("#tel"),
+
+            addressDropdown = $("#country");
+
+        $.each(countryData, function(i, country) {
+            country.name = country.name.replace(/.+\((.+)\)/, "$1");
+        });
+        telInput.intlTelInput({
+            utilsScript: "tel/build/js/utils.js",
+            autoHideDialCode: false,
+            autoPlaceholder: false, // just for formatting/placeholders etc
+        });
+    </script>
 
 </body>
 

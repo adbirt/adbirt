@@ -52,8 +52,8 @@ class UsersController extends Controller
         curl_close($curl);
         $countries = $resp;
 
-        return view('auth.register')
-            ->with('title', 'Register')->with('countries', $countries);
+        return view('auth.register', ['countries' => $countries])
+            ->with('title', 'Register');
     }
 
     /**

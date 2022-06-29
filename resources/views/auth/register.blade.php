@@ -16,15 +16,6 @@
     <!-- Main css -->
     <link rel="stylesheet" href="/public/assets-revamp/new-auth/css/style.css">
 
-    <!--<script src="https://adbirt.com/public/assets/js/advertiser5.js"></script>	-->
-
-    {!! Html::script('dist/vendor/tether.min.js') !!}
-    {!! Html::script('bootstrap/js/bootstrap.min.js') !!}
-
-    {!! Html::script('tel/build/js/intlTelInput.js') !!}
-
-    {!! Html::script('countryselect/js/countrySelect.min.js') !!}
-
     {!! Html::style('countryselect/css/countrySelect.css') !!}
 
     <style>
@@ -138,6 +129,11 @@
     <!-- JS -->
     <script src="/public/assets-revamp/new-auth/vendor/jquery/jquery.min.js"></script>
     <script src="/public/assets-revamp/new-auth/js/main.js"></script>
+
+    {!! Html::script('dist/vendor/tether.min.js') !!}
+    {!! Html::script('bootstrap/js/bootstrap.min.js') !!}
+    {!! Html::script('tel/build/js/intlTelInput.js') !!}
+    {!! Html::script('countryselect/js/countrySelect.min.js') !!}
 
     <script>
         $("#country").countrySelect();

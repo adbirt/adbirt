@@ -126,7 +126,7 @@
 
     </div>
 
-    {{ countries }}
+    {{ $countries }}
 
     <!-- JS -->
     <script src="/public/assets-revamp/new-auth/vendor/jquery/jquery.min.js"></script>

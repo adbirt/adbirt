@@ -17,10 +17,10 @@
   "scripts": {
     "test": "echo \"No test\" && exit o",
     "git-add": "git add .",
-    "commit": "git commit -m '_'",
+    "git-commit": "git commit -m '_'",
     "push": "git push -u origin master",
     "pull": "git pull",
-    "sync": "npm run git-add && npm run commit && npm run pull && npm run git-add && npm run commit && npm run push && exit 0"
+    "sync": "npm run git-add && npm run git-commit && npm run pull && npm run git-add && npm run git-commit && npm run push && exit 0"
   },
   "repository": {
     "type": "git",

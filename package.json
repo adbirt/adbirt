@@ -16,7 +16,11 @@
   },
   "scripts": {
     "test": "echo \"No test\" && exit o",
-    "sync": "git add . && git commit -m '_' && git pull && git add . && git commit -m '_' && git push -u origin master && exit 0"
+    "git-add": "git add .",
+    "commit": "git commit -m '_'",
+    "push": "git push -u origin master",
+    "pull": "git pull",
+    "sync": "npm run git-add && npm run commit && npm run pull && npm run git-add && npm run commit && npm run push && exit 0"
   },
   "repository": {
     "type": "git",

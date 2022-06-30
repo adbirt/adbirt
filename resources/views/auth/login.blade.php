@@ -97,7 +97,7 @@
                 {!! Form::close() !!}
 
                 <p class="loginhere">
-                    Forgot your password? click <a href="#forgotPasswordModal"
+                    Forgot your password? click <a data-toggle="modal" href="#forgotPasswordModal"
                         class="loginhere-link text-primary-color">here</a>
                     <br />
                     <br />

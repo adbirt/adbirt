@@ -9,8 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Login</title>
 
-    {{--  --}}
-
     <!-- Font Awesome -->
     {!! Html::style('https://fonts.googleapis.com/icon?family=Material+Icons') !!}
 
@@ -19,8 +17,6 @@
 
     <!-- Theme style -->
     {!! Html::style('dist/css/style.min.css') !!}
-
-    {{--  --}}
 
     <!-- Font Icon -->
     <link rel="stylesheet"
@@ -70,7 +66,7 @@
 
                 <div class="modal-footer">
 
-                    <button type="button" class="btn btn-danger btn-rounded btn-block" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-danger btn-rounded" data-dismiss="modal">Cancel</button>
 
                     {!! Form::submit('Submit', ['class' => 'btn btn-danger bg-primary-color btn-rounded']) !!}
 

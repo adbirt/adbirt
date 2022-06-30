@@ -65,6 +65,7 @@ class UsersController extends Controller
         return view('auth.register', [
             'countries' => $countries,
             'mapped_countries' => $mapped_countries,
+            'mapped_phone_codes' => $mapped_phone_codes,
         ])
             ->with('title', 'Register');
     }

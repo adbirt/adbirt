@@ -49,12 +49,12 @@ class UsersController extends Controller
 
         $resp = curl_exec($curl);
         curl_close($curl);
-        $countries = json_decode($resp);
+        $countries = json_decode($resp, true);
 
         $mapped_countries = [];
 
         for ($i = 0; $i <= count($countries); $i++) {
-            $mapped_countries[$countries[$i]] = $countries[$i];
+            $mapped_countries[$countries[$i]['name']] = $countries[$i]['name'];
         }
 
         return view('auth.register', [

@@ -60,17 +60,17 @@
                 <input id="email1" type="hidden" name="login" value="email">
 
                 <div class="form-textbox">
-                    <label for="name">Full name</label>
+                    {{-- <label for="name">Full name</label> --}}
                     {!! Form::text('name', '', ['id' => 'name']) !!}
                 </div>
 
                 <div class="form-textbox">
-                    <label for="email">Email</label>
+                    {{-- <label for="email">Email</label> --}}
                     {!! Form::text('email', '', ['type' => 'email', 'id' => 'email', 'autofocus' => true]) !!}
                 </div>
 
                 <div class="form-textbox">
-                    <label id="phone-label" for="tel">Phone</label>
+                    {{-- <label id="phone-label" for="tel">Phone</label> --}}
                     <div class="phone-input-wrapper">
                         {!! Form::select('phone_country', $mapped_phone_codes) !!}
                         {!! Form::tel('phone', '', ['id' => 'tel']) !!}
@@ -78,13 +78,13 @@
                 </div>
 
                 <div class="form-textbox">
-                    <label for="country">Country</label>
+                    {{-- <label for="country">Country</label> --}}
                     {{-- {!! Form::text('country', '', ['id' => 'country']) !!} --}}
                     {!! Form::select('country', $mapped_countries) !!}
                 </div>
 
                 <div class="form-textbox">
-                    <label for="city">City</label>
+                    {{-- <label for="city">City</label> --}}
                     {!! Form::text('city', '', ['id' => 'city']) !!}
                 </div>
 
@@ -94,7 +94,7 @@
                 </div>
 
                 <div class="form-textbox">
-                    <label for="password_confirmation">Confirm Password</label>
+                    {{-- <label for="password_confirmation">Confirm Password</label> --}}
                     {!! Form::password('password_confirmation', ['id' => 'password_confirmation']) !!}
                 </div>
 

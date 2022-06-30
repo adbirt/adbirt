@@ -338,11 +338,11 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .form-radio > label {
-  width: 50% !important;
+  width: 45% !important;
 }
 
 .form-radio input {

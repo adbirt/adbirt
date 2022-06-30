@@ -61,12 +61,12 @@
 
                 <div class="form-textbox">
                     {{-- <label for="name">Full name</label> --}}
-                    {!! Form::text('name', '', ['id' => 'name', 'placeholder' => 'Full name']) !!}
+                    {!! Form::text('name', '', ['id' => 'name', 'placeholder' => 'Full name', 'autofocus' => true]) !!}
                 </div>
 
                 <div class="form-textbox">
                     {{-- <label for="email">Email</label> --}}
-                    {!! Form::text('email', '', ['type' => 'email', 'placeholder' => 'Email', 'id' => 'email', 'autofocus' => true]) !!}
+                    {!! Form::text('email', '', ['type' => 'email', 'placeholder' => 'Email', 'id' => 'email']) !!}
                 </div>
 
                 <div class="form-textbox">
@@ -89,7 +89,7 @@
                 </div>
 
                 <div class="form-textbox">
-                    <label for="pass">Password</label>
+                    {{-- <label for="pass">Password</label> --}}
                     {!! Form::password('password', ['id' => 'pass', 'placeholder' => 'Password']) !!}
                 </div>
 

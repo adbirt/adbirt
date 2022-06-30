@@ -344,9 +344,15 @@ body {
 }
 
 .form-radio {
-  margin: 0 -10px;
+  /* margin: 0 -10px; */
   margin-bottom: 20px;
 }
+
+.form-radio > label {
+  width: 50% !important;
+  float: left;
+}
+
 .form-radio input {
   width: 0;
   height: 0;

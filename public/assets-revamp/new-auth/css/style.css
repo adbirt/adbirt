@@ -344,13 +344,17 @@ body {
 }
 
 .form-radio {
-  /* margin: 0 -10px; */
-  margin-bottom: 20px;
+  /* margin: 0 -10px;
+  margin-bottom: 20px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .form-radio > label {
   width: 50% !important;
-  float: left;
+  /* float: left; */
 }
 
 .form-radio input {

@@ -61,19 +61,19 @@
 
                 <div class="form-textbox">
                     {{-- <label for="name">Full name</label> --}}
-                    {!! Form::text('name', '', ['id' => 'name']) !!}
+                    {!! Form::text('name', '', ['id' => 'name', 'placeholder'=>'Full name']) !!}
                 </div>
 
                 <div class="form-textbox">
                     {{-- <label for="email">Email</label> --}}
-                    {!! Form::text('email', '', ['type' => 'email', 'id' => 'email', 'autofocus' => true]) !!}
+                    {!! Form::text('email', '', ['type' => 'email', 'placeholder'=>'Email' 'id' => 'email', 'autofocus' => true]) !!}
                 </div>
 
                 <div class="form-textbox">
                     {{-- <label id="phone-label" for="tel">Phone</label> --}}
                     <div class="phone-input-wrapper">
                         {!! Form::select('phone_country', $mapped_phone_codes) !!}
-                        {!! Form::tel('phone', '', ['id' => 'tel']) !!}
+                        {!! Form::tel('phone', '', ['id' => 'tel','placeholder'=>'Phone number']) !!}
                     </div>
                 </div>
 
@@ -85,17 +85,17 @@
 
                 <div class="form-textbox">
                     {{-- <label for="city">City</label> --}}
-                    {!! Form::text('city', '', ['id' => 'city']) !!}
+                    {!! Form::text('city', '', ['id' => 'city', 'placeholder'=>'City']) !!}
                 </div>
 
                 <div class="form-textbox">
                     <label for="pass">Password</label>
-                    {!! Form::password('password', ['id' => 'pass']) !!}
+                    {!! Form::password('password', ['id' => 'pass', 'placeholder'=>'Password']) !!}
                 </div>
 
                 <div class="form-textbox">
                     {{-- <label for="password_confirmation">Confirm Password</label> --}}
-                    {!! Form::password('password_confirmation', ['id' => 'password_confirmation']) !!}
+                    {!! Form::password('password_confirmation', ['id' => 'password_confirmation', 'placeholder'=>'Confirm password']) !!}
                 </div>
 
                 <div class="form-group checkbox-container">

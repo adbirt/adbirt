@@ -542,3 +542,11 @@ input[type="checkbox"] {
   text-align: center;
   font-size: 20px !important;
 }
+
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #00000000 inset !important;
+}

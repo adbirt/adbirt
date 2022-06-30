@@ -84,7 +84,7 @@ class UsersController extends Controller
         $user->name = $data['name'];
         $user->login = $data['login'];
         $user->email = $data['email'];
-        $user->phone = $data['phone'];
+        $user->phone = $data['phone_country'] . $data['phone'];
         $user->password = Hash::make($data['password']);
         // $user->birthday = $data['birthday'];
         $user->country = $data['country'];

@@ -32,6 +32,7 @@ class UserRequest extends Request
             'login' => 'required|in:phone,email',
             'email' => 'required_if:login,email|unique:users,email',
             'phone' => 'required_if:login,phone|numeric|unique:users,phone',
+            'phone_country' => 'required_if:login,phone',
             'password' => 'required|confirmed',
             'password_confirmation' => 'required',
             // 'birthday'              => 'required',

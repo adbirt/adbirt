@@ -396,8 +396,8 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 0px !important;
-  margin-bottom: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
 }
 
 .phone-input-wrapper > * {

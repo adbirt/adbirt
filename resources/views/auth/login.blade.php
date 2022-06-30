@@ -81,13 +81,13 @@
                 <p class="form-title">Welcome back</p>
 
                 <div class="form-textbox">
-                    <label for="email">Email</label>
-                    {!! Form::text('email', '', ['id' => 'email', 'type' => 'email', 'autofocus' => true]) !!}
+                    {{-- <label for="email">Email</label> --}}
+                    {!! Form::text('email', '', ['id' => 'email', 'type' => 'email', 'placeholder' => 'Email', 'autofocus' => true]) !!}
                 </div>
 
                 <div class="form-textbox">
-                    <label for="pass">Password</label>
-                    {!! Form::password('password', ['id' => 'pass', 'type' => 'password']) !!}
+                    {{-- <label for="pass">Password</label> --}}
+                    {!! Form::password('password', ['id' => 'pass', 'type' => 'password', 'placeholder' => 'Password']) !!}
                 </div>
 
                 <div class="form-textbox">

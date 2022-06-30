@@ -418,9 +418,9 @@ body {
   padding-left: 6px !important;
 }
 
-input,
-select,
-.phone-input-wrapper {
+input:not(.omitted-input),
+select:not(.omitted-input),
+.phone-input-wrapper:not(.omitted-input) {
   border: 2px solid #ebebeb !important;
   box-sizing: border-box;
   width: 100%;

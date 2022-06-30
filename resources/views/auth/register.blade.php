@@ -108,7 +108,7 @@
                             </span>
                         </span>
                         {{--  --}}
-                        I agree all statements in
+                        I agree to all statements in
                         <a href="/terms" class="text-primary-color" target="_blank">Terms of service</a> and <a
                             href="/privacy" class="text-primary-color" target="_blank">privacy policy</a>
                     </label>

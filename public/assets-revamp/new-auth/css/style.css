@@ -392,7 +392,9 @@ body {
   border-color: #1da0f2;
 }
 
-input, select {
+input,
+select,
+.phone-input-wrapper {
   border: solid 2px #ebebeb;
   box-sizing: border-box;
   width: 100%;

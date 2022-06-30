@@ -71,7 +71,10 @@
 
                 <div class="form-textbox">
                     <label for="tel">Phone</label>
-                    {!! Form::tel('phone', '', ['id' => 'tel']) !!}
+                    <div class="phone-input-wrapper">
+                        {!! Form::select('country', $mapped_countries) !!}
+                        {!! Form::tel('phone', '', ['id' => 'tel']) !!}
+                    </div>
                 </div>
 
                 <div class="form-textbox">

@@ -53,10 +53,13 @@ class UsersController extends Controller
         $countries = json_decode($resp, true);
 
         $mapped_countries = [];
+        $mapped_phone_codes = [];
 
         for ($i = 0; $i < count($countries); $i++) {
             $current_country = $countries[$i];
+
             $mapped_countries[$current_country['name']] = $current_country['emoji'] . ' ' . $current_country['name'];
+            $mapped_phone_codes[$current_country['name']] = '+' . $current_country['phone_code'];
         }
 
         return view('auth.register', [

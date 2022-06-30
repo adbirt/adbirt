@@ -51,7 +51,16 @@ class UsersController extends Controller
         curl_close($curl);
         $countries = json_decode($resp);
 
-        return view('auth.register', ['countries' => $countries])
+        $mapped_countries = [];
+
+        for ($i = 0; $i <= count($countries); $i++) {
+            $mapped_countries[$countries[$i]] = $countries[$i];
+        }
+
+        return view('auth.register', [
+            'countries' => $countries,
+            'mapped_countries' => $mapped_countries,
+        ])
             ->with('title', 'Register');
     }
 

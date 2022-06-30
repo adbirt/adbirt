@@ -77,7 +77,7 @@
                 <div class="form-textbox">
                     <label for="country">Country</label>
                     {{-- {!! Form::text('country', '', ['id' => 'country']) !!} --}}
-                    {!! Form::select('country', $countries) !!}
+                    {!! Form::select('country', $mapped_countries) !!}
                 </div>
 
                 <div class="form-textbox">

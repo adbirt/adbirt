@@ -58,8 +58,8 @@ class UsersController extends Controller
         for ($i = 0; $i < count($countries); $i++) {
             $current_country = $countries[$i];
 
-            $mapped_countries[$current_country['name']] = $current_country['emoji'] . ' ' . $current_country['name'];
-            $mapped_phone_codes[$current_country['name']] = '+' . $current_country['phone_code'];
+            $mapped_countries[$current_country['name']] = $current_country['name'] . ' ' . $current_country['emoji'];
+            $mapped_phone_codes['+' . $current_country['phone_code']] = '+' . $current_country['phone_code'] . ' ' . $current_country['emoji'];
         }
 
         return view('auth.register', [

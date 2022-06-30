@@ -122,7 +122,6 @@
                 <p class="loginhere">
                     Already have an account?<a href="/login" class="text-primary-color"> Log in</a>
                     <br />
-                    <br />
                     Or, return to <a href="/" class="loginhere-link text-primary-color">home page</a>
                 </p>
             </div>

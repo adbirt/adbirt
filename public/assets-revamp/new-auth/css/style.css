@@ -411,7 +411,7 @@ body {
 input,
 select,
 .phone-input-wrapper {
-  border: solid 2px #ebebeb;
+  border: 2px solid #ebebeb;
   box-sizing: border-box;
   width: 100%;
   font-weight: 500;

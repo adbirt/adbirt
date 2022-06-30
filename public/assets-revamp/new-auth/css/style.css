@@ -417,7 +417,7 @@ body {
   padding-left: 6px !important;
 }
 
-input,
+input:not([type=submit]),
 select,
 .phone-input-wrapper {
   border: 2px solid #ebebeb !important;

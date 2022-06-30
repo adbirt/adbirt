@@ -402,6 +402,10 @@ body {
 .phone-input-wrapper > * {
   width: 50%;
   margin: 0px !important;
+  height: 100%;
+  background: none !important;
+  border: none !important;
+  padding: 15px 0px !important;
 }
 
 input,

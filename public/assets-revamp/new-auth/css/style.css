@@ -435,6 +435,10 @@ select,
   font-size: 14px;
 }
 
+.phone-label {
+  padding-bottom: 8px !important;
+}
+
 #name {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;

@@ -411,7 +411,7 @@ body {
 input,
 select,
 .phone-input-wrapper {
-  border: 2px solid #ebebeb;
+  border: 2px solid #ebebeb !important;
   box-sizing: border-box;
   width: 100%;
   font-weight: 500;
@@ -449,11 +449,11 @@ select,
   border-bottom-right-radius: 5px;
 }
 
-#email {
+/* #email {
   border: none;
   border-left: solid 2px #ebebeb;
   border-right: solid 2px #ebebeb;
-}
+} */
 
 /* input[type="checkbox"]:not(old) {
   width: 2em;

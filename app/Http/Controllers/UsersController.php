@@ -37,7 +37,8 @@ class UsersController extends Controller
      */
     public function create()
     {
-        $countries_url = "https://adbirt.com/public/assets-revamp/new-auth/json/countries-states-cities.json";
+        // $countries_url = "https://adbirt.com/public/assets-revamp/new-auth/json/countries-states-cities.json";
+        $countries_url = "https://raw.githubusercontent.com/dr5hn/countries-states-cities-database/master/countries.json";
 
         $curl = curl_init($countries_url);
         curl_setopt($curl, CURLOPT_URL, $countries_url);

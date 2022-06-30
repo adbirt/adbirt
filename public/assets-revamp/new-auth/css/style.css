@@ -436,7 +436,7 @@ select,
   font-size: 14px;
 }
 
-.form-textbox label.phone-label {
+.form-textbox label#phone-label {
   padding-bottom: 4px !important;
 }
 

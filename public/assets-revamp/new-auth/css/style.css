@@ -413,6 +413,10 @@ body {
   width: 35%;
 }
 
+.phone-input-wrapper > select {
+  padding-left: 6px !important;
+}
+
 input,
 select,
 .phone-input-wrapper {

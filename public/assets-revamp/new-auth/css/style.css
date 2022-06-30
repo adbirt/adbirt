@@ -392,6 +392,18 @@ body {
   border-color: #1da0f2;
 }
 
+.phone-input-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-input-wrapper > * {
+  width: 50%;
+  margin: 0px !important;
+}
+
 input,
 select,
 .phone-input-wrapper {

@@ -425,6 +425,7 @@ select,
   position: relative;
 }
 .form-textbox label {
+  padding-bottom: 16px !important;
   position: absolute;
   left: 28px;
   top: 50%;

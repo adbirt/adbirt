@@ -396,11 +396,12 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .phone-input-wrapper > * {
-  width: 50%;
+  /* width: 50%; */
+  display: inline-block;
   margin: 0px !important;
   height: 100%;
   background: none !important;

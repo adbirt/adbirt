@@ -76,7 +76,8 @@
 
                 <div class="form-textbox">
                     <label for="country">Country</label>
-                    {!! Form::text('country', '', ['id' => 'country']) !!}
+                    {{-- {!! Form::text('country', '', ['id' => 'country']) !!} --}}
+                    {!! Form::select('country', $countries) !!}
                 </div>
 
                 <div class="form-textbox">
@@ -126,8 +127,6 @@
 
     </div>
 
-    {{-- {{ $countries }} --}}
-
     <!-- JS -->
     <script src="/public/assets-revamp/new-auth/vendor/jquery/jquery.min.js"></script>
     <script src="/public/assets-revamp/new-auth/js/main.js"></script>
@@ -136,11 +135,11 @@
     {!! Html::script('bootstrap/js/bootstrap.min.js') !!}
     {!! Html::script('tel/build/js/intlTelInput.js') !!}
 
-    {!! Html::script('countryselect/js/countrySelect.min.js') !!}
+    {{-- {!! Html::script('countryselect/js/countrySelect.min.js') !!}
 
     <script>
         $("#country").countrySelect();
-    </script>
+    </script> --}}
 
 </body>
 

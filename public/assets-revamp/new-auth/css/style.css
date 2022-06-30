@@ -425,7 +425,7 @@ select,
   position: relative;
 }
 .form-textbox label {
-  padding-bottom: 16px !important;
+  padding-bottom: 16px;
   position: absolute;
   left: 28px;
   top: 50%;
@@ -436,7 +436,7 @@ select,
 }
 
 .phone-label {
-  padding-bottom: 8px !important;
+  padding-bottom: 4px !important;
 }
 
 #name {

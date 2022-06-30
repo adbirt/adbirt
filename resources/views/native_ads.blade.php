@@ -144,7 +144,7 @@
 
 
                 <p class="Start-two">
-                    <a href="/dashboard" class="btn btn-danger bg-primary-color border-0">Start Now For Free</a>
+                    <a href="/register" class="btn btn-danger bg-primary-color border-0">Start Now For Free</a>
                 </p>
 
             </div>
@@ -205,7 +205,7 @@
                                 desktop, tablet)</a></li>
                     </ul>
                     <p class="Start-one">
-                        <a href="/dashboard" class="btn btn-danger bg-primary-color border-0">Start Earning Now</a>
+                        <a href="/register" class="btn btn-danger bg-primary-color border-0">Start Earning Now</a>
                     </p>
 
                 </div>

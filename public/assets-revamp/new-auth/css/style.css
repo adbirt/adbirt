@@ -556,3 +556,11 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px transparent inset !important;
 }
+
+@media only screen and (max-width: 520px) {
+  input,
+  select,
+  .phone-input-wrapper {
+    padding: 16px 30px 16px 30px;
+  }
+}

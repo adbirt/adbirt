@@ -53,7 +53,7 @@ class UsersController extends Controller
 
         $mapped_countries = [];
 
-        for ($i = 0; $i <= count($countries); $i++) {
+        for ($i = 0; $i < count($countries); $i++) {
             $mapped_countries[$countries[$i]['name']] = $countries[$i]['name'];
         }
 

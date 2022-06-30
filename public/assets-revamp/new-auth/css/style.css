@@ -424,7 +424,6 @@ select,
   box-sizing: border-box;
   width: 100%;
   font-weight: 500;
-  color: #162221 !important;
   font-size: 14px;
   font-family: Poppins;
   /* padding: 16px 30px 16px 140px; */
@@ -436,6 +435,7 @@ input:not([type="submit"]),
 select,
 .phone-input-wrapper {
   background: #fff !important;
+  color: #162221 !important;
 }
 
 .form-textbox {

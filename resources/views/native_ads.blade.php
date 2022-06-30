@@ -205,7 +205,7 @@
                                 desktop, tablet)</a></li>
                     </ul>
                     <p class="Start-one">
-                        <button class="btn btn-danger bg-primary-color border-0">Start Earning Now</button>
+                        <a href="/dashboard" class="btn btn-danger bg-primary-color border-0">Start Earning Now</a>
                     </p>
 
                 </div>

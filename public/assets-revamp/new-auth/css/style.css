@@ -426,7 +426,8 @@ select,
   font-weight: 500;
   font-size: 14px;
   font-family: Poppins;
-  padding: 16px 30px 16px 140px;
+  /* padding: 16px 30px 16px 140px; */
+  padding: 16px 30px 16px 30px;
   margin-bottom: 14px;
 }
 
@@ -557,10 +558,10 @@ input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px transparent inset !important;
 }
 
-@media only screen and (max-width: 520px) {
+/* @media only screen and (max-width: 520px) {
   input,
   select,
   .phone-input-wrapper {
     padding: 16px 30px 16px 30px;
   }
-}
+} */

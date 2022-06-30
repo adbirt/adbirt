@@ -9,6 +9,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Login</title>
 
+    {{--  --}}
+
+    <!-- Font Awesome -->
+    {!! Html::style('https://fonts.googleapis.com/icon?family=Material+Icons') !!}
+
+    <!-- Ionicons -->
+    {!! Html::style('https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en') !!}
+
+    <!-- Theme style -->
+    {!! Html::style('dist/css/style.min.css') !!}
+
+    {{--  --}}
+
     <!-- Font Icon -->
     <link rel="stylesheet"
         href="/public/assets-revamp/new-auth/fonts/material-icon/css/material-design-iconic-font.min.css">
@@ -114,6 +127,26 @@
     <!-- JS -->
     <script src="/public/assets-revamp/new-auth/vendor/jquery/jquery.min.js"></script>
     <script src="/public/assets-revamp/new-auth/js/main.js"></script>
+
+    <!-- jQuery -->
+    {!! Html::script('dist/vendor/jquery.min.js') !!}
+    <script src="assets/vendor/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    {!! Html::script('dist/vendor/tether.min.js') !!}
+    {!! Html::script('dist/vendor/bootstrap.min.js') !!}
+    <script src="assets/vendor/tether.min.js"></script>
+    <script src="assets/vendor/bootstrap.min.js"></script>
+    <!-- AdminPlus -->
+    {!! Html::script('dist/vendor/adminplus.js') !!}
+    <script src="assets/vendor/adminplus.js"></script>
+    <!-- App JS -->
+    {!! Html::script('dist/js/main.min.js') !!}
+    <script src="assets/js/main.min.js"></script>
+    <!-- Vendor JS -->
+    {!! Html::script('dist/vendor/sweetalert.min.js') !!}
+    <!-- Initialize -->
+    {!! Html::script('examples/js/sweetalert.js') !!}
+
 
 </body>
 

@@ -144,7 +144,7 @@
 
 
                 <p class="Start-two">
-                    <button class="btn btn-danger bg-primary-color border-0">Start Now For Free</button>
+                    <a href="/dashboard" class="btn btn-danger bg-primary-color border-0">Start Now For Free</a>
                 </p>
 
             </div>

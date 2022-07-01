@@ -66,12 +66,13 @@
 
                 <div class="modal-footer">
 
-                    <div class="d-flex-flex-row align-items-center-justify-content-between">
+                    <div class="d-flex flex-row align-items-center-justify-content-between">
+
                         <button type="button" class="btn btn-danger btn-rounded omitted-input"
                             data-dismiss="modal">Cancel</button>
-                        <br />
-                        <br />
+                        
                         {!! Form::submit('Submit', ['class' => 'btn btn-danger bg-primary-color btn-rounded omitted-input']) !!}
+
                     </div>
 
                     {!! Form::close() !!}

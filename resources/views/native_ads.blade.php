@@ -207,9 +207,7 @@
                     <p class="Start-one">
                         <a href="/register" class="btn btn-danger bg-primary-color border-0">Start Earning Now</a>
                     </p>
-
                 </div>
-
 
             </div>
 

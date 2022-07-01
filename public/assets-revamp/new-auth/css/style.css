@@ -406,16 +406,16 @@ body {
   margin: 0px !important;
   height: 100%;
   background: none !important;
-  border: none !important;
   padding: 15px 0px !important;
-  border: none !important;
 }
 
 .phone-input-wrapper > select {
+  border: none !important;
   width: 35%;
 }
 
 .phone-input-wrapper > input {
+  border: none !important;
   padding-left: 6px !important;
 }
 

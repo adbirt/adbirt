@@ -408,6 +408,7 @@ body {
   background: none !important;
   border: none !important;
   padding: 15px 0px !important;
+  border: none !important;
 }
 
 .phone-input-wrapper > select {

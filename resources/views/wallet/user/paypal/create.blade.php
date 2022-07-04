@@ -22,7 +22,7 @@
             </div>
             <ol class="breadcrumb">
                 <!--<li><a href="#">Home</a></li>
-                                                <li class="active">Paypal Deposit</li>-->
+                                                    <li class="active">Paypal Deposit</li>-->
             </ol>
             <div class="card">
                 <ul class="nav nav-tabs">
@@ -30,8 +30,8 @@
                         <a class="nav-link active" href="#first" data-toggle="tab">{!! $title !!}</a>
                     </li>
                     <!-- <li class="nav-item">
-                                                        <a class="nav-link" href="#second" data-toggle="tab">Billing</a>
-                                                      </li> -->
+                                                            <a class="nav-link" href="#second" data-toggle="tab">Billing</a>
+                                                          </li> -->
                 </ul>
                 <div class="p-a-2 tab-content">
                     <div class="tab-pane active p-3" id="first">
@@ -47,7 +47,7 @@
                                             id="basic-addon1">
                                             <i class="material-icons md-18 text-muted">credit_card</i>
                                         </span>
-                                        {!! Form::text('amount', null, ['class' => 'form-control', 'id' => 'amount', 'placeholder' => 'Amount should be inputted in USD', 'required']) !!}
+                                        {!! Form::number('amount', null, ['class' => 'form-control', 'id' => 'amount', 'placeholder' => 'Amount should be inputted in USD', 'required' => true, 'min' => '4']) !!}
 
                                     </div>
                                     <br />

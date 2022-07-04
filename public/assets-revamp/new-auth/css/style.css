@@ -405,6 +405,7 @@ body {
   display: inline-block;
   margin: 0px !important;
   height: 100%;
+  border: none !important;
   background: none !important;
   padding: 15px 0px !important;
 }

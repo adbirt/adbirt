@@ -70,7 +70,7 @@
 
                         <button type="button" class="btn btn-danger btn-rounded omitted-input"
                             data-dismiss="modal">Cancel</button>
-                        
+
                         {!! Form::submit('Submit', ['class' => 'btn btn-danger bg-primary-color btn-rounded omitted-input']) !!}
 
                     </div>

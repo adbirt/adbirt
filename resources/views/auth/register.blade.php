@@ -72,7 +72,7 @@
                 <div class="form-textbox">
                     {{-- <label id="phone-label" for="tel">Phone</label> --}}
                     <div class="phone-input-wrapper">
-                        {!! Form::select('phone_country', $mapped_phone_codes, ['style' => 'border: none !important;']) !!}
+                        {!! Form::select('phone_country', $mapped_phone_codes,null, ['style' => 'border: none !important;']) !!}
                         {!! Form::tel('phone', '', ['id' => 'tel', 'placeholder' => 'Phone number', 'style' => 'border: none !important;']) !!}
                     </div>
                 </div>

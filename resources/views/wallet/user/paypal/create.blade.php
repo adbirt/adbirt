@@ -47,7 +47,7 @@
                                             id="basic-addon1">
                                             <i class="material-icons md-18 text-muted">credit_card</i>
                                         </span>
-                                        {!! Form::number('amount', null, ['class' => 'form-control', 'id' => 'amount', 'placeholder' => 'Amount should be inputted in USD', 'required' => true, 'min' => '4']) !!}
+                                        {!! Form::number('amount', null, ['class' => 'form-control', 'id' => 'amount', 'placeholder' => 'Amount should be inputted in USD', 'required' => true, 'min' => '5']) !!}
 
                                     </div>
                                     <br />

@@ -2,20 +2,18 @@
 
 namespace App\Http\Controllers\campaigns;
 
-use Auth;
-use Illuminate\Http\Request;
+use App\Classes\SocialMedia;
+use App\Http\Controllers\Controller;
 // use App\Http\Requests;
-use App\Transaction;
 use App\Model\campaign;
-use App\Model\userModel;
 use App\Model\campaignorders;
 use App\Model\category;
-use App\Model\rolesModel;
 use App\Model\NotificationAlertModel;
-use App\Http\Controllers\Controller;
-use App\Classes\SocialMedia;
-use Mail;
-use Route;
+use App\Model\rolesModel;
+use App\Model\userModel;
+use App\Transaction;
+use Auth;
+use Illuminate\Http\Request;
 
 /**
  * Generate URL from its components (i.e., opposite of built-in php function, parse_url())
@@ -73,8 +71,8 @@ class campaignsController extends Controller
         $this->outputData['campaignsData'] = $campaign;
 
         $this->outputData['categories'] = json_decode(json_encode(category::where('isActive', 'Active')
-            ->where('isDeleted', 'No')
-            ->get()), true);
+                ->where('isDeleted', 'No')
+                ->get()), true);
 
         return view('campaigns.view-campaigns', $this->outputData);
     }
@@ -88,12 +86,11 @@ class campaignsController extends Controller
     {
         //
         /*$arrMyWalletAmt = Transaction::select('amount')
-                                        ->where('user_id',Auth::user()->id)
-                                        ->first();*/
+        ->where('user_id',Auth::user()->id)
+        ->first();*/
         $arrMyWalletAmt = Transaction::where('user_id', Auth::user()->id)->sum('amount');
         /*print_r($arrMyWalletAmt);
-	echo "array amount wallet is ".$arrMyWalletAmt;*/
-
+        echo "array amount wallet is ".$arrMyWalletAmt;*/
 
         if (Auth::user()->hasRole('vendor')) {
             if (isset($arrMyWalletAmt) && !empty($arrMyWalletAmt) && $arrMyWalletAmt >= 5) {
@@ -182,7 +179,7 @@ class campaignsController extends Controller
                         $fileOrgName = pathinfo($fileOrgName, PATHINFO_FILENAME);
                         $fileOrgName = preg_replace('/[^A-Za-z0-9\-._]/', '', $fileOrgName);
                         $fileExtension = $input['campaign_banner']->getClientOriginalExtension();
-                        $fileName    = time() . '.' . $fileExtension;
+                        $fileName = time() . '.' . $fileExtension;
                         $arrFileDetail = $input['campaign_banner'];
                         $arrFileDetail->move('public/uploads/campaign_banners/', $fileName);
                         $input['campaign_banner'] = $fileName;
@@ -208,7 +205,7 @@ class campaignsController extends Controller
                         $fileOrgName = pathinfo($fileOrgName, PATHINFO_FILENAME);
                         $fileOrgName = preg_replace('/[^A-Za-z0-9\-._]/', '', $fileOrgName);
                         $fileExtension = $campaign_banner->getClientOriginalExtension();
-                        $fileName    = time() . '.' . $fileExtension;
+                        $fileName = time() . '.' . $fileExtension;
                         $arrFileDetail = $campaign_banner;
                         $arrFileDetail->move('public/uploads/campaign_banners/', $fileName);
                         $input['campaign_banner'] = $fileName;
@@ -220,7 +217,7 @@ class campaignsController extends Controller
                 unset($input['_token']);
                 $campaign = new campaign;
                 foreach ($input as $key => $value) {
-                    $campaign->$key  = trim($value);
+                    $campaign->$key = trim($value);
                 }
 
                 $permitted_chars = '0123456789abcdefghijklmnopqrstuvwxyz';
@@ -229,11 +226,11 @@ class campaignsController extends Controller
 
                 $campaign->save();
 
-                $Notify            = new NotificationAlertModel;
-                $Notify->heading  = "New Campaign \"<b>" . $campaign->campaign_name . "</b>\" has been added";
-                $Notify->content  = $input['campaign_name'] . " Campaign has been added";
-                $Notify->type  = "Campaign Added";
-                $Notify->Notify_Receivers_Id  = "1";
+                $Notify = new NotificationAlertModel;
+                $Notify->heading = "New Campaign \"<b>" . $campaign->campaign_name . "</b>\" has been added";
+                $Notify->content = $input['campaign_name'] . " Campaign has been added";
+                $Notify->type = "Campaign Added";
+                $Notify->Notify_Receivers_Id = "1";
                 $Notify->save();
 
                 \Session::flash('flash_message', 'Campaign has been updated successfully.');
@@ -300,21 +297,21 @@ class campaignsController extends Controller
         $arrWhere = array("isDeleted" => "No", "campaign_approval_status" => "Approved");
         $campaign = campaign::where($arrWhere);
 
-        if (isset($input['searchByname'])  && !empty($input['searchByname'])) {
+        if (isset($input['searchByname']) && !empty($input['searchByname'])) {
             $campaign = $campaign->where('campaign_name', 'like', "%" . $input['searchByname'] . "%");
         }
 
-        if (isset($input['advertiser_id'])  && !empty($input['advertiser_id'])) {
+        if (isset($input['advertiser_id']) && !empty($input['advertiser_id'])) {
             $arrWhere = array("advertiser_id" => $input['advertiser_id']);
             $campaign = $campaign->where($arrWhere);
         }
 
-        if (isset($input['category_id'])  && !empty($input['category_id'])) {
+        if (isset($input['category_id']) && !empty($input['category_id'])) {
             $arrWhere = array("campaign_category" => $input['category_id']);
             $campaign = $campaign->where($arrWhere);
         }
 
-        if (isset($input['searchByPrice'])  && !empty($input['searchByPrice'])) {
+        if (isset($input['searchByPrice']) && !empty($input['searchByPrice'])) {
             // $price_range = explode(";", $input['searchByPrice']);
             $_min_range = $input['searchByPriceMin'];
             $_max_range = $input['searchByPriceMax'];
@@ -418,15 +415,16 @@ class campaignsController extends Controller
             'phonenumber' => '',
             'emailaddress' => '',
             'ccemailaddress' => '',
-            'bccemailaddress' => ''
+            'bccemailaddress' => '',
         ]);
         $socialArr = array();
         foreach ($social_media_names as $social_media_name) {
             $social_media_url = $social_media_urls[$social_media_name];
-            if ($social_media_name == "ok.ru")
+            if ($social_media_name == "ok.ru") {
                 $social_media_name = "okru";
+            }
 
-            //if($social_media_name != "facebook")		
+            //if($social_media_name != "facebook")
             $socialArr[$social_media_name] = $social_media_url;
             //print($social_media_name . ' : ' . $social_media_url . "\n\n");
         }
@@ -434,8 +432,8 @@ class campaignsController extends Controller
         $this->outputData['campaignData'] = $campaignData;
 
         $this->outputData['categories'] = json_decode(json_encode(category::where('isActive', 'Active')
-            ->where('isDeleted', 'No')
-            ->get()), true);
+                ->where('isDeleted', 'No')
+                ->get()), true);
 
         return view('campaigns.campaigns-detail', $this->outputData);
     }
@@ -455,9 +453,9 @@ class campaignsController extends Controller
             ->where('isDeleted', 'No')
             ->first();
         /*if(!empty($bnr)){
-	   $bnr->campaign_view += 1;
-           $bnr->save();
-     }*/
+        $bnr->campaign_view += 1;
+        $bnr->save();
+        }*/
 
         $this->outputData['campaignData'] = $bnr;
         $this->outputData['id'] = $id;
@@ -531,24 +529,24 @@ class campaignsController extends Controller
             'phonenumber' => '',
             'emailaddress' => '',
             'ccemailaddress' => '',
-            'bccemailaddress' => ''
+            'bccemailaddress' => '',
         ]);
         $socialArr = array();
         foreach ($social_media_names as $social_media_name) {
             $social_media_url = $social_media_urls[$social_media_name];
-            if ($social_media_name == "ok.ru")
+            if ($social_media_name == "ok.ru") {
                 $social_media_name = "okru";
+            }
 
-            //if($social_media_name != "facebook")		
+            //if($social_media_name != "facebook")
             $socialArr[$social_media_name] = $social_media_url;
             //print($social_media_name . ' : ' . $social_media_url . "\n\n");
         }
         $this->outputData['socialData'] = $socialArr;
 
         $this->outputData['categories'] = json_decode(json_encode(category::where('isActive', 'Active')
-            ->where('isDeleted', 'No')
-            ->get()), true);
-
+                ->where('isDeleted', 'No')
+                ->get()), true);
 
         $this->outputData['campaignData'] = $campaignData;
         return view('campaigns.campaigns-detail', $this->outputData);
@@ -561,7 +559,7 @@ class campaignsController extends Controller
             ->where('role_id', "2")
             ->get();
         foreach ($arrVendor as $key => $value) {
-            $usersCamp =  campaign::where('advertiser_id', $value->user_id)->count();
+            $usersCamp = campaign::where('advertiser_id', $value->user_id)->count();
             if ($usersCamp == "0") {
                 unset($arrVendor[$key]);
             }
@@ -587,13 +585,13 @@ class campaignsController extends Controller
         campaign::where('id', $Id)->update($status);
 
         $Notify = new NotificationAlertModel;
-        $Notify->heading  = "Your Campaign has been approved";
-        $Notify->content  = "Your Campaign '" . $campaignData->campaign_name . "' has been approved By Admin";
-        $Notify->type  = "Campaign Approved";
-        $Notify->Notify_Receivers_Id  = $campaignData['advertiser_id'];
+        $Notify->heading = "Your Campaign has been approved";
+        $Notify->content = "Your Campaign '" . $campaignData->campaign_name . "' has been approved By Admin";
+        $Notify->type = "Campaign Approved";
+        $Notify->Notify_Receivers_Id = $campaignData['advertiser_id'];
         $Notify->save();
 
-        //send email to advertiser campaign approved 
+        //send email to advertiser campaign approved
         //echo "advertiser id is ".$campaignData['advertiser_id'];
         $userData = userModel::find($campaignData['advertiser_id']);
         //print_r($userData);
@@ -608,7 +606,6 @@ class campaignsController extends Controller
         // });
         //echo "**email sent";
 
-
         $arrPublisher = rolesModel::with('GetVendor')
             ->where('role_id', "3")
             ->get();
@@ -618,8 +615,8 @@ class campaignsController extends Controller
             $pubName = $publisher->GetOwner->name;
             //echo "** email is $pubEMail , pubname $pubName";
             //if(strpos($pubEMail, "pankaj.sharma") !== false){
-            //Hi Paul, a new campaign has been activated on Adbirt! and now ready to be promoted. 
-            //send email to publiser when campaign approved 
+            //Hi Paul, a new campaign has been activated on Adbirt! and now ready to be promoted.
+            //send email to publiser when campaign approved
             $AdvertiserMsg = "Dear " . $pubName . ", a new campaign has been activated on Adbirt! and now ready to be promoted. ";
             $heading = "Campaign Activated";
             $data['heading'] = $heading;
@@ -628,8 +625,7 @@ class campaignsController extends Controller
             //     $message->from('info@adbirt.com', 'Adbirt');
             //     $message->to($pubEMail)->subject('Campaign Activated');
             // });
-            //echo "**email sent";		
-
+            //echo "**email sent";
 
             //}
         }
@@ -655,11 +651,11 @@ class campaignsController extends Controller
         campaign::where('id', $Id)
             ->update($status);
 
-        $Notify            = new NotificationAlertModel;
-        $Notify->heading  = "Your Campaign has been Rejected By Admin";
-        $Notify->content  = "Your Campaign \"" . $campaignData['campaign_name'] . "\" has been Rejected By Admin";
-        $Notify->type  = "Campaign Rejected";
-        $Notify->Notify_Receivers_Id  = $campaignData['advertiser_id'];
+        $Notify = new NotificationAlertModel;
+        $Notify->heading = "Your Campaign has been Rejected By Admin";
+        $Notify->content = "Your Campaign \"" . $campaignData['campaign_name'] . "\" has been Rejected By Admin";
+        $Notify->type = "Campaign Rejected";
+        $Notify->Notify_Receivers_Id = $campaignData['advertiser_id'];
         $Notify->save();
 
         \Session::flash('flash_message', "Campaign Status has been updated successfully");
@@ -780,12 +776,12 @@ class campaignsController extends Controller
                 if (($bnr->campaign_type == 'CPA') || ($bnr->campaign_type == 'CPC')) {
                     if ($bnr->banner_type == 'image') {
                         ?>
-                            <a id="<?php echo $rand_id; ?>" target="_blank" class="ubm_banner" href="<?php echo url('ubm_banner_click/' . base64_encode($publisher_code)) ?>" style="<?php echo (empty($bnr->campaign_url) ? 'cursor: default; ' : 'cursor: pointer;') . ' width: ' . $type_details["width"] . 'px !important; height: ' . $type_details["height"] . 'px !important; line-height: ' . $type_details["height"] . 'px;' ?> border: 1px solid transparent !important;" <?php (empty($bnr->campaign_url) ? ' onclick="return false;"' : '') ?> title="<?php echo $bnr->campaign_name; ?>">
+                            <a id="<?php echo $rand_id; ?>" target="_blank" class="ubm_banner" href="<?php echo url('ubm_banner_click/' . base64_encode($publisher_code)) ?>" style="<?php echo (empty($bnr->campaign_url) ? 'cursor: default; ' : 'cursor: pointer;') . ' width: ' . $type_details["width"] . 'px !important; height: ' . $type_details["height"] . 'px !important; line-height: ' . $type_details["height"] . 'px;' ?> border: 1px solid transparent !important;" <?php (empty($bnr->campaign_url) ? ' onclick="return false;"' : '')?> title="<?php echo $bnr->campaign_name; ?>">
                                 <img data-banner-code="<?php echo $bannerCode; ?>" width="<?php echo $type_details["width"]; ?>" height="<?php echo $type_details["height"]; ?>" style="width: <?php echo $type_details["width"]; ?> !important; height: <?php echo $type_details["height"]; ?> !important;" src="https://www.adbirt.com/public/uploads/campaign_banners/<?php echo $bnr->campaign_banner; ?>" />
                             </a>
                         <?php
-                    } elseif ($bnr->banner_type == 'video') {
-                    ?>
+} elseif ($bnr->banner_type == 'video') {
+                        ?>
                         <div id="<?php echo $rand_id; ?>" class="adbirt-video-ad ubm_banner">
                             <style>
                                 #<?php echo $rand_id; ?> {
@@ -851,7 +847,7 @@ class campaignsController extends Controller
                             </div>
                         </div>
                     <?php
-                    }
+}
                 } elseif ($bnr->campaign_type == 'Native Content Ad') {
                     if ($nativeType == 'recommended') {
 
@@ -863,9 +859,9 @@ class campaignsController extends Controller
                             ->where('isDeleted', 'No')
                             ->limit(3)->get();
 
-                            $has_similar_campaigns = count($similar_campaigns) > 0;
+                        $has_similar_campaigns = count($similar_campaigns) > 0;
 
-                    ?>
+                        ?>
                         <!-- Begin: Adbirt Native Ads recommendation -->
                         <div id="<?php echo $rand_id; ?>" class="adbirt-native-recommendations ubm_banner">
                             <style>
@@ -1003,8 +999,8 @@ class campaignsController extends Controller
                                     </div>
 
                                     <?php
-                                    foreach ($similar_campaigns as $key => $similar) {
-                                    ?>
+foreach ($similar_campaigns as $key => $similar) {
+                            ?>
                                         <div onclick="this.querySelector('a').click()" class="adbirt-single-recommendation-wrapper">
                                             <div class="adbirt-single-recommendation">
                                                 <p class="adbirt-single-recommendation-title">
@@ -1017,8 +1013,8 @@ class campaignsController extends Controller
                                             </div>
                                         </div>
                                     <?php
-                                    }
-                                    ?>
+}
+                        ?>
 
                                 </div>
 
@@ -1034,11 +1030,11 @@ class campaignsController extends Controller
                         </div>
                         <!-- End: Adbirt Native Ads recommendation -->
                     <?php
-                    } else if ($nativeType == 'feed') {
-                    ?>
+} else if ($nativeType == 'feed') {
+                        ?>
                         &nbsp;
 <?php
-                    }
+}
                 }
                 $html = ob_get_clean();
 
@@ -1083,9 +1079,11 @@ class campaignsController extends Controller
 
                 if (strtoupper($bnr->campaign_type) != 'CPA') {
                     $url = "https://adbirt.com/campaigns/verified";
+
                     $_fields = array(
-                        'campaign_code' => $id
+                        'campaign_code' => $id,
                     );
+
                     $_fields_string = '';
                     foreach ($_fields as $key => $value) {
                         $_fields_string .= $key . '=' . $value . '&';
@@ -1097,6 +1095,7 @@ class campaignsController extends Controller
                     //set the url, number of POST vars, POST data
                     curl_setopt($ch, CURLOPT_URL, $url);
                     curl_setopt($ch, CURLOPT_POST, count($_fields));
+                    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
                     curl_setopt($ch, CURLOPT_POSTFIELDS, $_fields_string);
 
                     //execute post
@@ -1142,8 +1141,8 @@ class campaignsController extends Controller
             ->get();
 
         $this->outputData['categories'] = json_decode(json_encode(category::where('isActive', 'Active')
-            ->where('isDeleted', 'No')
-            ->get()), true);
+                ->where('isDeleted', 'No')
+                ->get()), true);
 
         $this->outputData['campaignsData'] = $MyCampaigns;
 
@@ -1169,8 +1168,8 @@ class campaignsController extends Controller
         $this->outputData['campaignsData'] = $MyCampaigns;
 
         $this->outputData['categories'] = json_decode(json_encode(category::where('isActive', 'Active')
-            ->where('isDeleted', 'No')
-            ->get()), true);
+                ->where('isDeleted', 'No')
+                ->get()), true);
 
         if ($is_remote_request) {
             return response()->json($this->outputData);

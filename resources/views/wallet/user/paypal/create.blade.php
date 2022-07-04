@@ -60,7 +60,7 @@
                                     <p class="w-100 text-center d-flex flex-row align-items-center justify-content-start">
                                         <img src="https://adbirt.com/public/assets-revamp/img/paystack-icon.png"
                                             width="50" height="50" class="mr-3 shadow" />
-                                        PAYSTACK: Input amount in USD e.g : 1 USD= #400
+                                        PAYSTACK: Input amount in USD e.g : 1 USD= #610
                                     </p>
                                 </div>
                             </div>

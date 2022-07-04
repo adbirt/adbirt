@@ -200,7 +200,7 @@ class orderHistoryController extends Controller
                         //     ->where('user_id', $advert->publisher_id)
                         //     ->first();
 
-                        $old_publisher_balance = Transaction::where('user_id', $advert->advertiser_id)
+                        $old_publisher_balance = Transaction::where('user_id', $advert->publisher_id)
                             ->sum('amount');
 
                         $new_publisher_balance = $old_publisher_balance + $publishercommission;

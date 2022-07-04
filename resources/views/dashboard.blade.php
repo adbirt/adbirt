@@ -462,7 +462,8 @@
                     <div class="media-body media-middle">
                         <span>Your Current Balance</span>
                         <?php $amt = \App\PendingTransfers::balance() - \App\PendingTransfers::productCost(); ?>
-                        <strong class="text-success">${!! number_format($amt, 2) !!}</strong>
+                        {{-- <strong class="text-success">${!! number_format($amt, 2) !!}</strong> --}}
+                        <strong class="text-success">${!! number_format($currentBalance, 2) !!}</strong>
                     </div>
                     @if (Auth::user()->hasRole('vendor'))
                         <div class="media-right">
@@ -566,7 +567,8 @@
                 <div class="media-body media-middle">
                     <span>Your Current Balance</span>
                     <?php $amt = \App\PendingTransfers::balance() - \App\PendingTransfers::productCost(); ?>
-                    <strong class="text-success">${!! number_format($amt, 2) !!}</strong>
+                    {{-- <strong class="text-success">${!! number_format($amt, 2) !!}</strong> --}}
+                    <strong class="text-success">${!! number_format($currentBalance, 2) !!}</strong>
                 </div>
                 @if ($amt > 0)
                     <div class="media-right">

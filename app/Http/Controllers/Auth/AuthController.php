@@ -2,38 +2,36 @@
 
 namespace app\Http\Controllers\Auth;
 
-use Input;
-use App\PasswordReset;
-use Validator;
-use Auth;
-use Mail;
-use View;
-use Hash;
-use App\User;
-use App\Transaction;
+use App\Http\Controllers\Controller;
 use App\Model\campaign;
 use App\Model\campaignorders;
 use App\Model\campaignTransaction;
+use App\Model\category;
 use App\Model\rolesModel;
 use App\Model\WalletHistoryModel;
-// use App\Model\companyprofile;
-use App\Model\category;
-use Redirect;
-use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
-use Illuminate\Foundation\Auth\ThrottlesLogins;
+use App\PasswordReset;
+use App\Transaction;
+use App\User;
+use Auth;
+use Hash;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+use Illuminate\Foundation\Auth\ThrottlesLogins;
+// use App\Model\companyprofile;
+use Illuminate\Http\Request;
+use Input;
+use Mail;
+use Redirect;
+use Validator;
+use View;
 
 class AuthController extends Controller
 {
 
     use AuthenticatesAndRegistersUsers, ThrottlesLogins;
 
-
     public function __construct()
     {
     }
-
 
     protected function validator(array $data)
     {
@@ -70,15 +68,15 @@ class AuthController extends Controller
     {
         Auth::logout();
         $rules = array(
-            'email'    => 'required',
-            'password' => 'required'
+            'email' => 'required',
+            'password' => 'required',
         );
         $allInput = $request->all();
 
         $validation = Validator::make($allInput, $rules);
 
         $is_remote_request = false;
-        if (isset($allInput['is_remote_request']) && $allInput['is_remote_request'] ==  'true') {
+        if (isset($allInput['is_remote_request']) && $allInput['is_remote_request'] == 'true') {
             $is_remote_request = true;
         }
 
@@ -150,9 +148,9 @@ class AuthController extends Controller
             $remember = ($request->has('remember')) ? true : false;
 
             $credentials = array(
-                'email'    => $allInput['email'],
+                'email' => $allInput['email'],
                 'password' => $allInput['password'],
-                'active'   => 1
+                'active' => 1,
             );
 
             if (Auth::attempt($credentials, $remember)) {
@@ -187,7 +185,7 @@ class AuthController extends Controller
                             'role_id' => $rold_id,
                             'propic' => $profilePhotoUrl,
                             // 'campaigns' => $campaigns,
-                            'categories' => $categories
+                            'categories' => $categories,
                         ]
                     );
                 }
@@ -226,7 +224,7 @@ class AuthController extends Controller
                             'role_id' => $rold_id,
                             'propic' => $profilePhotoUrl,
                             'campaigns' => $campaigns,
-                            'categories' => $categories
+                            'categories' => $categories,
                         ]
                     );
                 }
@@ -258,7 +256,7 @@ class AuthController extends Controller
     {
         Auth::logout();
         return redirect()->route('login')
-            //return redirect(\URL::previous())
+        //return redirect(\URL::previous())
             ->with('success', "You've logged out successfully!'.");
         // return 'Logout Panel';
     }
@@ -368,7 +366,7 @@ class AuthController extends Controller
 
         //updated code for total profit calculation
         //$TotalProfit = WalletHistoryModel::where('user_id','1')->sum('commision');
-        $TotalProfit =  WalletHistoryModel::where('mode', '=', 'credit')->sum('amount');
+        $TotalProfit = WalletHistoryModel::where('mode', '=', 'credit')->sum('amount');
 
         $ActiveAd = 0;
         $Impressions = 0;
@@ -443,10 +441,14 @@ class AuthController extends Controller
         $totalSuccessCamps = count(campaignorders::where('campaign_running_status', 'activated')->get());
         $totalSuccessCampsCost = campaignorders::where('campaign_running_status', 'activated')->sum('campaign_price');
 
+        $currentBalance = Transaction::where('user_id', Auth::user()->id)
+            ->sum('amount');
+
         return view('dashboard')
             ->with('title', 'Dashboard')
             ->with('user', Auth::user())
             ->with('totalClient', $totalClient)
+            ->with('currentBalance', $currentBalance)
             ->with('totalVendors', $totalVendors)
             ->with('emailCount', $emailCount)
             ->with('phoneCount', $phoneCount)
@@ -476,8 +478,8 @@ class AuthController extends Controller
     public function doChangePassword(Request $request)
     {
         $rules = [
-            'password'              => 'required|confirmed',
-            'password_confirmation' => 'required'
+            'password' => 'required|confirmed',
+            'password_confirmation' => 'required',
         ];
         $data = $request->all();
 
@@ -503,7 +505,7 @@ class AuthController extends Controller
     public function resetRequest()
     {
         $rules = [
-            'email' => 'required'
+            'email' => 'required',
         ];
 
         $data = Input::all();
@@ -532,16 +534,12 @@ class AuthController extends Controller
                 // $json = file_get_contents($url);
                 // $datas = json_decode($json, true);
                 $AccountSid = "AC68fde1a039c71651c8f132177287b3e9"; // Your Account SID from www.twilio.com/console
-                $AuthToken = "c047895b53559aaf20cd8036f294108c";   // Your Auth Token from www.twilio.com/console
+                $AuthToken = "c047895b53559aaf20cd8036f294108c"; // Your Auth Token from www.twilio.com/console
 
                 $client = new \Services_Twilio($AccountSid, $AuthToken);
 
-
-
                 // Display a confirmation message on the screen
                 // echo "Sent message {$message->sid}";
-
-
 
                 // $txt = "<b>Your account has been created succesfully.</b><br>A confirmation key has been sent to <b>".$user->phone."</b>. Please check your inbox.";
                 // $flag =2;
@@ -553,7 +551,7 @@ class AuthController extends Controller
                 try {
                     $message = $client->account->messages->create(array(
                         "From" => "+12018856171", // From a valid Twilio number
-                        "To" => $phone,   // Text this number
+                        "To" => $phone, // Text this number
                         "Body" => $messageToShow,
                     ));
                 } catch (\Services_Twilio_RestException $e) {
@@ -624,7 +622,7 @@ class AuthController extends Controller
         $rules = [
             'email' => 'required',
             'password' => 'required|min:6',
-            'password_confirmation' => 'required|same:password'
+            'password_confirmation' => 'required|same:password',
         ];
 
         $data = Input::all();
@@ -652,7 +650,6 @@ class AuthController extends Controller
         $password_reset = PasswordReset::find($reset_id); // a single object
         $counter = $password_reset->counter; // check previous counter
         // update
-
 
         try {
             $password_reset->token = null;

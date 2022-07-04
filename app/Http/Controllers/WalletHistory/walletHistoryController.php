@@ -80,14 +80,17 @@ class walletHistoryController extends Controller
 
         $amt = $input['amount'];
 
-        $Balance = Transaction::select('amount')
-            ->where('user_id', Auth::user()->id)
-            ->first();
+        // $Balance = Transaction::select('amount')
+        //     ->where('user_id', Auth::user()->id)
+        //     ->first();
+
+        $Balance = Transaction::where('user_id', Auth::user()->id)
+            ->sum('amount');
 
         $amt = (int) $amt;
         $ngn_amt = (int) $input['ngn_amt'] / 100;
 
-        $update['amount'] = $Balance['amount'] + $amt;
+        $update['amount'] = $Balance + $amt;
         $update['method_id'] = PaymentMethod::where('name', 'Paystack Transfer')->first()->id;
 
         /*$Transdone = Transaction::where('user_id',Auth::user()->id)

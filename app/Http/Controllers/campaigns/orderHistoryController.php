@@ -12,7 +12,6 @@ use App\Model\WalletHistoryModel;
 use App\Transaction;
 use Auth;
 use Illuminate\Http\Request;
-use Mail;
 
 class orderHistoryController extends Controller
 {
@@ -65,7 +64,7 @@ class orderHistoryController extends Controller
         if (!Auth::user()) {
             return array(
                 'status' => 200,
-                'deleted' => true
+                'deleted' => true,
             );
         }
     }
@@ -161,20 +160,29 @@ class orderHistoryController extends Controller
                     $admincommission = ((float) $price * (float) $comm->admin_ratio) / 100;
                     $publishercommission = (float) $price - $admincommission;
 
-                    $arrAdvertAmt = Transaction::select('id', 'amount')
-                        ->where('user_id', $advert->advertiser_id)
-                        ->first();
+                    // $arrAdvertAmt = Transaction::select('id', 'amount')
+                    //     ->where('user_id', $advert->advertiser_id)
+                    //     ->first();
+
+                    $old_balance = Transaction::where('user_id', $advert->advertiser_id)
+                        ->sum('amount');
 
                     $Amt = $price;
 
-                    if ($arrAdvertAmt['amount'] >= $Amt) {
+                    if ($old_balance >= $Amt) {
                         //$final_advert_price['amount'] = $arrAdvertAmt['amount'] - $price - 1;
-                        $remainingAmt = $arrAdvertAmt['amount'] - $price;
+                        $remainingAmt = $old_balance - $price;
                         $final_advert_price['amount'] = $remainingAmt;
 
-                        Transaction::where('user_id', $advert->advertiser_id)
-                            ->where('id', $arrAdvertAmt['id'])
-                            ->update($final_advert_price);
+                        // Transaction::where('user_id', $advert->advertiser_id)
+                        //     ->where('id', $arrAdvertAmt['id'])
+                        //     ->update($final_advert_price);
+
+                        $new_transaction = new Transaction();
+                        $new_transaction->method_id = 1;
+                        $new_transaction->amount = 0 - $Amt;
+                        $new_transaction->user_id = Auth::user()->id;
+                        $new_transaction->save();
 
                         $adminCommisionAmt = $admincommission;
 
@@ -188,14 +196,23 @@ class orderHistoryController extends Controller
 
                         $advertPrice = $price;
 
-                        $arrPublisherAmt = Transaction::select('amount')
-                            ->where('user_id', $advert->publisher_id)
-                            ->first();
+                        // $arrPublisherAmt = Transaction::select('amount')
+                        //     ->where('user_id', $advert->publisher_id)
+                        //     ->first();
 
-                        $final_publisher_price['amount'] = $arrPublisherAmt['amount'] + $publishercommission;
+                        $old_publisher_balance = Transaction::where('user_id', $advert->advertiser_id)
+                            ->sum('amount');
 
-                        Transaction::where('user_id', $advert->publisher_id)
-                            ->update($final_publisher_price);
+                        $new_publisher_balance = $old_publisher_balance + $publishercommission;
+
+                        $new_publisher_transaction = new Transaction();
+                        $new_publisher_transaction->method_id = 1;
+                        $new_publisher_transaction->amount = $new_publisher_balance;
+                        $new_publisher_transaction->user_id = $advert->publisher_id;
+                        $new_publisher_transaction->save();
+
+                        // Transaction::where('user_id', $advert->publisher_id)
+                        //     ->update($final_publisher_price);
 
                         $wallet = new WalletHistoryModel;
                         $wallet->user_id = $advert->advertiser_id;
@@ -346,7 +363,6 @@ class orderHistoryController extends Controller
         // }
     }
 
-
     public function checkIfUrlIsValidCampaign(Request $request)
     {
         $input = $request->all();
@@ -360,7 +376,7 @@ class orderHistoryController extends Controller
             $url_type = $input['url_type'];
         }
 
-        $campaign = Campaign::where($url_type == 'landing' ? 'campaign_url' : 'campaign_success_url', 'like',  '%' . $url_in_question . '%')->first();
+        $campaign = Campaign::where($url_type == 'landing' ? 'campaign_url' : 'campaign_success_url', 'like', '%' . $url_in_question . '%')->first();
 
         // $this->outputData['campaign'] = $campaign;
         $this->outputData['type'] = $url_type;

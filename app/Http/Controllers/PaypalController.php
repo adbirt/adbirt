@@ -2,32 +2,24 @@
 
 namespace app\Http\Controllers;
 
-use Illuminate\Http\Request;
-
+use App\Http\Controllers\Controller;
 use Auth;
-
-use PayPal\Rest\ApiContext;
-use PayPal\Auth\OAuthTokenCredential;
+use Config;
+use Illuminate\Http\Request;
+use Input;
+use PayPal;
 use PayPal\Api\Amount;
-use PayPal\Api\Details;
 use PayPal\Api\Item;
 use PayPal\Api\ItemList;
 use PayPal\Api\Payer;
 use PayPal\Api\Payment;
-use PayPal\Api\RedirectUrls;
-use PayPal\Api\ExecutePayment;
 use PayPal\Api\PaymentExecution;
+use PayPal\Api\RedirectUrls;
 use PayPal\Api\Transaction;
-
-use PayPal\Api;
-use PayPal;
-
-use App\Http\Requests;
-use App\Http\Controllers\Controller;
-use Session;
+use PayPal\Auth\OAuthTokenCredential;
+use PayPal\Rest\ApiContext;
 use Redirect;
-use Config;
-use Input;
+use Session;
 use URL;
 
 class PaypalController extends Controller
@@ -158,7 +150,6 @@ class PaypalController extends Controller
             ->with('error', 'Payment failed');
     }
 
-
     ////////////.............Wallet Portion......////////////////
 
     public function paymentPaypal()
@@ -231,8 +222,6 @@ class PaypalController extends Controller
             ->with('error', 'Unknown error occurred');
     }
 
-
-
     public function confirmPaypal()
     {
         $payment_id = Input::get('paymentId');
@@ -261,7 +250,8 @@ class PaypalController extends Controller
 
         // echo '<pre>';print_r($result);echo '</pre>';exit; // DEBUG RESULT, remove it later
 
-        if ($result->getState() == 'approved') { // payment made
+        if ($result->getState() == 'approved') {
+            // payment made
 
             $_amount = Session::get('amountToPay');
 
@@ -277,21 +267,21 @@ class PaypalController extends Controller
             //     ->update($_update);
 
             $wallet = new \App\Model\WalletHistoryModel;
-            $wallet->user_id  = Auth::user()->id;
-            $wallet->amount  = $_amount;
-            $wallet->commision  = "0";
-            $wallet->mode  = "Wallet Credit";
-            $wallet->pay_currency  = "NGN";
-            $wallet->ngn_amt  = $_amount * 400;
-            $wallet->credit_type  = "Paystack Credit";
-            $wallet->comment  = "$" . $_amount . " Funds Credited Successfully via Paypal";
+            $wallet->user_id = Auth::user()->id;
+            $wallet->amount = $_amount;
+            $wallet->commision = "0";
+            $wallet->mode = "Wallet Credit";
+            $wallet->pay_currency = "NGN";
+            $wallet->ngn_amt = $_amount * 610;
+            $wallet->credit_type = "Paystack Credit";
+            $wallet->comment = "$" . $_amount . " Funds Credited Successfully via Paypal";
             $wallet->save();
 
             $Notify = new \App\Model\NotificationAlertModel;
-            $Notify->heading  = "Funds Credited";
-            $Notify->content  = "$" . $_amount . " Funds Credited Successfully via Paypal";
-            $Notify->type  = "Credit";
-            $Notify->Notify_Receivers_Id  = Auth::user()->id;
+            $Notify->heading = "Funds Credited";
+            $Notify->content = "$" . $_amount . " Funds Credited Successfully via Paypal";
+            $Notify->type = "Credit";
+            $Notify->Notify_Receivers_Id = Auth::user()->id;
             $Notify->save();
 
             // --
@@ -313,14 +303,6 @@ class PaypalController extends Controller
         return Redirect::route('dashboard')
             ->with('error', 'Payment failed');
     }
-
-
-
-
-
-
-
-
 
     /**
      * Display a listing of the resource.

@@ -2,17 +2,13 @@
 
 namespace App\Http\Controllers\WalletHistory;
 
-use Illuminate\Http\Request;
-use Auth;
-use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use App\Model\userModel;
-use App\Profile;
-use App\Model\WalletHistoryModel;
 use App\Model\NotificationAlertModel;
-use App\Transaction;
+use App\Model\WalletHistoryModel;
 use App\PaymentMethod;
-use App\Model\cityModel;
+use App\Transaction;
+use Auth;
+use Illuminate\Http\Request;
 
 class walletHistoryController extends Controller
 {
@@ -67,7 +63,6 @@ class walletHistoryController extends Controller
         return view('WalletHistory.search-wallethistory', $this->outputData);
     }
 
-
     /**
      * Display the specified resource.
      *
@@ -96,27 +91,36 @@ class walletHistoryController extends Controller
         $update['method_id'] = PaymentMethod::where('name', 'Paystack Transfer')->first()->id;
 
         /*$Transdone = Transaction::where('user_id',Auth::user()->id)
-                                ->update($update);*/
+        ->update($update);*/
 
-        $Transdone = Transaction::where('user_id', Auth::user()->id)->first()
-            ->update($update);
+        // $Transdone = Transaction::where('user_id', Auth::user()->id)->first()
+        //     ->update($update);
+
+        // Transaction::where('user_id', Auth::user()->id)->first()
+        //     ->update($update);
+
+        $new_transaction = new Transaction();
+        $new_transaction->method_id = $update['method_id'];
+        $new_transaction->amount = $update['amount'];
+        $new_transaction->user_id = Auth::user()->id;
+        $new_transaction->save();
 
         $wallet = new WalletHistoryModel;
-        $wallet->user_id  = Auth::user()->id;
-        $wallet->amount  = $amt;
-        $wallet->commision  = "0";
-        $wallet->mode  = "Wallet Credit";
-        $wallet->pay_currency  = "NGN";
-        $wallet->ngn_amt  = $ngn_amt;
-        $wallet->credit_type  = "Paystack Credit";
-        $wallet->comment  = "$" . $amt . " Funds Credited Successfully via Paystack";
+        $wallet->user_id = Auth::user()->id;
+        $wallet->amount = $amt;
+        $wallet->commision = "0";
+        $wallet->mode = "Wallet Credit";
+        $wallet->pay_currency = "NGN";
+        $wallet->ngn_amt = $ngn_amt;
+        $wallet->credit_type = "Paystack Credit";
+        $wallet->comment = "$" . $amt . " Funds Credited Successfully via Paystack";
         $wallet->save();
 
         $Notify = new NotificationAlertModel;
-        $Notify->heading  = "Funds Credited";
-        $Notify->content  = "$" . $amt . " Funds Credited Successfully via Paystack";
-        $Notify->type  = "Credit";
-        $Notify->Notify_Receivers_Id  = Auth::user()->id;
+        $Notify->heading = "Funds Credited";
+        $Notify->content = "$" . $amt . " Funds Credited Successfully via Paystack";
+        $Notify->type = "Credit";
+        $Notify->Notify_Receivers_Id = Auth::user()->id;
         $Notify->save();
 
         echo "true";

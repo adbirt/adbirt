@@ -181,7 +181,7 @@ class orderHistoryController extends Controller
                         $new_transaction = new Transaction();
                         $new_transaction->method_id = 1;
                         $new_transaction->amount = 0 - $Amt;
-                        $new_transaction->user_id = Auth::user()->id;
+                        $new_transaction->user_id = $advert->advertiser_id;
                         $new_transaction->save();
 
                         $adminCommisionAmt = $admincommission;

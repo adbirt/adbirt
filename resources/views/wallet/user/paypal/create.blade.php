@@ -22,7 +22,7 @@
             </div>
             <ol class="breadcrumb">
                 <!--<li><a href="#">Home</a></li>
-                                            <li class="active">Paypal Deposit</li>-->
+                                                <li class="active">Paypal Deposit</li>-->
             </ol>
             <div class="card">
                 <ul class="nav nav-tabs">
@@ -30,8 +30,8 @@
                         <a class="nav-link active" href="#first" data-toggle="tab">{!! $title !!}</a>
                     </li>
                     <!-- <li class="nav-item">
-                                                    <a class="nav-link" href="#second" data-toggle="tab">Billing</a>
-                                                  </li> -->
+                                                        <a class="nav-link" href="#second" data-toggle="tab">Billing</a>
+                                                      </li> -->
                 </ul>
                 <div class="p-a-2 tab-content">
                     <div class="tab-pane active p-3" id="first">
@@ -52,14 +52,14 @@
                                     </div>
                                     <br />
                                     <p class="w-100 text-center d-flex flex-row align-items-center justify-content-start">
-                                        <img src="https://adbirt.com/public/assets-revamp/img/paypal-icon.png" width="50"
-                                            height="50" class="mr-3 shadow" />
+                                        <img src="https://adbirt.com/public/assets-revamp/img/paypal-icon.png"
+                                            width="50" height="50" class="mr-3 shadow" />
                                         PAYPAL: Input amount in USD e.g: 1 = $1
                                     </p>
                                     <br />
                                     <p class="w-100 text-center d-flex flex-row align-items-center justify-content-start">
-                                        <img src="https://adbirt.com/public/assets-revamp/img/paystack-icon.png" width="50"
-                                            height="50" class="mr-3 shadow" />
+                                        <img src="https://adbirt.com/public/assets-revamp/img/paystack-icon.png"
+                                            width="50" height="50" class="mr-3 shadow" />
                                         PAYSTACK: Input amount in USD e.g : 1 USD= #400
                                     </p>
                                 </div>
@@ -169,6 +169,7 @@
     <script>
         var baseUrl = "{{ url('/') }}";
         $("#addWithpaystack").click(function(event) {
+
             var amount = $("#amount").val();
             var paidAmount = 0;
             var clientEmail = "{{ Auth::user()->email }}";
@@ -180,7 +181,8 @@
                 $("#addWithpaystack").hide();
                 amount = parseInt(amount);
                 {{-- var NGNRATE = 380; --}}
-                var NGNRATE = 400;
+                // var NGNRATE = 400;
+                var NGNRATE = 610;
                 paidAmount = amount * NGNRATE * 100;
                 var refNo = Math.random();
                 $.LoadingOverlay("show");
@@ -245,7 +247,7 @@
                     custom_fields: [{}]
                 },
                 callback: callback || function(response) {
-                    var MainAmount = parseInt($("#amount").val());
+                    var MainAmount = Number($("#amount").val());
                     $.ajax({
                             url: baseUrl + '/wallet-credit/paystack',
                             type: 'POST',

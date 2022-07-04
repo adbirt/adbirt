@@ -161,7 +161,6 @@ class PaypalController extends Controller
 
     ////////////.............Wallet Portion......////////////////
 
-
     public function paymentPaypal()
     {
         $current_amount = Input::get('amount');
@@ -219,7 +218,6 @@ class PaypalController extends Controller
                 break;
             }
         }
-
 
         session()->put('paypal_payment_id', $payment->getId());
         // Session::put('paypal_payment_id', $payment->getId());

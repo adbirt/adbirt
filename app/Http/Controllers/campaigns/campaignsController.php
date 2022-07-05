@@ -1125,7 +1125,6 @@ foreach ($similar_campaigns as $key => $similar) {
                 }
 
                 if (!$clicked_successfully) {
-                    echo $error_message;
                     return $error_message;
                 }
 

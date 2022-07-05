@@ -1051,7 +1051,7 @@ foreach ($similar_campaigns as $key => $similar) {
 
     public function banner_Click(Request $request, $id = "")
     {
-        return view('campaigns.my-campaigns', []);
+        // return view('campaigns.my-campaigns', []);
         
         $header = $request->header();
         $destUrl = "";

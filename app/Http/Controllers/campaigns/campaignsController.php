@@ -1049,7 +1049,7 @@ foreach ($similar_campaigns as $key => $similar) {
         return $data;
     }
 
-    public function bannerCli_ck(Request $request, $id = "")
+    public function bannerClick(Request $request, $id = "")
     {
 
         return view('campaigns.my-campaigns', []);

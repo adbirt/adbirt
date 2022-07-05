@@ -1050,7 +1050,7 @@ foreach ($similar_campaigns as $key => $similar) {
     }
 
     public function bannerClick(Request $request, $id = "")
-    {        
+    {
         $header = $request->header();
         $destUrl = "";
 

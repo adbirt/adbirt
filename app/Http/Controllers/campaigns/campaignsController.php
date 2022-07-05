@@ -1054,6 +1054,8 @@ foreach ($similar_campaigns as $key => $similar) {
         $header = $request->header();
         $destUrl = "";
 
+        return 'log1';
+
         $clicked_successfully = true;
         $error_message = 'Something went wrong!!!';
 

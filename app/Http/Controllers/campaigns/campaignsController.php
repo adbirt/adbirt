@@ -1121,6 +1121,7 @@ foreach ($similar_campaigns as $key => $similar) {
                     } catch (\Throwable $th) {
                         //throw $th;
                         // $clicked_successfully = false;
+                        $error_message = $th->getMessage();
                     }
                 }
 

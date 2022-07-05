@@ -1049,10 +1049,8 @@ foreach ($similar_campaigns as $key => $similar) {
         return $data;
     }
 
-    public function banner_Click(Request $request, $id = "")
-    {
-        // return view('campaigns.my-campaigns', []);
-        
+    public function bannerClick(Request $request, $id = "")
+    {        
         $header = $request->header();
         $destUrl = "";
 

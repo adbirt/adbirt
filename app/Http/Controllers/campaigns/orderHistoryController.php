@@ -12,6 +12,7 @@ use App\Model\WalletHistoryModel;
 use App\Transaction;
 use Auth;
 use Illuminate\Http\Request;
+use Mail;
 
 class orderHistoryController extends Controller
 {
@@ -102,8 +103,8 @@ class orderHistoryController extends Controller
     public function credit(Request $request)
     {
         $input = $request->all();
-        // $method = $request->method();
         $header = $request->header();
+
         $destUrl = "";
 
         if (isset($header['referer']['0']) && !empty($header['referer']['0'])) {
@@ -111,8 +112,10 @@ class orderHistoryController extends Controller
         }
 
         if ($destUrl == "") {
-            $destUrl = "https://adbirt.com/";
+            $destUrl = getUserIp() ?? "https://adbirt.com/";
         }
+
+        $destUrl = $this->getDomain($destUrl);
 
         if (!isset($input['campaign_code']) || empty($input['campaign_code'])) {
             $this->outputData['message'] = "campaign code is required ";
@@ -120,212 +123,156 @@ class orderHistoryController extends Controller
         }
 
         $code = $input['campaign_code'];
-        $uniq_id = ""; //$input['uniq_id'];
+        $uniq_id = $input['uniq_id'] ?? (time() . '-' . time() . '-transaction');
         $advert = campaignorders::with('campaign', 'advertiser', 'publisher')
             ->where('advert_code', $code)
             ->first();
 
-        $destUrl = $this->getDomain($destUrl);
-
-        // if (!empty($advert->campaign) && (strpos(strval($advert->campaign->campaign_url), strval($destUrl)) !== false)) {
         if (!empty($advert->campaign)) {
 
             $startDate = date('Y-m-d H:i:s');
-
             $Time = date('Y-m-d H:i:s', strtotime("-1 minutes", strtotime($startDate)));
+            $isSpam = campaignTransaction::where('client_ip', getUserIp())
+                ->where('created_at', '<', $startDate)
+                ->where('created_at', '>', $Time)
+                ->first();
 
-            $isAlredyExist = "0";
+            if (!empty($advert) && $advert->campaign->isActive == "Active" && empty($isSpam)) {
 
-            if ($isAlredyExist == "0") {
+                $tra = new campaignTransaction;
+                $tra->advertiser_id = $advert->advertiser_id;
+                $tra->publisher_id = $advert->publisher_id;
+                $tra->client_ip = getUserIp();
+                $tra->uniq_id = $uniq_id;
+                $tra->campaign_code = $code;
+                $tra->save();
 
-                $isSpam = campaignTransaction::where('client_ip', getUserIp())
-                    ->where('created_at', '<', $startDate)
-                    ->where('created_at', '>', $Time)
-                    ->first();
+                $cost_per_action = $advert->campaign->campaign_cost_per_action;
 
-                if (!empty($advert) && $advert->campaign->isActive == "Active" && empty($isSpam)) {
+                $comm = commissionratioModel::first();
+                // $admincommission = (float) (((float) $cost_per_action * (float) $comm->admin_ratio) / 100);
+                $admincommission = ((float) $cost_per_action / 100) * $comm->admin_ratio;
+                $publishercommission = (float) $cost_per_action - $admincommission;
 
-                    $tra = new campaignTransaction;
-                    $tra->advertiser_id = $advert->advertiser_id;
-                    $tra->publisher_id = $advert->publisher_id;
-                    $tra->client_ip = getUserIp();
-                    $tra->uniq_id = $uniq_id;
-                    $tra->campaign_code = $code;
-                    $tra->save();
+                $balance = Transaction::where('user_id', $advert->advertiser_id)
+                    ->sum('amount');
 
-                    $comm = commissionratioModel::first();
-                    /*dd($comm);*/
-                    //$price = $advert->campaign_price;
-                    $price = $advert->campaign->campaign_cost_per_action;
-                    $admincommission = ((float) $price * (float) $comm->admin_ratio) / 100;
-                    $publishercommission = (float) $price - $admincommission;
+                if ($balance >= $cost_per_action) {
+                    $remainingAmt = $balance - $cost_per_action;
 
-                    // $arrAdvertAmt = Transaction::select('id', 'amount')
-                    //     ->where('user_id', $advert->advertiser_id)
-                    //     ->first();
+                    // debit the advertiser
+                    $advertiser_transaction = new Transaction();
+                    $advertiser_transaction->method_id = 1;
+                    $advertiser_transaction->amount = 0 - $cost_per_action;
+                    $advertiser_transaction->user_id = $advert->advertiser_id;
+                    $advertiser_transaction->save();
 
-                    $old_balance = Transaction::where('user_id', $advert->advertiser_id)
-                        ->sum('amount');
+                    // add wallet entry for the admin
+                    $advertiser_wallet = new WalletHistoryModel;
+                    $advertiser_wallet->user_id = "1";
+                    $advertiser_wallet->amount = "0";
+                    $advertiser_wallet->commision = $admincommission;
+                    $advertiser_wallet->mode = "commision";
+                    $advertiser_wallet->comment = "$" . number_format($admincommission, 2) . " was Credited to your Wallet for Campaign commision of '" . $advert->campaign->campaign_name . "'";
+                    $advertiser_wallet->save();
 
-                    $Amt = $price;
+                    // credit the publisher with commission
+                    $publisher_transaction = new Transaction();
+                    $publisher_transaction->method_id = 1;
+                    $publisher_transaction->amount = $publishercommission;
+                    $publisher_transaction->user_id = $advert->publisher_id;
+                    $publisher_transaction->save();
 
-                    if ($old_balance >= $Amt) {
-                        //$final_advert_price['amount'] = $arrAdvertAmt['amount'] - $price - 1;
-                        $remainingAmt = $old_balance - $price;
-                        $final_advert_price['amount'] = $remainingAmt;
+                    // add walletentry for the advertiser
+                    $wallet = new WalletHistoryModel;
+                    $wallet->user_id = $advert->advertiser_id;
+                    $wallet->amount = $cost_per_action;
+                    $wallet->commision = "0";
+                    $wallet->mode = "debit";
+                    $wallet->comment = "Debited $" . $cost_per_action . "for Campaign consumed ";
+                    $wallet->save();
 
-                        // Transaction::where('user_id', $advert->advertiser_id)
-                        //     ->where('id', $arrAdvertAmt['id'])
-                        //     ->update($final_advert_price);
+                    // Notify the advertiser
+                    $Notify = new NotificationAlertModel;
+                    $Notify->heading = "Your Campaign has been consumed";
+                    $Notify->content = "Dear <b>\"" . $advert->advertiser->name . "\"</b>, Your Campaign <b>\"" . $advert->campaign->campaign_name . "\"</b> has just been patronized today at <b>\"" . $startDate . "\"</b>, kindly check and report any possible Malicious Activity";
+                    $Notify->type = "Campaign consumed";
+                    $Notify->Notify_Receivers_Id = $advert->advertiser_id;
+                    $Notify->save();
 
-                        $new_transaction = new Transaction();
-                        $new_transaction->method_id = 1;
-                        $new_transaction->amount = 0 - $Amt;
-                        $new_transaction->user_id = $advert->advertiser_id;
-                        $new_transaction->save();
+                    // $AdvertiserMsg = "Dear " . $advert->advertiser->name . ", Your Campaign " . $advert->campaign->campaign_title . " has just been patronized today at " . $startDate . ", kindly check and report any possible Malicious Activity";
 
-                        $adminCommisionAmt = $admincommission;
+                    // if ($advert->advertiser->login == "phone") {
+                    //     $AccountSid = "AC68fde1a039c71651c8f132177287b3e9"; // Your Account SID from www.twilio.com/console
+                    //     $AuthToken = "c047895b53559aaf20cd8036f294108c"; // Your Auth Token from www.twilio.com/console
+                    //     $client = new \Services_Twilio($AccountSid, $AuthToken);
+                    //     try {
+                    //         $Client_message = $client->account->messages->create(array(
+                    //             "From" => "+12018856171", // From a valid Twilio number
+                    //             "To" => $advert->advertiser->phone, // Text this number
+                    //             "Body" => $AdvertiserMsg,
+                    //         ));
+                    //     } catch (\Services_Twilio_RestException $e) {
+                    //     }
+                    // } else {
+                    //     // $email = $advert->advertiser->email;
+                    //     // $heading = "Campaign Consumed";
+                    //     // $data['heading'] = $heading;
+                    //     // $data['TextToClient'] = $AdvertiserMsg;
+                    //     // Mail::send('email.campaignconsumed', $data, function ($message) use ($email) {
+                    //     //     $message->from('info@adbirt.com', 'Adbirt');
+                    //     //     $message->to($email)->subject('Campaign Consumed');
+                    //     // });
+                    // }
 
-                        $wallet = new WalletHistoryModel;
-                        $wallet->user_id = "1";
-                        $wallet->amount = "0";
-                        $wallet->commision = $adminCommisionAmt;
-                        $wallet->mode = "commision";
-                        $wallet->comment = "$" . number_format($adminCommisionAmt, 2) . " was Credited to your Wallet for Campaign commision of '" . $advert->campaign->campaign_name . "'";
-                        $wallet->save();
+                    // add wallet entry for the publisher
+                    $wallet = new WalletHistoryModel;
+                    $wallet->user_id = $advert->publisher_id;
+                    $wallet->amount = $publishercommission;
+                    $wallet->commision = "0";
+                    $wallet->mode = "credit";
+                    $wallet->comment = "Added Cash of " . $publishercommission;
+                    $wallet->save();
 
-                        $advertPrice = $price;
+                    // notify the publisher
+                    $Notify = new NotificationAlertModel;
+                    $Notify->heading = "Your Promoted Campaign has been consumed";
+                    $Notify->content = "Dear \"<b>" . $advert->publisher->name . "\"</b>, your Promoted Campaign \"<b>" . $advert->campaign->campaign_name . "\"</b> from \"<b>" . $advert->advertiser->name . "</b>\" has just been patronize today at \"<b>" . $startDate . "\"</b> via your website/app \"<b>" . $destUrl . "</b>\" and you have been credited with $" . $publishercommission . ". NOTE: We do not tolerate SPAM and Invalid Activity.";
+                    $Notify->type = "Campaign consumed";
+                    $Notify->Notify_Receivers_Id = $advert->publisher_id;
+                    $Notify->save();
 
-                        // $arrPublisherAmt = Transaction::select('amount')
-                        //     ->where('user_id', $advert->publisher_id)
-                        //     ->first();
+                    // $PublisherMsg = "Dear " . $advert->publisher->name . ", your Promoted Campaign " . $advert->campaign->campaign_name . " from " . $advert->advertiser->name . " has just been patronize today at " . $startDate . " via your website " . $destUrl . ". NOTE: We do not tolerate SPAM and Invalid Activity on your Account.";
 
-                        $old_publisher_balance = Transaction::where('user_id', $advert->publisher_id)
-                            ->sum('amount');
+                    // if ($advert->publisher->login == "phone") {
+                    //     $AccountSid = "AC68fde1a039c71651c8f132177287b3e9"; // Your Account SID from www.twilio.com/console
+                    //     $AuthToken = "c047895b53559aaf20cd8036f294108c"; // Your Auth Token from www.twilio.com/console
+                    //     $client = new \Services_Twilio($AccountSid, $AuthToken);
 
-                        $new_publisher_balance = $old_publisher_balance + $publishercommission;
+                    //     try {
+                    //         // $Client_message = $client->account->messages->create(array(
+                    //         //     "From" => "+12018856171", // From a valid Twilio number
+                    //         //     "To" => $advert->publisher->phone, // Text this number
+                    //         //     "Body" => $PublisherMsg,
+                    //         // ));
+                    //     } catch (\Services_Twilio_RestException $e) {
+                    //     }
+                    // } else {
+                    //     // $email = $advert->publisher->email;
+                    //     // $heading = "Campaign Consumed";
+                    //     // $data['heading'] = $heading;
+                    //     // $data['TextToClient'] = $PublisherMsg;
+                    //     // Mail::send('email.campaignconsumed', $data, function ($message) use ($email) {
+                    //     //     $message->from('info@adbirt.com', 'Adbirt');
+                    //     //     $message->to($email)->subject('Campaign Consumed');
+                    //     // });
+                    // }
 
-                        $new_publisher_transaction = new Transaction();
-                        $new_publisher_transaction->method_id = 1;
-                        $new_publisher_transaction->amount = $new_publisher_balance;
-                        $new_publisher_transaction->user_id = $advert->publisher_id;
-                        $new_publisher_transaction->save();
+                    //process if campaign cost have been finished
+                    //echo "*** price and remaiing price $price , $remainingAmt";
 
-                        // Transaction::where('user_id', $advert->publisher_id)
-                        //     ->update($final_publisher_price);
-
-                        $wallet = new WalletHistoryModel;
-                        $wallet->user_id = $advert->advertiser_id;
-                        $wallet->amount = $advertPrice;
-                        $wallet->commision = "0";
-                        $wallet->mode = "debit";
-                        $wallet->comment = "Debited $" . $advertPrice . "for Campaign consumed ";
-                        $wallet->save();
-
-                        $Notify = new NotificationAlertModel;
-                        $Notify->heading = "Your Campaign has been consumed";
-                        $Notify->content = "Dear <b>\"" . $advert->advertiser->name . "\"</b>, Your Campaign <b>\"" . $advert->campaign->campaign_name . "\"</b> has just been patronized today at <b>\"" . $startDate . "\"</b>, kindly check and report any possible Malicious Activity";
-                        $Notify->type = "Campaign consumed";
-                        $Notify->Notify_Receivers_Id = $advert->advertiser_id;
-                        $Notify->save();
-
-                        $AdvertiserMsg = "Dear " . $advert->advertiser->name . ", Your Campaign " . $advert->campaign->campaign_title . " has just been patronized today at " . $startDate . ", kindly check and report any possible Malicious Activity";
-
-                        if ($advert->advertiser->login == "phone") {
-
-                            $AccountSid = "AC68fde1a039c71651c8f132177287b3e9"; // Your Account SID from www.twilio.com/console
-
-                            $AuthToken = "c047895b53559aaf20cd8036f294108c"; // Your Auth Token from www.twilio.com/console
-
-                            $client = new \Services_Twilio($AccountSid, $AuthToken);
-
-                            try {
-                                $Client_message = $client->account->messages->create(array(
-                                    "From" => "+12018856171", // From a valid Twilio number
-                                    "To" => $advert->advertiser->phone, // Text this number
-                                    "Body" => $AdvertiserMsg,
-                                ));
-                            } catch (\Services_Twilio_RestException $e) {
-                            }
-                        } else {
-                            // $email = $advert->advertiser->email;
-                            // $heading = "Campaign Consumed";
-                            // $data['heading'] = $heading;
-                            // $data['TextToClient'] = $AdvertiserMsg;
-                            // Mail::send('email.campaignconsumed', $data, function ($message) use ($email) {
-                            //     $message->from('info@adbirt.com', 'Adbirt');
-                            //     $message->to($email)->subject('Campaign Consumed');
-                            // });
-                        }
-
-                        $wallet = new WalletHistoryModel;
-                        $wallet->user_id = $advert->publisher_id;
-                        $wallet->amount = $publishercommission;
-                        $wallet->commision = "0";
-                        $wallet->mode = "credit";
-                        $wallet->comment = "Added Cash of " . $publishercommission;
-                        $wallet->save();
-
-                        $Notify = new NotificationAlertModel;
-                        $Notify->heading = "Your Promoted Campaign has been consumed";
-                        $Notify->content = "Dear \"<b>" . $advert->publisher->name . "\"</b>, your Promoted Campaign \"<b>" . $advert->campaign->campaign_name . "\"</b> from \"<b>" . $advert->advertiser->name . "</b>\" has just been patronize today at \"<b>" . $startDate . "\"</b> via your website/app \"<b>" . $destUrl . "</b>\". NOTE: We do not tolerate SPAM and Invalid Activity.";
-                        $Notify->type = "Campaign consumed";
-                        $Notify->Notify_Receivers_Id = $advert->publisher_id;
-                        $Notify->save();
-
-                        $PublisherMsg = "Dear " . $advert->publisher->name . ", your Promoted Campaign " . $advert->campaign->campaign_name . " from " . $advert->advertiser->name . " has just been patronize today at " . $startDate . " via your website " . $destUrl . ". NOTE: We do not tolerate SPAM and Invalid Activity on your Account.";
-
-                        if ($advert->publisher->login == "phone") {
-
-                            $AccountSid = "AC68fde1a039c71651c8f132177287b3e9"; // Your Account SID from www.twilio.com/console
-
-                            $AuthToken = "c047895b53559aaf20cd8036f294108c"; // Your Auth Token from www.twilio.com/console
-
-                            $client = new \Services_Twilio($AccountSid, $AuthToken);
-
-                            try {
-                                // $Client_message = $client->account->messages->create(array(
-                                //     "From" => "+12018856171", // From a valid Twilio number
-                                //     "To" => $advert->publisher->phone, // Text this number
-                                //     "Body" => $PublisherMsg,
-                                // ));
-                            } catch (\Services_Twilio_RestException $e) {
-                            }
-                        } else {
-                            // $email = $advert->publisher->email;
-                            // $heading = "Campaign Consumed";
-                            // $data['heading'] = $heading;
-                            // $data['TextToClient'] = $PublisherMsg;
-                            // Mail::send('email.campaignconsumed', $data, function ($message) use ($email) {
-                            //     $message->from('info@adbirt.com', 'Adbirt');
-                            //     $message->to($email)->subject('Campaign Consumed');
-                            // });
-                        }
-
-                        //process if campaign cost have been finished
-                        //echo "*** price and remaiing price $price , $remainingAmt";
-                        if ($remainingAmt < $price) {
-                            $status['campaign_approval_status'] = "Pending";
-                            Campaign::where('id', $advert->campaign_id)
-                                ->update($status);
-
-                            //send email
-                            $email = $advert->advertiser->email;
-                            $heading = "Funds exhausted, kindly top up your wallet";
-                            $paymentMsg = "Dear " . $advert->advertiser->name . ", you do not have sufficient balance on your wallet. So your campaign has been stopped to continue kindly add fund on your wallet.";
-
-                            $data['heading'] = $heading;
-                            $data['TextToClient'] = $paymentMsg;
-                            // Mail::send('email.campaignconsumed', $data, function ($message) use ($email) {
-                            //     $message->from('info@adbirt.com', 'Adbirt');
-                            //     $message->to($email)->subject('Campaign Consumed');
-                            // });
-                        }
-
-                        $this->outputData['message'] = "Verified";
-                        return response()->json($this->outputData, 200);
-                    } else {
-                        //change campaign status and send email to advertiser
+                    // if ($remainingAmt < $cost_per_action) {
+                    if ($remainingAmt <= 0) {
                         $status['campaign_approval_status'] = "Pending";
                         Campaign::where('id', $advert->campaign_id)
                             ->update($status);
@@ -337,37 +284,50 @@ class orderHistoryController extends Controller
 
                         $data['heading'] = $heading;
                         $data['TextToClient'] = $paymentMsg;
-                        // Mail::send('email.campaignconsumed', $data, function ($message) use ($email) {
-                        //     $message->from('info@adbirt.com', 'Adbirt');
-                        //     $message->to($email)->subject('Campaign Consumed');
-                        // });
-
-                        $this->outputData['message'] = "Unable to proceed, not enough balance available";
-                        return response()->json($this->outputData, 401);
+                        Mail::send('email.campaignconsumed', $data, function ($message) use ($email, $heading) {
+                            $message->from('info@adbirt.com', 'Adbirt');
+                            $message->to($email)->subject($heading);
+                        });
                     }
+
+                    $this->outputData['message'] = "Verified";
+                    $this->outputData['status'] = 200;
+                    return response()->json($this->outputData, 200);
                 } else {
-                    $this->outputData['message'] = "InCorrect Campaign Code Given or alredy requested from this source";
-                    return response()->json($this->outputData, 402);
+                    //change campaign status and send email to advertiser
+                    $status['campaign_approval_status'] = "Pending";
+                    Campaign::where('id', $advert->campaign_id)
+                        ->update($status);
+
+                    //send email
+                    $email = $advert->advertiser->email;
+                    $heading = "Funds exhausted, kindly top up your wallet";
+                    $paymentMsg = "Dear " . $advert->advertiser->name . ", you do not have sufficient balance on your wallet. So your campaign has been discontinued. To continue, kindly add funds on your wallet.";
+
+                    $data['heading'] = $heading;
+                    $data['TextToClient'] = $paymentMsg;
+                    Mail::send('email.campaignconsumed', $data, function ($message) use ($email, $heading) {
+                        $message->from('info@adbirt.com', 'Adbirt');
+                        $message->to($email)->subject($heading);
+                    });
+
+                    $this->outputData['message'] = "Unable to process campaign, not enough balance available";
+                    return response()->json($this->outputData, 401);
                 }
+
             } else {
-                $this->outputData['message'] = "user exist";
+                $this->outputData['message'] = "Spam click detected";
                 return response()->json($this->outputData, 403);
             }
         } else {
-            $this->outputData['message'] = "source host & destination host not matched";
+            $this->outputData['message'] = "Invalid campaign";
             return response()->json($this->outputData, 405);
         }
-        // } else {
-        //     $this->outputData['message'] = "method_not_allowed";
-        //     return response()->json($this->outputData, 406);
-        // }
     }
 
     public function checkIfUrlIsValidCampaign(Request $request)
     {
         $input = $request->all();
-        // $method = $request->method();
-        // $header = $request->header();
 
         $url_in_question = $input['url_in_question'];
         $url_type = 'success'; // 'landing' or 'success'

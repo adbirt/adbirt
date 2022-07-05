@@ -20,7 +20,7 @@ Route::any('/ubm_banner_click/{id}', 'campaigns\campaignsController@bannerClick'
 
 Route::any('/check-advertiser-account', 'owner\ownerController@CheckAcc');
 
-Route::any('/campaigns/share/{id}', 'campaigns\campaignsController@share');
+Route::get('/campaigns/share/{id}', 'campaigns\campaignsController@share');
 
 Route::any('/campaigns/inccampview/{id}', 'campaigns\campaignsController@inccampview');
 

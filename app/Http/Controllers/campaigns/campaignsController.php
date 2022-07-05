@@ -1054,6 +1054,9 @@ foreach ($similar_campaigns as $key => $similar) {
         $header = $request->header();
         $destUrl = "";
 
+        $clicked_successfully = false;
+        $error_message = '';
+
         if (isset($header['referer']['0']) && !empty($header['referer']['0'])) {
             $destUrl = $header['referer']['0'];
         } else {
@@ -1099,9 +1102,30 @@ foreach ($similar_campaigns as $key => $similar) {
                     curl_setopt($ch, CURLOPT_POSTFIELDS, $_fields_string);
 
                     //execute post
-                    curl_exec($ch);
+                    $raw_response = curl_exec($ch);
                     //close connection
                     curl_close($ch);
+
+                    if ($raw_response == false) {
+                        $clicked_successfully = false;
+                    }
+
+                    try {
+                        $http_response = json_decode($raw_response);
+                        if (isset($http_response['status']) && intval($http_response['status']) == 200) {
+                            $clicked_successfully = true;
+                        } else {
+                            $error_message = $http_response['message'];
+                        }
+                    } catch (\Throwable $th) {
+                        //throw $th;
+                        $clicked_successfully = false;
+                    }
+                }
+
+                if (!$clicked_successfully) {
+                    echo $error_message;
+                    die;
                 }
 
                 $_camp_code = $id;

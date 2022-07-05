@@ -1111,7 +1111,7 @@ foreach ($similar_campaigns as $key => $similar) {
                     }
 
                     try {
-                        $http_response = json_decode($raw_response);
+                        $http_response = json_decode($raw_response, true);
                         if (isset($http_response['status']) && intval($http_response['status']) == 200) {
                             $clicked_successfully = true;
                         } else {

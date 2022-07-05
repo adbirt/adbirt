@@ -1054,7 +1054,7 @@ foreach ($similar_campaigns as $key => $similar) {
         $header = $request->header();
         $destUrl = "";
 
-        $clicked_successfully = true;
+        $clicked_successfully = false;
         $error_message = 'Something went wrong!!!';
 
         if (isset($header['referer']['0']) && !empty($header['referer']['0'])) {

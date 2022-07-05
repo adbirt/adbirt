@@ -1055,7 +1055,7 @@ foreach ($similar_campaigns as $key => $similar) {
         $destUrl = "";
 
         $clicked_successfully = false;
-        $error_message = '';
+        $error_message = 'Something went wrong!!!';
 
         if (isset($header['referer']['0']) && !empty($header['referer']['0'])) {
             $destUrl = $header['referer']['0'];
@@ -1115,6 +1115,7 @@ foreach ($similar_campaigns as $key => $similar) {
                         if (isset($http_response['status']) && intval($http_response['status']) == 200) {
                             $clicked_successfully = true;
                         } else {
+                            $clicked_successfully = false;
                             $error_message = $http_response['message'];
                         }
                     } catch (\Throwable $th) {

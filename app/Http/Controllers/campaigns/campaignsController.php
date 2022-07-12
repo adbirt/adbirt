@@ -935,6 +935,7 @@ class campaignsController extends Controller
                                 .adbirt-single-recommendation-wrapper {
                                     cursor: pointer;
                                     padding: 8px;
+                                    width: 293px !importamt;
                                 }
 
                                 .adbirt-single-recommendation:hover {
@@ -944,9 +945,9 @@ class campaignsController extends Controller
                                 }
 
                                 @media (min-width: 100px) {
-                                    .adbirt-single-recommendation-wrapper {
+                                    /* .adbirt-single-recommendation-wrapper {
                                         width: 100%;
-                                    }
+                                    } */
 
                                     .adbirt-native-recommendations-header {
                                         flex-direction: column;
@@ -954,15 +955,15 @@ class campaignsController extends Controller
                                 }
 
                                 @media (min-width: 250px) {
-                                    .adbirt-single-recommendation-wrapper {
+                                    /* .adbirt-single-recommendation-wrapper {
                                         width: 50%;
-                                    }
+                                    } */
                                 }
 
                                 @media (min-width: 600px) {
-                                    .adbirt-single-recommendation-wrapper {
+                                    /* .adbirt-single-recommendation-wrapper {
                                         width: 25%;
-                                    }
+                                    } */
 
                                     .adbirt-native-recommendations-header {
                                         flex-direction: row;
@@ -989,7 +990,9 @@ class campaignsController extends Controller
                                     <div onclick="this.querySelector('a').click()" class="adbirt-single-recommendation-wrapper">
                                         <div class="adbirt-single-recommendation">
                                             <p class="adbirt-single-recommendation-title">
-                                                <!-- <a href="<?php echo url('ubm_banner_click/' . base64_encode($publisher_code)) ?>" target="_blank"><?php echo $bnr->campaign_name; ?></a> -->
+                                                <!-- <a href="<?php 
+                                                // echo url('ubm_banner_click/' . base64_encode($publisher_code));
+                                                 ?>" target="_blank"><?php echo $bnr->campaign_name; ?></a> -->
                                             </p>
                                             <div class="adbirt-single-recommendation-image-holder">
                                                 <img data-banner-code="<?php echo $bannerCode; ?>" src="<?php echo 'https://www.adbirt.com/public/uploads/campaign_banners/' . $bnr->campaign_banner; ?>" alt="Recommendation text" class="adbirt-single-recommendation-image">
@@ -1001,17 +1004,21 @@ class campaignsController extends Controller
                                     </div>
 
                                     <?php
-foreach ($similar_campaigns as $key => $similar) {
+                            foreach ($similar_campaigns as $key => $similar) {
                             ?>
                                         <div onclick="this.querySelector('a').click()" class="adbirt-single-recommendation-wrapper">
                                             <div class="adbirt-single-recommendation">
                                                 <p class="adbirt-single-recommendation-title">
-                                                    <a href="<?php echo url('ubm_banner_click/' . base64_encode($publisher_code)) ?>" target="_blank"><?php echo $similar->campaign_name; ?></a>
+                                                    <!-- <a href="<?php 
+                                                    // echo url('ubm_banner_click/' . base64_encode($publisher_code));
+                                                     ?>" target="_blank"><?php echo $similar->campaign_name; ?></a> -->
                                                 </p>
                                                 <div class="adbirt-single-recommendation-image-holder">
                                                     <img data-banner-code="<?php echo $bannerCode; ?>" src="<?php echo 'https://www.adbirt.com/public/uploads/campaign_banners/' . $similar->campaign_banner; ?>" alt="Recommendation text" class="adbirt-single-recommendation-image">
                                                 </div>
-                                                <p class="banner-title"><?php echo $bnr->campaign_description; ?></p>
+                                                <a href="<?php echo url('ubm_banner_click/' . base64_encode($publisher_code)) ?>" target="_blank">
+                                                    <p class="banner-title"><?php echo $bnr->campaign_description; ?></p>
+                                                </a>
                                             </div>
                                         </div>
                                     <?php

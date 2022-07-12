@@ -910,7 +910,7 @@ class campaignsController extends Controller
                                     width: 293px !important;
                                 }
 
-                                .adbirt-single-recommendation-image-holder>img.adbirt-single-recommendation-image {
+                                .adbirt-single-recommendation-image-holder>img.adbirt-single-recommendation-image:hover {
                                     box-shadow: 1px 1px 18px 18px #ddd;
                                 }
 

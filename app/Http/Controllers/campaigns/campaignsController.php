@@ -990,7 +990,7 @@ class campaignsController extends Controller
 
                                 <div class="adbirt-native-recommendations-content">
 
-                                    <div onclick="this.querySelector('a').click()" class="adbirt-single-recommendation-wrapper">
+                                    <div class="adbirt-single-recommendation-wrapper">
                                         <div class="adbirt-single-recommendation">
                                             <p class="adbirt-single-recommendation-title">
                                                 <!-- <a href="<?php 
@@ -1009,7 +1009,7 @@ class campaignsController extends Controller
                                     <?php
                             foreach ($similar_campaigns as $key => $similar) {
                             ?>
-                                        <div onclick="this.querySelector('a').click()" class="adbirt-single-recommendation-wrapper">
+                                        <div class="adbirt-single-recommendation-wrapper">
                                             <div class="adbirt-single-recommendation">
                                                 <p class="adbirt-single-recommendation-title">
                                                     <!-- <a href="<?php 

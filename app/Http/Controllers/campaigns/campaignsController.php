@@ -1009,15 +1009,15 @@ class campaignsController extends Controller
                                         </div>
                                     </div>
 
-                                    <?php
-foreach ($similar_campaigns as $key => $similar) {
-                            ?>
-                                        <div class="adbirt-single-recommendation-wrapper">
+                                    <!-- <?php
+// foreach ($similar_campaigns as $key => $similar) {
+                            ?> -->
+                                        <!--<div class="adbirt-single-recommendation-wrapper">
                                             <div class="adbirt-single-recommendation">
                                                 <p class="adbirt-single-recommendation-title">
-                                                    <!-- <a href="<?php
+                                                    <-- <a href="<?php
 // echo url('ubm_banner_click/' . base64_encode($publisher_code));
-                            ?>" target="_blank"><?php echo $similar->campaign_name; ?></a> -->
+                            ?>" target="_blank"><?php echo $similar->campaign_name; ?></a> --
                                                 </p>
                                                 <div class="adbirt-single-recommendation-image-holder">
                                                     <img data-banner-code="<?php echo $bannerCode; ?>" src="<?php echo 'https://www.adbirt.com/public/uploads/campaign_banners/' . $similar->campaign_banner; ?>" alt="Recommendation text" class="adbirt-single-recommendation-image">

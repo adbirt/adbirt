@@ -989,7 +989,7 @@ class campaignsController extends Controller
                                     <div onclick="this.querySelector('a').click()" class="adbirt-single-recommendation-wrapper">
                                         <div class="adbirt-single-recommendation">
                                             <p class="adbirt-single-recommendation-title">
-                                                <a href="<?php echo url('ubm_banner_click/' . base64_encode($publisher_code)) ?>" target="_blank"><?php echo $bnr->campaign_name; ?></a>
+                                                <!-- <a href="<?php echo url('ubm_banner_click/' . base64_encode($publisher_code)) ?>" target="_blank"><?php echo $bnr->campaign_name; ?></a> -->
                                             </p>
                                             <div class="adbirt-single-recommendation-image-holder">
                                                 <img data-banner-code="<?php echo $bannerCode; ?>" src="<?php echo 'https://www.adbirt.com/public/uploads/campaign_banners/' . $bnr->campaign_banner; ?>" alt="Recommendation text" class="adbirt-single-recommendation-image">

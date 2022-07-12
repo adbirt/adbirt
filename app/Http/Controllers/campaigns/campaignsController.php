@@ -828,6 +828,9 @@ class campaignsController extends Controller
                                     color: #fff !important;
                                     padding-bottom: 4px;
                                     font-weight: 900;
+                                    cursor: pointer;
+                                    margin: 0px !important;
+                                    padding: 4px !important;
                                 }
 
                                 #<?php echo $rand_id; ?>>.content>.banner-link-holder>.adbirt-banner-link {
@@ -993,9 +996,9 @@ class campaignsController extends Controller
                                     <div class="adbirt-single-recommendation-wrapper">
                                         <div class="adbirt-single-recommendation">
                                             <p class="adbirt-single-recommendation-title">
-                                                <!-- <a href="<?php 
-                                                // echo url('ubm_banner_click/' . base64_encode($publisher_code));
-                                                 ?>" target="_blank"><?php echo $bnr->campaign_name; ?></a> -->
+                                                <!-- <a href="<?php
+// echo url('ubm_banner_click/' . base64_encode($publisher_code));
+                        ?>" target="_blank"><?php echo $bnr->campaign_name; ?></a> -->
                                             </p>
                                             <div class="adbirt-single-recommendation-image-holder">
                                                 <img data-banner-code="<?php echo $bannerCode; ?>" src="<?php echo 'https://www.adbirt.com/public/uploads/campaign_banners/' . $bnr->campaign_banner; ?>" alt="Recommendation text" class="adbirt-single-recommendation-image">
@@ -1007,14 +1010,14 @@ class campaignsController extends Controller
                                     </div>
 
                                     <?php
-                            foreach ($similar_campaigns as $key => $similar) {
+foreach ($similar_campaigns as $key => $similar) {
                             ?>
                                         <div class="adbirt-single-recommendation-wrapper">
                                             <div class="adbirt-single-recommendation">
                                                 <p class="adbirt-single-recommendation-title">
-                                                    <!-- <a href="<?php 
-                                                    // echo url('ubm_banner_click/' . base64_encode($publisher_code));
-                                                     ?>" target="_blank"><?php echo $similar->campaign_name; ?></a> -->
+                                                    <!-- <a href="<?php
+// echo url('ubm_banner_click/' . base64_encode($publisher_code));
+                            ?>" target="_blank"><?php echo $similar->campaign_name; ?></a> -->
                                                 </p>
                                                 <div class="adbirt-single-recommendation-image-holder">
                                                     <img data-banner-code="<?php echo $bannerCode; ?>" src="<?php echo 'https://www.adbirt.com/public/uploads/campaign_banners/' . $similar->campaign_banner; ?>" alt="Recommendation text" class="adbirt-single-recommendation-image">

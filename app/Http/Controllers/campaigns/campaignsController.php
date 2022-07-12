@@ -820,7 +820,7 @@ class campaignsController extends Controller
                                     border: 1px solid #fff;
                                     background: #000;
                                     border-radius: 10px;
-                                    cursor: pointer;
+                                    /* cursor: pointer; */
                                 }
 
                                 #<?php echo $rand_id; ?>>.content>p {
@@ -938,7 +938,7 @@ class campaignsController extends Controller
                                 }
 
                                 .adbirt-single-recommendation-wrapper {
-                                    cursor: pointer;
+                                    /* cursor: pointer; */
                                     padding: 8px;
                                 }
 

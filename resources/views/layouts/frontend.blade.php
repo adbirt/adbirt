@@ -53,7 +53,6 @@
             font-family: 'Open Sans', sans-serif;
             font-family: 'Roboto', sans-serif;
         }
-
     </style>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -71,6 +70,14 @@
     </script>
 
     @yield('style')
+
+    <script src="https://code.jivosite.com/widget/0XoSD4t6hn"></script>
+    <script>
+        function jivo_onLoadCallback() {
+            console.log('Widget fully loaded');
+            jivo_api.showProactiveInvitation("How can I help you?");
+        }
+    </script>
 </head>
 
 <body>
@@ -115,8 +122,8 @@
                                             class="fab fa-facebook"></i>
                                     </a>
 
-                                    <a target="_blank" href="https://www.instagram.com/adbirthq/"
-                                        class="icon"> <i class="fab fa-instagram"></i>
+                                    <a target="_blank" href="https://www.instagram.com/adbirthq/" class="icon"> <i
+                                            class="fab fa-instagram"></i>
                                     </a>
 
                                     <a target="_blank" href="https://twitter.com/Adbirt_HQ" class="icon"> <i
@@ -228,8 +235,8 @@
                                             <i class="fab fa-facebook"></i>
                                         </a>
 
-                                        <a target="_blank" href="https://www.instagram.com/adbirthq/"
-                                            class="icon"> <i class="fab fa-instagram"></i>
+                                        <a target="_blank" href="https://www.instagram.com/adbirthq/" class="icon">
+                                            <i class="fab fa-instagram"></i>
                                         </a>
 
                                         <a target="_blank" href="https://twitter.com/Adbirt_HQ" class="icon">
@@ -243,15 +250,18 @@
                             <div class="col-lg-2 col-md-3 col-12 adbirt-footer-link">
                                 <h5>Quick Links</h5>
                                 <ul class="adbirt-list-menu">
-                                    <li> <a href="/blog"><i class="fas fa-long-arrow-alt-right mr-2"></i>Blog</a></li>
-                                    <li> <a href="/pricing"><i class="fas fa-long-arrow-alt-right mr-2"></i>Pricing</a>
+                                    <li> <a href="/blog"><i class="fas fa-long-arrow-alt-right mr-2"></i>Blog</a>
+                                    </li>
+                                    <li> <a href="/pricing"><i
+                                                class="fas fa-long-arrow-alt-right mr-2"></i>Pricing</a>
                                     </li>
                                     <li> <a href="/contact"><i class="fas fa-long-arrow-alt-right mr-2"></i>Contact
                                             us</a></li>
                                     <li> <a href="/privacy"><i class="fas fa-long-arrow-alt-right mr-2"></i>Privacy
                                             policy</a></li>
                                     <li> <a href="/actions-and-events"><i
-                                                class="fas fa-long-arrow-alt-right mr-2"></i>Actions And Events</a></li>
+                                                class="fas fa-long-arrow-alt-right mr-2"></i>Actions And Events</a>
+                                    </li>
                                 </ul>
                             </div>
                             <!--- END COL -->
@@ -262,7 +272,8 @@
                                 <div id="adbirt-map-area">
                                     <iframe id="map"
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1192.4978464340093!2d-2.9155465418515525!3d53.2896121983381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487adfa45defb54f%3A0x8624a28bde8082f4!2sAdbirt!5e0!3m2!1sen!2sng!4v1628345267368!5m2!1sen!2sng"
-                                        style="border: 1px solid #000;" allowfullscreen="true" loading="lazy"></iframe>
+                                        style="border: 1px solid #000;" allowfullscreen="true"
+                                        loading="lazy"></iframe>
                                 </div>
                                 <!-- Google Map end -->
                             </div>
@@ -337,7 +348,7 @@
     <script src="public/assets-revamp/js/main.js"></script>
 
     <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
+    {{-- <script type="text/javascript">
         var Tawk_API = Tawk_API || {},
             Tawk_LoadStart = new Date();
         (function() {
@@ -349,7 +360,7 @@
             s1.setAttribute('crossorigin', '*');
             s0.parentNode.insertBefore(s1, s0);
         })();
-    </script>
+    </script> --}}
     <!--End of Tawk.to Script-->
 
 </body>

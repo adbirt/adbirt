@@ -10,10 +10,21 @@
 |
  */
 
-Route::get('/', function () {
-    return Redirect::route('dashboard');
-});
+// Route::get('/', function () {
+//     return Redirect::route('dashboard');
+// });
 
+// public pages
+Route::get('/', ['as' => 'home', 'uses' => 'AdminController@home']);
+Route::get('how-it-works', ['as' => 'how-it-works', 'uses' => 'AdminController@howitworks']);
+Route::get('actions-and-events', ['as' => 'actions-and-events', 'uses' => 'AdminController@actionsandevents']);
+Route::get('native-ads', ['as' => 'native_ads', 'uses' => 'AdminController@nativeAds']);
+
+Route::get('contact', ['as' => 'contact', 'uses' => 'AdminController@contact']);
+Route::get('contactus', ['as' => 'contactus', 'uses' => 'AdminController@contact']);
+Route::get('contact-us', ['as' => 'contact-us', 'uses' => 'AdminController@contact']);
+
+// Campaign API endpoints
 Route::any('/ubm_getbanner', 'campaigns\campaignsController@getbanner');
 
 Route::any('/ubm_banner_click/{id}', 'campaigns\campaignsController@bannerClick');
@@ -27,16 +38,6 @@ Route::any('/campaigns/inccampview/{id}', 'campaigns\campaignsController@inccamp
 Route::post('/campaigns/verified', 'campaigns\orderHistoryController@credit');
 
 Route::any('/api/check-if-url-is-valid-campaign', 'campaigns\orderHistoryController@checkIfUrlIsValidCampaign');
-
-// public pages
-Route::get('/', ['as' => 'home', 'uses' => 'AdminController@home']);
-Route::get('how-it-works', ['as' => 'how-it-works', 'uses' => 'AdminController@howitworks']);
-Route::get('actions-and-events', ['as' => 'actions-and-events', 'uses' => 'AdminController@actionsandevents']);
-Route::get('native-ads', ['as' => 'native_ads', 'uses' => 'AdminController@nativeAds']);
-
-Route::get('contact', ['as' => 'contact', 'uses' => 'AdminController@contact']);
-Route::get('contactus', ['as' => 'contactus', 'uses' => 'AdminController@contact']);
-Route::get('contact-us', ['as' => 'contact-us', 'uses' => 'AdminController@contact']);
 
 Route::post('api/send-mail', ['as' => 'send-mail', 'uses' => 'MailController@handleContactForm']);
 

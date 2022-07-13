@@ -71,8 +71,13 @@
 
     @yield('style')
 
-    <script src="https://code.jivosite.com/widget/0XoSD4t6hn" async></script>
-
+    <script src="https://code.jivosite.com/widget/0XoSD4t6hn"></script>
+    <script>
+        function jivo_onLoadCallback() {
+            console.log('Widget fully loaded');
+            jivo_api.showProactiveInvitation("How can I help you?");
+        }
+    </script>
 </head>
 
 <body>

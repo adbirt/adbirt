@@ -1,5 +1,5 @@
-@extends('layouts.home_layout')
-{{-- @extends('layouts.frontend') --}}
+{{-- @extends('layouts.home_layout') --}}
+@extends('layouts.frontend')
 
 
 @section('style')
@@ -13,7 +13,7 @@
 
 @section('content')
 
-    {{-- Begin: Reverted header --}}
+    Begin: Reverted header
     <div class="header" id="home">
         <div class="header_top">
             <div class="wrap">

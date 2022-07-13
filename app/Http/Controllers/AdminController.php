@@ -14,8 +14,8 @@ class AdminController extends Controller
 
     public function home()
     {
-        // return view('home')
-        return view('contact')
+        return view('home')
+        // return view('contact')
             ->with('title', 'Home | Adbirt.com');
     }
 

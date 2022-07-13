@@ -2,14 +2,12 @@
 
 namespace app\Http\Controllers;
 
-use Illuminate\Http\Request;
-use App\User;
-use App\Role;
-use App\Model\userModel;
-use App\Model\rolesModel;
-use DB;
-use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Model\rolesModel;
+use App\Role;
+use App\User;
+use DB;
+use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
@@ -20,58 +18,53 @@ class AdminController extends Controller
             ->with('title', 'Home | Adbirt.com');
     }
 
-
     public function contact()
     {
         return view('contact')
-            ->with('title', 'Contact Us');
+            ->with('title', 'Contact Us | Adbirt.com');
     }
 
     public function terms()
     {
         return view('terms')
-            ->with('title', 'Terms');
+            ->with('title', 'Terms | Adbirt.com');
     }
 
     public function nativeAds()
     {
         return view('native_ads')
-            ->with('title', 'Adbirt Native Ads');
+            ->with('title', 'Adbirt Native Ads | Adbirt.com');
     }
 
     public function privacy()
     {
         return view('privacy')
-            ->with('title', 'Privacy');
+            ->with('title', 'Privacy | Adbirt.com');
     }
-
 
     public function howitworks()
     {
         return view('howitworks')
-            ->with('title', 'How it works');
+            ->with('title', 'How it works | Adbirt.com');
     }
 
     public function actionsandevents()
     {
         return view('actionsandevents')
-            ->with('title', 'Actions and Events');
+            ->with('title', 'Actions and Events | Adbirt.com');
     }
 
     public function about()
     {
         return view('about')
-            ->with('title', 'About Us');
+            ->with('title', 'About Us | Adbirt.com');
     }
-
 
     public function pricing()
     {
         return view('pricing')
-            ->with('title', 'Pricing');
+            ->with('title', 'Pricing | Adbirt.com');
     }
-
-
 
     /**
      * Display a listing of the resource.
@@ -165,7 +158,7 @@ class AdminController extends Controller
     {
         $active = [
             '1' => 'Active',
-            '0' => 'Inactive'
+            '0' => 'Inactive',
         ];
         $user = User::findOrFail($id);
         return view('client.edit')

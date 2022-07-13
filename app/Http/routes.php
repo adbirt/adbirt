@@ -15,7 +15,7 @@
 // });
 
 // public pages
-Route::get('/', ['as' => 'home', 'uses' => 'AdminController@homeOOO']);
+Route::get('/', ['as' => 'home', 'uses' => 'AdminController@home']);
 Route::get('how-it-works', ['as' => 'how-it-works', 'uses' => 'AdminController@howitworks']);
 Route::get('actions-and-events', ['as' => 'actions-and-events', 'uses' => 'AdminController@actionsandevents']);
 Route::get('native-ads', ['as' => 'native_ads', 'uses' => 'AdminController@nativeAds']);

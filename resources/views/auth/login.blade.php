@@ -118,7 +118,7 @@
                     Dont have an account? <a href="/register" class="loginhere-link text-primary-color">Register</a>
                     <br />
                     <br />
-                    Or, return to <a href="/" class="loginhere-link text-primary-color">home page</a>
+                    Or, return to <a href="/" class="loginhere-link text-primary-color">home page</a> 000
                 </p>
             </div>
         </div>

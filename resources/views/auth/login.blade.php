@@ -35,7 +35,7 @@
     <script>
         window.submitRegistrationForm = function submitRegistrationForm(token) {
             console.log('Clicked');
-            document.querySelector(".adbirt-form").submit();
+            document.querySelector("#adbirt-form").submit();
         }
     </script>
 

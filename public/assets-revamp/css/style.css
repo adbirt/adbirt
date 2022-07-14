@@ -71,6 +71,7 @@ body {
   --theme-p: #666666;
   --footer-background-color: #f2f2f2;
   --animate-duration: 2s;
+  --header-bg: #ededef;
 }
 
 * {
@@ -3238,7 +3239,8 @@ textarea:focus {
 }
 
 .navbar-area {
-  background-color: transparent;
+  /* background-color: transparent; */
+  background-color: var(--header-bg);
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   position: absolute;
@@ -3373,7 +3375,7 @@ textarea:focus {
 .adbirt-top-header {
   overflow: hidden;
   /* background: transparent; */
-  background: #ededef;
+  background: var(--header-bg);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 

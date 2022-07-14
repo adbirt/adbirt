@@ -2933,7 +2933,7 @@ textarea:focus {
 
 .adbirt-main-nav {
   /* background-color: transparent; */
-  background-color: var(--header-bg);
+  background-color: var(--header-bg) !important;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-right: 0;

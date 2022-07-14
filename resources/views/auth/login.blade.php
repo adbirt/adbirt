@@ -13,7 +13,9 @@
     {!! Html::style('https://fonts.googleapis.com/icon?family=Material+Icons') !!}
 
     <!-- Ionicons -->
-    {!! Html::style('https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en') !!}
+    {!! Html::style(
+        'https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en',
+    ) !!}
 
     <!-- Theme style -->
     {!! Html::style('dist/css/style.min.css') !!}
@@ -27,6 +29,8 @@
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="/public/assets-revamp/css/style.css">
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 
 </head>
 
@@ -60,7 +64,12 @@
                     {!! Form::open(['route' => 'reset-password', 'method' => 'post']) !!}
 
                     {{-- {!! Form::text('email', '', ['class' => 'form-control placeholder-no-fix', 'placeholder' => 'Email/Phone', 'autocomplete' => 'off']) !!} --}}
-                    {!! Form::text('email', '', ['class' => 'form-control placeholder-no-fix', 'placeholder' => 'Email', 'autocomplete' => 'on', 'style' => 'border: .1px solid var(--theme-color);']) !!}
+                    {!! Form::text('email', '', [
+                        'class' => 'form-control placeholder-no-fix',
+                        'placeholder' => 'Email',
+                        'autocomplete' => 'on',
+                        'style' => 'border: .1px solid var(--theme-color);',
+                    ]) !!}
 
                 </div>
 

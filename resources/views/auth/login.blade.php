@@ -34,6 +34,7 @@
 
     <script>
         window.submitRegistrationForm = function submitRegistrationForm(token) {
+            console.log('Clicked');
             document.querySelector("#hidden-clicker").submit();
         }
     </script>

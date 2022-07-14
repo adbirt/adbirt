@@ -10,7 +10,7 @@
 @section('content')
 
     {{-- Begin: Reverted header --}}
-    {{-- <div class="header" id="home">
+    <div class="header" id="home">
         <div class="header_top">
             <div class="wrap">
                 <div class="logo">
@@ -44,7 +44,7 @@
                 <div class="clear"></div>
             </div>
         </div>
-    </div> --}}
+    </div>
     {{-- End: Reverted header --}}
 
     {{-- Begin Reverted design --}}

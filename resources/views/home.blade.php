@@ -1,4 +1,4 @@
-@extends('layouts.home_layout')
+{{-- @extends('layouts.home_layout') --}}
 @extends('layouts.frontend')
 
 @section('style')

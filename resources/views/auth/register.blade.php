@@ -27,6 +27,14 @@
     <!-- Style CSS -->
     <link rel="stylesheet" href="/public/assets-revamp/css/style.css">
 
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+    <script>
+        window.submitRegistrationForm = function submitRegistrationForm(token) {
+            document.getElementById("#adbirt-form").submit();
+        }
+    </script>
+
 </head>
 
 <body>
@@ -37,7 +45,13 @@
 
         <div class="container">
             <div class="sign-up-content">
-                {!! Form::open(['route' => 'user.store', 'method' => 'post', 'id' => 'register', 'class' => 'signup-form']) !!}
+                {!! Form::open([
+                    'route' => 'user.store',
+                    'method' => 'post',
+                    'id' => 'register',
+                    'class' => 'signup-form',
+                    'id' => 'adbirt-form',
+                ]) !!}
                 @include('includes.alert')
                 <p class="form-title">What do you want to become?</p>
                 <br />
@@ -72,8 +86,12 @@
                 <div class="form-textbox">
                     {{-- <label id="phone-label" for="tel">Phone</label> --}}
                     <div class="phone-input-wrapper">
-                        {!! Form::select('phone_country', $mapped_phone_codes,null, ['style' => 'border: none !important;']) !!}
-                        {!! Form::tel('phone', '', ['id' => 'tel', 'placeholder' => 'Phone number', 'style' => 'border: none !important;']) !!}
+                        {!! Form::select('phone_country', $mapped_phone_codes, null, ['style' => 'border: none !important;']) !!}
+                        {!! Form::tel('phone', '', [
+                            'id' => 'tel',
+                            'placeholder' => 'Phone number',
+                            'style' => 'border: none !important;',
+                        ]) !!}
                     </div>
                 </div>
 
@@ -95,7 +113,10 @@
 
                 <div class="form-textbox">
                     {{-- <label for="password_confirmation">Confirm Password</label> --}}
-                    {!! Form::password('password_confirmation', ['id' => 'password_confirmation', 'placeholder' => 'Confirm password']) !!}
+                    {!! Form::password('password_confirmation', [
+                        'id' => 'password_confirmation',
+                        'placeholder' => 'Confirm password',
+                    ]) !!}
                 </div>
 
                 <div class="form-group checkbox-container">
@@ -115,7 +136,12 @@
                 </div>
 
                 <div class="form-textbox">
-                    {!! Form::submit('Create account', ['class' => 'submit bg-primary-color']) !!}
+                    {!! Form::submit('Create account', [
+                        'class' => 'submit bg-primary-color g-recaptcha',
+                        'data-sitekey' => 'reCAPTCHA_site_key',
+                        'data-callback' => 'submitRegistrationForm',
+                        'data-action' => 'submit',
+                    ]) !!}
                 </div>
                 {!! Form::close() !!}
 

@@ -34,7 +34,7 @@
 
     <script>
         window.submitRegistrationForm = function submitRegistrationForm(token) {
-            document.getElementById("#adbirt-login-form").submit();
+            document.getElementById("#adbirt-form").submit();
         }
     </script>
 
@@ -67,7 +67,7 @@
                     {{-- <p>Enter your e-mail/phone below to reset your password.</p> --}}
                     <p>Enter your e-mail below to reset your password.</p>
 
-                    {!! Form::open(['route' => 'reset-password', 'method' => 'post', 'id' => 'adbirt-login-form']) !!}
+                    {!! Form::open(['route' => 'reset-password', 'method' => 'post', 'id' => 'adbirt-form']) !!}
 
                     {{-- {!! Form::text('email', '', ['class' => 'form-control placeholder-no-fix', 'placeholder' => 'Email/Phone', 'autocomplete' => 'off']) !!} --}}
                     {!! Form::text('email', '', [

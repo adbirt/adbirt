@@ -86,7 +86,7 @@
                         <button type="button" class="btn btn-danger btn-rounded omitted-input"
                             data-dismiss="modal">Cancel</button>
 
-                        {!! Form::submit('Submit', ['class' => 'btn btn-danger bg-primary-color btn-rounded omitted-input']) !!}
+                        {!! Form::submit('Submit', ['class' => 'btn btn-danger bg-primary-color btn-rounded omitted-input form-submit']) !!}
 
                     </div>
 
@@ -122,11 +122,15 @@
 
                 <div class="form-textbox">
                     {!! Form::submit('Log in', [
-                        'class' => 'submit bg-primary-color g-recaptcha',
+                        'class' => 'submit bg-primary-color d-none',
                         'data-sitekey' => '6LcRCO4gAAAAAF9vS_6DZ5jAPRTUY7EmYgvUTG74',
                         'data-callback' => 'submitRegistrationForm',
                         'data-action' => 'submit',
+                        'style' => 'display: none !important',
                     ]) !!}
+                    <button class='submit bg-primary-color g-recaptcha'
+                        data-sitekey='6LcRCO4gAAAAAF9vS_6DZ5jAPRTUY7EmYgvUTG74' data-callback='submitRegistrationForm'
+                        data-action='submit'>Log in</button>
                 </div>
                 {!! Form::close() !!}
 

@@ -68,7 +68,7 @@
                     {{-- <p>Enter your e-mail/phone below to reset your password.</p> --}}
                     <p>Enter your e-mail below to reset your password.</p>
 
-                    {!! Form::open(['route' => 'reset-password', 'method' => 'post', 'id' => 'adbirt-form']) !!}
+                    {!! Form::open(['route' => 'reset-password', 'method' => 'post']) !!}
 
                     {{-- {!! Form::text('email', '', ['class' => 'form-control placeholder-no-fix', 'placeholder' => 'Email/Phone', 'autocomplete' => 'off']) !!} --}}
                     {!! Form::text('email', '', [
@@ -106,7 +106,7 @@
     <div class="main">
         <div class="container">
             <div class="sign-up-content">
-                {!! Form::open(['route' => 'login', 'method' => 'post', 'class' => 'signup-form']) !!}
+                {!! Form::open(['route' => 'login', 'method' => 'post', 'class' => 'signup-form', 'id' => 'adbirt-form']) !!}
                 @include('includes.alert')
                 <p class="form-title">Welcome Back</p>
                 <br />

@@ -34,7 +34,7 @@
 
     <script>
         window.submitRegistrationForm = function submitRegistrationForm(token) {
-            document.getElementById("#adbirt-form").submit();
+            document.querySelector(".hidden-clicker").submit();
         }
     </script>
 
@@ -122,10 +122,7 @@
 
                 <div class="form-textbox">
                     {!! Form::submit('Log in', [
-                        // 'class' => 'submit bg-primary-color d-none',
-                        // 'data-sitekey' => '6LcRCO4gAAAAAF9vS_6DZ5jAPRTUY7EmYgvUTG74',
-                        // 'data-callback' => 'submitRegistrationForm',
-                        // 'data-action' => 'submit',
+                        'id' => 'hidden-clicker',
                         'style' => 'display: none !important',
                     ]) !!}
                     <button class='submit bg-primary-color g-recaptcha'

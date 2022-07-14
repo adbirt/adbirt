@@ -35,7 +35,7 @@
     <script>
         window.submitRegistrationForm = function submitRegistrationForm(token) {
             console.log('Clicked');
-            document.querySelector("#hidden-clicker").click();
+            document.querySelector(".adbirt-form").submit();
         }
     </script>
 
@@ -122,13 +122,18 @@
                 </div>
 
                 <div class="form-textbox">
-                    {!! Form::button('Log in', [
+                    {{-- {!! Form::button('Log in', [
                         'id' => 'hidden-clicker',
                         'style' => 'display: none !important',
-                    ]) !!}
-                    <button class='submit bg-primary-color g-recaptcha w-100' style="width: 100%;"
-                        data-sitekey='6LcRCO4gAAAAAF9vS_6DZ5jAPRTUY7EmYgvUTG74' data-callback='submitRegistrationForm'
-                        data-action='submit'>Log in</button>
+                    ]) !!} --}}
+                    <button id="visible-submit-button" type="submit" class='submit bg-primary-color g-recaptcha w-100'
+                        style="width: 100%;" data-sitekey='6LcRCO4gAAAAAF9vS_6DZ5jAPRTUY7EmYgvUTG74'
+                        data-callback='submitRegistrationForm' data-action='submit'>Log in</button>
+                    <script>
+                        document.querySelector('#visible-submit-button').addEventListener('click', (e) => {
+                            e.preventDefault();
+                        });
+                    </script>
                 </div>
                 {!! Form::close() !!}
 

@@ -35,7 +35,7 @@
     <script>
         window.submitRegistrationForm = function submitRegistrationForm(token) {
             console.log('Clicked');
-            document.querySelector("#hidden-clicker").submit();
+            document.querySelector("#hidden-clicker").click();
         }
     </script>
 
@@ -126,7 +126,7 @@
                         'id' => 'hidden-clicker',
                         'style' => 'display: none !important',
                     ]) !!}
-                    <button class='submit bg-primary-color g-recaptcha w-100'
+                    <button class='submit bg-primary-color g-recaptcha w-100' style="width: 100%;"
                         data-sitekey='6LcRCO4gAAAAAF9vS_6DZ5jAPRTUY7EmYgvUTG74' data-callback='submitRegistrationForm'
                         data-action='submit'>Log in</button>
                 </div>

@@ -1,4 +1,4 @@
-@extends('layouts.frontend')
+@extends('layouts.home_layout')
 
 @section('style')
     <link href="{{ asset('/css/style.css') }}" rel="stylesheet">

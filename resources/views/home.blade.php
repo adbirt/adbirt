@@ -287,6 +287,4 @@
     </div>
     {{-- End Reverted design --}}
 
-    <p>-- End demarcation --</p>
-
 @stop

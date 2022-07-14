@@ -32,6 +32,12 @@
 
     <script src="https://www.google.com/recaptcha/api.js"></script>
 
+    <script>
+        window.submitRegistrationForm = function submitRegistrationForm(token) {
+            document.getElementById("#adbirt-login-form").submit();
+        }
+    </script>
+
 </head>
 
 <body>
@@ -61,7 +67,7 @@
                     {{-- <p>Enter your e-mail/phone below to reset your password.</p> --}}
                     <p>Enter your e-mail below to reset your password.</p>
 
-                    {!! Form::open(['route' => 'reset-password', 'method' => 'post']) !!}
+                    {!! Form::open(['route' => 'reset-password', 'method' => 'post', 'id' => 'adbirt-login-form']) !!}
 
                     {{-- {!! Form::text('email', '', ['class' => 'form-control placeholder-no-fix', 'placeholder' => 'Email/Phone', 'autocomplete' => 'off']) !!} --}}
                     {!! Form::text('email', '', [
@@ -80,7 +86,12 @@
                         <button type="button" class="btn btn-danger btn-rounded omitted-input"
                             data-dismiss="modal">Cancel</button>
 
-                        {!! Form::submit('Submit', ['class' => 'btn btn-danger bg-primary-color btn-rounded omitted-input']) !!}
+                        {!! Form::submit('Submit', [
+                            'class' => 'btn btn-danger bg-primary-color btn-rounded omitted-input g-recaptcha',
+                            'data-sitekey' => 'reCAPTCHA_site_key',
+                            'data-callback' => 'submitRegistrationForm',
+                            'data-action' => 'submit',
+                        ]) !!}
 
                     </div>
 

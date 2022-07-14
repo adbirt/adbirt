@@ -550,7 +550,6 @@ input:focus {
 
 /*** main ****/
 .content_top {
-  background-position: -100px 0px !important;
   position: relative;
   background: #bc6a44;
   background-image: url(../images/bg.jpg);
@@ -1545,5 +1544,11 @@ small.set2 {
     .customer_desc span.testimonial-arrow {
       left: 7em;
     }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content_top {
+    background-position: -100px 0px !important;
   }
 }

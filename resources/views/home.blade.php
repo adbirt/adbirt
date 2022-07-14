@@ -9,6 +9,9 @@
 @stop
 
 @section('content')
+
+    <p>-- Begin demarcation --</p>
+
     {{-- Begin: Reverted header --}}
     <div class="header" id="home">
         <div class="header_top">
@@ -286,5 +289,7 @@
         </div>
     </div>
     {{-- End Reverted design --}}
+
+    <p>-- End demarcation --</p>
 
 @stop

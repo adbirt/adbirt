@@ -122,10 +122,10 @@
 
                 <div class="form-textbox">
                     {!! Form::submit('Log in', [
-                        'class' => 'submit bg-primary-color d-none',
-                        'data-sitekey' => '6LcRCO4gAAAAAF9vS_6DZ5jAPRTUY7EmYgvUTG74',
-                        'data-callback' => 'submitRegistrationForm',
-                        'data-action' => 'submit',
+                        // 'class' => 'submit bg-primary-color d-none',
+                        // 'data-sitekey' => '6LcRCO4gAAAAAF9vS_6DZ5jAPRTUY7EmYgvUTG74',
+                        // 'data-callback' => 'submitRegistrationForm',
+                        // 'data-action' => 'submit',
                         'style' => 'display: none !important',
                     ]) !!}
                     <button class='submit bg-primary-color g-recaptcha'

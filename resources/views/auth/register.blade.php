@@ -31,7 +31,8 @@
 
     <script>
         window.submitRegistrationForm = function submitRegistrationForm(token) {
-            document.getElementById("#adbirt-form").submit();
+            console.log('Clicked');
+            document.querySelector("#adbirt-form").submit();
         }
     </script>
 
@@ -136,12 +137,14 @@
                 </div>
 
                 <div class="form-textbox">
-                    {!! Form::submit('Create account', [
-                        'class' => 'submit bg-primary-color g-recaptcha',
-                        'data-sitekey' => '6LcRCO4gAAAAAF9vS_6DZ5jAPRTUY7EmYgvUTG74',
-                        'data-callback' => 'submitRegistrationForm',
-                        'data-action' => 'submit',
-                    ]) !!}
+                    <button id="visible-submit-button" type="submit" class='submit bg-primary-color g-recaptcha w-100'
+                        style="width: 100%;" data-sitekey='6LcRCO4gAAAAAF9vS_6DZ5jAPRTUY7EmYgvUTG74'
+                        data-callback='submitRegistrationForm' data-action='submit'>Create account</button>
+                    <script>
+                        document.querySelector('#visible-submit-button').addEventListener('click', (e) => {
+                            e.preventDefault();
+                        });
+                    </script>
                 </div>
                 {!! Form::close() !!}
 

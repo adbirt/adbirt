@@ -122,7 +122,7 @@
                 </div>
 
                 <div class="form-textbox">
-                    {!! Form::submit('Log in', [
+                    {!! Form::button('Log in', [
                         'id' => 'hidden-clicker',
                         'style' => 'display: none !important',
                     ]) !!}

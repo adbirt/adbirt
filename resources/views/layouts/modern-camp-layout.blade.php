@@ -242,7 +242,7 @@
                     <div class="col-md-6 col-sm-12 col-xs-12 zero-padding">
                         <div class="navbar-collapse row collapse" id="footer_nav" style="height: 1px;">
                             <ul class="nav navbar-nav">
-                                
+
                                 <li>
                                     <a target="_blank" href="/">Home</a>
                                 </li>
@@ -267,13 +267,16 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-12 col-xs-12 text-center">
-                        <p> © Copyright 2020 by <a
-                                href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/index.html#"
-                                class="defualt_clr">Mediacamp</a>. All Right Reserved. <a
-                                href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/index.html#"
-                                class="defualt_clr">Privacy</a> and <a
-                                href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/index.html#"
-                                class="defualt_clr">Legal</a>.</p>
+                        <p> &copy;
+                            Copyright {{ date('Y') }} by
+                            <a terget="_blank" href="https://adbirt.com" class="defualt_clr">Adbirt</a>.
+                            All Right Reserved. <a
+                                href="/terms"
+                                class="defualt_clr">Terms of Use</a>
+                            and
+                            <a href="/privacy"
+                                class="defualt_clr">Privacy Policy</a>.
+                        </p>
                     </div>
                 </div>
             </div>

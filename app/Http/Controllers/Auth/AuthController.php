@@ -374,6 +374,7 @@ class AuthController extends Controller
         $Leads = 0;
 
         if (Auth::user()->hasRole('vendor')) {
+
             // $myPro = companyprofile::where('user_id', Auth::user()->id)->first();
 
             // if (empty($myPro)) {
@@ -397,6 +398,7 @@ class AuthController extends Controller
             $Impressions = $totalImpressionsByVenodr;
             $Clicks = $totalClicksByVenodr;
             $Leads = $totalLeadsByVendor;
+
         } elseif (Auth::user()->hasRole('client')) {
 
             $totalCampsByClient = campaignorders::with('campaign')
@@ -420,6 +422,7 @@ class AuthController extends Controller
             $Impressions = $totalImpressionsByClient;
             $Clicks = $totalClicksByClient;
             $Leads = $totalLeadsByClient;
+
         } elseif (Auth::user()->hasRole('admin')) {
 
             $totalImpressionsByVenodr = campaign::all()
@@ -444,7 +447,32 @@ class AuthController extends Controller
         $currentBalance = Transaction::where('user_id', Auth::user()->id)
             ->sum('amount');
 
-        return view('dashboard')
+        if (Auth::user()->hasRole('admin') || Auth::user()->hasRole('admin')) {
+            return view('dashboard')
+                ->with('title', 'Dashboard')
+                ->with('user', Auth::user())
+                ->with('totalClient', $totalClient)
+                ->with('currentBalance', $currentBalance)
+                ->with('totalVendors', $totalVendors)
+                ->with('emailCount', $emailCount)
+                ->with('phoneCount', $phoneCount)
+                ->with('activeClient', $activeClient)
+                ->with('NonActiveClient', $NonActiveClient)
+                ->with('TotalAmt', $TotalAmt)
+                ->with('arrvendorsCity', $arrvendorsCity)
+                ->with('totalCamps', $totalCamps)
+                ->with('totalCampsCost', $totalCampsCost)
+                ->with('totalSuccessCamps', $totalSuccessCamps)
+                ->with('totalSuccessCampsCost', $totalSuccessCampsCost)
+                ->with('TotalRevenue', $TotalRevenue)
+                ->with('TotalProfit', $TotalProfit)
+                ->with('ActiveAd', $ActiveAd)
+                ->with('Impressions', $Impressions)
+                ->with('Clicks', $Clicks)
+                ->with('Leads', $Leads);
+        }
+
+        return view('modern-camp-dashboard')
             ->with('title', 'Dashboard')
             ->with('user', Auth::user())
             ->with('totalClient', $totalClient)

@@ -55,7 +55,7 @@
                                     <li class="">
                                         <a
                                             href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/index.html#"><span
-                                                class="header_span"><i class="fas fa-user-circle"></i> John </span><span
+                                                class="header_span"><i class="fas fa-bell"></i> Notifications </span><span
                                                 class="fa fa-angle-down"></span></a>
                                         <ul class="dropdown-menu pull-left search-panel">
                                             <li><a
@@ -79,8 +79,8 @@
     <div class="col-md-3 col-sm-12 col-xs-12 responsive_logo">
         <div class="logo_box">
             <a
-                href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/index-2.html"><img
-                    src="/public/ModernCamp_files/logo.svg" alt=""></a>
+                href="/dashboard"><img
+                    src="https://adbirt.com/public/assets-revamp/img/adbirt-sidebar-logo.png" alt="Adbirt Logo"></a>
         </div>
     </div>
     <div class="responsive_button">

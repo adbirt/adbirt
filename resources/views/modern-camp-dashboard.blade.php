@@ -39,8 +39,7 @@
                         href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/index.html#tabs-4"
                         role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-4">Reports</a></li>
             </ul>
-            <a class="log1452"
-                href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/login.html">Logout</a>
+            <a class="log1452" href="{!! route('logout') !!}">Logout</a>
         </div>
     </div>
 

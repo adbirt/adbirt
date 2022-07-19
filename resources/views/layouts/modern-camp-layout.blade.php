@@ -163,6 +163,11 @@
                                     height="100">
                                 <h4 class="user_name">{!! Auth::user()->name !!}</h4>
                                 <p class="user_credit">Balance : ${!! $currentBalance !!}</p>
+                                <a href="{!! URL::route('paypal.create') !!}">
+                                    <button>
+                                        Add Funds
+                                    </button>
+                                </a>
                             </div>
                         </div>
                         <div class="options_grp">

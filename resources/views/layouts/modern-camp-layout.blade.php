@@ -39,8 +39,7 @@
             <div class="row">
                 <div class="col-md-3 col-sm-12 col-xs-12 logo-outer">
                     <div class="logo_box">
-                        <a
-                            href="https://adbirt.com/public/assets-revamp/img/adbirt-sidebar-logo.png"><img
+                        <a href="https://adbirt.com/public/assets-revamp/img/adbirt-sidebar-logo.png"><img
                                 src="/public/ModernCamp_files/logo.svg" alt="Adbirt Logo"></a>
                     </div>
                 </div>
@@ -78,8 +77,7 @@
 
     <div class="col-md-3 col-sm-12 col-xs-12 responsive_logo">
         <div class="logo_box">
-            <a href="/dashboard"><img src=""
-                    alt="Adbirt Logo"></a>
+            <a href="/dashboard"><img src="" alt="Adbirt Logo"></a>
         </div>
     </div>
     <div class="responsive_button">
@@ -138,7 +136,8 @@
                                 <h4 class="user_name">{!! Auth::user()->name !!}</h4>
                                 <p class="user_credit">Balance : ${!! $currentBalance !!}</p>
                                 <a href="{!! URL::route('paypal.create') !!}">
-                                    <button style="background-color: var(--theme-color); border: none; color: #fff; padding: 4px;">
+                                    <button
+                                        style="background-color: var(----theme-accent-color); border: none; color: #fff; padding: 4px;">
                                         Add Funds
                                     </button>
                                 </a>

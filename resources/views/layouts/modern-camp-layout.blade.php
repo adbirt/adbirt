@@ -211,7 +211,7 @@
                                 <li class="list-group-item ui-tabs-tab ui-corner-top ui-state-default ui-tab @if (Request::segment(2) == 'search-wallet-history') active ui-tabs-active @endif"
                                     role="tab" tabindex="0">
                                     <a href="{{ url('/wallet/search-wallet-history') }}" role="presentation"
-                                        tabindex="-1" class="ui-tabs-anchor" id="ui-id-1">Search Wallet Histro</a>
+                                        tabindex="-1" class="ui-tabs-anchor" id="ui-id-1">Search Wallet Histroy</a>
                                 </li>
 
                             </ul>

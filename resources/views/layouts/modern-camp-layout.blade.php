@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<?php
+if (Auth::user()->profile) {
+    $profilePhotoUrl = strip_tags(substr(Auth::user()->profile->propic, 0, 4) == 'http' ? Auth::user()->profile->propic : (substr(Auth::user()->profile->propic, 0, 8) == '/uploads' ? 'https://adbirt.com/public' . Auth::user()->profile->propic : Auth::user()->profile->propic)) . '';
+    if (strlen($profilePhotoUrl) == 0) {
+        $profilePhotoUrl = 'https://adbirt.com/public/assets-revamp/img/avatar.png';
+    }
+}
+?>
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, shrink-to-fit=9">
 
-    <title>{!! $title !!} - {!! Config::get('customConfig.names.siteName') !!}</title>
+    <title>{!! $title !!} | {!! Config::get('customConfig.names.siteName') !!}</title>
 
-    {{-- <link rel="icon" type="image/png"
-        href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/images/fav.png"> --}}
+    <link rel="icon" type="image/png" href="https://adbirt.com/public/assets-revamp/img/favicon.png">
 
     <meta name="shortcut icon" content="https://adbirt.com/public/assets-revamp/img/favicon.png">
 

@@ -12,8 +12,6 @@
     <!--Main bootstrap-->
     <link rel="stylesheet" href="https://adbirt.com/public/assets-revamp/bootstrap/css/bootstrap.css">
 
-
-
     <meta name="shortcut icon" content="https://adbirt.com/public/assets-revamp/img/favicon.png">
 
     <!-- Material Design Icons  -->

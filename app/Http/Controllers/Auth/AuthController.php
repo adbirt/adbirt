@@ -447,7 +447,7 @@ class AuthController extends Controller
         $currentBalance = Transaction::where('user_id', Auth::user()->id)
             ->sum('amount');
 
-        if (Auth::user()->hasRole('admin') || Auth::user()->hasRole('admin')) {
+        if (Auth::user()->hasRole('admin') || Auth::user()->hasRole('client')) {
             return view('dashboard')
                 ->with('title', 'Dashboard')
                 ->with('user', Auth::user())

@@ -4,18 +4,20 @@
 
     <div class="tabs_1 ui-tabs-panel ui-corner-bottom ui-widget-content" id="tabs-1" aria-labelledby="ui-id-1"
         role="tabpanel" aria-hidden="false">
-        <div class="col-md-9 col-sm-12 col-xs-12 zero-padding filter-sec">
+        
+        {{-- <div class="col-md-9 col-sm-12 col-xs-12 zero-padding filter-sec">
             <div class="col-md-6 col-sm-6 col-xs-12 search-filter">
                 <span class="search_btn"><i class="fas fa-search"></i></span>
                 <input type="text" class="form-control" placeholder="Search">
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12 filter-id">
-                {{-- <div class="text-right">
+                <div class="text-right">
                     <p> Mediacamp ID :<span class="defualt_clr">123456789</span></p>
-                </div> --}}
+                </div>
             </div>
             <div class="clearfix"></div>
-        </div>
+        </div> --}}
+
         <div class="custom-selection">
             <div class="col-md-3 col-sm-6 col-xs-12 margin_btm">
                 <div id="post" class="btn-group dropdown">

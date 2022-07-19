@@ -77,7 +77,8 @@
 
     <div class="col-md-3 col-sm-12 col-xs-12 responsive_logo">
         <div class="logo_box">
-            <a href="/dashboard"><img src="" alt="Adbirt Logo"></a>
+            <a href="/dashboard"><img src="https://adbirt.com/public/assets-revamp/img/adbirt-sidebar-logo.png"
+                    alt="Adbirt Logo"></a>
         </div>
     </div>
     <div class="responsive_button">
@@ -165,7 +166,7 @@
                                     role="tab" tabindex="0">
                                     <a href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/index.html#tabs-1"
                                         role="presentation" tabindex="-1" class="ui-tabs-anchor"
-                                        id="ui-id-1">View my Campaign</a>
+                                        id="ui-id-1">View my Campaigns</a>
                                 </li>
 
                                 <li class="list-group-item ui-tabs-tab ui-corner-top ui-state-default ui-tab @if (Request::segment(1) == 'campaigns' && Request::segment(2) == 'active-campaigns') active ui-tabs-active @endif"

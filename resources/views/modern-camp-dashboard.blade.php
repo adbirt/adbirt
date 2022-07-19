@@ -23,21 +23,21 @@
                 <div id="post" class="btn-group dropdown">
                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
-                        <span>Account : <span id="selected-post" style="color:#e53632">John
+                        <span>Account : <span id="selected-post" style="color:var(--theme-color)">John
                                 Doe</span></span> <span class="fas fa-angle-down"></span>
                     </button>
                     <ul class="dropdown-menu dropdown-menu1">
                         <li>
-                            <p><span style="color:#e53632">John Doe 1</span></p>
+                            <p><span style="color:var(--theme-color)">John Doe 1</span></p>
                         </li>
                         <li>
-                            <p><span style="color:#e53632">John Doe 2</span></p>
+                            <p><span style="color:var(--theme-color)">John Doe 2</span></p>
                         </li>
                         <li>
-                            <p><span style="color:#e53632">John Doe 3</span></p>
+                            <p><span style="color:var(--theme-color)">John Doe 3</span></p>
                         </li>
                         <li>
-                            <p><span style="color:#e53632">John Doe 4</span></p>
+                            <p><span style="color:var(--theme-color)">John Doe 4</span></p>
                         </li>
                     </ul>
                 </div>
@@ -68,21 +68,21 @@
                 <div id="my-range" class="btn-group dropdown">
                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
-                        <span>Range : <span id="selected-range" style="color:#e53632">Mar 2018, Apr
+                        <span>Range : <span id="selected-range" style="color:var(--theme-color)">Mar 2018, Apr
                                 2018</span></span> <span class="fas fa-angle-down"></span>
                     </button>
                     <ul class="dropdown-menu dropdown-menu3">
                         <li>
-                            <p><span style="color:#e53632">Apr 2020, May 2020</span></p>
+                            <p><span style="color:var(--theme-color)">Apr 2020, May 2020</span></p>
                         </li>
                         <li>
-                            <p><span style="color:#e53632">May 2020, Jun 2020</span></p>
+                            <p><span style="color:var(--theme-color)">May 2020, Jun 2020</span></p>
                         </li>
                         <li>
-                            <p><span style="color:#e53632">Jun 2020, Jul 2020</span></p>
+                            <p><span style="color:var(--theme-color)">Jun 2020, Jul 2020</span></p>
                         </li>
                         <li>
-                            <p><span style="color:#e53632">Jul 2020, Aug 2020</span></p>
+                            <p><span style="color:var(--theme-color)">Jul 2020, Aug 2020</span></p>
                         </li>
                     </ul>
                 </div>

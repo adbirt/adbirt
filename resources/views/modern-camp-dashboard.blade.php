@@ -54,9 +54,9 @@
                 <input type="text" class="form-control" placeholder="Search">
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12 filter-id">
-                <div class="text-right">
+                {{-- <div class="text-right">
                     <p> Mediacamp ID :<span class="defualt_clr">123456789</span></p>
-                </div>
+                </div> --}}
             </div>
             <div class="clearfix"></div>
         </div>

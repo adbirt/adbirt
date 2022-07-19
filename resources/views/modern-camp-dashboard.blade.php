@@ -21,13 +21,23 @@
         <div class="options_grp">
             <ul class="list-group ui-tabs-nav ui-corner-all ui-helper-reset ui-helper-clearfix ui-widget-header"
                 role="tablist">
-
                 <li class="list-group-item ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active"
                     role="tab" tabindex="0" aria-controls="tabs-1" aria-labelledby="ui-id-1" aria-selected="true"
-                    aria-expanded="true">
-                    <a href="/" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="--ui--id--">Overview</a>
-                </li>
-
+                    aria-expanded="true"><a
+                        href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/index.html#tabs-1"
+                        role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-1">Overview</a></li>
+                <li class="list-group-item ui-tabs-tab ui-corner-top ui-state-default ui-tab" role="tab" tabindex="-1"
+                    aria-controls="tabs-2" aria-labelledby="ui-id-2" aria-selected="false" aria-expanded="false"><a
+                        href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/index.html#tabs-2"
+                        role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-2">Campaign</a></li>
+                <li class="list-group-item ui-tabs-tab ui-corner-top ui-state-default ui-tab" role="tab" tabindex="-1"
+                    aria-controls="tabs-3" aria-labelledby="ui-id-3" aria-selected="false" aria-expanded="false"><a
+                        href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/index.html#tabs-3"
+                        role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-3">Opportunities</a></li>
+                <li class="list-group-item ui-tabs-tab ui-corner-top ui-state-default ui-tab" role="tab" tabindex="-1"
+                    aria-controls="tabs-4" aria-labelledby="ui-id-4" aria-selected="false" aria-expanded="false"><a
+                        href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/index.html#tabs-4"
+                        role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-4">Reports</a></li>
             </ul>
             <a class="log1452" href="{!! route('logout') !!}">Logout</a>
         </div>

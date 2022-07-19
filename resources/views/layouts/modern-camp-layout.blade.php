@@ -174,61 +174,6 @@
                             <ul class="list-group ui-tabs-nav ui-corner-all ui-helper-reset ui-helper-clearfix ui-widget-header"
                                 role="tablist">
 
-                                <ul class="nav nav-treeview">
-                                    <li class="nav-item">
-                                        <a href="{{ url('/campaigns/add-campaigns') }}"
-                                            class="nav-link @if (Request::segment(2) == 'add-campaigns') active @endif">
-                                            <i class="fa fa-plus nav-icon"></i>
-                                            <p>Add new Ads</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="{{ url('/campaigns/view-campaigns') }}"
-                                            class="nav-link @if (Request::segment(2) == 'view-campaigns') active @endif">
-                                            <i class="fa fa-eye nav-icon"></i>
-                                            <p>View My Ads</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="{{ url('/campaigns/active-campaigns') }}"
-                                            class="nav-link @if (Request::segment(1) == 'campaigns' && Request::segment(2) == 'active-campaigns') active @endif">
-                                            <i class="fa fa-check nav-icon"></i>
-                                            <p>Active Ads</p>
-                                        </a>
-                                    </li>
-                                </ul>
-                                </li>
-
-                                <li class="nav-header">WALLET HISTORY</li>
-                                <li class="nav-item menu-open">
-                                    <a href="#" class="nav-link">
-                                        <i class="nav-icon fa fa-money"></i>
-                                        <p>
-                                            Manage wallet
-                                            <i class="right fa fa-angle-left"></i>
-                                        </p>
-                                    </a>
-                                    <ul class="nav nav-treeview">
-                                        <li class="nav-item">
-                                            <a href="{{ url('/wallet/view-wallet-history') }}"
-                                                class="nav-link @if (Request::segment(2) == 'view-wallet-history') active @endif">
-                                                <i class="fa fa-credit-card nav-icon"></i>
-                                                <p>View wallet history</p>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="{{ url('/wallet/search-wallet-history') }}"
-                                                class="nav-link @if (Request::segment(2) == 'search-wallet-history') active @endif">
-                                                <i class="fa fa-credit-card nav-icon"></i>
-                                                <p>Search wallet history</p>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                {{-- ends here --}}
-
-
                                 <li class="list-group-item ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active"
                                     role="tab" tabindex="0" aria-controls="tabs-1" aria-labelledby="ui-id-1"
                                     aria-selected="true" aria-expanded="true">

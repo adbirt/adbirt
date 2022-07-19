@@ -18,7 +18,7 @@
             <div class="clearfix"></div>
         </div> --}}
 
-        <div class="custom-selection">
+        {{-- <div class="custom-selection">
             <div class="col-md-3 col-sm-6 col-xs-12 margin_btm">
                 <div id="post" class="btn-group dropdown">
                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
@@ -87,7 +87,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
         <div class="col-md-9 col-sm-12 zero-padding">
             <div class="col-md-12 graph-section">

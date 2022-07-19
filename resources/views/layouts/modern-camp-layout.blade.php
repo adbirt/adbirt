@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php
-if (Auth::user()->profile) {
-    $profilePhotoUrl = strip_tags(substr(Auth::user()->profile->propic, 0, 4) == 'http' ? Auth::user()->profile->propic : (substr(Auth::user()->profile->propic, 0, 8) == '/uploads' ? 'https://adbirt.com/public' . Auth::user()->profile->propic : Auth::user()->profile->propic)) . '';
-    if (strlen($profilePhotoUrl) == 0) {
-        $profilePhotoUrl = 'https://adbirt.com/public/assets-revamp/img/avatar.png';
-    }
-}
-?>
-
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 

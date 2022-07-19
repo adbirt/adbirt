@@ -1,6 +1,15 @@
 @extends('layouts.modern-camp-layout')
 
 @section('content')
+    <?php
+    if (Auth::user()->profile) {
+        $profilePhotoUrl = strip_tags(substr(Auth::user()->profile->propic, 0, 4) == 'http' ? Auth::user()->profile->propic : (substr(Auth::user()->profile->propic, 0, 8) == '/uploads' ? 'https://adbirt.com/public' . Auth::user()->profile->propic : Auth::user()->profile->propic)) . '';
+        if (strlen($profilePhotoUrl) == 0) {
+            $profilePhotoUrl = 'https://adbirt.com/public/assets-revamp/img/avatar.png';
+        }
+    }
+    ?>
+
     <div class="col-md-3 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12">
         <div class="profile">
             <div class="profile_inner">

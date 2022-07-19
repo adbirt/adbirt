@@ -44,6 +44,8 @@
         </div>
     </div>
 
+    @include('includes.alert')
+
 
     <div class="tabs_1 ui-tabs-panel ui-corner-bottom ui-widget-content" id="tabs-1" aria-labelledby="ui-id-1"
         role="tabpanel" aria-hidden="false">

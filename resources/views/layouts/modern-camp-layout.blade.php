@@ -138,7 +138,7 @@
                                 <h4 class="user_name">{!! Auth::user()->name !!}</h4>
                                 <p class="user_credit">Balance : ${!! $currentBalance !!}</p>
                                 <a href="{!! URL::route('paypal.create') !!}">
-                                    <button style="background-color: var(--theme-color); border: none; color: #fff; padding: 16px;">
+                                    <button style="background-color: var(--theme-color); border: none; color: #fff; padding: 4px;">
                                         Add Funds
                                     </button>
                                 </a>

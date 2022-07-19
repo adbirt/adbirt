@@ -24,7 +24,7 @@
     <!-- <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css"> -->
     <link rel="stylesheet" href="https://adbirt.com/public/assets-revamp/fonts/font-awesome.css">
 
-    @yield('style')
+    {{-- @yield('style') --}}
 
 </head>
 
@@ -147,43 +147,6 @@
             <div class="row">
                 <div class="col-md-12">
 
-                    <?php
-                    if (Auth::user()->profile) {
-                        $profilePhotoUrl = strip_tags(substr(Auth::user()->profile->propic, 0, 4) == 'http' ? Auth::user()->profile->propic : (substr(Auth::user()->profile->propic, 0, 8) == '/uploads' ? 'https://adbirt.com/public' . Auth::user()->profile->propic : Auth::user()->profile->propic)) . '';
-                        if (strlen($profilePhotoUrl) == 0) {
-                            $profilePhotoUrl = 'https://adbirt.com/public/assets-revamp/img/avatar.png';
-                        }
-                    }
-                    ?>
-
-                    <div class="col-md-3 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12">
-                        <div class="profile">
-                            <div class="profile_inner">
-                                <img src="{!! $profilePhotoUrl !!}" alt="{!! Auth::user()->name !!}" width="100"
-                                    height="100">
-                                <h4 class="user_name">{!! Auth::user()->name !!}</h4>
-                                <p class="user_credit">Balance : ${!! $currentBalance !!}</p>
-                            </div>
-                        </div>
-                        
-                        <div class="options_grp">
-                            <ul class="list-group ui-tabs-nav ui-corner-all ui-helper-reset ui-helper-clearfix ui-widget-header"
-                                role="tablist">
-
-                                <li class="list-group-item ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active"
-                                    role="tab" tabindex="0" aria-controls="tabs-1" aria-labelledby="ui-id-1"
-                                    aria-selected="true" aria-expanded="true">
-                                    <a href="/" role="presentation" tabindex="-1" class="ui-tabs-anchor"
-                                        id="--ui--id--">Overview</a>
-                                </li>
-
-                            </ul>
-                            <a class="log1452" href="{!! route('logout') !!}">Logout</a>
-                        </div>
-                    </div>
-
-                    @include('includes.alert')
-
                     @yield('content')
 
                 </div>
@@ -250,7 +213,7 @@
     <script src="/public/ModernCamp_files/back-to-top.js"></script>
     <script src="/public/ModernCamp_files/custom.js"></script>
 
-    @yield('script')
+    {{-- @yield('script') --}}
 
 
 </body>

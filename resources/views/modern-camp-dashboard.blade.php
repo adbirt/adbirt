@@ -15,7 +15,7 @@
             <div class="profile_inner">
                 <img src="{!! $profilePhotoUrl !!}" alt="{!! Auth::user()->name !!}">
                 <h4 class="user_name">{!! Auth::user()->name !!}</h4>
-                <p class="user_credit">Credit : $150</p>
+                <p class="user_credit">Balance : $150</p>
             </div>
         </div>
         <div class="options_grp">

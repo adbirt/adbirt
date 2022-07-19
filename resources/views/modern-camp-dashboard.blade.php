@@ -4,8 +4,8 @@
     <div class="col-md-3 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12">
         <div class="profile">
             <div class="profile_inner">
-                <img src="/public/ModernCamp_files/user.jpg" alt="user">
-                <h4 class="user_name">john doe</h4>
+                <img src="{!! $profilePhotoUrl !!}" alt="{!! Auth::user()->name !!}">
+                <h4 class="user_name">{!! Auth::user()->name !!}</h4>
                 <p class="user_credit">Credit : $150</p>
             </div>
         </div>

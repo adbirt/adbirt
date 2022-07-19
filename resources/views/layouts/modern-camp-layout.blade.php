@@ -184,42 +184,34 @@
                                 <li class="list-group-item ui-tabs-tab ui-corner-top ui-state-default ui-tab @if (Request::segment(2) == 'add-campaigns') active ui-tabs-active @endif"
                                     role="tab" tabindex="0">
                                     <a href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/index.html#tabs-1"
-                                        role="presentation" tabindex="-1"
-                                        class="ui-tabs-anchor"
-                                        id="ui-id-1">Add
+                                        role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-1">Add
                                         new Campaign</a>
                                 </li>
 
                                 <li class="list-group-item ui-tabs-tab ui-corner-top ui-state-default ui-tab @if (Request::segment(2) == 'view-campaigns') active ui-tabs-active @endif"
                                     role="tab" tabindex="0">
                                     <a href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/index.html#tabs-1"
-                                        role="presentation" tabindex="-1"
-                                        class="ui-tabs-anchor"
+                                        role="presentation" tabindex="-1" class="ui-tabs-anchor"
                                         id="ui-id-1">View my Campaign</a>
                                 </li>
 
                                 <li class="list-group-item ui-tabs-tab ui-corner-top ui-state-default ui-tab @if (Request::segment(1) == 'campaigns' && Request::segment(2) == 'active-campaigns') active ui-tabs-active @endif"
                                     role="tab" tabindex="0">
                                     <a href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/index.html#tabs-1"
-                                        role="presentation" tabindex="-1"
-                                        class="ui-tabs-anchor"
+                                        role="presentation" tabindex="-1" class="ui-tabs-anchor"
                                         id="ui-id-1">Active Campaigns</a>
                                 </li>
 
                                 <li class="list-group-item ui-tabs-tab ui-corner-top ui-state-default ui-tab @if (Request::segment(2) == 'view-wallet-history') active ui-tabs-active @endif"
                                     role="tab" tabindex="0">
                                     <a href="{{ url('/wallet/view-wallet-history') }}" role="presentation"
-                                        tabindex="-1"
-                                        class="ui-tabs-anchor"
-                                        id="ui-id-1">View Wallet Histroy</a>
+                                        tabindex="-1" class="ui-tabs-anchor" id="ui-id-1">View Wallet Histroy</a>
                                 </li>
 
                                 <li class="list-group-item ui-tabs-tab ui-corner-top ui-state-default ui-tab @if (Request::segment(2) == 'search-wallet-history') active ui-tabs-active @endif"
                                     role="tab" tabindex="0">
                                     <a href="{{ url('/wallet/search-wallet-history') }}" role="presentation"
-                                        tabindex="-1"
-                                        class="ui-tabs-anchor"
-                                        id="ui-id-1">Search Wallet Histro</a>
+                                        tabindex="-1" class="ui-tabs-anchor" id="ui-id-1">Search Wallet Histro</a>
                                 </li>
 
 
@@ -250,21 +242,27 @@
                     <div class="col-md-6 col-sm-12 col-xs-12 zero-padding">
                         <div class="navbar-collapse row collapse" id="footer_nav" style="height: 1px;">
                             <ul class="nav navbar-nav">
-                                <li><a
-                                        href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/thanks.html">Publishing</a>
+                                
+                                <li>
+                                    <a href="/">Home</a>
                                 </li>
-                                <li><a
-                                        href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/thanks.html">Analytics</a>
+
+                                <li>
+                                    <a href="/how-it-works">How it works</a>
                                 </li>
-                                <li><a
-                                        href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/terms.html">Term
-                                        &amp; Conditions</a></li>
-                                <li><a
-                                        href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/thanks.html">Support</a>
+
+                                <li>
+                                    <a href="/pricing">Pricing</a>
                                 </li>
-                                <li><a
-                                        href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/help.html">Help</a>
+
+                                <li>
+                                    <a href="/blog">Blog</a>
                                 </li>
+
+                                <li>
+                                    <a href="/contact">Contact Us</a>
+                                </li>
+
                             </ul>
                         </div>
                     </div>

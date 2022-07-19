@@ -214,8 +214,8 @@
                                         tabindex="-1" class="ui-tabs-anchor" id="ui-id-1">Search Wallet Histro</a>
                                 </li>
 
-
                             </ul>
+
                             <a class="log1452" href="{!! route('logout') !!}">Logout</a>
                         </div>
                     </div>
@@ -244,23 +244,23 @@
                             <ul class="nav navbar-nav">
                                 
                                 <li>
-                                    <a href="/">Home</a>
+                                    <a target="_blank" href="/">Home</a>
                                 </li>
 
                                 <li>
-                                    <a href="/how-it-works">How it works</a>
+                                    <a target="_blank" href="/how-it-works">How it works</a>
                                 </li>
 
                                 <li>
-                                    <a href="/pricing">Pricing</a>
+                                    <a target="_blank" href="/pricing">Pricing</a>
                                 </li>
 
                                 <li>
-                                    <a href="/blog">Blog</a>
+                                    <a target="_blank" href="/blog">Blog</a>
                                 </li>
 
                                 <li>
-                                    <a href="/contact">Contact Us</a>
+                                    <a target="_blank" href="/contact">Contact Us</a>
                                 </li>
 
                             </ul>

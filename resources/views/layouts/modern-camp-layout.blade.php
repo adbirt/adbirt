@@ -40,8 +40,8 @@
                 <div class="col-md-3 col-sm-12 col-xs-12 logo-outer">
                     <div class="logo_box">
                         <a
-                            href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/index-2.html"><img
-                                src="/public/ModernCamp_files/logo.svg" alt=""></a>
+                            href="https://adbirt.com/public/assets-revamp/img/adbirt-sidebar-logo.png"><img
+                                src="/public/ModernCamp_files/logo.svg" alt="Adbirt Logo"></a>
                     </div>
                 </div>
                 <div class="col-md-9 col-sm-12 col-xs-12 text-center nav-outer-responsive">
@@ -78,7 +78,7 @@
 
     <div class="col-md-3 col-sm-12 col-xs-12 responsive_logo">
         <div class="logo_box">
-            <a href="/dashboard"><img src="https://adbirt.com/public/assets-revamp/img/adbirt-sidebar-logo.png"
+            <a href="/dashboard"><img src=""
                     alt="Adbirt Logo"></a>
         </div>
     </div>

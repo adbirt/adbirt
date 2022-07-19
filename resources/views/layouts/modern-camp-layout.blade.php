@@ -49,20 +49,20 @@
                         <div class="navbar-collapse row collapse" id="myNavbar" style="height: 1px;">
                             <div class="col-md-12 zero-padding">
                                 <ul class="nav navbar-nav">
-                                    <li><a href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/faq.html"
-                                            class="faq_mail"><span class="circle"><i
+
+                                    <li><a href="#" class="faq_mail"><span class="circle"><i
                                                     class="fas fa-envelope"></i></span></a></li>
                                     <li class="">
-                                        <a
-                                            href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/index.html#"><span
-                                                class="header_span"><i class="fas fa-bell"></i> Notifications </span><span
+
+                                        <a href="#notifications-dropdown"><span class="header_span"><i
+                                                    class="fas fa-bell"></i> Notifications </span><span
                                                 class="fa fa-angle-down"></span></a>
-                                        <ul class="dropdown-menu pull-left search-panel">
-                                            <li><a
-                                                    href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/login.html">Logout</a>
+                                        <ul class="dropdown-menu pull-left search-panel" id="notifications-dropdown">
+                                            <li><a href="#">Logout</a>
                                             </li>
                                         </ul>
                                     </li>
+
                                 </ul>
                                 <div class="header_btn">
                                     <a href="{{ url('/campaigns/add-campaigns') }}" class="comp_btn">Create new
@@ -78,9 +78,8 @@
 
     <div class="col-md-3 col-sm-12 col-xs-12 responsive_logo">
         <div class="logo_box">
-            <a
-                href="/dashboard"><img
-                    src="https://adbirt.com/public/assets-revamp/img/adbirt-sidebar-logo.png" alt="Adbirt Logo"></a>
+            <a href="/dashboard"><img src="https://adbirt.com/public/assets-revamp/img/adbirt-sidebar-logo.png"
+                    alt="Adbirt Logo"></a>
         </div>
     </div>
     <div class="responsive_button">
@@ -139,7 +138,7 @@
                                 <h4 class="user_name">{!! Auth::user()->name !!}</h4>
                                 <p class="user_credit">Balance : ${!! $currentBalance !!}</p>
                                 <a href="{!! URL::route('paypal.create') !!}">
-                                    <button>
+                                    <button style="background-color: var(--theme-color); border: none; color: #fff;">
                                         Add Funds
                                     </button>
                                 </a>
@@ -186,7 +185,8 @@
                                 <li class="list-group-item ui-tabs-tab ui-corner-top ui-state-default ui-tab @if (Request::segment(2) == 'search-wallet-history') active ui-tabs-active @endif"
                                     role="tab" tabindex="0">
                                     <a href="{{ url('/wallet/search-wallet-history') }}" role="presentation"
-                                        tabindex="-1" class="ui-tabs-anchor" id="ui-id-1">Search Wallet Histroy</a>
+                                        tabindex="-1" class="ui-tabs-anchor" id="ui-id-1">Search Wallet
+                                        Histroy</a>
                                 </li>
 
                             </ul>
@@ -245,12 +245,9 @@
                         <p> &copy;
                             Copyright {{ date('Y') }} by
                             <a terget="_blank" href="https://adbirt.com" class="defualt_clr">Adbirt</a>.
-                            All Right Reserved. <a
-                                href="/terms"
-                                class="defualt_clr">Terms of Use</a>
+                            All Right Reserved. <a href="/terms" class="defualt_clr">Terms of Use</a>
                             and
-                            <a href="/privacy"
-                                class="defualt_clr">Privacy Policy</a>.
+                            <a href="/privacy" class="defualt_clr">Privacy Policy</a>.
                         </p>
                     </div>
                 </div>

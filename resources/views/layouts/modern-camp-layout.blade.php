@@ -90,8 +90,8 @@
                                     </li>
                                 </ul>
                                 <div class="header_btn">
-                                    <a href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/campaign.html"
-                                        class="comp_btn">Create new campaign</a>
+                                    <a href="{{ url('/campaigns/add-campaigns') }}" class="comp_btn">Create new
+                                        campaign</a>
                                 </div>
                             </div>
                         </div>

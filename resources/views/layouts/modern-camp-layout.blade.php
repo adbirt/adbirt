@@ -233,7 +233,7 @@
                                     role="tab" tabindex="0" aria-controls="tabs-1" aria-labelledby="ui-id-1"
                                     aria-selected="true" aria-expanded="true">
                                     <a href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/index.html#tabs-1"
-                                        role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-1">Add
+                                        role="presentation" tabindex="-1" class="ui-tabs-anchor @if (Request::segment(2) == 'add-campaigns') active @endif" id="ui-id-1">Add
                                         new Campaign</a>
                                 </li>
 
@@ -241,7 +241,7 @@
                                     role="tab" tabindex="0" aria-controls="tabs-1" aria-labelledby="ui-id-1"
                                     aria-selected="true" aria-expanded="true">
                                     <a href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/index.html#tabs-1"
-                                        role="presentation" tabindex="-1" class="ui-tabs-anchor"
+                                        role="presentation" tabindex="-1" class="ui-tabs-anchor @if (Request::segment(2) == 'view-campaigns') active @endif"
                                         id="ui-id-1">View my Campaign</a>
                                 </li>
 
@@ -249,7 +249,7 @@
                                     role="tab" tabindex="0" aria-controls="tabs-1" aria-labelledby="ui-id-1"
                                     aria-selected="true" aria-expanded="true">
                                     <a href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/index.html#tabs-1"
-                                        role="presentation" tabindex="-1" class="ui-tabs-anchor"
+                                        role="presentation" tabindex="-1" class="ui-tabs-anchor @if (Request::segment(1) == 'campaigns' && Request::segment(2) == 'active-campaigns') active @endif"
                                         id="ui-id-1">Active Campaigns</a>
                                 </li>
 
@@ -257,14 +257,14 @@
                                     role="tab" tabindex="0" aria-controls="tabs-1" aria-labelledby="ui-id-1"
                                     aria-selected="true" aria-expanded="true">
                                     <a href="{{ url('/wallet/view-wallet-history') }}" role="presentation"
-                                        tabindex="-1" class="ui-tabs-anchor" id="ui-id-1">View Wallet Histro</a>
+                                        tabindex="-1" class="ui-tabs-anchor @if (Request::segment(2) == 'view-wallet-history') active @endif" id="ui-id-1">View Wallet Histroy</a>
                                 </li>
 
                                 <li class="list-group-item ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active"
                                     role="tab" tabindex="0" aria-controls="tabs-1" aria-labelledby="ui-id-1"
                                     aria-selected="true" aria-expanded="true">
                                     <a href="{{ url('/wallet/search-wallet-history') }}" role="presentation"
-                                        tabindex="-1" class="ui-tabs-anchor" id="ui-id-1">Search Wallet Histro</a>
+                                        tabindex="-1" class="ui-tabs-anchor @if (Request::segment(2) == 'search-wallet-history') active @endif" id="ui-id-1">Search Wallet Histro</a>
                                 </li>
 
 

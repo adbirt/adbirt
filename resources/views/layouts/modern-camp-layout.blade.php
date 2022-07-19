@@ -165,6 +165,7 @@
                                 <p class="user_credit">Balance : ${!! $currentBalance !!}</p>
                             </div>
                         </div>
+                        
                         <div class="options_grp">
                             <ul class="list-group ui-tabs-nav ui-corner-all ui-helper-reset ui-helper-clearfix ui-widget-header"
                                 role="tablist">

@@ -174,7 +174,14 @@
                             <ul class="list-group ui-tabs-nav ui-corner-all ui-helper-reset ui-helper-clearfix ui-widget-header"
                                 role="tablist">
 
-                                <li class="list-group-item ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active"
+                                <li class="list-group-item ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active @if (Request::segment(1) == 'dashboard')  ui-state-active @endif"
+                                    role="tab" tabindex="0" aria-controls="tabs-1" aria-labelledby="ui-id-1"
+                                    aria-selected="true" aria-expanded="true">
+                                    <a href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/index.html#tabs-1"
+                                        role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-1">Dashboard</a>
+                                </li>
+
+                                <li class="list-group-item ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active"
                                     role="tab" tabindex="0" aria-controls="tabs-1" aria-labelledby="ui-id-1"
                                     aria-selected="true" aria-expanded="true">
                                     <a href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/index.html#tabs-1"
@@ -182,7 +189,7 @@
                                         new Campaign</a>
                                 </li>
 
-                                <li class="list-group-item ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active"
+                                <li class="list-group-item ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active"
                                     role="tab" tabindex="0" aria-controls="tabs-1" aria-labelledby="ui-id-1"
                                     aria-selected="true" aria-expanded="true">
                                     <a href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/index.html#tabs-1"
@@ -190,7 +197,7 @@
                                         id="ui-id-1">View my Campaign</a>
                                 </li>
 
-                                <li class="list-group-item ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active"
+                                <li class="list-group-item ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active"
                                     role="tab" tabindex="0" aria-controls="tabs-1" aria-labelledby="ui-id-1"
                                     aria-selected="true" aria-expanded="true">
                                     <a href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/index.html#tabs-1"
@@ -198,14 +205,14 @@
                                         id="ui-id-1">Active Campaigns</a>
                                 </li>
 
-                                <li class="list-group-item ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active"
+                                <li class="list-group-item ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active"
                                     role="tab" tabindex="0" aria-controls="tabs-1" aria-labelledby="ui-id-1"
                                     aria-selected="true" aria-expanded="true">
                                     <a href="{{ url('/wallet/view-wallet-history') }}" role="presentation"
                                         tabindex="-1" class="ui-tabs-anchor @if (Request::segment(2) == 'view-wallet-history') active @endif" id="ui-id-1">View Wallet Histroy</a>
                                 </li>
 
-                                <li class="list-group-item ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active"
+                                <li class="list-group-item ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active"
                                     role="tab" tabindex="0" aria-controls="tabs-1" aria-labelledby="ui-id-1"
                                     aria-selected="true" aria-expanded="true">
                                     <a href="{{ url('/wallet/search-wallet-history') }}" role="presentation"

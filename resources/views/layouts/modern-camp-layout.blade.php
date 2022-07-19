@@ -7,10 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, shrink-to-fit=9">
 
-    <title>ModernCamp</title>
+    <title>{!! $title !!} - {!! Config::get('customConfig.names.siteName') !!}</title>
 
-    <link rel="icon" type="image/png"
-        href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/images/fav.png">
+    {{-- <link rel="icon" type="image/png"
+        href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/images/fav.png"> --}}
+
+    <meta name="shortcut icon" content="https://adbirt.com/public/assets-revamp/img/favicon.png">
 
     <link href="/public/ModernCamp_files/bootstrap.css" rel="stylesheet">
     <link href="/public/ModernCamp_files/animate.css" rel="stylesheet">

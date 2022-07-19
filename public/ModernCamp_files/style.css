@@ -31,7 +31,7 @@
 @import url("https://fonts.google.com/?selection.family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
 
 :root {
-  --theme-color: #ff7c00;
+  --theme-accent-color: #ff7c00;
   --theme-accent-color: #bc6a44;
 }
 
@@ -231,7 +231,7 @@ span.header_span i {
 .log1452:hover {
   margin-bottom: auto !important;
   padding-bottom: 20px !important;
-  background-color: var(--theme-color);
+  background-color: var(--theme-accent-color);
   color: #ffffff;
   font-size: 14px;
   font-family: "roboto", sans-serif;
@@ -276,7 +276,7 @@ li.cart-btn a {
 .home-1 .dropdown-menu {
   top: 90px;
   right: 0;
-  border-top: 3px solid var(--theme-color);
+  border-top: 3px solid var(--theme-accent-color);
   padding: 0px;
   width: 280px;
   -webkit-border-radius: 0px;
@@ -311,7 +311,7 @@ li.cart-btn a {
 .ui-tabs .ui-tabs-nav li.ui-tabs-active {
   margin-bottom: auto !important;
   padding-bottom: 20px !important;
-  background-color: var(--theme-color);
+  background-color: var(--theme-accent-color);
   color: #ffffff;
   font-size: 14px;
   font-family: "roboto", sans-serif;
@@ -367,7 +367,7 @@ li.cart-btn a {
 
 .search-panel input:focus,
 .search-panel select:focus {
-  border-color: var(--theme-color);
+  border-color: var(--theme-accent-color);
 }
 
 .search-panel .search-btn {
@@ -389,7 +389,7 @@ li.cart-btn a {
 }
 
 .search-panel .search-btn:hover {
-  color: var(--theme-color);
+  color: var(--theme-accent-color);
 }
 
 .header_btn {
@@ -568,12 +568,12 @@ li.cart-btn a {
 }
 
 .menu .navbar-inverse .navbar-nav > li > a:hover {
-  color: var(--theme-color);
+  color: var(--theme-accent-color);
   background: transparent;
   border: none;
 }
 .dropdown-menu {
-  border-top: 3px solid var(--theme-color);
+  border-top: 3px solid var(--theme-accent-color);
   font-family: "Roboto", sans-serif;
 }
 .menu .navbar-inverse .navbar-nav > li:hover > a:after {
@@ -616,7 +616,7 @@ li.cart-btn a {
 
 .menu .dropdown-menu > li > a:hover {
   background: transparent;
-  color: var(--theme-color);
+  color: var(--theme-accent-color);
 }
 
 .main-menu .navigation > li > ul {
@@ -962,7 +962,7 @@ li.cart-btn a {
 }
 
 .header-menu-1 .navbar-inverse .navbar-nav > li > a.active {
-  color: var(--theme-color);
+  color: var(--theme-accent-color);
 }
 
 .blog-fullwidth {
@@ -1159,10 +1159,10 @@ li.cart-btn a {
 }
 .filter-checkbox input[type="checkbox"]:checked + label:before {
   background: #fff;
-  color: var(--theme-color);
+  color: var(--theme-accent-color);
   content: "\f00c";
   text-align: center;
-  border: 2px solid var(--theme-color);
+  border: 2px solid var(--theme-accent-color);
   line-height: 10px;
 }
 .filter-checkbox input[type="checkbox"]:checked + label:after {
@@ -1204,7 +1204,7 @@ li.cart-btn a {
   font-size: 30px;
   text-align: center;
   color: white;
-  background: var(--theme-color) no-repeat center 50%;
+  background: var(--theme-accent-color) no-repeat center 50%;
   visibility: hidden;
 }
 
@@ -1301,7 +1301,7 @@ span.circle:after {
   width: 7px;
   height: 7px;
   border-radius: 100%;
-  background: var(--theme-color);
+  background: var(--theme-accent-color);
   position: absolute;
   right: -4px;
 }
@@ -1310,13 +1310,13 @@ span.circle:after {
   height: 45px;
   padding: 8px 0;
   font-size: 14px;
-  background-color: var(--theme-color);
+  background-color: var(--theme-accent-color);
   font-family: "Roboto", sans-serif;
   color: #ffffff;
   text-decoration: none;
   display: inline-block;
   line-height: 1.8;
-  border: 2px solid var(--theme-color);
+  border: 2px solid var(--theme-accent-color);
   font-weight: 500;
   transition: 0.5s;
   border-radius: 5px;
@@ -1327,12 +1327,12 @@ a.comp_btn {
   height: 50px;
   padding: 10px 20px;
   font-size: 14px;
-  background-color: var(--theme-color);
+  background-color: var(--theme-accent-color);
   color: #ffffff;
   text-decoration: none;
   display: inline-block;
   line-height: 1.8;
-  border: 2px solid var(--theme-color);
+  border: 2px solid var(--theme-accent-color);
   font-weight: 500;
   transition: 0.5s;
   font-family: "Roboto", sans-serif;
@@ -1383,8 +1383,8 @@ a.btn-2 {
   color: #18212c;
 }
 a.btn-2:hover {
-  background: var(--theme-color);
-  border: 2px solid var(--theme-color);
+  background: var(--theme-accent-color);
+  border: 2px solid var(--theme-accent-color);
   color: #ffffff;
 }
 
@@ -1430,7 +1430,7 @@ p.user_credit {
   font-family: "roboto", sans-serif;
 }
 .options_grp .list-group .list-group-item:hover {
-  background: var(--theme-color);
+  background: var(--theme-accent-color);
   border-radius: 0;
 }
 .options_grp .list-group .list-group-item:hover a {
@@ -1453,7 +1453,7 @@ p.user_credit {
 }
 .options_grp.tools .list-group .list-group-item:hover {
   background: rgba(160, 160, 160, 0.2);
-  color: var(--theme-color);
+  color: var(--theme-accent-color);
 }
 
 .closePopup {
@@ -1463,7 +1463,7 @@ p.user_credit {
   padding: 0 20px;
   border-radius: 3px;
   color: #fff;
-  background: var(--theme-color);
+  background: var(--theme-accent-color);
 }
 
 .closePopup:hover {
@@ -1478,7 +1478,7 @@ p.user_credit {
   padding: 0 20px;
   border-radius: 3px;
   color: #fff;
-  background: var(--theme-color);
+  background: var(--theme-accent-color);
 }
 
 .submit_req:hover {
@@ -1520,7 +1520,7 @@ p.user_credit {
   color: #ffffff;
 }
 .panel-heading a.list-item.active {
-  background-color: var(--theme-color);
+  background-color: var(--theme-accent-color);
   color: #ffffff;
   border: none;
   border-radius: 0px;
@@ -1575,7 +1575,7 @@ p.user_credit {
   font-weight: 500;
 }
 a.defualt_clr {
-  color: var(--theme-color);
+  color: var(--theme-accent-color);
   padding-left: 5px;
 }
 /*
@@ -1627,7 +1627,7 @@ a.defualt_clr {
   color: black;
 }
 .grey_color {
-  color: var(--theme-color);
+  color: var(--theme-accent-color);
 }
 
 .age-selecter .btn-group .btn {
@@ -1724,7 +1724,7 @@ a.defualt_clr {
   font-family: "roboto", sans-serif;
 }
 .graph_details h6.first {
-  color: var(--theme-color);
+  color: var(--theme-accent-color);
 }
 .graph_details h6.second {
   color: #18212c;
@@ -1802,7 +1802,7 @@ a.defualt_clr {
 .table-outer td i {
   margin-left: 5px;
   vertical-align: initial;
-  color: var(--theme-color);
+  color: var(--theme-accent-color);
 }
 .table-outer .table {
   margin-bottom: 0;
@@ -1869,7 +1869,7 @@ a.defualt_clr {
 }
 .vector-section h3 {
   font-weight: 500;
-  color: var(--theme-color);
+  color: var(--theme-accent-color);
   text-transform: capitalize;
   margin-bottom: 45px;
 }
@@ -1960,12 +1960,12 @@ a.defualt_clr {
 }
 
 .squaredThree input[type="checkbox"]:checked + label {
-  background: var(--theme-color);
+  background: var(--theme-accent-color);
 }
 
 .squaredThree label.active {
-  background: var(--theme-color);
-  border-color: var(--theme-color);
+  background: var(--theme-accent-color);
+  border-color: var(--theme-accent-color);
 }
 .squaredThree label.active::after {
   color: #ffffff;
@@ -1993,7 +1993,7 @@ h3.btm_line::before {
   content: "";
   width: 70px;
   height: 2px;
-  background: var(--theme-color);
+  background: var(--theme-accent-color);
   position: absolute;
   bottom: 0;
 }
@@ -2115,7 +2115,7 @@ h3.btm_line::before {
   font-weight: 500;
 }
 .btm_text p span {
-  color: var(--theme-color);
+  color: var(--theme-accent-color);
 }
 
 label {
@@ -2220,11 +2220,11 @@ label.hidden-price {
 .service_icon .icon {
   width: 70px;
   height: 70px;
-  background: var(--theme-color);
+  background: var(--theme-accent-color);
   border-radius: 5px;
   text-align: center;
   padding: 21px;
-  border: 3px solid var(--theme-color);
+  border: 3px solid var(--theme-accent-color);
   transition: 0.5;
   cursor: pointer;
 }
@@ -2287,7 +2287,7 @@ input::placeholder {
   margin-bottom: 30px;
 }
 .support i {
-  color: var(--theme-color);
+  color: var(--theme-accent-color);
   font-size: 36px;
   margin-bottom: 25px;
 }
@@ -2340,7 +2340,7 @@ input::placeholder {
   line-height: 1.5;
 }
 .topics-outer .topic .icon-outer i {
-  color: var(--theme-color);
+  color: var(--theme-accent-color);
   font-size: 35px;
 }
 
@@ -2375,7 +2375,7 @@ input::placeholder {
   border-bottom: 0;
 }
 .faq_section .nav-tabs li a.active {
-  border-bottom: 3px solid var(--theme-color);
+  border-bottom: 3px solid var(--theme-accent-color);
   background: transparent;
 }
 .faq_section .nav-tabs li a {
@@ -2387,19 +2387,19 @@ input::placeholder {
 }
 .faq_section .nav-tabs li a:hover {
   border: none;
-  border-bottom: 3px solid var(--theme-color);
+  border-bottom: 3px solid var(--theme-accent-color);
   background: transparent;
 }
 
 .faq_section .nav-tabs li.active a {
   border: none;
-  border-bottom: 3px solid var(--theme-color);
+  border-bottom: 3px solid var(--theme-accent-color);
   background: transparent;
 }
 
 .faq_section .nav-tabs li a:focus {
   border: none;
-  border-bottom: 3px solid var(--theme-color);
+  border-bottom: 3px solid var(--theme-accent-color);
   background: transparent;
 }
 .tab-content4 {
@@ -2538,7 +2538,7 @@ input::placeholder {
 }
 .responsive_button {
   display: none;
-  background: var(--theme-color);
+  background: var(--theme-accent-color);
   padding: 20px !important;
   width: 100%;
   overflow: hidden;
@@ -2595,7 +2595,7 @@ input::placeholder {
   font: 600 12px Montserrat, sans-serif;
 }
 .responsive_nav ul li a:hover {
-  background: var(--theme-color);
+  background: var(--theme-accent-color);
 }
 
 /* --- Footer --- */
@@ -2616,7 +2616,7 @@ input::placeholder {
   font-weight: 500;
 }
 .footer_btm .navbar-nav > li > a:hover {
-  color: var(--theme-color);
+  color: var(--theme-accent-color);
   background: transparent;
 }
 .footer_btm p {
@@ -2649,7 +2649,7 @@ td.imageCell {
 }
 
 .progress-bar-success {
-  background-color: var(--theme-color);
+  background-color: var(--theme-accent-color);
   width: 100%;
 }
 .btn-success {
@@ -2672,7 +2672,7 @@ td.imageCell {
   position: absolute;
   right: -10px;
   top: 10px;
-  color: var(--theme-color);
+  color: var(--theme-accent-color);
 }
 
 .essential_img audio#imageProcessed,
@@ -2893,7 +2893,7 @@ p label.rotate:focus .imageContainer {
   border-radius: 5px;
 }
 .white-popup label span {
-  color: var(--theme-color);
+  color: var(--theme-accent-color);
 }
 .mfp-close {
   display: none;
@@ -2970,7 +2970,7 @@ a.canvasjs-chart-credit {
 .tabs_2 .btn-group .btn .red {
   width: 14px;
   height: 14px;
-  background: var(--theme-color);
+  background: var(--theme-accent-color);
   margin-right: 15px;
   display: inline-block;
   vertical-align: middle;
@@ -3122,7 +3122,7 @@ p.editor_title {
   margin-bottom: 30px;
 }
 .key_editor h2 {
-  color: var(--theme-color);
+  color: var(--theme-accent-color);
   font: 600 30px "Roboto", sans-serif;
   margin: 0 0 20px;
   letter-spacing: 0.5px;
@@ -3165,9 +3165,9 @@ p.editor_title {
   color: #252531;
 }
 .view_apply a.apply_btn:hover {
-  background: var(--theme-color);
+  background: var(--theme-accent-color);
   color: #ffffff;
-  border-color: var(--theme-color);
+  border-color: var(--theme-accent-color);
 }
 p.btm_para {
   margin-top: 30px;
@@ -3207,7 +3207,7 @@ p.btm_para {
 }
 .report_option ul li.check:before {
   content: "\f14a";
-  color: var(--theme-color);
+  color: var(--theme-accent-color);
   font-weight: 900;
 }
 .doc_format {
@@ -3252,9 +3252,9 @@ p.report_t {
   color: #252531;
 }
 .save_changes a.cancel:hover {
-  background: var(--theme-color);
+  background: var(--theme-accent-color);
   color: #ffffff;
-  border-color: var(--theme-color);
+  border-color: var(--theme-accent-color);
 }
 .table-outer.report_table .table > thead > tr > th {
   padding: 15px 25px;
@@ -3283,7 +3283,7 @@ p.report_t {
 }
 .table-outer.report_table .table > tbody > tr > td,
 .table > tbody > tr > th.author {
-  color: var(--theme-color);
+  color: var(--theme-accent-color);
 }
 /*=========Tab 5=============*/
 .tabs_5 h1 {

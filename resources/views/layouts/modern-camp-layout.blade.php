@@ -18,7 +18,11 @@
     <link rel="stylesheet" href="/public/ModernCamp_files/jquery-ui.css">
     <link href="/public/ModernCamp_files/style.css" rel="stylesheet">
     <link href="/public/ModernCamp_files/responsive.css" rel="stylesheet">
-    <link rel="stylesheet" href="/public/ModernCamp_files/fontawesome-all.css">
+
+    <!-- Font Awesome -->
+    {{-- <link rel="stylesheet" href="/public/ModernCamp_files/fontawesome-all.css"> --}}
+    <!-- <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://adbirt.com/public/assets-revamp/fonts/font-awesome.css">
 
     @yield('style')
 

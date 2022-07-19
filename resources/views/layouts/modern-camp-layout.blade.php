@@ -49,31 +49,6 @@
                         <div class="navbar-collapse row collapse" id="myNavbar" style="height: 1px;">
                             <div class="col-md-12 zero-padding">
                                 <ul class="nav navbar-nav">
-                                    <li><a href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/index-2.html"
-                                            class="active">dashboard</a></li>
-                                    <li><a
-                                            href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/engage.html">engage</a>
-                                    </li>
-                                    <li><a
-                                            href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/services.html">service</a>
-                                    </li>
-                                    <li><a
-                                            href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/help.html">help</a>
-                                    </li>
-                                    <li class="dropdown_menu">
-                                        <a
-                                            href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/index.html#"><span
-                                                class="header_span"><i class="fas fa-money-bill-alt"></i> $150
-                                            </span><span class="fa fa-angle-down"></span></a>
-                                        <ul class="dropdown-menu pull-left search-panel">
-                                            <li><a
-                                                    href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/index.html#">Add
-                                                    Credit</a></li>
-                                            <li><a
-                                                    href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/index.html#">Wallet</a>
-                                            </li>
-                                        </ul>
-                                    </li>
                                     <li><a href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/faq.html"
                                             class="faq_mail"><span class="circle"><i
                                                     class="fas fa-envelope"></i></span></a></li>

@@ -66,7 +66,8 @@ if (Auth::user()->profile) {
                 <div class="col-md-3 col-sm-12 col-xs-12 logo-outer">
                     <div class="logo_box">
                         <a href="https://adbirt.com/public/assets-revamp/img/adbirt-sidebar-logo.png"><img
-                                src="https://adbirt.com/public/assets-revamp/img/adbirt-sidebar-logo.png" height="30" alt="Adbirt Logo"></a>
+                                src="https://adbirt.com/public/assets-revamp/img/adbirt-sidebar-logo.png" height="30"
+                                alt="Adbirt Logo"></a>
                     </div>
                 </div>
                 <div class="col-md-9 col-sm-12 col-xs-12 text-center nav-outer-responsive">
@@ -165,8 +166,8 @@ if (Auth::user()->profile) {
 
     <div class="col-md-3 col-sm-12 col-xs-12 responsive_logo">
         <div class="logo_box">
-            <a href="/dashboard"><img height="30" src="https://adbirt.com/public/assets-revamp/img/adbirt-sidebar-logo.png"
-                    alt="Adbirt Logo"></a>
+            <a href="/dashboard"><img height="30"
+                    src="https://adbirt.com/public/assets-revamp/img/adbirt-sidebar-logo.png" alt="Adbirt Logo"></a>
         </div>
     </div>
     <div class="responsive_button">
@@ -179,14 +180,13 @@ if (Auth::user()->profile) {
     </div>
     <div class="responsive_nav collapse navbar-collapse">
         <ul class="nav navbar-nav">
-            <li><a
-                    href="/privacy">Privacy Policy</a>
+            <li><a href="/privacy">Privacy Policy</a>
             </li>
-            <li><a
-                    href="/terms">Terms
+            <li><a href="/terms">Terms
                     &amp; Condition</a></li>
-            <li><a
-                    href="/faq">faq</a>
+            <li><a href="/faq">faq</a>
+            </li>
+            <li><a onclick="viewAllNotifications('Chnge')" href="javascript:void(0)">Notifications</a>
             </li>
             <li><a href="{!! route('logout') !!}">logout</a>
             </li>

@@ -31,7 +31,7 @@
 <body>
     <div class="preloader-area" style="display: none;">
         <div class="spinner" style="display: none;">
-            <img src="/public/ModernCamp_files/logo.svg" alt="">
+            <img src="https://adbirt.com/public/assets-revamp/img/adbirt-sidebar-logo.png" width="188" height="26" alt="Adbirt Logo">
         </div>
     </div>
     <header class="menu header_navbar header-menu-1">

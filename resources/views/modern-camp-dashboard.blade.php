@@ -90,7 +90,8 @@
         </div> --}}
 
         <div class="col-md-9 col-sm-12 zero-padding">
-            <div class="col-md-12 graph-section">
+            
+            {{-- <div class="col-md-12 graph-section">
                 <h4>Performance Graph</h4>
                 <div class="graph_outer">
                     <div id="chartContainer" style="height: 300px; width: 100%;">
@@ -114,7 +115,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
+
             <div class="col-md-3 col-sm-6 col-xs-12 graph_details">
                 <h6 class="first">Geotargetted</h6>
                 <p>$12 / Day - Active</p>
@@ -131,6 +133,7 @@
                 <h6 class="fourth">Mobile &amp; Content</h6>
                 <p>$10 / Day - Active</p>
             </div>
+
             <div class="col-md-12 table-section">
                 <h4>Campaigns</h4>
                 <div class="table-outer">

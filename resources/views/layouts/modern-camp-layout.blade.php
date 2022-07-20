@@ -165,7 +165,7 @@ if (Auth::user()->profile) {
 
     <div class="col-md-3 col-sm-12 col-xs-12 responsive_logo">
         <div class="logo_box">
-            <a href="/dashboard"><img src="https://adbirt.com/public/assets-revamp/img/adbirt-sidebar-logo.png"
+            <a href="/dashboard"><img height="30" src="https://adbirt.com/public/assets-revamp/img/adbirt-sidebar-logo.png"
                     alt="Adbirt Logo"></a>
         </div>
     </div>

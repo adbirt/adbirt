@@ -138,7 +138,7 @@
                                 <p class="user_credit">Balance : ${!! $currentBalance !!}</p>
                                 <a href="{!! URL::route('paypal.create') !!}">
                                     <button
-                                        style="background-color: var(--theme-accent-color); border: none; color: #fff; padding: 4px;">
+                                        style="background-color: var(--theme-color); border: none; color: #fff; padding: 4px;">
                                         Add Funds
                                     </button>
                                 </a>

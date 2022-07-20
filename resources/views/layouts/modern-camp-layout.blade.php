@@ -86,9 +86,66 @@ if (Auth::user()->profile) {
                                                 @endif
                                                 Notifications
                                             </span><span class="fa fa-angle-down"></span></a>
+
                                         <ul class="dropdown-menu pull-left search-panel" id="notifications-dropdown">
-                                            <li><a href="#">Logout</a>
-                                            </li>
+
+                                            @if (!empty($Notify))
+                                                <script type="text/javascript">
+                                                    var baseUrl = "{{ url('/') }}"
+
+                                                    window.viewSingleNotification = function viewSingleNotification(id) {
+                                                        $.ajax({
+                                                                url: baseUrl + '/notify/ChngeStatus',
+                                                                type: 'POST',
+                                                                data: {
+                                                                    id: id
+                                                                },
+                                                            })
+                                                            .done(function() {
+                                                                window.location.href = "{{ url('/notify/view-notifications') }}";
+                                                            })
+                                                    };
+
+                                                    window.viewAllNotifications = function viewAllNotifications(status) {
+                                                        $.ajax({
+                                                                url: baseUrl + '/notify/ChngeStatus',
+                                                                type: 'POST',
+                                                                data: {
+                                                                    id: status
+                                                                },
+                                                            })
+                                                            .done(function() {
+                                                                window.location.href = "{{ url('/notify/view-notifications') }}";
+                                                            })
+                                                    };
+                                                </script>
+                                                <style>
+                                                    .single-notification-item {
+                                                        overflow: hidden;
+                                                        text-overflow: ellipsis;
+                                                    }
+                                                </style>
+                                                @foreach (array_slice($Notify, 0, 5, true) as $single_notification)
+                                                    <li>
+                                                        <a href="#"
+                                                            onclick="viewSingleNotification({{ $single_notification['id'] }})">
+                                                            {{ strip_tags($single_notification['heading']) }}
+                                                        </a>
+                                                    </li>
+                                                @endforeach
+
+                                                <li>
+                                                    <a href="#" onclick="viewAllNotifications('Chnge')">
+                                                        All Notifications
+                                                    </a>
+                                                </li>
+                                            @else
+                                                <li>
+                                                    <a href="#">
+                                                        No new notifications
+                                                    </a>
+                                                </li>
+                                            @endif
                                         </ul>
                                     </li>
 

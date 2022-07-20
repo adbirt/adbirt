@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<?php
+
+use App\Model\NotificationAlertModel;
+
+$Notify = json_decode(
+    json_encode(
+        NotificationAlertModel::where('status', 'Unseen')
+            ->where('Notify_Receivers_Id', Auth::user()->id)
+            ->orderBy('id', 'desc')
+            ->get(),
+    ),
+    true,
+);
+
+$NotifyCnt = count($Notify);
+
+if (Auth::user()->profile) {
+                        $profilePhotoUrl = strip_tags(substr(Auth::user()->profile->propic, 0, 4) == 'http' ? Auth::user()->profile->propic : (substr(Auth::user()->profile->propic, 0, 8) == '/uploads' ? 'https://adbirt.com/public' . Auth::user()->profile->propic : Auth::user()->profile->propic)) . '';
+                        if (strlen($profilePhotoUrl) == 0) {
+                            $profilePhotoUrl = 'https://adbirt.com/public/assets-revamp/img/avatar.png';
+                        }
+                    }
+
+?>
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
@@ -31,7 +56,8 @@
 <body>
     <div class="preloader-area" style="display: none;">
         <div class="spinner" style="display: none;">
-            <img src="https://adbirt.com/public/assets-revamp/img/adbirt-sidebar-logo.png" width="188" height="26" alt="Adbirt Logo">
+            <img src="https://adbirt.com/public/assets-revamp/img/adbirt-sidebar-logo.png" width="188" height="26"
+                alt="Adbirt Logo">
         </div>
     </div>
     <header class="menu header_navbar header-menu-1">
@@ -109,8 +135,7 @@
             <li><a
                     href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/faq.html">faq</a>
             </li>
-            <li><a
-                    href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/login.html">logout</a>
+            <li><a href="{!! route('logout') !!}">logout</a>
             </li>
         </ul>
     </div>
@@ -119,15 +144,6 @@
         <div class="container ui-tabs ui-corner-all ui-widget ui-widget-content" id="tabs">
             <div class="row">
                 <div class="col-md-12">
-
-                    <?php
-                    if (Auth::user()->profile) {
-                        $profilePhotoUrl = strip_tags(substr(Auth::user()->profile->propic, 0, 4) == 'http' ? Auth::user()->profile->propic : (substr(Auth::user()->profile->propic, 0, 8) == '/uploads' ? 'https://adbirt.com/public' . Auth::user()->profile->propic : Auth::user()->profile->propic)) . '';
-                        if (strlen($profilePhotoUrl) == 0) {
-                            $profilePhotoUrl = 'https://adbirt.com/public/assets-revamp/img/avatar.png';
-                        }
-                    }
-                    ?>
 
                     <div class="col-md-3 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12">
                         <div class="profile">

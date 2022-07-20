@@ -18,11 +18,11 @@ $Notify = json_decode(
 $NotifyCnt = count($Notify);
 
 if (Auth::user()->profile) {
-                        $profilePhotoUrl = strip_tags(substr(Auth::user()->profile->propic, 0, 4) == 'http' ? Auth::user()->profile->propic : (substr(Auth::user()->profile->propic, 0, 8) == '/uploads' ? 'https://adbirt.com/public' . Auth::user()->profile->propic : Auth::user()->profile->propic)) . '';
-                        if (strlen($profilePhotoUrl) == 0) {
-                            $profilePhotoUrl = 'https://adbirt.com/public/assets-revamp/img/avatar.png';
-                        }
-                    }
+    $profilePhotoUrl = strip_tags(substr(Auth::user()->profile->propic, 0, 4) == 'http' ? Auth::user()->profile->propic : (substr(Auth::user()->profile->propic, 0, 8) == '/uploads' ? 'https://adbirt.com/public' . Auth::user()->profile->propic : Auth::user()->profile->propic)) . '';
+    if (strlen($profilePhotoUrl) == 0) {
+        $profilePhotoUrl = 'https://adbirt.com/public/assets-revamp/img/avatar.png';
+    }
+}
 
 ?>
 
@@ -80,8 +80,12 @@ if (Auth::user()->profile) {
                                     <li class="">
 
                                         <a href="#notifications-dropdown"><span class="header_span"><i
-                                                    class="fas fa-bell"></i> Notifications </span><span
-                                                class="fa fa-angle-down"></span></a>
+                                                    class="fas fa-bell"></i>
+                                                @if ($NotifyCnt >= 1)
+                                                    {{ $NotifyCnt }}
+                                                @endif
+                                                Notifications
+                                            </span><span class="fa fa-angle-down"></span></a>
                                         <ul class="dropdown-menu pull-left search-panel" id="notifications-dropdown">
                                             <li><a href="#">Logout</a>
                                             </li>

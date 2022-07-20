@@ -127,7 +127,7 @@ if (Auth::user()->profile) {
                                                 </style>
                                                 @foreach (array_slice($Notify, 0, 5, true) as $single_notification)
                                                     <li>
-                                                        <a href="#"
+                                                        <a href="javascript:void(0)"
                                                             onclick="viewSingleNotification({{ $single_notification['id'] }})">
                                                             {{ strip_tags($single_notification['heading']) }}
                                                         </a>
@@ -135,13 +135,14 @@ if (Auth::user()->profile) {
                                                 @endforeach
 
                                                 <li>
-                                                    <a href="#" onclick="viewAllNotifications('Chnge')">
+                                                    <a href="javascript:void(0)"
+                                                        onclick="viewAllNotifications('Chnge')">
                                                         All Notifications
                                                     </a>
                                                 </li>
                                             @else
                                                 <li>
-                                                    <a href="#">
+                                                    <a href="javascript:void(0)">
                                                         No new notifications
                                                     </a>
                                                 </li>

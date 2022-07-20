@@ -180,22 +180,13 @@ if (Auth::user()->profile) {
     <div class="responsive_nav collapse navbar-collapse">
         <ul class="nav navbar-nav">
             <li><a
-                    href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/index-2.html">dashboard</a>
+                    href="/privacy">Privacy Policy</a>
             </li>
             <li><a
-                    href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/engage.html">engage</a>
-            </li>
-            <li><a
-                    href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/services.html">service</a>
-            </li>
-            <li><a
-                    href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/help.html">help</a>
-            </li>
-            <li><a
-                    href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/terms.html">Terms
+                    href="/terms">Terms
                     &amp; Condition</a></li>
             <li><a
-                    href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/faq.html">faq</a>
+                    href="/faq">faq</a>
             </li>
             <li><a href="{!! route('logout') !!}">logout</a>
             </li>

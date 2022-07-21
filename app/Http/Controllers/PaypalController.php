@@ -320,7 +320,8 @@ class PaypalController extends Controller
      */
     public function create()
     {
-        return view('wallet.user.paypal.create')
+        // return view('wallet.user.paypal.create')
+        return view('wallet.user.paypal.new-create')
             ->with('title', 'Add Funds to your wallet');
     }
 

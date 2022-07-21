@@ -444,15 +444,15 @@ class AuthController extends Controller
         $totalSuccessCamps = count(campaignorders::where('campaign_running_status', 'activated')->get());
         $totalSuccessCampsCost = campaignorders::where('campaign_running_status', 'activated')->sum('campaign_price');
 
-        // $currentBalance = Transaction::where('user_id', Auth::user()->id)
-        //     ->sum('amount');
+        $currentBalance = Transaction::where('user_id', Auth::user()->id)
+            ->sum('amount');
 
         if (Auth::user()->hasRole('admin') || Auth::user()->hasRole('client')) {
             return view('dashboard')
                 ->with('title', 'Dashboard')
                 ->with('user', Auth::user())
                 ->with('totalClient', $totalClient)
-                // ->with('currentBalance', $currentBalance)
+                ->with('currentBalance', $currentBalance)
                 ->with('totalVendors', $totalVendors)
                 ->with('emailCount', $emailCount)
                 ->with('phoneCount', $phoneCount)
@@ -477,7 +477,7 @@ class AuthController extends Controller
             ->with('title', 'Dashboard')
             ->with('user', Auth::user())
             ->with('totalClient', $totalClient)
-            ->with('currentBalance', $currentBalance)
+            // ->with('currentBalance', $currentBalance)
             ->with('totalVendors', $totalVendors)
             ->with('emailCount', $emailCount)
             ->with('phoneCount', $phoneCount)

@@ -1,4 +1,5 @@
 @extends('layouts.dashboard')
+
 @section('content')
     @include('includes.alert')
     {!! Html::style('dist/cssc/bootstrap.striped.min.css') !!}
@@ -29,7 +30,6 @@
         .ActionMenuLi a:hover {
             text-decoration: none;
         }
-
     </style>
     <!-- Material Design Icons  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -106,9 +106,7 @@
                             </div>
                         </div>
                     @endforeach
-
                 @else
-
                     <h3><span class="nodata">No Advertisers found<span></h3>
 
                 @endif

@@ -44,6 +44,7 @@ class campaignsController extends Controller
         $bannerSizes = getBannerSizes();
         $this->outputData['bannerSize'] = $bannerSizes;
     }
+
     /**
      * Display a listing of the resource.
      *
@@ -73,6 +74,10 @@ class campaignsController extends Controller
         $this->outputData['categories'] = json_decode(json_encode(category::where('isActive', 'Active')
                 ->where('isDeleted', 'No')
                 ->get()), true);
+
+        if (Auth::user()->hasRole('admin') || Auth::user()->hasRole('client')) {
+            return view('campaigns.view-campaigns-new', $this->outputData);
+        }
 
         return view('campaigns.view-campaigns', $this->outputData);
     }
@@ -1010,8 +1015,8 @@ class campaignsController extends Controller
                                     </div>
 
                                     <?php
-                                    $similar_campaigns = [];
-foreach ($similar_campaigns as $key => $similar) {
+$similar_campaigns = [];
+                        foreach ($similar_campaigns as $key => $similar) {
                             ?>
                                         <div class="adbirt-single-recommendation-wrapper">
                                             <div class="adbirt-single-recommendation">

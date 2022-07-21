@@ -11,7 +11,6 @@
             </div>
 
             <div class="col-md-12 table-section">
-                <h4>Statistics</h4>
                 <div class="table-outer">
                     <table class="table">
                         <thead class="thead-dark">

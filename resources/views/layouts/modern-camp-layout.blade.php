@@ -219,30 +219,27 @@ if (Auth::user()->profile) {
 
                                 <li class="list-group-item ui-corner-top @if (Request::segment(1) == 'dashboard') ui-state-active ui-tabs-active @else ui-state-default @endif"
                                     role="tab" tabindex="0">
-                                    <a href="{!! route('dashboard') !!}"
-                                        role="presentation" tabindex="-1" class="ui-tabs-anchor"
-                                        id="ui-id-1">Dashboard</a>
+                                    <a href="{!! route('dashboard') !!}" role="presentation" tabindex="-1"
+                                        class="ui-tabs-anchor" id="ui-id-1">Dashboard</a>
                                 </li>
 
                                 <li class="list-group-item ui-corner-top @if (Request::segment(2) == 'add-campaigns') active ui-tabs-active @else ui-state-default @endif"
                                     role="tab" tabindex="0">
-                                    <a href="{{ url('/campaigns/add-campaigns') }}"
-                                        role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-1">Add
+                                    <a href="{{ url('/campaigns/add-campaigns') }}" role="presentation"
+                                        tabindex="-1" class="ui-tabs-anchor" id="ui-id-1">Add
                                         new Campaign</a>
                                 </li>
 
                                 <li class="list-group-item ui-corner-top @if (Request::segment(2) == 'view-campaigns') active ui-tabs-active @else ui-state-default @endif"
                                     role="tab" tabindex="0">
-                                    <a href="{{ url('/campaigns/view-campaigns') }}"
-                                        role="presentation" tabindex="-1" class="ui-tabs-anchor"
-                                        id="ui-id-1">View my Campaigns</a>
+                                    <a href="{{ url('/campaigns/view-campaigns') }}" role="presentation"
+                                        tabindex="-1" class="ui-tabs-anchor" id="ui-id-1">View my Campaigns</a>
                                 </li>
 
                                 <li class="list-group-item ui-corner-top @if (Request::segment(1) == 'campaigns' && Request::segment(2) == 'active-campaigns') active ui-tabs-active @else ui-state-default @endif"
                                     role="tab" tabindex="0">
-                                    <a href="{{ url('/campaigns/active-campaigns') }}"
-                                        role="presentation" tabindex="-1" class="ui-tabs-anchor"
-                                        id="ui-id-1">Active Campaigns</a>
+                                    <a href="{{ url('/campaigns/active-campaigns') }}" role="presentation"
+                                        tabindex="-1" class="ui-tabs-anchor" id="ui-id-1">Active Campaigns</a>
                                 </li>
 
                                 <li class="list-group-item ui-corner-top @if (Request::segment(2) == 'view-wallet-history') active ui-tabs-active @else ui-state-default @endif"
@@ -260,7 +257,8 @@ if (Auth::user()->profile) {
 
                             </ul>
 
-                            <a class="log1452" href="{!! route('logout') !!}">Logout</a>
+                            <a class="log1452" style="color: #fff; background: #f00;"
+                                href="{!! route('logout') !!}">Logout</a>
                         </div>
                     </div>
 

@@ -5,6 +5,9 @@
 
 use App\Model\NotificationAlertModel;
 
+$currentBalance = App\Transaction::where('user_id', Auth::user()->id)
+            ->sum('amount');
+
 $Notify = json_decode(
     json_encode(
         NotificationAlertModel::where('status', 'Unseen')

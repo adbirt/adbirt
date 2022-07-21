@@ -1430,7 +1430,7 @@ p.user_credit {
   font-family: "roboto", sans-serif;
 }
 
-.options_grp .list-group .list-group-item {
+.options_grp .list-group .list-group-item a {
   padding: 20px 30px !important;
 }
 

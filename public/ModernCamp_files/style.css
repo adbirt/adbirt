@@ -1430,7 +1430,7 @@ p.user_credit {
 }
 
 .options_grp .list-group .list-group-item {
-  padding: 20px 30px;
+  padding: 20px 30px !important;
 }
 
 .options_grp .list-group .list-group-item:hover {

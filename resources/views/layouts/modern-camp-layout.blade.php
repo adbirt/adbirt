@@ -5,8 +5,7 @@
 
 use App\Model\NotificationAlertModel;
 
-$currentBalance = App\Transaction::where('user_id', Auth::user()->id)
-            ->sum('amount');
+$currentBalance = App\Transaction::where('user_id', Auth::user()->id)->sum('amount');
 
 $Notify = json_decode(
     json_encode(
@@ -210,7 +209,7 @@ if (Auth::user()->profile) {
                                 <p class="user_credit">Balance : ${!! $currentBalance ?? 0 !!}</p>
                                 <a href="{!! URL::route('paypal.create') !!}">
                                     <button
-                                        style="background-color: var(--theme-color); border: none; color: #fff; padding: 4px;">
+                                        style="background-color: var(--theme-color); border: none; color: #fff; padding: 4px; box-shadow: var(--box-shadow);">
                                         Add Funds
                                     </button>
                                 </a>

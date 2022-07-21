@@ -160,37 +160,13 @@
                     <table class="table">
                         <thead class="thead-dark">
                             <tr>
-                                <th scope="col">Title Campaign Name</th>
+                                <th scope="col">Campaign Name</th>
                                 <th scope="col">Cost<i class="fas fa-angle-down"></i></th>
                                 <th scope="col">Clicks <i class="fas fa-angle-down"></i></th>
                                 <th scope="col">Conversions <i class="fas fa-angle-down"></i></th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">Campaign Name</th>
-                                <td>-$6.50<i class="fas fa-angle-down"></i>
-                                    <p>-0.30%</p>
-                                </td>
-                                <td>-$4.00<i class="fas fa-angle-down"></i>
-                                    <p>-0.30%</p>
-                                </td>
-                                <td>+1<i class="fas fa-angle-up"></i>
-                                    <p>12 Total</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Campaign Name</th>
-                                <td>-$6.50<i class="fas fa-angle-down"></i>
-                                    <p>-0.30%</p>
-                                </td>
-                                <td>-$4.00<i class="fas fa-angle-down"></i>
-                                    <p>-0.30%</p>
-                                </td>
-                                <td>+1<i class="fas fa-angle-up"></i>
-                                    <p>12 Total</p>
-                                </td>
-                            </tr>
                             <tr>
                                 <th scope="row">Campaign Name</th>
                                 <td>-$6.50<i class="fas fa-angle-down"></i>

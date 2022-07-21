@@ -116,7 +116,9 @@
                 </div>
             </div> --}}
 
-            <h4>Campaigns</h4>
+            <div class="col-md-12 col-sm-6 col-xs-12 graph_details">
+                <h4>Statistics</h4>
+            </div>
 
             <div class="col-md-3 col-sm-6 col-xs-12 graph_details">
                 <h6 class="first">Geotargetted</h6>

@@ -44,6 +44,11 @@ class walletHistoryController extends Controller
             ->orderBy('id', 'desc')
             ->paginate(10);
         $this->outputData['arrWallet'] = $arrWallet;
+
+        if (Auth::user()->hasRole('vendor')) {
+            return view('WalletHistory.search-wallethistory-new', $this->outputData);
+        }
+
         return view('WalletHistory.search-wallethistory', $this->outputData);
     }
 

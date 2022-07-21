@@ -1752,7 +1752,8 @@ a.defualt_clr {
   margin-bottom: 30px;
   font-family: "roboto", sans-serif;
 }
-.table-outer {
+.table {
+  box-shadow: 0px 1px 2px 0px rgb(0 0 0 / 21%);
   border: 1px solid #e1e1e1;
   background: #ffffff;
 }

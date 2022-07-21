@@ -1,8 +1,7 @@
 @extends('layouts.modern-camp-layout')
 
 @section('content')
-    <div class="tabs_1 ui-tabs-panel ui-corner-bottom ui-widget-content" id="tabs-1" aria-labelledby="ui-id-1"
-        role="tabpanel" aria-hidden="false">
+    <div class="ui-tabs-panel ui-corner-bottom ui-widget-content" role="tabpanel" aria-hidden="false">
 
         <div class="col-md-9 col-sm-12 zero-padding">
 

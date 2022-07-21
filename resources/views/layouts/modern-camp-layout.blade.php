@@ -217,41 +217,41 @@ if (Auth::user()->profile) {
                             <ul class="list-group ui-tabs-nav ui-corner-all ui-helper-reset ui-helper-clearfix ui-widget-header"
                                 role="tablist">
 
-                                <li class="list-group-item ui-corner-top ui-state-default @if (Request::segment(1) == 'dashboard') ui-state-active ui-tabs-active @endif"
+                                <li class="list-group-item ui-corner-top @if (Request::segment(1) == 'dashboard') ui-state-active ui-tabs-active @else ui-state-default @endif"
                                     role="tab" tabindex="0">
                                     <a href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/index.html#tabs-1"
                                         role="presentation" tabindex="-1" class="ui-tabs-anchor"
                                         id="ui-id-1">Dashboard</a>
                                 </li>
 
-                                <li class="list-group-item ui-corner-top ui-state-default @if (Request::segment(2) == 'add-campaigns') active ui-tabs-active @endif"
+                                <li class="list-group-item ui-corner-top @if (Request::segment(2) == 'add-campaigns') active ui-tabs-active @else ui-state-default @endif"
                                     role="tab" tabindex="0">
                                     <a href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/index.html#tabs-1"
                                         role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-1">Add
                                         new Campaign</a>
                                 </li>
 
-                                <li class="list-group-item ui-corner-top ui-state-default @if (Request::segment(2) == 'view-campaigns') active ui-tabs-active @endif"
+                                <li class="list-group-item ui-corner-top @if (Request::segment(2) == 'view-campaigns') active ui-tabs-active @else ui-state-default @endif"
                                     role="tab" tabindex="0">
                                     <a href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/index.html#tabs-1"
                                         role="presentation" tabindex="-1" class="ui-tabs-anchor"
                                         id="ui-id-1">View my Campaigns</a>
                                 </li>
 
-                                <li class="list-group-item ui-corner-top ui-state-default @if (Request::segment(1) == 'campaigns' && Request::segment(2) == 'active-campaigns') active ui-tabs-active @endif"
+                                <li class="list-group-item ui-corner-top @if (Request::segment(1) == 'campaigns' && Request::segment(2) == 'active-campaigns') active ui-tabs-active @else ui-state-default @endif"
                                     role="tab" tabindex="0">
                                     <a href="file:///home/danroyal001/websites/Adbirt%20New%20Dashboard/gambolthemes.net/html-items/modernCamp/index.html#tabs-1"
                                         role="presentation" tabindex="-1" class="ui-tabs-anchor"
                                         id="ui-id-1">Active Campaigns</a>
                                 </li>
 
-                                <li class="list-group-item ui-corner-top ui-state-default @if (Request::segment(2) == 'view-wallet-history') active ui-tabs-active @endif"
+                                <li class="list-group-item ui-corner-top @if (Request::segment(2) == 'view-wallet-history') active ui-tabs-active @else ui-state-default @endif"
                                     role="tab" tabindex="0">
                                     <a href="{{ url('/wallet/view-wallet-history') }}" role="presentation"
                                         tabindex="-1" class="ui-tabs-anchor" id="ui-id-1">View Wallet Histroy</a>
                                 </li>
 
-                                <li class="list-group-item ui-corner-top ui-state-default @if (Request::segment(2) == 'search-wallet-history') active ui-tabs-active @endif"
+                                <li class="list-group-item ui-corner-top @if (Request::segment(2) == 'search-wallet-history') active ui-tabs-active @else ui-state-default @endif"
                                     role="tab" tabindex="0">
                                     <a href="{{ url('/wallet/search-wallet-history') }}" role="presentation"
                                         tabindex="-1" class="ui-tabs-anchor" id="ui-id-1">Search Wallet

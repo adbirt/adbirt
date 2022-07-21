@@ -247,7 +247,7 @@ if (Auth::user()->profile) {
                                 <li class="list-group-item ui-corner-top @if (Request::segment(2) == 'view-wallet-history') active ui-tabs-active @else ui-state-default @endif"
                                     role="tab" tabindex="0">
                                     <a href="{{ url('/wallet/view-wallet-history') }}" role="presentation"
-                                        tabindex="-1" class="ui-tabs-anchor" id="ui-id-1">View Wallet Histroy</a>
+                                        tabindex="-1" class="ui-tabs-anchor" id="ui-id-1">View Wallet History</a>
                                 </li>
 
                                 <li class="list-group-item ui-corner-top @if (Request::segment(2) == 'search-wallet-history') active ui-tabs-active @else ui-state-default @endif"

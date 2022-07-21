@@ -90,32 +90,6 @@
 
         <div class="col-md-9 col-sm-12 zero-padding">
 
-            <div class="col-md-12 graph-section">
-                <h4>Performance Graph</h4>
-                <div class="graph_outer">
-                    <div id="chartContainer" style="height: 300px; width: 100%;">
-                        <div class="canvasjs-chart-container" style="position: relative; text-align: left; cursor: auto;">
-                            <canvas class="canvasjs-chart-canvas" width="781" height="300"
-                                style="position: absolute;"></canvas><canvas class="canvasjs-chart-canvas" width="781"
-                                height="300"
-                                style="position: absolute; -webkit-tap-highlight-color: transparent; cursor: default;"></canvas>
-                            <div class="canvasjs-chart-toolbar"
-                                style="position: absolute; right: 1px; top: 1px; border: 1px solid transparent;">
-                            </div>
-                            <div class="canvasjs-chart-tooltip"
-                                style="position: absolute; height: auto; box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px 2px; z-index: 1000; pointer-events: none; display: none; border-radius: 0px; left: 189px; bottom: -159.62px; transition: left 0.1s ease-out 0s, bottom 0.1s ease-out 0s;">
-                                <div
-                                    style="width: auto; height: auto; min-width: 50px; margin: 0px; padding: 5px; font-family: 'Trebuchet MS', Helvetica, sans-serif; font-weight: normal; font-style: normal; font-size: 14px; color: black; text-shadow: rgba(0, 0, 0, 0.1) 1px 1px 1px; text-align: left; border: 1px solid rgb(155, 187, 88); background: rgba(255, 255, 255, 0.9); text-indent: 0px; white-space: nowrap; border-radius: 0px; user-select: none;">
-                                    <span style="color:#9BBB58;">26 Jul 17:</span>&nbsp;&nbsp;23
-                                </div>
-                            </div><a class="canvasjs-chart-credit" title="JavaScript Charts"
-                                style="outline:none;margin:0px;position:absolute;right:2px;top:286px;color:dimgrey;text-decoration:none;font-size:11px;font-family: Calibri, Lucida Grande, Lucida Sans Unicode, Arial, sans-serif"
-                                tabindex="-1" target="_blank" href="https://canvasjs.com/">CanvasJS.com</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <div class="col-md-12 col-sm-6 col-xs-12 graph_details">
                 <h4>Statistics</h4>
             </div>

@@ -130,6 +130,7 @@ class campaignsController extends Controller
         }
     }
 
+    
     /**
      * Store a newly created resource in storage.
      *
@@ -165,7 +166,13 @@ class campaignsController extends Controller
 
             $category = category::where('isActive', 'Active')->where('isDeleted', 'No')->get();
             $this->outputData['categoryData'] = $category;
+
+            if (Auth::user()->hasRole('vendor')) {
+                return view('campaigns.add-campaigns-new', $this->outputData);
+            }
+
             return view('campaigns.add-campaigns', $this->outputData);
+
         } else {
 
             $type = "";

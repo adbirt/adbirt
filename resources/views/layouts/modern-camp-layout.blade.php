@@ -269,7 +269,9 @@ if (Auth::user()->profile) {
 
                     <div class="modern-camp-root ui-tabs-panel ui-corner-bottom ui-widget-content" role="tabpanel"
                         aria-hidden="false">
-                        @yield('content')
+                        <div class="col-md-9 col-sm-12 zero-padding">
+                            @yield('content')
+                        </div>
                     </div>
 
                 </div>

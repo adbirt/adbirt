@@ -160,6 +160,56 @@
                     <table class="table">
                         <thead class="thead-dark">
                             <tr>
+
+                                <th scope="col">
+                                    <h6 class="first">
+                                        Active Ads
+                                    </h6>
+                                    <p>
+                                        {{ $ActiveAd ?? 0 }}
+                                    </p>
+                                </th>
+
+                                <th scope="col">
+                                    <h6 class="second">
+                                        Impressions
+
+                                    </h6>
+                                    <p>
+                                        {{ $Impressions ?? 0 }}
+                                    </p>
+                                </th>
+
+                                <th scope="col">
+                                    <h6 class="third">
+                                        Clicks
+                                    </h6>
+                                    <p>
+                                        {{ $Clicks ?? 0 }}
+                                    </p>
+                                </th>
+
+                                <th scope="col">
+                                    <h6 class="fourth">
+                                        Leads
+                                    </h6>
+                                    <p>
+                                        {{ $Leads ?? 0 }}
+                                    </p>
+                                </th>
+
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+
+            {{-- <div class="col-md-12 table-section">
+                <h4>Campaigns</h4>
+                <div class="table-outer">
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
                                 <th scope="col">Campaign Name</th>
                                 <th scope="col">Cost<i class="fas fa-angle-down"></i></th>
                                 <th scope="col">Clicks <i class="fas fa-angle-down"></i></th>
@@ -182,7 +232,8 @@
                         </tbody>
                     </table>
                 </div>
-            </div>
+            </div> --}}
+
         </div>
     </div>
 @endsection

@@ -1,10 +1,9 @@
 @extends('layouts.modern-camp-layout')
 
 @section('content')
-
     <div class="tabs_1 ui-tabs-panel ui-corner-bottom ui-widget-content" id="tabs-1" aria-labelledby="ui-id-1"
         role="tabpanel" aria-hidden="false">
-        
+
         {{-- <div class="col-md-9 col-sm-12 col-xs-12 zero-padding filter-sec">
             <div class="col-md-6 col-sm-6 col-xs-12 search-filter">
                 <span class="search_btn"><i class="fas fa-search"></i></span>
@@ -90,7 +89,7 @@
         </div> --}}
 
         <div class="col-md-9 col-sm-12 zero-padding">
-            
+
             {{-- <div class="col-md-12 graph-section">
                 <h4>Performance Graph</h4>
                 <div class="graph_outer">
@@ -116,6 +115,8 @@
                     </div>
                 </div>
             </div> --}}
+
+            <h4>Campaigns</h4>
 
             <div class="col-md-3 col-sm-6 col-xs-12 graph_details">
                 <h6 class="first">Geotargetted</h6>
@@ -189,5 +190,4 @@
             </div>
         </div>
     </div>
-
 @endsection

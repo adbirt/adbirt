@@ -23,7 +23,13 @@ class categoryController extends Controller
         //
         $category = category::where('isDeleted','No')->get();
         $this->outputData['categoryData'] = $category;
+        
+        if (\Auth::user()->hasRole('admin') || \Auth::user()->hasRole('client')) {
         return view('category.view-category',$this->outputData);
+        }
+
+
+        return view('category.view-category-new',$this->outputData);
     }
 
     /**

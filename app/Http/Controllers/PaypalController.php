@@ -320,7 +320,10 @@ class PaypalController extends Controller
      */
     public function create()
     {
-        // return view('wallet.user.paypal.create')
+        if (Auth::user()->hasRole('admin') || Auth::user()->hasRole('client')) {
+            return view('wallet.user.paypal.create');
+        }
+
         return view('wallet.user.paypal.new-create')
             ->with('title', 'Add Funds to your wallet');
     }

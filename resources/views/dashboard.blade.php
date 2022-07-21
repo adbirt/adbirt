@@ -5,7 +5,6 @@
         .small-box {
             box-shadow: none !important;
         }
-
     </style>
 @endsection
 
@@ -258,7 +257,8 @@
                             <div class="icon">
                                 <i class="fa fa-user-check"></i>
                             </div>
-                            <a href="/allUsers" class="small-box-footer">View<i class="fas fa-arrow-circle-right"></i></a>
+                            <a href="/allUsers" class="small-box-footer">View<i
+                                    class="fas fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
                     <!-- ./col -->
@@ -450,9 +450,7 @@
                 </div>
                 <br>
         </div>
-
     @elseif(Auth::user()->hasRole('vendor'))
-
         <div class="card card-stats-primary">
             <div class="card-block">
                 <div class="media" style="padding: 8px; padding-top: 16px;">
@@ -465,11 +463,11 @@
                         {{-- <strong class="text-success">${!! number_format($amt, 2) !!}</strong> --}}
                         <strong class="text-success">${!! number_format($currentBalance, 2) !!}</strong>
                     </div>
-                    @if (Auth::user()->hasRole('vendor'))
-                        <div class="media-right">
-                            <a class="btn btn-success btn-rounded" href="{!! URL::route('paypal.create') !!}">Add Funds</a>
-                        </div>
-                    @endif
+                    {{-- @if (Auth::user()->hasRole('vendor')) --}}
+                    <div class="media-right">
+                        <a class="btn btn-success btn-rounded" href="{!! URL::route('paypal.create') !!}">Add Funds</a>
+                    </div>
+                    {{-- @endif --}}
                 </div>
             </div>
             <a class="ubm-banner" data-id="1"></a>
@@ -554,7 +552,6 @@
 
     </div>
     </div>
-
 @else
     {{-- Publishers --}}
 

@@ -207,7 +207,7 @@ if (Auth::user()->profile) {
                                 <img src="{!! $profilePhotoUrl !!}" alt="{!! Auth::user()->name !!}" width="100"
                                     height="100">
                                 <h4 class="user_name">{!! Auth::user()->name !!}</h4>
-                                <p class="user_credit">Balance : ${!! $currentBalance !!}</p>
+                                <p class="user_credit">Balance : ${!! $currentBalance ?? 0 !!}</p>
                                 <a href="{!! URL::route('paypal.create') !!}">
                                     <button
                                         style="background-color: var(--theme-color); border: none; color: #fff; padding: 4px;">

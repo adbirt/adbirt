@@ -265,7 +265,10 @@ if (Auth::user()->profile) {
 
                     @include('includes.alert')
 
-                    @yield('content')
+                    <div class="ui-tabs-panel ui-corner-bottom ui-widget-content" role="tabpanel"
+                        aria-hidden="false">
+                        @yield('content')
+                    </div>
 
                 </div>
             </div>

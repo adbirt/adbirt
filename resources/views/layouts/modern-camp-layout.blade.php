@@ -267,7 +267,7 @@ if (Auth::user()->profile) {
 
                     @include('includes.alert')
 
-                    <div class="ui-tabs-panel ui-corner-bottom ui-widget-content" role="tabpanel"
+                    <div class="modern-camp-root ui-tabs-panel ui-corner-bottom ui-widget-content" role="tabpanel"
                         aria-hidden="false">
                         @yield('content')
                     </div>

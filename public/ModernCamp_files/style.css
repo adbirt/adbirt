@@ -1420,7 +1420,6 @@ p.user_credit {
 .options_grp .list-group .list-group-item {
   border: 0;
   background: transparent;
-  padding: 20px 30px;
   color: #18212c;
   font-size: 14px;
   font-weight: 500;
@@ -1429,6 +1428,11 @@ p.user_credit {
   margin-bottom: 0;
   font-family: "roboto", sans-serif;
 }
+
+.options_grp .list-group .list-group-item {
+  padding: 20px 30px;
+}
+
 .options_grp .list-group .list-group-item:hover {
   background: var(--theme-color);
   border-radius: 0;
@@ -3475,5 +3479,5 @@ p.btm_text {
 
 .ui-state-default {
   border-right: 1px solid #ecedef !important;
-    border-left: 1px solid #ecedef !important;
+  border-left: 1px solid #ecedef !important;
 }

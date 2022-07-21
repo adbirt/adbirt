@@ -25,6 +25,11 @@ class walletHistoryController extends Controller
             ->paginate(10);
         /*->get();*/
         $this->outputData['arrWallet'] = $arrWallet;
+
+        if (Auth::user()->hasRole('vendor')) {
+            return view('WalletHistory.view-wallethistory-new', compact('arrWallet'));
+        }
+
         return view('WalletHistory.view-wallethistory', compact('arrWallet'));
     }
 

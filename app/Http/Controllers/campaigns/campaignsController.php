@@ -1228,6 +1228,10 @@ $similar_campaigns = [];
             return response()->json($this->outputData);
         }
 
+        if (Auth::user()->hasRole('vendor')) {
+            return view('campaigns.my-campaigns-new', $this->outputData);
+        }
+
         return view('campaigns.my-campaigns', $this->outputData);
     }
 

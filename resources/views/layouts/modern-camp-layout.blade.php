@@ -80,7 +80,7 @@ if (Auth::user()->profile) {
                                                     class="fas fa-envelope"></i></span></a></li>
                                     <li class="">
 
-                                        <a href="#notifications-dropdown"><span class="header_span"><i
+                                        <a href="javascript:void(0)"><span class="header_span"><i
                                                     class="fas fa-bell"></i>
                                                 @if ($NotifyCnt >= 1)
                                                     {{ $NotifyCnt }}

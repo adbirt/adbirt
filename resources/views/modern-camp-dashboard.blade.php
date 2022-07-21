@@ -121,20 +121,37 @@
             </div>
 
             <div class="col-md-3 col-sm-6 col-xs-12 graph_details">
-                <h6 class="first">Geotargetted</h6>
-                <p>$12 / Day - Active</p>
+                <h6 class="first">
+                    Active Ads
+                </h6>
+                <p>
+                    {{ $ActiveAd ?? 0 }}
+                </p>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12 graph_details">
-                <h6 class="second">National</h6>
-                <p>$13 / Day - Active</p>
+                <h6 class="second">
+                    Impressions
+
+                </h6>
+                <p>
+                    {{ $Impressions ?? 0 }}
+                </p>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12 graph_details">
-                <h6 class="third">International</h6>
-                <p>$15 / Day - Active</p>
+                <h6 class="third">
+                    Clicks
+                </h6>
+                <p>
+                    {{ $Clicks ?? 0 }}
+                </p>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12 graph_details">
-                <h6 class="fourth">Mobile &amp; Content</h6>
-                <p>$10 / Day - Active</p>
+                <h6 class="fourth">
+                    Leads
+                </h6>
+                <p>
+                    {{ $Leads ?? 0 }}
+                </p>
             </div>
 
             <div class="col-md-12 table-section">

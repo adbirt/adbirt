@@ -486,7 +486,7 @@
                 <!-- small box -->
                 <div class="small-box bg-primary h-100">
                     <div class="inner">
-                        <h3>{{ $ActiveAd }}</h3>
+                        <h3>{{ $ActiveAd ?? 0 }}</h3>
                         <p class="font-weight-bold">Active Ads</p>
                     </div>
                     <div class="icon">
@@ -533,7 +533,7 @@
                 <!-- small box -->
                 <div class="small-box bg-primary h-100">
                     <div class="inner">
-                        <h3>{{ $Leads }}</h3>
+                        <h3>{{ $Leads ?? 0 }}</h3>
 
                         <p class="font-weight-bold">Leads</p>
                     </div>

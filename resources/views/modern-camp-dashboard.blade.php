@@ -10,7 +10,7 @@
             </div>
 
             <div class="col-md-12 table-section">
-                <div class="table-outer">
+                {{-- <div class="table-outer"> --}}
                     <table class="table">
                         <thead class="thead-dark">
                             <tr>
@@ -55,7 +55,7 @@
                             </tr>
                         </thead>
                     </table>
-                </div>
+                {{-- </div> --}}
             </div>
 
         </div>

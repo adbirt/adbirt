@@ -137,7 +137,7 @@ if (Auth::user()->profile) {
 
                                                 <li>
                                                     <a href="javascript:void(0)"
-                                                        onclick="viewAllNotifications('Chnge')">
+                                                        onclick="window.viewAllNotifications('Chnge')">
                                                         All Notifications
                                                     </a>
                                                 </li>
@@ -186,7 +186,7 @@ if (Auth::user()->profile) {
                     &amp; Condition</a></li>
             <li><a href="/faq">faq</a>
             </li>
-            <li><a onclick="viewAllNotifications('Chnge')" href="javascript:void(0)">Notifications</a>
+            <li><a onclick="window.viewAllNotifications('Chnge')" href="javascript:void(0)">Notifications</a>
             </li>
             <li><a href="{!! route('logout') !!}">logout</a>
             </li>

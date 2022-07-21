@@ -128,89 +128,9 @@
                 </p>
             </div>
 
-            <div class="col-md-12 table-section">
-                <h4>Campaigns</h4>
-                <div class="table-outer">
-                    <table class="table">
-                        <thead class="thead-dark">
-                            <tr>
-
-                                <th scope="col">
-                                    <h6 class="first">
-                                        Active Ads
-                                    </h6>
-                                    <p>
-                                        {{ $ActiveAd ?? 0 }}
-                                    </p>
-                                </th>
-
-                                <th scope="col">
-                                    <h6 class="second">
-                                        Impressions
-
-                                    </h6>
-                                    <p>
-                                        {{ $Impressions ?? 0 }}
-                                    </p>
-                                </th>
-
-                                <th scope="col">
-                                    <h6 class="third">
-                                        Clicks
-                                    </h6>
-                                    <p>
-                                        {{ $Clicks ?? 0 }}
-                                    </p>
-                                </th>
-
-                                <th scope="col">
-                                    <h6 class="fourth">
-                                        Leads
-                                    </h6>
-                                    <p>
-                                        {{ $Leads ?? 0 }}
-                                    </p>
-                                </th>
-
-                            </tr>
-                        </thead>
-                    </table>
-                </div>
-            </div>
-
-            <div class="col-md-12 table-section">
-                <h4>Campaigns</h4>
-                <div class="table-outer">
-                    <table class="table">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col">Campaign Name</th>
-                                <th scope="col">Cost<i class="fas fa-angle-down"></i></th>
-                                <th scope="col">Clicks <i class="fas fa-angle-down"></i></th>
-                                <th scope="col">Conversions <i class="fas fa-angle-down"></i></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Campaign Name</th>
-                                <td>-$6.50<i class="fas fa-angle-down"></i>
-                                    <p>-0.30%</p>
-                                </td>
-                                <td>-$4.00<i class="fas fa-angle-down"></i>
-                                    <p>-0.30%</p>
-                                </td>
-                                <td>+1<i class="fas fa-angle-up"></i>
-                                    <p>12 Total</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
         </div>
 
-        <div class="col-md-9 col-sm-12 zero-padding">
+        {{-- <div class="col-md-9 col-sm-12 zero-padding">
 
             <div class="col-md-12 graph-section">
                 <h4>Performance Graph</h4>
@@ -288,7 +208,7 @@
                 </div>
             </div>
 
-            {{-- <div class="col-md-12 table-section">
+            <div class="col-md-12 table-section">
                 <h4>Campaigns</h4>
                 <div class="table-outer">
                     <table class="table">
@@ -316,9 +236,9 @@
                         </tbody>
                     </table>
                 </div>
-            </div> --}}
+            </div> 
 
-        </div>
+        </div> --}}
 
     </div>
 @endsection

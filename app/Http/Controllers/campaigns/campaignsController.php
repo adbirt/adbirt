@@ -75,7 +75,7 @@ class campaignsController extends Controller
                 ->where('isDeleted', 'No')
                 ->get()), true);
 
-        if (Auth::user()->hasRole('admin') || Auth::user()->hasRole('client')) {
+        if (Auth::user()->hasRole('vendor')) {
             return view('campaigns.view-campaigns-new', $this->outputData);
         }
 

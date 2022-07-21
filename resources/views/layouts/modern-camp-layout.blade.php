@@ -51,7 +51,7 @@ if (Auth::user()->profile) {
     <!-- <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css"> -->
     <link rel="stylesheet" href="https://adbirt.com/public/assets-revamp/fonts/font-awesome.css">
 
-    {{-- @yield('style') --}}
+    @yield('style')
 
 </head>
 
@@ -342,7 +342,7 @@ if (Auth::user()->profile) {
     <script src="/public/ModernCamp_files/back-to-top.js"></script>
     <script src="/public/ModernCamp_files/custom.js"></script>
 
-    {{-- @yield('script') --}}
+    @yield('script')
 
 
 </body>

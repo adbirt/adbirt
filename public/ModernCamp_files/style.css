@@ -3474,6 +3474,6 @@ p.btm_text {
 }
 
 .ui-state-default {
-  border-right: 1px solid #000 !important;
-    border-left: 1px solid #000 !important;
+  border-right: 1px solid #ecedef !important;
+    border-left: 1px solid #ecedef !important;
 }

@@ -106,7 +106,7 @@ class campaignsController extends Controller
 
                 $this->outputData['categoryData'] = $category;
 
-                return view('campaigns.add-campaigns', $this->outputData);
+                return view('campaigns.add-campaigns-new', $this->outputData);
             } else {
                 \Session::flash('Error_message', "You must have a minimum of $5 in your Account to Create Ads");
                 return redirect('/dashboard');

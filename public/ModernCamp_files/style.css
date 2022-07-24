@@ -1440,9 +1440,9 @@ p.user_credit {
   border-radius: 0;
 }
 
-/* .options_grp .list-group .list-group-item:hover a {
-  color: #ffffff;
-} */
+.options_grp .list-group .list-group-item:hover a {
+  color: var(--theme-color);
+}
 
 .options_grp .list-group .list-group-itema a:focus {
   outline: none;

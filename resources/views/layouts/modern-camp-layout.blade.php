@@ -112,7 +112,8 @@ if (Auth::user()->profile) {
                                             };
                                         </script>
 
-                                        <a href="javascript:window.viewAllNotifications"><span class="header_span"><i
+                                        <a href="javascript:void(0)"
+                                            onclick="window.viewAllNotifications('Chnge')"><span class="header_span"><i
                                                     class="fas fa-bell"></i>
                                                 @if ($NotifyCnt >= 1)
                                                     {{ $NotifyCnt }}
@@ -146,7 +147,8 @@ if (Auth::user()->profile) {
                                                 </li>
                                             @else
                                                 <li>
-                                                    <a href="javascript:void(0)">
+                                                    <a href="javascript:void(0)"
+                                                        onclick="window.viewAllNotifications('Chnge')">
                                                         No new notifications
                                                     </a>
                                                 </li>

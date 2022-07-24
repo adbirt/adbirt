@@ -3499,6 +3499,6 @@ p.btm_text {
   font-size: 20px !important;
 }
 
-.ui-state-active:hover a {
+.ui-state-active:hover a, .ui-tabs-active:hover a {
   color: #fff !important;
 }

@@ -472,8 +472,8 @@ class AuthController extends Controller
                 ->with('Leads', $Leads);
         }
 
-        // return view('modern-camp-dashboard')
-        return view('dashboard')
+        return view('modern-camp-dashboard')
+        // return view('dashboard')
             ->with('title', 'Dashboard')
             ->with('user', Auth::user())
             ->with('totalClient', $totalClient)

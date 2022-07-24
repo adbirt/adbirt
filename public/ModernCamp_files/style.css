@@ -34,6 +34,7 @@
   --box-shadow: 0px 1px 2px 0px rgb(0 0 0 / 21%);
   --theme-accent-color: #ff7c00;
   --theme-color: #bc6a44;
+  --sidebar-item-border-color: #ecedef;
 }
 
 * {
@@ -3484,8 +3485,8 @@ p.btm_text {
 }
 
 .ui-state-default {
-  border-right: 1px solid #ecedef !important;
-  border-left: 1px solid #ecedef !important;
+  border-right: 1px solid var(--sidebar-item-border-color) !important;
+  border-left: 1px solid var(--sidebar-item-border-color) !important;
 }
 
 .stat-title {

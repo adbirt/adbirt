@@ -92,42 +92,42 @@ if (Auth::user()->profile) {
 
                                         <ul class="dropdown-menu pull-left search-panel" id="notifications-dropdown">
 
+                                            <script type="text/javascript">
+                                                let baseUrl = "{{ url('/') }}"
+
+                                                window.viewSingleNotification = function viewSingleNotification(id) {
+                                                    $.ajax({
+                                                            url: baseUrl + '/notify/ChngeStatus',
+                                                            type: 'POST',
+                                                            data: {
+                                                                id: id
+                                                            },
+                                                        })
+                                                        .done(function() {
+                                                            window.location.href = "{{ url('/notify/view-notifications') }}";
+                                                        })
+                                                };
+
+                                                window.viewAllNotifications = function viewAllNotifications(status) {
+                                                    $.ajax({
+                                                            url: baseUrl + '/notify/ChngeStatus',
+                                                            type: 'POST',
+                                                            data: {
+                                                                id: status
+                                                            },
+                                                        })
+                                                        .done(function() {
+                                                            window.location.href = "{{ url('/notify/view-notifications') }}";
+                                                        })
+                                                };
+                                            </script>
+                                            <style>
+                                                .single-notification-item {
+                                                    overflow: hidden;
+                                                    text-overflow: ellipsis;
+                                                }
+                                            </style>
                                             @if (!empty($Notify))
-                                                <script type="text/javascript">
-                                                    var baseUrl = "{{ url('/') }}"
-
-                                                    window.viewSingleNotification = function viewSingleNotification(id) {
-                                                        $.ajax({
-                                                                url: baseUrl + '/notify/ChngeStatus',
-                                                                type: 'POST',
-                                                                data: {
-                                                                    id: id
-                                                                },
-                                                            })
-                                                            .done(function() {
-                                                                window.location.href = "{{ url('/notify/view-notifications') }}";
-                                                            })
-                                                    };
-
-                                                    window.viewAllNotifications = function viewAllNotifications(status) {
-                                                        $.ajax({
-                                                                url: baseUrl + '/notify/ChngeStatus',
-                                                                type: 'POST',
-                                                                data: {
-                                                                    id: status
-                                                                },
-                                                            })
-                                                            .done(function() {
-                                                                window.location.href = "{{ url('/notify/view-notifications') }}";
-                                                            })
-                                                    };
-                                                </script>
-                                                <style>
-                                                    .single-notification-item {
-                                                        overflow: hidden;
-                                                        text-overflow: ellipsis;
-                                                    }
-                                                </style>
                                                 @foreach (array_slice($Notify, 0, 5, true) as $single_notification)
                                                     <li>
                                                         <a href="javascript:void(0)"

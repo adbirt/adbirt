@@ -78,8 +78,9 @@ if (Auth::user()->profile) {
                             <div class="col-md-12 zero-padding">
                                 <ul class="nav navbar-nav">
 
-                                    <li><a href="#" class="faq_mail"><span class="circle"><i
-                                                    class="fas fa-envelope"></i></span></a></li>
+                                    {{-- <li><a href="#" class="faq_mail"><span class="circle"><i
+                                                    class="fas fa-envelope"></i></span></a></li> --}}
+
                                     <li class="">
 
                                         <script type="text/javascript">

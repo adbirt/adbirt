@@ -1428,6 +1428,7 @@ p.user_credit {
   cursor: pointer;
   margin-bottom: 0;
   font-family: "roboto", sans-serif;
+  padding: 20px 30px !important;
 }
 
 .options_grp .list-group .list-group-item a {

@@ -230,6 +230,14 @@ class UsersController extends Controller
     {
         // return $user = User::with('profile')->where('id', Auth::user()->id)->first();
         $noty = Profile::noty();
+
+        if (Auth::user()->hasRole('vendor')) {
+            return view('auth.profile-new')
+                ->with('title', 'Profile')
+                ->with('info', $noty)
+                ->with('user', Auth::user());
+        }
+
         return view('auth.profile')
             ->with('title', 'Profile')
             ->with('info', $noty)

@@ -3502,3 +3502,7 @@ p.btm_text {
 .ui-state-active:hover a, .ui-tabs-active:hover a {
   color: #fff !important;
 }
+
+a {
+  cursor: pointer !important;
+}

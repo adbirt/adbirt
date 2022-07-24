@@ -2,12 +2,10 @@
 
 namespace App\Http\Controllers\notify;
 
-use Illuminate\Http\Request;
-
-use Auth;
-use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Model\NotificationAlertModel;
+use Auth;
+use Illuminate\Http\Request;
 
 class notificationController extends Controller
 {
@@ -26,15 +24,15 @@ class notificationController extends Controller
         //
         $input = $request->all();
         $Id = $input['id'];
-        if($Id== "Chnge"){
+        if ($Id == "Chnge") {
             $status['status'] = 'Seen';
-            NotificationAlertModel::where('Notify_Receivers_Id',Auth::user()->id)->update($status);    
+            NotificationAlertModel::where('Notify_Receivers_Id', Auth::user()->id)->update($status);
             echo "true";
             die;
-        }else{
+        } else {
             $status['status'] = 'Seen';
-            NotificationAlertModel::where('id',$Id)
-                                 ->update($status);
+            NotificationAlertModel::where('id', $Id)
+                ->update($status);
             echo "true";
             die;
         }
@@ -43,12 +41,17 @@ class notificationController extends Controller
     public function notify()
     {
 
-        $arrNotify = NotificationAlertModel::where('Notify_Receivers_Id',Auth::user()->id)
-                                             ->orderBy('id','desc')
-                                             ->paginate(5);
-        $this->outputData['arrNotify'] = $arrNotify;                                       
+        $arrNotify = NotificationAlertModel::where('Notify_Receivers_Id', Auth::user()->id)
+            ->orderBy('id', 'desc')
+            ->paginate(5);
 
-        return view('notifications.notify',compact('arrNotify'));
+        $this->outputData['arrNotify'] = $arrNotify;
+
+        if (Auth::user()->hasRole('vendor')) {
+            return view('notifications.notify-new', compact('arrNotify'));
+        }
+
+        return view('notifications.notify', compact('arrNotify'));
     }
 
     /**

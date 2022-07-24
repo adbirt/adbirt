@@ -262,7 +262,8 @@ if (Auth::user()->profile) {
 
                             </ul>
 
-                            <a class="log1452" style="color: #f00; margin: 1px 0.2em 0 0; text-align: center;"
+                            <a class="log1452"
+                                style="color: #f00; margin: 1px 0.2em 0 0; text-align: center; border-right: 1px solid var(--sidebar-item-border-color) !important; border-left: 1px solid var(--sidebar-item-border-color) !important;"
                                 href="{!! route('logout') !!}">Logout</a>
                         </div>
                     </div>

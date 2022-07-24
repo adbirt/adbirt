@@ -1439,9 +1439,11 @@ p.user_credit {
   /* background: var(--theme-color); */
   border-radius: 0;
 }
-.options_grp .list-group .list-group-item:hover a {
+
+/* .options_grp .list-group .list-group-item:hover a {
   color: #ffffff;
-}
+} */
+
 .options_grp .list-group .list-group-itema a:focus {
   outline: none;
 }

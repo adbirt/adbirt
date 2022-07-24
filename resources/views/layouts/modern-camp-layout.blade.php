@@ -207,9 +207,9 @@ if (Auth::user()->profile) {
                     <div class="col-md-3 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12">
                         <div class="profile">
                             <div class="profile_inner">
-                                <img src="{!! $profilePhotoUrl !!}" alt="{!! Auth::user()->name !!}" width="100"
-                                    height="100">
-                                    
+                                <a href="{!! route('profile') !!}"><img src="{!! $profilePhotoUrl !!}" alt="{!! Auth::user()->name !!}" width="100"
+                                    height="100"></a>
+
                                 <a href="{!! route('profile') !!}">
                                     <h4 class="user_name">
                                         {!! Auth::user()->name !!}

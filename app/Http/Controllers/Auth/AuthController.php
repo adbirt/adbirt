@@ -447,7 +447,7 @@ class AuthController extends Controller
         $currentBalance = Transaction::where('user_id', Auth::user()->id)
             ->sum('amount');
 
-        // if (Auth::user()->hasRole('admin') || Auth::user()->hasRole('client')) {
+        if (Auth::user()->hasRole('admin') || Auth::user()->hasRole('client')) {
             return view('dashboard')
                 ->with('title', 'Dashboard')
                 ->with('user', Auth::user())
@@ -470,31 +470,31 @@ class AuthController extends Controller
                 ->with('Impressions', $Impressions)
                 ->with('Clicks', $Clicks)
                 ->with('Leads', $Leads);
-        // }
+        }
 
-        // return view('modern-camp-dashboard')
-        // // return view('dashboard')
-        //     ->with('title', 'Dashboard')
-        //     ->with('user', Auth::user())
-        //     ->with('totalClient', $totalClient)
-        //     // ->with('currentBalance', $currentBalance)
-        //     ->with('totalVendors', $totalVendors)
-        //     ->with('emailCount', $emailCount)
-        //     ->with('phoneCount', $phoneCount)
-        //     ->with('activeClient', $activeClient)
-        //     ->with('NonActiveClient', $NonActiveClient)
-        //     ->with('TotalAmt', $TotalAmt)
-        //     ->with('arrvendorsCity', $arrvendorsCity)
-        //     ->with('totalCamps', $totalCamps)
-        //     ->with('totalCampsCost', $totalCampsCost)
-        //     ->with('totalSuccessCamps', $totalSuccessCamps)
-        //     ->with('totalSuccessCampsCost', $totalSuccessCampsCost)
-        //     ->with('TotalRevenue', $TotalRevenue)
-        //     ->with('TotalProfit', $TotalProfit)
-        //     ->with('ActiveAd', $ActiveAd)
-        //     ->with('Impressions', $Impressions)
-        //     ->with('Clicks', $Clicks)
-        //     ->with('Leads', $Leads);
+        return view('modern-camp-dashboard')
+        // return view('dashboard')
+            ->with('title', 'Dashboard')
+            ->with('user', Auth::user())
+            ->with('totalClient', $totalClient)
+            // ->with('currentBalance', $currentBalance)
+            ->with('totalVendors', $totalVendors)
+            ->with('emailCount', $emailCount)
+            ->with('phoneCount', $phoneCount)
+            ->with('activeClient', $activeClient)
+            ->with('NonActiveClient', $NonActiveClient)
+            ->with('TotalAmt', $TotalAmt)
+            ->with('arrvendorsCity', $arrvendorsCity)
+            ->with('totalCamps', $totalCamps)
+            ->with('totalCampsCost', $totalCampsCost)
+            ->with('totalSuccessCamps', $totalSuccessCamps)
+            ->with('totalSuccessCampsCost', $totalSuccessCampsCost)
+            ->with('TotalRevenue', $TotalRevenue)
+            ->with('TotalProfit', $TotalProfit)
+            ->with('ActiveAd', $ActiveAd)
+            ->with('Impressions', $Impressions)
+            ->with('Clicks', $Clicks)
+            ->with('Leads', $Leads);
     }
 
     public function changePassword()

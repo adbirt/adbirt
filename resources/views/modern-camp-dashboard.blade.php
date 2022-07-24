@@ -12,38 +12,37 @@
                 <tr>
 
                     <th scope="col">
-                        <h6 class="first">
+                        <h6 class="first stat-title">
                             Active Ads
                         </h6>
-                        <p>
+                        <p class="stat-text">
                             {{ $ActiveAd ?? 0 }}
                         </p>
                     </th>
 
                     <th scope="col">
-                        <h6 class="second">
+                        <h6 class="second stat-title">
                             Impressions
-
                         </h6>
-                        <p>
+                        <p class="stat-text">
                             {{ $Impressions ?? 0 }}
                         </p>
                     </th>
 
                     <th scope="col">
-                        <h6 class="third">
+                        <h6 class="third stat-title">
                             Clicks
                         </h6>
-                        <p>
+                        <p class="stat-text">
                             {{ $Clicks ?? 0 }}
                         </p>
                     </th>
 
                     <th scope="col">
-                        <h6 class="fourth">
+                        <h6 class="fourth stat-title">
                             Leads
                         </h6>
-                        <p>
+                        <p class="stat-text">
                             {{ $Leads ?? 0 }}
                         </p>
                     </th>

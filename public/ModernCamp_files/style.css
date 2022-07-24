@@ -1435,7 +1435,7 @@ p.user_credit {
 }
 
 .options_grp .list-group .list-group-item:hover {
-  background: var(--theme-color);
+  /* background: var(--theme-color); */
   border-radius: 0;
 }
 .options_grp .list-group .list-group-item:hover a {
@@ -3482,4 +3482,14 @@ p.btm_text {
 .ui-state-default {
   border-right: 1px solid #ecedef !important;
   border-left: 1px solid #ecedef !important;
+}
+
+.stat-title {
+  font-size: 30px !important;
+  font-weight: 600 !important;
+  color: #252531;
+}
+
+.stat-text {
+  font-size: 20px !important;
 }

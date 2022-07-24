@@ -3474,6 +3474,7 @@ input[type="color"]::-webkit-color-swatch {
   /* Firefox 18- */
   color: #262631;
 }
+
 p.btm_text {
   font-size: 24px;
   font-weight: 700;

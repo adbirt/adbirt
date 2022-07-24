@@ -82,7 +82,37 @@ if (Auth::user()->profile) {
                                                     class="fas fa-envelope"></i></span></a></li>
                                     <li class="">
 
-                                        <a href="javascript:void(0)"><span class="header_span"><i
+                                        <script type="text/javascript">
+                                            let baseUrl = "{{ url('/') }}"
+
+                                            window.viewSingleNotification = function viewSingleNotification(id) {
+                                                $.ajax({
+                                                        url: baseUrl + '/notify/ChngeStatus',
+                                                        type: 'POST',
+                                                        data: {
+                                                            id: id
+                                                        },
+                                                    })
+                                                    .done(function() {
+                                                        window.location.href = "{{ url('/notify/view-notifications') }}";
+                                                    })
+                                            };
+
+                                            window.viewAllNotifications = function viewAllNotifications(status) {
+                                                $.ajax({
+                                                        url: baseUrl + '/notify/ChngeStatus',
+                                                        type: 'POST',
+                                                        data: {
+                                                            id: status
+                                                        },
+                                                    })
+                                                    .done(function() {
+                                                        window.location.href = "{{ url('/notify/view-notifications') }}";
+                                                    })
+                                            };
+                                        </script>
+
+                                        <a href="javascript:window.viewAllNotifications"><span class="header_span"><i
                                                     class="fas fa-bell"></i>
                                                 @if ($NotifyCnt >= 1)
                                                     {{ $NotifyCnt }}
@@ -90,43 +120,14 @@ if (Auth::user()->profile) {
                                                 Notifications
                                             </span><span class="fa fa-angle-down"></span></a>
 
+                                        <style>
+                                            .single-notification-item {
+                                                overflow: hidden;
+                                                text-overflow: ellipsis;
+                                            }
+                                        </style>
                                         <ul class="dropdown-menu pull-left search-panel" id="notifications-dropdown">
 
-                                            <script type="text/javascript">
-                                                let baseUrl = "{{ url('/') }}"
-
-                                                window.viewSingleNotification = function viewSingleNotification(id) {
-                                                    $.ajax({
-                                                            url: baseUrl + '/notify/ChngeStatus',
-                                                            type: 'POST',
-                                                            data: {
-                                                                id: id
-                                                            },
-                                                        })
-                                                        .done(function() {
-                                                            window.location.href = "{{ url('/notify/view-notifications') }}";
-                                                        })
-                                                };
-
-                                                window.viewAllNotifications = function viewAllNotifications(status) {
-                                                    $.ajax({
-                                                            url: baseUrl + '/notify/ChngeStatus',
-                                                            type: 'POST',
-                                                            data: {
-                                                                id: status
-                                                            },
-                                                        })
-                                                        .done(function() {
-                                                            window.location.href = "{{ url('/notify/view-notifications') }}";
-                                                        })
-                                                };
-                                            </script>
-                                            <style>
-                                                .single-notification-item {
-                                                    overflow: hidden;
-                                                    text-overflow: ellipsis;
-                                                }
-                                            </style>
                                             @if (!empty($Notify))
                                                 @foreach (array_slice($Notify, 0, 5, true) as $single_notification)
                                                     <li>
@@ -259,8 +260,7 @@ if (Auth::user()->profile) {
 
                             </ul>
 
-                            <a class="log1452"
-                                style="color: #f00; font-weight: bold; margin: 1px 0.2em 0 0;"
+                            <a class="log1452" style="color: #f00; font-weight: bold; margin: 1px 0.2em 0 0;"
                                 href="{!! route('logout') !!}">Logout</a>
                         </div>
                     </div>
